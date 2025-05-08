@@ -28,7 +28,7 @@ feedstock_df = feedstock_df[
 ]
 
 # Log the number of removed nodes
-original_rows = len(pd.read_csv("C:/Master_Python/processed_biomass_data.csv"))
+original_rows = len(pd.read_csv("/home/fredrgaa/Master/processed_biomass_data.csv"))
 filtered_rows = len(feedstock_df)
 
 
