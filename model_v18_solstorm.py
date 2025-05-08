@@ -14,10 +14,10 @@ from scipy.spatial import Delaunay
 ###############################################################################
 # 1) LOAD DATA
 ###############################################################################
-feedstock_df = pd.read_csv("C:/Master_Python/processed_biomass_data.csv")
-plant_df = pd.read_csv("C:/Master_Python/equally_spaced_locations.csv")
-distance_df = pd.read_csv("C:/Master_Python/Distance_Matrix.csv")
-yields_df = pd.read_csv("C:/Master_Python/Feedstock_yields.csv")
+feedstock_df = pd.read_csv("/home/fredrgaa/Master/processed_biomass_data.csv")
+plant_df = pd.read_csv("/home/fredrgaa/Master/equally_spaced_locations.csv")
+distance_df = pd.read_csv("/home/fredrgaa/Master/Distance_Matrix.csv")
+yields_df = pd.read_csv("/home/fredrgaa/Master/Feedstock_yields.csv")
 
 # Filter feedstock_df to exclude nodes with < 30 tons
 feedstock_df = feedstock_df[
