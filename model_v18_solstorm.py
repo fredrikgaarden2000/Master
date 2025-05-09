@@ -10,6 +10,10 @@ from collections import defaultdict
 import uuid
 from geopy.distance import geodesic
 from scipy.spatial import Delaunay
+import pickle
+import time
+
+script_start_time = time.time()
 
 ###############################################################################
 # 1) LOAD DATA
@@ -59,6 +63,7 @@ distance_gisco = set(distance_df['Feedstock_LAU'].unique())
 if not distance_gisco.issubset(feedstock_gisco):
     missing = distance_gisco - feedstock_gisco
     raise ValueError(f"GISCO_IDs in Distance_Matrix.csv not found in processed_biomass_data.csv: {missing}")
+
 ###############################################################################
 # 2) SETS & DICTIONARIES
 ###############################################################################
@@ -66,34 +71,34 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (1, 900_000)  # Updated to match first model 
-FLH_max = 8000
-alphaHV = 9.97
-CN_min = 20.0
-CN_max = 30.0
-heat_price = 20
-boiler_eff = 0.9
-electricity_spot_price = 90
-chp_elec_eff = 0.4
-chp_heat_eff = 0.4
-r = 0.042 #Real WACC
-years = 25
+capacity_levels = (1, 1_000_000)  # Updated to match first model 
+FLH_max = 8000 #Reasonable assumption based on numbers from BMIII, utilization rate ~ 90%
+alphaHV = 9.97 #Lower heating value, kwh/m3, Scarlat et al. 
+CN_min = 20.0 #Biogas technology, Deng et al., p. 36
+CN_max = 30.0 #Biogas technology, Deng et al., p. 36
+heat_price = 20 #Convservative, lower end, district heating price for bayern was 137.41 in 2024
+boiler_eff = 0.9 
+electricity_spot_price = 60 #Reasonable based on historical el prices, may simulate other values on this https://tradingeconomics.com/germany/electricity-price
+chp_elec_eff = 0.4 #BMIII and Poeschl et al. (2010)
+chp_heat_eff = 0.4 #BMIII and Poeschl et al. (2010), can crank it up to 0.45
+r = 0.042 #Real WACC, Fraunhofer 2024
+years = 25 #Fraunhofer 2024
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
-EEG_price_small = 210.0
-EEG_price_med = 190.0
-EEG_skip_chp_price = 194.3 * 10
-EEG_skip_upg_price = 210.4
-gas_price_mwh = 30
+EEG_price_small = 210.0 #EEG law document 
+EEG_price_med = 190.0 #EEG law document
+EEG_skip_chp_price = 194.3 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomasse/start.html
+EEG_skip_upg_price = 210.4 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomethan/BeendeteAusschreibungen/start.html
+gas_price_mwh = 30 #Dutch TTF, Rystad report, maybe run scenarios on higher prices
 gas_price_m3 = gas_price_mwh * (alphaHV / 1000)
-co2_price_ton = 0
+co2_price_ton = 50 
 co2_price = co2_price_ton / 556.2
-Cap_biogas = 0.45
-Cap_biomethane = 0.10
-variable_upg_cost = 0.2
-alphaMz = 0.3
+Cap_biogas = 0.45 #EEG law document
+Cap_biomethane = 0.10 #EEG law document
+variable_upg_cost = 0.05 #CPI adjust 
+#alphaMz = 0.3 #no need for this
 alpha_GHG_comp = 94.0
 alpha_GHG_lim = 0.35 * alpha_GHG_comp
-GHG_certificate_price = 65.0
+GHG_certificate_price = 60.0  
 avail_mass = {(row['GISCO_ID'], row['substrat_ENG']): row['nutz_pot_tFM'] for _, row in feedstock_df.iterrows()}
 dist_ik = {(row['Feedstock_LAU'], row['Location']): row['Distance_km'] for _, row in distance_df.iterrows()}
 dist_pl_iprime = {(ploc, iP): dist_ik.get((iP, ploc), 0.0) for ploc in plant_locs for iP in iPrime_nodes}
@@ -133,7 +138,7 @@ for simplex in tri.simplices:
 # Compute pairwise distances for adjacent plants, filtering out > 75 km
 distances = []
 filtered_pairs = set()
-max_distance_threshold = 500  # km  (Set after inspection to avoid "cross border adjacent plants") (Set to 75km)
+max_distance_threshold = 75  # km  (Set after inspection to avoid "cross border adjacent plants") (Set to 75km)
 for i, j in adjacent_pairs:
     p1_id = plant_df.iloc[i]["Location"]
     p1_coords = (plant_df.iloc[i]["Latitude"], plant_df.iloc[i]["Longitude"])
@@ -151,7 +156,7 @@ for i, j in adjacent_pairs:
 # Convert distances to DataFrame
 dist_df = pd.DataFrame(distances)
 # Calculate statistics
-max_distance = dist_df["Distance_km"].max() * 1.5
+max_distance = dist_df["Distance_km"].max() * 2
 
 total_biogas = {}
 for j in plant_locs:
@@ -171,8 +176,8 @@ total_mass = sum(avail_mass[i, f] for i, f in avail_mass)
 system_methane_average = total_methane / total_mass
 EEG_small_m3 = (75 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV)
 EEG_med_m3 = (150 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV)
-auction_chp_limit = 500000 * FLH_max / alphaHV / system_methane_average
-auction_bm_limit = 300000 * FLH_max / alphaHV / system_methane_average
+auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average #adjusted values
+auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average #adjusted values
 alternative_configs = [
     {"name": "boiler", "category": "boiler", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"heat": heat_price},
@@ -182,89 +187,40 @@ alternative_configs = [
     {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
      "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "EEG_CHP_small2", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "EEG_CHP_large1", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "EEG_CHP_large2", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": Cap_biogas, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_skip_chp_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 980693, "upg_cost_exp": -0.991, "rev_price": {"EEG": EEG_skip_upg_price},
+     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech2", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 239254, "upg_cost_exp": -0.696, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech3", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 81046, "upg_cost_exp": -0.534, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech4", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 980693, "upg_cost_exp": -0.991, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech5", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 185034, "upg_cost_exp": -0.67, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 980693, "upg_cost_exp": -0.991, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech2", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 239254, "upg_cost_exp": -0.696, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech3", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 81046, "upg_cost_exp": -0.534, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech4", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 980693, "upg_cost_exp": -0.991, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech5", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 185034, "upg_cost_exp": -0.67, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff":135.44, "capex_exp": -0.304, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
-     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"}
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"}
 ]
+
 
 
 ###############################################################################
@@ -654,7 +610,7 @@ def build_model(config):
         NPV_expr += discount_factor * (TotalRev + GHGRevenue - TotalCost)
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict
+    return m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected
 
 ###############################################################################
 # 6) RUN MODEL
@@ -672,11 +628,12 @@ config = {
     "flh_enabled": True
 }
 
-m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict= build_model(config)
+m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected= build_model(config)
 m.update()  # Ensure model is up-to-date
 
-
+opt_start_time = time.time()
 m.optimize()
+opt_end_time = time.time()
 
 inflow_rows = []
 for j in plant_locs:
@@ -755,3 +712,33 @@ for j in plant_locs:
 # Save to CSV
 fin_df = pd.DataFrame(merged_rows)
 fin_df.to_csv("Output_financials.csv", index=False)
+
+# Save all variable values for warm start or later use
+warm_start = {
+    'Omega': {j: Omega[j].X for j in plant_locs},
+    'N_CH4': {j: N_CH4[j].X for j in plant_locs},
+    'x': {(i, f, j): x[i, f, j].X for i in supply_nodes for f in feedstock_types for j in plant_locs},
+    'digestate_return': {(j, i): digestate_return[j, i].X for j in plant_locs for i in supply_nodes},
+    'Y': {(j, a, c): Y[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+    'm_up': {(j, f): m_up[j, f].X for j in plant_locs for f in feedstock_types},
+    'Rev_loc': {j: Rev_loc[j].X for j in plant_locs},
+    'Cost_loc': {j: Cost_loc[j].X for j in plant_locs},
+    'Capex': {j: Capex[j].X for j in plant_locs},
+    'Rev_alt_selected': {(j, a, c): Rev_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+    'Cost_alt_selected': {(j, a, c): Cost_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+}
+
+# Save to pickle file
+with open('/home/fredrgaa/Master/warm_start.pkl', 'wb') as f:
+    pickle.dump(warm_start, f)
+
+script_end_time = time.time()
+
+total_script_time = script_end_time - script_start_time
+opt_time = opt_end_time - opt_start_time
+
+# Save times to text file with timestamp
+with open('/home/fredrgaa/Master/execution_times.txt', 'a') as f:
+    f.write(f"Total script execution time: {total_script_time:.2f} seconds ({total_script_time/60:.2f} minutes)\n")
+    f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")
+    f.write("\n")
