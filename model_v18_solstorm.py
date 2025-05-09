@@ -71,7 +71,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (1, 1_000_000)  # Updated to match first model 
+capacity_levels = (250_000, 500_000, 3_500_000, 17_500_000, 35_000_000, 75_000_000)  # Updated to match first model 
 FLH_max = 8000 #Reasonable assumption based on numbers from BMIII, utilization rate ~ 90%
 alphaHV = 9.97 #Lower heating value, kwh/m3, Scarlat et al. 
 CN_min = 20.0 #Biogas technology, Deng et al., p. 36
@@ -90,7 +90,7 @@ EEG_skip_chp_price = 194.3 #https://www.bundesnetzagentur.de/DE/Fachthemen/Elekt
 EEG_skip_upg_price = 210.4 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomethan/BeendeteAusschreibungen/start.html
 gas_price_mwh = 30 #Dutch TTF, Rystad report, maybe run scenarios on higher prices
 gas_price_m3 = gas_price_mwh * (alphaHV / 1000)
-co2_price_ton = 50 
+co2_price_ton = 50
 co2_price = co2_price_ton / 556.2
 Cap_biogas = 0.45 #EEG law document
 Cap_biomethane = 0.10 #EEG law document
@@ -218,7 +218,17 @@ alternative_configs = [
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
      "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"}
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
+     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
+     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
+     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
+     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"}
 ]
 
 
@@ -295,9 +305,9 @@ def add_auction_constraints(m, Y, plant_locs, alternative_configs, capacity_leve
     total_EEG_capacity = gp.quicksum(Y[j, a, c] * c for j in plant_locs for a, alt in enumerate(alternative_configs) if alt["EEG_flag"] for c in capacity_levels)
     m.addConstr(total_EEG_capacity <= auction_chp_limit, name="EEG_Auction_Limit")
     total_biogas_capacity = gp.quicksum(Y[j, a, c] * c for j in plant_locs for a, alt in enumerate(alternative_configs) if alt["EEG_flag"] and alt["category"] != "FlexEEG_biomethane" for c in capacity_levels)
-    m.addConstr(total_biogas_capacity <= 500000 * FLH_max / alphaHV / system_methane_average, name="EEG_Biogas_Auction_Limit")
+    m.addConstr(total_biogas_capacity <= 225000 * FLH_max / alphaHV / system_methane_average, name="EEG_Biogas_Auction_Limit")
     total_biomethane_capacity = gp.quicksum(Y[j, a, c] * c for j in plant_locs for a, alt in enumerate(alternative_configs) if alt["category"] == "FlexEEG_biomethane" for c in capacity_levels)
-    m.addConstr(total_biomethane_capacity <= 300000 * FLH_max / alphaHV / system_methane_average, name="EEG_Biomethane_Auction_Limit")
+    m.addConstr(total_biomethane_capacity <= 125000 * FLH_max / alphaHV / system_methane_average, name="EEG_Biomethane_Auction_Limit")
 
 def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
     for j in plant_locs:
@@ -310,9 +320,8 @@ def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
 ###############################################################################
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
-    m.setParam("Heuristics", 0.5)       # Spend more time on heuristics
-    m.setParam("MIPFocus", 1)            # Focus on finding feasible solutions quickly
-    m.setParam("NoRelHeurTime", 10)     # Allow heuristics more time before root LP
+    m.setParam("Heuristics", 0.3)       # Spend more time on heuristics
+    m.setParam("NoRelHeurTime", 100)     # Allow heuristics more time before root LP
     m.setParam("Presolve", 2)            # Aggressive presolve
     m.setParam("Cuts", 3)                # Generate all types of cuts
 
