@@ -18,10 +18,17 @@ script_start_time = time.time()
 ###############################################################################
 # 1) LOAD DATA
 ###############################################################################
+
+'''
 feedstock_df = pd.read_csv("/home/fredrgaa/Master/processed_biomass_data.csv")
 plant_df = pd.read_csv("/home/fredrgaa/Master/equally_spaced_locations.csv")
 distance_df = pd.read_csv("/home/fredrgaa/Master/Distance_Matrix.csv")
 yields_df = pd.read_csv("/home/fredrgaa/Master/Feedstock_yields.csv")
+'''
+feedstock_df = pd.read_csv("C:/Master_Python/processed_biomass_data.csv")
+plant_df = pd.read_csv("C:/Master_Python/equally_space_locations_10.csv")
+distance_df = pd.read_csv("C:/Master_Python/Distance_Matrix.csv")
+yields_df = pd.read_csv("C:/Master_Python/Feedstock_yields.csv")
 
 # Filter feedstock_df to exclude nodes with < 30 tons
 feedstock_df = feedstock_df[
@@ -32,7 +39,8 @@ feedstock_df = feedstock_df[
 ]
 
 # Log the number of removed nodes
-original_rows = len(pd.read_csv("/home/fredrgaa/Master/processed_biomass_data.csv"))
+#original_rows = len(pd.read_csv("/home/fredrgaa/Master/processed_biomass_data.csv"))
+original_rows = len(pd.read_csv("C:/Master_Python/processed_biomass_data.csv"))
 filtered_rows = len(feedstock_df)
 
 
@@ -71,7 +79,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (250_000, 500_000, 3_500_000, 17_500_000, 35_000_000, 75_000_000)  # Updated to match first model 
+capacity_levels = (500_000, 1_000_000)  # Updated to match first model 250_000, 500_000, 3_500_000, 17_500_000, 35_000_000, 75_000_000 
 FLH_max = 8000 #Reasonable assumption based on numbers from BMIII, utilization rate ~ 90%
 alphaHV = 9.97 #Lower heating value, kwh/m3, Scarlat et al. 
 CN_min = 20.0 #Biogas technology, Deng et al., p. 36
@@ -84,8 +92,8 @@ chp_heat_eff = 0.4 #BMIII and Poeschl et al. (2010), can crank it up to 0.45
 r = 0.042 #Real WACC, Fraunhofer 2024
 years = 25 #Fraunhofer 2024
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
-EEG_price_small = 210.0 #EEG law document 
-EEG_price_med = 190.0 #EEG law document
+EEG_price_small = 210.0 * 0#EEG law document 
+EEG_price_med = 190.0 * 0 #EEG law document
 EEG_skip_chp_price = 194.3 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomasse/start.html
 EEG_skip_upg_price = 210.4 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomethan/BeendeteAusschreibungen/start.html
 gas_price_mwh = 30 #Dutch TTF, Rystad report, maybe run scenarios on higher prices
@@ -179,7 +187,12 @@ EEG_med_m3 = (150 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV)
 auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average #adjusted values
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average #adjusted values
 alternative_configs = [
-    {"name": "boiler", "category": "boiler", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
+    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
+     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
+     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"},
+              {"name": "boiler", "category": "boiler", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"heat": heat_price},
      "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
      "capex_coeff": 110000, "capex_exp": 1, "capex_type": "linear_MW",
@@ -224,11 +237,6 @@ alternative_configs = [
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
-     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"}
 ]
 
 
@@ -321,7 +329,7 @@ def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
     m.setParam("Heuristics", 0.3)       # Spend more time on heuristics
-    m.setParam("NoRelHeurTime", 100)     # Allow heuristics more time before root LP
+    m.setParam("NoRelHeurTime", 10)     # Allow heuristics more time before root LP
     m.setParam("Presolve", 2)            # Aggressive presolve
     m.setParam("Cuts", 3)                # Generate all types of cuts
 
@@ -417,7 +425,7 @@ def build_model(config):
 
     add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, capacity_levels)
     add_supply_constraints(m, avail_mass, x, plant_locs, max_distance, dist_ik)
-    add_digestate_constraints(m, x, digestate_return, supply_nodes, plant_locs, avail_mass, feed_yield, dist_pl_iprime, max_distance, config.get("digestate_return_frac", 0.99))
+    #add_digestate_constraints(m, x, digestate_return, supply_nodes, plant_locs, avail_mass, feed_yield, dist_pl_iprime, max_distance, config.get("digestate_return_frac", 0.99))
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     #add_maize_constraints(m, x, avail_mass, plant_locs, Y, alternative_configs, capacity_levels, alphaMz)
     add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
@@ -628,17 +636,24 @@ config = {
     "name": "Baseline",
     "eeg_enabled": True,
     "supply_enabled": True,
-    "digestate_enabled": True,
+    "digestate_enabled": False,
     "digestate_return_frac": 0.99,
     "cn_enabled": True,
-    "maize_enabled": True,
-    "ghg_enabled": True,
+    "maize_enabled": False,
+    "ghg_enabled": False,
     "auction_enabled": True,
     "flh_enabled": True
 }
 
 m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected= build_model(config)
 m.update()  # Ensure model is up-to-date
+
+with open('warm_start.pkl', 'rb') as f:
+    warm_start = pickle.load(f)
+for var in m.getVars():
+    if var.VarName in warm_start.get(var.VarName.split('[')[0], {}):
+        var.Start = warm_start[var.VarName.split('[')[0]][var.VarName]
+
 
 opt_start_time = time.time()
 m.optimize()
@@ -681,7 +696,6 @@ for j in plant_locs:
                 alt_name = alt["name"]
                 cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane if alt["category"] == "FlexEEG_biomethane" else None
                 
-                # Base financials
                 row_data = {
                     "PlantLocation": j,
                     "Alternative": alt_name,
@@ -692,8 +706,13 @@ for j in plant_locs:
                     "Revenue": Rev_loc[j].X,
                     "Cost": Cost_loc[j].X,
                     "Capex": Capex[j].X,
-                    "FLH": (Omega[j].X / c) * 8760 if c > 0 else 0  # Full-load hours
+                    "GHG": sum(premium[f] * m_up[j, f].X for f in feedstock_types),
+                    "FLH": (Omega[j].X / c) * 8760 if c > 0 else 0,  # Full-load hours
+                    "PlantLatitude": plant_coords.get(j, (None, None))[1],  # Latitude
+                    "PlantLongitude": plant_coords.get(j, (None, None))[0]  # Longitude
                 }
+
+
                 
                 # Revenue components (FlexEEG only)
                 if alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
@@ -738,7 +757,7 @@ warm_start = {
 }
 
 # Save to pickle file
-with open('/home/fredrgaa/Master/warm_start.pkl', 'wb') as f:
+with open('C:/Clone/Master/warm_start.pkl', 'wb') as f:
     pickle.dump(warm_start, f)
 
 script_end_time = time.time()
@@ -747,7 +766,7 @@ total_script_time = script_end_time - script_start_time
 opt_time = opt_end_time - opt_start_time
 
 # Save times to text file with timestamp
-with open('/home/fredrgaa/Master/execution_times.txt', 'a') as f:
+with open('C:/Clone/Master/execution_times.txt', 'a') as f:
     f.write(f"Total script execution time: {total_script_time:.2f} seconds ({total_script_time/60:.2f} minutes)\n")
     f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")
     f.write("\n")
