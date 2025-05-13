@@ -623,20 +623,23 @@ if __name__ == '__main__':
     else:
         print(f"Full model: No optimal solution found (status: {m.status}).")
 
-    # Save outputs
+    # Save inflow output
     inflow_rows = []
     for j in plant_locs:
         for i, f in avail_mass:
             flow_val = x[i, f, j].X
             if flow_val > 1e-6:
+                # Get distance from dist_ik; default to 0 if not found
+                distance = dist_ik.get((i, j), 0.0)
                 inflow_rows.append({
                     "SupplyNode": i,
                     "PlantLocation": j,
                     "Feedstock": f,
-                    "FlowTons": flow_val
+                    "FlowTons": flow_val,
+                    "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(f"{BASE_DIR}/Solutions/{len(plant_locs)}/Output_in_flow_warm_start.csv", index=False)
+    in_flow_df.to_csv(f"{BASE_DIR}/Solutions/{len(plant_locs)}/Output_in_flow.csv", index=False)
     
     outflow_rows = []
     for j in plant_locs:

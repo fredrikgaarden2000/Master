@@ -274,8 +274,8 @@ def main():
     params = {
         "lau_geojson_path": "C:/Master_Python/bavaria_lau_clean.geojson",
         "gas_shapefile": r"C:/Users/fredr/OneDrive - NTNU/NTNU_semester/MasterArbeid/durchleitungsabschnitte/durchleitungsabschnitte.shp",
-        "num_clusters": 5,
-        "sample_size": 5000,
+        "num_clusters": 100,
+        "sample_size": 10000,
         "locations_csv": "C:/Clone/Master/equally_spaced_locations.csv",
         "feedstock_csv": "C:/Master_Python/processed_biomass_data.csv",
         "plant_csv": "C:/Clone/Master/equally_spaced_locations.csv",
