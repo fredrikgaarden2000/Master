@@ -79,7 +79,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (500_000, 1_000_000)  # Updated to match first model 250_000, 500_000, 3_500_000, 17_500_000, 35_000_000, 75_000_000 
+capacity_levels = (2_000_000, 1_000_000)  # Updated to match first model 250_000, 500_000, 3_500_000, 17_500_000, 35_000_000, 75_000_000 
 FLH_max = 8000 #Reasonable assumption based on numbers from BMIII, utilization rate ~ 90%
 alphaHV = 9.97 #Lower heating value, kwh/m3, Scarlat et al. 
 CN_min = 20.0 #Biogas technology, Deng et al., p. 36
@@ -92,8 +92,8 @@ chp_heat_eff = 0.4 #BMIII and Poeschl et al. (2010), can crank it up to 0.45
 r = 0.042 #Real WACC, Fraunhofer 2024
 years = 25 #Fraunhofer 2024
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
-EEG_price_small = 210.0 * 0#EEG law document 
-EEG_price_med = 190.0 * 0 #EEG law document
+EEG_price_small = 210.0#EEG law document 
+EEG_price_med = 190.0 #EEG law document
 EEG_skip_chp_price = 194.3 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomasse/start.html
 EEG_skip_upg_price = 210.4 #https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Ausschreibungen/Biomethan/BeendeteAusschreibungen/start.html
 gas_price_mwh = 30 #Dutch TTF, Rystad report, maybe run scenarios on higher prices
@@ -425,7 +425,7 @@ def build_model(config):
 
     add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, capacity_levels)
     add_supply_constraints(m, avail_mass, x, plant_locs, max_distance, dist_ik)
-    #add_digestate_constraints(m, x, digestate_return, supply_nodes, plant_locs, avail_mass, feed_yield, dist_pl_iprime, max_distance, config.get("digestate_return_frac", 0.99))
+    add_digestate_constraints(m, x, digestate_return, supply_nodes, plant_locs, avail_mass, feed_yield, dist_pl_iprime, max_distance, config.get("digestate_return_frac", 0.99))
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     #add_maize_constraints(m, x, avail_mass, plant_locs, Y, alternative_configs, capacity_levels, alphaMz)
     add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)

@@ -13,13 +13,14 @@ from scipy.spatial import Delaunay
 import pickle
 import time
 from multiprocessing import Pool
+import os
 
 script_start_time = time.time()
 
 ###############################################################################
 # 1) LOAD DATA
 ###############################################################################
-BASE_DIR = "/home/fredrgaa/Master/"
+BASE_DIR = "C:/Clone/Master/"
 feedstock_df = pd.read_csv(f"{BASE_DIR}processed_biomass_data.csv")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
@@ -136,7 +137,7 @@ for simplex in tri.simplices:
 # Compute pairwise distances for adjacent plants, filtering out > 75 km
 distances = []
 filtered_pairs = set()
-max_distance_threshold = 75
+max_distance_threshold = 500
 for i, j in adjacent_pairs:
     p1_id = plant_df.iloc[i]["Location"]
     p1_coords = (plant_df.iloc[i]["Latitude"], plant_df.iloc[i]["Longitude"])
@@ -563,13 +564,34 @@ config = {
     "digestate_enabled": True,
     "digestate_return_frac": 0.99,
     "cn_enabled": True,
-    "maize_enabled": True,
+    "maize_enabled": False,
     "ghg_enabled": True,
     "auction_enabled": True,
     "flh_enabled": True
 }
 
+def load_solution(capacity, num_plant_locs):
+    """Load a solution from a pickle file if it exists, checking both capacity and num_plant_locs."""
+    file_path = f"{BASE_DIR}/Solutions/solution_{capacity}_{num_plant_locs}.pkl"
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, 'rb') as f:
+                solution = pickle.load(f)
+            print(f"Loaded existing solution for capacity {capacity:,} with {num_plant_locs} plants.")
+            return solution
+        except Exception as e:
+            print(f"Error loading solution for {capacity:,}: {e}")
+            return None
+    return None
+
 def run_single_capacity(capacity):
+    """Run the model for a single capacity or load existing solution."""
+    # Check for existing solution
+    solution = load_solution(capacity)
+    if solution is not None:
+        return solution
+
+    # Run the model if no solution is found
     print(f"Running model for capacity {capacity:,} m³/year...")
     m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, DigestateCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config, fixed_capacity=capacity)
     m.optimize()
@@ -585,7 +607,7 @@ def run_single_capacity(capacity):
             'digestate_return': {(j, i): digestate_return[j, i].X for j in plant_locs for i in supply_nodes}
         }
         print(f"Capacity {capacity:,}: NPV = {m.objVal:,.2f} €, Solve time = {m.Runtime:.2f} s, MIP Gap = {m.MIPGap:.4f}")
-        with open(f"{BASE_DIR}solution_{capacity}.pkl", 'wb') as f:
+        with open(f"{BASE_DIR}/Solutions/solution_{capacity}_{len(plant_locs)}.pkl", 'wb') as f:
             pickle.dump(solution, f)
         return solution
     else:
@@ -595,8 +617,22 @@ def run_single_capacity(capacity):
 # Run single-capacity models in parallel
 if __name__ == '__main__':
     print("Starting single-capacity runs...")
-    with Pool(processes=4) as pool:
-        results = pool.map(run_single_capacity, capacity_levels)
+    results = []
+    capacities_to_run = []
+
+    # Check for existing solutions
+    for capacity in capacity_levels:
+        solution = load_solution(capacity)
+        if solution is not None:
+            results.append(solution)
+        else:
+            capacities_to_run.append(capacity)
+
+    # Run models for missing capacities in parallel
+    if capacities_to_run:
+        with Pool(processes=4) as pool:
+            new_results = pool.map(run_single_capacity, capacities_to_run)
+            results.extend(new_results)
     
     # Filter valid solutions and find the best
     valid_solutions = [res for res in results if res is not None]
@@ -645,44 +681,47 @@ if __name__ == '__main__':
     else:
         print(f"Full model: No optimal solution found (status: {m.status}).")
 
-    # Save outputs
-    inflow_rows = []
-    for j in plant_locs:
-        for i, f in avail_mass:
-            flow_val = x[i, f, j].X
-            if flow_val > 1e-6:
-                inflow_rows.append({
-                    "SupplyNode": i,
-                    "PlantLocation": j,
-                    "Feedstock": f,
-                    "FlowTons": flow_val
-                })
-    in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(f"{BASE_DIR}Output_in_flow_warm_start.csv", index=False)
+import datetime
 
-    outflow_rows = []
-    for j in plant_locs:
-        for i in supply_nodes:
-            digest_val = digestate_return[j, i].X
-            if digest_val > 1e-6:
-                outflow_rows.append({
-                    "PlantLocation": j,
-                    "SupplyNode": i,
-                    "DigestateTons": digest_val
-                })
-    out_flow_df = pd.DataFrame(outflow_rows)
-    out_flow_df.to_csv(f"{BASE_DIR}Output_out_flow_warm_start.csv", index=False)
+# Save outputs
+inflow_rows = []
+for j in plant_locs:
+    for i, f in avail_mass:
+        flow_val = x[i, f, j].X
+        if flow_val > 1e-6:
+            inflow_rows.append({
+                "SupplyNode": i,
+                "PlantLocation": j,
+                "Feedstock": f,
+                "FlowTons": flow_val
+            })
+in_flow_df = pd.DataFrame(inflow_rows)
+timestamp = datetime.datetime.now().strftime("%d-%m-%Y-%H%M")
+in_flow_df.to_csv(f"{BASE_DIR}/Solutions/Output_in_flow_{timestamp}_{best_capacity}_{len(plant_locs)}.csv", index=False)
 
-    merged_rows = []
-    for j in plant_locs:
-        for a in range(len(alternative_configs)):
-            for c in capacity_levels:
-                if Y[j, a, c].X > 0.5:
-                    alt = alternative_configs[a]
-                    alt_name = alt["name"]
-                    cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane if alt["category"] == "FlexEEG_biomethane" else None
-                    
-                    row_data = {
+outflow_rows = []
+for j in plant_locs:
+    for i in supply_nodes:
+        digest_val = digestate_return[j, i].X
+        if digest_val > 1e-6:
+            outflow_rows.append({
+                "PlantLocation": j,
+                "SupplyNode": i,
+                "DigestateTons": digest_val
+            })
+out_flow_df = pd.DataFrame(outflow_rows)
+out_flow_df.to_csv(f"{BASE_DIR}/Solutions/Output_out_flow_{timestamp}_{best_capacity}_{len(plant_locs)}.csv", index=False)
+
+merged_rows = []
+for j in plant_locs:
+    for a in range(len(alternative_configs)):
+        for c in capacity_levels:
+            if Y[j, a, c].X > 0.5:
+                alt = alternative_configs[a]
+                alt_name = alt["name"]
+                cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane if alt["category"] == "FlexEEG_biomethane" else None
+                
+                row_data = {
                     "PlantLocation": j,
                     "Alternative": alt_name,
                     "Capacity": c,
@@ -693,54 +732,54 @@ if __name__ == '__main__':
                     "Cost": Cost_loc[j].X,
                     "Capex": Capex[j].X,
                     "GHG": sum(premium[f] * m_up[j, f].X for f in feedstock_types),
-                    "FLH": (Omega[j].X / c) * 8760 if c > 0 else 0,  # Full-load hours
-                    "PlantLatitude": plant_coords.get(j, (None, None))[1],  # Latitude
-                    "PlantLongitude": plant_coords.get(j, (None, None))[0]  # Longitude
+                    "FLH": (Omega[j].X / c) * 8760 if c > 0 else 0,
+                    "PlantLatitude": plant_coords.get(j, (None, None))[1],
+                    "PlantLongitude": plant_coords.get(j, (None, None))[0]
                 }
-                    if alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
-                        effective_EEG = alt["rev_price"]["EEG"] * avg_discount
-                        E_actual = N_CH4[j].X * (chp_elec_eff * alphaHV / 1000.0)
-                        EEG_rev = cap_fraction * E_actual * effective_EEG
-                        spot_rev = (E_actual - (cap_fraction * E_actual)) * electricity_spot_price
-                        heat_rev = heat_price * (N_CH4[j].X * chp_heat_eff * alphaHV / 1000.0)
-                        row_data.update({
-                            "EEG_Revenue": EEG_rev,
-                            "Spot_Revenue": spot_rev,
-                            "Heat_Revenue": heat_rev,
-                            "Bonus": bonus_dict.get((j, a, c), 0)
-                        })
-                    else:
-                        row_data.update({
-                            "EEG_Revenue": 0,
-                            "Spot_Revenue": 0,
-                            "Heat_Revenue": 0,
-                            "Bonus": 0
-                        })
-                    merged_rows.append(row_data)
+                if alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
+                    effective_EEG = alt["rev_price"]["EEG"] * avg_discount
+                    E_actual = N_CH4[j].X * (chp_elec_eff * alphaHV / 1000.0)
+                    EEG_rev = cap_fraction * E_actual * effective_EEG
+                    spot_rev = (E_actual - (cap_fraction * E_actual)) * electricity_spot_price
+                    heat_rev = heat_price * (N_CH4[j].X * chp_heat_eff * alphaHV / 1000.0)
+                    row_data.update({
+                        "EEG_Revenue": EEG_rev,
+                        "Spot_Revenue": spot_rev,
+                        "Heat_Revenue": heat_rev,
+                        "Bonus": bonus_dict.get((j, a, c), 0)
+                    })
+                else:
+                    row_data.update({
+                        "EEG_Revenue": 0,
+                        "Spot_Revenue": 0,
+                        "Heat_Revenue": 0,
+                        "Bonus": 0
+                    })
+                merged_rows.append(row_data)
 
-    fin_df = pd.DataFrame(merged_rows)
-    fin_df.to_csv(f"{BASE_DIR}Output_financials_warm_start.csv", index=False)
+fin_df = pd.DataFrame(merged_rows)
+fin_df.to_csv(f"{BASE_DIR}/Solutions/Output_financials_{timestamp}_{best_capacity}_{len(plant_locs)}.csv", index=False)
 
-    warm_start = {
-        'Omega': {j: Omega[j].X for j in plant_locs},
-        'N_CH4': {j: N_CH4[j].X for j in plant_locs},
-        'x': {(i, f, j): x[i, f, j].X for i in supply_nodes for f in feedstock_types for j in plant_locs},
-        'digestate_return': {(j, i): digestate_return[j, i].X for j in plant_locs for i in supply_nodes},
-        'Y': {(j, a, c): Y[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
-        'm_up': {(j, f): m_up[j, f].X for j in plant_locs for f in feedstock_types},
-        'Rev_loc': {j: Rev_loc[j].X for j in plant_locs},
-        'Cost_loc': {j: Cost_loc[j].X for j in plant_locs},
-        'Capex': {j: Capex[j].X for j in plant_locs},
-        'Rev_alt_selected': {(j, a, c): Rev_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
-        'Cost_alt_selected': {(j, a, c): Cost_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
-    }
-    with open(f'{BASE_DIR}warm_start.pkl', 'wb') as f:
-        pickle.dump(warm_start, f)
+warm_start = {
+    'Omega': {j: Omega[j].X for j in plant_locs},
+    'N_CH4': {j: N_CH4[j].X for j in plant_locs},
+    'x': {(i, f, j): x[i, f, j].X for i in supply_nodes for f in feedstock_types for j in plant_locs},
+    'digestate_return': {(j, i): digestate_return[j, i].X for j in plant_locs for i in supply_nodes},
+    'Y': {(j, a, c): Y[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+    'm_up': {(j, f): m_up[j, f].X for j in plant_locs for f in feedstock_types},
+    'Rev_loc': {j: Rev_loc[j].X for j in plant_locs},
+    'Cost_loc': {j: Cost_loc[j].X for j in plant_locs},
+    'Capex': {j: Capex[j].X for j in plant_locs},
+    'Rev_alt_selected': {(j, a, c): Rev_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+    'Cost_alt_selected': {(j, a, c): Cost_alt_selected[j, a, c].X for j in plant_locs for a in range(len(alternative_configs)) for c in capacity_levels},
+}
+with open(f'{BASE_DIR}/Solutions/warm_start.pkl', 'wb') as f:
+    pickle.dump(warm_start, f)
 
-    script_end_time = time.time()
-    total_script_time = script_end_time - script_start_time
-    opt_time = opt_end_time - opt_start_time
-    with open(f'{BASE_DIR}execution_times_warm_start.txt', 'a') as f:
-        f.write(f"Total script execution time: {total_script_time:.2f} seconds ({total_script_time/60:.2f} minutes)\n")
-        f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")
-
+script_end_time = time.time()
+total_script_time = script_end_time - script_start_time
+opt_time = opt_end_time - opt_start_time
+timestamp = datetime.datetime.now().strftime("%d-%m-%Y-%H%M")
+with open(f'{BASE_DIR}/Solutions/execution_times_warm_start_{timestamp}.txt', 'a') as f:
+    f.write(f"Total script execution time: {total_script_time:.2f} seconds ({total_script_time/60:.2f} minutes)\n")
+    f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")

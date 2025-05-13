@@ -10,9 +10,9 @@ import os
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "Output_in_flow.csv"),
-    "out_flow": os.path.join(BASE_DIR, "Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "Output_financials.csv"),
+    "in_flow": os.path.join(BASE_DIR, "Solutions/10/Output_in_flow_warm_start.csv"),
+    "out_flow": os.path.join(BASE_DIR, "Solutions/10/Output_out_flow_warm_start.csv"),
+    "financials": os.path.join(BASE_DIR, "Solutions/10/Output_financials_warm_start.csv"),
     "feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
@@ -23,7 +23,7 @@ FILES = {
 
 # Load data
 in_flow_df = pd.read_csv(FILES["in_flow"])
-out_flow_df = pd.read_csv(FILES["out_flow"])
+#out_flow_df = pd.read_csv(FILES["out_flow"])
 fin_df = pd.read_csv(FILES["financials"])
 yields_df = pd.read_csv(FILES["yields"])
 feedstock_df = pd.read_csv(FILES["feedstock"])
@@ -81,29 +81,38 @@ def plot_methane_fraction(fin_df, system_methane_average):
     plt.savefig(os.path.join(BASE_DIR, "methane_fraction_plot.png"))
     plt.show()
 
-def plot_feedstock_stacked_chart(in_flow_df, feedstock_types):
+def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
     flow_data = []
     for _, row in in_flow_df.iterrows():
         j, f, flow_val = row["PlantLocation"], row["Feedstock"], row["FlowTons"]
         if flow_val > 1e-6:
             flow_data.append({"Plant": j, "Feedstock": f, "FlowTons": flow_val})
+
     df = pd.DataFrame(flow_data)
+
     if df.empty:
         print("No feedstock flows to plot.")
         return
+
     pivot_df = df.pivot_table(index="Plant", columns="Feedstock", values="FlowTons", fill_value=0)
-    pivot_df = pivot_df.div(pivot_df.sum(axis=1), axis=0) * 100
+    pivot_df = pivot_df.div(pivot_df.sum(axis=1), axis=0) * 100  # Convert to percentages
+
     for f in feedstock_types:
         if f not in pivot_df.columns:
             pivot_df[f] = 0.0
+
     pivot_df = pivot_df[feedstock_types]
+
     fig, ax = plt.subplots(figsize=(12, 8))
     plants = pivot_df.index
     bottoms = np.zeros(len(plants))
+
     for feedstock in feedstock_types:
         values = pivot_df[feedstock].values
-        ax.bar(plants, values, bottom=bottoms, label=feedstock)
+        color = color_map.get(feedstock, None)  # Fallback to default if not specified
+        ax.bar(plants, values, bottom=bottoms, label=feedstock, color=color)
         bottoms += values
+
     ax.set_xlabel("Plant Location")
     ax.set_ylabel("Percentage of Feedstock (%)")
     ax.set_title("Feedstock Composition per Plant (100% Stacked)")
@@ -113,6 +122,7 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types):
     plt.tight_layout()
     plt.savefig(os.path.join(BASE_DIR, "feedstock_stacked_chart.png"))
     plt.show()
+
 
 def plot_geojson_map(in_flow_df, yields_df, fin_df, plant_coords, supply_coords):
     BASE_DIR = "C:/Master_Python/"
@@ -180,7 +190,7 @@ def plot_geojson_map(in_flow_df, yields_df, fin_df, plant_coords, supply_coords)
         (lon1, lat1) = supply_coords[s_node]
         (lon2, lat2) = plant_coords[p_loc]
         line = LineString([(lon1, lat1), (lon2, lat2)])
-        ax.plot(*line.xy, color="black", linewidth=1.5, alpha=0.8)
+        ax.plot(*line.xy, color="black", linewidth=0.5, alpha=0.8)
     
     alt_to_color = {
         "boiler": "red",
@@ -315,7 +325,23 @@ def plot_bavaria_lau_highlight_with_labels(gisco_ids):
 
 gisco_ids = ["DE_0967113"]
 # Generate plots
+color_map = {
+"cattle_man": "sienna",
+"cattle_slu": "chocolate",
+"horse_man": "rosybrown",
+"pig_slu": "lightpink",
+"pig_man": "pink",
+"cereal_str": "gold",
+"clover_alfalfa_grass": "seagreen",
+"perm_grass": "lawngreen",
+"maize_str": "olive",
+"beet_leaf": "purple",
+"rape_str": "teal",  # reuse or adjust if you run out of distinct colors
+"legume_str": "blue"  # reuse or adjust
+}
+
+
 #plot_methane_fraction(fin_df, system_methane_average)
-#plot_feedstock_stacked_chart(in_flow_df, feedstock_types)
+plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
 plot_geojson_map(in_flow_df, yields_df, fin_df, plant_coords, supply_coords)
-plot_bavaria_lau_highlight_with_labels(gisco_ids)
+#plot_bavaria_lau_highlight_with_labels(gisco_ids)
