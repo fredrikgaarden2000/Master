@@ -73,7 +73,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (5_000_000, 20_000_000)  #, 40_000_000, 75_000_000
+capacity_levels = (20_000_000, 15_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -137,7 +137,7 @@ for simplex in tri.simplices:
 # Compute pairwise distances for adjacent plants, filtering out > 75 km
 distances = []
 filtered_pairs = set()
-max_distance_threshold = 150
+max_distance_threshold = 500
 for i, j in adjacent_pairs:
     p1_id = plant_df.iloc[i]["Location"]
     p1_coords = (plant_df.iloc[i]["Latitude"], plant_df.iloc[i]["Longitude"])
@@ -154,7 +154,7 @@ for i, j in adjacent_pairs:
 
 # Convert distances to DataFrame
 dist_df = pd.DataFrame(distances)
-max_distance = dist_df["Distance_km"].max() * 2 if not dist_df.empty else 75
+max_distance = dist_df["Distance_km"].max() * 2 if not dist_df.empty else 150
 
 total_biogas = {}
 for j in plant_locs:
@@ -177,6 +177,11 @@ EEG_med_m3 = (150 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV)
 auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average
 alternative_configs = [
+    {"name": "boiler", "category": "boiler", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"heat": heat_price},
+     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff": 110000, "capex_exp": 1, "capex_type": "linear_MW",
+     "opex_coeff": 3000, "opex_exp": 1, "opex_type": "fixed_variable_MW"},
     {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
      "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
@@ -217,6 +222,11 @@ alternative_configs = [
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
+     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
+     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"}
 ]
 
 ###############################################################################
@@ -301,7 +311,7 @@ def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
 def build_model(config, fixed_capacity=None):
     m = gp.Model("ShadowPlant_Biogas_Model")
     m.setParam("Heuristics", 0.3)
-    m.setParam("NoRelHeurTime", 100)
+    m.setParam("NoRelHeurTime", 10)
     m.setParam("Presolve", 2)
     m.setParam("Cuts", 3)
 
@@ -434,7 +444,7 @@ def build_model(config, fixed_capacity=None):
                     variable_opex = 0.5 * M_NCH4[j] * alphaHV * chp_heat_eff
                     cost_val = fixed_opex + variable_opex
                 else:
-                    cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"])
+                    cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"]) if alt["category"] != "no_build" else 0
                 max_cost = max(max_cost, cost_val)
         M_cost[j] = max_cost * 1.1
 
@@ -443,7 +453,13 @@ def build_model(config, fixed_capacity=None):
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
             for c in caps:
-                cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"])
+                if alt["opex_type"] == "fixed_variable_MW":
+                    MW = c * system_methane_average * chp_heat_eff * alphaHV / (FLH_max * 1000)
+                    fixed_opex = alt["opex_coeff"] * MW
+                    variable_opex = 0.5 * N_CH4[j] * alphaHV * chp_heat_eff
+                    cost_val = fixed_opex + variable_opex
+                else:
+                    cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"]) if alt["category"] != "no_build" else 0
                 if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
                     cost_val += variable_upg_cost * N_CH4[j]
                 if not alt["EEG_flag"]:
@@ -451,6 +467,8 @@ def build_model(config, fixed_capacity=None):
                         rev_val = N_CH4[j] * (alphaHV / 1000) * (chp_elec_eff * alt["rev_price"]["spot"] + chp_heat_eff * heat_price)
                     elif alt["category"] == "Upgrading":
                         rev_val = N_CH4[j] * alt["rev_price"]["gas"] + (Omega[j] - N_CH4[j]) * alt["rev_price"]["co2"]
+                    else:
+                        rev_val = N_CH4[j] * (alphaHV / 1000) * chp_heat_eff * alt["rev_price"]["heat"] if alt["category"] == "boiler" else 0
                 else:
                     effective_EEG = alt["rev_price"]["EEG"] * avg_discount
                     if alt["category"] in ["EEG_CHP_small", "EEG_CHP_large"]:
@@ -492,7 +510,11 @@ def build_model(config, fixed_capacity=None):
         capex_expr = gp.LinExpr()
         for a, alt in enumerate(alternative_configs):
             for c in caps:
-                base_capex = c * alt["capex_coeff"] * (c ** alt["capex_exp"])
+                if alt["capex_type"] == "linear_MW":
+                    MW = c * system_methane_average * chp_heat_eff * alphaHV / (FLH_max * 1000)
+                    base_capex = alt["capex_coeff"] * MW
+                else:
+                    base_capex = c * alt["capex_coeff"] * (c ** alt["capex_exp"]) if alt["category"] != "no_build" else 0
                 extra_upg_cost = (alt["upg_cost_coeff"] * ((c / FLH_max) ** alt["upg_cost_exp"])) * (c / FLH_max) if alt["category"] in ["Upgrading", "FlexEEG_biomethane"] else 0
                 capex_expr += Y[j, a, c] * (base_capex + extra_upg_cost)
         Capex[j] = m.addVar(lb=0, name=f"Capex_{j}")

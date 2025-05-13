@@ -74,7 +74,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000, 40_000_000, 75_000_000)  #, 40_000_000, 75_000_000
+capacity_levels = (10_000_000, 20_000_000, 40_000_000, 75_000_000)  #, 40_000_000, 75_000_000
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -138,7 +138,7 @@ for simplex in tri.simplices:
 # Compute pairwise distances for adjacent plants, filtering out > 75 km
 distances = []
 filtered_pairs = set()
-max_distance_threshold = 150
+max_distance_threshold = 500
 for i, j in adjacent_pairs:
     p1_id = plant_df.iloc[i]["Location"]
     p1_coords = (plant_df.iloc[i]["Latitude"], plant_df.iloc[i]["Longitude"])
@@ -161,30 +161,29 @@ total_biogas = {}
 for j in plant_locs:
     total_biogas[j] = sum(avail_mass[(i, f)] * feed_yield[f]['biogas_m3_per_ton'] for (i, f) in avail_mass)
 
+def is_manure(ftype):
+    return 'man' in ftype.lower() or 'slu' in ftype.lower()
+
+def is_clover(ftype):
+    return 'clover' in ftype.lower()
+
+def is_maize_cereal(ftype):
+    return 'maize' in ftype.lower() or 'cereal' in ftype.lower()
+
 total_methane = sum(avail_mass[i, f] * feed_yield[f]['ch4_content'] for i, f in avail_mass)
 total_mass = sum(avail_mass[i, f] for i, f in avail_mass)
 system_methane_average = total_methane / total_mass
 auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average
 alternative_configs = [
-    {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+    {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
+     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
+     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": Cap_biogas, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_skip_chp_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
-     "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
 ]
@@ -205,9 +204,38 @@ M_NCH4 = {j: total_biogas[j] * 0.7 for j in plant_locs}
 ###############################################################################
 # 4) CONSTRAINT FUNCTIONS
 ###############################################################################
+def add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, capacity_levels):
+    for j in plant_locs:
+        delta1 = gp.quicksum(Y[j, a, c] for a, alt in enumerate(alternative_configs) if alt["category"].startswith("EEG_CHP") and alt.get("feed_constraint", 0) == 1 for c in capacity_levels)
+        delta2 = gp.quicksum(Y[j, a, c] for a, alt in enumerate(alternative_configs) if alt["category"].startswith("EEG_CHP") and alt.get("feed_constraint", 0) == 2 for c in capacity_levels)
+        aux_manure1 = m.addVar(lb=0, vtype=GRB.CONTINUOUS, name=f"aux_manure1_{j}")
+        aux_manure2 = m.addVar(lb=0, vtype=GRB.CONTINUOUS, name=f"aux_manure2_{j}")
+        m.addConstr(aux_manure1 <= 0.80 * total_feed[j], name=f"aux_manure1_upper_{j}")
+        m.addConstr(aux_manure1 <= M_j[j] * delta1, name=f"aux_manure1_bound_{j}")
+        m.addConstr(aux_manure1 >= 0.80 * total_feed[j] - M_j[j] * (1 - delta1), name=f"aux_manure1_lower_{j}")
+        m.addConstr(aux_manure2 <= 0.70 * total_feed[j], name=f"aux_manure2_upper_{j}")
+        m.addConstr(aux_manure2 <= M_j[j] * delta2, name=f"aux_manure2_bound_{j}")
+        m.addConstr(aux_manure2 >= 0.70 * total_feed[j] - M_j[j] * (1 - delta2), name=f"aux_manure2_lower_{j}")
+        m.addConstr(manure_feed[j] >= aux_manure1 + aux_manure2, name=f"EEG_manure_{j}")
+        aux_clover = m.addVar(lb=0, vtype=GRB.CONTINUOUS, name=f"aux_clover_{j}")
+        m.addConstr(aux_clover <= 0.10 * total_feed[j], name=f"aux_clover_upper_{j}")
+        m.addConstr(aux_clover <= M_j[j] * delta2, name=f"aux_clover_bound_{j}")
+        m.addConstr(aux_clover >= 0.10 * total_feed[j] - M_j[j] * (1 - delta2), name=f"aux_clover_lower_{j}")
+        m.addConstr(clover_feed[j] >= aux_clover, name=f"EEG_clover_{j}")
+
 def add_supply_constraints(m, avail_mass, x, plant_locs, max_distance, dist_ik):
     for (i, f), amt in avail_mass.items():
         m.addConstr(gp.quicksum(x[i, f, j] for j in plant_locs if dist_ik.get((i, j), float('inf')) <= max_distance) <= amt, name=f"Supply_{i}_{f}")
+
+def add_digestate_constraints(m, x, digestate_return, supply_nodes, plant_locs, avail_mass, feed_yield, dist_pl_iprime, max_distance, return_frac=0.99):
+    for i in supply_nodes:
+        contributed = gp.quicksum(x[i, f, j] * feed_yield[f]['digestate_frac'] for f in feedstock_types for j in plant_locs if (i, f) in avail_mass and dist_ik.get((i, j), float('inf')) <= max_distance)
+        returned = gp.quicksum(digestate_return[j, i] for j in plant_locs if dist_pl_iprime.get((j, i), float('inf')) <= max_distance)
+        m.addConstr(returned >= return_frac * contributed, name=f"Digestate_{i}")
+    for j in plant_locs:
+        total_prod = gp.quicksum(x[i, f, j] * feed_yield[f]['digestate_frac'] for i, f in avail_mass if dist_ik.get((i, j), float('inf')) <= max_distance)
+        outflow = gp.quicksum(digestate_return[j, i] for i in supply_nodes if dist_pl_iprime.get((j, i), float('inf')) <= max_distance)
+        m.addConstr(outflow <= total_prod, name=f"DigestateOut_{j}")
 
 def add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, cn_min=20.0, cn_max=30.0):
     for j in plant_locs:
@@ -268,7 +296,18 @@ def build_model(config, fixed_capacity=None):
                 for j in plant_locs:
                     if dist_ik.get((i, j), float('inf')) > max_distance:
                         m.addConstr(x[i, f, j] == 0, name=f"Max_Distance_x_{i}_{f}_{j}")
-
+    
+    digestate_return = m.addVars(
+        plant_locs, supply_nodes,
+        lb=0,
+        ub={(j, i): sum(avail_mass.get((iP, f), 0) * feed_yield[f]['digestate_frac'] for iP, f in avail_mass if iP == i and dist_ik.get((iP, j), float('inf')) <= max_distance) for j in plant_locs for i in supply_nodes},
+        vtype=GRB.CONTINUOUS,
+        name="digestate_return"
+    )
+    for j in plant_locs:
+        for i in supply_nodes:
+            if dist_pl_iprime.get((j, i), float('inf')) > max_distance:
+                m.addConstr(digestate_return[j, i] == 0, name=f"Max_Distance_digestate_{j}_{i}")
     Y = {(j, a, c): m.addVar(vtype=GRB.BINARY, name=f"Y_{j}_{a}_{c}") for j in plant_locs for a in range(len(alternative_configs)) for c in caps}
 
     m_up = m.addVars(plant_locs, feedstock_types, lb=0, vtype=GRB.CONTINUOUS, name="m_up")
@@ -307,6 +346,9 @@ def build_model(config, fixed_capacity=None):
         m.addConstr(Omega[j] == gp.quicksum(x[i, f, j] * feed_yield[f]['biogas_m3_per_ton'] for i, f in avail_mass if dist_ik.get((i, j), float('inf')) <= max_distance), name=f"Omega_Feed_{j}")
         m.addConstr(N_CH4[j] == gp.quicksum(x[i, f, j] * feed_yield[f]['biogas_m3_per_ton'] * feed_yield[f]['ch4_content'] for i, f in avail_mass if dist_ik.get((i, j), float('inf')) <= max_distance), name=f"N_CH4_Feed_{j}")
 
+    total_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass if dist_ik.get((i, j), float('inf')) <= max_distance) for j in plant_locs}
+    manure_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass if is_manure(f) and dist_ik.get((i, j), float('inf')) <= max_distance) for j in plant_locs}
+    clover_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass if is_clover(f) and dist_ik.get((i, j), float('inf')) <= max_distance) for j in plant_locs}
 
     # Enforce FLH_min_limit for FlexEEG alternatives
     for j in plant_locs:
@@ -316,7 +358,7 @@ def build_model(config, fixed_capacity=None):
                     if c > threshold_m3:
                         m.addConstr(Omega[j] >= (FLH_min_limit / 8760.0) * c * Y[j, a, c], name=f"FLH_min_limit_{j}_{a}_{c}")
 
-
+    add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs, max_distance, dist_ik)
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
@@ -356,7 +398,7 @@ def build_model(config, fixed_capacity=None):
                     cost_val = fixed_opex + variable_opex
                 else:
                     cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"])
-                max_cost = max(max_cost, cost_val)
+                max_cost = max(capacity_levels)
         M_cost[j] = max_cost * 1.1
 
     Rev_alt = {}
@@ -365,36 +407,31 @@ def build_model(config, fixed_capacity=None):
         for a, alt in enumerate(alternative_configs):
             for c in caps:
                 cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"])
-                if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
+                if alt["category"] == "Upgrading":
                     cost_val += variable_upg_cost * N_CH4[j]
-                if not alt["EEG_flag"]:
-                    if alt["category"] == "CHP_nonEEG":
-                        rev_val = N_CH4[j] * (alphaHV / 1000) * (chp_elec_eff * alt["rev_price"]["spot"] + chp_heat_eff * heat_price)
-                    elif alt["category"] == "Upgrading":
-                        rev_val = N_CH4[j] * alt["rev_price"]["gas"] + (Omega[j] - N_CH4[j]) * alt["rev_price"]["co2"]
-                else:
+                    rev_val = N_CH4[j] * alt["rev_price"]["gas"] + (Omega[j] - N_CH4[j]) * alt["rev_price"]["co2"]
+                elif alt["category"] == "FlexEEG_biogas":
                     effective_EEG = alt["rev_price"]["EEG"] * avg_discount
-                    if alt["category"] in ["EEG_CHP_small", "EEG_CHP_large"]:
-                        rev_val = N_CH4[j] * (alphaHV / 1000) * (chp_elec_eff * effective_EEG + chp_heat_eff * heat_price)
-                    else:
-                        cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane
-                        E_actual_var = m.addVar(lb=0, name=f"E_actual_{j}_{a}_{c}")
-                        m.addConstr(
-                            E_actual_var == N_CH4[j] * (chp_elec_eff * alphaHV / 1000.0),
-                            name=f"E_actual_constr_{j}_{a}_{c}"
-                        )
-                        U_elec = c * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
-                        cap_production_elec = cap_fraction * U_elec
-                        m.addConstr(
-                            E_actual_var >= cap_production_elec,
-                            name=f"MinProd_{j}_{a}_{c}"
-                        )
-                        EEG_rev = cap_production_elec * effective_EEG
-                        spot_rev = (E_actual_var - cap_production_elec) * electricity_spot_price
-                        heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
-                        rev_val = EEG_rev + spot_rev + heat_rev + bonus_dict[j, a, c]
+                    cap_fraction = Cap_biogas
+                    E_actual_var = m.addVar(lb=0, name=f"E_actual_{j}_{a}_{c}")
+                    m.addConstr(
+                        E_actual_var == N_CH4[j] * (chp_elec_eff * alphaHV / 1000.0),
+                        name=f"E_actual_constr_{j}_{a}_{c}"
+                    )
+                    U_elec = c * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
+                    cap_production_elec = cap_fraction * U_elec
+                    m.addConstr(
+                        E_actual_var >= cap_production_elec,
+                        name=f"MinProd_{j}_{a}_{c}"
+                    )
+                    EEG_rev = cap_production_elec * effective_EEG
+                    spot_rev = (E_actual_var - cap_production_elec) * electricity_spot_price
+                    heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
+                    rev_val = EEG_rev + spot_rev + heat_rev + bonus_dict[j, a, c]
+                # No else needed, or use else: raise ValueError for unexpected categories
                 Rev_alt[j, a, c] = rev_val
                 Cost_alt[j, a, c] = cost_val
+            
                 m.addConstr(Rev_alt_selected[j, a, c] <= rev_val, name=f"Rev_alt_sel_upper1_{j}_{a}_{c}")
                 m.addConstr(Rev_alt_selected[j, a, c] <= M_rev[j] * Y[j, a, c], name=f"Rev_alt_sel_upper2_{j}_{a}_{c}")
                 m.addConstr(Rev_alt_selected[j, a, c] >= rev_val - M_rev[j] * (1 - Y[j, a, c]), name=f"Rev_alt_sel_lower_{j}_{a}_{c}")
@@ -414,7 +451,7 @@ def build_model(config, fixed_capacity=None):
         for a, alt in enumerate(alternative_configs):
             for c in caps:
                 base_capex = c * alt["capex_coeff"] * (c ** alt["capex_exp"])
-                extra_upg_cost = (alt["upg_cost_coeff"] * ((c / FLH_max) ** alt["upg_cost_exp"])) * (c / FLH_max) if alt["category"] in ["Upgrading", "FlexEEG_biomethane"] else 0
+                extra_upg_cost = (alt["upg_cost_coeff"] * ((c / FLH_max) ** alt["upg_cost_exp"])) * (c / FLH_max) if alt["category"] == "Upgrading" else 0
                 capex_expr += Y[j, a, c] * (base_capex + extra_upg_cost)
         Capex[j] = m.addVar(lb=0, name=f"Capex_{j}")
         m.addConstr(Capex[j] == capex_expr, name=f"Capex_link_{j}")
@@ -457,15 +494,19 @@ def build_model(config, fixed_capacity=None):
         NPV_expr += discount_factor * (TotalRev + GHGRevenue - TotalCost)
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected
+    return m, Omega, N_CH4, x,digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected
 
 ###############################################################################
 # 6) RUN MODEL
 ###############################################################################
 config = {
     "name": "Baseline",
+    "eeg_enabled": True,
     "supply_enabled": True,
+    "digestate_enabled": False,
+    "digestate_return_frac": 0.99,
     "cn_enabled": True,
+    "maize_enabled": False,
     "ghg_enabled": True,
     "auction_enabled": True,
     "flh_enabled": True
@@ -494,9 +535,9 @@ def run_single_capacity(capacity):
 
     # Run the model if no solution is found
     print(f"Running model for capacity {capacity:,} m³/year...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config, fixed_capacity=capacity)
+    m, Omega, N_CH4, x, digestate_return, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config, fixed_capacity=capacity)
     m.optimize()
-    
+
     if m.status == GRB.OPTIMAL:
         solution = {
             'capacity': capacity,
@@ -504,7 +545,8 @@ def run_single_capacity(capacity):
             'Y': {(j, a, capacity): Y[j, a, capacity].X for j in plant_locs for a in range(len(alternative_configs))},
             'Omega': {j: Omega[j].X for j in plant_locs},
             'N_CH4': {j: N_CH4[j].X for j in plant_locs},
-            'x': {(i, f, j): x[i, f, j].X for i in supply_nodes for f in feedstock_types for j in plant_locs}
+            'x': {(i, f, j): x[i, f, j].X for i in supply_nodes for f in feedstock_types for j in plant_locs},
+            'digestate_return': {(j, i): digestate_return[j, i].X for j in plant_locs for i in supply_nodes}
         }
         print(f"Capacity {capacity:,}: NPV = {m.objVal:,.2f} €, Solve time = {m.Runtime:.2f} s, MIP Gap = {m.MIPGap:.4f}")
         with open(f"{BASE_DIR}/Solutions/{len(plant_locs)}/solution_{capacity}.pkl", 'wb') as f:
@@ -545,7 +587,7 @@ if __name__ == '__main__':
     
     # Run full model with warm start
     print("\nRunning full model with warm start...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config)
+    m, Omega, N_CH4, x, digestate_return,Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config)
     m.update()
     
     # Apply warm start
@@ -563,7 +605,9 @@ if __name__ == '__main__':
         for f in feedstock_types:
             for j in plant_locs:
                 x[i, f, j].Start = best_solution['x'].get((i, f, j), 0)
-
+    for j in plant_locs:
+        for i in supply_nodes:
+            digestate_return[j, i].Start = best_solution['digestate_return'].get((j, i), 0)
     
     print("Warm start applied. Optimizing full model...")
     opt_start_time = time.time()
@@ -593,7 +637,7 @@ if __name__ == '__main__':
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
     in_flow_df.to_csv(f"{BASE_DIR}/Solutions/{len(plant_locs)}/Output_in_flow_warm_start.csv", index=False)
-    '''
+    
     outflow_rows = []
     for j in plant_locs:
         for i in supply_nodes:
@@ -606,7 +650,7 @@ if __name__ == '__main__':
                 })
     out_flow_df = pd.DataFrame(outflow_rows)
     out_flow_df.to_csv(f"{BASE_DIR}/Solutions/{len(plant_locs)}/Output_out_flow_warm_start.csv", index=False)
-    '''
+    
     merged_rows = []
     for j in plant_locs:
         for a in range(len(alternative_configs)):
