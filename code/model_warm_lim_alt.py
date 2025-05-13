@@ -20,7 +20,7 @@ script_start_time = time.time()
 ###############################################################################
 # 1) LOAD DATA
 ###############################################################################
-BASE_DIR = "C:/Clone/Master/"
+BASE_DIR = "/home/fredrgaa/Master"
 feedstock_df = pd.read_csv(f"{BASE_DIR}processed_biomass_data.csv")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
