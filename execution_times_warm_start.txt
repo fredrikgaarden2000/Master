@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+Total script execution time: 16312.86 seconds (271.88 minutes)
+Optimization time: 13541.62 seconds (225.69 minutes)
+=======
 Total script execution time: 292.04 seconds (4.87 minutes)
 Optimization time: 111.33 seconds (1.86 minutes)
 Total script execution time: 352.57 seconds (5.88 minutes)
@@ -26,3 +30,4 @@ Total script execution time: 2462.15 seconds (41.04 minutes)
 Optimization time: 2356.25 seconds (39.27 minutes)
 Total script execution time: 369.85 seconds (6.16 minutes)
 Optimization time: 264.01 seconds (4.40 minutes)
+>>>>>>> ef64783cd3f1929287836f7db4dff8b9ed5b0f88
