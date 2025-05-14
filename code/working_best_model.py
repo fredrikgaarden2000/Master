@@ -323,9 +323,9 @@ def build_model(config):
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
             for c in caps:
-                cost_val = alt["opex_coeff"] * ((c / 1e6) ** alt["opex_exp"])
+                cost_val = (alt["opex_coeff"] * ((c) ** alt["opex_exp"])) / 1e6
                 if alt["category"] == "Upgrading":
-                    cost_val += variable_upg_cost * N_CH4[j]
+                    cost_val += variable_upg_cost * N_CH4[j] / 1e6
                     rev_val = N_CH4[j] * alt["rev_price"]["gas"] + (Omega[j] - N_CH4[j]) * alt["rev_price"]["co2"]
                 elif alt["category"] == "FlexEEG_biogas":
                     effective_EEG = alt["rev_price"]["EEG"] * avg_discount
@@ -376,9 +376,9 @@ def build_model(config):
             for c in caps:
                 if c == 0:
                     continue
-                base_capex = (c / 1e6) * alt["capex_coeff"] * ((c / 1e6) ** alt["capex_exp"])
+                base_capex = (c  * alt["capex_coeff"] * (c ** alt["capex_exp"])) / 1e6 if alt["category"] != "no_build" else 0
                 extra_upg_cost = (
-                    alt["upg_cost_coeff"] * ((c / 1e6 / FLH_max) ** alt["upg_cost_exp"]) * (c / 1e6 / FLH_max)
+                    alt["upg_cost_coeff"] * ((c / FLH_max) ** alt["upg_cost_exp"]) * (c / FLH_max) / 1e6
                     if alt["category"] == "Upgrading"
                     else 0
                 )
@@ -386,7 +386,9 @@ def build_model(config):
         Capex[j] = m.addVar(lb=0, name=f"Capex_{j}")
         m.addConstr(Capex[j] == capex_expr, name=f"Capex_link_{j}")
 
+
     FeedstockCost = gp.LinExpr()
+    DigestateFlows = {}  # Optional: for tracking digestate flows
     for i, f in avail_mass:
         for j in plant_locs:
             flow = x[i, f, j]
@@ -395,6 +397,13 @@ def build_model(config):
             if dist_val > 0:
                 FeedstockCost.add(flow * (feed_yield[f]['loading'] / feed_yield[f]['capacity_load'] +
                                         dist_val * feed_yield[f]['cost_ton_km']))
+                
+                # Digestate flow = input flow * digestate yield
+                digestate_flow = flow * feed_yield[f]['digestate_frac']
+                DigestateFlows[(i, f, j)] = digestate_flow  # Optional storage
+
+                FeedstockCost.add(digestate_flow * (loading_cost_dig / capacity_dig +
+                                                        dist_val * cost_ton_km_dig))
 
     TotalRev = gp.quicksum(Rev_loc[j] for j in plant_locs)
     TotalCost = FeedstockCost + gp.quicksum(Cost_loc[j] for j in plant_locs)
