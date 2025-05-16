@@ -9,8 +9,19 @@ import os
 script_start_time = time.time()
 
 # 1) LOAD DATA
-#BASE_DIR = "C:/Clone/Master/"
-BASE_DIR = "/home/fredrgaa/Master/"
+try:
+    BASE_DIR = "/home/fredrgaa/Master/"
+    if not os.path.exists(BASE_DIR):
+        raise FileNotFoundError("Linux path does not exist")
+except FileNotFoundError:
+    BASE_DIR = "C:/Clone/Master/"
+    if not os.path.exists(BASE_DIR):
+        raise FileNotFoundError("Neither Linux nor Windows path exists")
+
+# Use BASE_DIR in your script
+output_dir = os.path.join(BASE_DIR, "results")
+os.makedirs(output_dir, exist_ok=True)
+
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
@@ -231,7 +242,15 @@ def build_model(config):
 
     Y = {(j, a, c): m.addVar(lb=0, ub=1, vtype=GRB.CONTINUOUS, name=f"Y_{j}_{a}_{c}")
          for j in plant_locs for a in range(len(alternative_configs)) for c in caps}
-
+    upgrading_idx = next(a for a, alt in enumerate(alternative_configs) if alt["name"] == "Upgrading_tech1")
+    target_capacity = 80_000_000
+    for j in plant_locs:
+        for a in range(len(alternative_configs)):
+            for c in capacity_levels:
+                if a == upgrading_idx and c == target_capacity:
+                    Y[j, a, c].Start = 1.0
+                else:
+                    Y[j, a, c].Start = 0.0
 # Add auxiliary binary variable to indicate active plant
     is_active = m.addVars(plant_locs, vtype=GRB.BINARY, name="is_active")
 
@@ -329,7 +348,7 @@ def build_model(config):
                         rev = N_CH4_max * (alphaHV / 1000) * chp_heat_eff * heat_price 
                     elif alt["category"] == "Upgrading":
                         CO2_max = N_CH4_max  # crude estimate for CO2 share
-                        rev = (N_CH4_max * gas_price_m3 + CO2_max * co2_price) 
+                        rev = (N_CH4_max * gas_price_m3 + CO2_max * co2_price)
                     else:
                         rev = 0
                 else:
@@ -337,7 +356,7 @@ def build_model(config):
                     if alt["category"] in ["EEG_CHP_small", "EEG_CHP_large"]:
                         rev = N_CH4_max * (alphaHV / 1000) * (chp_elec_eff * effective_EEG + chp_heat_eff * heat_price)
                     elif alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
-                        cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane
+                        cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane*0.7
                         E_actual = N_CH4_max * (chp_elec_eff * alphaHV / 1000.0)
                         U_elec = (c / 1e6) * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
                         cap_prod = cap_fraction * U_elec
@@ -350,7 +369,7 @@ def build_model(config):
                         rev = 0
 
                 # Add buffer
-                M_rev[key] = rev * 5
+                M_rev[key] = rev 
 
                 # === Cost estimation ===
                 if alt["opex_type"] == "fixed_variable_MW":
@@ -362,9 +381,9 @@ def build_model(config):
                     cost = (alt["opex_coeff"] * c ** alt["opex_exp"]) / 1e6
 
                 if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
-                    cost += variable_upg_cost * N_CH4_max / 1e6  # symbolic
+                    cost += 1 * variable_upg_cost * N_CH4_max  # symbolic
 
-                M_cost[key] = cost * 5
+                M_cost[key] = cost * 1.1
                 
                 # Print M_rev and M_cost for inspection
                 print(f"Plant {j}, Alternative {alt['name']}, Capacity {c:,}:")
@@ -611,6 +630,8 @@ def build_model(config):
         NPV_expr += discount_factor * (TotalRev + GHGRevenue - TotalCost)
     penalty = 1e-3 * gp.quicksum(Y[j, a, c] for j in plant_locs for a in range(len(alternative_configs)) for c in caps)
     NPV_expr -= penalty
+    #m.addConstr(NPV_expr <= 3000, name = "upper bound")
+    
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
     return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex,Z_rev, bonus_dict, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost 

@@ -362,7 +362,7 @@ def build_model(config):
                     cost = (alt["opex_coeff"] * c ** alt["opex_exp"]) / 1e6
 
                 if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
-                    cost += variable_upg_cost * N_CH4_max / 1e6  # symbolic
+                    cost += variable_upg_cost * N_CH4_max  # symbolic
 
                 M_cost[key] = cost * 4
                 
