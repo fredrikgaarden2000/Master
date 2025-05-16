@@ -9,8 +9,8 @@ import os
 script_start_time = time.time()
 
 # 1) LOAD DATA
-BASE_DIR = "C:/Clone/Master/"
-#BASE_DIR = "/home/fredrgaa/Master/"
+#BASE_DIR = "C:/Clone/Master/"
+BASE_DIR = "/home/fredrgaa/Master/"
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
