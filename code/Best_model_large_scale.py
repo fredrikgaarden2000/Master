@@ -132,18 +132,8 @@ auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average / 1e6  #
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average / 1e6  # Scale
 
 alternative_configs = [
-    {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": Cap_biogas, "max_cap_m3_year": None,
      "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_skip_chp_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
@@ -151,7 +141,17 @@ alternative_configs = [
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"}
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
+     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
+     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
+     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
+     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
+     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
 ]
 
 premium = {f: max(0, (alpha_GHG_comp - feed_yield[f]['GHG_intensity'])) * (alphaHV * 3.6) * GHG_certificate_price / 1e6 for f in feedstock_types}
@@ -818,6 +818,14 @@ if __name__ == '__main__':
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
     fin_df.to_csv(f"{BASE_DIR}/Solutions/aggregated/Output_financials.csv", index=False)
+
+    warmstart_path = os.path.join(output_dir, "warmstart.sol")
+    m.write(warmstart_path)
+    print(f"Warm-start solution written to: {warmstart_path}")
+
+    # 2) (Optional) Also store Python‐side Start attributes, in case you rebuild the model in memory
+    for v in m.getVars():
+        v.start = v.X
 
     script_end_time = time.time()
     total_script_time = script_end_time - script_start_time

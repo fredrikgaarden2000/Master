@@ -6,7 +6,7 @@ import geopandas as gpd
 from shapely.geometry import Point
 
 # Parameters
-N_CLUSTERS = 750
+N_CLUSTERS = 550
 BASE_DIR = "C:/Clone/Master/"
 OUTPUT_CSV = "aggregated_bavaria_supply_nodes.csv"
 PLOT_OUTPUT = "bavaria_clustered_centroids.png"

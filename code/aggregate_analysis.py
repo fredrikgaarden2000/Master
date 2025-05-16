@@ -34,7 +34,7 @@ DISTANCE_PLOT = f"{BASE_DIR}distance_distribution.png"
 CLUSTER_MAP_PLOT = f"{BASE_DIR}cluster_mapping_5_clusters.png"
 SUBSET_PLOT = f"{BASE_DIR}subset_centroid_placement.png"
 PLOT_OUTPUT = f"{BASE_DIR}bavaria_feedstock_plants.png"
-NUM_PLANT_CLUSTERS = 15  # Corrected to match expected distance counts
+NUM_PLANT_CLUSTERS = 20  # Corrected to match expected distance counts
 NUM_FEEDSTOCK_CLUSTERS = 750
 SAMPLE_SIZE = 10000
 DENSITY_THRESHOLD = 500
@@ -232,7 +232,7 @@ def main():
         print("Error: No valid gas pipelines in low-density areas")
         return
     projected_gas_lines = gas_lines_low_density.geometry
-    
+    '''
     # Generate plant locations
     try:
         centroids = generate_cluster_centroids(projected_polygon, projected_gas_lines, NUM_PLANT_CLUSTERS, SAMPLE_SIZE)
@@ -240,7 +240,7 @@ def main():
     except ValueError as e:
         print(f"Error generating plant centroids: {e}")
         return
-    
+    '''
     # Load original feedstock data (before clustering)
     try:
         original_df = pd.read_csv(ORIGINAL_FEEDSTOCK_CSV)
