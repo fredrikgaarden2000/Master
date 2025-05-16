@@ -425,13 +425,13 @@ def build_model(config, fixed_capacity=None):
 
     M_rev = {}
     for j in plant_locs:
-        max_elec_price = max(200, electricity_spot_price)
+        max_elec_price = max(100, electricity_spot_price)
         max_heat_price = heat_price
         max_bonus = max(100 * (c * system_methane_average * chp_elec_eff * alphaHV) / FLH_max 
                         for c in caps if c > threshold_m3)
         M_rev[j] = (M_NCH4[j] * (chp_elec_eff * alphaHV / 1000.0) * max_elec_price + 
                     M_NCH4[j] * (chp_heat_eff * alphaHV / 1000.0) * max_heat_price + 
-                    max_bonus) * 1.1
+                    max_bonus) 
 
     M_cost = {}
     for j in plant_locs:
@@ -446,7 +446,7 @@ def build_model(config, fixed_capacity=None):
                 else:
                     cost_val = alt["opex_coeff"] * (c ** alt["opex_exp"]) if alt["category"] != "no_build" else 0
                 max_cost = max(max_cost, cost_val)
-        M_cost[j] = max_cost * 1.1
+        M_cost[j] = max_cost 
 
     Rev_alt = {}
     Cost_alt = {}

@@ -8,12 +8,13 @@ from collections import defaultdict
 import pickle
 import os
 
-BASE_DIR = "C:/Clone/Master/"
+BASE_DIR = "C:/Clone/Master"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "Solutions/10/Output_in_flow_warm_start.csv"),
-    "out_flow": os.path.join(BASE_DIR, "Solutions/10/Output_out_flow_warm_start.csv"),
-    "financials": os.path.join(BASE_DIR, "Solutions/10/Output_financials_warm_start.csv"),
-    "feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
+    "in_flow": os.path.join(BASE_DIR, "Solutions/Debug/Output_in_flow.csv"),
+    "out_flow": os.path.join(BASE_DIR, "Solutions/Debug/Output_out_flow.csv"),
+    "financials": os.path.join(BASE_DIR, "Solutions/Debug/Output_financials.csv"),
+    #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
+    "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),

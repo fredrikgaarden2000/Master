@@ -50,7 +50,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (10_000_000, 20_000_000, 40_000_000, 75_000_000)
+capacity_levels = (20_000_000, 40_000_000, 75_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -118,52 +118,8 @@ EEG_small_m3 = (75 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV
 EEG_med_m3 = (150 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV)
 auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average / 1e6  # Scale
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average / 1e6  # Scale
+
 alternative_configs = [
-    {"name": "no_build", "category": "no_build", "prod_cap_factor": 0, "max_cap_m3_year": 0,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 0, "spot": 0, "heat": 0},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 0, "capex_exp": 1, "capex_type": "standard",
-     "opex_coeff": 0, "opex_exp": 1, "opex_type": "standard"},
-    {"name": "boiler", "category": "boiler", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"heat": heat_price},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff": 110000, "capex_exp": 1, "capex_type": "linear_MW",
-     "opex_coeff": 3000, "opex_exp": 1, "opex_type": "fixed_variable_MW"},
-    {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "EEG_CHP_small2", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "EEG_CHP_large1", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "EEG_CHP_large2", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": Cap_biogas, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_skip_chp_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
@@ -317,8 +273,8 @@ def build_model(config):
                     if c / 1e6 > threshold_m3:
                         m.addConstr(Omega[j] >= (FLH_min_limit / 8760.0) * (c / 1e6) * Y[j, a, c], name=f"FLH_min_limit_{j}_{a}_{c}")
 
-    if config["eeg_enabled"] and any(alt["category"].startswith("EEG_CHP") for alt in alternative_configs):
-        add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
+    
+    add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs)
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
@@ -338,13 +294,13 @@ def build_model(config):
 
     M_rev = {}
     for j in plant_locs:
-        max_elec_price = max(200, electricity_spot_price)
+        max_elec_price = max(100, electricity_spot_price)
         max_heat_price = heat_price
-        max_bonus = 2_500_000
+        max_bonus = 2.5
         M_rev[j] = (M_NCH4[j] * (chp_elec_eff * alphaHV / 1000.0) * max_elec_price + 
                     M_NCH4[j] * (chp_heat_eff * alphaHV / 1000.0) * max_heat_price + 
-                    max_bonus) * 1.1
-
+                    max_bonus) 
+    
     M_cost = {}
     for j in plant_locs:
         max_cost = 0
@@ -356,10 +312,89 @@ def build_model(config):
                     variable_opex = 0.5 * M_NCH4[j] * alphaHV * chp_heat_eff
                     cost_val = fixed_opex + variable_opex
                 else:
-                    cost_val = (alt["opex_coeff"] * ((c ) ** alt["opex_exp"]))/1e6
+                    cost_val = alt["opex_coeff"] * ((c / 1e6) ** alt["opex_exp"])
                 max_cost = max(max_cost, cost_val)
-        M_cost[j] = max_cost * 1.1
+        M_cost[j] = max_cost 
+    
+    Rev_alt = {}
+    Cost_alt = {}
+    Z_rev = m.addVars(plant_locs, range(len(alternative_configs)), caps, lb=0, vtype=GRB.CONTINUOUS, name="Z_rev")
+    Z_cost = m.addVars(plant_locs, range(len(alternative_configs)), caps, lb=0, vtype=GRB.CONTINUOUS, name="Z_cost")
 
+    for j in plant_locs:
+        for a, alt in enumerate(alternative_configs):
+            for c in caps:
+                # ---- Cost Expression ----
+                if alt["opex_type"] == "fixed_variable_MW":
+                    MW = c * system_methane_average * chp_heat_eff * alphaHV / (FLH_max * 1000)
+                    fixed_opex = alt["opex_coeff"] * MW / 1e6
+                    variable_opex = 0.5 * N_CH4[j] * alphaHV * chp_heat_eff / 1000 # symbolic
+                    cost_val = fixed_opex + variable_opex
+                else:
+                    cost_val = (alt["opex_coeff"] * c ** alt["opex_exp"]) / 1e6
+
+                if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
+                    cost_val += variable_upg_cost * N_CH4[j]  # symbolic
+
+                # ---- Revenue Expression ----
+                rev_val = gp.LinExpr(0)
+
+                if not alt["EEG_flag"]:
+                    if alt["category"] == "CHP_nonEEG":
+                        rev_val = N_CH4[j] * (alphaHV / 1000) * (chp_elec_eff * alt["rev_price"]["spot"] + chp_heat_eff * heat_price)
+                    elif alt["category"] == "Upgrading":
+                        rev_val = N_CH4[j] * alt["rev_price"]["gas"] + (Omega[j] - N_CH4[j]) * alt["rev_price"]["co2"]
+                    elif alt["category"] == "boiler":
+                        rev_val = N_CH4[j] * (alphaHV / 1000) * chp_heat_eff * heat_price
+                    elif alt["category"] == "None":
+                        cost_val = rev_val = 0  # explicitly assign
+                    else:
+                        raise ValueError(f"Unexpected alternative category (non-EEG): {alt['category']}")
+                else:
+                    effective_EEG = alt["rev_price"]["EEG"] * avg_discount
+                    if alt["category"] in ["EEG_CHP_small", "EEG_CHP_large"]:
+                        rev_val = N_CH4[j] * (alphaHV / 1000) * (chp_elec_eff * effective_EEG + chp_heat_eff * heat_price)
+                    elif alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
+                        cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane
+                        E_actual_var = m.addVar(lb=0, name=f"E_actual_{j}_{a}_{c}")
+                        m.addConstr(E_actual_var == N_CH4[j] * (chp_elec_eff * alphaHV / 1000.0), name=f"E_actual_constr_{j}_{a}_{c}")
+
+                        U_elec = (c / 1e6) * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
+                        cap_production_elec = cap_fraction * U_elec
+                        m.addConstr(E_actual_var >= cap_production_elec, name=f"MinProd_{j}_{a}_{c}")
+
+                        EEG_rev = cap_production_elec * effective_EEG
+                        spot_rev = (E_actual_var - cap_production_elec) * electricity_spot_price
+                        heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
+
+                        rev_val = EEG_rev + spot_rev + heat_rev + bonus_dict[j, a, c]
+                    elif alt["category"] == "None":
+                        cost_val = rev_val = 0
+                    else:
+                        raise ValueError(f"Unexpected EEG alternative category: {alt['category']}")
+
+                # Store expressions
+                Rev_alt[j, a, c] = rev_val
+                Cost_alt[j, a, c] = cost_val
+
+                # ---- Indicator-Linearized Constraints ----
+                m.addConstr(Z_rev[j, a, c] <= rev_val, name=f"Z_rev_upper1_{j}_{a}_{c}")
+                m.addConstr(Z_rev[j, a, c] <= M_rev[j] * Y[j, a, c], name=f"Z_rev_upper2_{j}_{a}_{c}")
+                m.addConstr(Z_rev[j, a, c] >= rev_val - M_rev[j] * (1 - Y[j, a, c]), name=f"Z_rev_lower_{j}_{a}_{c}")
+                m.addConstr(Z_rev[j, a, c] >= 0, name=f"Z_rev_nonneg_{j}_{a}_{c}")
+                m.addConstr(Rev_alt_selected[j, a, c] == Z_rev[j, a, c], name=f"Rev_alt_sel_{j}_{a}_{c}")
+
+                m.addConstr(Z_cost[j, a, c] <= cost_val, name=f"Z_cost_upper1_{j}_{a}_{c}")
+                m.addConstr(Z_cost[j, a, c] <= M_cost[j] * Y[j, a, c], name=f"Z_cost_upper2_{j}_{a}_{c}")
+                m.addConstr(Z_cost[j, a, c] >= cost_val -M_cost[j] * (1 - Y[j, a, c]), name=f"Z_cost_lower_{j}_{a}_{c}")
+                m.addConstr(Z_cost[j, a, c] >= 0, name=f"Z_cost_nonneg_{j}_{a}_{c}")
+                m.addConstr(Cost_alt_selected[j, a, c] == Z_cost[j, a, c], name=f"Cost_alt_sel_{j}_{a}_{c}")
+
+    for j in plant_locs:
+        m.addConstr(Rev_loc[j] == gp.quicksum(Rev_alt_selected[j, a, c] for a in range(len(alternative_configs)) for c in caps), name=f"Rev_link_{j}")
+        m.addConstr(Cost_loc[j] == gp.quicksum(Cost_alt_selected[j, a, c] for a in range(len(alternative_configs)) for c in caps), name=f"Cost_link_{j}")
+
+    '''
     Rev_alt = {}
     Cost_alt = {}
     Z_rev = m.addVars(plant_locs, range(len(alternative_configs)), caps, lb=0, vtype=GRB.CONTINUOUS, name="Z_rev")
@@ -431,11 +466,7 @@ def build_model(config):
                     m.addConstr(Z_cost[j, a, c] >= cost_val - M_cost[j] * (1 - Y[j, a, c]), name=f"Z_cost_lower_{j}_{a}_{c}")
                     m.addConstr(Z_cost[j, a, c] >= 0, name=f"Z_cost_nonneg_{j}_{a}_{c}")
                     m.addConstr(Cost_alt_selected[j, a, c] == Z_cost[j, a, c], name=f"Cost_alt_sel_{j}_{a}_{c}")
-
-    for j in plant_locs:
-        m.addConstr(Rev_loc[j] == gp.quicksum(Rev_alt_selected[j, a, c] for a in range(len(alternative_configs)) for c in caps), name=f"Rev_link_{j}")
-        m.addConstr(Cost_loc[j] == gp.quicksum(Cost_alt_selected[j, a, c] for a in range(len(alternative_configs)) for c in caps), name=f"Cost_link_{j}")
-
+                    '''
     Capex = {}
     for j in plant_locs:
         capex_expr = gp.LinExpr()
@@ -450,7 +481,7 @@ def build_model(config):
                     base_capex = (c * (alt["capex_coeff"] * (c ** alt["capex_exp"])))/1e6 if alt["category"] != "no_build" else 0
                 extra_upg_cost = (
                     (alt["upg_cost_coeff"] * ((c / FLH_max) ** alt["upg_cost_exp"]) * (c / FLH_max))/1e6
-                    if alt["category"] == "Upgrading"
+                    if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]
                     else 0
                 )
                 capex_expr += Y[j, a, c] * (base_capex + extra_upg_cost)
@@ -458,26 +489,56 @@ def build_model(config):
         m.addConstr(Capex[j] == capex_expr, name=f"Capex_link_{j}")
 
     FeedstockCost = gp.LinExpr()
-    DigestateFlows = {}  # Optional: for tracking digestate flows
+    FeedstockCostPerPlant = {j: gp.LinExpr() for j in plant_locs}
+
+    # NEW: For detailed breakdown
+    BaseFeedstockCost = {j: gp.LinExpr() for j in plant_locs}
+    LoadingCost = {j: gp.LinExpr() for j in plant_locs}
+    TransportCost = {j: gp.LinExpr() for j in plant_locs}
+    DigestateCost = {j: gp.LinExpr() for j in plant_locs}
+
+    DigestateFlows = {}
+
     for i, f in avail_mass:
         for j in plant_locs:
             flow = x[i, f, j]
             dist_val = dist_ik.get((i, j), 0.0)
 
-            # Feedstock cost
-            FeedstockCost.add(flow * feed_yield[f]['price'])
-            if dist_val > 0:
-                FeedstockCost.add(flow * (feed_yield[f]['loading'] / feed_yield[f]['capacity_load'] +
-                                        dist_val * feed_yield[f]['cost_ton_km']))
+            # --- Base cost ---
+            base_cost = flow * feed_yield[f]['price']
+            FeedstockCost.add(base_cost)
+            FeedstockCostPerPlant[j].add(base_cost)
+            BaseFeedstockCost[j].add(base_cost)
 
-            # Digestate flow = input flow * digestate yield
+            # --- Loading + Transport cost ---
+            if dist_val > 0:
+                loading_cost = flow * 1e6 * (feed_yield[f]['loading'] / feed_yield[f]['capacity_load'])
+                transport_cost = flow * 1e6 * dist_val * feed_yield[f]['cost_ton_km']
+                transport_loading_total = (loading_cost + transport_cost) / 1e6
+
+                FeedstockCost.add(transport_loading_total)
+                FeedstockCostPerPlant[j].add(transport_loading_total)
+                LoadingCost[j].add(loading_cost / 1e6)
+                TransportCost[j].add(transport_cost / 1e6)
+
+            # --- Digestate ---
             digestate_flow = flow * feed_yield[f]['digestate_frac']
-            DigestateFlows[(i, f, j)] = digestate_flow  # Optional storage
+            DigestateFlows[(i, f, j)] = digestate_flow
 
-            # Digestate cost
             if dist_val > 0:
-                FeedstockCost.add(digestate_flow * (loading_cost_dig / capacity_dig +
-                                                    dist_val * cost_ton_km_dig))
+                dig_loading = digestate_flow * 1e6 * (loading_cost_dig / capacity_dig)
+                dig_transport = digestate_flow * 1e6 * dist_val * cost_ton_km_dig
+                dig_total = (dig_loading + dig_transport) / 1e6
+
+                FeedstockCost.add(dig_total)
+                FeedstockCostPerPlant[j].add(dig_total)
+                DigestateCost[j].add(dig_total)
+
+
+    FeedstockCostPlantVars = {j: m.addVar(lb=0, name=f"FeedCost_{j}") for j in plant_locs}
+    for j in plant_locs:
+        m.addConstr(FeedstockCostPlantVars[j] == FeedstockCostPerPlant[j], name=f"FeedCostConstr_{j}")
+
 
     TotalRev = gp.quicksum(Rev_loc[j] for j in plant_locs)
     TotalCost = FeedstockCost + gp.quicksum(Cost_loc[j] for j in plant_locs)
@@ -494,8 +555,7 @@ def build_model(config):
     NPV_expr -= penalty
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected
-
+    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex,Z_rev, bonus_dict, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost 
 # 6) RUN MODEL
 config = {
     "name": "Baseline",
@@ -512,22 +572,86 @@ config = {
 
 if __name__ == '__main__':
     print("Running full model...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, bonus_dict, Rev_alt_selected, Cost_alt_selected = build_model(config)
+    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex,Z_rev, bonus_dict, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant,BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost = build_model(config)
     m.update()
     print(f"  Quadratic constraints: {m.NumQConstrs}")
     print(f"  Quadratic objective terms (non-zeros): {m.NumQNZs}")
+
     opt_start_time = time.time()
     m.optimize()
     opt_end_time = time.time()
-    
-    if m.status == GRB.OPTIMAL:
 
+    if m.status == GRB.OPTIMAL:
         print(f"\nFull model: NPV = {m.objVal:,.2f} €, Solve time = {m.Runtime:.2f} s, MIP Gap = {m.MIPGap:.4f}")
         for j in plant_locs:
             if Omega[j].X > 1e-6:
                 print(f"Plant {j}: N_CH4 = {N_CH4[j].X * 1e6:,.0f}, Omega = {Omega[j].X * 1e6:,.0f}, CH4 Fraction = {N_CH4[j].X/Omega[j].X:.3f}")
+    elif m.status == GRB.INFEASIBLE:
+        print("Model is infeasible. Computing IIS...")
+        m.computeIIS()
+        m.write("model_infeasible.ilp")
+        print("IIS written to 'model_infeasible.ilp'")
     else:
-        print(f"Full model: No optimal solution found (status: {m.status}).")
+        print(f"Model status: {m.status}")
+
+    for j in plant_locs:
+        print(f"--- Plant {j} Feedstock Cost Breakdown ---")
+        print(f"  Base feedstock: €{BaseFeedstockCost[j].getValue():,.2f}")
+        print(f"  Loading:        €{LoadingCost[j].getValue():,.2f}")
+        print(f"  Transport:      €{TransportCost[j].getValue():,.2f}")
+        print(f"  Digestate:      €{DigestateCost[j].getValue():,.2f}")
+        print(f"  TOTAL:          €{FeedstockCostPerPlant[j].getValue():,.2f}")
+
+    print("\n--- Revenue Debug for EEG_CHP_large2 ---")
+
+    for j in plant_locs:
+        for a, alt in enumerate(alternative_configs):
+            if alt["name"] == "EEG_CHP_small1":
+                for c in capacity_levels:
+                    y_val = Y[j, a, c].X 
+                    if y_val > 1e-6:
+                        N_val = N_CH4[j].X *1e6
+                        omega_val = Omega[j].X *1e6
+                        effective_EEG = alt["rev_price"]["EEG"] * avg_discount
+                        ch4_energy = N_val * (alphaHV / 1000)
+                        electricity_revenue = ch4_energy * chp_elec_eff * effective_EEG
+                        heat_revenue = ch4_energy * chp_heat_eff * heat_price
+                        total_revenue = electricity_revenue + heat_revenue
+
+                        print(f"\nPlant {j} selected EEG_CHP_large2 with capacity {c}:")
+                        print(f"  Y = {y_val:.6f}")
+                        print(f"  N_CH4 = {N_val:.6f} m³")
+                        print(f"  Omega = {omega_val:.6f} m³")
+                        print(f"  CH4 Energy Input = {ch4_energy:.6f} MWh")
+                        print(f"  Electricity Revenue = €{electricity_revenue:.6f}")
+                        print(f"  Heat Revenue = €{heat_revenue:.6f}")
+                        print(f"  Total Calculated Revenue = €{total_revenue:.6f}")
+                        print(f"  Model Revenue = €{Rev_loc[j].X:.6f}")
+    
+    print("\n--- DEBUG: Inspecting Z_rev values for selected alternatives ---")
+    for j in plant_locs:
+        for a, alt in enumerate(alternative_configs):
+            for c in capacity_levels:
+                y_val = Y[j, a, c].X
+                if y_val > 1e-6:
+                    print(f"Plant {j} - Alt: {alt['name']} - Cap: {c}")
+                    print(f"  Y = {y_val:.6f}")
+                    print(f"  Z_rev = {Z_rev[j, a, c].X:,.2f}")
+                    print(f"  Rev_alt_selected = {Rev_alt_selected[j, a, c].X:,.2f}")
+
+    print(f"--- Debug: Rev_alt_selected terms for {j} ---")
+    for a in range(len(alternative_configs)):
+        for c in capacity_levels:
+            print(f"  Y[{j},{a},{c}] = {Y[j,a,c].X:.6f}, Rev_alt_selected = {Rev_alt_selected[j,a,c].X:.6f}")
+    print(f"  ==> Rev_loc[{j}] = {Rev_loc[j].X:.6f}")
+
+    
+    print(f"--- Debug: Cost_alt_selected terms for {j} ---")
+    for a in range(len(alternative_configs)):
+        for c in capacity_levels:
+            print(f"  Y[{j},{a},{c}] = {Y[j,a,c].X:.6f}, Cost_alt_selected = {Cost_alt_selected[j,a,c].X:.6f}")
+    print(f"  ==> Cost_loc[{j}] = {Cost_loc[j].X:.6f}")
+
 
     inflow_rows = []
     for j in plant_locs:

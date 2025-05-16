@@ -8,8 +8,9 @@ import os
 script_start_time = time.time()
 
 # 1) LOAD DATA
-BASE_DIR = "/home/fredrgaa/Master/"
+BASE_DIR = "C:/Clone/Master/"
 feedstock_df = pd.read_csv(f"{BASE_DIR}processed_biomass_data.csv")
+#feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
@@ -116,11 +117,6 @@ alternative_configs = [
     {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
-     "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": Cap_biogas, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_skip_chp_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "No_build", "category": "None", "prod_cap_factor": 0, "max_cap_m3_year": 0,
