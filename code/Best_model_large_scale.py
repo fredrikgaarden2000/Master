@@ -210,6 +210,7 @@ def build_model(config):
     m.setParam("NoRelHeurTime", 10)
     m.setParam("Cuts", 3)
     m.setParam("NumericFocus", 3)
+    m.setParam("MIPFocus", 3)
 
     caps = capacity_levels
 
