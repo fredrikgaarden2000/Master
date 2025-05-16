@@ -27,7 +27,7 @@ YIELDS_CSV = f"{BASE_DIR}Feedstock_yields.csv"
 PLANT_CSV = f"{BASE_DIR}equally_spaced_locations.csv"
 DISTANCE_CSV = f"{BASE_DIR}Distance_Matrix.csv"
 PLOT_OUTPUT = f"{BASE_DIR}bavaria_feedstock_plants.png"
-NUM_PLANT_CLUSTERS = 15  # Restored to original distribution
+NUM_PLANT_CLUSTERS = 5  # Restored to original distribution
 NUM_FEEDSTOCK_CLUSTERS = 750
 SAMPLE_SIZE = 10000
 DENSITY_THRESHOLD = 500
@@ -110,7 +110,7 @@ def compute_distance_matrix_to_cluster_centroids(cluster_centroids_df, plant_csv
             dist_km = geodesic(f_coords, p_coords).kilometers
             distance_matrix.append([f_row["Cluster_ID"], p_row["Location"], dist_km])
     
-    distance_df = pd.DataFrame(distance_matrix, columns=["Feedstock_Cluster", "Plant_Location", "Distance_km"])
+    distance_df = pd.DataFrame(distance_matrix, columns=["Feedstock_LAU", "Location", "Distance_km"])
     distance_df.to_csv(output_distance_csv, index=False)
     print(f"Saved distance matrix with {len(distance_df)} rows to {output_distance_csv}")
     return distance_df

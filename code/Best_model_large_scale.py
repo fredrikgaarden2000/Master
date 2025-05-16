@@ -9,8 +9,8 @@ import os
 script_start_time = time.time()
 
 # 1) LOAD DATA
-#BASE_DIR = "C:/Clone/Master/"
-BASE_DIR = "/home/fredrgaa/Master/"
+BASE_DIR = "C:/Clone/Master/"
+#BASE_DIR = "/home/fredrgaa/Master/"
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
 plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
 distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
@@ -23,7 +23,7 @@ feedstock_df = feedstock_df[
     (feedstock_df["nutz_pot_tFM"] >= 20)
 ]
 
-original_rows = len(pd.read_csv(f"{BASE_DIR}processed_biomass_data.csv"))
+original_rows = len(pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv"))
 filtered_rows = len(feedstock_df)
 
 expected_columns = ['Feedstock_LAU', 'Location', 'Distance_km']
@@ -51,7 +51,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (10_000_000,20_000_000,40_000_000,80_000_000)
+capacity_levels = (40_000_000,80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -350,7 +350,7 @@ def build_model(config):
                         rev = 0
 
                 # Add buffer
-                M_rev[key] = rev * 2 * (11/10)
+                M_rev[key] = rev * 5
 
                 # === Cost estimation ===
                 if alt["opex_type"] == "fixed_variable_MW":
@@ -364,7 +364,7 @@ def build_model(config):
                 if alt["category"] in ["Upgrading", "FlexEEG_biomethane"]:
                     cost += variable_upg_cost * N_CH4_max / 1e6  # symbolic
 
-                M_cost[key] = cost * 2 * (9/10)
+                M_cost[key] = cost * 5
                 
                 # Print M_rev and M_cost for inspection
                 print(f"Plant {j}, Alternative {alt['name']}, Capacity {c:,}:")
