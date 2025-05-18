@@ -19,7 +19,7 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "manure_results")
+output_dir = os.path.join(BASE_DIR, "results")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -511,24 +511,72 @@ def build_model(config):
     
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost# 6) RUN MODEL
+    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus# 6) RUN MODEL
 
 if __name__ == '__main__':
-    print("Running full model...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost = build_model(config)
-    m.update()
-    # –– Warm‐start if a solution exists
-    warmstart_path = os.path.join(output_dir, "warmstart.sol")
-    if os.path.isfile(warmstart_path):
-        print(f"Loading warm‐start from {warmstart_path}")
-        m.read(warmstart_path)
-
-    print(f"  Quadratic constraints: {m.NumQConstrs}")
-    print(f"  Quadratic objective terms (non-zeros): {m.NumQNZs}")
-
-    opt_start_time = time.time()
+    # 1) Build & solve the full MIP (with binaries)
+    print("Stage 1: solving full MIP…")
+    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus= build_model(config)
     m.optimize()
-    opt_end_time = time.time()
+    if m.status != GRB.OPTIMAL:
+        raise RuntimeError("Full‐model MIP did not solve to optimality.")
+
+    # extract the chosen Y‐values
+    Y_val = { (j, a, c): int(round(Y[j, a, c].X))
+              for (j, a, c), var in Y.items() }
+
+    # 2) Loop over feedstock‐price scenarios (or any parameter grid)
+    grid = np.linspace(0, 0.11, 5)   # maize price from €20 to €60
+    results = []
+
+    for price in grid:
+        print(f"  → re‐solving LP with transport_cost={price:.3f} €/t·km")
+
+        # 1) overwrite the per-ton-per-km cost in feed_yield
+        for f in feed_yield:
+            feed_yield[f]['cost_ton_km'] = price
+
+        # 2) (Optionally) also overwrite the digestate transport cost
+        cost_ton_km_dig = price
+
+        # 3) rebuild & fix binaries, etc.
+        m_lp, Omega_lp, N_CH4_lp, x_lp, Y_lp, m_up, Rev_loc, Cost_loc, Capex, \
+        TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, \
+        Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, \
+        BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus = build_model(config)
+
+        for (j,a,c), val in Y_val.items():
+            m_lp.addConstr(Y_lp[j,a,c] == val, name=f"fixY_{j}_{a}_{c}")
+
+        m_lp.Params.MIPGap  = 0
+        m_lp.Params.Presolve = 2
+        m_lp.optimize()
+        if m_lp.status != GRB.OPTIMAL:
+            print("    ! LP did not solve to optimality.")
+            continue
+
+        # collect objective
+        npv = m_lp.objVal
+
+        # collect SAObjLow/SAObjUp for all continuous vars with nonzero Obj
+        sa = {}
+        for v in m_lp.getVars():
+            if v.VType == GRB.CONTINUOUS and v.Obj != 0:
+                sa[v.VarName] = (v.SAObjLow, v.SAObjUp)
+
+        results.append({
+            'maize_price': price,
+            'NPV': npv,
+            'SA': sa
+        })
+
+    # 3) dump results to JSON
+    import json
+    with open(os.path.join(output_dir, "sensitivity_results.json"), 'w') as fp:
+        json.dump(results, fp, indent=2)
+
+    print("Sensitivity analysis complete—results in results/sensitivity_results.json")
+
 
     if m.status == GRB.OPTIMAL:
         print(f"\nFull model: NPV = {m.objVal:,.2f} €, Solve time = {m.Runtime:.2f} s, MIP Gap = {m.MIPGap:.4f}")
@@ -695,9 +743,9 @@ if __name__ == '__main__':
     for v in m.getVars():
         v.start = v.X
 
-    script_end_time = time.time()
+    '''script_end_time = time.time()
     total_script_time = script_end_time - script_start_time
     opt_time = opt_end_time - opt_start_time
     with open(f'{BASE_DIR}/Solutions/aggregated/execution_times.txt', 'a') as f:
         f.write(f"Total script execution time: {total_script_time:.2f} seconds ({total_script_time/60:.2f} minutes)\n")
-        f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")
+        f.write(f"Optimization time: {opt_time:.2f} seconds ({opt_time/60:.2f} minutes)\n")'''

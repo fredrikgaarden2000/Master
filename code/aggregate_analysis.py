@@ -167,8 +167,8 @@ def plot_cluster_mapping_5_clusters(cluster_mapping, cluster_centroids_df, outpu
             #plt.text(node["Centroid_Lon"] + 0.005, node["Centroid_Lat"]+ 0.005, node["GISCO_ID"], fontsize=14, ha='left')
             # Label Biogas_Potential_m3 with m³
             biogas = node["Biogas_Potential_m3"]
-            plt.text(node["Centroid_Lon"] + 0.005, node["Centroid_Lat"], 
-                     f"{biogas:,.0f} m³", fontsize=14, ha='left', color='black')
+            plt.text(node["Centroid_Lon"] - 0.005, node["Centroid_Lat"], 
+                     f"{biogas:,.0f} m³", fontsize=16, ha='left', color='black')
     
     ax.set_xlim(lon_min, lon_max)
     ax.set_ylim(lat_min, lat_max)
@@ -232,7 +232,7 @@ def main():
         print("Error: No valid gas pipelines in low-density areas")
         return
     projected_gas_lines = gas_lines_low_density.geometry
-    
+    '''
     # Generate plant locations
     try:
         centroids = generate_cluster_centroids(projected_polygon, projected_gas_lines, NUM_PLANT_CLUSTERS, SAMPLE_SIZE)
@@ -240,7 +240,7 @@ def main():
     except ValueError as e:
         print(f"Error generating plant centroids: {e}")
         return
-    
+    '''
     # Load original feedstock data (before clustering)
     try:
         original_df = pd.read_csv(ORIGINAL_FEEDSTOCK_CSV)
@@ -364,17 +364,17 @@ def main():
     # Add statistical annotations
     text_before = f"Before Clustering:\nCount: {stats_before['Count']:.0f}\nMean: {stats_before['Mean (km)']:.2f} km\nMedian: {stats_before['Median (km)']:.2f} km \nStd Dev: {stats_before['Std Dev (km)']:.2f}\nSkewness: {stats_before['Skewness']:.2f} \n Kurtosis: {stats_before['Kurtosis']:.2f}"
     text_after = f"After Clustering:\nCount: {stats_after['Count']:.0f}\nMean: {stats_after['Mean (km)']:.2f} km\nMedian: {stats_after['Median (km)']:.2f} km \nStd Dev: {stats_after['Std Dev (km)']:.2f} \nSkewness: {stats_after['Skewness']:.2f} \n Kurtosis: {stats_after['Kurtosis']:.2f} \n "
-    plt.text(0.8, 0.6, text_before, transform=plt.gca().transAxes, fontsize=10, 
+    plt.text(0.775, 0.8, text_before, transform=plt.gca().transAxes, fontsize=14, 
              verticalalignment='top', horizontalalignment='left', 
              bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
-    plt.text(0.8, 0.4, text_after, transform=plt.gca().transAxes, fontsize=10, 
+    plt.text(0.775, 0.55, text_after, transform=plt.gca().transAxes, fontsize=14, 
              verticalalignment='top', horizontalalignment='left', 
              bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
     
     plt.title('Distance Distribution Before and After Clustering', fontsize=14)
-    plt.xlabel('Distance (km)', fontsize=12)
-    plt.ylabel('Frequency', fontsize=12)
-    plt.legend()
+    plt.xlabel('Distance (km)', fontsize=14)
+    plt.ylabel('Frequency', fontsize=14)
+    plt.legend(fontsize = 14)
     plt.tight_layout()
     plt.savefig(DISTANCE_PLOT, dpi=300)
     print(f"Saved distance distribution plot to {DISTANCE_PLOT}")
