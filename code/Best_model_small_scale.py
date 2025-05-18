@@ -276,7 +276,7 @@ def build_model(config):
             for j in plant_locs}
 
     for j in plant_locs:
-        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) <= 1, name=f"OneAlt_{j}")
+        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) == 1, name=f"OneAlt_{j}")
         # Link is_active to Omega
         m.addConstr(Omega[j] <= max(capacity_levels) * is_active[j],
               name=f"ActiveOmegaUpper_{j}")
