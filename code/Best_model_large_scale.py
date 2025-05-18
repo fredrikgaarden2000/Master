@@ -217,11 +217,8 @@ def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
 # 5) MODEL FUNCTION
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
-    m.setParam("Heuristics", 0.5)
     m.setParam("NoRelHeurTime", 10)
-    m.setParam("Cuts", 3)
-    m.setParam("NumericFocus", 3)
-    m.setParam("MIPFocus", 3)
+
 
     caps = capacity_levels
 
