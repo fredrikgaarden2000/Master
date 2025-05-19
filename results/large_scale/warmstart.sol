@@ -1,41 +1,41 @@
 # Solution for model ShadowPlant_Biogas_Model
-# Objective value = 8.4269486323730962e+02
-Omega[Plant_0] 7.3059360730593568e+01
-Omega[Plant_1] 7.3059360730593582e+01
-Omega[Plant_2] 5.4794520547945190e+01
-Omega[Plant_3] 7.3059360730593568e+01
-Omega[Plant_4] 5.4794520547946185e+01
-Omega[Plant_5] 73.0593607305936
-Omega[Plant_6] 7.3059360730593966e+01
-Omega[Plant_7] 3.6529680365296770e+01
-Omega[Plant_8] 7.3059360730593568e+01
-Omega[Plant_9] 7.3059360730593568e+01
-N_CH4[Plant_0] 4.1552220191072550e+01
-N_CH4[Plant_1] 4.1480651934889117e+01
-N_CH4[Plant_2] 3.1424504908984044e+01
-N_CH4[Plant_3] 4.1815111078279088e+01
-N_CH4[Plant_4] 3.1638453351048756e+01
-N_CH4[Plant_5] 4.1544949881577089e+01
-N_CH4[Plant_6] 4.1461754997366626e+01
-N_CH4[Plant_7] 2.0950978828495380e+01
-N_CH4[Plant_8] 4.1522166308706552e+01
-N_CH4[Plant_9] 4.1212388110899866e+01
-m_up[Plant_0,cattle_man] 2.0717868254152709e+01
-m_up[Plant_0,cattle_slu] 1.2283076105521920e+01
-m_up[Plant_0,horse_man] 3.1990185025819149e+00
-m_up[Plant_0,pig_slu] 0.06623519309568
-m_up[Plant_0,pig_man] 1.0047354734627303e+00
+# Objective value = 0
+Omega[Plant_0] 0
+Omega[Plant_1] 0
+Omega[Plant_2] 0
+Omega[Plant_3] 0
+Omega[Plant_4] 0
+Omega[Plant_5] 0
+Omega[Plant_6] 0
+Omega[Plant_7] 0
+Omega[Plant_8] 0
+Omega[Plant_9] 0
+N_CH4[Plant_0] 0
+N_CH4[Plant_1] 0
+N_CH4[Plant_2] 0
+N_CH4[Plant_3] 0
+N_CH4[Plant_4] 0
+N_CH4[Plant_5] 0
+N_CH4[Plant_6] 0
+N_CH4[Plant_7] 0
+N_CH4[Plant_8] 0
+N_CH4[Plant_9] 0
+m_up[Plant_0,cattle_man] 0
+m_up[Plant_0,cattle_slu] 0
+m_up[Plant_0,horse_man] 0
+m_up[Plant_0,pig_slu] 0
+m_up[Plant_0,pig_man] 0
 m_up[Plant_0,cereal_str] 0
-m_up[Plant_0,clover_alfalfa_grass] 1.7782291786953102e+00
+m_up[Plant_0,clover_alfalfa_grass] 0
 m_up[Plant_0,perm_grass] 0
-m_up[Plant_0,maize_str] 2.5030574835622894e+00
+m_up[Plant_0,maize_str] 0
 m_up[Plant_0,beet_leaf] 0
 m_up[Plant_0,rape_str] 0
 m_up[Plant_0,legume_str] 0
-m_up[Plant_1,cattle_man] 2.3997904869300086e+01
-m_up[Plant_1,cattle_slu] 1.1973943668188760e+01
-m_up[Plant_1,horse_man] 5.5083276075253451e+00
-m_up[Plant_1,pig_slu] 4.7578987491840005e-04
+m_up[Plant_1,cattle_man] 0
+m_up[Plant_1,cattle_slu] 0
+m_up[Plant_1,horse_man] 0
+m_up[Plant_1,pig_slu] 0
 m_up[Plant_1,pig_man] 0
 m_up[Plant_1,cereal_str] 0
 m_up[Plant_1,clover_alfalfa_grass] 0
@@ -44,23 +44,23 @@ m_up[Plant_1,maize_str] 0
 m_up[Plant_1,beet_leaf] 0
 m_up[Plant_1,rape_str] 0
 m_up[Plant_1,legume_str] 0
-m_up[Plant_2,cattle_man] 1.4099648765542563e+01
-m_up[Plant_2,cattle_slu] 9.4521456281787
-m_up[Plant_2,horse_man] 5.2257547839132377e+00
-m_up[Plant_2,pig_slu] 9.9510550272000012e-03
-m_up[Plant_2,pig_man] 2.0400291342104349e+00
+m_up[Plant_2,cattle_man] 0
+m_up[Plant_2,cattle_slu] 0
+m_up[Plant_2,horse_man] 0
+m_up[Plant_2,pig_slu] 0
+m_up[Plant_2,pig_man] 0
 m_up[Plant_2,cereal_str] 0
-m_up[Plant_2,clover_alfalfa_grass] 0.146924877807578
+m_up[Plant_2,clover_alfalfa_grass] 0
 m_up[Plant_2,perm_grass] 0
-m_up[Plant_2,maize_str] 4.5005066430432977e-01
+m_up[Plant_2,maize_str] 0
 m_up[Plant_2,beet_leaf] 0
 m_up[Plant_2,rape_str] 0
 m_up[Plant_2,legume_str] 0
-m_up[Plant_3,cattle_man] 2.2860188376851077e+01
-m_up[Plant_3,cattle_slu] 1.0015501571887990e+01
-m_up[Plant_3,horse_man] 5.7547858629964388e+00
-m_up[Plant_3,pig_slu] 8.5918865356828730e-02
-m_up[Plant_3,pig_man] 3.0987164011889514e+00
+m_up[Plant_3,cattle_man] 0
+m_up[Plant_3,cattle_slu] 0
+m_up[Plant_3,horse_man] 0
+m_up[Plant_3,pig_slu] 0
+m_up[Plant_3,pig_man] 0
 m_up[Plant_3,cereal_str] 0
 m_up[Plant_3,clover_alfalfa_grass] 0
 m_up[Plant_3,perm_grass] 0
@@ -68,35 +68,35 @@ m_up[Plant_3,maize_str] 0
 m_up[Plant_3,beet_leaf] 0
 m_up[Plant_3,rape_str] 0
 m_up[Plant_3,legume_str] 0
-m_up[Plant_4,cattle_man] 1.3460860664714112e+01
-m_up[Plant_4,cattle_slu] 1.3021621012598743e+01
-m_up[Plant_4,horse_man] 3.4875541982844429e+00
-m_up[Plant_4,pig_slu] 0.000223696480896
-m_up[Plant_4,pig_man] 1.6121878881661980e+00
+m_up[Plant_4,cattle_man] 0
+m_up[Plant_4,cattle_slu] 0
+m_up[Plant_4,horse_man] 0
+m_up[Plant_4,pig_slu] 0
+m_up[Plant_4,pig_man] 0
 m_up[Plant_4,cereal_str] 0
-m_up[Plant_4,clover_alfalfa_grass] 2.1688953357401175e-02
+m_up[Plant_4,clover_alfalfa_grass] 0
 m_up[Plant_4,perm_grass] 0
-m_up[Plant_4,maize_str] 3.4316937446966463e-02
+m_up[Plant_4,maize_str] 0
 m_up[Plant_4,beet_leaf] 0
 m_up[Plant_4,rape_str] 0
 m_up[Plant_4,legume_str] 0
-m_up[Plant_5,cattle_man] 1.6339659831323104e+01
-m_up[Plant_5,cattle_slu] 6.0679341780845659e+00
-m_up[Plant_5,horse_man] 6.1896052742301713e+00
-m_up[Plant_5,pig_slu] 5.0386155844147251e-01
-m_up[Plant_5,pig_man] 5.1886328143328351e+00
+m_up[Plant_5,cattle_man] 0
+m_up[Plant_5,cattle_slu] 0
+m_up[Plant_5,horse_man] 0
+m_up[Plant_5,pig_slu] 0
+m_up[Plant_5,pig_man] 0
 m_up[Plant_5,cereal_str] 0
-m_up[Plant_5,clover_alfalfa_grass] 9.8936576285756583e-01
+m_up[Plant_5,clover_alfalfa_grass] 0
 m_up[Plant_5,perm_grass] 0
-m_up[Plant_5,maize_str] 6.2658904623073743e+00
+m_up[Plant_5,maize_str] 0
 m_up[Plant_5,beet_leaf] 0
 m_up[Plant_5,rape_str] 0
 m_up[Plant_5,legume_str] 0
-m_up[Plant_6,cattle_man] 2.5164989769763665e+01
-m_up[Plant_6,cattle_slu] 1.1703194706104018e+01
-m_up[Plant_6,horse_man] 4.5893882117588412e+00
+m_up[Plant_6,cattle_man] 0
+m_up[Plant_6,cattle_slu] 0
+m_up[Plant_6,horse_man] 0
 m_up[Plant_6,pig_slu] 0
-m_up[Plant_6,pig_man] 4.1823097400999773e-03
+m_up[Plant_6,pig_man] 0
 m_up[Plant_6,cereal_str] 0
 m_up[Plant_6,clover_alfalfa_grass] 0
 m_up[Plant_6,perm_grass] 0
@@ -104,27 +104,27 @@ m_up[Plant_6,maize_str] 0
 m_up[Plant_6,beet_leaf] 0
 m_up[Plant_6,rape_str] 0
 m_up[Plant_6,legume_str] 0
-m_up[Plant_7,cattle_man] 1.2025077938635878e+01
-m_up[Plant_7,cattle_slu] 2.8985317653399463e+00
-m_up[Plant_7,horse_man] 2.8890790432957139e+00
-m_up[Plant_7,pig_slu] 5.6001448867594283e-01
-m_up[Plant_7,pig_man] 2.1917882282094663e+00
+m_up[Plant_7,cattle_man] 0
+m_up[Plant_7,cattle_slu] 0
+m_up[Plant_7,horse_man] 0
+m_up[Plant_7,pig_slu] 0
+m_up[Plant_7,pig_man] 0
 m_up[Plant_7,cereal_str] 0
-m_up[Plant_7,clover_alfalfa_grass] 3.8648736433843189e-01
+m_up[Plant_7,clover_alfalfa_grass] 0
 m_up[Plant_7,perm_grass] 0
 m_up[Plant_7,maize_str] 0
 m_up[Plant_7,beet_leaf] 0
 m_up[Plant_7,rape_str] 0
 m_up[Plant_7,legume_str] 0
-m_up[Plant_8,cattle_man] 2.0084062972878165e+01
-m_up[Plant_8,cattle_slu] 9.2721705226675475e+00
-m_up[Plant_8,horse_man] 7.6038522769818089e+00
+m_up[Plant_8,cattle_man] 0
+m_up[Plant_8,cattle_slu] 0
+m_up[Plant_8,horse_man] 0
 m_up[Plant_8,pig_slu] 0
-m_up[Plant_8,pig_man] 2.4611020640111718e+00
+m_up[Plant_8,pig_man] 0
 m_up[Plant_8,cereal_str] 0
-m_up[Plant_8,clover_alfalfa_grass] 2.8293484266971536e-02
+m_up[Plant_8,clover_alfalfa_grass] 0
 m_up[Plant_8,perm_grass] 0
-m_up[Plant_8,maize_str] 2.0726849879008933e+00
+m_up[Plant_8,maize_str] 0
 m_up[Plant_8,beet_leaf] 0
 m_up[Plant_8,rape_str] 0
 m_up[Plant_8,legume_str] 0
@@ -146,7 +146,7 @@ x[CLUSTER_0,cattle_man,Plant_2] 0
 x[CLUSTER_0,cattle_man,Plant_3] 0
 x[CLUSTER_0,cattle_man,Plant_4] 0
 x[CLUSTER_0,cattle_man,Plant_5] 0
-x[CLUSTER_0,cattle_man,Plant_6] 0.02889
+x[CLUSTER_0,cattle_man,Plant_6] 0
 x[CLUSTER_0,cattle_man,Plant_7] 0
 x[CLUSTER_0,cattle_man,Plant_8] 0
 x[CLUSTER_0,cattle_man,Plant_9] 0
@@ -163,7 +163,7 @@ x[CLUSTER_0,cattle_slu,Plant_9] 0
 x[CLUSTER_0,horse_man,Plant_0] 0
 x[CLUSTER_0,horse_man,Plant_1] 0
 x[CLUSTER_0,horse_man,Plant_2] 0
-x[CLUSTER_0,horse_man,Plant_3] 0.00261
+x[CLUSTER_0,horse_man,Plant_3] 0
 x[CLUSTER_0,horse_man,Plant_4] 0
 x[CLUSTER_0,horse_man,Plant_5] 0
 x[CLUSTER_0,horse_man,Plant_6] 0
@@ -185,7 +185,7 @@ x[CLUSTER_0,pig_man,Plant_1] 0
 x[CLUSTER_0,pig_man,Plant_2] 0
 x[CLUSTER_0,pig_man,Plant_3] 0
 x[CLUSTER_0,pig_man,Plant_4] 0
-x[CLUSTER_0,pig_man,Plant_5] 0.0016952
+x[CLUSTER_0,pig_man,Plant_5] 0
 x[CLUSTER_0,pig_man,Plant_6] 0
 x[CLUSTER_0,pig_man,Plant_7] 0
 x[CLUSTER_0,pig_man,Plant_8] 0
@@ -262,7 +262,7 @@ x[CLUSTER_0,legume_str,Plant_8] 0
 x[CLUSTER_0,legume_str,Plant_9] 0
 x[CLUSTER_1,cattle_man,Plant_0] 0
 x[CLUSTER_1,cattle_man,Plant_1] 0
-x[CLUSTER_1,cattle_man,Plant_2] 0.00765455
+x[CLUSTER_1,cattle_man,Plant_2] 0
 x[CLUSTER_1,cattle_man,Plant_3] 0
 x[CLUSTER_1,cattle_man,Plant_4] 0
 x[CLUSTER_1,cattle_man,Plant_5] 0
@@ -282,7 +282,7 @@ x[CLUSTER_1,cattle_slu,Plant_8] 0
 x[CLUSTER_1,cattle_slu,Plant_9] 0
 x[CLUSTER_1,horse_man,Plant_0] 0
 x[CLUSTER_1,horse_man,Plant_1] 0
-x[CLUSTER_1,horse_man,Plant_2] 0.0006424
+x[CLUSTER_1,horse_man,Plant_2] 0
 x[CLUSTER_1,horse_man,Plant_3] 0
 x[CLUSTER_1,horse_man,Plant_4] 0
 x[CLUSTER_1,horse_man,Plant_5] 0
@@ -302,7 +302,7 @@ x[CLUSTER_1,pig_slu,Plant_8] 0
 x[CLUSTER_1,pig_slu,Plant_9] 0
 x[CLUSTER_1,pig_man,Plant_0] 0
 x[CLUSTER_1,pig_man,Plant_1] 0
-x[CLUSTER_1,pig_man,Plant_2] 0.0003816
+x[CLUSTER_1,pig_man,Plant_2] 0
 x[CLUSTER_1,pig_man,Plant_3] 0
 x[CLUSTER_1,pig_man,Plant_4] 0
 x[CLUSTER_1,pig_man,Plant_5] 0
@@ -387,7 +387,7 @@ x[CLUSTER_10,cattle_man,Plant_3] 0
 x[CLUSTER_10,cattle_man,Plant_4] 0
 x[CLUSTER_10,cattle_man,Plant_5] 0
 x[CLUSTER_10,cattle_man,Plant_6] 0
-x[CLUSTER_10,cattle_man,Plant_7] 0.003121
+x[CLUSTER_10,cattle_man,Plant_7] 0
 x[CLUSTER_10,cattle_man,Plant_8] 0
 x[CLUSTER_10,cattle_man,Plant_9] 0
 x[CLUSTER_10,cattle_slu,Plant_0] 0
@@ -397,7 +397,7 @@ x[CLUSTER_10,cattle_slu,Plant_3] 0
 x[CLUSTER_10,cattle_slu,Plant_4] 0
 x[CLUSTER_10,cattle_slu,Plant_5] 0
 x[CLUSTER_10,cattle_slu,Plant_6] 0
-x[CLUSTER_10,cattle_slu,Plant_7] 0.0042781
+x[CLUSTER_10,cattle_slu,Plant_7] 0
 x[CLUSTER_10,cattle_slu,Plant_8] 0
 x[CLUSTER_10,cattle_slu,Plant_9] 0
 x[CLUSTER_10,horse_man,Plant_0] 0
@@ -407,7 +407,7 @@ x[CLUSTER_10,horse_man,Plant_3] 0
 x[CLUSTER_10,horse_man,Plant_4] 0
 x[CLUSTER_10,horse_man,Plant_5] 0
 x[CLUSTER_10,horse_man,Plant_6] 0
-x[CLUSTER_10,horse_man,Plant_7] 1.3922000000000001e-03
+x[CLUSTER_10,horse_man,Plant_7] 0
 x[CLUSTER_10,horse_man,Plant_8] 0
 x[CLUSTER_10,horse_man,Plant_9] 0
 x[CLUSTER_10,pig_slu,Plant_0] 0
@@ -417,7 +417,7 @@ x[CLUSTER_10,pig_slu,Plant_3] 0
 x[CLUSTER_10,pig_slu,Plant_4] 0
 x[CLUSTER_10,pig_slu,Plant_5] 0
 x[CLUSTER_10,pig_slu,Plant_6] 0
-x[CLUSTER_10,pig_slu,Plant_7] 2.8945999999999996e-04
+x[CLUSTER_10,pig_slu,Plant_7] 0
 x[CLUSTER_10,pig_slu,Plant_8] 0
 x[CLUSTER_10,pig_slu,Plant_9] 0
 x[CLUSTER_10,pig_man,Plant_0] 0
@@ -427,7 +427,7 @@ x[CLUSTER_10,pig_man,Plant_3] 0
 x[CLUSTER_10,pig_man,Plant_4] 0
 x[CLUSTER_10,pig_man,Plant_5] 0
 x[CLUSTER_10,pig_man,Plant_6] 0
-x[CLUSTER_10,pig_man,Plant_7] 1.59693e-05
+x[CLUSTER_10,pig_man,Plant_7] 0
 x[CLUSTER_10,pig_man,Plant_8] 0
 x[CLUSTER_10,pig_man,Plant_9] 0
 x[CLUSTER_10,cereal_str,Plant_0] 0
@@ -505,7 +505,7 @@ x[CLUSTER_100,cattle_man,Plant_1] 0
 x[CLUSTER_100,cattle_man,Plant_2] 0
 x[CLUSTER_100,cattle_man,Plant_3] 0
 x[CLUSTER_100,cattle_man,Plant_4] 0
-x[CLUSTER_100,cattle_man,Plant_5] 0.009536
+x[CLUSTER_100,cattle_man,Plant_5] 0
 x[CLUSTER_100,cattle_man,Plant_6] 0
 x[CLUSTER_100,cattle_man,Plant_7] 0
 x[CLUSTER_100,cattle_man,Plant_8] 0
@@ -525,7 +525,7 @@ x[CLUSTER_100,horse_man,Plant_1] 0
 x[CLUSTER_100,horse_man,Plant_2] 0
 x[CLUSTER_100,horse_man,Plant_3] 0
 x[CLUSTER_100,horse_man,Plant_4] 0
-x[CLUSTER_100,horse_man,Plant_5] 0.0039255
+x[CLUSTER_100,horse_man,Plant_5] 0
 x[CLUSTER_100,horse_man,Plant_6] 0
 x[CLUSTER_100,horse_man,Plant_7] 0
 x[CLUSTER_100,horse_man,Plant_8] 0
@@ -545,7 +545,7 @@ x[CLUSTER_100,pig_man,Plant_1] 0
 x[CLUSTER_100,pig_man,Plant_2] 0
 x[CLUSTER_100,pig_man,Plant_3] 0
 x[CLUSTER_100,pig_man,Plant_4] 0
-x[CLUSTER_100,pig_man,Plant_5] 6.961e-05
+x[CLUSTER_100,pig_man,Plant_5] 0
 x[CLUSTER_100,pig_man,Plant_6] 0
 x[CLUSTER_100,pig_man,Plant_7] 0
 x[CLUSTER_100,pig_man,Plant_8] 0
@@ -628,7 +628,7 @@ x[CLUSTER_101,cattle_man,Plant_4] 0
 x[CLUSTER_101,cattle_man,Plant_5] 0
 x[CLUSTER_101,cattle_man,Plant_6] 0
 x[CLUSTER_101,cattle_man,Plant_7] 0
-x[CLUSTER_101,cattle_man,Plant_8] 0.0076674141
+x[CLUSTER_101,cattle_man,Plant_8] 0
 x[CLUSTER_101,cattle_man,Plant_9] 0
 x[CLUSTER_101,cattle_slu,Plant_0] 0
 x[CLUSTER_101,cattle_slu,Plant_1] 0
@@ -648,7 +648,7 @@ x[CLUSTER_101,horse_man,Plant_4] 0
 x[CLUSTER_101,horse_man,Plant_5] 0
 x[CLUSTER_101,horse_man,Plant_6] 0
 x[CLUSTER_101,horse_man,Plant_7] 0
-x[CLUSTER_101,horse_man,Plant_8] 1.8954100000000002e-03
+x[CLUSTER_101,horse_man,Plant_8] 0
 x[CLUSTER_101,horse_man,Plant_9] 0
 x[CLUSTER_101,pig_slu,Plant_0] 0
 x[CLUSTER_101,pig_slu,Plant_1] 0
@@ -668,7 +668,7 @@ x[CLUSTER_101,pig_man,Plant_4] 0
 x[CLUSTER_101,pig_man,Plant_5] 0
 x[CLUSTER_101,pig_man,Plant_6] 0
 x[CLUSTER_101,pig_man,Plant_7] 0
-x[CLUSTER_101,pig_man,Plant_8] 0.00031145
+x[CLUSTER_101,pig_man,Plant_8] 0
 x[CLUSTER_101,pig_man,Plant_9] 0
 x[CLUSTER_101,cereal_str,Plant_0] 0
 x[CLUSTER_101,cereal_str,Plant_1] 0
@@ -744,7 +744,7 @@ x[CLUSTER_102,cattle_man,Plant_0] 0
 x[CLUSTER_102,cattle_man,Plant_1] 0
 x[CLUSTER_102,cattle_man,Plant_2] 0
 x[CLUSTER_102,cattle_man,Plant_3] 0
-x[CLUSTER_102,cattle_man,Plant_4] 0.001724
+x[CLUSTER_102,cattle_man,Plant_4] 0
 x[CLUSTER_102,cattle_man,Plant_5] 0
 x[CLUSTER_102,cattle_man,Plant_6] 0
 x[CLUSTER_102,cattle_man,Plant_7] 0
@@ -754,7 +754,7 @@ x[CLUSTER_102,cattle_slu,Plant_0] 0
 x[CLUSTER_102,cattle_slu,Plant_1] 0
 x[CLUSTER_102,cattle_slu,Plant_2] 0
 x[CLUSTER_102,cattle_slu,Plant_3] 0
-x[CLUSTER_102,cattle_slu,Plant_4] 1.0770999999999951e-02
+x[CLUSTER_102,cattle_slu,Plant_4] 0
 x[CLUSTER_102,cattle_slu,Plant_5] 0
 x[CLUSTER_102,cattle_slu,Plant_6] 0
 x[CLUSTER_102,cattle_slu,Plant_7] 0
@@ -764,7 +764,7 @@ x[CLUSTER_102,horse_man,Plant_0] 0
 x[CLUSTER_102,horse_man,Plant_1] 0
 x[CLUSTER_102,horse_man,Plant_2] 0
 x[CLUSTER_102,horse_man,Plant_3] 0
-x[CLUSTER_102,horse_man,Plant_4] 0.000961
+x[CLUSTER_102,horse_man,Plant_4] 0
 x[CLUSTER_102,horse_man,Plant_5] 0
 x[CLUSTER_102,horse_man,Plant_6] 0
 x[CLUSTER_102,horse_man,Plant_7] 0
@@ -862,7 +862,7 @@ x[CLUSTER_102,legume_str,Plant_8] 0
 x[CLUSTER_102,legume_str,Plant_9] 0
 x[CLUSTER_103,cattle_man,Plant_0] 0
 x[CLUSTER_103,cattle_man,Plant_1] 0
-x[CLUSTER_103,cattle_man,Plant_2] 2.6600000000001254e-03
+x[CLUSTER_103,cattle_man,Plant_2] 0
 x[CLUSTER_103,cattle_man,Plant_3] 0
 x[CLUSTER_103,cattle_man,Plant_4] 0
 x[CLUSTER_103,cattle_man,Plant_5] 0
@@ -882,7 +882,7 @@ x[CLUSTER_103,cattle_slu,Plant_8] 0
 x[CLUSTER_103,cattle_slu,Plant_9] 0
 x[CLUSTER_103,horse_man,Plant_0] 0
 x[CLUSTER_103,horse_man,Plant_1] 0
-x[CLUSTER_103,horse_man,Plant_2] 0.0006782
+x[CLUSTER_103,horse_man,Plant_2] 0
 x[CLUSTER_103,horse_man,Plant_3] 0
 x[CLUSTER_103,horse_man,Plant_4] 0
 x[CLUSTER_103,horse_man,Plant_5] 0
@@ -902,7 +902,7 @@ x[CLUSTER_103,pig_slu,Plant_8] 0
 x[CLUSTER_103,pig_slu,Plant_9] 0
 x[CLUSTER_103,pig_man,Plant_0] 0
 x[CLUSTER_103,pig_man,Plant_1] 0
-x[CLUSTER_103,pig_man,Plant_2] 7.9130018399999990e-04
+x[CLUSTER_103,pig_man,Plant_2] 0
 x[CLUSTER_103,pig_man,Plant_3] 0
 x[CLUSTER_103,pig_man,Plant_4] 0
 x[CLUSTER_103,pig_man,Plant_5] 0
@@ -983,7 +983,7 @@ x[CLUSTER_103,legume_str,Plant_9] 0
 x[CLUSTER_104,cattle_man,Plant_0] 0
 x[CLUSTER_104,cattle_man,Plant_1] 0
 x[CLUSTER_104,cattle_man,Plant_2] 0
-x[CLUSTER_104,cattle_man,Plant_3] 0.02611
+x[CLUSTER_104,cattle_man,Plant_3] 0
 x[CLUSTER_104,cattle_man,Plant_4] 0
 x[CLUSTER_104,cattle_man,Plant_5] 0
 x[CLUSTER_104,cattle_man,Plant_6] 0
@@ -1003,7 +1003,7 @@ x[CLUSTER_104,cattle_slu,Plant_9] 0
 x[CLUSTER_104,horse_man,Plant_0] 0
 x[CLUSTER_104,horse_man,Plant_1] 0
 x[CLUSTER_104,horse_man,Plant_2] 0
-x[CLUSTER_104,horse_man,Plant_3] 0.0008717
+x[CLUSTER_104,horse_man,Plant_3] 0
 x[CLUSTER_104,horse_man,Plant_4] 0
 x[CLUSTER_104,horse_man,Plant_5] 0
 x[CLUSTER_104,horse_man,Plant_6] 0
@@ -1023,7 +1023,7 @@ x[CLUSTER_104,pig_slu,Plant_9] 0
 x[CLUSTER_104,pig_man,Plant_0] 0
 x[CLUSTER_104,pig_man,Plant_1] 0
 x[CLUSTER_104,pig_man,Plant_2] 0
-x[CLUSTER_104,pig_man,Plant_3] 5.2721800000000009e-04
+x[CLUSTER_104,pig_man,Plant_3] 0
 x[CLUSTER_104,pig_man,Plant_4] 0
 x[CLUSTER_104,pig_man,Plant_5] 0
 x[CLUSTER_104,pig_man,Plant_6] 0
@@ -1101,7 +1101,7 @@ x[CLUSTER_104,legume_str,Plant_7] 0
 x[CLUSTER_104,legume_str,Plant_8] 0
 x[CLUSTER_104,legume_str,Plant_9] 0
 x[CLUSTER_105,cattle_man,Plant_0] 0
-x[CLUSTER_105,cattle_man,Plant_1] 0.016042
+x[CLUSTER_105,cattle_man,Plant_1] 0
 x[CLUSTER_105,cattle_man,Plant_2] 0
 x[CLUSTER_105,cattle_man,Plant_3] 0
 x[CLUSTER_105,cattle_man,Plant_4] 0
@@ -1111,7 +1111,7 @@ x[CLUSTER_105,cattle_man,Plant_7] 0
 x[CLUSTER_105,cattle_man,Plant_8] 0
 x[CLUSTER_105,cattle_man,Plant_9] 0
 x[CLUSTER_105,cattle_slu,Plant_0] 0
-x[CLUSTER_105,cattle_slu,Plant_1] 0.0801988
+x[CLUSTER_105,cattle_slu,Plant_1] 0
 x[CLUSTER_105,cattle_slu,Plant_2] 0
 x[CLUSTER_105,cattle_slu,Plant_3] 0
 x[CLUSTER_105,cattle_slu,Plant_4] 0
@@ -1121,7 +1121,7 @@ x[CLUSTER_105,cattle_slu,Plant_7] 0
 x[CLUSTER_105,cattle_slu,Plant_8] 0
 x[CLUSTER_105,cattle_slu,Plant_9] 0
 x[CLUSTER_105,horse_man,Plant_0] 0
-x[CLUSTER_105,horse_man,Plant_1] 0.002293
+x[CLUSTER_105,horse_man,Plant_1] 0
 x[CLUSTER_105,horse_man,Plant_2] 0
 x[CLUSTER_105,horse_man,Plant_3] 0
 x[CLUSTER_105,horse_man,Plant_4] 0
@@ -1131,7 +1131,7 @@ x[CLUSTER_105,horse_man,Plant_7] 0
 x[CLUSTER_105,horse_man,Plant_8] 0
 x[CLUSTER_105,horse_man,Plant_9] 0
 x[CLUSTER_105,pig_slu,Plant_0] 0
-x[CLUSTER_105,pig_slu,Plant_1] 5.881e-05
+x[CLUSTER_105,pig_slu,Plant_1] 0
 x[CLUSTER_105,pig_slu,Plant_2] 0
 x[CLUSTER_105,pig_slu,Plant_3] 0
 x[CLUSTER_105,pig_slu,Plant_4] 0
@@ -1228,7 +1228,7 @@ x[CLUSTER_106,cattle_man,Plant_4] 0
 x[CLUSTER_106,cattle_man,Plant_5] 0
 x[CLUSTER_106,cattle_man,Plant_6] 0
 x[CLUSTER_106,cattle_man,Plant_7] 0
-x[CLUSTER_106,cattle_man,Plant_8] 0.012224
+x[CLUSTER_106,cattle_man,Plant_8] 0
 x[CLUSTER_106,cattle_man,Plant_9] 0
 x[CLUSTER_106,cattle_slu,Plant_0] 0
 x[CLUSTER_106,cattle_slu,Plant_1] 0
@@ -1248,7 +1248,7 @@ x[CLUSTER_106,horse_man,Plant_4] 0
 x[CLUSTER_106,horse_man,Plant_5] 0
 x[CLUSTER_106,horse_man,Plant_6] 0
 x[CLUSTER_106,horse_man,Plant_7] 0
-x[CLUSTER_106,horse_man,Plant_8] 0.0010811
+x[CLUSTER_106,horse_man,Plant_8] 0
 x[CLUSTER_106,horse_man,Plant_9] 0
 x[CLUSTER_106,pig_slu,Plant_0] 0
 x[CLUSTER_106,pig_slu,Plant_1] 0
@@ -1268,7 +1268,7 @@ x[CLUSTER_106,pig_man,Plant_4] 0
 x[CLUSTER_106,pig_man,Plant_5] 0
 x[CLUSTER_106,pig_man,Plant_6] 0
 x[CLUSTER_106,pig_man,Plant_7] 0
-x[CLUSTER_106,pig_man,Plant_8] 0.000245613
+x[CLUSTER_106,pig_man,Plant_8] 0
 x[CLUSTER_106,pig_man,Plant_9] 0
 x[CLUSTER_106,cereal_str,Plant_0] 0
 x[CLUSTER_106,cereal_str,Plant_1] 0
@@ -1348,7 +1348,7 @@ x[CLUSTER_107,cattle_man,Plant_4] 0
 x[CLUSTER_107,cattle_man,Plant_5] 0
 x[CLUSTER_107,cattle_man,Plant_6] 0
 x[CLUSTER_107,cattle_man,Plant_7] 0
-x[CLUSTER_107,cattle_man,Plant_8] 0.0134021
+x[CLUSTER_107,cattle_man,Plant_8] 0
 x[CLUSTER_107,cattle_man,Plant_9] 0
 x[CLUSTER_107,cattle_slu,Plant_0] 0
 x[CLUSTER_107,cattle_slu,Plant_1] 0
@@ -1368,7 +1368,7 @@ x[CLUSTER_107,horse_man,Plant_4] 0
 x[CLUSTER_107,horse_man,Plant_5] 0
 x[CLUSTER_107,horse_man,Plant_6] 0
 x[CLUSTER_107,horse_man,Plant_7] 0
-x[CLUSTER_107,horse_man,Plant_8] 0.0016689
+x[CLUSTER_107,horse_man,Plant_8] 0
 x[CLUSTER_107,horse_man,Plant_9] 0
 x[CLUSTER_107,pig_slu,Plant_0] 0
 x[CLUSTER_107,pig_slu,Plant_1] 0
@@ -1388,7 +1388,7 @@ x[CLUSTER_107,pig_man,Plant_4] 0
 x[CLUSTER_107,pig_man,Plant_5] 0
 x[CLUSTER_107,pig_man,Plant_6] 0
 x[CLUSTER_107,pig_man,Plant_7] 0
-x[CLUSTER_107,pig_man,Plant_8] 0.0009932
+x[CLUSTER_107,pig_man,Plant_8] 0
 x[CLUSTER_107,pig_man,Plant_9] 0
 x[CLUSTER_107,cereal_str,Plant_0] 0
 x[CLUSTER_107,cereal_str,Plant_1] 0
@@ -1462,7 +1462,7 @@ x[CLUSTER_107,legume_str,Plant_8] 0
 x[CLUSTER_107,legume_str,Plant_9] 0
 x[CLUSTER_108,cattle_man,Plant_0] 0
 x[CLUSTER_108,cattle_man,Plant_1] 0
-x[CLUSTER_108,cattle_man,Plant_2] 0.0003724
+x[CLUSTER_108,cattle_man,Plant_2] 0
 x[CLUSTER_108,cattle_man,Plant_3] 0
 x[CLUSTER_108,cattle_man,Plant_4] 0
 x[CLUSTER_108,cattle_man,Plant_5] 0
@@ -1482,7 +1482,7 @@ x[CLUSTER_108,cattle_slu,Plant_8] 0
 x[CLUSTER_108,cattle_slu,Plant_9] 0
 x[CLUSTER_108,horse_man,Plant_0] 0
 x[CLUSTER_108,horse_man,Plant_1] 0
-x[CLUSTER_108,horse_man,Plant_2] 0.002893
+x[CLUSTER_108,horse_man,Plant_2] 0
 x[CLUSTER_108,horse_man,Plant_3] 0
 x[CLUSTER_108,horse_man,Plant_4] 0
 x[CLUSTER_108,horse_man,Plant_5] 0
@@ -1502,7 +1502,7 @@ x[CLUSTER_108,pig_slu,Plant_8] 0
 x[CLUSTER_108,pig_slu,Plant_9] 0
 x[CLUSTER_108,pig_man,Plant_0] 0
 x[CLUSTER_108,pig_man,Plant_1] 0
-x[CLUSTER_108,pig_man,Plant_2] 2.9192599999999997e-04
+x[CLUSTER_108,pig_man,Plant_2] 0
 x[CLUSTER_108,pig_man,Plant_3] 0
 x[CLUSTER_108,pig_man,Plant_4] 0
 x[CLUSTER_108,pig_man,Plant_5] 0
@@ -1529,7 +1529,7 @@ x[CLUSTER_108,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_108,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_108,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_108,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_108,clover_alfalfa_grass,Plant_9] 0.00825
+x[CLUSTER_108,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_108,perm_grass,Plant_0] 0
 x[CLUSTER_108,perm_grass,Plant_1] 0
 x[CLUSTER_108,perm_grass,Plant_2] 0
@@ -1549,7 +1549,7 @@ x[CLUSTER_108,maize_str,Plant_5] 0
 x[CLUSTER_108,maize_str,Plant_6] 0
 x[CLUSTER_108,maize_str,Plant_7] 0
 x[CLUSTER_108,maize_str,Plant_8] 0
-x[CLUSTER_108,maize_str,Plant_9] 0.00035
+x[CLUSTER_108,maize_str,Plant_9] 0
 x[CLUSTER_108,beet_leaf,Plant_0] 0
 x[CLUSTER_108,beet_leaf,Plant_1] 0
 x[CLUSTER_108,beet_leaf,Plant_2] 0
@@ -1580,7 +1580,7 @@ x[CLUSTER_108,legume_str,Plant_6] 0
 x[CLUSTER_108,legume_str,Plant_7] 0
 x[CLUSTER_108,legume_str,Plant_8] 0
 x[CLUSTER_108,legume_str,Plant_9] 0
-x[CLUSTER_109,cattle_man,Plant_0] 0.010424
+x[CLUSTER_109,cattle_man,Plant_0] 0
 x[CLUSTER_109,cattle_man,Plant_1] 0
 x[CLUSTER_109,cattle_man,Plant_2] 0
 x[CLUSTER_109,cattle_man,Plant_3] 0
@@ -1600,7 +1600,7 @@ x[CLUSTER_109,cattle_slu,Plant_6] 0
 x[CLUSTER_109,cattle_slu,Plant_7] 0
 x[CLUSTER_109,cattle_slu,Plant_8] 0
 x[CLUSTER_109,cattle_slu,Plant_9] 0
-x[CLUSTER_109,horse_man,Plant_0] 0.002924
+x[CLUSTER_109,horse_man,Plant_0] 0
 x[CLUSTER_109,horse_man,Plant_1] 0
 x[CLUSTER_109,horse_man,Plant_2] 0
 x[CLUSTER_109,horse_man,Plant_3] 0
@@ -1620,7 +1620,7 @@ x[CLUSTER_109,pig_slu,Plant_6] 0
 x[CLUSTER_109,pig_slu,Plant_7] 0
 x[CLUSTER_109,pig_slu,Plant_8] 0
 x[CLUSTER_109,pig_slu,Plant_9] 0
-x[CLUSTER_109,pig_man,Plant_0] 0.00012122265
+x[CLUSTER_109,pig_man,Plant_0] 0
 x[CLUSTER_109,pig_man,Plant_1] 0
 x[CLUSTER_109,pig_man,Plant_2] 0
 x[CLUSTER_109,pig_man,Plant_3] 0
@@ -1702,7 +1702,7 @@ x[CLUSTER_109,legume_str,Plant_8] 0
 x[CLUSTER_109,legume_str,Plant_9] 0
 x[CLUSTER_11,cattle_man,Plant_0] 0
 x[CLUSTER_11,cattle_man,Plant_1] 0
-x[CLUSTER_11,cattle_man,Plant_2] 0.0037641
+x[CLUSTER_11,cattle_man,Plant_2] 0
 x[CLUSTER_11,cattle_man,Plant_3] 0
 x[CLUSTER_11,cattle_man,Plant_4] 0
 x[CLUSTER_11,cattle_man,Plant_5] 0
@@ -1722,7 +1722,7 @@ x[CLUSTER_11,cattle_slu,Plant_8] 0
 x[CLUSTER_11,cattle_slu,Plant_9] 0
 x[CLUSTER_11,horse_man,Plant_0] 0
 x[CLUSTER_11,horse_man,Plant_1] 0
-x[CLUSTER_11,horse_man,Plant_2] 0.001455
+x[CLUSTER_11,horse_man,Plant_2] 0
 x[CLUSTER_11,horse_man,Plant_3] 0
 x[CLUSTER_11,horse_man,Plant_4] 0
 x[CLUSTER_11,horse_man,Plant_5] 0
@@ -1742,7 +1742,7 @@ x[CLUSTER_11,pig_slu,Plant_8] 0
 x[CLUSTER_11,pig_slu,Plant_9] 0
 x[CLUSTER_11,pig_man,Plant_0] 0
 x[CLUSTER_11,pig_man,Plant_1] 0
-x[CLUSTER_11,pig_man,Plant_2] 2.3672070399999998e-05
+x[CLUSTER_11,pig_man,Plant_2] 0
 x[CLUSTER_11,pig_man,Plant_3] 0
 x[CLUSTER_11,pig_man,Plant_4] 0
 x[CLUSTER_11,pig_man,Plant_5] 0
@@ -1789,7 +1789,7 @@ x[CLUSTER_11,maize_str,Plant_5] 0
 x[CLUSTER_11,maize_str,Plant_6] 0
 x[CLUSTER_11,maize_str,Plant_7] 0
 x[CLUSTER_11,maize_str,Plant_8] 0
-x[CLUSTER_11,maize_str,Plant_9] 0.0001909
+x[CLUSTER_11,maize_str,Plant_9] 0
 x[CLUSTER_11,beet_leaf,Plant_0] 0
 x[CLUSTER_11,beet_leaf,Plant_1] 0
 x[CLUSTER_11,beet_leaf,Plant_2] 0
@@ -1827,7 +1827,7 @@ x[CLUSTER_110,cattle_man,Plant_3] 0
 x[CLUSTER_110,cattle_man,Plant_4] 0
 x[CLUSTER_110,cattle_man,Plant_5] 0
 x[CLUSTER_110,cattle_man,Plant_6] 0
-x[CLUSTER_110,cattle_man,Plant_7] 0.022036
+x[CLUSTER_110,cattle_man,Plant_7] 0
 x[CLUSTER_110,cattle_man,Plant_8] 0
 x[CLUSTER_110,cattle_man,Plant_9] 0
 x[CLUSTER_110,cattle_slu,Plant_0] 0
@@ -1837,7 +1837,7 @@ x[CLUSTER_110,cattle_slu,Plant_3] 0
 x[CLUSTER_110,cattle_slu,Plant_4] 0
 x[CLUSTER_110,cattle_slu,Plant_5] 0
 x[CLUSTER_110,cattle_slu,Plant_6] 0
-x[CLUSTER_110,cattle_slu,Plant_7] 0.024343
+x[CLUSTER_110,cattle_slu,Plant_7] 0
 x[CLUSTER_110,cattle_slu,Plant_8] 0
 x[CLUSTER_110,cattle_slu,Plant_9] 0
 x[CLUSTER_110,horse_man,Plant_0] 0
@@ -1847,7 +1847,7 @@ x[CLUSTER_110,horse_man,Plant_3] 0
 x[CLUSTER_110,horse_man,Plant_4] 0
 x[CLUSTER_110,horse_man,Plant_5] 0
 x[CLUSTER_110,horse_man,Plant_6] 0
-x[CLUSTER_110,horse_man,Plant_7] 0.000797
+x[CLUSTER_110,horse_man,Plant_7] 0
 x[CLUSTER_110,horse_man,Plant_8] 0
 x[CLUSTER_110,horse_man,Plant_9] 0
 x[CLUSTER_110,pig_slu,Plant_0] 0
@@ -1948,7 +1948,7 @@ x[CLUSTER_111,cattle_man,Plant_4] 0
 x[CLUSTER_111,cattle_man,Plant_5] 0
 x[CLUSTER_111,cattle_man,Plant_6] 0
 x[CLUSTER_111,cattle_man,Plant_7] 0
-x[CLUSTER_111,cattle_man,Plant_8] 0.013173
+x[CLUSTER_111,cattle_man,Plant_8] 0
 x[CLUSTER_111,cattle_man,Plant_9] 0
 x[CLUSTER_111,cattle_slu,Plant_0] 0
 x[CLUSTER_111,cattle_slu,Plant_1] 0
@@ -1968,7 +1968,7 @@ x[CLUSTER_111,horse_man,Plant_4] 0
 x[CLUSTER_111,horse_man,Plant_5] 0
 x[CLUSTER_111,horse_man,Plant_6] 0
 x[CLUSTER_111,horse_man,Plant_7] 0
-x[CLUSTER_111,horse_man,Plant_8] 0.002114
+x[CLUSTER_111,horse_man,Plant_8] 0
 x[CLUSTER_111,horse_man,Plant_9] 0
 x[CLUSTER_111,pig_slu,Plant_0] 0
 x[CLUSTER_111,pig_slu,Plant_1] 0
@@ -1988,7 +1988,7 @@ x[CLUSTER_111,pig_man,Plant_4] 0
 x[CLUSTER_111,pig_man,Plant_5] 0
 x[CLUSTER_111,pig_man,Plant_6] 0
 x[CLUSTER_111,pig_man,Plant_7] 0
-x[CLUSTER_111,pig_man,Plant_8] 0.000262226
+x[CLUSTER_111,pig_man,Plant_8] 0
 x[CLUSTER_111,pig_man,Plant_9] 0
 x[CLUSTER_111,cereal_str,Plant_0] 0
 x[CLUSTER_111,cereal_str,Plant_1] 0
@@ -2064,7 +2064,7 @@ x[CLUSTER_112,cattle_man,Plant_0] 0
 x[CLUSTER_112,cattle_man,Plant_1] 0
 x[CLUSTER_112,cattle_man,Plant_2] 0
 x[CLUSTER_112,cattle_man,Plant_3] 0
-x[CLUSTER_112,cattle_man,Plant_4] 0.013057
+x[CLUSTER_112,cattle_man,Plant_4] 0
 x[CLUSTER_112,cattle_man,Plant_5] 0
 x[CLUSTER_112,cattle_man,Plant_6] 0
 x[CLUSTER_112,cattle_man,Plant_7] 0
@@ -2074,7 +2074,7 @@ x[CLUSTER_112,cattle_slu,Plant_0] 0
 x[CLUSTER_112,cattle_slu,Plant_1] 0
 x[CLUSTER_112,cattle_slu,Plant_2] 0
 x[CLUSTER_112,cattle_slu,Plant_3] 0
-x[CLUSTER_112,cattle_slu,Plant_4] 9.5060000000000186e-02
+x[CLUSTER_112,cattle_slu,Plant_4] 0
 x[CLUSTER_112,cattle_slu,Plant_5] 0
 x[CLUSTER_112,cattle_slu,Plant_6] 0
 x[CLUSTER_112,cattle_slu,Plant_7] 0
@@ -2084,7 +2084,7 @@ x[CLUSTER_112,horse_man,Plant_0] 0
 x[CLUSTER_112,horse_man,Plant_1] 0
 x[CLUSTER_112,horse_man,Plant_2] 0
 x[CLUSTER_112,horse_man,Plant_3] 0
-x[CLUSTER_112,horse_man,Plant_4] 0.001571
+x[CLUSTER_112,horse_man,Plant_4] 0
 x[CLUSTER_112,horse_man,Plant_5] 0
 x[CLUSTER_112,horse_man,Plant_6] 0
 x[CLUSTER_112,horse_man,Plant_7] 0
@@ -2104,7 +2104,7 @@ x[CLUSTER_112,pig_man,Plant_0] 0
 x[CLUSTER_112,pig_man,Plant_1] 0
 x[CLUSTER_112,pig_man,Plant_2] 0
 x[CLUSTER_112,pig_man,Plant_3] 0
-x[CLUSTER_112,pig_man,Plant_4] 0.0005088
+x[CLUSTER_112,pig_man,Plant_4] 0
 x[CLUSTER_112,pig_man,Plant_5] 0
 x[CLUSTER_112,pig_man,Plant_6] 0
 x[CLUSTER_112,pig_man,Plant_7] 0
@@ -2184,7 +2184,7 @@ x[CLUSTER_113,cattle_man,Plant_0] 0
 x[CLUSTER_113,cattle_man,Plant_1] 0
 x[CLUSTER_113,cattle_man,Plant_2] 0
 x[CLUSTER_113,cattle_man,Plant_3] 0
-x[CLUSTER_113,cattle_man,Plant_4] 0.001617
+x[CLUSTER_113,cattle_man,Plant_4] 0
 x[CLUSTER_113,cattle_man,Plant_5] 0
 x[CLUSTER_113,cattle_man,Plant_6] 0
 x[CLUSTER_113,cattle_man,Plant_7] 0
@@ -2204,7 +2204,7 @@ x[CLUSTER_113,horse_man,Plant_0] 0
 x[CLUSTER_113,horse_man,Plant_1] 0
 x[CLUSTER_113,horse_man,Plant_2] 0
 x[CLUSTER_113,horse_man,Plant_3] 0
-x[CLUSTER_113,horse_man,Plant_4] 0.0005134
+x[CLUSTER_113,horse_man,Plant_4] 0
 x[CLUSTER_113,horse_man,Plant_5] 0
 x[CLUSTER_113,horse_man,Plant_6] 0
 x[CLUSTER_113,horse_man,Plant_7] 0
@@ -2304,7 +2304,7 @@ x[CLUSTER_114,cattle_man,Plant_0] 0
 x[CLUSTER_114,cattle_man,Plant_1] 0
 x[CLUSTER_114,cattle_man,Plant_2] 0
 x[CLUSTER_114,cattle_man,Plant_3] 0
-x[CLUSTER_114,cattle_man,Plant_4] 0.003025
+x[CLUSTER_114,cattle_man,Plant_4] 0
 x[CLUSTER_114,cattle_man,Plant_5] 0
 x[CLUSTER_114,cattle_man,Plant_6] 0
 x[CLUSTER_114,cattle_man,Plant_7] 0
@@ -2324,7 +2324,7 @@ x[CLUSTER_114,horse_man,Plant_0] 0
 x[CLUSTER_114,horse_man,Plant_1] 0
 x[CLUSTER_114,horse_man,Plant_2] 0
 x[CLUSTER_114,horse_man,Plant_3] 0
-x[CLUSTER_114,horse_man,Plant_4] 6.3289999999999993e-04
+x[CLUSTER_114,horse_man,Plant_4] 0
 x[CLUSTER_114,horse_man,Plant_5] 0
 x[CLUSTER_114,horse_man,Plant_6] 0
 x[CLUSTER_114,horse_man,Plant_7] 0
@@ -2344,7 +2344,7 @@ x[CLUSTER_114,pig_man,Plant_0] 0
 x[CLUSTER_114,pig_man,Plant_1] 0
 x[CLUSTER_114,pig_man,Plant_2] 0
 x[CLUSTER_114,pig_man,Plant_3] 0
-x[CLUSTER_114,pig_man,Plant_4] 7.7821000000000013e-05
+x[CLUSTER_114,pig_man,Plant_4] 0
 x[CLUSTER_114,pig_man,Plant_5] 0
 x[CLUSTER_114,pig_man,Plant_6] 0
 x[CLUSTER_114,pig_man,Plant_7] 0
@@ -2369,7 +2369,7 @@ x[CLUSTER_114,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_114,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_114,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_114,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_114,clover_alfalfa_grass,Plant_9] 0.0098
+x[CLUSTER_114,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_114,perm_grass,Plant_0] 0
 x[CLUSTER_114,perm_grass,Plant_1] 0
 x[CLUSTER_114,perm_grass,Plant_2] 0
@@ -2389,7 +2389,7 @@ x[CLUSTER_114,maize_str,Plant_5] 0
 x[CLUSTER_114,maize_str,Plant_6] 0
 x[CLUSTER_114,maize_str,Plant_7] 0
 x[CLUSTER_114,maize_str,Plant_8] 0
-x[CLUSTER_114,maize_str,Plant_9] 7.78e-05
+x[CLUSTER_114,maize_str,Plant_9] 0
 x[CLUSTER_114,beet_leaf,Plant_0] 0
 x[CLUSTER_114,beet_leaf,Plant_1] 0
 x[CLUSTER_114,beet_leaf,Plant_2] 0
@@ -2424,7 +2424,7 @@ x[CLUSTER_115,cattle_man,Plant_0] 0
 x[CLUSTER_115,cattle_man,Plant_1] 0
 x[CLUSTER_115,cattle_man,Plant_2] 0
 x[CLUSTER_115,cattle_man,Plant_3] 0
-x[CLUSTER_115,cattle_man,Plant_4] 0.012403
+x[CLUSTER_115,cattle_man,Plant_4] 0
 x[CLUSTER_115,cattle_man,Plant_5] 0
 x[CLUSTER_115,cattle_man,Plant_6] 0
 x[CLUSTER_115,cattle_man,Plant_7] 0
@@ -2444,7 +2444,7 @@ x[CLUSTER_115,horse_man,Plant_0] 0
 x[CLUSTER_115,horse_man,Plant_1] 0
 x[CLUSTER_115,horse_man,Plant_2] 0
 x[CLUSTER_115,horse_man,Plant_3] 0
-x[CLUSTER_115,horse_man,Plant_4] 0.00019035
+x[CLUSTER_115,horse_man,Plant_4] 0
 x[CLUSTER_115,horse_man,Plant_5] 0
 x[CLUSTER_115,horse_man,Plant_6] 0
 x[CLUSTER_115,horse_man,Plant_7] 0
@@ -2464,7 +2464,7 @@ x[CLUSTER_115,pig_man,Plant_0] 0
 x[CLUSTER_115,pig_man,Plant_1] 0
 x[CLUSTER_115,pig_man,Plant_2] 0
 x[CLUSTER_115,pig_man,Plant_3] 0
-x[CLUSTER_115,pig_man,Plant_4] 0.0002768087
+x[CLUSTER_115,pig_man,Plant_4] 0
 x[CLUSTER_115,pig_man,Plant_5] 0
 x[CLUSTER_115,pig_man,Plant_6] 0
 x[CLUSTER_115,pig_man,Plant_7] 0
@@ -2545,7 +2545,7 @@ x[CLUSTER_116,cattle_man,Plant_1] 0
 x[CLUSTER_116,cattle_man,Plant_2] 0
 x[CLUSTER_116,cattle_man,Plant_3] 0
 x[CLUSTER_116,cattle_man,Plant_4] 0
-x[CLUSTER_116,cattle_man,Plant_5] 0.000856
+x[CLUSTER_116,cattle_man,Plant_5] 0
 x[CLUSTER_116,cattle_man,Plant_6] 0
 x[CLUSTER_116,cattle_man,Plant_7] 0
 x[CLUSTER_116,cattle_man,Plant_8] 0
@@ -2555,7 +2555,7 @@ x[CLUSTER_116,cattle_slu,Plant_1] 0
 x[CLUSTER_116,cattle_slu,Plant_2] 0
 x[CLUSTER_116,cattle_slu,Plant_3] 0
 x[CLUSTER_116,cattle_slu,Plant_4] 0
-x[CLUSTER_116,cattle_slu,Plant_5] 0.00395
+x[CLUSTER_116,cattle_slu,Plant_5] 0
 x[CLUSTER_116,cattle_slu,Plant_6] 0
 x[CLUSTER_116,cattle_slu,Plant_7] 0
 x[CLUSTER_116,cattle_slu,Plant_8] 0
@@ -2565,7 +2565,7 @@ x[CLUSTER_116,horse_man,Plant_1] 0
 x[CLUSTER_116,horse_man,Plant_2] 0
 x[CLUSTER_116,horse_man,Plant_3] 0
 x[CLUSTER_116,horse_man,Plant_4] 0
-x[CLUSTER_116,horse_man,Plant_5] 0.001252
+x[CLUSTER_116,horse_man,Plant_5] 0
 x[CLUSTER_116,horse_man,Plant_6] 0
 x[CLUSTER_116,horse_man,Plant_7] 0
 x[CLUSTER_116,horse_man,Plant_8] 0
@@ -2575,7 +2575,7 @@ x[CLUSTER_116,pig_slu,Plant_1] 0
 x[CLUSTER_116,pig_slu,Plant_2] 0
 x[CLUSTER_116,pig_slu,Plant_3] 0
 x[CLUSTER_116,pig_slu,Plant_4] 0
-x[CLUSTER_116,pig_slu,Plant_5] 3.6129999999999838e-03
+x[CLUSTER_116,pig_slu,Plant_5] 0
 x[CLUSTER_116,pig_slu,Plant_6] 0
 x[CLUSTER_116,pig_slu,Plant_7] 0
 x[CLUSTER_116,pig_slu,Plant_8] 0
@@ -2585,7 +2585,7 @@ x[CLUSTER_116,pig_man,Plant_1] 0
 x[CLUSTER_116,pig_man,Plant_2] 0
 x[CLUSTER_116,pig_man,Plant_3] 0
 x[CLUSTER_116,pig_man,Plant_4] 0
-x[CLUSTER_116,pig_man,Plant_5] 0.0001445
+x[CLUSTER_116,pig_man,Plant_5] 0
 x[CLUSTER_116,pig_man,Plant_6] 0
 x[CLUSTER_116,pig_man,Plant_7] 0
 x[CLUSTER_116,pig_man,Plant_8] 0
@@ -2605,7 +2605,7 @@ x[CLUSTER_116,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_4] 0
-x[CLUSTER_116,clover_alfalfa_grass,Plant_5] 3.0345999999999997e-03
+x[CLUSTER_116,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_116,clover_alfalfa_grass,Plant_8] 0
@@ -2625,7 +2625,7 @@ x[CLUSTER_116,maize_str,Plant_1] 0
 x[CLUSTER_116,maize_str,Plant_2] 0
 x[CLUSTER_116,maize_str,Plant_3] 0
 x[CLUSTER_116,maize_str,Plant_4] 0
-x[CLUSTER_116,maize_str,Plant_5] 0.00427
+x[CLUSTER_116,maize_str,Plant_5] 0
 x[CLUSTER_116,maize_str,Plant_6] 0
 x[CLUSTER_116,maize_str,Plant_7] 0
 x[CLUSTER_116,maize_str,Plant_8] 0
@@ -2681,7 +2681,7 @@ x[CLUSTER_117,cattle_slu,Plant_7] 0
 x[CLUSTER_117,cattle_slu,Plant_8] 0
 x[CLUSTER_117,cattle_slu,Plant_9] 0
 x[CLUSTER_117,horse_man,Plant_0] 0
-x[CLUSTER_117,horse_man,Plant_1] 1.8482000000000001e-03
+x[CLUSTER_117,horse_man,Plant_1] 0
 x[CLUSTER_117,horse_man,Plant_2] 0
 x[CLUSTER_117,horse_man,Plant_3] 0
 x[CLUSTER_117,horse_man,Plant_4] 0
@@ -2708,7 +2708,7 @@ x[CLUSTER_117,pig_man,Plant_4] 0
 x[CLUSTER_117,pig_man,Plant_5] 0
 x[CLUSTER_117,pig_man,Plant_6] 0
 x[CLUSTER_117,pig_man,Plant_7] 0
-x[CLUSTER_117,pig_man,Plant_8] 1.5307099999999999e-04
+x[CLUSTER_117,pig_man,Plant_8] 0
 x[CLUSTER_117,pig_man,Plant_9] 0
 x[CLUSTER_117,cereal_str,Plant_0] 0
 x[CLUSTER_117,cereal_str,Plant_1] 0
@@ -2788,7 +2788,7 @@ x[CLUSTER_118,cattle_man,Plant_4] 0
 x[CLUSTER_118,cattle_man,Plant_5] 0
 x[CLUSTER_118,cattle_man,Plant_6] 0
 x[CLUSTER_118,cattle_man,Plant_7] 0
-x[CLUSTER_118,cattle_man,Plant_8] 0.02119
+x[CLUSTER_118,cattle_man,Plant_8] 0
 x[CLUSTER_118,cattle_man,Plant_9] 0
 x[CLUSTER_118,cattle_slu,Plant_0] 0
 x[CLUSTER_118,cattle_slu,Plant_1] 0
@@ -2808,7 +2808,7 @@ x[CLUSTER_118,horse_man,Plant_4] 0
 x[CLUSTER_118,horse_man,Plant_5] 0
 x[CLUSTER_118,horse_man,Plant_6] 0
 x[CLUSTER_118,horse_man,Plant_7] 0
-x[CLUSTER_118,horse_man,Plant_8] 0.00071
+x[CLUSTER_118,horse_man,Plant_8] 0
 x[CLUSTER_118,horse_man,Plant_9] 0
 x[CLUSTER_118,pig_slu,Plant_0] 0
 x[CLUSTER_118,pig_slu,Plant_1] 0
@@ -2907,7 +2907,7 @@ x[CLUSTER_119,cattle_man,Plant_3] 0
 x[CLUSTER_119,cattle_man,Plant_4] 0
 x[CLUSTER_119,cattle_man,Plant_5] 0
 x[CLUSTER_119,cattle_man,Plant_6] 0
-x[CLUSTER_119,cattle_man,Plant_7] 0.01493
+x[CLUSTER_119,cattle_man,Plant_7] 0
 x[CLUSTER_119,cattle_man,Plant_8] 0
 x[CLUSTER_119,cattle_man,Plant_9] 0
 x[CLUSTER_119,cattle_slu,Plant_0] 0
@@ -2917,7 +2917,7 @@ x[CLUSTER_119,cattle_slu,Plant_3] 0
 x[CLUSTER_119,cattle_slu,Plant_4] 0
 x[CLUSTER_119,cattle_slu,Plant_5] 0
 x[CLUSTER_119,cattle_slu,Plant_6] 0
-x[CLUSTER_119,cattle_slu,Plant_7] 1.7249999999999915e-02
+x[CLUSTER_119,cattle_slu,Plant_7] 0
 x[CLUSTER_119,cattle_slu,Plant_8] 0
 x[CLUSTER_119,cattle_slu,Plant_9] 0
 x[CLUSTER_119,horse_man,Plant_0] 0
@@ -2927,7 +2927,7 @@ x[CLUSTER_119,horse_man,Plant_3] 0
 x[CLUSTER_119,horse_man,Plant_4] 0
 x[CLUSTER_119,horse_man,Plant_5] 0
 x[CLUSTER_119,horse_man,Plant_6] 0
-x[CLUSTER_119,horse_man,Plant_7] 0.001764
+x[CLUSTER_119,horse_man,Plant_7] 0
 x[CLUSTER_119,horse_man,Plant_8] 0
 x[CLUSTER_119,horse_man,Plant_9] 0
 x[CLUSTER_119,pig_slu,Plant_0] 0
@@ -2937,7 +2937,7 @@ x[CLUSTER_119,pig_slu,Plant_3] 0
 x[CLUSTER_119,pig_slu,Plant_4] 0
 x[CLUSTER_119,pig_slu,Plant_5] 0
 x[CLUSTER_119,pig_slu,Plant_6] 0
-x[CLUSTER_119,pig_slu,Plant_7] 0.003702
+x[CLUSTER_119,pig_slu,Plant_7] 0
 x[CLUSTER_119,pig_slu,Plant_8] 0
 x[CLUSTER_119,pig_slu,Plant_9] 0
 x[CLUSTER_119,pig_man,Plant_0] 0
@@ -2947,7 +2947,7 @@ x[CLUSTER_119,pig_man,Plant_3] 0
 x[CLUSTER_119,pig_man,Plant_4] 0
 x[CLUSTER_119,pig_man,Plant_5] 0
 x[CLUSTER_119,pig_man,Plant_6] 0
-x[CLUSTER_119,pig_man,Plant_7] 0.0002109
+x[CLUSTER_119,pig_man,Plant_7] 0
 x[CLUSTER_119,pig_man,Plant_8] 0
 x[CLUSTER_119,pig_man,Plant_9] 0
 x[CLUSTER_119,cereal_str,Plant_0] 0
@@ -3022,7 +3022,7 @@ x[CLUSTER_119,legume_str,Plant_8] 0
 x[CLUSTER_119,legume_str,Plant_9] 0
 x[CLUSTER_12,cattle_man,Plant_0] 0
 x[CLUSTER_12,cattle_man,Plant_1] 0
-x[CLUSTER_12,cattle_man,Plant_2] 0.006212
+x[CLUSTER_12,cattle_man,Plant_2] 0
 x[CLUSTER_12,cattle_man,Plant_3] 0
 x[CLUSTER_12,cattle_man,Plant_4] 0
 x[CLUSTER_12,cattle_man,Plant_5] 0
@@ -3042,7 +3042,7 @@ x[CLUSTER_12,cattle_slu,Plant_8] 0
 x[CLUSTER_12,cattle_slu,Plant_9] 0
 x[CLUSTER_12,horse_man,Plant_0] 0
 x[CLUSTER_12,horse_man,Plant_1] 0
-x[CLUSTER_12,horse_man,Plant_2] 0.0024965
+x[CLUSTER_12,horse_man,Plant_2] 0
 x[CLUSTER_12,horse_man,Plant_3] 0
 x[CLUSTER_12,horse_man,Plant_4] 0
 x[CLUSTER_12,horse_man,Plant_5] 0
@@ -3062,7 +3062,7 @@ x[CLUSTER_12,pig_slu,Plant_8] 0
 x[CLUSTER_12,pig_slu,Plant_9] 0
 x[CLUSTER_12,pig_man,Plant_0] 0
 x[CLUSTER_12,pig_man,Plant_1] 0
-x[CLUSTER_12,pig_man,Plant_2] 9.6610847e-05
+x[CLUSTER_12,pig_man,Plant_2] 0
 x[CLUSTER_12,pig_man,Plant_3] 0
 x[CLUSTER_12,pig_man,Plant_4] 0
 x[CLUSTER_12,pig_man,Plant_5] 0
@@ -3144,7 +3144,7 @@ x[CLUSTER_120,cattle_man,Plant_0] 0
 x[CLUSTER_120,cattle_man,Plant_1] 0
 x[CLUSTER_120,cattle_man,Plant_2] 0
 x[CLUSTER_120,cattle_man,Plant_3] 0
-x[CLUSTER_120,cattle_man,Plant_4] 0.010758
+x[CLUSTER_120,cattle_man,Plant_4] 0
 x[CLUSTER_120,cattle_man,Plant_5] 0
 x[CLUSTER_120,cattle_man,Plant_6] 0
 x[CLUSTER_120,cattle_man,Plant_7] 0
@@ -3164,7 +3164,7 @@ x[CLUSTER_120,horse_man,Plant_0] 0
 x[CLUSTER_120,horse_man,Plant_1] 0
 x[CLUSTER_120,horse_man,Plant_2] 0
 x[CLUSTER_120,horse_man,Plant_3] 0
-x[CLUSTER_120,horse_man,Plant_4] 6.4323000000000006e-04
+x[CLUSTER_120,horse_man,Plant_4] 0
 x[CLUSTER_120,horse_man,Plant_5] 0
 x[CLUSTER_120,horse_man,Plant_6] 0
 x[CLUSTER_120,horse_man,Plant_7] 0
@@ -3184,7 +3184,7 @@ x[CLUSTER_120,pig_man,Plant_0] 0
 x[CLUSTER_120,pig_man,Plant_1] 0
 x[CLUSTER_120,pig_man,Plant_2] 0
 x[CLUSTER_120,pig_man,Plant_3] 0
-x[CLUSTER_120,pig_man,Plant_4] 0.000313972
+x[CLUSTER_120,pig_man,Plant_4] 0
 x[CLUSTER_120,pig_man,Plant_5] 0
 x[CLUSTER_120,pig_man,Plant_6] 0
 x[CLUSTER_120,pig_man,Plant_7] 0
@@ -3266,7 +3266,7 @@ x[CLUSTER_121,cattle_man,Plant_2] 0
 x[CLUSTER_121,cattle_man,Plant_3] 0
 x[CLUSTER_121,cattle_man,Plant_4] 0
 x[CLUSTER_121,cattle_man,Plant_5] 0
-x[CLUSTER_121,cattle_man,Plant_6] 0.01137
+x[CLUSTER_121,cattle_man,Plant_6] 0
 x[CLUSTER_121,cattle_man,Plant_7] 0
 x[CLUSTER_121,cattle_man,Plant_8] 0
 x[CLUSTER_121,cattle_man,Plant_9] 0
@@ -3286,7 +3286,7 @@ x[CLUSTER_121,horse_man,Plant_2] 0
 x[CLUSTER_121,horse_man,Plant_3] 0
 x[CLUSTER_121,horse_man,Plant_4] 0
 x[CLUSTER_121,horse_man,Plant_5] 0
-x[CLUSTER_121,horse_man,Plant_6] 0.002073
+x[CLUSTER_121,horse_man,Plant_6] 0
 x[CLUSTER_121,horse_man,Plant_7] 0
 x[CLUSTER_121,horse_man,Plant_8] 0
 x[CLUSTER_121,horse_man,Plant_9] 0
@@ -3386,7 +3386,7 @@ x[CLUSTER_122,cattle_man,Plant_2] 0
 x[CLUSTER_122,cattle_man,Plant_3] 0
 x[CLUSTER_122,cattle_man,Plant_4] 0
 x[CLUSTER_122,cattle_man,Plant_5] 0
-x[CLUSTER_122,cattle_man,Plant_6] 0.017
+x[CLUSTER_122,cattle_man,Plant_6] 0
 x[CLUSTER_122,cattle_man,Plant_7] 0
 x[CLUSTER_122,cattle_man,Plant_8] 0
 x[CLUSTER_122,cattle_man,Plant_9] 0
@@ -3406,7 +3406,7 @@ x[CLUSTER_122,horse_man,Plant_2] 0
 x[CLUSTER_122,horse_man,Plant_3] 0
 x[CLUSTER_122,horse_man,Plant_4] 0
 x[CLUSTER_122,horse_man,Plant_5] 0
-x[CLUSTER_122,horse_man,Plant_6] 0.00526
+x[CLUSTER_122,horse_man,Plant_6] 0
 x[CLUSTER_122,horse_man,Plant_7] 0
 x[CLUSTER_122,horse_man,Plant_8] 0
 x[CLUSTER_122,horse_man,Plant_9] 0
@@ -3425,7 +3425,7 @@ x[CLUSTER_122,pig_man,Plant_1] 0
 x[CLUSTER_122,pig_man,Plant_2] 0
 x[CLUSTER_122,pig_man,Plant_3] 0
 x[CLUSTER_122,pig_man,Plant_4] 0
-x[CLUSTER_122,pig_man,Plant_5] 4.078257e-05
+x[CLUSTER_122,pig_man,Plant_5] 0
 x[CLUSTER_122,pig_man,Plant_6] 0
 x[CLUSTER_122,pig_man,Plant_7] 0
 x[CLUSTER_122,pig_man,Plant_8] 0
@@ -3508,7 +3508,7 @@ x[CLUSTER_123,cattle_man,Plant_4] 0
 x[CLUSTER_123,cattle_man,Plant_5] 0
 x[CLUSTER_123,cattle_man,Plant_6] 0
 x[CLUSTER_123,cattle_man,Plant_7] 0
-x[CLUSTER_123,cattle_man,Plant_8] 0.009
+x[CLUSTER_123,cattle_man,Plant_8] 0
 x[CLUSTER_123,cattle_man,Plant_9] 0
 x[CLUSTER_123,cattle_slu,Plant_0] 0
 x[CLUSTER_123,cattle_slu,Plant_1] 0
@@ -3518,7 +3518,7 @@ x[CLUSTER_123,cattle_slu,Plant_4] 0
 x[CLUSTER_123,cattle_slu,Plant_5] 0
 x[CLUSTER_123,cattle_slu,Plant_6] 0
 x[CLUSTER_123,cattle_slu,Plant_7] 0
-x[CLUSTER_123,cattle_slu,Plant_8] 0.04868
+x[CLUSTER_123,cattle_slu,Plant_8] 0
 x[CLUSTER_123,cattle_slu,Plant_9] 0
 x[CLUSTER_123,horse_man,Plant_0] 0
 x[CLUSTER_123,horse_man,Plant_1] 0
@@ -3528,7 +3528,7 @@ x[CLUSTER_123,horse_man,Plant_4] 0
 x[CLUSTER_123,horse_man,Plant_5] 0
 x[CLUSTER_123,horse_man,Plant_6] 0
 x[CLUSTER_123,horse_man,Plant_7] 0
-x[CLUSTER_123,horse_man,Plant_8] 0.001614
+x[CLUSTER_123,horse_man,Plant_8] 0
 x[CLUSTER_123,horse_man,Plant_9] 0
 x[CLUSTER_123,pig_slu,Plant_0] 0
 x[CLUSTER_123,pig_slu,Plant_1] 0
@@ -3548,7 +3548,7 @@ x[CLUSTER_123,pig_man,Plant_4] 0
 x[CLUSTER_123,pig_man,Plant_5] 0
 x[CLUSTER_123,pig_man,Plant_6] 0
 x[CLUSTER_123,pig_man,Plant_7] 0
-x[CLUSTER_123,pig_man,Plant_8] 9.25800179e-05
+x[CLUSTER_123,pig_man,Plant_8] 0
 x[CLUSTER_123,pig_man,Plant_9] 0
 x[CLUSTER_123,cereal_str,Plant_0] 0
 x[CLUSTER_123,cereal_str,Plant_1] 0
@@ -3623,7 +3623,7 @@ x[CLUSTER_123,legume_str,Plant_9] 0
 x[CLUSTER_124,cattle_man,Plant_0] 0
 x[CLUSTER_124,cattle_man,Plant_1] 0
 x[CLUSTER_124,cattle_man,Plant_2] 0
-x[CLUSTER_124,cattle_man,Plant_3] 0.02003
+x[CLUSTER_124,cattle_man,Plant_3] 0
 x[CLUSTER_124,cattle_man,Plant_4] 0
 x[CLUSTER_124,cattle_man,Plant_5] 0
 x[CLUSTER_124,cattle_man,Plant_6] 0
@@ -3643,7 +3643,7 @@ x[CLUSTER_124,cattle_slu,Plant_9] 0
 x[CLUSTER_124,horse_man,Plant_0] 0
 x[CLUSTER_124,horse_man,Plant_1] 0
 x[CLUSTER_124,horse_man,Plant_2] 0
-x[CLUSTER_124,horse_man,Plant_3] 0.002749
+x[CLUSTER_124,horse_man,Plant_3] 0
 x[CLUSTER_124,horse_man,Plant_4] 0
 x[CLUSTER_124,horse_man,Plant_5] 0
 x[CLUSTER_124,horse_man,Plant_6] 0
@@ -3663,7 +3663,7 @@ x[CLUSTER_124,pig_slu,Plant_9] 0
 x[CLUSTER_124,pig_man,Plant_0] 0
 x[CLUSTER_124,pig_man,Plant_1] 0
 x[CLUSTER_124,pig_man,Plant_2] 0
-x[CLUSTER_124,pig_man,Plant_3] 0.00022504
+x[CLUSTER_124,pig_man,Plant_3] 0
 x[CLUSTER_124,pig_man,Plant_4] 0
 x[CLUSTER_124,pig_man,Plant_5] 0
 x[CLUSTER_124,pig_man,Plant_6] 0
@@ -3745,7 +3745,7 @@ x[CLUSTER_125,cattle_man,Plant_1] 0
 x[CLUSTER_125,cattle_man,Plant_2] 0
 x[CLUSTER_125,cattle_man,Plant_3] 0
 x[CLUSTER_125,cattle_man,Plant_4] 0
-x[CLUSTER_125,cattle_man,Plant_5] 0.01794
+x[CLUSTER_125,cattle_man,Plant_5] 0
 x[CLUSTER_125,cattle_man,Plant_6] 0
 x[CLUSTER_125,cattle_man,Plant_7] 0
 x[CLUSTER_125,cattle_man,Plant_8] 0
@@ -3760,7 +3760,7 @@ x[CLUSTER_125,cattle_slu,Plant_6] 0
 x[CLUSTER_125,cattle_slu,Plant_7] 0
 x[CLUSTER_125,cattle_slu,Plant_8] 0
 x[CLUSTER_125,cattle_slu,Plant_9] 0
-x[CLUSTER_125,horse_man,Plant_0] 0.000653
+x[CLUSTER_125,horse_man,Plant_0] 0
 x[CLUSTER_125,horse_man,Plant_1] 0
 x[CLUSTER_125,horse_man,Plant_2] 0
 x[CLUSTER_125,horse_man,Plant_3] 0
@@ -3785,7 +3785,7 @@ x[CLUSTER_125,pig_man,Plant_1] 0
 x[CLUSTER_125,pig_man,Plant_2] 0
 x[CLUSTER_125,pig_man,Plant_3] 0
 x[CLUSTER_125,pig_man,Plant_4] 0
-x[CLUSTER_125,pig_man,Plant_5] 0.000536
+x[CLUSTER_125,pig_man,Plant_5] 0
 x[CLUSTER_125,pig_man,Plant_6] 0
 x[CLUSTER_125,pig_man,Plant_7] 0
 x[CLUSTER_125,pig_man,Plant_8] 0
@@ -3865,7 +3865,7 @@ x[CLUSTER_126,cattle_man,Plant_1] 0
 x[CLUSTER_126,cattle_man,Plant_2] 0
 x[CLUSTER_126,cattle_man,Plant_3] 0
 x[CLUSTER_126,cattle_man,Plant_4] 0
-x[CLUSTER_126,cattle_man,Plant_5] 0.006163
+x[CLUSTER_126,cattle_man,Plant_5] 0
 x[CLUSTER_126,cattle_man,Plant_6] 0
 x[CLUSTER_126,cattle_man,Plant_7] 0
 x[CLUSTER_126,cattle_man,Plant_8] 0
@@ -3875,7 +3875,7 @@ x[CLUSTER_126,cattle_slu,Plant_1] 0
 x[CLUSTER_126,cattle_slu,Plant_2] 0
 x[CLUSTER_126,cattle_slu,Plant_3] 0
 x[CLUSTER_126,cattle_slu,Plant_4] 0
-x[CLUSTER_126,cattle_slu,Plant_5] 2.8929999999999741e-02
+x[CLUSTER_126,cattle_slu,Plant_5] 0
 x[CLUSTER_126,cattle_slu,Plant_6] 0
 x[CLUSTER_126,cattle_slu,Plant_7] 0
 x[CLUSTER_126,cattle_slu,Plant_8] 0
@@ -3885,7 +3885,7 @@ x[CLUSTER_126,horse_man,Plant_1] 0
 x[CLUSTER_126,horse_man,Plant_2] 0
 x[CLUSTER_126,horse_man,Plant_3] 0
 x[CLUSTER_126,horse_man,Plant_4] 0
-x[CLUSTER_126,horse_man,Plant_5] 0.0014352
+x[CLUSTER_126,horse_man,Plant_5] 0
 x[CLUSTER_126,horse_man,Plant_6] 0
 x[CLUSTER_126,horse_man,Plant_7] 0
 x[CLUSTER_126,horse_man,Plant_8] 0
@@ -3905,7 +3905,7 @@ x[CLUSTER_126,pig_man,Plant_1] 0
 x[CLUSTER_126,pig_man,Plant_2] 0
 x[CLUSTER_126,pig_man,Plant_3] 0
 x[CLUSTER_126,pig_man,Plant_4] 0
-x[CLUSTER_126,pig_man,Plant_5] 0.002894
+x[CLUSTER_126,pig_man,Plant_5] 0
 x[CLUSTER_126,pig_man,Plant_6] 0
 x[CLUSTER_126,pig_man,Plant_7] 0
 x[CLUSTER_126,pig_man,Plant_8] 0
@@ -3988,7 +3988,7 @@ x[CLUSTER_127,cattle_man,Plant_4] 0
 x[CLUSTER_127,cattle_man,Plant_5] 0
 x[CLUSTER_127,cattle_man,Plant_6] 0
 x[CLUSTER_127,cattle_man,Plant_7] 0
-x[CLUSTER_127,cattle_man,Plant_8] 0.015806
+x[CLUSTER_127,cattle_man,Plant_8] 0
 x[CLUSTER_127,cattle_man,Plant_9] 0
 x[CLUSTER_127,cattle_slu,Plant_0] 0
 x[CLUSTER_127,cattle_slu,Plant_1] 0
@@ -4008,7 +4008,7 @@ x[CLUSTER_127,horse_man,Plant_4] 0
 x[CLUSTER_127,horse_man,Plant_5] 0
 x[CLUSTER_127,horse_man,Plant_6] 0
 x[CLUSTER_127,horse_man,Plant_7] 0
-x[CLUSTER_127,horse_man,Plant_8] 0.0028281
+x[CLUSTER_127,horse_man,Plant_8] 0
 x[CLUSTER_127,horse_man,Plant_9] 0
 x[CLUSTER_127,pig_slu,Plant_0] 0
 x[CLUSTER_127,pig_slu,Plant_1] 0
@@ -4108,7 +4108,7 @@ x[CLUSTER_128,cattle_man,Plant_4] 0
 x[CLUSTER_128,cattle_man,Plant_5] 0
 x[CLUSTER_128,cattle_man,Plant_6] 0
 x[CLUSTER_128,cattle_man,Plant_7] 0
-x[CLUSTER_128,cattle_man,Plant_8] 0.0101244
+x[CLUSTER_128,cattle_man,Plant_8] 0
 x[CLUSTER_128,cattle_man,Plant_9] 0
 x[CLUSTER_128,cattle_slu,Plant_0] 0
 x[CLUSTER_128,cattle_slu,Plant_1] 0
@@ -4128,7 +4128,7 @@ x[CLUSTER_128,horse_man,Plant_4] 0
 x[CLUSTER_128,horse_man,Plant_5] 0
 x[CLUSTER_128,horse_man,Plant_6] 0
 x[CLUSTER_128,horse_man,Plant_7] 0
-x[CLUSTER_128,horse_man,Plant_8] 2.4116999999999997e-03
+x[CLUSTER_128,horse_man,Plant_8] 0
 x[CLUSTER_128,horse_man,Plant_9] 0
 x[CLUSTER_128,pig_slu,Plant_0] 0
 x[CLUSTER_128,pig_slu,Plant_1] 0
@@ -4148,7 +4148,7 @@ x[CLUSTER_128,pig_man,Plant_4] 0
 x[CLUSTER_128,pig_man,Plant_5] 0
 x[CLUSTER_128,pig_man,Plant_6] 0
 x[CLUSTER_128,pig_man,Plant_7] 0
-x[CLUSTER_128,pig_man,Plant_8] 0.000539
+x[CLUSTER_128,pig_man,Plant_8] 0
 x[CLUSTER_128,pig_man,Plant_9] 0
 x[CLUSTER_128,cereal_str,Plant_0] 0
 x[CLUSTER_128,cereal_str,Plant_1] 0
@@ -4228,7 +4228,7 @@ x[CLUSTER_129,cattle_man,Plant_4] 0
 x[CLUSTER_129,cattle_man,Plant_5] 0
 x[CLUSTER_129,cattle_man,Plant_6] 0
 x[CLUSTER_129,cattle_man,Plant_7] 0
-x[CLUSTER_129,cattle_man,Plant_8] 0.008284
+x[CLUSTER_129,cattle_man,Plant_8] 0
 x[CLUSTER_129,cattle_man,Plant_9] 0
 x[CLUSTER_129,cattle_slu,Plant_0] 0
 x[CLUSTER_129,cattle_slu,Plant_1] 0
@@ -4248,7 +4248,7 @@ x[CLUSTER_129,horse_man,Plant_4] 0
 x[CLUSTER_129,horse_man,Plant_5] 0
 x[CLUSTER_129,horse_man,Plant_6] 0
 x[CLUSTER_129,horse_man,Plant_7] 0
-x[CLUSTER_129,horse_man,Plant_8] 0.0017439
+x[CLUSTER_129,horse_man,Plant_8] 0
 x[CLUSTER_129,horse_man,Plant_9] 0
 x[CLUSTER_129,pig_slu,Plant_0] 0
 x[CLUSTER_129,pig_slu,Plant_1] 0
@@ -4268,7 +4268,7 @@ x[CLUSTER_129,pig_man,Plant_4] 0
 x[CLUSTER_129,pig_man,Plant_5] 0
 x[CLUSTER_129,pig_man,Plant_6] 0
 x[CLUSTER_129,pig_man,Plant_7] 0
-x[CLUSTER_129,pig_man,Plant_8] 0.0002459917
+x[CLUSTER_129,pig_man,Plant_8] 0
 x[CLUSTER_129,pig_man,Plant_9] 0
 x[CLUSTER_129,cereal_str,Plant_0] 0
 x[CLUSTER_129,cereal_str,Plant_1] 0
@@ -4341,7 +4341,7 @@ x[CLUSTER_129,legume_str,Plant_7] 0
 x[CLUSTER_129,legume_str,Plant_8] 0
 x[CLUSTER_129,legume_str,Plant_9] 0
 x[CLUSTER_13,cattle_man,Plant_0] 0
-x[CLUSTER_13,cattle_man,Plant_1] 0.02249
+x[CLUSTER_13,cattle_man,Plant_1] 0
 x[CLUSTER_13,cattle_man,Plant_2] 0
 x[CLUSTER_13,cattle_man,Plant_3] 0
 x[CLUSTER_13,cattle_man,Plant_4] 0
@@ -4351,7 +4351,7 @@ x[CLUSTER_13,cattle_man,Plant_7] 0
 x[CLUSTER_13,cattle_man,Plant_8] 0
 x[CLUSTER_13,cattle_man,Plant_9] 0
 x[CLUSTER_13,cattle_slu,Plant_0] 0
-x[CLUSTER_13,cattle_slu,Plant_1] 0.11398
+x[CLUSTER_13,cattle_slu,Plant_1] 0
 x[CLUSTER_13,cattle_slu,Plant_2] 0
 x[CLUSTER_13,cattle_slu,Plant_3] 0
 x[CLUSTER_13,cattle_slu,Plant_4] 0
@@ -4361,7 +4361,7 @@ x[CLUSTER_13,cattle_slu,Plant_7] 0
 x[CLUSTER_13,cattle_slu,Plant_8] 0
 x[CLUSTER_13,cattle_slu,Plant_9] 0
 x[CLUSTER_13,horse_man,Plant_0] 0
-x[CLUSTER_13,horse_man,Plant_1] 0.00488
+x[CLUSTER_13,horse_man,Plant_1] 0
 x[CLUSTER_13,horse_man,Plant_2] 0
 x[CLUSTER_13,horse_man,Plant_3] 0
 x[CLUSTER_13,horse_man,Plant_4] 0
@@ -4388,7 +4388,7 @@ x[CLUSTER_13,pig_man,Plant_4] 0
 x[CLUSTER_13,pig_man,Plant_5] 0
 x[CLUSTER_13,pig_man,Plant_6] 0
 x[CLUSTER_13,pig_man,Plant_7] 0
-x[CLUSTER_13,pig_man,Plant_8] 1.5217000000000003e-04
+x[CLUSTER_13,pig_man,Plant_8] 0
 x[CLUSTER_13,pig_man,Plant_9] 0
 x[CLUSTER_13,cereal_str,Plant_0] 0
 x[CLUSTER_13,cereal_str,Plant_1] 0
@@ -4460,7 +4460,7 @@ x[CLUSTER_13,legume_str,Plant_6] 0
 x[CLUSTER_13,legume_str,Plant_7] 0
 x[CLUSTER_13,legume_str,Plant_8] 0
 x[CLUSTER_13,legume_str,Plant_9] 0
-x[CLUSTER_130,cattle_man,Plant_0] 0.016581
+x[CLUSTER_130,cattle_man,Plant_0] 0
 x[CLUSTER_130,cattle_man,Plant_1] 0
 x[CLUSTER_130,cattle_man,Plant_2] 0
 x[CLUSTER_130,cattle_man,Plant_3] 0
@@ -4470,7 +4470,7 @@ x[CLUSTER_130,cattle_man,Plant_6] 0
 x[CLUSTER_130,cattle_man,Plant_7] 0
 x[CLUSTER_130,cattle_man,Plant_8] 0
 x[CLUSTER_130,cattle_man,Plant_9] 0
-x[CLUSTER_130,cattle_slu,Plant_0] 0.07745
+x[CLUSTER_130,cattle_slu,Plant_0] 0
 x[CLUSTER_130,cattle_slu,Plant_1] 0
 x[CLUSTER_130,cattle_slu,Plant_2] 0
 x[CLUSTER_130,cattle_slu,Plant_3] 0
@@ -4480,7 +4480,7 @@ x[CLUSTER_130,cattle_slu,Plant_6] 0
 x[CLUSTER_130,cattle_slu,Plant_7] 0
 x[CLUSTER_130,cattle_slu,Plant_8] 0
 x[CLUSTER_130,cattle_slu,Plant_9] 0
-x[CLUSTER_130,horse_man,Plant_0] 3.7319999999999996e-04
+x[CLUSTER_130,horse_man,Plant_0] 0
 x[CLUSTER_130,horse_man,Plant_1] 0
 x[CLUSTER_130,horse_man,Plant_2] 0
 x[CLUSTER_130,horse_man,Plant_3] 0
@@ -4500,7 +4500,7 @@ x[CLUSTER_130,pig_slu,Plant_6] 0
 x[CLUSTER_130,pig_slu,Plant_7] 0
 x[CLUSTER_130,pig_slu,Plant_8] 0
 x[CLUSTER_130,pig_slu,Plant_9] 0
-x[CLUSTER_130,pig_man,Plant_0] 0.00030435
+x[CLUSTER_130,pig_man,Plant_0] 0
 x[CLUSTER_130,pig_man,Plant_1] 0
 x[CLUSTER_130,pig_man,Plant_2] 0
 x[CLUSTER_130,pig_man,Plant_3] 0
@@ -4540,7 +4540,7 @@ x[CLUSTER_130,perm_grass,Plant_6] 0
 x[CLUSTER_130,perm_grass,Plant_7] 0
 x[CLUSTER_130,perm_grass,Plant_8] 0
 x[CLUSTER_130,perm_grass,Plant_9] 0
-x[CLUSTER_130,maize_str,Plant_0] 0.0002701
+x[CLUSTER_130,maize_str,Plant_0] 0
 x[CLUSTER_130,maize_str,Plant_1] 0
 x[CLUSTER_130,maize_str,Plant_2] 0
 x[CLUSTER_130,maize_str,Plant_3] 0
@@ -4585,7 +4585,7 @@ x[CLUSTER_131,cattle_man,Plant_1] 0
 x[CLUSTER_131,cattle_man,Plant_2] 0
 x[CLUSTER_131,cattle_man,Plant_3] 0
 x[CLUSTER_131,cattle_man,Plant_4] 0
-x[CLUSTER_131,cattle_man,Plant_5] 0.00944
+x[CLUSTER_131,cattle_man,Plant_5] 0
 x[CLUSTER_131,cattle_man,Plant_6] 0
 x[CLUSTER_131,cattle_man,Plant_7] 0
 x[CLUSTER_131,cattle_man,Plant_8] 0
@@ -4595,7 +4595,7 @@ x[CLUSTER_131,cattle_slu,Plant_1] 0
 x[CLUSTER_131,cattle_slu,Plant_2] 0
 x[CLUSTER_131,cattle_slu,Plant_3] 0
 x[CLUSTER_131,cattle_slu,Plant_4] 0
-x[CLUSTER_131,cattle_slu,Plant_5] 4.4183207595852167e-03
+x[CLUSTER_131,cattle_slu,Plant_5] 0
 x[CLUSTER_131,cattle_slu,Plant_6] 0
 x[CLUSTER_131,cattle_slu,Plant_7] 0
 x[CLUSTER_131,cattle_slu,Plant_8] 0
@@ -4605,7 +4605,7 @@ x[CLUSTER_131,horse_man,Plant_1] 0
 x[CLUSTER_131,horse_man,Plant_2] 0
 x[CLUSTER_131,horse_man,Plant_3] 0
 x[CLUSTER_131,horse_man,Plant_4] 0
-x[CLUSTER_131,horse_man,Plant_5] 0.001232
+x[CLUSTER_131,horse_man,Plant_5] 0
 x[CLUSTER_131,horse_man,Plant_6] 0
 x[CLUSTER_131,horse_man,Plant_7] 0
 x[CLUSTER_131,horse_man,Plant_8] 0
@@ -4625,7 +4625,7 @@ x[CLUSTER_131,pig_man,Plant_1] 0
 x[CLUSTER_131,pig_man,Plant_2] 0
 x[CLUSTER_131,pig_man,Plant_3] 0
 x[CLUSTER_131,pig_man,Plant_4] 0
-x[CLUSTER_131,pig_man,Plant_5] 1.4977999999999999e-03
+x[CLUSTER_131,pig_man,Plant_5] 0
 x[CLUSTER_131,pig_man,Plant_6] 0
 x[CLUSTER_131,pig_man,Plant_7] 0
 x[CLUSTER_131,pig_man,Plant_8] 0
@@ -4708,7 +4708,7 @@ x[CLUSTER_132,cattle_man,Plant_4] 0
 x[CLUSTER_132,cattle_man,Plant_5] 0
 x[CLUSTER_132,cattle_man,Plant_6] 0
 x[CLUSTER_132,cattle_man,Plant_7] 0
-x[CLUSTER_132,cattle_man,Plant_8] 0.00703259
+x[CLUSTER_132,cattle_man,Plant_8] 0
 x[CLUSTER_132,cattle_man,Plant_9] 0
 x[CLUSTER_132,cattle_slu,Plant_0] 0
 x[CLUSTER_132,cattle_slu,Plant_1] 0
@@ -4718,7 +4718,7 @@ x[CLUSTER_132,cattle_slu,Plant_4] 0
 x[CLUSTER_132,cattle_slu,Plant_5] 0
 x[CLUSTER_132,cattle_slu,Plant_6] 0
 x[CLUSTER_132,cattle_slu,Plant_7] 0
-x[CLUSTER_132,cattle_slu,Plant_8] 0.02314
+x[CLUSTER_132,cattle_slu,Plant_8] 0
 x[CLUSTER_132,cattle_slu,Plant_9] 0
 x[CLUSTER_132,horse_man,Plant_0] 0
 x[CLUSTER_132,horse_man,Plant_1] 0
@@ -4728,7 +4728,7 @@ x[CLUSTER_132,horse_man,Plant_4] 0
 x[CLUSTER_132,horse_man,Plant_5] 0
 x[CLUSTER_132,horse_man,Plant_6] 0
 x[CLUSTER_132,horse_man,Plant_7] 0
-x[CLUSTER_132,horse_man,Plant_8] 0.000795885
+x[CLUSTER_132,horse_man,Plant_8] 0
 x[CLUSTER_132,horse_man,Plant_9] 0
 x[CLUSTER_132,pig_slu,Plant_0] 0
 x[CLUSTER_132,pig_slu,Plant_1] 0
@@ -4748,7 +4748,7 @@ x[CLUSTER_132,pig_man,Plant_4] 0
 x[CLUSTER_132,pig_man,Plant_5] 0
 x[CLUSTER_132,pig_man,Plant_6] 0
 x[CLUSTER_132,pig_man,Plant_7] 0
-x[CLUSTER_132,pig_man,Plant_8] 0.0009439
+x[CLUSTER_132,pig_man,Plant_8] 0
 x[CLUSTER_132,pig_man,Plant_9] 0
 x[CLUSTER_132,cereal_str,Plant_0] 0
 x[CLUSTER_132,cereal_str,Plant_1] 0
@@ -4788,7 +4788,7 @@ x[CLUSTER_132,maize_str,Plant_4] 0
 x[CLUSTER_132,maize_str,Plant_5] 0
 x[CLUSTER_132,maize_str,Plant_6] 0
 x[CLUSTER_132,maize_str,Plant_7] 0
-x[CLUSTER_132,maize_str,Plant_8] 0.0015332
+x[CLUSTER_132,maize_str,Plant_8] 0
 x[CLUSTER_132,maize_str,Plant_9] 0
 x[CLUSTER_132,beet_leaf,Plant_0] 0
 x[CLUSTER_132,beet_leaf,Plant_1] 0
@@ -4824,7 +4824,7 @@ x[CLUSTER_133,cattle_man,Plant_0] 0
 x[CLUSTER_133,cattle_man,Plant_1] 0
 x[CLUSTER_133,cattle_man,Plant_2] 0
 x[CLUSTER_133,cattle_man,Plant_3] 0
-x[CLUSTER_133,cattle_man,Plant_4] 0.0018
+x[CLUSTER_133,cattle_man,Plant_4] 0
 x[CLUSTER_133,cattle_man,Plant_5] 0
 x[CLUSTER_133,cattle_man,Plant_6] 0
 x[CLUSTER_133,cattle_man,Plant_7] 0
@@ -4844,7 +4844,7 @@ x[CLUSTER_133,horse_man,Plant_0] 0
 x[CLUSTER_133,horse_man,Plant_1] 0
 x[CLUSTER_133,horse_man,Plant_2] 0
 x[CLUSTER_133,horse_man,Plant_3] 0
-x[CLUSTER_133,horse_man,Plant_4] 5.3829999999999991e-04
+x[CLUSTER_133,horse_man,Plant_4] 0
 x[CLUSTER_133,horse_man,Plant_5] 0
 x[CLUSTER_133,horse_man,Plant_6] 0
 x[CLUSTER_133,horse_man,Plant_7] 0
@@ -4947,7 +4947,7 @@ x[CLUSTER_134,cattle_man,Plant_3] 0
 x[CLUSTER_134,cattle_man,Plant_4] 0
 x[CLUSTER_134,cattle_man,Plant_5] 0
 x[CLUSTER_134,cattle_man,Plant_6] 0
-x[CLUSTER_134,cattle_man,Plant_7] 0.0084314
+x[CLUSTER_134,cattle_man,Plant_7] 0
 x[CLUSTER_134,cattle_man,Plant_8] 0
 x[CLUSTER_134,cattle_man,Plant_9] 0
 x[CLUSTER_134,cattle_slu,Plant_0] 0
@@ -4957,7 +4957,7 @@ x[CLUSTER_134,cattle_slu,Plant_3] 0
 x[CLUSTER_134,cattle_slu,Plant_4] 0
 x[CLUSTER_134,cattle_slu,Plant_5] 0
 x[CLUSTER_134,cattle_slu,Plant_6] 0
-x[CLUSTER_134,cattle_slu,Plant_7] 7.8225210000000857e-03
+x[CLUSTER_134,cattle_slu,Plant_7] 0
 x[CLUSTER_134,cattle_slu,Plant_8] 0
 x[CLUSTER_134,cattle_slu,Plant_9] 0
 x[CLUSTER_134,horse_man,Plant_0] 0
@@ -4967,7 +4967,7 @@ x[CLUSTER_134,horse_man,Plant_3] 0
 x[CLUSTER_134,horse_man,Plant_4] 0
 x[CLUSTER_134,horse_man,Plant_5] 0
 x[CLUSTER_134,horse_man,Plant_6] 0
-x[CLUSTER_134,horse_man,Plant_7] 0.00072152
+x[CLUSTER_134,horse_man,Plant_7] 0
 x[CLUSTER_134,horse_man,Plant_8] 0
 x[CLUSTER_134,horse_man,Plant_9] 0
 x[CLUSTER_134,pig_slu,Plant_0] 0
@@ -4977,7 +4977,7 @@ x[CLUSTER_134,pig_slu,Plant_3] 0
 x[CLUSTER_134,pig_slu,Plant_4] 0
 x[CLUSTER_134,pig_slu,Plant_5] 0
 x[CLUSTER_134,pig_slu,Plant_6] 0
-x[CLUSTER_134,pig_slu,Plant_7] 1.6944400000000002e-02
+x[CLUSTER_134,pig_slu,Plant_7] 0
 x[CLUSTER_134,pig_slu,Plant_8] 0
 x[CLUSTER_134,pig_slu,Plant_9] 0
 x[CLUSTER_134,pig_man,Plant_0] 0
@@ -4987,7 +4987,7 @@ x[CLUSTER_134,pig_man,Plant_3] 0
 x[CLUSTER_134,pig_man,Plant_4] 0
 x[CLUSTER_134,pig_man,Plant_5] 0
 x[CLUSTER_134,pig_man,Plant_6] 0
-x[CLUSTER_134,pig_man,Plant_7] 0.00102156
+x[CLUSTER_134,pig_man,Plant_7] 0
 x[CLUSTER_134,pig_man,Plant_8] 0
 x[CLUSTER_134,pig_man,Plant_9] 0
 x[CLUSTER_134,cereal_str,Plant_0] 0
@@ -5009,7 +5009,7 @@ x[CLUSTER_134,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_134,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_134,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_134,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_134,clover_alfalfa_grass,Plant_9] 0.007349
+x[CLUSTER_134,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_134,perm_grass,Plant_0] 0
 x[CLUSTER_134,perm_grass,Plant_1] 0
 x[CLUSTER_134,perm_grass,Plant_2] 0
@@ -5029,7 +5029,7 @@ x[CLUSTER_134,maize_str,Plant_5] 0
 x[CLUSTER_134,maize_str,Plant_6] 0
 x[CLUSTER_134,maize_str,Plant_7] 0
 x[CLUSTER_134,maize_str,Plant_8] 0
-x[CLUSTER_134,maize_str,Plant_9] 7.1229999999999991e-04
+x[CLUSTER_134,maize_str,Plant_9] 0
 x[CLUSTER_134,beet_leaf,Plant_0] 0
 x[CLUSTER_134,beet_leaf,Plant_1] 0
 x[CLUSTER_134,beet_leaf,Plant_2] 0
@@ -5066,7 +5066,7 @@ x[CLUSTER_135,cattle_man,Plant_2] 0
 x[CLUSTER_135,cattle_man,Plant_3] 0
 x[CLUSTER_135,cattle_man,Plant_4] 0
 x[CLUSTER_135,cattle_man,Plant_5] 0
-x[CLUSTER_135,cattle_man,Plant_6] 0.03521
+x[CLUSTER_135,cattle_man,Plant_6] 0
 x[CLUSTER_135,cattle_man,Plant_7] 0
 x[CLUSTER_135,cattle_man,Plant_8] 0
 x[CLUSTER_135,cattle_man,Plant_9] 0
@@ -5083,7 +5083,7 @@ x[CLUSTER_135,cattle_slu,Plant_9] 0
 x[CLUSTER_135,horse_man,Plant_0] 0
 x[CLUSTER_135,horse_man,Plant_1] 0
 x[CLUSTER_135,horse_man,Plant_2] 0
-x[CLUSTER_135,horse_man,Plant_3] 0.002847
+x[CLUSTER_135,horse_man,Plant_3] 0
 x[CLUSTER_135,horse_man,Plant_4] 0
 x[CLUSTER_135,horse_man,Plant_5] 0
 x[CLUSTER_135,horse_man,Plant_6] 0
@@ -5103,7 +5103,7 @@ x[CLUSTER_135,pig_slu,Plant_9] 0
 x[CLUSTER_135,pig_man,Plant_0] 0
 x[CLUSTER_135,pig_man,Plant_1] 0
 x[CLUSTER_135,pig_man,Plant_2] 0
-x[CLUSTER_135,pig_man,Plant_3] 1.5936799999999998e-04
+x[CLUSTER_135,pig_man,Plant_3] 0
 x[CLUSTER_135,pig_man,Plant_4] 0
 x[CLUSTER_135,pig_man,Plant_5] 0
 x[CLUSTER_135,pig_man,Plant_6] 0
@@ -5181,7 +5181,7 @@ x[CLUSTER_135,legume_str,Plant_7] 0
 x[CLUSTER_135,legume_str,Plant_8] 0
 x[CLUSTER_135,legume_str,Plant_9] 0
 x[CLUSTER_136,cattle_man,Plant_0] 0
-x[CLUSTER_136,cattle_man,Plant_1] 0.02223
+x[CLUSTER_136,cattle_man,Plant_1] 0
 x[CLUSTER_136,cattle_man,Plant_2] 0
 x[CLUSTER_136,cattle_man,Plant_3] 0
 x[CLUSTER_136,cattle_man,Plant_4] 0
@@ -5201,7 +5201,7 @@ x[CLUSTER_136,cattle_slu,Plant_7] 0
 x[CLUSTER_136,cattle_slu,Plant_8] 0
 x[CLUSTER_136,cattle_slu,Plant_9] 0
 x[CLUSTER_136,horse_man,Plant_0] 0
-x[CLUSTER_136,horse_man,Plant_1] 0.003775
+x[CLUSTER_136,horse_man,Plant_1] 0
 x[CLUSTER_136,horse_man,Plant_2] 0
 x[CLUSTER_136,horse_man,Plant_3] 0
 x[CLUSTER_136,horse_man,Plant_4] 0
@@ -5301,7 +5301,7 @@ x[CLUSTER_136,legume_str,Plant_7] 0
 x[CLUSTER_136,legume_str,Plant_8] 0
 x[CLUSTER_136,legume_str,Plant_9] 0
 x[CLUSTER_137,cattle_man,Plant_0] 0
-x[CLUSTER_137,cattle_man,Plant_1] 0.02769
+x[CLUSTER_137,cattle_man,Plant_1] 0
 x[CLUSTER_137,cattle_man,Plant_2] 0
 x[CLUSTER_137,cattle_man,Plant_3] 0
 x[CLUSTER_137,cattle_man,Plant_4] 0
@@ -5321,7 +5321,7 @@ x[CLUSTER_137,cattle_slu,Plant_7] 0
 x[CLUSTER_137,cattle_slu,Plant_8] 0
 x[CLUSTER_137,cattle_slu,Plant_9] 0
 x[CLUSTER_137,horse_man,Plant_0] 0
-x[CLUSTER_137,horse_man,Plant_1] 0.002768
+x[CLUSTER_137,horse_man,Plant_1] 0
 x[CLUSTER_137,horse_man,Plant_2] 0
 x[CLUSTER_137,horse_man,Plant_3] 0
 x[CLUSTER_137,horse_man,Plant_4] 0
@@ -5348,7 +5348,7 @@ x[CLUSTER_137,pig_man,Plant_4] 0
 x[CLUSTER_137,pig_man,Plant_5] 0
 x[CLUSTER_137,pig_man,Plant_6] 0
 x[CLUSTER_137,pig_man,Plant_7] 0
-x[CLUSTER_137,pig_man,Plant_8] 1.1119999999999999e-05
+x[CLUSTER_137,pig_man,Plant_8] 0
 x[CLUSTER_137,pig_man,Plant_9] 0
 x[CLUSTER_137,cereal_str,Plant_0] 0
 x[CLUSTER_137,cereal_str,Plant_1] 0
@@ -5428,7 +5428,7 @@ x[CLUSTER_138,cattle_man,Plant_4] 0
 x[CLUSTER_138,cattle_man,Plant_5] 0
 x[CLUSTER_138,cattle_man,Plant_6] 0
 x[CLUSTER_138,cattle_man,Plant_7] 0
-x[CLUSTER_138,cattle_man,Plant_8] 0.010203
+x[CLUSTER_138,cattle_man,Plant_8] 0
 x[CLUSTER_138,cattle_man,Plant_9] 0
 x[CLUSTER_138,cattle_slu,Plant_0] 0
 x[CLUSTER_138,cattle_slu,Plant_1] 0
@@ -5438,7 +5438,7 @@ x[CLUSTER_138,cattle_slu,Plant_4] 0
 x[CLUSTER_138,cattle_slu,Plant_5] 0
 x[CLUSTER_138,cattle_slu,Plant_6] 0
 x[CLUSTER_138,cattle_slu,Plant_7] 0
-x[CLUSTER_138,cattle_slu,Plant_8] 0.04342
+x[CLUSTER_138,cattle_slu,Plant_8] 0
 x[CLUSTER_138,cattle_slu,Plant_9] 0
 x[CLUSTER_138,horse_man,Plant_0] 0
 x[CLUSTER_138,horse_man,Plant_1] 0
@@ -5448,7 +5448,7 @@ x[CLUSTER_138,horse_man,Plant_4] 0
 x[CLUSTER_138,horse_man,Plant_5] 0
 x[CLUSTER_138,horse_man,Plant_6] 0
 x[CLUSTER_138,horse_man,Plant_7] 0
-x[CLUSTER_138,horse_man,Plant_8] 6.6510000000001969e-04
+x[CLUSTER_138,horse_man,Plant_8] 0
 x[CLUSTER_138,horse_man,Plant_9] 0
 x[CLUSTER_138,pig_slu,Plant_0] 0
 x[CLUSTER_138,pig_slu,Plant_1] 0
@@ -5468,7 +5468,7 @@ x[CLUSTER_138,pig_man,Plant_4] 0
 x[CLUSTER_138,pig_man,Plant_5] 0
 x[CLUSTER_138,pig_man,Plant_6] 0
 x[CLUSTER_138,pig_man,Plant_7] 0
-x[CLUSTER_138,pig_man,Plant_8] 1.2037999999999999e-03
+x[CLUSTER_138,pig_man,Plant_8] 0
 x[CLUSTER_138,pig_man,Plant_9] 0
 x[CLUSTER_138,cereal_str,Plant_0] 0
 x[CLUSTER_138,cereal_str,Plant_1] 0
@@ -5547,7 +5547,7 @@ x[CLUSTER_139,cattle_man,Plant_3] 0
 x[CLUSTER_139,cattle_man,Plant_4] 0
 x[CLUSTER_139,cattle_man,Plant_5] 0
 x[CLUSTER_139,cattle_man,Plant_6] 0
-x[CLUSTER_139,cattle_man,Plant_7] 3.0325100000000004e-03
+x[CLUSTER_139,cattle_man,Plant_7] 0
 x[CLUSTER_139,cattle_man,Plant_8] 0
 x[CLUSTER_139,cattle_man,Plant_9] 0
 x[CLUSTER_139,cattle_slu,Plant_0] 0
@@ -5557,7 +5557,7 @@ x[CLUSTER_139,cattle_slu,Plant_3] 0
 x[CLUSTER_139,cattle_slu,Plant_4] 0
 x[CLUSTER_139,cattle_slu,Plant_5] 0
 x[CLUSTER_139,cattle_slu,Plant_6] 0
-x[CLUSTER_139,cattle_slu,Plant_7] 0.000506531
+x[CLUSTER_139,cattle_slu,Plant_7] 0
 x[CLUSTER_139,cattle_slu,Plant_8] 0
 x[CLUSTER_139,cattle_slu,Plant_9] 0
 x[CLUSTER_139,horse_man,Plant_0] 0
@@ -5567,7 +5567,7 @@ x[CLUSTER_139,horse_man,Plant_3] 0
 x[CLUSTER_139,horse_man,Plant_4] 0
 x[CLUSTER_139,horse_man,Plant_5] 0
 x[CLUSTER_139,horse_man,Plant_6] 0
-x[CLUSTER_139,horse_man,Plant_7] 0.0009803
+x[CLUSTER_139,horse_man,Plant_7] 0
 x[CLUSTER_139,horse_man,Plant_8] 0
 x[CLUSTER_139,horse_man,Plant_9] 0
 x[CLUSTER_139,pig_slu,Plant_0] 0
@@ -5577,7 +5577,7 @@ x[CLUSTER_139,pig_slu,Plant_3] 0
 x[CLUSTER_139,pig_slu,Plant_4] 0
 x[CLUSTER_139,pig_slu,Plant_5] 0
 x[CLUSTER_139,pig_slu,Plant_6] 0
-x[CLUSTER_139,pig_slu,Plant_7] 7.9660000000000006e-04
+x[CLUSTER_139,pig_slu,Plant_7] 0
 x[CLUSTER_139,pig_slu,Plant_8] 0
 x[CLUSTER_139,pig_slu,Plant_9] 0
 x[CLUSTER_139,pig_man,Plant_0] 0
@@ -5587,7 +5587,7 @@ x[CLUSTER_139,pig_man,Plant_3] 0
 x[CLUSTER_139,pig_man,Plant_4] 0
 x[CLUSTER_139,pig_man,Plant_5] 0
 x[CLUSTER_139,pig_man,Plant_6] 0
-x[CLUSTER_139,pig_man,Plant_7] 4.267e-05
+x[CLUSTER_139,pig_man,Plant_7] 0
 x[CLUSTER_139,pig_man,Plant_8] 0
 x[CLUSTER_139,pig_man,Plant_9] 0
 x[CLUSTER_139,cereal_str,Plant_0] 0
@@ -5668,7 +5668,7 @@ x[CLUSTER_14,cattle_man,Plant_4] 0
 x[CLUSTER_14,cattle_man,Plant_5] 0
 x[CLUSTER_14,cattle_man,Plant_6] 0
 x[CLUSTER_14,cattle_man,Plant_7] 0
-x[CLUSTER_14,cattle_man,Plant_8] 0.009659
+x[CLUSTER_14,cattle_man,Plant_8] 0
 x[CLUSTER_14,cattle_man,Plant_9] 0
 x[CLUSTER_14,cattle_slu,Plant_0] 0
 x[CLUSTER_14,cattle_slu,Plant_1] 0
@@ -5678,7 +5678,7 @@ x[CLUSTER_14,cattle_slu,Plant_4] 0
 x[CLUSTER_14,cattle_slu,Plant_5] 0
 x[CLUSTER_14,cattle_slu,Plant_6] 0
 x[CLUSTER_14,cattle_slu,Plant_7] 0
-x[CLUSTER_14,cattle_slu,Plant_8] 4.9629999999999862e-02
+x[CLUSTER_14,cattle_slu,Plant_8] 0
 x[CLUSTER_14,cattle_slu,Plant_9] 0
 x[CLUSTER_14,horse_man,Plant_0] 0
 x[CLUSTER_14,horse_man,Plant_1] 0
@@ -5688,7 +5688,7 @@ x[CLUSTER_14,horse_man,Plant_4] 0
 x[CLUSTER_14,horse_man,Plant_5] 0
 x[CLUSTER_14,horse_man,Plant_6] 0
 x[CLUSTER_14,horse_man,Plant_7] 0
-x[CLUSTER_14,horse_man,Plant_8] 0.0026952
+x[CLUSTER_14,horse_man,Plant_8] 0
 x[CLUSTER_14,horse_man,Plant_9] 0
 x[CLUSTER_14,pig_slu,Plant_0] 0
 x[CLUSTER_14,pig_slu,Plant_1] 0
@@ -5708,7 +5708,7 @@ x[CLUSTER_14,pig_man,Plant_4] 0
 x[CLUSTER_14,pig_man,Plant_5] 0
 x[CLUSTER_14,pig_man,Plant_6] 0
 x[CLUSTER_14,pig_man,Plant_7] 0
-x[CLUSTER_14,pig_man,Plant_8] 2.5680500000000003e-04
+x[CLUSTER_14,pig_man,Plant_8] 0
 x[CLUSTER_14,pig_man,Plant_9] 0
 x[CLUSTER_14,cereal_str,Plant_0] 0
 x[CLUSTER_14,cereal_str,Plant_1] 0
@@ -5748,7 +5748,7 @@ x[CLUSTER_14,maize_str,Plant_4] 0
 x[CLUSTER_14,maize_str,Plant_5] 0
 x[CLUSTER_14,maize_str,Plant_6] 0
 x[CLUSTER_14,maize_str,Plant_7] 0
-x[CLUSTER_14,maize_str,Plant_8] 8.5379999999999994e-04
+x[CLUSTER_14,maize_str,Plant_8] 0
 x[CLUSTER_14,maize_str,Plant_9] 0
 x[CLUSTER_14,beet_leaf,Plant_0] 0
 x[CLUSTER_14,beet_leaf,Plant_1] 0
@@ -5780,7 +5780,7 @@ x[CLUSTER_14,legume_str,Plant_6] 0
 x[CLUSTER_14,legume_str,Plant_7] 0
 x[CLUSTER_14,legume_str,Plant_8] 0
 x[CLUSTER_14,legume_str,Plant_9] 0
-x[CLUSTER_140,cattle_man,Plant_0] 0.007209
+x[CLUSTER_140,cattle_man,Plant_0] 0
 x[CLUSTER_140,cattle_man,Plant_1] 0
 x[CLUSTER_140,cattle_man,Plant_2] 0
 x[CLUSTER_140,cattle_man,Plant_3] 0
@@ -5790,7 +5790,7 @@ x[CLUSTER_140,cattle_man,Plant_6] 0
 x[CLUSTER_140,cattle_man,Plant_7] 0
 x[CLUSTER_140,cattle_man,Plant_8] 0
 x[CLUSTER_140,cattle_man,Plant_9] 0
-x[CLUSTER_140,cattle_slu,Plant_0] 0.03586
+x[CLUSTER_140,cattle_slu,Plant_0] 0
 x[CLUSTER_140,cattle_slu,Plant_1] 0
 x[CLUSTER_140,cattle_slu,Plant_2] 0
 x[CLUSTER_140,cattle_slu,Plant_3] 0
@@ -5800,7 +5800,7 @@ x[CLUSTER_140,cattle_slu,Plant_6] 0
 x[CLUSTER_140,cattle_slu,Plant_7] 0
 x[CLUSTER_140,cattle_slu,Plant_8] 0
 x[CLUSTER_140,cattle_slu,Plant_9] 0
-x[CLUSTER_140,horse_man,Plant_0] 0.000867
+x[CLUSTER_140,horse_man,Plant_0] 0
 x[CLUSTER_140,horse_man,Plant_1] 0
 x[CLUSTER_140,horse_man,Plant_2] 0
 x[CLUSTER_140,horse_man,Plant_3] 0
@@ -5820,7 +5820,7 @@ x[CLUSTER_140,pig_slu,Plant_6] 0
 x[CLUSTER_140,pig_slu,Plant_7] 0
 x[CLUSTER_140,pig_slu,Plant_8] 0
 x[CLUSTER_140,pig_slu,Plant_9] 0
-x[CLUSTER_140,pig_man,Plant_0] 0.0007657
+x[CLUSTER_140,pig_man,Plant_0] 0
 x[CLUSTER_140,pig_man,Plant_1] 0
 x[CLUSTER_140,pig_man,Plant_2] 0
 x[CLUSTER_140,pig_man,Plant_3] 0
@@ -5860,7 +5860,7 @@ x[CLUSTER_140,perm_grass,Plant_6] 0
 x[CLUSTER_140,perm_grass,Plant_7] 0
 x[CLUSTER_140,perm_grass,Plant_8] 0
 x[CLUSTER_140,perm_grass,Plant_9] 0
-x[CLUSTER_140,maize_str,Plant_0] 4.2639999999999996e-04
+x[CLUSTER_140,maize_str,Plant_0] 0
 x[CLUSTER_140,maize_str,Plant_1] 0
 x[CLUSTER_140,maize_str,Plant_2] 0
 x[CLUSTER_140,maize_str,Plant_3] 0
@@ -5902,7 +5902,7 @@ x[CLUSTER_140,legume_str,Plant_8] 0
 x[CLUSTER_140,legume_str,Plant_9] 0
 x[CLUSTER_141,cattle_man,Plant_0] 0
 x[CLUSTER_141,cattle_man,Plant_1] 0
-x[CLUSTER_141,cattle_man,Plant_2] 0.006618
+x[CLUSTER_141,cattle_man,Plant_2] 0
 x[CLUSTER_141,cattle_man,Plant_3] 0
 x[CLUSTER_141,cattle_man,Plant_4] 0
 x[CLUSTER_141,cattle_man,Plant_5] 0
@@ -5912,7 +5912,7 @@ x[CLUSTER_141,cattle_man,Plant_8] 0
 x[CLUSTER_141,cattle_man,Plant_9] 0
 x[CLUSTER_141,cattle_slu,Plant_0] 0
 x[CLUSTER_141,cattle_slu,Plant_1] 0
-x[CLUSTER_141,cattle_slu,Plant_2] 5.3749999999999971e-02
+x[CLUSTER_141,cattle_slu,Plant_2] 0
 x[CLUSTER_141,cattle_slu,Plant_3] 0
 x[CLUSTER_141,cattle_slu,Plant_4] 0
 x[CLUSTER_141,cattle_slu,Plant_5] 0
@@ -5922,7 +5922,7 @@ x[CLUSTER_141,cattle_slu,Plant_8] 0
 x[CLUSTER_141,cattle_slu,Plant_9] 0
 x[CLUSTER_141,horse_man,Plant_0] 0
 x[CLUSTER_141,horse_man,Plant_1] 0
-x[CLUSTER_141,horse_man,Plant_2] 0.002815
+x[CLUSTER_141,horse_man,Plant_2] 0
 x[CLUSTER_141,horse_man,Plant_3] 0
 x[CLUSTER_141,horse_man,Plant_4] 0
 x[CLUSTER_141,horse_man,Plant_5] 0
@@ -5942,7 +5942,7 @@ x[CLUSTER_141,pig_slu,Plant_8] 0
 x[CLUSTER_141,pig_slu,Plant_9] 0
 x[CLUSTER_141,pig_man,Plant_0] 0
 x[CLUSTER_141,pig_man,Plant_1] 0
-x[CLUSTER_141,pig_man,Plant_2] 0.000111971
+x[CLUSTER_141,pig_man,Plant_2] 0
 x[CLUSTER_141,pig_man,Plant_3] 0
 x[CLUSTER_141,pig_man,Plant_4] 0
 x[CLUSTER_141,pig_man,Plant_5] 0
@@ -5982,7 +5982,7 @@ x[CLUSTER_141,perm_grass,Plant_8] 0
 x[CLUSTER_141,perm_grass,Plant_9] 0
 x[CLUSTER_141,maize_str,Plant_0] 0
 x[CLUSTER_141,maize_str,Plant_1] 0
-x[CLUSTER_141,maize_str,Plant_2] 5.46e-05
+x[CLUSTER_141,maize_str,Plant_2] 0
 x[CLUSTER_141,maize_str,Plant_3] 0
 x[CLUSTER_141,maize_str,Plant_4] 0
 x[CLUSTER_141,maize_str,Plant_5] 0
@@ -6026,7 +6026,7 @@ x[CLUSTER_142,cattle_man,Plant_2] 0
 x[CLUSTER_142,cattle_man,Plant_3] 0
 x[CLUSTER_142,cattle_man,Plant_4] 0
 x[CLUSTER_142,cattle_man,Plant_5] 0
-x[CLUSTER_142,cattle_man,Plant_6] 0.03219
+x[CLUSTER_142,cattle_man,Plant_6] 0
 x[CLUSTER_142,cattle_man,Plant_7] 0
 x[CLUSTER_142,cattle_man,Plant_8] 0
 x[CLUSTER_142,cattle_man,Plant_9] 0
@@ -6036,7 +6036,7 @@ x[CLUSTER_142,cattle_slu,Plant_2] 0
 x[CLUSTER_142,cattle_slu,Plant_3] 0
 x[CLUSTER_142,cattle_slu,Plant_4] 0
 x[CLUSTER_142,cattle_slu,Plant_5] 0
-x[CLUSTER_142,cattle_slu,Plant_6] 0.156
+x[CLUSTER_142,cattle_slu,Plant_6] 0
 x[CLUSTER_142,cattle_slu,Plant_7] 0
 x[CLUSTER_142,cattle_slu,Plant_8] 0
 x[CLUSTER_142,cattle_slu,Plant_9] 0
@@ -6046,7 +6046,7 @@ x[CLUSTER_142,horse_man,Plant_2] 0
 x[CLUSTER_142,horse_man,Plant_3] 0
 x[CLUSTER_142,horse_man,Plant_4] 0
 x[CLUSTER_142,horse_man,Plant_5] 0
-x[CLUSTER_142,horse_man,Plant_6] 0.001982
+x[CLUSTER_142,horse_man,Plant_6] 0
 x[CLUSTER_142,horse_man,Plant_7] 0
 x[CLUSTER_142,horse_man,Plant_8] 0
 x[CLUSTER_142,horse_man,Plant_9] 0
@@ -6065,7 +6065,7 @@ x[CLUSTER_142,pig_man,Plant_1] 0
 x[CLUSTER_142,pig_man,Plant_2] 0
 x[CLUSTER_142,pig_man,Plant_3] 0
 x[CLUSTER_142,pig_man,Plant_4] 0
-x[CLUSTER_142,pig_man,Plant_5] 6.72671e-05
+x[CLUSTER_142,pig_man,Plant_5] 0
 x[CLUSTER_142,pig_man,Plant_6] 0
 x[CLUSTER_142,pig_man,Plant_7] 0
 x[CLUSTER_142,pig_man,Plant_8] 0
@@ -6140,7 +6140,7 @@ x[CLUSTER_142,legume_str,Plant_6] 0
 x[CLUSTER_142,legume_str,Plant_7] 0
 x[CLUSTER_142,legume_str,Plant_8] 0
 x[CLUSTER_142,legume_str,Plant_9] 0
-x[CLUSTER_143,cattle_man,Plant_0] 0.02092
+x[CLUSTER_143,cattle_man,Plant_0] 0
 x[CLUSTER_143,cattle_man,Plant_1] 0
 x[CLUSTER_143,cattle_man,Plant_2] 0
 x[CLUSTER_143,cattle_man,Plant_3] 0
@@ -6160,7 +6160,7 @@ x[CLUSTER_143,cattle_slu,Plant_6] 0
 x[CLUSTER_143,cattle_slu,Plant_7] 0
 x[CLUSTER_143,cattle_slu,Plant_8] 0
 x[CLUSTER_143,cattle_slu,Plant_9] 0
-x[CLUSTER_143,horse_man,Plant_0] 0.001329
+x[CLUSTER_143,horse_man,Plant_0] 0
 x[CLUSTER_143,horse_man,Plant_1] 0
 x[CLUSTER_143,horse_man,Plant_2] 0
 x[CLUSTER_143,horse_man,Plant_3] 0
@@ -6180,7 +6180,7 @@ x[CLUSTER_143,pig_slu,Plant_6] 0
 x[CLUSTER_143,pig_slu,Plant_7] 0
 x[CLUSTER_143,pig_slu,Plant_8] 0
 x[CLUSTER_143,pig_slu,Plant_9] 0
-x[CLUSTER_143,pig_man,Plant_0] 5.220089e-05
+x[CLUSTER_143,pig_man,Plant_0] 0
 x[CLUSTER_143,pig_man,Plant_1] 0
 x[CLUSTER_143,pig_man,Plant_2] 0
 x[CLUSTER_143,pig_man,Plant_3] 0
@@ -6265,7 +6265,7 @@ x[CLUSTER_144,cattle_man,Plant_1] 0
 x[CLUSTER_144,cattle_man,Plant_2] 0
 x[CLUSTER_144,cattle_man,Plant_3] 0
 x[CLUSTER_144,cattle_man,Plant_4] 0
-x[CLUSTER_144,cattle_man,Plant_5] 0.01619
+x[CLUSTER_144,cattle_man,Plant_5] 0
 x[CLUSTER_144,cattle_man,Plant_6] 0
 x[CLUSTER_144,cattle_man,Plant_7] 0
 x[CLUSTER_144,cattle_man,Plant_8] 0
@@ -6285,7 +6285,7 @@ x[CLUSTER_144,horse_man,Plant_1] 0
 x[CLUSTER_144,horse_man,Plant_2] 0
 x[CLUSTER_144,horse_man,Plant_3] 0
 x[CLUSTER_144,horse_man,Plant_4] 0
-x[CLUSTER_144,horse_man,Plant_5] 0.001888
+x[CLUSTER_144,horse_man,Plant_5] 0
 x[CLUSTER_144,horse_man,Plant_6] 0
 x[CLUSTER_144,horse_man,Plant_7] 0
 x[CLUSTER_144,horse_man,Plant_8] 0
@@ -6305,7 +6305,7 @@ x[CLUSTER_144,pig_man,Plant_1] 0
 x[CLUSTER_144,pig_man,Plant_2] 0
 x[CLUSTER_144,pig_man,Plant_3] 0
 x[CLUSTER_144,pig_man,Plant_4] 0
-x[CLUSTER_144,pig_man,Plant_5] 0.0010945
+x[CLUSTER_144,pig_man,Plant_5] 0
 x[CLUSTER_144,pig_man,Plant_6] 0
 x[CLUSTER_144,pig_man,Plant_7] 0
 x[CLUSTER_144,pig_man,Plant_8] 0
@@ -6388,7 +6388,7 @@ x[CLUSTER_145,cattle_man,Plant_4] 0
 x[CLUSTER_145,cattle_man,Plant_5] 0
 x[CLUSTER_145,cattle_man,Plant_6] 0
 x[CLUSTER_145,cattle_man,Plant_7] 0
-x[CLUSTER_145,cattle_man,Plant_8] 0.010356
+x[CLUSTER_145,cattle_man,Plant_8] 0
 x[CLUSTER_145,cattle_man,Plant_9] 0
 x[CLUSTER_145,cattle_slu,Plant_0] 0
 x[CLUSTER_145,cattle_slu,Plant_1] 0
@@ -6408,7 +6408,7 @@ x[CLUSTER_145,horse_man,Plant_4] 0
 x[CLUSTER_145,horse_man,Plant_5] 0
 x[CLUSTER_145,horse_man,Plant_6] 0
 x[CLUSTER_145,horse_man,Plant_7] 0
-x[CLUSTER_145,horse_man,Plant_8] 0.001174
+x[CLUSTER_145,horse_man,Plant_8] 0
 x[CLUSTER_145,horse_man,Plant_9] 0
 x[CLUSTER_145,pig_slu,Plant_0] 0
 x[CLUSTER_145,pig_slu,Plant_1] 0
@@ -6425,7 +6425,7 @@ x[CLUSTER_145,pig_man,Plant_1] 0
 x[CLUSTER_145,pig_man,Plant_2] 0
 x[CLUSTER_145,pig_man,Plant_3] 0
 x[CLUSTER_145,pig_man,Plant_4] 0
-x[CLUSTER_145,pig_man,Plant_5] 0.0001042
+x[CLUSTER_145,pig_man,Plant_5] 0
 x[CLUSTER_145,pig_man,Plant_6] 0
 x[CLUSTER_145,pig_man,Plant_7] 0
 x[CLUSTER_145,pig_man,Plant_8] 0
@@ -6503,7 +6503,7 @@ x[CLUSTER_145,legume_str,Plant_9] 0
 x[CLUSTER_146,cattle_man,Plant_0] 0
 x[CLUSTER_146,cattle_man,Plant_1] 0
 x[CLUSTER_146,cattle_man,Plant_2] 0
-x[CLUSTER_146,cattle_man,Plant_3] 0.002485
+x[CLUSTER_146,cattle_man,Plant_3] 0
 x[CLUSTER_146,cattle_man,Plant_4] 0
 x[CLUSTER_146,cattle_man,Plant_5] 0
 x[CLUSTER_146,cattle_man,Plant_6] 0
@@ -6523,7 +6523,7 @@ x[CLUSTER_146,cattle_slu,Plant_9] 0
 x[CLUSTER_146,horse_man,Plant_0] 0
 x[CLUSTER_146,horse_man,Plant_1] 0
 x[CLUSTER_146,horse_man,Plant_2] 0
-x[CLUSTER_146,horse_man,Plant_3] 0.000847
+x[CLUSTER_146,horse_man,Plant_3] 0
 x[CLUSTER_146,horse_man,Plant_4] 0
 x[CLUSTER_146,horse_man,Plant_5] 0
 x[CLUSTER_146,horse_man,Plant_6] 0
@@ -6620,7 +6620,7 @@ x[CLUSTER_146,legume_str,Plant_6] 0
 x[CLUSTER_146,legume_str,Plant_7] 0
 x[CLUSTER_146,legume_str,Plant_8] 0
 x[CLUSTER_146,legume_str,Plant_9] 0
-x[CLUSTER_147,cattle_man,Plant_0] 0.00522
+x[CLUSTER_147,cattle_man,Plant_0] 0
 x[CLUSTER_147,cattle_man,Plant_1] 0
 x[CLUSTER_147,cattle_man,Plant_2] 0
 x[CLUSTER_147,cattle_man,Plant_3] 0
@@ -6640,7 +6640,7 @@ x[CLUSTER_147,cattle_slu,Plant_6] 0
 x[CLUSTER_147,cattle_slu,Plant_7] 0
 x[CLUSTER_147,cattle_slu,Plant_8] 0
 x[CLUSTER_147,cattle_slu,Plant_9] 0
-x[CLUSTER_147,horse_man,Plant_0] 0.0008698
+x[CLUSTER_147,horse_man,Plant_0] 0
 x[CLUSTER_147,horse_man,Plant_1] 0
 x[CLUSTER_147,horse_man,Plant_2] 0
 x[CLUSTER_147,horse_man,Plant_3] 0
@@ -6660,7 +6660,7 @@ x[CLUSTER_147,pig_slu,Plant_6] 0
 x[CLUSTER_147,pig_slu,Plant_7] 0
 x[CLUSTER_147,pig_slu,Plant_8] 0
 x[CLUSTER_147,pig_slu,Plant_9] 0
-x[CLUSTER_147,pig_man,Plant_0] 2.3898e-05
+x[CLUSTER_147,pig_man,Plant_0] 0
 x[CLUSTER_147,pig_man,Plant_1] 0
 x[CLUSTER_147,pig_man,Plant_2] 0
 x[CLUSTER_147,pig_man,Plant_3] 0
@@ -6742,7 +6742,7 @@ x[CLUSTER_147,legume_str,Plant_8] 0
 x[CLUSTER_147,legume_str,Plant_9] 0
 x[CLUSTER_148,cattle_man,Plant_0] 0
 x[CLUSTER_148,cattle_man,Plant_1] 0
-x[CLUSTER_148,cattle_man,Plant_2] 0.004501
+x[CLUSTER_148,cattle_man,Plant_2] 0
 x[CLUSTER_148,cattle_man,Plant_3] 0
 x[CLUSTER_148,cattle_man,Plant_4] 0
 x[CLUSTER_148,cattle_man,Plant_5] 0
@@ -6762,7 +6762,7 @@ x[CLUSTER_148,cattle_slu,Plant_8] 0
 x[CLUSTER_148,cattle_slu,Plant_9] 0
 x[CLUSTER_148,horse_man,Plant_0] 0
 x[CLUSTER_148,horse_man,Plant_1] 0
-x[CLUSTER_148,horse_man,Plant_2] 0.00050077
+x[CLUSTER_148,horse_man,Plant_2] 0
 x[CLUSTER_148,horse_man,Plant_3] 0
 x[CLUSTER_148,horse_man,Plant_4] 0
 x[CLUSTER_148,horse_man,Plant_5] 0
@@ -6782,7 +6782,7 @@ x[CLUSTER_148,pig_slu,Plant_8] 0
 x[CLUSTER_148,pig_slu,Plant_9] 0
 x[CLUSTER_148,pig_man,Plant_0] 0
 x[CLUSTER_148,pig_man,Plant_1] 0
-x[CLUSTER_148,pig_man,Plant_2] 0.00036114175
+x[CLUSTER_148,pig_man,Plant_2] 0
 x[CLUSTER_148,pig_man,Plant_3] 0
 x[CLUSTER_148,pig_man,Plant_4] 0
 x[CLUSTER_148,pig_man,Plant_5] 0
@@ -6809,7 +6809,7 @@ x[CLUSTER_148,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_148,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_148,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_148,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_148,clover_alfalfa_grass,Plant_9] 0.0032532
+x[CLUSTER_148,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_148,perm_grass,Plant_0] 0
 x[CLUSTER_148,perm_grass,Plant_1] 0
 x[CLUSTER_148,perm_grass,Plant_2] 0
@@ -6829,7 +6829,7 @@ x[CLUSTER_148,maize_str,Plant_5] 0
 x[CLUSTER_148,maize_str,Plant_6] 0
 x[CLUSTER_148,maize_str,Plant_7] 0
 x[CLUSTER_148,maize_str,Plant_8] 0
-x[CLUSTER_148,maize_str,Plant_9] 2.12e-05
+x[CLUSTER_148,maize_str,Plant_9] 0
 x[CLUSTER_148,beet_leaf,Plant_0] 0
 x[CLUSTER_148,beet_leaf,Plant_1] 0
 x[CLUSTER_148,beet_leaf,Plant_2] 0
@@ -6866,7 +6866,7 @@ x[CLUSTER_149,cattle_man,Plant_2] 0
 x[CLUSTER_149,cattle_man,Plant_3] 0
 x[CLUSTER_149,cattle_man,Plant_4] 0
 x[CLUSTER_149,cattle_man,Plant_5] 0
-x[CLUSTER_149,cattle_man,Plant_6] 0.01957
+x[CLUSTER_149,cattle_man,Plant_6] 0
 x[CLUSTER_149,cattle_man,Plant_7] 0
 x[CLUSTER_149,cattle_man,Plant_8] 0
 x[CLUSTER_149,cattle_man,Plant_9] 0
@@ -6876,7 +6876,7 @@ x[CLUSTER_149,cattle_slu,Plant_2] 0
 x[CLUSTER_149,cattle_slu,Plant_3] 0
 x[CLUSTER_149,cattle_slu,Plant_4] 0
 x[CLUSTER_149,cattle_slu,Plant_5] 0
-x[CLUSTER_149,cattle_slu,Plant_6] 9.8800000000001123e-02
+x[CLUSTER_149,cattle_slu,Plant_6] 0
 x[CLUSTER_149,cattle_slu,Plant_7] 0
 x[CLUSTER_149,cattle_slu,Plant_8] 0
 x[CLUSTER_149,cattle_slu,Plant_9] 0
@@ -6886,7 +6886,7 @@ x[CLUSTER_149,horse_man,Plant_2] 0
 x[CLUSTER_149,horse_man,Plant_3] 0
 x[CLUSTER_149,horse_man,Plant_4] 0
 x[CLUSTER_149,horse_man,Plant_5] 0
-x[CLUSTER_149,horse_man,Plant_6] 2.6138000000000003e-03
+x[CLUSTER_149,horse_man,Plant_6] 0
 x[CLUSTER_149,horse_man,Plant_7] 0
 x[CLUSTER_149,horse_man,Plant_8] 0
 x[CLUSTER_149,horse_man,Plant_9] 0
@@ -6906,7 +6906,7 @@ x[CLUSTER_149,pig_man,Plant_2] 0
 x[CLUSTER_149,pig_man,Plant_3] 0
 x[CLUSTER_149,pig_man,Plant_4] 0
 x[CLUSTER_149,pig_man,Plant_5] 0
-x[CLUSTER_149,pig_man,Plant_6] 1.90894e-05
+x[CLUSTER_149,pig_man,Plant_6] 0
 x[CLUSTER_149,pig_man,Plant_7] 0
 x[CLUSTER_149,pig_man,Plant_8] 0
 x[CLUSTER_149,pig_man,Plant_9] 0
@@ -6982,7 +6982,7 @@ x[CLUSTER_149,legume_str,Plant_8] 0
 x[CLUSTER_149,legume_str,Plant_9] 0
 x[CLUSTER_15,cattle_man,Plant_0] 0
 x[CLUSTER_15,cattle_man,Plant_1] 0
-x[CLUSTER_15,cattle_man,Plant_2] 0.00765
+x[CLUSTER_15,cattle_man,Plant_2] 0
 x[CLUSTER_15,cattle_man,Plant_3] 0
 x[CLUSTER_15,cattle_man,Plant_4] 0
 x[CLUSTER_15,cattle_man,Plant_5] 0
@@ -7002,7 +7002,7 @@ x[CLUSTER_15,cattle_slu,Plant_8] 0
 x[CLUSTER_15,cattle_slu,Plant_9] 0
 x[CLUSTER_15,horse_man,Plant_0] 0
 x[CLUSTER_15,horse_man,Plant_1] 0
-x[CLUSTER_15,horse_man,Plant_2] 0.005057
+x[CLUSTER_15,horse_man,Plant_2] 0
 x[CLUSTER_15,horse_man,Plant_3] 0
 x[CLUSTER_15,horse_man,Plant_4] 0
 x[CLUSTER_15,horse_man,Plant_5] 0
@@ -7022,7 +7022,7 @@ x[CLUSTER_15,pig_slu,Plant_8] 0
 x[CLUSTER_15,pig_slu,Plant_9] 0
 x[CLUSTER_15,pig_man,Plant_0] 0
 x[CLUSTER_15,pig_man,Plant_1] 0
-x[CLUSTER_15,pig_man,Plant_2] 6.8319000000000008e-05
+x[CLUSTER_15,pig_man,Plant_2] 0
 x[CLUSTER_15,pig_man,Plant_3] 0
 x[CLUSTER_15,pig_man,Plant_4] 0
 x[CLUSTER_15,pig_man,Plant_5] 0
@@ -7100,7 +7100,7 @@ x[CLUSTER_15,legume_str,Plant_6] 0
 x[CLUSTER_15,legume_str,Plant_7] 0
 x[CLUSTER_15,legume_str,Plant_8] 0
 x[CLUSTER_15,legume_str,Plant_9] 0
-x[CLUSTER_150,cattle_man,Plant_0] 0.01894
+x[CLUSTER_150,cattle_man,Plant_0] 0
 x[CLUSTER_150,cattle_man,Plant_1] 0
 x[CLUSTER_150,cattle_man,Plant_2] 0
 x[CLUSTER_150,cattle_man,Plant_3] 0
@@ -7120,7 +7120,7 @@ x[CLUSTER_150,cattle_slu,Plant_6] 0
 x[CLUSTER_150,cattle_slu,Plant_7] 0
 x[CLUSTER_150,cattle_slu,Plant_8] 0
 x[CLUSTER_150,cattle_slu,Plant_9] 0
-x[CLUSTER_150,horse_man,Plant_0] 0.000998
+x[CLUSTER_150,horse_man,Plant_0] 0
 x[CLUSTER_150,horse_man,Plant_1] 0
 x[CLUSTER_150,horse_man,Plant_2] 0
 x[CLUSTER_150,horse_man,Plant_3] 0
@@ -7140,7 +7140,7 @@ x[CLUSTER_150,pig_slu,Plant_6] 0
 x[CLUSTER_150,pig_slu,Plant_7] 0
 x[CLUSTER_150,pig_slu,Plant_8] 0
 x[CLUSTER_150,pig_slu,Plant_9] 0
-x[CLUSTER_150,pig_man,Plant_0] 0.0006051
+x[CLUSTER_150,pig_man,Plant_0] 0
 x[CLUSTER_150,pig_man,Plant_1] 0
 x[CLUSTER_150,pig_man,Plant_2] 0
 x[CLUSTER_150,pig_man,Plant_3] 0
@@ -7180,7 +7180,7 @@ x[CLUSTER_150,perm_grass,Plant_6] 0
 x[CLUSTER_150,perm_grass,Plant_7] 0
 x[CLUSTER_150,perm_grass,Plant_8] 0
 x[CLUSTER_150,perm_grass,Plant_9] 0
-x[CLUSTER_150,maize_str,Plant_0] 0.0003073
+x[CLUSTER_150,maize_str,Plant_0] 0
 x[CLUSTER_150,maize_str,Plant_1] 0
 x[CLUSTER_150,maize_str,Plant_2] 0
 x[CLUSTER_150,maize_str,Plant_3] 0
@@ -7226,7 +7226,7 @@ x[CLUSTER_151,cattle_man,Plant_2] 0
 x[CLUSTER_151,cattle_man,Plant_3] 0
 x[CLUSTER_151,cattle_man,Plant_4] 0
 x[CLUSTER_151,cattle_man,Plant_5] 0
-x[CLUSTER_151,cattle_man,Plant_6] 0.005361
+x[CLUSTER_151,cattle_man,Plant_6] 0
 x[CLUSTER_151,cattle_man,Plant_7] 0
 x[CLUSTER_151,cattle_man,Plant_8] 0
 x[CLUSTER_151,cattle_man,Plant_9] 0
@@ -7245,7 +7245,7 @@ x[CLUSTER_151,horse_man,Plant_1] 0
 x[CLUSTER_151,horse_man,Plant_2] 0
 x[CLUSTER_151,horse_man,Plant_3] 0
 x[CLUSTER_151,horse_man,Plant_4] 0
-x[CLUSTER_151,horse_man,Plant_5] 0.005352
+x[CLUSTER_151,horse_man,Plant_5] 0
 x[CLUSTER_151,horse_man,Plant_6] 0
 x[CLUSTER_151,horse_man,Plant_7] 0
 x[CLUSTER_151,horse_man,Plant_8] 0
@@ -7265,7 +7265,7 @@ x[CLUSTER_151,pig_man,Plant_1] 0
 x[CLUSTER_151,pig_man,Plant_2] 0
 x[CLUSTER_151,pig_man,Plant_3] 0
 x[CLUSTER_151,pig_man,Plant_4] 0
-x[CLUSTER_151,pig_man,Plant_5] 3.3274e-05
+x[CLUSTER_151,pig_man,Plant_5] 0
 x[CLUSTER_151,pig_man,Plant_6] 0
 x[CLUSTER_151,pig_man,Plant_7] 0
 x[CLUSTER_151,pig_man,Plant_8] 0
@@ -7345,7 +7345,7 @@ x[CLUSTER_152,cattle_man,Plant_1] 0
 x[CLUSTER_152,cattle_man,Plant_2] 0
 x[CLUSTER_152,cattle_man,Plant_3] 0
 x[CLUSTER_152,cattle_man,Plant_4] 0
-x[CLUSTER_152,cattle_man,Plant_5] 0.003361
+x[CLUSTER_152,cattle_man,Plant_5] 0
 x[CLUSTER_152,cattle_man,Plant_6] 0
 x[CLUSTER_152,cattle_man,Plant_7] 0
 x[CLUSTER_152,cattle_man,Plant_8] 0
@@ -7365,7 +7365,7 @@ x[CLUSTER_152,horse_man,Plant_1] 0
 x[CLUSTER_152,horse_man,Plant_2] 0
 x[CLUSTER_152,horse_man,Plant_3] 0
 x[CLUSTER_152,horse_man,Plant_4] 0
-x[CLUSTER_152,horse_man,Plant_5] 2.4933000000000004e-03
+x[CLUSTER_152,horse_man,Plant_5] 0
 x[CLUSTER_152,horse_man,Plant_6] 0
 x[CLUSTER_152,horse_man,Plant_7] 0
 x[CLUSTER_152,horse_man,Plant_8] 0
@@ -7385,7 +7385,7 @@ x[CLUSTER_152,pig_man,Plant_1] 0
 x[CLUSTER_152,pig_man,Plant_2] 0
 x[CLUSTER_152,pig_man,Plant_3] 0
 x[CLUSTER_152,pig_man,Plant_4] 0
-x[CLUSTER_152,pig_man,Plant_5] 1.7414849999999998e-04
+x[CLUSTER_152,pig_man,Plant_5] 0
 x[CLUSTER_152,pig_man,Plant_6] 0
 x[CLUSTER_152,pig_man,Plant_7] 0
 x[CLUSTER_152,pig_man,Plant_8] 0
@@ -7462,7 +7462,7 @@ x[CLUSTER_152,legume_str,Plant_8] 0
 x[CLUSTER_152,legume_str,Plant_9] 0
 x[CLUSTER_153,cattle_man,Plant_0] 0
 x[CLUSTER_153,cattle_man,Plant_1] 0
-x[CLUSTER_153,cattle_man,Plant_2] 0.005103062
+x[CLUSTER_153,cattle_man,Plant_2] 0
 x[CLUSTER_153,cattle_man,Plant_3] 0
 x[CLUSTER_153,cattle_man,Plant_4] 0
 x[CLUSTER_153,cattle_man,Plant_5] 0
@@ -7482,7 +7482,7 @@ x[CLUSTER_153,cattle_slu,Plant_8] 0
 x[CLUSTER_153,cattle_slu,Plant_9] 0
 x[CLUSTER_153,horse_man,Plant_0] 0
 x[CLUSTER_153,horse_man,Plant_1] 0
-x[CLUSTER_153,horse_man,Plant_2] 0.0012625
+x[CLUSTER_153,horse_man,Plant_2] 0
 x[CLUSTER_153,horse_man,Plant_3] 0
 x[CLUSTER_153,horse_man,Plant_4] 0
 x[CLUSTER_153,horse_man,Plant_5] 0
@@ -7502,7 +7502,7 @@ x[CLUSTER_153,pig_slu,Plant_8] 0
 x[CLUSTER_153,pig_slu,Plant_9] 0
 x[CLUSTER_153,pig_man,Plant_0] 0
 x[CLUSTER_153,pig_man,Plant_1] 0
-x[CLUSTER_153,pig_man,Plant_2] 7.188691e-05
+x[CLUSTER_153,pig_man,Plant_2] 0
 x[CLUSTER_153,pig_man,Plant_3] 0
 x[CLUSTER_153,pig_man,Plant_4] 0
 x[CLUSTER_153,pig_man,Plant_5] 0
@@ -7529,7 +7529,7 @@ x[CLUSTER_153,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_153,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_153,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_153,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_153,clover_alfalfa_grass,Plant_9] 0.006595
+x[CLUSTER_153,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_153,perm_grass,Plant_0] 0
 x[CLUSTER_153,perm_grass,Plant_1] 0
 x[CLUSTER_153,perm_grass,Plant_2] 0
@@ -7549,7 +7549,7 @@ x[CLUSTER_153,maize_str,Plant_5] 0
 x[CLUSTER_153,maize_str,Plant_6] 0
 x[CLUSTER_153,maize_str,Plant_7] 0
 x[CLUSTER_153,maize_str,Plant_8] 0
-x[CLUSTER_153,maize_str,Plant_9] 0.0003463
+x[CLUSTER_153,maize_str,Plant_9] 0
 x[CLUSTER_153,beet_leaf,Plant_0] 0
 x[CLUSTER_153,beet_leaf,Plant_1] 0
 x[CLUSTER_153,beet_leaf,Plant_2] 0
@@ -7587,7 +7587,7 @@ x[CLUSTER_154,cattle_man,Plant_3] 0
 x[CLUSTER_154,cattle_man,Plant_4] 0
 x[CLUSTER_154,cattle_man,Plant_5] 0
 x[CLUSTER_154,cattle_man,Plant_6] 0
-x[CLUSTER_154,cattle_man,Plant_7] 0.0056341
+x[CLUSTER_154,cattle_man,Plant_7] 0
 x[CLUSTER_154,cattle_man,Plant_8] 0
 x[CLUSTER_154,cattle_man,Plant_9] 0
 x[CLUSTER_154,cattle_slu,Plant_0] 0
@@ -7597,7 +7597,7 @@ x[CLUSTER_154,cattle_slu,Plant_3] 0
 x[CLUSTER_154,cattle_slu,Plant_4] 0
 x[CLUSTER_154,cattle_slu,Plant_5] 0
 x[CLUSTER_154,cattle_slu,Plant_6] 0
-x[CLUSTER_154,cattle_slu,Plant_7] 0.000264058
+x[CLUSTER_154,cattle_slu,Plant_7] 0
 x[CLUSTER_154,cattle_slu,Plant_8] 0
 x[CLUSTER_154,cattle_slu,Plant_9] 0
 x[CLUSTER_154,horse_man,Plant_0] 0
@@ -7607,7 +7607,7 @@ x[CLUSTER_154,horse_man,Plant_3] 0
 x[CLUSTER_154,horse_man,Plant_4] 0
 x[CLUSTER_154,horse_man,Plant_5] 0
 x[CLUSTER_154,horse_man,Plant_6] 0
-x[CLUSTER_154,horse_man,Plant_7] 3.4760000000000005e-04
+x[CLUSTER_154,horse_man,Plant_7] 0
 x[CLUSTER_154,horse_man,Plant_8] 0
 x[CLUSTER_154,horse_man,Plant_9] 0
 x[CLUSTER_154,pig_slu,Plant_0] 0
@@ -7627,7 +7627,7 @@ x[CLUSTER_154,pig_man,Plant_3] 0
 x[CLUSTER_154,pig_man,Plant_4] 0
 x[CLUSTER_154,pig_man,Plant_5] 0
 x[CLUSTER_154,pig_man,Plant_6] 0
-x[CLUSTER_154,pig_man,Plant_7] 0.000309885
+x[CLUSTER_154,pig_man,Plant_7] 0
 x[CLUSTER_154,pig_man,Plant_8] 0
 x[CLUSTER_154,pig_man,Plant_9] 0
 x[CLUSTER_154,cereal_str,Plant_0] 0
@@ -7649,7 +7649,7 @@ x[CLUSTER_154,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_154,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_154,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_154,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_154,clover_alfalfa_grass,Plant_9] 0.005113
+x[CLUSTER_154,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_154,perm_grass,Plant_0] 0
 x[CLUSTER_154,perm_grass,Plant_1] 0
 x[CLUSTER_154,perm_grass,Plant_2] 0
@@ -7669,7 +7669,7 @@ x[CLUSTER_154,maize_str,Plant_5] 0
 x[CLUSTER_154,maize_str,Plant_6] 0
 x[CLUSTER_154,maize_str,Plant_7] 0
 x[CLUSTER_154,maize_str,Plant_8] 0
-x[CLUSTER_154,maize_str,Plant_9] 8.414e-05
+x[CLUSTER_154,maize_str,Plant_9] 0
 x[CLUSTER_154,beet_leaf,Plant_0] 0
 x[CLUSTER_154,beet_leaf,Plant_1] 0
 x[CLUSTER_154,beet_leaf,Plant_2] 0
@@ -7703,7 +7703,7 @@ x[CLUSTER_154,legume_str,Plant_9] 0
 x[CLUSTER_155,cattle_man,Plant_0] 0
 x[CLUSTER_155,cattle_man,Plant_1] 0
 x[CLUSTER_155,cattle_man,Plant_2] 0
-x[CLUSTER_155,cattle_man,Plant_3] 5.3351999999998970e-04
+x[CLUSTER_155,cattle_man,Plant_3] 0
 x[CLUSTER_155,cattle_man,Plant_4] 0
 x[CLUSTER_155,cattle_man,Plant_5] 0
 x[CLUSTER_155,cattle_man,Plant_6] 0
@@ -7723,7 +7723,7 @@ x[CLUSTER_155,cattle_slu,Plant_9] 0
 x[CLUSTER_155,horse_man,Plant_0] 0
 x[CLUSTER_155,horse_man,Plant_1] 0
 x[CLUSTER_155,horse_man,Plant_2] 0
-x[CLUSTER_155,horse_man,Plant_3] 0.0011413
+x[CLUSTER_155,horse_man,Plant_3] 0
 x[CLUSTER_155,horse_man,Plant_4] 0
 x[CLUSTER_155,horse_man,Plant_5] 0
 x[CLUSTER_155,horse_man,Plant_6] 0
@@ -7743,7 +7743,7 @@ x[CLUSTER_155,pig_slu,Plant_9] 0
 x[CLUSTER_155,pig_man,Plant_0] 0
 x[CLUSTER_155,pig_man,Plant_1] 0
 x[CLUSTER_155,pig_man,Plant_2] 0
-x[CLUSTER_155,pig_man,Plant_3] 1.2437000000000001e-03
+x[CLUSTER_155,pig_man,Plant_3] 0
 x[CLUSTER_155,pig_man,Plant_4] 0
 x[CLUSTER_155,pig_man,Plant_5] 0
 x[CLUSTER_155,pig_man,Plant_6] 0
@@ -7827,7 +7827,7 @@ x[CLUSTER_156,cattle_man,Plant_3] 0
 x[CLUSTER_156,cattle_man,Plant_4] 0
 x[CLUSTER_156,cattle_man,Plant_5] 0
 x[CLUSTER_156,cattle_man,Plant_6] 0
-x[CLUSTER_156,cattle_man,Plant_7] 0.0037132
+x[CLUSTER_156,cattle_man,Plant_7] 0
 x[CLUSTER_156,cattle_man,Plant_8] 0
 x[CLUSTER_156,cattle_man,Plant_9] 0
 x[CLUSTER_156,cattle_slu,Plant_0] 0
@@ -7837,7 +7837,7 @@ x[CLUSTER_156,cattle_slu,Plant_3] 0
 x[CLUSTER_156,cattle_slu,Plant_4] 0
 x[CLUSTER_156,cattle_slu,Plant_5] 0
 x[CLUSTER_156,cattle_slu,Plant_6] 0
-x[CLUSTER_156,cattle_slu,Plant_7] 0.004054
+x[CLUSTER_156,cattle_slu,Plant_7] 0
 x[CLUSTER_156,cattle_slu,Plant_8] 0
 x[CLUSTER_156,cattle_slu,Plant_9] 0
 x[CLUSTER_156,horse_man,Plant_0] 0
@@ -7847,7 +7847,7 @@ x[CLUSTER_156,horse_man,Plant_3] 0
 x[CLUSTER_156,horse_man,Plant_4] 0
 x[CLUSTER_156,horse_man,Plant_5] 0
 x[CLUSTER_156,horse_man,Plant_6] 0
-x[CLUSTER_156,horse_man,Plant_7] 0.0011447
+x[CLUSTER_156,horse_man,Plant_7] 0
 x[CLUSTER_156,horse_man,Plant_8] 0
 x[CLUSTER_156,horse_man,Plant_9] 0
 x[CLUSTER_156,pig_slu,Plant_0] 0
@@ -7857,7 +7857,7 @@ x[CLUSTER_156,pig_slu,Plant_3] 0
 x[CLUSTER_156,pig_slu,Plant_4] 0
 x[CLUSTER_156,pig_slu,Plant_5] 0
 x[CLUSTER_156,pig_slu,Plant_6] 0
-x[CLUSTER_156,pig_slu,Plant_7] 2.2356900000000002e-03
+x[CLUSTER_156,pig_slu,Plant_7] 0
 x[CLUSTER_156,pig_slu,Plant_8] 0
 x[CLUSTER_156,pig_slu,Plant_9] 0
 x[CLUSTER_156,pig_man,Plant_0] 0
@@ -7867,7 +7867,7 @@ x[CLUSTER_156,pig_man,Plant_3] 0
 x[CLUSTER_156,pig_man,Plant_4] 0
 x[CLUSTER_156,pig_man,Plant_5] 0
 x[CLUSTER_156,pig_man,Plant_6] 0
-x[CLUSTER_156,pig_man,Plant_7] 0.0001378229
+x[CLUSTER_156,pig_man,Plant_7] 0
 x[CLUSTER_156,pig_man,Plant_8] 0
 x[CLUSTER_156,pig_man,Plant_9] 0
 x[CLUSTER_156,cereal_str,Plant_0] 0
@@ -7941,7 +7941,7 @@ x[CLUSTER_156,legume_str,Plant_7] 0
 x[CLUSTER_156,legume_str,Plant_8] 0
 x[CLUSTER_156,legume_str,Plant_9] 0
 x[CLUSTER_157,cattle_man,Plant_0] 0
-x[CLUSTER_157,cattle_man,Plant_1] 0.02288
+x[CLUSTER_157,cattle_man,Plant_1] 0
 x[CLUSTER_157,cattle_man,Plant_2] 0
 x[CLUSTER_157,cattle_man,Plant_3] 0
 x[CLUSTER_157,cattle_man,Plant_4] 0
@@ -7961,7 +7961,7 @@ x[CLUSTER_157,cattle_slu,Plant_7] 0
 x[CLUSTER_157,cattle_slu,Plant_8] 0
 x[CLUSTER_157,cattle_slu,Plant_9] 0
 x[CLUSTER_157,horse_man,Plant_0] 0
-x[CLUSTER_157,horse_man,Plant_1] 0.003454
+x[CLUSTER_157,horse_man,Plant_1] 0
 x[CLUSTER_157,horse_man,Plant_2] 0
 x[CLUSTER_157,horse_man,Plant_3] 0
 x[CLUSTER_157,horse_man,Plant_4] 0
@@ -8067,7 +8067,7 @@ x[CLUSTER_158,cattle_man,Plant_3] 0
 x[CLUSTER_158,cattle_man,Plant_4] 0
 x[CLUSTER_158,cattle_man,Plant_5] 0
 x[CLUSTER_158,cattle_man,Plant_6] 0
-x[CLUSTER_158,cattle_man,Plant_7] 0.000792
+x[CLUSTER_158,cattle_man,Plant_7] 0
 x[CLUSTER_158,cattle_man,Plant_8] 0
 x[CLUSTER_158,cattle_man,Plant_9] 0
 x[CLUSTER_158,cattle_slu,Plant_0] 0
@@ -8077,7 +8077,7 @@ x[CLUSTER_158,cattle_slu,Plant_3] 0
 x[CLUSTER_158,cattle_slu,Plant_4] 0
 x[CLUSTER_158,cattle_slu,Plant_5] 0
 x[CLUSTER_158,cattle_slu,Plant_6] 0
-x[CLUSTER_158,cattle_slu,Plant_7] 0.001096
+x[CLUSTER_158,cattle_slu,Plant_7] 0
 x[CLUSTER_158,cattle_slu,Plant_8] 0
 x[CLUSTER_158,cattle_slu,Plant_9] 0
 x[CLUSTER_158,horse_man,Plant_0] 0
@@ -8087,7 +8087,7 @@ x[CLUSTER_158,horse_man,Plant_3] 0
 x[CLUSTER_158,horse_man,Plant_4] 0
 x[CLUSTER_158,horse_man,Plant_5] 0
 x[CLUSTER_158,horse_man,Plant_6] 0
-x[CLUSTER_158,horse_man,Plant_7] 0.0002538
+x[CLUSTER_158,horse_man,Plant_7] 0
 x[CLUSTER_158,horse_man,Plant_8] 0
 x[CLUSTER_158,horse_man,Plant_9] 0
 x[CLUSTER_158,pig_slu,Plant_0] 0
@@ -8097,7 +8097,7 @@ x[CLUSTER_158,pig_slu,Plant_3] 0
 x[CLUSTER_158,pig_slu,Plant_4] 0
 x[CLUSTER_158,pig_slu,Plant_5] 0
 x[CLUSTER_158,pig_slu,Plant_6] 0
-x[CLUSTER_158,pig_slu,Plant_7] 1.027e-05
+x[CLUSTER_158,pig_slu,Plant_7] 0
 x[CLUSTER_158,pig_slu,Plant_8] 0
 x[CLUSTER_158,pig_slu,Plant_9] 0
 x[CLUSTER_158,pig_man,Plant_0] 0
@@ -8183,7 +8183,7 @@ x[CLUSTER_158,legume_str,Plant_9] 0
 x[CLUSTER_159,cattle_man,Plant_0] 0
 x[CLUSTER_159,cattle_man,Plant_1] 0
 x[CLUSTER_159,cattle_man,Plant_2] 0
-x[CLUSTER_159,cattle_man,Plant_3] 0.00844
+x[CLUSTER_159,cattle_man,Plant_3] 0
 x[CLUSTER_159,cattle_man,Plant_4] 0
 x[CLUSTER_159,cattle_man,Plant_5] 0
 x[CLUSTER_159,cattle_man,Plant_6] 0
@@ -8203,7 +8203,7 @@ x[CLUSTER_159,cattle_slu,Plant_9] 0
 x[CLUSTER_159,horse_man,Plant_0] 0
 x[CLUSTER_159,horse_man,Plant_1] 0
 x[CLUSTER_159,horse_man,Plant_2] 0
-x[CLUSTER_159,horse_man,Plant_3] 0.002721
+x[CLUSTER_159,horse_man,Plant_3] 0
 x[CLUSTER_159,horse_man,Plant_4] 0
 x[CLUSTER_159,horse_man,Plant_5] 0
 x[CLUSTER_159,horse_man,Plant_6] 0
@@ -8223,7 +8223,7 @@ x[CLUSTER_159,pig_slu,Plant_9] 0
 x[CLUSTER_159,pig_man,Plant_0] 0
 x[CLUSTER_159,pig_man,Plant_1] 0
 x[CLUSTER_159,pig_man,Plant_2] 0
-x[CLUSTER_159,pig_man,Plant_3] 0.003550315
+x[CLUSTER_159,pig_man,Plant_3] 0
 x[CLUSTER_159,pig_man,Plant_4] 0
 x[CLUSTER_159,pig_man,Plant_5] 0
 x[CLUSTER_159,pig_man,Plant_6] 0
@@ -8307,7 +8307,7 @@ x[CLUSTER_16,cattle_man,Plant_3] 0
 x[CLUSTER_16,cattle_man,Plant_4] 0
 x[CLUSTER_16,cattle_man,Plant_5] 0
 x[CLUSTER_16,cattle_man,Plant_6] 0
-x[CLUSTER_16,cattle_man,Plant_7] 0.0117506
+x[CLUSTER_16,cattle_man,Plant_7] 0
 x[CLUSTER_16,cattle_man,Plant_8] 0
 x[CLUSTER_16,cattle_man,Plant_9] 0
 x[CLUSTER_16,cattle_slu,Plant_0] 0
@@ -8317,7 +8317,7 @@ x[CLUSTER_16,cattle_slu,Plant_3] 0
 x[CLUSTER_16,cattle_slu,Plant_4] 0
 x[CLUSTER_16,cattle_slu,Plant_5] 0
 x[CLUSTER_16,cattle_slu,Plant_6] 0
-x[CLUSTER_16,cattle_slu,Plant_7] 3.2548000000000021e-03
+x[CLUSTER_16,cattle_slu,Plant_7] 0
 x[CLUSTER_16,cattle_slu,Plant_8] 0
 x[CLUSTER_16,cattle_slu,Plant_9] 0
 x[CLUSTER_16,horse_man,Plant_0] 0
@@ -8327,7 +8327,7 @@ x[CLUSTER_16,horse_man,Plant_3] 0
 x[CLUSTER_16,horse_man,Plant_4] 0
 x[CLUSTER_16,horse_man,Plant_5] 0
 x[CLUSTER_16,horse_man,Plant_6] 0
-x[CLUSTER_16,horse_man,Plant_7] 1.5324000000000002e-03
+x[CLUSTER_16,horse_man,Plant_7] 0
 x[CLUSTER_16,horse_man,Plant_8] 0
 x[CLUSTER_16,horse_man,Plant_9] 0
 x[CLUSTER_16,pig_slu,Plant_0] 0
@@ -8337,7 +8337,7 @@ x[CLUSTER_16,pig_slu,Plant_3] 0
 x[CLUSTER_16,pig_slu,Plant_4] 0
 x[CLUSTER_16,pig_slu,Plant_5] 0
 x[CLUSTER_16,pig_slu,Plant_6] 0
-x[CLUSTER_16,pig_slu,Plant_7] 8.6572900000000015e-03
+x[CLUSTER_16,pig_slu,Plant_7] 0
 x[CLUSTER_16,pig_slu,Plant_8] 0
 x[CLUSTER_16,pig_slu,Plant_9] 0
 x[CLUSTER_16,pig_man,Plant_0] 0
@@ -8347,7 +8347,7 @@ x[CLUSTER_16,pig_man,Plant_3] 0
 x[CLUSTER_16,pig_man,Plant_4] 0
 x[CLUSTER_16,pig_man,Plant_5] 0
 x[CLUSTER_16,pig_man,Plant_6] 0
-x[CLUSTER_16,pig_man,Plant_7] 0.0005637029
+x[CLUSTER_16,pig_man,Plant_7] 0
 x[CLUSTER_16,pig_man,Plant_8] 0
 x[CLUSTER_16,pig_man,Plant_9] 0
 x[CLUSTER_16,cereal_str,Plant_0] 0
@@ -8389,7 +8389,7 @@ x[CLUSTER_16,maize_str,Plant_5] 0
 x[CLUSTER_16,maize_str,Plant_6] 0
 x[CLUSTER_16,maize_str,Plant_7] 0
 x[CLUSTER_16,maize_str,Plant_8] 0
-x[CLUSTER_16,maize_str,Plant_9] 3.6145999999999997e-04
+x[CLUSTER_16,maize_str,Plant_9] 0
 x[CLUSTER_16,beet_leaf,Plant_0] 0
 x[CLUSTER_16,beet_leaf,Plant_1] 0
 x[CLUSTER_16,beet_leaf,Plant_2] 0
@@ -8422,7 +8422,7 @@ x[CLUSTER_16,legume_str,Plant_8] 0
 x[CLUSTER_16,legume_str,Plant_9] 0
 x[CLUSTER_160,cattle_man,Plant_0] 0
 x[CLUSTER_160,cattle_man,Plant_1] 0
-x[CLUSTER_160,cattle_man,Plant_2] 0.00562
+x[CLUSTER_160,cattle_man,Plant_2] 0
 x[CLUSTER_160,cattle_man,Plant_3] 0
 x[CLUSTER_160,cattle_man,Plant_4] 0
 x[CLUSTER_160,cattle_man,Plant_5] 0
@@ -8442,7 +8442,7 @@ x[CLUSTER_160,cattle_slu,Plant_8] 0
 x[CLUSTER_160,cattle_slu,Plant_9] 0
 x[CLUSTER_160,horse_man,Plant_0] 0
 x[CLUSTER_160,horse_man,Plant_1] 0
-x[CLUSTER_160,horse_man,Plant_2] 0.0021742
+x[CLUSTER_160,horse_man,Plant_2] 0
 x[CLUSTER_160,horse_man,Plant_3] 0
 x[CLUSTER_160,horse_man,Plant_4] 0
 x[CLUSTER_160,horse_man,Plant_5] 0
@@ -8462,7 +8462,7 @@ x[CLUSTER_160,pig_slu,Plant_8] 0
 x[CLUSTER_160,pig_slu,Plant_9] 0
 x[CLUSTER_160,pig_man,Plant_0] 0
 x[CLUSTER_160,pig_man,Plant_1] 0
-x[CLUSTER_160,pig_man,Plant_2] 2.3875899999999998e-04
+x[CLUSTER_160,pig_man,Plant_2] 0
 x[CLUSTER_160,pig_man,Plant_3] 0
 x[CLUSTER_160,pig_man,Plant_4] 0
 x[CLUSTER_160,pig_man,Plant_5] 0
@@ -8509,7 +8509,7 @@ x[CLUSTER_160,maize_str,Plant_5] 0
 x[CLUSTER_160,maize_str,Plant_6] 0
 x[CLUSTER_160,maize_str,Plant_7] 0
 x[CLUSTER_160,maize_str,Plant_8] 0
-x[CLUSTER_160,maize_str,Plant_9] 2.5069999999999997e-04
+x[CLUSTER_160,maize_str,Plant_9] 0
 x[CLUSTER_160,beet_leaf,Plant_0] 0
 x[CLUSTER_160,beet_leaf,Plant_1] 0
 x[CLUSTER_160,beet_leaf,Plant_2] 0
@@ -8542,7 +8542,7 @@ x[CLUSTER_160,legume_str,Plant_8] 0
 x[CLUSTER_160,legume_str,Plant_9] 0
 x[CLUSTER_161,cattle_man,Plant_0] 0
 x[CLUSTER_161,cattle_man,Plant_1] 0
-x[CLUSTER_161,cattle_man,Plant_2] 0.00685
+x[CLUSTER_161,cattle_man,Plant_2] 0
 x[CLUSTER_161,cattle_man,Plant_3] 0
 x[CLUSTER_161,cattle_man,Plant_4] 0
 x[CLUSTER_161,cattle_man,Plant_5] 0
@@ -8562,7 +8562,7 @@ x[CLUSTER_161,cattle_slu,Plant_8] 0
 x[CLUSTER_161,cattle_slu,Plant_9] 0
 x[CLUSTER_161,horse_man,Plant_0] 0
 x[CLUSTER_161,horse_man,Plant_1] 0
-x[CLUSTER_161,horse_man,Plant_2] 0.00042962
+x[CLUSTER_161,horse_man,Plant_2] 0
 x[CLUSTER_161,horse_man,Plant_3] 0
 x[CLUSTER_161,horse_man,Plant_4] 0
 x[CLUSTER_161,horse_man,Plant_5] 0
@@ -8582,7 +8582,7 @@ x[CLUSTER_161,pig_slu,Plant_8] 0
 x[CLUSTER_161,pig_slu,Plant_9] 0
 x[CLUSTER_161,pig_man,Plant_0] 0
 x[CLUSTER_161,pig_man,Plant_1] 0
-x[CLUSTER_161,pig_man,Plant_2] 0.001184
+x[CLUSTER_161,pig_man,Plant_2] 0
 x[CLUSTER_161,pig_man,Plant_3] 0
 x[CLUSTER_161,pig_man,Plant_4] 0
 x[CLUSTER_161,pig_man,Plant_5] 0
@@ -8665,7 +8665,7 @@ x[CLUSTER_162,cattle_man,Plant_1] 0
 x[CLUSTER_162,cattle_man,Plant_2] 0
 x[CLUSTER_162,cattle_man,Plant_3] 0
 x[CLUSTER_162,cattle_man,Plant_4] 0
-x[CLUSTER_162,cattle_man,Plant_5] 0.004108423
+x[CLUSTER_162,cattle_man,Plant_5] 0
 x[CLUSTER_162,cattle_man,Plant_6] 0
 x[CLUSTER_162,cattle_man,Plant_7] 0
 x[CLUSTER_162,cattle_man,Plant_8] 0
@@ -8675,7 +8675,7 @@ x[CLUSTER_162,cattle_slu,Plant_1] 0
 x[CLUSTER_162,cattle_slu,Plant_2] 0
 x[CLUSTER_162,cattle_slu,Plant_3] 0
 x[CLUSTER_162,cattle_slu,Plant_4] 0
-x[CLUSTER_162,cattle_slu,Plant_5] 0.016
+x[CLUSTER_162,cattle_slu,Plant_5] 0
 x[CLUSTER_162,cattle_slu,Plant_6] 0
 x[CLUSTER_162,cattle_slu,Plant_7] 0
 x[CLUSTER_162,cattle_slu,Plant_8] 0
@@ -8685,7 +8685,7 @@ x[CLUSTER_162,horse_man,Plant_1] 0
 x[CLUSTER_162,horse_man,Plant_2] 0
 x[CLUSTER_162,horse_man,Plant_3] 0
 x[CLUSTER_162,horse_man,Plant_4] 0
-x[CLUSTER_162,horse_man,Plant_5] 3.3759000000000003e-03
+x[CLUSTER_162,horse_man,Plant_5] 0
 x[CLUSTER_162,horse_man,Plant_6] 0
 x[CLUSTER_162,horse_man,Plant_7] 0
 x[CLUSTER_162,horse_man,Plant_8] 0
@@ -8705,7 +8705,7 @@ x[CLUSTER_162,pig_man,Plant_1] 0
 x[CLUSTER_162,pig_man,Plant_2] 0
 x[CLUSTER_162,pig_man,Plant_3] 0
 x[CLUSTER_162,pig_man,Plant_4] 0
-x[CLUSTER_162,pig_man,Plant_5] 0.00012694
+x[CLUSTER_162,pig_man,Plant_5] 0
 x[CLUSTER_162,pig_man,Plant_6] 0
 x[CLUSTER_162,pig_man,Plant_7] 0
 x[CLUSTER_162,pig_man,Plant_8] 0
@@ -8787,7 +8787,7 @@ x[CLUSTER_163,cattle_man,Plant_3] 0
 x[CLUSTER_163,cattle_man,Plant_4] 0
 x[CLUSTER_163,cattle_man,Plant_5] 0
 x[CLUSTER_163,cattle_man,Plant_6] 0
-x[CLUSTER_163,cattle_man,Plant_7] 0.01052
+x[CLUSTER_163,cattle_man,Plant_7] 0
 x[CLUSTER_163,cattle_man,Plant_8] 0
 x[CLUSTER_163,cattle_man,Plant_9] 0
 x[CLUSTER_163,cattle_slu,Plant_0] 0
@@ -8807,7 +8807,7 @@ x[CLUSTER_163,horse_man,Plant_3] 0
 x[CLUSTER_163,horse_man,Plant_4] 0
 x[CLUSTER_163,horse_man,Plant_5] 0
 x[CLUSTER_163,horse_man,Plant_6] 0
-x[CLUSTER_163,horse_man,Plant_7] 0.001805
+x[CLUSTER_163,horse_man,Plant_7] 0
 x[CLUSTER_163,horse_man,Plant_8] 0
 x[CLUSTER_163,horse_man,Plant_9] 0
 x[CLUSTER_163,pig_slu,Plant_0] 0
@@ -8907,7 +8907,7 @@ x[CLUSTER_164,cattle_man,Plant_3] 0
 x[CLUSTER_164,cattle_man,Plant_4] 0
 x[CLUSTER_164,cattle_man,Plant_5] 0
 x[CLUSTER_164,cattle_man,Plant_6] 0
-x[CLUSTER_164,cattle_man,Plant_7] 0.00542
+x[CLUSTER_164,cattle_man,Plant_7] 0
 x[CLUSTER_164,cattle_man,Plant_8] 0
 x[CLUSTER_164,cattle_man,Plant_9] 0
 x[CLUSTER_164,cattle_slu,Plant_0] 0
@@ -8917,7 +8917,7 @@ x[CLUSTER_164,cattle_slu,Plant_3] 0
 x[CLUSTER_164,cattle_slu,Plant_4] 0
 x[CLUSTER_164,cattle_slu,Plant_5] 0
 x[CLUSTER_164,cattle_slu,Plant_6] 0
-x[CLUSTER_164,cattle_slu,Plant_7] 0.0047951
+x[CLUSTER_164,cattle_slu,Plant_7] 0
 x[CLUSTER_164,cattle_slu,Plant_8] 0
 x[CLUSTER_164,cattle_slu,Plant_9] 0
 x[CLUSTER_164,horse_man,Plant_0] 0
@@ -8927,7 +8927,7 @@ x[CLUSTER_164,horse_man,Plant_3] 0
 x[CLUSTER_164,horse_man,Plant_4] 0
 x[CLUSTER_164,horse_man,Plant_5] 0
 x[CLUSTER_164,horse_man,Plant_6] 0
-x[CLUSTER_164,horse_man,Plant_7] 0.001264
+x[CLUSTER_164,horse_man,Plant_7] 0
 x[CLUSTER_164,horse_man,Plant_8] 0
 x[CLUSTER_164,horse_man,Plant_9] 0
 x[CLUSTER_164,pig_slu,Plant_0] 0
@@ -8937,7 +8937,7 @@ x[CLUSTER_164,pig_slu,Plant_3] 0
 x[CLUSTER_164,pig_slu,Plant_4] 0
 x[CLUSTER_164,pig_slu,Plant_5] 0
 x[CLUSTER_164,pig_slu,Plant_6] 0
-x[CLUSTER_164,pig_slu,Plant_7] 0.00075828
+x[CLUSTER_164,pig_slu,Plant_7] 0
 x[CLUSTER_164,pig_slu,Plant_8] 0
 x[CLUSTER_164,pig_slu,Plant_9] 0
 x[CLUSTER_164,pig_man,Plant_0] 0
@@ -8947,7 +8947,7 @@ x[CLUSTER_164,pig_man,Plant_3] 0
 x[CLUSTER_164,pig_man,Plant_4] 0
 x[CLUSTER_164,pig_man,Plant_5] 0
 x[CLUSTER_164,pig_man,Plant_6] 0
-x[CLUSTER_164,pig_man,Plant_7] 4.6635e-05
+x[CLUSTER_164,pig_man,Plant_7] 0
 x[CLUSTER_164,pig_man,Plant_8] 0
 x[CLUSTER_164,pig_man,Plant_9] 0
 x[CLUSTER_164,cereal_str,Plant_0] 0
@@ -9025,7 +9025,7 @@ x[CLUSTER_165,cattle_man,Plant_1] 0
 x[CLUSTER_165,cattle_man,Plant_2] 0
 x[CLUSTER_165,cattle_man,Plant_3] 0
 x[CLUSTER_165,cattle_man,Plant_4] 0
-x[CLUSTER_165,cattle_man,Plant_5] 0.00897
+x[CLUSTER_165,cattle_man,Plant_5] 0
 x[CLUSTER_165,cattle_man,Plant_6] 0
 x[CLUSTER_165,cattle_man,Plant_7] 0
 x[CLUSTER_165,cattle_man,Plant_8] 0
@@ -9045,7 +9045,7 @@ x[CLUSTER_165,horse_man,Plant_1] 0
 x[CLUSTER_165,horse_man,Plant_2] 0
 x[CLUSTER_165,horse_man,Plant_3] 0
 x[CLUSTER_165,horse_man,Plant_4] 0
-x[CLUSTER_165,horse_man,Plant_5] 0.0019267
+x[CLUSTER_165,horse_man,Plant_5] 0
 x[CLUSTER_165,horse_man,Plant_6] 0
 x[CLUSTER_165,horse_man,Plant_7] 0
 x[CLUSTER_165,horse_man,Plant_8] 0
@@ -9065,7 +9065,7 @@ x[CLUSTER_165,pig_man,Plant_1] 0
 x[CLUSTER_165,pig_man,Plant_2] 0
 x[CLUSTER_165,pig_man,Plant_3] 0
 x[CLUSTER_165,pig_man,Plant_4] 0
-x[CLUSTER_165,pig_man,Plant_5] 0.0010199
+x[CLUSTER_165,pig_man,Plant_5] 0
 x[CLUSTER_165,pig_man,Plant_6] 0
 x[CLUSTER_165,pig_man,Plant_7] 0
 x[CLUSTER_165,pig_man,Plant_8] 0
@@ -9148,7 +9148,7 @@ x[CLUSTER_166,cattle_man,Plant_4] 0
 x[CLUSTER_166,cattle_man,Plant_5] 0
 x[CLUSTER_166,cattle_man,Plant_6] 0
 x[CLUSTER_166,cattle_man,Plant_7] 0
-x[CLUSTER_166,cattle_man,Plant_8] 0.006826
+x[CLUSTER_166,cattle_man,Plant_8] 0
 x[CLUSTER_166,cattle_man,Plant_9] 0
 x[CLUSTER_166,cattle_slu,Plant_0] 0
 x[CLUSTER_166,cattle_slu,Plant_1] 0
@@ -9168,7 +9168,7 @@ x[CLUSTER_166,horse_man,Plant_4] 0
 x[CLUSTER_166,horse_man,Plant_5] 0
 x[CLUSTER_166,horse_man,Plant_6] 0
 x[CLUSTER_166,horse_man,Plant_7] 0
-x[CLUSTER_166,horse_man,Plant_8] 7.6370000000000008e-04
+x[CLUSTER_166,horse_man,Plant_8] 0
 x[CLUSTER_166,horse_man,Plant_9] 0
 x[CLUSTER_166,pig_slu,Plant_0] 0
 x[CLUSTER_166,pig_slu,Plant_1] 0
@@ -9188,7 +9188,7 @@ x[CLUSTER_166,pig_man,Plant_4] 0
 x[CLUSTER_166,pig_man,Plant_5] 0
 x[CLUSTER_166,pig_man,Plant_6] 0
 x[CLUSTER_166,pig_man,Plant_7] 0
-x[CLUSTER_166,pig_man,Plant_8] 0.000110044731
+x[CLUSTER_166,pig_man,Plant_8] 0
 x[CLUSTER_166,pig_man,Plant_9] 0
 x[CLUSTER_166,cereal_str,Plant_0] 0
 x[CLUSTER_166,cereal_str,Plant_1] 0
@@ -9260,7 +9260,7 @@ x[CLUSTER_166,legume_str,Plant_6] 0
 x[CLUSTER_166,legume_str,Plant_7] 0
 x[CLUSTER_166,legume_str,Plant_8] 0
 x[CLUSTER_166,legume_str,Plant_9] 0
-x[CLUSTER_167,cattle_man,Plant_0] 0.01668
+x[CLUSTER_167,cattle_man,Plant_0] 0
 x[CLUSTER_167,cattle_man,Plant_1] 0
 x[CLUSTER_167,cattle_man,Plant_2] 0
 x[CLUSTER_167,cattle_man,Plant_3] 0
@@ -9280,7 +9280,7 @@ x[CLUSTER_167,cattle_slu,Plant_6] 0
 x[CLUSTER_167,cattle_slu,Plant_7] 0
 x[CLUSTER_167,cattle_slu,Plant_8] 0
 x[CLUSTER_167,cattle_slu,Plant_9] 0
-x[CLUSTER_167,horse_man,Plant_0] 0.0010624
+x[CLUSTER_167,horse_man,Plant_0] 0
 x[CLUSTER_167,horse_man,Plant_1] 0
 x[CLUSTER_167,horse_man,Plant_2] 0
 x[CLUSTER_167,horse_man,Plant_3] 0
@@ -9300,7 +9300,7 @@ x[CLUSTER_167,pig_slu,Plant_6] 0
 x[CLUSTER_167,pig_slu,Plant_7] 0
 x[CLUSTER_167,pig_slu,Plant_8] 0
 x[CLUSTER_167,pig_slu,Plant_9] 0
-x[CLUSTER_167,pig_man,Plant_0] 7.2229999999999994e-04
+x[CLUSTER_167,pig_man,Plant_0] 0
 x[CLUSTER_167,pig_man,Plant_1] 0
 x[CLUSTER_167,pig_man,Plant_2] 0
 x[CLUSTER_167,pig_man,Plant_3] 0
@@ -9340,7 +9340,7 @@ x[CLUSTER_167,perm_grass,Plant_6] 0
 x[CLUSTER_167,perm_grass,Plant_7] 0
 x[CLUSTER_167,perm_grass,Plant_8] 0
 x[CLUSTER_167,perm_grass,Plant_9] 0
-x[CLUSTER_167,maize_str,Plant_0] 0.0002553
+x[CLUSTER_167,maize_str,Plant_0] 0
 x[CLUSTER_167,maize_str,Plant_1] 0
 x[CLUSTER_167,maize_str,Plant_2] 0
 x[CLUSTER_167,maize_str,Plant_3] 0
@@ -9384,7 +9384,7 @@ x[CLUSTER_168,cattle_man,Plant_0] 0
 x[CLUSTER_168,cattle_man,Plant_1] 0
 x[CLUSTER_168,cattle_man,Plant_2] 0
 x[CLUSTER_168,cattle_man,Plant_3] 0
-x[CLUSTER_168,cattle_man,Plant_4] 0.004187
+x[CLUSTER_168,cattle_man,Plant_4] 0
 x[CLUSTER_168,cattle_man,Plant_5] 0
 x[CLUSTER_168,cattle_man,Plant_6] 0
 x[CLUSTER_168,cattle_man,Plant_7] 0
@@ -9404,7 +9404,7 @@ x[CLUSTER_168,horse_man,Plant_0] 0
 x[CLUSTER_168,horse_man,Plant_1] 0
 x[CLUSTER_168,horse_man,Plant_2] 0
 x[CLUSTER_168,horse_man,Plant_3] 0
-x[CLUSTER_168,horse_man,Plant_4] 0.002384
+x[CLUSTER_168,horse_man,Plant_4] 0
 x[CLUSTER_168,horse_man,Plant_5] 0
 x[CLUSTER_168,horse_man,Plant_6] 0
 x[CLUSTER_168,horse_man,Plant_7] 0
@@ -9424,7 +9424,7 @@ x[CLUSTER_168,pig_man,Plant_0] 0
 x[CLUSTER_168,pig_man,Plant_1] 0
 x[CLUSTER_168,pig_man,Plant_2] 0
 x[CLUSTER_168,pig_man,Plant_3] 0
-x[CLUSTER_168,pig_man,Plant_4] 0.000426892
+x[CLUSTER_168,pig_man,Plant_4] 0
 x[CLUSTER_168,pig_man,Plant_5] 0
 x[CLUSTER_168,pig_man,Plant_6] 0
 x[CLUSTER_168,pig_man,Plant_7] 0
@@ -9449,7 +9449,7 @@ x[CLUSTER_168,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_168,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_168,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_168,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_168,clover_alfalfa_grass,Plant_9] 0.009078
+x[CLUSTER_168,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_168,perm_grass,Plant_0] 0
 x[CLUSTER_168,perm_grass,Plant_1] 0
 x[CLUSTER_168,perm_grass,Plant_2] 0
@@ -9469,7 +9469,7 @@ x[CLUSTER_168,maize_str,Plant_5] 0
 x[CLUSTER_168,maize_str,Plant_6] 0
 x[CLUSTER_168,maize_str,Plant_7] 0
 x[CLUSTER_168,maize_str,Plant_8] 0
-x[CLUSTER_168,maize_str,Plant_9] 0.00016579
+x[CLUSTER_168,maize_str,Plant_9] 0
 x[CLUSTER_168,beet_leaf,Plant_0] 0
 x[CLUSTER_168,beet_leaf,Plant_1] 0
 x[CLUSTER_168,beet_leaf,Plant_2] 0
@@ -9502,7 +9502,7 @@ x[CLUSTER_168,legume_str,Plant_8] 0
 x[CLUSTER_168,legume_str,Plant_9] 0
 x[CLUSTER_169,cattle_man,Plant_0] 0
 x[CLUSTER_169,cattle_man,Plant_1] 0
-x[CLUSTER_169,cattle_man,Plant_2] 8.4257000000000012e-03
+x[CLUSTER_169,cattle_man,Plant_2] 0
 x[CLUSTER_169,cattle_man,Plant_3] 0
 x[CLUSTER_169,cattle_man,Plant_4] 0
 x[CLUSTER_169,cattle_man,Plant_5] 0
@@ -9512,7 +9512,7 @@ x[CLUSTER_169,cattle_man,Plant_8] 0
 x[CLUSTER_169,cattle_man,Plant_9] 0
 x[CLUSTER_169,cattle_slu,Plant_0] 0
 x[CLUSTER_169,cattle_slu,Plant_1] 0
-x[CLUSTER_169,cattle_slu,Plant_2] 4.2496999999999938e-02
+x[CLUSTER_169,cattle_slu,Plant_2] 0
 x[CLUSTER_169,cattle_slu,Plant_3] 0
 x[CLUSTER_169,cattle_slu,Plant_4] 0
 x[CLUSTER_169,cattle_slu,Plant_5] 0
@@ -9522,7 +9522,7 @@ x[CLUSTER_169,cattle_slu,Plant_8] 0
 x[CLUSTER_169,cattle_slu,Plant_9] 0
 x[CLUSTER_169,horse_man,Plant_0] 0
 x[CLUSTER_169,horse_man,Plant_1] 0
-x[CLUSTER_169,horse_man,Plant_2] 0.0010795
+x[CLUSTER_169,horse_man,Plant_2] 0
 x[CLUSTER_169,horse_man,Plant_3] 0
 x[CLUSTER_169,horse_man,Plant_4] 0
 x[CLUSTER_169,horse_man,Plant_5] 0
@@ -9542,7 +9542,7 @@ x[CLUSTER_169,pig_slu,Plant_8] 0
 x[CLUSTER_169,pig_slu,Plant_9] 0
 x[CLUSTER_169,pig_man,Plant_0] 0
 x[CLUSTER_169,pig_man,Plant_1] 0
-x[CLUSTER_169,pig_man,Plant_2] 0.000332076
+x[CLUSTER_169,pig_man,Plant_2] 0
 x[CLUSTER_169,pig_man,Plant_3] 0
 x[CLUSTER_169,pig_man,Plant_4] 0
 x[CLUSTER_169,pig_man,Plant_5] 0
@@ -9582,7 +9582,7 @@ x[CLUSTER_169,perm_grass,Plant_8] 0
 x[CLUSTER_169,perm_grass,Plant_9] 0
 x[CLUSTER_169,maize_str,Plant_0] 0
 x[CLUSTER_169,maize_str,Plant_1] 0
-x[CLUSTER_169,maize_str,Plant_2] 0.000446
+x[CLUSTER_169,maize_str,Plant_2] 0
 x[CLUSTER_169,maize_str,Plant_3] 0
 x[CLUSTER_169,maize_str,Plant_4] 0
 x[CLUSTER_169,maize_str,Plant_5] 0
@@ -9620,7 +9620,7 @@ x[CLUSTER_169,legume_str,Plant_6] 0
 x[CLUSTER_169,legume_str,Plant_7] 0
 x[CLUSTER_169,legume_str,Plant_8] 0
 x[CLUSTER_169,legume_str,Plant_9] 0
-x[CLUSTER_17,cattle_man,Plant_0] 0.00948
+x[CLUSTER_17,cattle_man,Plant_0] 0
 x[CLUSTER_17,cattle_man,Plant_1] 0
 x[CLUSTER_17,cattle_man,Plant_2] 0
 x[CLUSTER_17,cattle_man,Plant_3] 0
@@ -9640,7 +9640,7 @@ x[CLUSTER_17,cattle_slu,Plant_6] 0
 x[CLUSTER_17,cattle_slu,Plant_7] 0
 x[CLUSTER_17,cattle_slu,Plant_8] 0
 x[CLUSTER_17,cattle_slu,Plant_9] 0
-x[CLUSTER_17,horse_man,Plant_0] 0.00066359
+x[CLUSTER_17,horse_man,Plant_0] 0
 x[CLUSTER_17,horse_man,Plant_1] 0
 x[CLUSTER_17,horse_man,Plant_2] 0
 x[CLUSTER_17,horse_man,Plant_3] 0
@@ -9660,7 +9660,7 @@ x[CLUSTER_17,pig_slu,Plant_6] 0
 x[CLUSTER_17,pig_slu,Plant_7] 0
 x[CLUSTER_17,pig_slu,Plant_8] 0
 x[CLUSTER_17,pig_slu,Plant_9] 0
-x[CLUSTER_17,pig_man,Plant_0] 2.0295500000000002e-04
+x[CLUSTER_17,pig_man,Plant_0] 0
 x[CLUSTER_17,pig_man,Plant_1] 0
 x[CLUSTER_17,pig_man,Plant_2] 0
 x[CLUSTER_17,pig_man,Plant_3] 0
@@ -9700,7 +9700,7 @@ x[CLUSTER_17,perm_grass,Plant_6] 0
 x[CLUSTER_17,perm_grass,Plant_7] 0
 x[CLUSTER_17,perm_grass,Plant_8] 0
 x[CLUSTER_17,perm_grass,Plant_9] 0
-x[CLUSTER_17,maize_str,Plant_0] 8.72e-05
+x[CLUSTER_17,maize_str,Plant_0] 0
 x[CLUSTER_17,maize_str,Plant_1] 0
 x[CLUSTER_17,maize_str,Plant_2] 0
 x[CLUSTER_17,maize_str,Plant_3] 0
@@ -9747,7 +9747,7 @@ x[CLUSTER_170,cattle_man,Plant_3] 0
 x[CLUSTER_170,cattle_man,Plant_4] 0
 x[CLUSTER_170,cattle_man,Plant_5] 0
 x[CLUSTER_170,cattle_man,Plant_6] 0
-x[CLUSTER_170,cattle_man,Plant_7] 0.00298728
+x[CLUSTER_170,cattle_man,Plant_7] 0
 x[CLUSTER_170,cattle_man,Plant_8] 0
 x[CLUSTER_170,cattle_man,Plant_9] 0
 x[CLUSTER_170,cattle_slu,Plant_0] 0
@@ -9757,7 +9757,7 @@ x[CLUSTER_170,cattle_slu,Plant_3] 0
 x[CLUSTER_170,cattle_slu,Plant_4] 0
 x[CLUSTER_170,cattle_slu,Plant_5] 0
 x[CLUSTER_170,cattle_slu,Plant_6] 0
-x[CLUSTER_170,cattle_slu,Plant_7] 0.002728071
+x[CLUSTER_170,cattle_slu,Plant_7] 0
 x[CLUSTER_170,cattle_slu,Plant_8] 0
 x[CLUSTER_170,cattle_slu,Plant_9] 0
 x[CLUSTER_170,horse_man,Plant_0] 0
@@ -9767,7 +9767,7 @@ x[CLUSTER_170,horse_man,Plant_3] 0
 x[CLUSTER_170,horse_man,Plant_4] 0
 x[CLUSTER_170,horse_man,Plant_5] 0
 x[CLUSTER_170,horse_man,Plant_6] 0
-x[CLUSTER_170,horse_man,Plant_7] 0.000782
+x[CLUSTER_170,horse_man,Plant_7] 0
 x[CLUSTER_170,horse_man,Plant_8] 0
 x[CLUSTER_170,horse_man,Plant_9] 0
 x[CLUSTER_170,pig_slu,Plant_0] 0
@@ -9777,7 +9777,7 @@ x[CLUSTER_170,pig_slu,Plant_3] 0
 x[CLUSTER_170,pig_slu,Plant_4] 0
 x[CLUSTER_170,pig_slu,Plant_5] 0
 x[CLUSTER_170,pig_slu,Plant_6] 0
-x[CLUSTER_170,pig_slu,Plant_7] 0.000134
+x[CLUSTER_170,pig_slu,Plant_7] 0
 x[CLUSTER_170,pig_slu,Plant_8] 0
 x[CLUSTER_170,pig_slu,Plant_9] 0
 x[CLUSTER_170,pig_man,Plant_0] 0
@@ -9862,7 +9862,7 @@ x[CLUSTER_170,legume_str,Plant_8] 0
 x[CLUSTER_170,legume_str,Plant_9] 0
 x[CLUSTER_171,cattle_man,Plant_0] 0
 x[CLUSTER_171,cattle_man,Plant_1] 0
-x[CLUSTER_171,cattle_man,Plant_2] 0.01104
+x[CLUSTER_171,cattle_man,Plant_2] 0
 x[CLUSTER_171,cattle_man,Plant_3] 0
 x[CLUSTER_171,cattle_man,Plant_4] 0
 x[CLUSTER_171,cattle_man,Plant_5] 0
@@ -9882,7 +9882,7 @@ x[CLUSTER_171,cattle_slu,Plant_8] 0
 x[CLUSTER_171,cattle_slu,Plant_9] 0
 x[CLUSTER_171,horse_man,Plant_0] 0
 x[CLUSTER_171,horse_man,Plant_1] 0
-x[CLUSTER_171,horse_man,Plant_2] 0.001981
+x[CLUSTER_171,horse_man,Plant_2] 0
 x[CLUSTER_171,horse_man,Plant_3] 0
 x[CLUSTER_171,horse_man,Plant_4] 0
 x[CLUSTER_171,horse_man,Plant_5] 0
@@ -9902,7 +9902,7 @@ x[CLUSTER_171,pig_slu,Plant_8] 0
 x[CLUSTER_171,pig_slu,Plant_9] 0
 x[CLUSTER_171,pig_man,Plant_0] 0
 x[CLUSTER_171,pig_man,Plant_1] 0
-x[CLUSTER_171,pig_man,Plant_2] 0.000887
+x[CLUSTER_171,pig_man,Plant_2] 0
 x[CLUSTER_171,pig_man,Plant_3] 0
 x[CLUSTER_171,pig_man,Plant_4] 0
 x[CLUSTER_171,pig_man,Plant_5] 0
@@ -9987,7 +9987,7 @@ x[CLUSTER_172,cattle_man,Plant_3] 0
 x[CLUSTER_172,cattle_man,Plant_4] 0
 x[CLUSTER_172,cattle_man,Plant_5] 0
 x[CLUSTER_172,cattle_man,Plant_6] 0
-x[CLUSTER_172,cattle_man,Plant_7] 2.9806999999999998e-03
+x[CLUSTER_172,cattle_man,Plant_7] 0
 x[CLUSTER_172,cattle_man,Plant_8] 0
 x[CLUSTER_172,cattle_man,Plant_9] 0
 x[CLUSTER_172,cattle_slu,Plant_0] 0
@@ -9997,7 +9997,7 @@ x[CLUSTER_172,cattle_slu,Plant_3] 0
 x[CLUSTER_172,cattle_slu,Plant_4] 0
 x[CLUSTER_172,cattle_slu,Plant_5] 0
 x[CLUSTER_172,cattle_slu,Plant_6] 0
-x[CLUSTER_172,cattle_slu,Plant_7] 0.004598243
+x[CLUSTER_172,cattle_slu,Plant_7] 0
 x[CLUSTER_172,cattle_slu,Plant_8] 0
 x[CLUSTER_172,cattle_slu,Plant_9] 0
 x[CLUSTER_172,horse_man,Plant_0] 0
@@ -10007,7 +10007,7 @@ x[CLUSTER_172,horse_man,Plant_3] 0
 x[CLUSTER_172,horse_man,Plant_4] 0
 x[CLUSTER_172,horse_man,Plant_5] 0
 x[CLUSTER_172,horse_man,Plant_6] 0
-x[CLUSTER_172,horse_man,Plant_7] 2.8826999999999998e-03
+x[CLUSTER_172,horse_man,Plant_7] 0
 x[CLUSTER_172,horse_man,Plant_8] 0
 x[CLUSTER_172,horse_man,Plant_9] 0
 x[CLUSTER_172,pig_slu,Plant_0] 0
@@ -10107,7 +10107,7 @@ x[CLUSTER_173,cattle_man,Plant_3] 0
 x[CLUSTER_173,cattle_man,Plant_4] 0
 x[CLUSTER_173,cattle_man,Plant_5] 0
 x[CLUSTER_173,cattle_man,Plant_6] 0
-x[CLUSTER_173,cattle_man,Plant_7] 0.007846
+x[CLUSTER_173,cattle_man,Plant_7] 0
 x[CLUSTER_173,cattle_man,Plant_8] 0
 x[CLUSTER_173,cattle_man,Plant_9] 0
 x[CLUSTER_173,cattle_slu,Plant_0] 0
@@ -10117,7 +10117,7 @@ x[CLUSTER_173,cattle_slu,Plant_3] 0
 x[CLUSTER_173,cattle_slu,Plant_4] 0
 x[CLUSTER_173,cattle_slu,Plant_5] 0
 x[CLUSTER_173,cattle_slu,Plant_6] 0
-x[CLUSTER_173,cattle_slu,Plant_7] 0.008502
+x[CLUSTER_173,cattle_slu,Plant_7] 0
 x[CLUSTER_173,cattle_slu,Plant_8] 0
 x[CLUSTER_173,cattle_slu,Plant_9] 0
 x[CLUSTER_173,horse_man,Plant_0] 0
@@ -10127,7 +10127,7 @@ x[CLUSTER_173,horse_man,Plant_3] 0
 x[CLUSTER_173,horse_man,Plant_4] 0
 x[CLUSTER_173,horse_man,Plant_5] 0
 x[CLUSTER_173,horse_man,Plant_6] 0
-x[CLUSTER_173,horse_man,Plant_7] 0.000973
+x[CLUSTER_173,horse_man,Plant_7] 0
 x[CLUSTER_173,horse_man,Plant_8] 0
 x[CLUSTER_173,horse_man,Plant_9] 0
 x[CLUSTER_173,pig_slu,Plant_0] 0
@@ -10147,7 +10147,7 @@ x[CLUSTER_173,pig_man,Plant_3] 0
 x[CLUSTER_173,pig_man,Plant_4] 0
 x[CLUSTER_173,pig_man,Plant_5] 0
 x[CLUSTER_173,pig_man,Plant_6] 0
-x[CLUSTER_173,pig_man,Plant_7] 6.4524159999999992e-05
+x[CLUSTER_173,pig_man,Plant_7] 0
 x[CLUSTER_173,pig_man,Plant_8] 0
 x[CLUSTER_173,pig_man,Plant_9] 0
 x[CLUSTER_173,cereal_str,Plant_0] 0
@@ -10221,7 +10221,7 @@ x[CLUSTER_173,legume_str,Plant_7] 0
 x[CLUSTER_173,legume_str,Plant_8] 0
 x[CLUSTER_173,legume_str,Plant_9] 0
 x[CLUSTER_174,cattle_man,Plant_0] 0
-x[CLUSTER_174,cattle_man,Plant_1] 0.01781
+x[CLUSTER_174,cattle_man,Plant_1] 0
 x[CLUSTER_174,cattle_man,Plant_2] 0
 x[CLUSTER_174,cattle_man,Plant_3] 0
 x[CLUSTER_174,cattle_man,Plant_4] 0
@@ -10241,7 +10241,7 @@ x[CLUSTER_174,cattle_slu,Plant_7] 0
 x[CLUSTER_174,cattle_slu,Plant_8] 0
 x[CLUSTER_174,cattle_slu,Plant_9] 0
 x[CLUSTER_174,horse_man,Plant_0] 0
-x[CLUSTER_174,horse_man,Plant_1] 0.0014275
+x[CLUSTER_174,horse_man,Plant_1] 0
 x[CLUSTER_174,horse_man,Plant_2] 0
 x[CLUSTER_174,horse_man,Plant_3] 0
 x[CLUSTER_174,horse_man,Plant_4] 0
@@ -10345,7 +10345,7 @@ x[CLUSTER_175,cattle_man,Plant_1] 0
 x[CLUSTER_175,cattle_man,Plant_2] 0
 x[CLUSTER_175,cattle_man,Plant_3] 0
 x[CLUSTER_175,cattle_man,Plant_4] 0
-x[CLUSTER_175,cattle_man,Plant_5] 0.002182272
+x[CLUSTER_175,cattle_man,Plant_5] 0
 x[CLUSTER_175,cattle_man,Plant_6] 0
 x[CLUSTER_175,cattle_man,Plant_7] 0
 x[CLUSTER_175,cattle_man,Plant_8] 0
@@ -10360,7 +10360,7 @@ x[CLUSTER_175,cattle_slu,Plant_6] 0
 x[CLUSTER_175,cattle_slu,Plant_7] 0
 x[CLUSTER_175,cattle_slu,Plant_8] 0
 x[CLUSTER_175,cattle_slu,Plant_9] 0
-x[CLUSTER_175,horse_man,Plant_0] 0.0012073
+x[CLUSTER_175,horse_man,Plant_0] 0
 x[CLUSTER_175,horse_man,Plant_1] 0
 x[CLUSTER_175,horse_man,Plant_2] 0
 x[CLUSTER_175,horse_man,Plant_3] 0
@@ -10385,7 +10385,7 @@ x[CLUSTER_175,pig_man,Plant_1] 0
 x[CLUSTER_175,pig_man,Plant_2] 0
 x[CLUSTER_175,pig_man,Plant_3] 0
 x[CLUSTER_175,pig_man,Plant_4] 0
-x[CLUSTER_175,pig_man,Plant_5] 3.54e-05
+x[CLUSTER_175,pig_man,Plant_5] 0
 x[CLUSTER_175,pig_man,Plant_6] 0
 x[CLUSTER_175,pig_man,Plant_7] 0
 x[CLUSTER_175,pig_man,Plant_8] 0
@@ -10468,7 +10468,7 @@ x[CLUSTER_176,cattle_man,Plant_4] 0
 x[CLUSTER_176,cattle_man,Plant_5] 0
 x[CLUSTER_176,cattle_man,Plant_6] 0
 x[CLUSTER_176,cattle_man,Plant_7] 0
-x[CLUSTER_176,cattle_man,Plant_8] 2.5331999999999998e-03
+x[CLUSTER_176,cattle_man,Plant_8] 0
 x[CLUSTER_176,cattle_man,Plant_9] 0
 x[CLUSTER_176,cattle_slu,Plant_0] 0
 x[CLUSTER_176,cattle_slu,Plant_1] 0
@@ -10488,7 +10488,7 @@ x[CLUSTER_176,horse_man,Plant_4] 0
 x[CLUSTER_176,horse_man,Plant_5] 0
 x[CLUSTER_176,horse_man,Plant_6] 0
 x[CLUSTER_176,horse_man,Plant_7] 0
-x[CLUSTER_176,horse_man,Plant_8] 0.00075
+x[CLUSTER_176,horse_man,Plant_8] 0
 x[CLUSTER_176,horse_man,Plant_9] 0
 x[CLUSTER_176,pig_slu,Plant_0] 0
 x[CLUSTER_176,pig_slu,Plant_1] 0
@@ -10508,7 +10508,7 @@ x[CLUSTER_176,pig_man,Plant_4] 0
 x[CLUSTER_176,pig_man,Plant_5] 0
 x[CLUSTER_176,pig_man,Plant_6] 0
 x[CLUSTER_176,pig_man,Plant_7] 0
-x[CLUSTER_176,pig_man,Plant_8] 2.3296000000000002e-04
+x[CLUSTER_176,pig_man,Plant_8] 0
 x[CLUSTER_176,pig_man,Plant_9] 0
 x[CLUSTER_176,cereal_str,Plant_0] 0
 x[CLUSTER_176,cereal_str,Plant_1] 0
@@ -10587,7 +10587,7 @@ x[CLUSTER_177,cattle_man,Plant_3] 0
 x[CLUSTER_177,cattle_man,Plant_4] 0
 x[CLUSTER_177,cattle_man,Plant_5] 0
 x[CLUSTER_177,cattle_man,Plant_6] 0
-x[CLUSTER_177,cattle_man,Plant_7] 0.005132
+x[CLUSTER_177,cattle_man,Plant_7] 0
 x[CLUSTER_177,cattle_man,Plant_8] 0
 x[CLUSTER_177,cattle_man,Plant_9] 0
 x[CLUSTER_177,cattle_slu,Plant_0] 0
@@ -10607,7 +10607,7 @@ x[CLUSTER_177,horse_man,Plant_3] 0
 x[CLUSTER_177,horse_man,Plant_4] 0
 x[CLUSTER_177,horse_man,Plant_5] 0
 x[CLUSTER_177,horse_man,Plant_6] 0
-x[CLUSTER_177,horse_man,Plant_7] 0.0002854
+x[CLUSTER_177,horse_man,Plant_7] 0
 x[CLUSTER_177,horse_man,Plant_8] 0
 x[CLUSTER_177,horse_man,Plant_9] 0
 x[CLUSTER_177,pig_slu,Plant_0] 0
@@ -10627,7 +10627,7 @@ x[CLUSTER_177,pig_man,Plant_3] 0
 x[CLUSTER_177,pig_man,Plant_4] 0
 x[CLUSTER_177,pig_man,Plant_5] 0
 x[CLUSTER_177,pig_man,Plant_6] 0
-x[CLUSTER_177,pig_man,Plant_7] 0.00077921
+x[CLUSTER_177,pig_man,Plant_7] 0
 x[CLUSTER_177,pig_man,Plant_8] 0
 x[CLUSTER_177,pig_man,Plant_9] 0
 x[CLUSTER_177,cereal_str,Plant_0] 0
@@ -10649,7 +10649,7 @@ x[CLUSTER_177,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_177,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_177,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_177,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_177,clover_alfalfa_grass,Plant_9] 0.0014855
+x[CLUSTER_177,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_177,perm_grass,Plant_0] 0
 x[CLUSTER_177,perm_grass,Plant_1] 0
 x[CLUSTER_177,perm_grass,Plant_2] 0
@@ -10669,7 +10669,7 @@ x[CLUSTER_177,maize_str,Plant_5] 0
 x[CLUSTER_177,maize_str,Plant_6] 0
 x[CLUSTER_177,maize_str,Plant_7] 0
 x[CLUSTER_177,maize_str,Plant_8] 0
-x[CLUSTER_177,maize_str,Plant_9] 2.6389999999999996e-04
+x[CLUSTER_177,maize_str,Plant_9] 0
 x[CLUSTER_177,beet_leaf,Plant_0] 0
 x[CLUSTER_177,beet_leaf,Plant_1] 0
 x[CLUSTER_177,beet_leaf,Plant_2] 0
@@ -10701,7 +10701,7 @@ x[CLUSTER_177,legume_str,Plant_7] 0
 x[CLUSTER_177,legume_str,Plant_8] 0
 x[CLUSTER_177,legume_str,Plant_9] 0
 x[CLUSTER_178,cattle_man,Plant_0] 0
-x[CLUSTER_178,cattle_man,Plant_1] 0.01679
+x[CLUSTER_178,cattle_man,Plant_1] 0
 x[CLUSTER_178,cattle_man,Plant_2] 0
 x[CLUSTER_178,cattle_man,Plant_3] 0
 x[CLUSTER_178,cattle_man,Plant_4] 0
@@ -10721,7 +10721,7 @@ x[CLUSTER_178,cattle_slu,Plant_7] 0
 x[CLUSTER_178,cattle_slu,Plant_8] 0
 x[CLUSTER_178,cattle_slu,Plant_9] 0
 x[CLUSTER_178,horse_man,Plant_0] 0
-x[CLUSTER_178,horse_man,Plant_1] 0.005256
+x[CLUSTER_178,horse_man,Plant_1] 0
 x[CLUSTER_178,horse_man,Plant_2] 0
 x[CLUSTER_178,horse_man,Plant_3] 0
 x[CLUSTER_178,horse_man,Plant_4] 0
@@ -10827,7 +10827,7 @@ x[CLUSTER_179,cattle_man,Plant_3] 0
 x[CLUSTER_179,cattle_man,Plant_4] 0
 x[CLUSTER_179,cattle_man,Plant_5] 0
 x[CLUSTER_179,cattle_man,Plant_6] 0
-x[CLUSTER_179,cattle_man,Plant_7] 0.01122
+x[CLUSTER_179,cattle_man,Plant_7] 0
 x[CLUSTER_179,cattle_man,Plant_8] 0
 x[CLUSTER_179,cattle_man,Plant_9] 0
 x[CLUSTER_179,cattle_slu,Plant_0] 0
@@ -10837,7 +10837,7 @@ x[CLUSTER_179,cattle_slu,Plant_3] 0
 x[CLUSTER_179,cattle_slu,Plant_4] 0
 x[CLUSTER_179,cattle_slu,Plant_5] 0
 x[CLUSTER_179,cattle_slu,Plant_6] 0
-x[CLUSTER_179,cattle_slu,Plant_7] 1.2390000000000071e-02
+x[CLUSTER_179,cattle_slu,Plant_7] 0
 x[CLUSTER_179,cattle_slu,Plant_8] 0
 x[CLUSTER_179,cattle_slu,Plant_9] 0
 x[CLUSTER_179,horse_man,Plant_0] 0
@@ -10847,7 +10847,7 @@ x[CLUSTER_179,horse_man,Plant_3] 0
 x[CLUSTER_179,horse_man,Plant_4] 0
 x[CLUSTER_179,horse_man,Plant_5] 0
 x[CLUSTER_179,horse_man,Plant_6] 0
-x[CLUSTER_179,horse_man,Plant_7] 0.001139
+x[CLUSTER_179,horse_man,Plant_7] 0
 x[CLUSTER_179,horse_man,Plant_8] 0
 x[CLUSTER_179,horse_man,Plant_9] 0
 x[CLUSTER_179,pig_slu,Plant_0] 0
@@ -10867,7 +10867,7 @@ x[CLUSTER_179,pig_man,Plant_3] 0
 x[CLUSTER_179,pig_man,Plant_4] 0
 x[CLUSTER_179,pig_man,Plant_5] 0
 x[CLUSTER_179,pig_man,Plant_6] 0
-x[CLUSTER_179,pig_man,Plant_7] 6.3566000000000008e-05
+x[CLUSTER_179,pig_man,Plant_7] 0
 x[CLUSTER_179,pig_man,Plant_8] 0
 x[CLUSTER_179,pig_man,Plant_9] 0
 x[CLUSTER_179,cereal_str,Plant_0] 0
@@ -10944,7 +10944,7 @@ x[CLUSTER_18,cattle_man,Plant_0] 0
 x[CLUSTER_18,cattle_man,Plant_1] 0
 x[CLUSTER_18,cattle_man,Plant_2] 0
 x[CLUSTER_18,cattle_man,Plant_3] 0
-x[CLUSTER_18,cattle_man,Plant_4] 1.4355000000000107e-02
+x[CLUSTER_18,cattle_man,Plant_4] 0
 x[CLUSTER_18,cattle_man,Plant_5] 0
 x[CLUSTER_18,cattle_man,Plant_6] 0
 x[CLUSTER_18,cattle_man,Plant_7] 0
@@ -10954,7 +10954,7 @@ x[CLUSTER_18,cattle_slu,Plant_0] 0
 x[CLUSTER_18,cattle_slu,Plant_1] 0
 x[CLUSTER_18,cattle_slu,Plant_2] 0
 x[CLUSTER_18,cattle_slu,Plant_3] 0
-x[CLUSTER_18,cattle_slu,Plant_4] 0.06339
+x[CLUSTER_18,cattle_slu,Plant_4] 0
 x[CLUSTER_18,cattle_slu,Plant_5] 0
 x[CLUSTER_18,cattle_slu,Plant_6] 0
 x[CLUSTER_18,cattle_slu,Plant_7] 0
@@ -10964,7 +10964,7 @@ x[CLUSTER_18,horse_man,Plant_0] 0
 x[CLUSTER_18,horse_man,Plant_1] 0
 x[CLUSTER_18,horse_man,Plant_2] 0
 x[CLUSTER_18,horse_man,Plant_3] 0
-x[CLUSTER_18,horse_man,Plant_4] 0.0008097
+x[CLUSTER_18,horse_man,Plant_4] 0
 x[CLUSTER_18,horse_man,Plant_5] 0
 x[CLUSTER_18,horse_man,Plant_6] 0
 x[CLUSTER_18,horse_man,Plant_7] 0
@@ -10984,7 +10984,7 @@ x[CLUSTER_18,pig_man,Plant_0] 0
 x[CLUSTER_18,pig_man,Plant_1] 0
 x[CLUSTER_18,pig_man,Plant_2] 0
 x[CLUSTER_18,pig_man,Plant_3] 0
-x[CLUSTER_18,pig_man,Plant_4] 3.3811590000000003e-04
+x[CLUSTER_18,pig_man,Plant_4] 0
 x[CLUSTER_18,pig_man,Plant_5] 0
 x[CLUSTER_18,pig_man,Plant_6] 0
 x[CLUSTER_18,pig_man,Plant_7] 0
@@ -11065,7 +11065,7 @@ x[CLUSTER_180,cattle_man,Plant_1] 0
 x[CLUSTER_180,cattle_man,Plant_2] 0
 x[CLUSTER_180,cattle_man,Plant_3] 0
 x[CLUSTER_180,cattle_man,Plant_4] 0
-x[CLUSTER_180,cattle_man,Plant_5] 0.0024026
+x[CLUSTER_180,cattle_man,Plant_5] 0
 x[CLUSTER_180,cattle_man,Plant_6] 0
 x[CLUSTER_180,cattle_man,Plant_7] 0
 x[CLUSTER_180,cattle_man,Plant_8] 0
@@ -11075,7 +11075,7 @@ x[CLUSTER_180,cattle_slu,Plant_1] 0
 x[CLUSTER_180,cattle_slu,Plant_2] 0
 x[CLUSTER_180,cattle_slu,Plant_3] 0
 x[CLUSTER_180,cattle_slu,Plant_4] 0
-x[CLUSTER_180,cattle_slu,Plant_5] 0.007670315
+x[CLUSTER_180,cattle_slu,Plant_5] 0
 x[CLUSTER_180,cattle_slu,Plant_6] 0
 x[CLUSTER_180,cattle_slu,Plant_7] 0
 x[CLUSTER_180,cattle_slu,Plant_8] 0
@@ -11085,7 +11085,7 @@ x[CLUSTER_180,horse_man,Plant_1] 0
 x[CLUSTER_180,horse_man,Plant_2] 0
 x[CLUSTER_180,horse_man,Plant_3] 0
 x[CLUSTER_180,horse_man,Plant_4] 0
-x[CLUSTER_180,horse_man,Plant_5] 0.001481
+x[CLUSTER_180,horse_man,Plant_5] 0
 x[CLUSTER_180,horse_man,Plant_6] 0
 x[CLUSTER_180,horse_man,Plant_7] 0
 x[CLUSTER_180,horse_man,Plant_8] 0
@@ -11105,7 +11105,7 @@ x[CLUSTER_180,pig_man,Plant_1] 0
 x[CLUSTER_180,pig_man,Plant_2] 0
 x[CLUSTER_180,pig_man,Plant_3] 0
 x[CLUSTER_180,pig_man,Plant_4] 0
-x[CLUSTER_180,pig_man,Plant_5] 0.00616
+x[CLUSTER_180,pig_man,Plant_5] 0
 x[CLUSTER_180,pig_man,Plant_6] 0
 x[CLUSTER_180,pig_man,Plant_7] 0
 x[CLUSTER_180,pig_man,Plant_8] 0
@@ -11182,7 +11182,7 @@ x[CLUSTER_180,legume_str,Plant_8] 0
 x[CLUSTER_180,legume_str,Plant_9] 0
 x[CLUSTER_181,cattle_man,Plant_0] 0
 x[CLUSTER_181,cattle_man,Plant_1] 0
-x[CLUSTER_181,cattle_man,Plant_2] 0.010934199
+x[CLUSTER_181,cattle_man,Plant_2] 0
 x[CLUSTER_181,cattle_man,Plant_3] 0
 x[CLUSTER_181,cattle_man,Plant_4] 0
 x[CLUSTER_181,cattle_man,Plant_5] 0
@@ -11202,7 +11202,7 @@ x[CLUSTER_181,cattle_slu,Plant_8] 0
 x[CLUSTER_181,cattle_slu,Plant_9] 0
 x[CLUSTER_181,horse_man,Plant_0] 0
 x[CLUSTER_181,horse_man,Plant_1] 0
-x[CLUSTER_181,horse_man,Plant_2] 0.0008241
+x[CLUSTER_181,horse_man,Plant_2] 0
 x[CLUSTER_181,horse_man,Plant_3] 0
 x[CLUSTER_181,horse_man,Plant_4] 0
 x[CLUSTER_181,horse_man,Plant_5] 0
@@ -11227,7 +11227,7 @@ x[CLUSTER_181,pig_man,Plant_3] 0
 x[CLUSTER_181,pig_man,Plant_4] 0
 x[CLUSTER_181,pig_man,Plant_5] 0
 x[CLUSTER_181,pig_man,Plant_6] 0
-x[CLUSTER_181,pig_man,Plant_7] 0.0014824
+x[CLUSTER_181,pig_man,Plant_7] 0
 x[CLUSTER_181,pig_man,Plant_8] 0
 x[CLUSTER_181,pig_man,Plant_9] 0
 x[CLUSTER_181,cereal_str,Plant_0] 0
@@ -11269,7 +11269,7 @@ x[CLUSTER_181,maize_str,Plant_5] 0
 x[CLUSTER_181,maize_str,Plant_6] 0
 x[CLUSTER_181,maize_str,Plant_7] 0
 x[CLUSTER_181,maize_str,Plant_8] 0
-x[CLUSTER_181,maize_str,Plant_9] 7.3779999999999994e-04
+x[CLUSTER_181,maize_str,Plant_9] 0
 x[CLUSTER_181,beet_leaf,Plant_0] 0
 x[CLUSTER_181,beet_leaf,Plant_1] 0
 x[CLUSTER_181,beet_leaf,Plant_2] 0
@@ -11308,7 +11308,7 @@ x[CLUSTER_182,cattle_man,Plant_4] 0
 x[CLUSTER_182,cattle_man,Plant_5] 0
 x[CLUSTER_182,cattle_man,Plant_6] 0
 x[CLUSTER_182,cattle_man,Plant_7] 0
-x[CLUSTER_182,cattle_man,Plant_8] 9.5900000000000759e-03
+x[CLUSTER_182,cattle_man,Plant_8] 0
 x[CLUSTER_182,cattle_man,Plant_9] 0
 x[CLUSTER_182,cattle_slu,Plant_0] 0
 x[CLUSTER_182,cattle_slu,Plant_1] 0
@@ -11328,7 +11328,7 @@ x[CLUSTER_182,horse_man,Plant_4] 0
 x[CLUSTER_182,horse_man,Plant_5] 0
 x[CLUSTER_182,horse_man,Plant_6] 0
 x[CLUSTER_182,horse_man,Plant_7] 0
-x[CLUSTER_182,horse_man,Plant_8] 0.002035
+x[CLUSTER_182,horse_man,Plant_8] 0
 x[CLUSTER_182,horse_man,Plant_9] 0
 x[CLUSTER_182,pig_slu,Plant_0] 0
 x[CLUSTER_182,pig_slu,Plant_1] 0
@@ -11348,7 +11348,7 @@ x[CLUSTER_182,pig_man,Plant_4] 0
 x[CLUSTER_182,pig_man,Plant_5] 0
 x[CLUSTER_182,pig_man,Plant_6] 0
 x[CLUSTER_182,pig_man,Plant_7] 0
-x[CLUSTER_182,pig_man,Plant_8] 0.001527
+x[CLUSTER_182,pig_man,Plant_8] 0
 x[CLUSTER_182,pig_man,Plant_9] 0
 x[CLUSTER_182,cereal_str,Plant_0] 0
 x[CLUSTER_182,cereal_str,Plant_1] 0
@@ -11422,7 +11422,7 @@ x[CLUSTER_182,legume_str,Plant_8] 0
 x[CLUSTER_182,legume_str,Plant_9] 0
 x[CLUSTER_183,cattle_man,Plant_0] 0
 x[CLUSTER_183,cattle_man,Plant_1] 0
-x[CLUSTER_183,cattle_man,Plant_2] 0.016594
+x[CLUSTER_183,cattle_man,Plant_2] 0
 x[CLUSTER_183,cattle_man,Plant_3] 0
 x[CLUSTER_183,cattle_man,Plant_4] 0
 x[CLUSTER_183,cattle_man,Plant_5] 0
@@ -11442,7 +11442,7 @@ x[CLUSTER_183,cattle_slu,Plant_8] 0
 x[CLUSTER_183,cattle_slu,Plant_9] 0
 x[CLUSTER_183,horse_man,Plant_0] 0
 x[CLUSTER_183,horse_man,Plant_1] 0
-x[CLUSTER_183,horse_man,Plant_2] 0.002503
+x[CLUSTER_183,horse_man,Plant_2] 0
 x[CLUSTER_183,horse_man,Plant_3] 0
 x[CLUSTER_183,horse_man,Plant_4] 0
 x[CLUSTER_183,horse_man,Plant_5] 0
@@ -11462,7 +11462,7 @@ x[CLUSTER_183,pig_slu,Plant_8] 0
 x[CLUSTER_183,pig_slu,Plant_9] 0
 x[CLUSTER_183,pig_man,Plant_0] 0
 x[CLUSTER_183,pig_man,Plant_1] 0
-x[CLUSTER_183,pig_man,Plant_2] 0.00045882
+x[CLUSTER_183,pig_man,Plant_2] 0
 x[CLUSTER_183,pig_man,Plant_3] 0
 x[CLUSTER_183,pig_man,Plant_4] 0
 x[CLUSTER_183,pig_man,Plant_5] 0
@@ -11545,7 +11545,7 @@ x[CLUSTER_184,cattle_man,Plant_1] 0
 x[CLUSTER_184,cattle_man,Plant_2] 0
 x[CLUSTER_184,cattle_man,Plant_3] 0
 x[CLUSTER_184,cattle_man,Plant_4] 0
-x[CLUSTER_184,cattle_man,Plant_5] 0.002092
+x[CLUSTER_184,cattle_man,Plant_5] 0
 x[CLUSTER_184,cattle_man,Plant_6] 0
 x[CLUSTER_184,cattle_man,Plant_7] 0
 x[CLUSTER_184,cattle_man,Plant_8] 0
@@ -11563,7 +11563,7 @@ x[CLUSTER_184,cattle_slu,Plant_9] 0
 x[CLUSTER_184,horse_man,Plant_0] 0
 x[CLUSTER_184,horse_man,Plant_1] 0
 x[CLUSTER_184,horse_man,Plant_2] 0
-x[CLUSTER_184,horse_man,Plant_3] 0.000556
+x[CLUSTER_184,horse_man,Plant_3] 0
 x[CLUSTER_184,horse_man,Plant_4] 0
 x[CLUSTER_184,horse_man,Plant_5] 0
 x[CLUSTER_184,horse_man,Plant_6] 0
@@ -11585,7 +11585,7 @@ x[CLUSTER_184,pig_man,Plant_1] 0
 x[CLUSTER_184,pig_man,Plant_2] 0
 x[CLUSTER_184,pig_man,Plant_3] 0
 x[CLUSTER_184,pig_man,Plant_4] 0
-x[CLUSTER_184,pig_man,Plant_5] 0.001364
+x[CLUSTER_184,pig_man,Plant_5] 0
 x[CLUSTER_184,pig_man,Plant_6] 0
 x[CLUSTER_184,pig_man,Plant_7] 0
 x[CLUSTER_184,pig_man,Plant_8] 0
@@ -11664,7 +11664,7 @@ x[CLUSTER_185,cattle_man,Plant_0] 0
 x[CLUSTER_185,cattle_man,Plant_1] 0
 x[CLUSTER_185,cattle_man,Plant_2] 0
 x[CLUSTER_185,cattle_man,Plant_3] 0
-x[CLUSTER_185,cattle_man,Plant_4] 0.004461
+x[CLUSTER_185,cattle_man,Plant_4] 0
 x[CLUSTER_185,cattle_man,Plant_5] 0
 x[CLUSTER_185,cattle_man,Plant_6] 0
 x[CLUSTER_185,cattle_man,Plant_7] 0
@@ -11684,7 +11684,7 @@ x[CLUSTER_185,horse_man,Plant_0] 0
 x[CLUSTER_185,horse_man,Plant_1] 0
 x[CLUSTER_185,horse_man,Plant_2] 0
 x[CLUSTER_185,horse_man,Plant_3] 0
-x[CLUSTER_185,horse_man,Plant_4] 7.8639999999999992e-04
+x[CLUSTER_185,horse_man,Plant_4] 0
 x[CLUSTER_185,horse_man,Plant_5] 0
 x[CLUSTER_185,horse_man,Plant_6] 0
 x[CLUSTER_185,horse_man,Plant_7] 0
@@ -11704,7 +11704,7 @@ x[CLUSTER_185,pig_man,Plant_0] 0
 x[CLUSTER_185,pig_man,Plant_1] 0
 x[CLUSTER_185,pig_man,Plant_2] 0
 x[CLUSTER_185,pig_man,Plant_3] 0
-x[CLUSTER_185,pig_man,Plant_4] 0.00018343
+x[CLUSTER_185,pig_man,Plant_4] 0
 x[CLUSTER_185,pig_man,Plant_5] 0
 x[CLUSTER_185,pig_man,Plant_6] 0
 x[CLUSTER_185,pig_man,Plant_7] 0
@@ -11785,7 +11785,7 @@ x[CLUSTER_186,cattle_man,Plant_1] 0
 x[CLUSTER_186,cattle_man,Plant_2] 0
 x[CLUSTER_186,cattle_man,Plant_3] 0
 x[CLUSTER_186,cattle_man,Plant_4] 0
-x[CLUSTER_186,cattle_man,Plant_5] 0.002851
+x[CLUSTER_186,cattle_man,Plant_5] 0
 x[CLUSTER_186,cattle_man,Plant_6] 0
 x[CLUSTER_186,cattle_man,Plant_7] 0
 x[CLUSTER_186,cattle_man,Plant_8] 0
@@ -11795,7 +11795,7 @@ x[CLUSTER_186,cattle_slu,Plant_1] 0
 x[CLUSTER_186,cattle_slu,Plant_2] 0
 x[CLUSTER_186,cattle_slu,Plant_3] 0
 x[CLUSTER_186,cattle_slu,Plant_4] 0
-x[CLUSTER_186,cattle_slu,Plant_5] 0.01187
+x[CLUSTER_186,cattle_slu,Plant_5] 0
 x[CLUSTER_186,cattle_slu,Plant_6] 0
 x[CLUSTER_186,cattle_slu,Plant_7] 0
 x[CLUSTER_186,cattle_slu,Plant_8] 0
@@ -11805,7 +11805,7 @@ x[CLUSTER_186,horse_man,Plant_1] 0
 x[CLUSTER_186,horse_man,Plant_2] 0
 x[CLUSTER_186,horse_man,Plant_3] 0
 x[CLUSTER_186,horse_man,Plant_4] 0
-x[CLUSTER_186,horse_man,Plant_5] 0.0020191
+x[CLUSTER_186,horse_man,Plant_5] 0
 x[CLUSTER_186,horse_man,Plant_6] 0
 x[CLUSTER_186,horse_man,Plant_7] 0
 x[CLUSTER_186,horse_man,Plant_8] 0
@@ -11825,7 +11825,7 @@ x[CLUSTER_186,pig_man,Plant_1] 0
 x[CLUSTER_186,pig_man,Plant_2] 0
 x[CLUSTER_186,pig_man,Plant_3] 0
 x[CLUSTER_186,pig_man,Plant_4] 0
-x[CLUSTER_186,pig_man,Plant_5] 4.7139999999999997e-04
+x[CLUSTER_186,pig_man,Plant_5] 0
 x[CLUSTER_186,pig_man,Plant_6] 0
 x[CLUSTER_186,pig_man,Plant_7] 0
 x[CLUSTER_186,pig_man,Plant_8] 0
@@ -11908,7 +11908,7 @@ x[CLUSTER_187,cattle_man,Plant_4] 0
 x[CLUSTER_187,cattle_man,Plant_5] 0
 x[CLUSTER_187,cattle_man,Plant_6] 0
 x[CLUSTER_187,cattle_man,Plant_7] 0
-x[CLUSTER_187,cattle_man,Plant_8] 0.004003
+x[CLUSTER_187,cattle_man,Plant_8] 0
 x[CLUSTER_187,cattle_man,Plant_9] 0
 x[CLUSTER_187,cattle_slu,Plant_0] 0
 x[CLUSTER_187,cattle_slu,Plant_1] 0
@@ -11928,7 +11928,7 @@ x[CLUSTER_187,horse_man,Plant_4] 0
 x[CLUSTER_187,horse_man,Plant_5] 0
 x[CLUSTER_187,horse_man,Plant_6] 0
 x[CLUSTER_187,horse_man,Plant_7] 0
-x[CLUSTER_187,horse_man,Plant_8] 0.002955
+x[CLUSTER_187,horse_man,Plant_8] 0
 x[CLUSTER_187,horse_man,Plant_9] 0
 x[CLUSTER_187,pig_slu,Plant_0] 0
 x[CLUSTER_187,pig_slu,Plant_1] 0
@@ -11948,7 +11948,7 @@ x[CLUSTER_187,pig_man,Plant_4] 0
 x[CLUSTER_187,pig_man,Plant_5] 0
 x[CLUSTER_187,pig_man,Plant_6] 0
 x[CLUSTER_187,pig_man,Plant_7] 0
-x[CLUSTER_187,pig_man,Plant_8] 9.3929999999999990e-04
+x[CLUSTER_187,pig_man,Plant_8] 0
 x[CLUSTER_187,pig_man,Plant_9] 0
 x[CLUSTER_187,cereal_str,Plant_0] 0
 x[CLUSTER_187,cereal_str,Plant_1] 0
@@ -12022,7 +12022,7 @@ x[CLUSTER_187,legume_str,Plant_8] 0
 x[CLUSTER_187,legume_str,Plant_9] 0
 x[CLUSTER_188,cattle_man,Plant_0] 0
 x[CLUSTER_188,cattle_man,Plant_1] 0
-x[CLUSTER_188,cattle_man,Plant_2] 0.006172
+x[CLUSTER_188,cattle_man,Plant_2] 0
 x[CLUSTER_188,cattle_man,Plant_3] 0
 x[CLUSTER_188,cattle_man,Plant_4] 0
 x[CLUSTER_188,cattle_man,Plant_5] 0
@@ -12032,7 +12032,7 @@ x[CLUSTER_188,cattle_man,Plant_8] 0
 x[CLUSTER_188,cattle_man,Plant_9] 0
 x[CLUSTER_188,cattle_slu,Plant_0] 0
 x[CLUSTER_188,cattle_slu,Plant_1] 0
-x[CLUSTER_188,cattle_slu,Plant_2] 0.03963
+x[CLUSTER_188,cattle_slu,Plant_2] 0
 x[CLUSTER_188,cattle_slu,Plant_3] 0
 x[CLUSTER_188,cattle_slu,Plant_4] 0
 x[CLUSTER_188,cattle_slu,Plant_5] 0
@@ -12042,7 +12042,7 @@ x[CLUSTER_188,cattle_slu,Plant_8] 0
 x[CLUSTER_188,cattle_slu,Plant_9] 0
 x[CLUSTER_188,horse_man,Plant_0] 0
 x[CLUSTER_188,horse_man,Plant_1] 0
-x[CLUSTER_188,horse_man,Plant_2] 0.001732
+x[CLUSTER_188,horse_man,Plant_2] 0
 x[CLUSTER_188,horse_man,Plant_3] 0
 x[CLUSTER_188,horse_man,Plant_4] 0
 x[CLUSTER_188,horse_man,Plant_5] 0
@@ -12062,7 +12062,7 @@ x[CLUSTER_188,pig_slu,Plant_8] 0
 x[CLUSTER_188,pig_slu,Plant_9] 0
 x[CLUSTER_188,pig_man,Plant_0] 0
 x[CLUSTER_188,pig_man,Plant_1] 0
-x[CLUSTER_188,pig_man,Plant_2] 2.7346000000000002e-05
+x[CLUSTER_188,pig_man,Plant_2] 0
 x[CLUSTER_188,pig_man,Plant_3] 0
 x[CLUSTER_188,pig_man,Plant_4] 0
 x[CLUSTER_188,pig_man,Plant_5] 0
@@ -12102,7 +12102,7 @@ x[CLUSTER_188,perm_grass,Plant_8] 0
 x[CLUSTER_188,perm_grass,Plant_9] 0
 x[CLUSTER_188,maize_str,Plant_0] 0
 x[CLUSTER_188,maize_str,Plant_1] 0
-x[CLUSTER_188,maize_str,Plant_2] 0.00019876
+x[CLUSTER_188,maize_str,Plant_2] 0
 x[CLUSTER_188,maize_str,Plant_3] 0
 x[CLUSTER_188,maize_str,Plant_4] 0
 x[CLUSTER_188,maize_str,Plant_5] 0
@@ -12143,7 +12143,7 @@ x[CLUSTER_188,legume_str,Plant_9] 0
 x[CLUSTER_189,cattle_man,Plant_0] 0
 x[CLUSTER_189,cattle_man,Plant_1] 0
 x[CLUSTER_189,cattle_man,Plant_2] 0
-x[CLUSTER_189,cattle_man,Plant_3] 4.4889799999999992e-03
+x[CLUSTER_189,cattle_man,Plant_3] 0
 x[CLUSTER_189,cattle_man,Plant_4] 0
 x[CLUSTER_189,cattle_man,Plant_5] 0
 x[CLUSTER_189,cattle_man,Plant_6] 0
@@ -12163,7 +12163,7 @@ x[CLUSTER_189,cattle_slu,Plant_9] 0
 x[CLUSTER_189,horse_man,Plant_0] 0
 x[CLUSTER_189,horse_man,Plant_1] 0
 x[CLUSTER_189,horse_man,Plant_2] 0
-x[CLUSTER_189,horse_man,Plant_3] 0.001789
+x[CLUSTER_189,horse_man,Plant_3] 0
 x[CLUSTER_189,horse_man,Plant_4] 0
 x[CLUSTER_189,horse_man,Plant_5] 0
 x[CLUSTER_189,horse_man,Plant_6] 0
@@ -12264,7 +12264,7 @@ x[CLUSTER_19,cattle_man,Plant_0] 0
 x[CLUSTER_19,cattle_man,Plant_1] 0
 x[CLUSTER_19,cattle_man,Plant_2] 0
 x[CLUSTER_19,cattle_man,Plant_3] 0
-x[CLUSTER_19,cattle_man,Plant_4] 0.013523
+x[CLUSTER_19,cattle_man,Plant_4] 0
 x[CLUSTER_19,cattle_man,Plant_5] 0
 x[CLUSTER_19,cattle_man,Plant_6] 0
 x[CLUSTER_19,cattle_man,Plant_7] 0
@@ -12284,7 +12284,7 @@ x[CLUSTER_19,horse_man,Plant_0] 0
 x[CLUSTER_19,horse_man,Plant_1] 0
 x[CLUSTER_19,horse_man,Plant_2] 0
 x[CLUSTER_19,horse_man,Plant_3] 0
-x[CLUSTER_19,horse_man,Plant_4] 0.00189
+x[CLUSTER_19,horse_man,Plant_4] 0
 x[CLUSTER_19,horse_man,Plant_5] 0
 x[CLUSTER_19,horse_man,Plant_6] 0
 x[CLUSTER_19,horse_man,Plant_7] 0
@@ -12304,7 +12304,7 @@ x[CLUSTER_19,pig_man,Plant_0] 0
 x[CLUSTER_19,pig_man,Plant_1] 0
 x[CLUSTER_19,pig_man,Plant_2] 0
 x[CLUSTER_19,pig_man,Plant_3] 0
-x[CLUSTER_19,pig_man,Plant_4] 3.2230000000000003e-04
+x[CLUSTER_19,pig_man,Plant_4] 0
 x[CLUSTER_19,pig_man,Plant_5] 0
 x[CLUSTER_19,pig_man,Plant_6] 0
 x[CLUSTER_19,pig_man,Plant_7] 0
@@ -12382,7 +12382,7 @@ x[CLUSTER_19,legume_str,Plant_8] 0
 x[CLUSTER_19,legume_str,Plant_9] 0
 x[CLUSTER_190,cattle_man,Plant_0] 0
 x[CLUSTER_190,cattle_man,Plant_1] 0
-x[CLUSTER_190,cattle_man,Plant_2] 0.009509
+x[CLUSTER_190,cattle_man,Plant_2] 0
 x[CLUSTER_190,cattle_man,Plant_3] 0
 x[CLUSTER_190,cattle_man,Plant_4] 0
 x[CLUSTER_190,cattle_man,Plant_5] 0
@@ -12402,7 +12402,7 @@ x[CLUSTER_190,cattle_slu,Plant_8] 0
 x[CLUSTER_190,cattle_slu,Plant_9] 0
 x[CLUSTER_190,horse_man,Plant_0] 0
 x[CLUSTER_190,horse_man,Plant_1] 0
-x[CLUSTER_190,horse_man,Plant_2] 0.0015957
+x[CLUSTER_190,horse_man,Plant_2] 0
 x[CLUSTER_190,horse_man,Plant_3] 0
 x[CLUSTER_190,horse_man,Plant_4] 0
 x[CLUSTER_190,horse_man,Plant_5] 0
@@ -12422,7 +12422,7 @@ x[CLUSTER_190,pig_slu,Plant_8] 0
 x[CLUSTER_190,pig_slu,Plant_9] 0
 x[CLUSTER_190,pig_man,Plant_0] 0
 x[CLUSTER_190,pig_man,Plant_1] 0
-x[CLUSTER_190,pig_man,Plant_2] 0.001086
+x[CLUSTER_190,pig_man,Plant_2] 0
 x[CLUSTER_190,pig_man,Plant_3] 0
 x[CLUSTER_190,pig_man,Plant_4] 0
 x[CLUSTER_190,pig_man,Plant_5] 0
@@ -12501,7 +12501,7 @@ x[CLUSTER_190,legume_str,Plant_7] 0
 x[CLUSTER_190,legume_str,Plant_8] 0
 x[CLUSTER_190,legume_str,Plant_9] 0
 x[CLUSTER_191,cattle_man,Plant_0] 0
-x[CLUSTER_191,cattle_man,Plant_1] 0.01129
+x[CLUSTER_191,cattle_man,Plant_1] 0
 x[CLUSTER_191,cattle_man,Plant_2] 0
 x[CLUSTER_191,cattle_man,Plant_3] 0
 x[CLUSTER_191,cattle_man,Plant_4] 0
@@ -12521,7 +12521,7 @@ x[CLUSTER_191,cattle_slu,Plant_7] 0
 x[CLUSTER_191,cattle_slu,Plant_8] 0
 x[CLUSTER_191,cattle_slu,Plant_9] 0
 x[CLUSTER_191,horse_man,Plant_0] 0
-x[CLUSTER_191,horse_man,Plant_1] 0.001592
+x[CLUSTER_191,horse_man,Plant_1] 0
 x[CLUSTER_191,horse_man,Plant_2] 0
 x[CLUSTER_191,horse_man,Plant_3] 0
 x[CLUSTER_191,horse_man,Plant_4] 0
@@ -12646,7 +12646,7 @@ x[CLUSTER_192,horse_man,Plant_2] 0
 x[CLUSTER_192,horse_man,Plant_3] 0
 x[CLUSTER_192,horse_man,Plant_4] 0
 x[CLUSTER_192,horse_man,Plant_5] 0
-x[CLUSTER_192,horse_man,Plant_6] 0.000605
+x[CLUSTER_192,horse_man,Plant_6] 0
 x[CLUSTER_192,horse_man,Plant_7] 0
 x[CLUSTER_192,horse_man,Plant_8] 0
 x[CLUSTER_192,horse_man,Plant_9] 0
@@ -12743,7 +12743,7 @@ x[CLUSTER_192,legume_str,Plant_9] 0
 x[CLUSTER_193,cattle_man,Plant_0] 0
 x[CLUSTER_193,cattle_man,Plant_1] 0
 x[CLUSTER_193,cattle_man,Plant_2] 0
-x[CLUSTER_193,cattle_man,Plant_3] 0.001113
+x[CLUSTER_193,cattle_man,Plant_3] 0
 x[CLUSTER_193,cattle_man,Plant_4] 0
 x[CLUSTER_193,cattle_man,Plant_5] 0
 x[CLUSTER_193,cattle_man,Plant_6] 0
@@ -12763,7 +12763,7 @@ x[CLUSTER_193,cattle_slu,Plant_9] 0
 x[CLUSTER_193,horse_man,Plant_0] 0
 x[CLUSTER_193,horse_man,Plant_1] 0
 x[CLUSTER_193,horse_man,Plant_2] 0
-x[CLUSTER_193,horse_man,Plant_3] 0.001133
+x[CLUSTER_193,horse_man,Plant_3] 0
 x[CLUSTER_193,horse_man,Plant_4] 0
 x[CLUSTER_193,horse_man,Plant_5] 0
 x[CLUSTER_193,horse_man,Plant_6] 0
@@ -12869,7 +12869,7 @@ x[CLUSTER_194,cattle_man,Plant_5] 0
 x[CLUSTER_194,cattle_man,Plant_6] 0
 x[CLUSTER_194,cattle_man,Plant_7] 0
 x[CLUSTER_194,cattle_man,Plant_8] 0
-x[CLUSTER_194,cattle_man,Plant_9] 0.0041805
+x[CLUSTER_194,cattle_man,Plant_9] 0
 x[CLUSTER_194,cattle_slu,Plant_0] 0
 x[CLUSTER_194,cattle_slu,Plant_1] 0
 x[CLUSTER_194,cattle_slu,Plant_2] 0
@@ -12879,7 +12879,7 @@ x[CLUSTER_194,cattle_slu,Plant_5] 0
 x[CLUSTER_194,cattle_slu,Plant_6] 0
 x[CLUSTER_194,cattle_slu,Plant_7] 0
 x[CLUSTER_194,cattle_slu,Plant_8] 0
-x[CLUSTER_194,cattle_slu,Plant_9] 0.0042988
+x[CLUSTER_194,cattle_slu,Plant_9] 0
 x[CLUSTER_194,horse_man,Plant_0] 0
 x[CLUSTER_194,horse_man,Plant_1] 0
 x[CLUSTER_194,horse_man,Plant_2] 0
@@ -12889,7 +12889,7 @@ x[CLUSTER_194,horse_man,Plant_5] 0
 x[CLUSTER_194,horse_man,Plant_6] 0
 x[CLUSTER_194,horse_man,Plant_7] 0
 x[CLUSTER_194,horse_man,Plant_8] 0
-x[CLUSTER_194,horse_man,Plant_9] 9.7439999999999994e-04
+x[CLUSTER_194,horse_man,Plant_9] 0
 x[CLUSTER_194,pig_slu,Plant_0] 0
 x[CLUSTER_194,pig_slu,Plant_1] 0
 x[CLUSTER_194,pig_slu,Plant_2] 0
@@ -12907,7 +12907,7 @@ x[CLUSTER_194,pig_man,Plant_3] 0
 x[CLUSTER_194,pig_man,Plant_4] 0
 x[CLUSTER_194,pig_man,Plant_5] 0
 x[CLUSTER_194,pig_man,Plant_6] 0
-x[CLUSTER_194,pig_man,Plant_7] 0.000308943
+x[CLUSTER_194,pig_man,Plant_7] 0
 x[CLUSTER_194,pig_man,Plant_8] 0
 x[CLUSTER_194,pig_man,Plant_9] 0
 x[CLUSTER_194,cereal_str,Plant_0] 0
@@ -12929,7 +12929,7 @@ x[CLUSTER_194,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_194,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_194,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_194,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_194,clover_alfalfa_grass,Plant_9] 0.002639
+x[CLUSTER_194,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_194,perm_grass,Plant_0] 0
 x[CLUSTER_194,perm_grass,Plant_1] 0
 x[CLUSTER_194,perm_grass,Plant_2] 0
@@ -12949,7 +12949,7 @@ x[CLUSTER_194,maize_str,Plant_5] 0
 x[CLUSTER_194,maize_str,Plant_6] 0
 x[CLUSTER_194,maize_str,Plant_7] 0
 x[CLUSTER_194,maize_str,Plant_8] 0
-x[CLUSTER_194,maize_str,Plant_9] 0.0002384
+x[CLUSTER_194,maize_str,Plant_9] 0
 x[CLUSTER_194,beet_leaf,Plant_0] 0
 x[CLUSTER_194,beet_leaf,Plant_1] 0
 x[CLUSTER_194,beet_leaf,Plant_2] 0
@@ -12980,7 +12980,7 @@ x[CLUSTER_194,legume_str,Plant_6] 0
 x[CLUSTER_194,legume_str,Plant_7] 0
 x[CLUSTER_194,legume_str,Plant_8] 0
 x[CLUSTER_194,legume_str,Plant_9] 0
-x[CLUSTER_195,cattle_man,Plant_0] 0.01724
+x[CLUSTER_195,cattle_man,Plant_0] 0
 x[CLUSTER_195,cattle_man,Plant_1] 0
 x[CLUSTER_195,cattle_man,Plant_2] 0
 x[CLUSTER_195,cattle_man,Plant_3] 0
@@ -13000,7 +13000,7 @@ x[CLUSTER_195,cattle_slu,Plant_6] 0
 x[CLUSTER_195,cattle_slu,Plant_7] 0
 x[CLUSTER_195,cattle_slu,Plant_8] 0
 x[CLUSTER_195,cattle_slu,Plant_9] 0
-x[CLUSTER_195,horse_man,Plant_0] 0.0012765
+x[CLUSTER_195,horse_man,Plant_0] 0
 x[CLUSTER_195,horse_man,Plant_1] 0
 x[CLUSTER_195,horse_man,Plant_2] 0
 x[CLUSTER_195,horse_man,Plant_3] 0
@@ -13020,7 +13020,7 @@ x[CLUSTER_195,pig_slu,Plant_6] 0
 x[CLUSTER_195,pig_slu,Plant_7] 0
 x[CLUSTER_195,pig_slu,Plant_8] 0
 x[CLUSTER_195,pig_slu,Plant_9] 0
-x[CLUSTER_195,pig_man,Plant_0] 3.413825e-05
+x[CLUSTER_195,pig_man,Plant_0] 0
 x[CLUSTER_195,pig_man,Plant_1] 0
 x[CLUSTER_195,pig_man,Plant_2] 0
 x[CLUSTER_195,pig_man,Plant_3] 0
@@ -13103,7 +13103,7 @@ x[CLUSTER_195,legume_str,Plant_9] 0
 x[CLUSTER_196,cattle_man,Plant_0] 0
 x[CLUSTER_196,cattle_man,Plant_1] 0
 x[CLUSTER_196,cattle_man,Plant_2] 0
-x[CLUSTER_196,cattle_man,Plant_3] 0.01738
+x[CLUSTER_196,cattle_man,Plant_3] 0
 x[CLUSTER_196,cattle_man,Plant_4] 0
 x[CLUSTER_196,cattle_man,Plant_5] 0
 x[CLUSTER_196,cattle_man,Plant_6] 0
@@ -13123,7 +13123,7 @@ x[CLUSTER_196,cattle_slu,Plant_9] 0
 x[CLUSTER_196,horse_man,Plant_0] 0
 x[CLUSTER_196,horse_man,Plant_1] 0
 x[CLUSTER_196,horse_man,Plant_2] 0
-x[CLUSTER_196,horse_man,Plant_3] 0.001807
+x[CLUSTER_196,horse_man,Plant_3] 0
 x[CLUSTER_196,horse_man,Plant_4] 0
 x[CLUSTER_196,horse_man,Plant_5] 0
 x[CLUSTER_196,horse_man,Plant_6] 0
@@ -13224,7 +13224,7 @@ x[CLUSTER_197,cattle_man,Plant_0] 0
 x[CLUSTER_197,cattle_man,Plant_1] 0
 x[CLUSTER_197,cattle_man,Plant_2] 0
 x[CLUSTER_197,cattle_man,Plant_3] 0
-x[CLUSTER_197,cattle_man,Plant_4] 0.0066
+x[CLUSTER_197,cattle_man,Plant_4] 0
 x[CLUSTER_197,cattle_man,Plant_5] 0
 x[CLUSTER_197,cattle_man,Plant_6] 0
 x[CLUSTER_197,cattle_man,Plant_7] 0
@@ -13244,7 +13244,7 @@ x[CLUSTER_197,horse_man,Plant_0] 0
 x[CLUSTER_197,horse_man,Plant_1] 0
 x[CLUSTER_197,horse_man,Plant_2] 0
 x[CLUSTER_197,horse_man,Plant_3] 0
-x[CLUSTER_197,horse_man,Plant_4] 0.0001949
+x[CLUSTER_197,horse_man,Plant_4] 0
 x[CLUSTER_197,horse_man,Plant_5] 0
 x[CLUSTER_197,horse_man,Plant_6] 0
 x[CLUSTER_197,horse_man,Plant_7] 0
@@ -13346,7 +13346,7 @@ x[CLUSTER_198,cattle_man,Plant_2] 0
 x[CLUSTER_198,cattle_man,Plant_3] 0
 x[CLUSTER_198,cattle_man,Plant_4] 0
 x[CLUSTER_198,cattle_man,Plant_5] 0
-x[CLUSTER_198,cattle_man,Plant_6] 0.0191
+x[CLUSTER_198,cattle_man,Plant_6] 0
 x[CLUSTER_198,cattle_man,Plant_7] 0
 x[CLUSTER_198,cattle_man,Plant_8] 0
 x[CLUSTER_198,cattle_man,Plant_9] 0
@@ -13366,7 +13366,7 @@ x[CLUSTER_198,horse_man,Plant_2] 0
 x[CLUSTER_198,horse_man,Plant_3] 0
 x[CLUSTER_198,horse_man,Plant_4] 0
 x[CLUSTER_198,horse_man,Plant_5] 0
-x[CLUSTER_198,horse_man,Plant_6] 0.002306
+x[CLUSTER_198,horse_man,Plant_6] 0
 x[CLUSTER_198,horse_man,Plant_7] 0
 x[CLUSTER_198,horse_man,Plant_8] 0
 x[CLUSTER_198,horse_man,Plant_9] 0
@@ -13464,7 +13464,7 @@ x[CLUSTER_199,cattle_man,Plant_0] 0
 x[CLUSTER_199,cattle_man,Plant_1] 0
 x[CLUSTER_199,cattle_man,Plant_2] 0
 x[CLUSTER_199,cattle_man,Plant_3] 0
-x[CLUSTER_199,cattle_man,Plant_4] 0.003629
+x[CLUSTER_199,cattle_man,Plant_4] 0
 x[CLUSTER_199,cattle_man,Plant_5] 0
 x[CLUSTER_199,cattle_man,Plant_6] 0
 x[CLUSTER_199,cattle_man,Plant_7] 0
@@ -13484,7 +13484,7 @@ x[CLUSTER_199,horse_man,Plant_0] 0
 x[CLUSTER_199,horse_man,Plant_1] 0
 x[CLUSTER_199,horse_man,Plant_2] 0
 x[CLUSTER_199,horse_man,Plant_3] 0
-x[CLUSTER_199,horse_man,Plant_4] 0.000704
+x[CLUSTER_199,horse_man,Plant_4] 0
 x[CLUSTER_199,horse_man,Plant_5] 0
 x[CLUSTER_199,horse_man,Plant_6] 0
 x[CLUSTER_199,horse_man,Plant_7] 0
@@ -13504,7 +13504,7 @@ x[CLUSTER_199,pig_man,Plant_0] 0
 x[CLUSTER_199,pig_man,Plant_1] 0
 x[CLUSTER_199,pig_man,Plant_2] 0
 x[CLUSTER_199,pig_man,Plant_3] 0
-x[CLUSTER_199,pig_man,Plant_4] 0.000341399
+x[CLUSTER_199,pig_man,Plant_4] 0
 x[CLUSTER_199,pig_man,Plant_5] 0
 x[CLUSTER_199,pig_man,Plant_6] 0
 x[CLUSTER_199,pig_man,Plant_7] 0
@@ -13529,7 +13529,7 @@ x[CLUSTER_199,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_199,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_199,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_199,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_199,clover_alfalfa_grass,Plant_9] 0.018
+x[CLUSTER_199,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_199,perm_grass,Plant_0] 0
 x[CLUSTER_199,perm_grass,Plant_1] 0
 x[CLUSTER_199,perm_grass,Plant_2] 0
@@ -13549,7 +13549,7 @@ x[CLUSTER_199,maize_str,Plant_5] 0
 x[CLUSTER_199,maize_str,Plant_6] 0
 x[CLUSTER_199,maize_str,Plant_7] 0
 x[CLUSTER_199,maize_str,Plant_8] 0
-x[CLUSTER_199,maize_str,Plant_9] 1.23167e-05
+x[CLUSTER_199,maize_str,Plant_9] 0
 x[CLUSTER_199,beet_leaf,Plant_0] 0
 x[CLUSTER_199,beet_leaf,Plant_1] 0
 x[CLUSTER_199,beet_leaf,Plant_2] 0
@@ -13583,7 +13583,7 @@ x[CLUSTER_199,legume_str,Plant_9] 0
 x[CLUSTER_2,cattle_man,Plant_0] 0
 x[CLUSTER_2,cattle_man,Plant_1] 0
 x[CLUSTER_2,cattle_man,Plant_2] 0
-x[CLUSTER_2,cattle_man,Plant_3] 0.003616
+x[CLUSTER_2,cattle_man,Plant_3] 0
 x[CLUSTER_2,cattle_man,Plant_4] 0
 x[CLUSTER_2,cattle_man,Plant_5] 0
 x[CLUSTER_2,cattle_man,Plant_6] 0
@@ -13603,7 +13603,7 @@ x[CLUSTER_2,cattle_slu,Plant_9] 0
 x[CLUSTER_2,horse_man,Plant_0] 0
 x[CLUSTER_2,horse_man,Plant_1] 0
 x[CLUSTER_2,horse_man,Plant_2] 0
-x[CLUSTER_2,horse_man,Plant_3] 9.7520000000000007e-04
+x[CLUSTER_2,horse_man,Plant_3] 0
 x[CLUSTER_2,horse_man,Plant_4] 0
 x[CLUSTER_2,horse_man,Plant_5] 0
 x[CLUSTER_2,horse_man,Plant_6] 0
@@ -13623,7 +13623,7 @@ x[CLUSTER_2,pig_slu,Plant_9] 0
 x[CLUSTER_2,pig_man,Plant_0] 0
 x[CLUSTER_2,pig_man,Plant_1] 0
 x[CLUSTER_2,pig_man,Plant_2] 0
-x[CLUSTER_2,pig_man,Plant_3] 0.0016665
+x[CLUSTER_2,pig_man,Plant_3] 0
 x[CLUSTER_2,pig_man,Plant_4] 0
 x[CLUSTER_2,pig_man,Plant_5] 0
 x[CLUSTER_2,pig_man,Plant_6] 0
@@ -13705,7 +13705,7 @@ x[CLUSTER_20,cattle_man,Plant_1] 0
 x[CLUSTER_20,cattle_man,Plant_2] 0
 x[CLUSTER_20,cattle_man,Plant_3] 0
 x[CLUSTER_20,cattle_man,Plant_4] 0
-x[CLUSTER_20,cattle_man,Plant_5] 0.02714
+x[CLUSTER_20,cattle_man,Plant_5] 0
 x[CLUSTER_20,cattle_man,Plant_6] 0
 x[CLUSTER_20,cattle_man,Plant_7] 0
 x[CLUSTER_20,cattle_man,Plant_8] 0
@@ -13725,7 +13725,7 @@ x[CLUSTER_20,horse_man,Plant_1] 0
 x[CLUSTER_20,horse_man,Plant_2] 0
 x[CLUSTER_20,horse_man,Plant_3] 0
 x[CLUSTER_20,horse_man,Plant_4] 0
-x[CLUSTER_20,horse_man,Plant_5] 3.2890000000000007e-03
+x[CLUSTER_20,horse_man,Plant_5] 0
 x[CLUSTER_20,horse_man,Plant_6] 0
 x[CLUSTER_20,horse_man,Plant_7] 0
 x[CLUSTER_20,horse_man,Plant_8] 0
@@ -13745,7 +13745,7 @@ x[CLUSTER_20,pig_man,Plant_1] 0
 x[CLUSTER_20,pig_man,Plant_2] 0
 x[CLUSTER_20,pig_man,Plant_3] 0
 x[CLUSTER_20,pig_man,Plant_4] 0
-x[CLUSTER_20,pig_man,Plant_5] 0.003376
+x[CLUSTER_20,pig_man,Plant_5] 0
 x[CLUSTER_20,pig_man,Plant_6] 0
 x[CLUSTER_20,pig_man,Plant_7] 0
 x[CLUSTER_20,pig_man,Plant_8] 0
@@ -13829,7 +13829,7 @@ x[CLUSTER_200,cattle_man,Plant_5] 0
 x[CLUSTER_200,cattle_man,Plant_6] 0
 x[CLUSTER_200,cattle_man,Plant_7] 0
 x[CLUSTER_200,cattle_man,Plant_8] 0
-x[CLUSTER_200,cattle_man,Plant_9] 0.00315
+x[CLUSTER_200,cattle_man,Plant_9] 0
 x[CLUSTER_200,cattle_slu,Plant_0] 0
 x[CLUSTER_200,cattle_slu,Plant_1] 0
 x[CLUSTER_200,cattle_slu,Plant_2] 0
@@ -13849,7 +13849,7 @@ x[CLUSTER_200,horse_man,Plant_5] 0
 x[CLUSTER_200,horse_man,Plant_6] 0
 x[CLUSTER_200,horse_man,Plant_7] 0
 x[CLUSTER_200,horse_man,Plant_8] 0
-x[CLUSTER_200,horse_man,Plant_9] 7.9789999999999993e-04
+x[CLUSTER_200,horse_man,Plant_9] 0
 x[CLUSTER_200,pig_slu,Plant_0] 0
 x[CLUSTER_200,pig_slu,Plant_1] 0
 x[CLUSTER_200,pig_slu,Plant_2] 0
@@ -13867,7 +13867,7 @@ x[CLUSTER_200,pig_man,Plant_3] 0
 x[CLUSTER_200,pig_man,Plant_4] 0
 x[CLUSTER_200,pig_man,Plant_5] 0
 x[CLUSTER_200,pig_man,Plant_6] 0
-x[CLUSTER_200,pig_man,Plant_7] 0.000508565
+x[CLUSTER_200,pig_man,Plant_7] 0
 x[CLUSTER_200,pig_man,Plant_8] 0
 x[CLUSTER_200,pig_man,Plant_9] 0
 x[CLUSTER_200,cereal_str,Plant_0] 0
@@ -13889,7 +13889,7 @@ x[CLUSTER_200,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_200,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_200,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_200,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_200,clover_alfalfa_grass,Plant_9] 0.002944
+x[CLUSTER_200,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_200,perm_grass,Plant_0] 0
 x[CLUSTER_200,perm_grass,Plant_1] 0
 x[CLUSTER_200,perm_grass,Plant_2] 0
@@ -13909,7 +13909,7 @@ x[CLUSTER_200,maize_str,Plant_5] 0
 x[CLUSTER_200,maize_str,Plant_6] 0
 x[CLUSTER_200,maize_str,Plant_7] 0
 x[CLUSTER_200,maize_str,Plant_8] 0
-x[CLUSTER_200,maize_str,Plant_9] 0.0001054
+x[CLUSTER_200,maize_str,Plant_9] 0
 x[CLUSTER_200,beet_leaf,Plant_0] 0
 x[CLUSTER_200,beet_leaf,Plant_1] 0
 x[CLUSTER_200,beet_leaf,Plant_2] 0
@@ -13948,7 +13948,7 @@ x[CLUSTER_201,cattle_man,Plant_4] 0
 x[CLUSTER_201,cattle_man,Plant_5] 0
 x[CLUSTER_201,cattle_man,Plant_6] 0
 x[CLUSTER_201,cattle_man,Plant_7] 0
-x[CLUSTER_201,cattle_man,Plant_8] 0.007892
+x[CLUSTER_201,cattle_man,Plant_8] 0
 x[CLUSTER_201,cattle_man,Plant_9] 0
 x[CLUSTER_201,cattle_slu,Plant_0] 0
 x[CLUSTER_201,cattle_slu,Plant_1] 0
@@ -13968,7 +13968,7 @@ x[CLUSTER_201,horse_man,Plant_4] 0
 x[CLUSTER_201,horse_man,Plant_5] 0
 x[CLUSTER_201,horse_man,Plant_6] 0
 x[CLUSTER_201,horse_man,Plant_7] 0
-x[CLUSTER_201,horse_man,Plant_8] 0.0021741
+x[CLUSTER_201,horse_man,Plant_8] 0
 x[CLUSTER_201,horse_man,Plant_9] 0
 x[CLUSTER_201,pig_slu,Plant_0] 0
 x[CLUSTER_201,pig_slu,Plant_1] 0
@@ -14063,7 +14063,7 @@ x[CLUSTER_201,legume_str,Plant_9] 0
 x[CLUSTER_202,cattle_man,Plant_0] 0
 x[CLUSTER_202,cattle_man,Plant_1] 0
 x[CLUSTER_202,cattle_man,Plant_2] 0
-x[CLUSTER_202,cattle_man,Plant_3] 0.0161
+x[CLUSTER_202,cattle_man,Plant_3] 0
 x[CLUSTER_202,cattle_man,Plant_4] 0
 x[CLUSTER_202,cattle_man,Plant_5] 0
 x[CLUSTER_202,cattle_man,Plant_6] 0
@@ -14073,7 +14073,7 @@ x[CLUSTER_202,cattle_man,Plant_9] 0
 x[CLUSTER_202,cattle_slu,Plant_0] 0
 x[CLUSTER_202,cattle_slu,Plant_1] 0
 x[CLUSTER_202,cattle_slu,Plant_2] 0
-x[CLUSTER_202,cattle_slu,Plant_3] 8.8060000000000083e-02
+x[CLUSTER_202,cattle_slu,Plant_3] 0
 x[CLUSTER_202,cattle_slu,Plant_4] 0
 x[CLUSTER_202,cattle_slu,Plant_5] 0
 x[CLUSTER_202,cattle_slu,Plant_6] 0
@@ -14083,7 +14083,7 @@ x[CLUSTER_202,cattle_slu,Plant_9] 0
 x[CLUSTER_202,horse_man,Plant_0] 0
 x[CLUSTER_202,horse_man,Plant_1] 0
 x[CLUSTER_202,horse_man,Plant_2] 0
-x[CLUSTER_202,horse_man,Plant_3] 0.0019173
+x[CLUSTER_202,horse_man,Plant_3] 0
 x[CLUSTER_202,horse_man,Plant_4] 0
 x[CLUSTER_202,horse_man,Plant_5] 0
 x[CLUSTER_202,horse_man,Plant_6] 0
@@ -14103,7 +14103,7 @@ x[CLUSTER_202,pig_slu,Plant_9] 0
 x[CLUSTER_202,pig_man,Plant_0] 0
 x[CLUSTER_202,pig_man,Plant_1] 0
 x[CLUSTER_202,pig_man,Plant_2] 0
-x[CLUSTER_202,pig_man,Plant_3] 2.2916999999999998e-04
+x[CLUSTER_202,pig_man,Plant_3] 0
 x[CLUSTER_202,pig_man,Plant_4] 0
 x[CLUSTER_202,pig_man,Plant_5] 0
 x[CLUSTER_202,pig_man,Plant_6] 0
@@ -14186,7 +14186,7 @@ x[CLUSTER_203,cattle_man,Plant_2] 0
 x[CLUSTER_203,cattle_man,Plant_3] 0
 x[CLUSTER_203,cattle_man,Plant_4] 0
 x[CLUSTER_203,cattle_man,Plant_5] 0
-x[CLUSTER_203,cattle_man,Plant_6] 0.02866
+x[CLUSTER_203,cattle_man,Plant_6] 0
 x[CLUSTER_203,cattle_man,Plant_7] 0
 x[CLUSTER_203,cattle_man,Plant_8] 0
 x[CLUSTER_203,cattle_man,Plant_9] 0
@@ -14206,7 +14206,7 @@ x[CLUSTER_203,horse_man,Plant_2] 0
 x[CLUSTER_203,horse_man,Plant_3] 0
 x[CLUSTER_203,horse_man,Plant_4] 0
 x[CLUSTER_203,horse_man,Plant_5] 0
-x[CLUSTER_203,horse_man,Plant_6] 0.003313
+x[CLUSTER_203,horse_man,Plant_6] 0
 x[CLUSTER_203,horse_man,Plant_7] 0
 x[CLUSTER_203,horse_man,Plant_8] 0
 x[CLUSTER_203,horse_man,Plant_9] 0
@@ -14225,7 +14225,7 @@ x[CLUSTER_203,pig_man,Plant_1] 0
 x[CLUSTER_203,pig_man,Plant_2] 0
 x[CLUSTER_203,pig_man,Plant_3] 0
 x[CLUSTER_203,pig_man,Plant_4] 0
-x[CLUSTER_203,pig_man,Plant_5] 0.00069608362
+x[CLUSTER_203,pig_man,Plant_5] 0
 x[CLUSTER_203,pig_man,Plant_6] 0
 x[CLUSTER_203,pig_man,Plant_7] 0
 x[CLUSTER_203,pig_man,Plant_8] 0
@@ -14301,7 +14301,7 @@ x[CLUSTER_203,legume_str,Plant_7] 0
 x[CLUSTER_203,legume_str,Plant_8] 0
 x[CLUSTER_203,legume_str,Plant_9] 0
 x[CLUSTER_204,cattle_man,Plant_0] 0
-x[CLUSTER_204,cattle_man,Plant_1] 0.01073
+x[CLUSTER_204,cattle_man,Plant_1] 0
 x[CLUSTER_204,cattle_man,Plant_2] 0
 x[CLUSTER_204,cattle_man,Plant_3] 0
 x[CLUSTER_204,cattle_man,Plant_4] 0
@@ -14321,7 +14321,7 @@ x[CLUSTER_204,cattle_slu,Plant_7] 0
 x[CLUSTER_204,cattle_slu,Plant_8] 0
 x[CLUSTER_204,cattle_slu,Plant_9] 0
 x[CLUSTER_204,horse_man,Plant_0] 0
-x[CLUSTER_204,horse_man,Plant_1] 0.002958
+x[CLUSTER_204,horse_man,Plant_1] 0
 x[CLUSTER_204,horse_man,Plant_2] 0
 x[CLUSTER_204,horse_man,Plant_3] 0
 x[CLUSTER_204,horse_man,Plant_4] 0
@@ -14348,7 +14348,7 @@ x[CLUSTER_204,pig_man,Plant_4] 0
 x[CLUSTER_204,pig_man,Plant_5] 0
 x[CLUSTER_204,pig_man,Plant_6] 0
 x[CLUSTER_204,pig_man,Plant_7] 0
-x[CLUSTER_204,pig_man,Plant_8] 3.7494e-05
+x[CLUSTER_204,pig_man,Plant_8] 0
 x[CLUSTER_204,pig_man,Plant_9] 0
 x[CLUSTER_204,cereal_str,Plant_0] 0
 x[CLUSTER_204,cereal_str,Plant_1] 0
@@ -14426,7 +14426,7 @@ x[CLUSTER_205,cattle_man,Plant_2] 0
 x[CLUSTER_205,cattle_man,Plant_3] 0
 x[CLUSTER_205,cattle_man,Plant_4] 0
 x[CLUSTER_205,cattle_man,Plant_5] 0
-x[CLUSTER_205,cattle_man,Plant_6] 0.016567
+x[CLUSTER_205,cattle_man,Plant_6] 0
 x[CLUSTER_205,cattle_man,Plant_7] 0
 x[CLUSTER_205,cattle_man,Plant_8] 0
 x[CLUSTER_205,cattle_man,Plant_9] 0
@@ -14446,7 +14446,7 @@ x[CLUSTER_205,horse_man,Plant_2] 0
 x[CLUSTER_205,horse_man,Plant_3] 0
 x[CLUSTER_205,horse_man,Plant_4] 0
 x[CLUSTER_205,horse_man,Plant_5] 0
-x[CLUSTER_205,horse_man,Plant_6] 0.003447
+x[CLUSTER_205,horse_man,Plant_6] 0
 x[CLUSTER_205,horse_man,Plant_7] 0
 x[CLUSTER_205,horse_man,Plant_8] 0
 x[CLUSTER_205,horse_man,Plant_9] 0
@@ -14465,7 +14465,7 @@ x[CLUSTER_205,pig_man,Plant_1] 0
 x[CLUSTER_205,pig_man,Plant_2] 0
 x[CLUSTER_205,pig_man,Plant_3] 0
 x[CLUSTER_205,pig_man,Plant_4] 0
-x[CLUSTER_205,pig_man,Plant_5] 0.00012323616
+x[CLUSTER_205,pig_man,Plant_5] 0
 x[CLUSTER_205,pig_man,Plant_6] 0
 x[CLUSTER_205,pig_man,Plant_7] 0
 x[CLUSTER_205,pig_man,Plant_8] 0
@@ -14548,7 +14548,7 @@ x[CLUSTER_206,cattle_man,Plant_4] 0
 x[CLUSTER_206,cattle_man,Plant_5] 0
 x[CLUSTER_206,cattle_man,Plant_6] 0
 x[CLUSTER_206,cattle_man,Plant_7] 0
-x[CLUSTER_206,cattle_man,Plant_8] 0.02195
+x[CLUSTER_206,cattle_man,Plant_8] 0
 x[CLUSTER_206,cattle_man,Plant_9] 0
 x[CLUSTER_206,cattle_slu,Plant_0] 0
 x[CLUSTER_206,cattle_slu,Plant_1] 0
@@ -14568,7 +14568,7 @@ x[CLUSTER_206,horse_man,Plant_4] 0
 x[CLUSTER_206,horse_man,Plant_5] 0
 x[CLUSTER_206,horse_man,Plant_6] 0
 x[CLUSTER_206,horse_man,Plant_7] 0
-x[CLUSTER_206,horse_man,Plant_8] 0.0007268
+x[CLUSTER_206,horse_man,Plant_8] 0
 x[CLUSTER_206,horse_man,Plant_9] 0
 x[CLUSTER_206,pig_slu,Plant_0] 0
 x[CLUSTER_206,pig_slu,Plant_1] 0
@@ -14588,7 +14588,7 @@ x[CLUSTER_206,pig_man,Plant_4] 0
 x[CLUSTER_206,pig_man,Plant_5] 0
 x[CLUSTER_206,pig_man,Plant_6] 0
 x[CLUSTER_206,pig_man,Plant_7] 0
-x[CLUSTER_206,pig_man,Plant_8] 1.4660494999999997e-04
+x[CLUSTER_206,pig_man,Plant_8] 0
 x[CLUSTER_206,pig_man,Plant_9] 0
 x[CLUSTER_206,cereal_str,Plant_0] 0
 x[CLUSTER_206,cereal_str,Plant_1] 0
@@ -14661,7 +14661,7 @@ x[CLUSTER_206,legume_str,Plant_7] 0
 x[CLUSTER_206,legume_str,Plant_8] 0
 x[CLUSTER_206,legume_str,Plant_9] 0
 x[CLUSTER_207,cattle_man,Plant_0] 0
-x[CLUSTER_207,cattle_man,Plant_1] 0.02508
+x[CLUSTER_207,cattle_man,Plant_1] 0
 x[CLUSTER_207,cattle_man,Plant_2] 0
 x[CLUSTER_207,cattle_man,Plant_3] 0
 x[CLUSTER_207,cattle_man,Plant_4] 0
@@ -14681,7 +14681,7 @@ x[CLUSTER_207,cattle_slu,Plant_7] 0
 x[CLUSTER_207,cattle_slu,Plant_8] 0
 x[CLUSTER_207,cattle_slu,Plant_9] 0
 x[CLUSTER_207,horse_man,Plant_0] 0
-x[CLUSTER_207,horse_man,Plant_1] 0.001783
+x[CLUSTER_207,horse_man,Plant_1] 0
 x[CLUSTER_207,horse_man,Plant_2] 0
 x[CLUSTER_207,horse_man,Plant_3] 0
 x[CLUSTER_207,horse_man,Plant_4] 0
@@ -14783,7 +14783,7 @@ x[CLUSTER_207,legume_str,Plant_9] 0
 x[CLUSTER_208,cattle_man,Plant_0] 0
 x[CLUSTER_208,cattle_man,Plant_1] 0
 x[CLUSTER_208,cattle_man,Plant_2] 0
-x[CLUSTER_208,cattle_man,Plant_3] 0.005066
+x[CLUSTER_208,cattle_man,Plant_3] 0
 x[CLUSTER_208,cattle_man,Plant_4] 0
 x[CLUSTER_208,cattle_man,Plant_5] 0
 x[CLUSTER_208,cattle_man,Plant_6] 0
@@ -14803,7 +14803,7 @@ x[CLUSTER_208,cattle_slu,Plant_9] 0
 x[CLUSTER_208,horse_man,Plant_0] 0
 x[CLUSTER_208,horse_man,Plant_1] 0
 x[CLUSTER_208,horse_man,Plant_2] 0
-x[CLUSTER_208,horse_man,Plant_3] 1.3645999999999999e-03
+x[CLUSTER_208,horse_man,Plant_3] 0
 x[CLUSTER_208,horse_man,Plant_4] 0
 x[CLUSTER_208,horse_man,Plant_5] 0
 x[CLUSTER_208,horse_man,Plant_6] 0
@@ -14823,7 +14823,7 @@ x[CLUSTER_208,pig_slu,Plant_9] 0
 x[CLUSTER_208,pig_man,Plant_0] 0
 x[CLUSTER_208,pig_man,Plant_1] 0
 x[CLUSTER_208,pig_man,Plant_2] 0
-x[CLUSTER_208,pig_man,Plant_3] 2.2649999999999998e-05
+x[CLUSTER_208,pig_man,Plant_3] 0
 x[CLUSTER_208,pig_man,Plant_4] 0
 x[CLUSTER_208,pig_man,Plant_5] 0
 x[CLUSTER_208,pig_man,Plant_6] 0
@@ -14901,7 +14901,7 @@ x[CLUSTER_208,legume_str,Plant_7] 0
 x[CLUSTER_208,legume_str,Plant_8] 0
 x[CLUSTER_208,legume_str,Plant_9] 0
 x[CLUSTER_209,cattle_man,Plant_0] 0
-x[CLUSTER_209,cattle_man,Plant_1] 1.3939999999999996e-02
+x[CLUSTER_209,cattle_man,Plant_1] 0
 x[CLUSTER_209,cattle_man,Plant_2] 0
 x[CLUSTER_209,cattle_man,Plant_3] 0
 x[CLUSTER_209,cattle_man,Plant_4] 0
@@ -14928,7 +14928,7 @@ x[CLUSTER_209,horse_man,Plant_4] 0
 x[CLUSTER_209,horse_man,Plant_5] 0
 x[CLUSTER_209,horse_man,Plant_6] 0
 x[CLUSTER_209,horse_man,Plant_7] 0
-x[CLUSTER_209,horse_man,Plant_8] 0.0012656
+x[CLUSTER_209,horse_man,Plant_8] 0
 x[CLUSTER_209,horse_man,Plant_9] 0
 x[CLUSTER_209,pig_slu,Plant_0] 0
 x[CLUSTER_209,pig_slu,Plant_1] 0
@@ -15024,7 +15024,7 @@ x[CLUSTER_21,cattle_man,Plant_0] 0
 x[CLUSTER_21,cattle_man,Plant_1] 0
 x[CLUSTER_21,cattle_man,Plant_2] 0
 x[CLUSTER_21,cattle_man,Plant_3] 0
-x[CLUSTER_21,cattle_man,Plant_4] 0.01168
+x[CLUSTER_21,cattle_man,Plant_4] 0
 x[CLUSTER_21,cattle_man,Plant_5] 0
 x[CLUSTER_21,cattle_man,Plant_6] 0
 x[CLUSTER_21,cattle_man,Plant_7] 0
@@ -15034,7 +15034,7 @@ x[CLUSTER_21,cattle_slu,Plant_0] 0
 x[CLUSTER_21,cattle_slu,Plant_1] 0
 x[CLUSTER_21,cattle_slu,Plant_2] 0
 x[CLUSTER_21,cattle_slu,Plant_3] 0
-x[CLUSTER_21,cattle_slu,Plant_4] 0.06091
+x[CLUSTER_21,cattle_slu,Plant_4] 0
 x[CLUSTER_21,cattle_slu,Plant_5] 0
 x[CLUSTER_21,cattle_slu,Plant_6] 0
 x[CLUSTER_21,cattle_slu,Plant_7] 0
@@ -15044,7 +15044,7 @@ x[CLUSTER_21,horse_man,Plant_0] 0
 x[CLUSTER_21,horse_man,Plant_1] 0
 x[CLUSTER_21,horse_man,Plant_2] 0
 x[CLUSTER_21,horse_man,Plant_3] 0
-x[CLUSTER_21,horse_man,Plant_4] 0.0012427
+x[CLUSTER_21,horse_man,Plant_4] 0
 x[CLUSTER_21,horse_man,Plant_5] 0
 x[CLUSTER_21,horse_man,Plant_6] 0
 x[CLUSTER_21,horse_man,Plant_7] 0
@@ -15148,7 +15148,7 @@ x[CLUSTER_210,cattle_man,Plant_4] 0
 x[CLUSTER_210,cattle_man,Plant_5] 0
 x[CLUSTER_210,cattle_man,Plant_6] 0
 x[CLUSTER_210,cattle_man,Plant_7] 0
-x[CLUSTER_210,cattle_man,Plant_8] 0.01291
+x[CLUSTER_210,cattle_man,Plant_8] 0
 x[CLUSTER_210,cattle_man,Plant_9] 0
 x[CLUSTER_210,cattle_slu,Plant_0] 0
 x[CLUSTER_210,cattle_slu,Plant_1] 0
@@ -15168,7 +15168,7 @@ x[CLUSTER_210,horse_man,Plant_4] 0
 x[CLUSTER_210,horse_man,Plant_5] 0
 x[CLUSTER_210,horse_man,Plant_6] 0
 x[CLUSTER_210,horse_man,Plant_7] 0
-x[CLUSTER_210,horse_man,Plant_8] 0.000779
+x[CLUSTER_210,horse_man,Plant_8] 0
 x[CLUSTER_210,horse_man,Plant_9] 0
 x[CLUSTER_210,pig_slu,Plant_0] 0
 x[CLUSTER_210,pig_slu,Plant_1] 0
@@ -15188,7 +15188,7 @@ x[CLUSTER_210,pig_man,Plant_4] 0
 x[CLUSTER_210,pig_man,Plant_5] 0
 x[CLUSTER_210,pig_man,Plant_6] 0
 x[CLUSTER_210,pig_man,Plant_7] 0
-x[CLUSTER_210,pig_man,Plant_8] 1.2209999999999999e-04
+x[CLUSTER_210,pig_man,Plant_8] 0
 x[CLUSTER_210,pig_man,Plant_9] 0
 x[CLUSTER_210,cereal_str,Plant_0] 0
 x[CLUSTER_210,cereal_str,Plant_1] 0
@@ -15264,7 +15264,7 @@ x[CLUSTER_211,cattle_man,Plant_0] 0
 x[CLUSTER_211,cattle_man,Plant_1] 0
 x[CLUSTER_211,cattle_man,Plant_2] 0
 x[CLUSTER_211,cattle_man,Plant_3] 0
-x[CLUSTER_211,cattle_man,Plant_4] 0.00408
+x[CLUSTER_211,cattle_man,Plant_4] 0
 x[CLUSTER_211,cattle_man,Plant_5] 0
 x[CLUSTER_211,cattle_man,Plant_6] 0
 x[CLUSTER_211,cattle_man,Plant_7] 0
@@ -15274,7 +15274,7 @@ x[CLUSTER_211,cattle_slu,Plant_0] 0
 x[CLUSTER_211,cattle_slu,Plant_1] 0
 x[CLUSTER_211,cattle_slu,Plant_2] 0
 x[CLUSTER_211,cattle_slu,Plant_3] 0
-x[CLUSTER_211,cattle_slu,Plant_4] 2.7579999999999997e-02
+x[CLUSTER_211,cattle_slu,Plant_4] 0
 x[CLUSTER_211,cattle_slu,Plant_5] 0
 x[CLUSTER_211,cattle_slu,Plant_6] 0
 x[CLUSTER_211,cattle_slu,Plant_7] 0
@@ -15284,7 +15284,7 @@ x[CLUSTER_211,horse_man,Plant_0] 0
 x[CLUSTER_211,horse_man,Plant_1] 0
 x[CLUSTER_211,horse_man,Plant_2] 0
 x[CLUSTER_211,horse_man,Plant_3] 0
-x[CLUSTER_211,horse_man,Plant_4] 0.000442
+x[CLUSTER_211,horse_man,Plant_4] 0
 x[CLUSTER_211,horse_man,Plant_5] 0
 x[CLUSTER_211,horse_man,Plant_6] 0
 x[CLUSTER_211,horse_man,Plant_7] 0
@@ -15304,7 +15304,7 @@ x[CLUSTER_211,pig_man,Plant_0] 0
 x[CLUSTER_211,pig_man,Plant_1] 0
 x[CLUSTER_211,pig_man,Plant_2] 0
 x[CLUSTER_211,pig_man,Plant_3] 0
-x[CLUSTER_211,pig_man,Plant_4] 5.1200000000000004e-05
+x[CLUSTER_211,pig_man,Plant_4] 0
 x[CLUSTER_211,pig_man,Plant_5] 0
 x[CLUSTER_211,pig_man,Plant_6] 0
 x[CLUSTER_211,pig_man,Plant_7] 0
@@ -15385,7 +15385,7 @@ x[CLUSTER_212,cattle_man,Plant_1] 0
 x[CLUSTER_212,cattle_man,Plant_2] 0
 x[CLUSTER_212,cattle_man,Plant_3] 0
 x[CLUSTER_212,cattle_man,Plant_4] 0
-x[CLUSTER_212,cattle_man,Plant_5] 0.005215
+x[CLUSTER_212,cattle_man,Plant_5] 0
 x[CLUSTER_212,cattle_man,Plant_6] 0
 x[CLUSTER_212,cattle_man,Plant_7] 0
 x[CLUSTER_212,cattle_man,Plant_8] 0
@@ -15395,7 +15395,7 @@ x[CLUSTER_212,cattle_slu,Plant_1] 0
 x[CLUSTER_212,cattle_slu,Plant_2] 0
 x[CLUSTER_212,cattle_slu,Plant_3] 0
 x[CLUSTER_212,cattle_slu,Plant_4] 0
-x[CLUSTER_212,cattle_slu,Plant_5] 2.0238000000000624e-02
+x[CLUSTER_212,cattle_slu,Plant_5] 0
 x[CLUSTER_212,cattle_slu,Plant_6] 0
 x[CLUSTER_212,cattle_slu,Plant_7] 0
 x[CLUSTER_212,cattle_slu,Plant_8] 0
@@ -15405,7 +15405,7 @@ x[CLUSTER_212,horse_man,Plant_1] 0
 x[CLUSTER_212,horse_man,Plant_2] 0
 x[CLUSTER_212,horse_man,Plant_3] 0
 x[CLUSTER_212,horse_man,Plant_4] 0
-x[CLUSTER_212,horse_man,Plant_5] 0.000525
+x[CLUSTER_212,horse_man,Plant_5] 0
 x[CLUSTER_212,horse_man,Plant_6] 0
 x[CLUSTER_212,horse_man,Plant_7] 0
 x[CLUSTER_212,horse_man,Plant_8] 0
@@ -15425,7 +15425,7 @@ x[CLUSTER_212,pig_man,Plant_1] 0
 x[CLUSTER_212,pig_man,Plant_2] 0
 x[CLUSTER_212,pig_man,Plant_3] 0
 x[CLUSTER_212,pig_man,Plant_4] 0
-x[CLUSTER_212,pig_man,Plant_5] 0.000132
+x[CLUSTER_212,pig_man,Plant_5] 0
 x[CLUSTER_212,pig_man,Plant_6] 0
 x[CLUSTER_212,pig_man,Plant_7] 0
 x[CLUSTER_212,pig_man,Plant_8] 0
@@ -15507,7 +15507,7 @@ x[CLUSTER_213,cattle_man,Plant_3] 0
 x[CLUSTER_213,cattle_man,Plant_4] 0
 x[CLUSTER_213,cattle_man,Plant_5] 0
 x[CLUSTER_213,cattle_man,Plant_6] 0
-x[CLUSTER_213,cattle_man,Plant_7] 0.003968
+x[CLUSTER_213,cattle_man,Plant_7] 0
 x[CLUSTER_213,cattle_man,Plant_8] 0
 x[CLUSTER_213,cattle_man,Plant_9] 0
 x[CLUSTER_213,cattle_slu,Plant_0] 0
@@ -15517,7 +15517,7 @@ x[CLUSTER_213,cattle_slu,Plant_3] 0
 x[CLUSTER_213,cattle_slu,Plant_4] 0
 x[CLUSTER_213,cattle_slu,Plant_5] 0
 x[CLUSTER_213,cattle_slu,Plant_6] 0
-x[CLUSTER_213,cattle_slu,Plant_7] 5.5100000000000921e-03
+x[CLUSTER_213,cattle_slu,Plant_7] 0
 x[CLUSTER_213,cattle_slu,Plant_8] 0
 x[CLUSTER_213,cattle_slu,Plant_9] 0
 x[CLUSTER_213,horse_man,Plant_0] 0
@@ -15527,7 +15527,7 @@ x[CLUSTER_213,horse_man,Plant_3] 0
 x[CLUSTER_213,horse_man,Plant_4] 0
 x[CLUSTER_213,horse_man,Plant_5] 0
 x[CLUSTER_213,horse_man,Plant_6] 0
-x[CLUSTER_213,horse_man,Plant_7] 0.0006422
+x[CLUSTER_213,horse_man,Plant_7] 0
 x[CLUSTER_213,horse_man,Plant_8] 0
 x[CLUSTER_213,horse_man,Plant_9] 0
 x[CLUSTER_213,pig_slu,Plant_0] 0
@@ -15537,7 +15537,7 @@ x[CLUSTER_213,pig_slu,Plant_3] 0
 x[CLUSTER_213,pig_slu,Plant_4] 0
 x[CLUSTER_213,pig_slu,Plant_5] 0
 x[CLUSTER_213,pig_slu,Plant_6] 0
-x[CLUSTER_213,pig_slu,Plant_7] 7.1200000000000009e-05
+x[CLUSTER_213,pig_slu,Plant_7] 0
 x[CLUSTER_213,pig_slu,Plant_8] 0
 x[CLUSTER_213,pig_slu,Plant_9] 0
 x[CLUSTER_213,pig_man,Plant_0] 0
@@ -15623,7 +15623,7 @@ x[CLUSTER_213,legume_str,Plant_9] 0
 x[CLUSTER_214,cattle_man,Plant_0] 0
 x[CLUSTER_214,cattle_man,Plant_1] 0
 x[CLUSTER_214,cattle_man,Plant_2] 0
-x[CLUSTER_214,cattle_man,Plant_3] 0.02458
+x[CLUSTER_214,cattle_man,Plant_3] 0
 x[CLUSTER_214,cattle_man,Plant_4] 0
 x[CLUSTER_214,cattle_man,Plant_5] 0
 x[CLUSTER_214,cattle_man,Plant_6] 0
@@ -15643,7 +15643,7 @@ x[CLUSTER_214,cattle_slu,Plant_9] 0
 x[CLUSTER_214,horse_man,Plant_0] 0
 x[CLUSTER_214,horse_man,Plant_1] 0
 x[CLUSTER_214,horse_man,Plant_2] 0
-x[CLUSTER_214,horse_man,Plant_3] 0.0011196
+x[CLUSTER_214,horse_man,Plant_3] 0
 x[CLUSTER_214,horse_man,Plant_4] 0
 x[CLUSTER_214,horse_man,Plant_5] 0
 x[CLUSTER_214,horse_man,Plant_6] 0
@@ -15663,7 +15663,7 @@ x[CLUSTER_214,pig_slu,Plant_9] 0
 x[CLUSTER_214,pig_man,Plant_0] 0
 x[CLUSTER_214,pig_man,Plant_1] 0
 x[CLUSTER_214,pig_man,Plant_2] 0
-x[CLUSTER_214,pig_man,Plant_3] 1.392e-05
+x[CLUSTER_214,pig_man,Plant_3] 0
 x[CLUSTER_214,pig_man,Plant_4] 0
 x[CLUSTER_214,pig_man,Plant_5] 0
 x[CLUSTER_214,pig_man,Plant_6] 0
@@ -15746,7 +15746,7 @@ x[CLUSTER_215,cattle_man,Plant_2] 0
 x[CLUSTER_215,cattle_man,Plant_3] 0
 x[CLUSTER_215,cattle_man,Plant_4] 0
 x[CLUSTER_215,cattle_man,Plant_5] 0
-x[CLUSTER_215,cattle_man,Plant_6] 0.0115
+x[CLUSTER_215,cattle_man,Plant_6] 0
 x[CLUSTER_215,cattle_man,Plant_7] 0
 x[CLUSTER_215,cattle_man,Plant_8] 0
 x[CLUSTER_215,cattle_man,Plant_9] 0
@@ -15766,7 +15766,7 @@ x[CLUSTER_215,horse_man,Plant_2] 0
 x[CLUSTER_215,horse_man,Plant_3] 0
 x[CLUSTER_215,horse_man,Plant_4] 0
 x[CLUSTER_215,horse_man,Plant_5] 0
-x[CLUSTER_215,horse_man,Plant_6] 0.002969
+x[CLUSTER_215,horse_man,Plant_6] 0
 x[CLUSTER_215,horse_man,Plant_7] 0
 x[CLUSTER_215,horse_man,Plant_8] 0
 x[CLUSTER_215,horse_man,Plant_9] 0
@@ -15864,7 +15864,7 @@ x[CLUSTER_216,cattle_man,Plant_0] 0
 x[CLUSTER_216,cattle_man,Plant_1] 0
 x[CLUSTER_216,cattle_man,Plant_2] 0
 x[CLUSTER_216,cattle_man,Plant_3] 0
-x[CLUSTER_216,cattle_man,Plant_4] 0.006405
+x[CLUSTER_216,cattle_man,Plant_4] 0
 x[CLUSTER_216,cattle_man,Plant_5] 0
 x[CLUSTER_216,cattle_man,Plant_6] 0
 x[CLUSTER_216,cattle_man,Plant_7] 0
@@ -15874,7 +15874,7 @@ x[CLUSTER_216,cattle_slu,Plant_0] 0
 x[CLUSTER_216,cattle_slu,Plant_1] 0
 x[CLUSTER_216,cattle_slu,Plant_2] 0
 x[CLUSTER_216,cattle_slu,Plant_3] 0
-x[CLUSTER_216,cattle_slu,Plant_4] 1.8913999999999917e-02
+x[CLUSTER_216,cattle_slu,Plant_4] 0
 x[CLUSTER_216,cattle_slu,Plant_5] 0
 x[CLUSTER_216,cattle_slu,Plant_6] 0
 x[CLUSTER_216,cattle_slu,Plant_7] 0
@@ -15884,7 +15884,7 @@ x[CLUSTER_216,horse_man,Plant_0] 0
 x[CLUSTER_216,horse_man,Plant_1] 0
 x[CLUSTER_216,horse_man,Plant_2] 0
 x[CLUSTER_216,horse_man,Plant_3] 0
-x[CLUSTER_216,horse_man,Plant_4] 0.001391183
+x[CLUSTER_216,horse_man,Plant_4] 0
 x[CLUSTER_216,horse_man,Plant_5] 0
 x[CLUSTER_216,horse_man,Plant_6] 0
 x[CLUSTER_216,horse_man,Plant_7] 0
@@ -15984,7 +15984,7 @@ x[CLUSTER_217,cattle_man,Plant_0] 0
 x[CLUSTER_217,cattle_man,Plant_1] 0
 x[CLUSTER_217,cattle_man,Plant_2] 0
 x[CLUSTER_217,cattle_man,Plant_3] 0
-x[CLUSTER_217,cattle_man,Plant_4] 0.003099
+x[CLUSTER_217,cattle_man,Plant_4] 0
 x[CLUSTER_217,cattle_man,Plant_5] 0
 x[CLUSTER_217,cattle_man,Plant_6] 0
 x[CLUSTER_217,cattle_man,Plant_7] 0
@@ -16004,7 +16004,7 @@ x[CLUSTER_217,horse_man,Plant_0] 0
 x[CLUSTER_217,horse_man,Plant_1] 0
 x[CLUSTER_217,horse_man,Plant_2] 0
 x[CLUSTER_217,horse_man,Plant_3] 0
-x[CLUSTER_217,horse_man,Plant_4] 0.00136
+x[CLUSTER_217,horse_man,Plant_4] 0
 x[CLUSTER_217,horse_man,Plant_5] 0
 x[CLUSTER_217,horse_man,Plant_6] 0
 x[CLUSTER_217,horse_man,Plant_7] 0
@@ -16024,7 +16024,7 @@ x[CLUSTER_217,pig_man,Plant_0] 0
 x[CLUSTER_217,pig_man,Plant_1] 0
 x[CLUSTER_217,pig_man,Plant_2] 0
 x[CLUSTER_217,pig_man,Plant_3] 0
-x[CLUSTER_217,pig_man,Plant_4] 0.00054222
+x[CLUSTER_217,pig_man,Plant_4] 0
 x[CLUSTER_217,pig_man,Plant_5] 0
 x[CLUSTER_217,pig_man,Plant_6] 0
 x[CLUSTER_217,pig_man,Plant_7] 0
@@ -16049,7 +16049,7 @@ x[CLUSTER_217,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_217,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_217,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_217,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_217,clover_alfalfa_grass,Plant_9] 0.003818
+x[CLUSTER_217,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_217,perm_grass,Plant_0] 0
 x[CLUSTER_217,perm_grass,Plant_1] 0
 x[CLUSTER_217,perm_grass,Plant_2] 0
@@ -16069,7 +16069,7 @@ x[CLUSTER_217,maize_str,Plant_5] 0
 x[CLUSTER_217,maize_str,Plant_6] 0
 x[CLUSTER_217,maize_str,Plant_7] 0
 x[CLUSTER_217,maize_str,Plant_8] 0
-x[CLUSTER_217,maize_str,Plant_9] 0.000304
+x[CLUSTER_217,maize_str,Plant_9] 0
 x[CLUSTER_217,beet_leaf,Plant_0] 0
 x[CLUSTER_217,beet_leaf,Plant_1] 0
 x[CLUSTER_217,beet_leaf,Plant_2] 0
@@ -16106,7 +16106,7 @@ x[CLUSTER_218,cattle_man,Plant_2] 0
 x[CLUSTER_218,cattle_man,Plant_3] 0
 x[CLUSTER_218,cattle_man,Plant_4] 0
 x[CLUSTER_218,cattle_man,Plant_5] 0
-x[CLUSTER_218,cattle_man,Plant_6] 0.04298
+x[CLUSTER_218,cattle_man,Plant_6] 0
 x[CLUSTER_218,cattle_man,Plant_7] 0
 x[CLUSTER_218,cattle_man,Plant_8] 0
 x[CLUSTER_218,cattle_man,Plant_9] 0
@@ -16126,7 +16126,7 @@ x[CLUSTER_218,horse_man,Plant_2] 0
 x[CLUSTER_218,horse_man,Plant_3] 0
 x[CLUSTER_218,horse_man,Plant_4] 0
 x[CLUSTER_218,horse_man,Plant_5] 0
-x[CLUSTER_218,horse_man,Plant_6] 0.004008
+x[CLUSTER_218,horse_man,Plant_6] 0
 x[CLUSTER_218,horse_man,Plant_7] 0
 x[CLUSTER_218,horse_man,Plant_8] 0
 x[CLUSTER_218,horse_man,Plant_9] 0
@@ -16222,7 +16222,7 @@ x[CLUSTER_218,legume_str,Plant_8] 0
 x[CLUSTER_218,legume_str,Plant_9] 0
 x[CLUSTER_219,cattle_man,Plant_0] 0
 x[CLUSTER_219,cattle_man,Plant_1] 0
-x[CLUSTER_219,cattle_man,Plant_2] 0.00529
+x[CLUSTER_219,cattle_man,Plant_2] 0
 x[CLUSTER_219,cattle_man,Plant_3] 0
 x[CLUSTER_219,cattle_man,Plant_4] 0
 x[CLUSTER_219,cattle_man,Plant_5] 0
@@ -16242,7 +16242,7 @@ x[CLUSTER_219,cattle_slu,Plant_8] 0
 x[CLUSTER_219,cattle_slu,Plant_9] 0
 x[CLUSTER_219,horse_man,Plant_0] 0
 x[CLUSTER_219,horse_man,Plant_1] 0
-x[CLUSTER_219,horse_man,Plant_2] 0.000452
+x[CLUSTER_219,horse_man,Plant_2] 0
 x[CLUSTER_219,horse_man,Plant_3] 0
 x[CLUSTER_219,horse_man,Plant_4] 0
 x[CLUSTER_219,horse_man,Plant_5] 0
@@ -16265,7 +16265,7 @@ x[CLUSTER_219,pig_man,Plant_1] 0
 x[CLUSTER_219,pig_man,Plant_2] 0
 x[CLUSTER_219,pig_man,Plant_3] 0
 x[CLUSTER_219,pig_man,Plant_4] 0
-x[CLUSTER_219,pig_man,Plant_5] 0.000686
+x[CLUSTER_219,pig_man,Plant_5] 0
 x[CLUSTER_219,pig_man,Plant_6] 0
 x[CLUSTER_219,pig_man,Plant_7] 0
 x[CLUSTER_219,pig_man,Plant_8] 0
@@ -16346,7 +16346,7 @@ x[CLUSTER_22,cattle_man,Plant_2] 0
 x[CLUSTER_22,cattle_man,Plant_3] 0
 x[CLUSTER_22,cattle_man,Plant_4] 0
 x[CLUSTER_22,cattle_man,Plant_5] 0
-x[CLUSTER_22,cattle_man,Plant_6] 4.4030000000008451e-02
+x[CLUSTER_22,cattle_man,Plant_6] 0
 x[CLUSTER_22,cattle_man,Plant_7] 0
 x[CLUSTER_22,cattle_man,Plant_8] 0
 x[CLUSTER_22,cattle_man,Plant_9] 0
@@ -16365,7 +16365,7 @@ x[CLUSTER_22,horse_man,Plant_1] 0
 x[CLUSTER_22,horse_man,Plant_2] 0
 x[CLUSTER_22,horse_man,Plant_3] 0
 x[CLUSTER_22,horse_man,Plant_4] 0
-x[CLUSTER_22,horse_man,Plant_5] 0.002301
+x[CLUSTER_22,horse_man,Plant_5] 0
 x[CLUSTER_22,horse_man,Plant_6] 0
 x[CLUSTER_22,horse_man,Plant_7] 0
 x[CLUSTER_22,horse_man,Plant_8] 0
@@ -16385,7 +16385,7 @@ x[CLUSTER_22,pig_man,Plant_1] 0
 x[CLUSTER_22,pig_man,Plant_2] 0
 x[CLUSTER_22,pig_man,Plant_3] 0
 x[CLUSTER_22,pig_man,Plant_4] 0
-x[CLUSTER_22,pig_man,Plant_5] 0.000696
+x[CLUSTER_22,pig_man,Plant_5] 0
 x[CLUSTER_22,pig_man,Plant_6] 0
 x[CLUSTER_22,pig_man,Plant_7] 0
 x[CLUSTER_22,pig_man,Plant_8] 0
@@ -16464,7 +16464,7 @@ x[CLUSTER_220,cattle_man,Plant_0] 0
 x[CLUSTER_220,cattle_man,Plant_1] 0
 x[CLUSTER_220,cattle_man,Plant_2] 0
 x[CLUSTER_220,cattle_man,Plant_3] 0
-x[CLUSTER_220,cattle_man,Plant_4] 0.001849
+x[CLUSTER_220,cattle_man,Plant_4] 0
 x[CLUSTER_220,cattle_man,Plant_5] 0
 x[CLUSTER_220,cattle_man,Plant_6] 0
 x[CLUSTER_220,cattle_man,Plant_7] 0
@@ -16484,7 +16484,7 @@ x[CLUSTER_220,horse_man,Plant_0] 0
 x[CLUSTER_220,horse_man,Plant_1] 0
 x[CLUSTER_220,horse_man,Plant_2] 0
 x[CLUSTER_220,horse_man,Plant_3] 0
-x[CLUSTER_220,horse_man,Plant_4] 0.000806
+x[CLUSTER_220,horse_man,Plant_4] 0
 x[CLUSTER_220,horse_man,Plant_5] 0
 x[CLUSTER_220,horse_man,Plant_6] 0
 x[CLUSTER_220,horse_man,Plant_7] 0
@@ -16504,7 +16504,7 @@ x[CLUSTER_220,pig_man,Plant_0] 0
 x[CLUSTER_220,pig_man,Plant_1] 0
 x[CLUSTER_220,pig_man,Plant_2] 0
 x[CLUSTER_220,pig_man,Plant_3] 0
-x[CLUSTER_220,pig_man,Plant_4] 2.5079999999999997e-05
+x[CLUSTER_220,pig_man,Plant_4] 0
 x[CLUSTER_220,pig_man,Plant_5] 0
 x[CLUSTER_220,pig_man,Plant_6] 0
 x[CLUSTER_220,pig_man,Plant_7] 0
@@ -16584,7 +16584,7 @@ x[CLUSTER_221,cattle_man,Plant_0] 0
 x[CLUSTER_221,cattle_man,Plant_1] 0
 x[CLUSTER_221,cattle_man,Plant_2] 0
 x[CLUSTER_221,cattle_man,Plant_3] 0
-x[CLUSTER_221,cattle_man,Plant_4] 0.008125
+x[CLUSTER_221,cattle_man,Plant_4] 0
 x[CLUSTER_221,cattle_man,Plant_5] 0
 x[CLUSTER_221,cattle_man,Plant_6] 0
 x[CLUSTER_221,cattle_man,Plant_7] 0
@@ -16604,7 +16604,7 @@ x[CLUSTER_221,horse_man,Plant_0] 0
 x[CLUSTER_221,horse_man,Plant_1] 0
 x[CLUSTER_221,horse_man,Plant_2] 0
 x[CLUSTER_221,horse_man,Plant_3] 0
-x[CLUSTER_221,horse_man,Plant_4] 0.0011719
+x[CLUSTER_221,horse_man,Plant_4] 0
 x[CLUSTER_221,horse_man,Plant_5] 0
 x[CLUSTER_221,horse_man,Plant_6] 0
 x[CLUSTER_221,horse_man,Plant_7] 0
@@ -16624,7 +16624,7 @@ x[CLUSTER_221,pig_man,Plant_0] 0
 x[CLUSTER_221,pig_man,Plant_1] 0
 x[CLUSTER_221,pig_man,Plant_2] 0
 x[CLUSTER_221,pig_man,Plant_3] 0
-x[CLUSTER_221,pig_man,Plant_4] 2.1817400000000002e-04
+x[CLUSTER_221,pig_man,Plant_4] 0
 x[CLUSTER_221,pig_man,Plant_5] 0
 x[CLUSTER_221,pig_man,Plant_6] 0
 x[CLUSTER_221,pig_man,Plant_7] 0
@@ -16649,7 +16649,7 @@ x[CLUSTER_221,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_221,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_221,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_221,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_221,clover_alfalfa_grass,Plant_9] 0.011328
+x[CLUSTER_221,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_221,perm_grass,Plant_0] 0
 x[CLUSTER_221,perm_grass,Plant_1] 0
 x[CLUSTER_221,perm_grass,Plant_2] 0
@@ -16669,7 +16669,7 @@ x[CLUSTER_221,maize_str,Plant_5] 0
 x[CLUSTER_221,maize_str,Plant_6] 0
 x[CLUSTER_221,maize_str,Plant_7] 0
 x[CLUSTER_221,maize_str,Plant_8] 0
-x[CLUSTER_221,maize_str,Plant_9] 7.025e-05
+x[CLUSTER_221,maize_str,Plant_9] 0
 x[CLUSTER_221,beet_leaf,Plant_0] 0
 x[CLUSTER_221,beet_leaf,Plant_1] 0
 x[CLUSTER_221,beet_leaf,Plant_2] 0
@@ -16709,7 +16709,7 @@ x[CLUSTER_222,cattle_man,Plant_5] 0
 x[CLUSTER_222,cattle_man,Plant_6] 0
 x[CLUSTER_222,cattle_man,Plant_7] 0
 x[CLUSTER_222,cattle_man,Plant_8] 0
-x[CLUSTER_222,cattle_man,Plant_9] 0.0007946
+x[CLUSTER_222,cattle_man,Plant_9] 0
 x[CLUSTER_222,cattle_slu,Plant_0] 0
 x[CLUSTER_222,cattle_slu,Plant_1] 0
 x[CLUSTER_222,cattle_slu,Plant_2] 0
@@ -16724,7 +16724,7 @@ x[CLUSTER_222,horse_man,Plant_0] 0
 x[CLUSTER_222,horse_man,Plant_1] 0
 x[CLUSTER_222,horse_man,Plant_2] 0
 x[CLUSTER_222,horse_man,Plant_3] 0
-x[CLUSTER_222,horse_man,Plant_4] 0.0006433
+x[CLUSTER_222,horse_man,Plant_4] 0
 x[CLUSTER_222,horse_man,Plant_5] 0
 x[CLUSTER_222,horse_man,Plant_6] 0
 x[CLUSTER_222,horse_man,Plant_7] 0
@@ -16744,7 +16744,7 @@ x[CLUSTER_222,pig_man,Plant_0] 0
 x[CLUSTER_222,pig_man,Plant_1] 0
 x[CLUSTER_222,pig_man,Plant_2] 0
 x[CLUSTER_222,pig_man,Plant_3] 0
-x[CLUSTER_222,pig_man,Plant_4] 4.3141e-05
+x[CLUSTER_222,pig_man,Plant_4] 0
 x[CLUSTER_222,pig_man,Plant_5] 0
 x[CLUSTER_222,pig_man,Plant_6] 0
 x[CLUSTER_222,pig_man,Plant_7] 0
@@ -16769,7 +16769,7 @@ x[CLUSTER_222,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_222,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_222,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_222,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_222,clover_alfalfa_grass,Plant_9] 0.0018392
+x[CLUSTER_222,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_222,perm_grass,Plant_0] 0
 x[CLUSTER_222,perm_grass,Plant_1] 0
 x[CLUSTER_222,perm_grass,Plant_2] 0
@@ -16789,7 +16789,7 @@ x[CLUSTER_222,maize_str,Plant_5] 0
 x[CLUSTER_222,maize_str,Plant_6] 0
 x[CLUSTER_222,maize_str,Plant_7] 0
 x[CLUSTER_222,maize_str,Plant_8] 0
-x[CLUSTER_222,maize_str,Plant_9] 0.00015436
+x[CLUSTER_222,maize_str,Plant_9] 0
 x[CLUSTER_222,beet_leaf,Plant_0] 0
 x[CLUSTER_222,beet_leaf,Plant_1] 0
 x[CLUSTER_222,beet_leaf,Plant_2] 0
@@ -16823,7 +16823,7 @@ x[CLUSTER_222,legume_str,Plant_9] 0
 x[CLUSTER_223,cattle_man,Plant_0] 0
 x[CLUSTER_223,cattle_man,Plant_1] 0
 x[CLUSTER_223,cattle_man,Plant_2] 0
-x[CLUSTER_223,cattle_man,Plant_3] 0.009326
+x[CLUSTER_223,cattle_man,Plant_3] 0
 x[CLUSTER_223,cattle_man,Plant_4] 0
 x[CLUSTER_223,cattle_man,Plant_5] 0
 x[CLUSTER_223,cattle_man,Plant_6] 0
@@ -16843,7 +16843,7 @@ x[CLUSTER_223,cattle_slu,Plant_9] 0
 x[CLUSTER_223,horse_man,Plant_0] 0
 x[CLUSTER_223,horse_man,Plant_1] 0
 x[CLUSTER_223,horse_man,Plant_2] 0
-x[CLUSTER_223,horse_man,Plant_3] 0.0015826
+x[CLUSTER_223,horse_man,Plant_3] 0
 x[CLUSTER_223,horse_man,Plant_4] 0
 x[CLUSTER_223,horse_man,Plant_5] 0
 x[CLUSTER_223,horse_man,Plant_6] 0
@@ -16863,7 +16863,7 @@ x[CLUSTER_223,pig_slu,Plant_9] 0
 x[CLUSTER_223,pig_man,Plant_0] 0
 x[CLUSTER_223,pig_man,Plant_1] 0
 x[CLUSTER_223,pig_man,Plant_2] 0
-x[CLUSTER_223,pig_man,Plant_3] 0.000439438657
+x[CLUSTER_223,pig_man,Plant_3] 0
 x[CLUSTER_223,pig_man,Plant_4] 0
 x[CLUSTER_223,pig_man,Plant_5] 0
 x[CLUSTER_223,pig_man,Plant_6] 0
@@ -16961,7 +16961,7 @@ x[CLUSTER_224,cattle_slu,Plant_7] 0
 x[CLUSTER_224,cattle_slu,Plant_8] 0
 x[CLUSTER_224,cattle_slu,Plant_9] 0
 x[CLUSTER_224,horse_man,Plant_0] 0
-x[CLUSTER_224,horse_man,Plant_1] 0.001438
+x[CLUSTER_224,horse_man,Plant_1] 0
 x[CLUSTER_224,horse_man,Plant_2] 0
 x[CLUSTER_224,horse_man,Plant_3] 0
 x[CLUSTER_224,horse_man,Plant_4] 0
@@ -17063,7 +17063,7 @@ x[CLUSTER_224,legume_str,Plant_9] 0
 x[CLUSTER_225,cattle_man,Plant_0] 0
 x[CLUSTER_225,cattle_man,Plant_1] 0
 x[CLUSTER_225,cattle_man,Plant_2] 0
-x[CLUSTER_225,cattle_man,Plant_3] 0.00677
+x[CLUSTER_225,cattle_man,Plant_3] 0
 x[CLUSTER_225,cattle_man,Plant_4] 0
 x[CLUSTER_225,cattle_man,Plant_5] 0
 x[CLUSTER_225,cattle_man,Plant_6] 0
@@ -17073,7 +17073,7 @@ x[CLUSTER_225,cattle_man,Plant_9] 0
 x[CLUSTER_225,cattle_slu,Plant_0] 0
 x[CLUSTER_225,cattle_slu,Plant_1] 0
 x[CLUSTER_225,cattle_slu,Plant_2] 0
-x[CLUSTER_225,cattle_slu,Plant_3] 0.03079
+x[CLUSTER_225,cattle_slu,Plant_3] 0
 x[CLUSTER_225,cattle_slu,Plant_4] 0
 x[CLUSTER_225,cattle_slu,Plant_5] 0
 x[CLUSTER_225,cattle_slu,Plant_6] 0
@@ -17083,7 +17083,7 @@ x[CLUSTER_225,cattle_slu,Plant_9] 0
 x[CLUSTER_225,horse_man,Plant_0] 0
 x[CLUSTER_225,horse_man,Plant_1] 0
 x[CLUSTER_225,horse_man,Plant_2] 0
-x[CLUSTER_225,horse_man,Plant_3] 0.0010397
+x[CLUSTER_225,horse_man,Plant_3] 0
 x[CLUSTER_225,horse_man,Plant_4] 0
 x[CLUSTER_225,horse_man,Plant_5] 0
 x[CLUSTER_225,horse_man,Plant_6] 0
@@ -17103,7 +17103,7 @@ x[CLUSTER_225,pig_slu,Plant_9] 0
 x[CLUSTER_225,pig_man,Plant_0] 0
 x[CLUSTER_225,pig_man,Plant_1] 0
 x[CLUSTER_225,pig_man,Plant_2] 0
-x[CLUSTER_225,pig_man,Plant_3] 1.3149000000000001e-03
+x[CLUSTER_225,pig_man,Plant_3] 0
 x[CLUSTER_225,pig_man,Plant_4] 0
 x[CLUSTER_225,pig_man,Plant_5] 0
 x[CLUSTER_225,pig_man,Plant_6] 0
@@ -17181,7 +17181,7 @@ x[CLUSTER_225,legume_str,Plant_7] 0
 x[CLUSTER_225,legume_str,Plant_8] 0
 x[CLUSTER_225,legume_str,Plant_9] 0
 x[CLUSTER_226,cattle_man,Plant_0] 0
-x[CLUSTER_226,cattle_man,Plant_1] 0.01688
+x[CLUSTER_226,cattle_man,Plant_1] 0
 x[CLUSTER_226,cattle_man,Plant_2] 0
 x[CLUSTER_226,cattle_man,Plant_3] 0
 x[CLUSTER_226,cattle_man,Plant_4] 0
@@ -17201,7 +17201,7 @@ x[CLUSTER_226,cattle_slu,Plant_7] 0
 x[CLUSTER_226,cattle_slu,Plant_8] 0
 x[CLUSTER_226,cattle_slu,Plant_9] 0
 x[CLUSTER_226,horse_man,Plant_0] 0
-x[CLUSTER_226,horse_man,Plant_1] 0.0024716
+x[CLUSTER_226,horse_man,Plant_1] 0
 x[CLUSTER_226,horse_man,Plant_2] 0
 x[CLUSTER_226,horse_man,Plant_3] 0
 x[CLUSTER_226,horse_man,Plant_4] 0
@@ -17304,7 +17304,7 @@ x[CLUSTER_227,cattle_man,Plant_0] 0
 x[CLUSTER_227,cattle_man,Plant_1] 0
 x[CLUSTER_227,cattle_man,Plant_2] 0
 x[CLUSTER_227,cattle_man,Plant_3] 0
-x[CLUSTER_227,cattle_man,Plant_4] 0.00702
+x[CLUSTER_227,cattle_man,Plant_4] 0
 x[CLUSTER_227,cattle_man,Plant_5] 0
 x[CLUSTER_227,cattle_man,Plant_6] 0
 x[CLUSTER_227,cattle_man,Plant_7] 0
@@ -17324,7 +17324,7 @@ x[CLUSTER_227,horse_man,Plant_0] 0
 x[CLUSTER_227,horse_man,Plant_1] 0
 x[CLUSTER_227,horse_man,Plant_2] 0
 x[CLUSTER_227,horse_man,Plant_3] 0
-x[CLUSTER_227,horse_man,Plant_4] 7.997e-05
+x[CLUSTER_227,horse_man,Plant_4] 0
 x[CLUSTER_227,horse_man,Plant_5] 0
 x[CLUSTER_227,horse_man,Plant_6] 0
 x[CLUSTER_227,horse_man,Plant_7] 0
@@ -17344,7 +17344,7 @@ x[CLUSTER_227,pig_man,Plant_0] 0
 x[CLUSTER_227,pig_man,Plant_1] 0
 x[CLUSTER_227,pig_man,Plant_2] 0
 x[CLUSTER_227,pig_man,Plant_3] 0
-x[CLUSTER_227,pig_man,Plant_4] 0.000882
+x[CLUSTER_227,pig_man,Plant_4] 0
 x[CLUSTER_227,pig_man,Plant_5] 0
 x[CLUSTER_227,pig_man,Plant_6] 0
 x[CLUSTER_227,pig_man,Plant_7] 0
@@ -17423,7 +17423,7 @@ x[CLUSTER_227,legume_str,Plant_9] 0
 x[CLUSTER_228,cattle_man,Plant_0] 0
 x[CLUSTER_228,cattle_man,Plant_1] 0
 x[CLUSTER_228,cattle_man,Plant_2] 0
-x[CLUSTER_228,cattle_man,Plant_3] 0.010463
+x[CLUSTER_228,cattle_man,Plant_3] 0
 x[CLUSTER_228,cattle_man,Plant_4] 0
 x[CLUSTER_228,cattle_man,Plant_5] 0
 x[CLUSTER_228,cattle_man,Plant_6] 0
@@ -17433,7 +17433,7 @@ x[CLUSTER_228,cattle_man,Plant_9] 0
 x[CLUSTER_228,cattle_slu,Plant_0] 0
 x[CLUSTER_228,cattle_slu,Plant_1] 0
 x[CLUSTER_228,cattle_slu,Plant_2] 0
-x[CLUSTER_228,cattle_slu,Plant_3] 0.06577
+x[CLUSTER_228,cattle_slu,Plant_3] 0
 x[CLUSTER_228,cattle_slu,Plant_4] 0
 x[CLUSTER_228,cattle_slu,Plant_5] 0
 x[CLUSTER_228,cattle_slu,Plant_6] 0
@@ -17443,7 +17443,7 @@ x[CLUSTER_228,cattle_slu,Plant_9] 0
 x[CLUSTER_228,horse_man,Plant_0] 0
 x[CLUSTER_228,horse_man,Plant_1] 0
 x[CLUSTER_228,horse_man,Plant_2] 0
-x[CLUSTER_228,horse_man,Plant_3] 1.3134000000000002e-03
+x[CLUSTER_228,horse_man,Plant_3] 0
 x[CLUSTER_228,horse_man,Plant_4] 0
 x[CLUSTER_228,horse_man,Plant_5] 0
 x[CLUSTER_228,horse_man,Plant_6] 0
@@ -17548,7 +17548,7 @@ x[CLUSTER_229,cattle_man,Plant_4] 0
 x[CLUSTER_229,cattle_man,Plant_5] 0
 x[CLUSTER_229,cattle_man,Plant_6] 0
 x[CLUSTER_229,cattle_man,Plant_7] 0
-x[CLUSTER_229,cattle_man,Plant_8] 0.0011428
+x[CLUSTER_229,cattle_man,Plant_8] 0
 x[CLUSTER_229,cattle_man,Plant_9] 0
 x[CLUSTER_229,cattle_slu,Plant_0] 0
 x[CLUSTER_229,cattle_slu,Plant_1] 0
@@ -17568,7 +17568,7 @@ x[CLUSTER_229,horse_man,Plant_4] 0
 x[CLUSTER_229,horse_man,Plant_5] 0
 x[CLUSTER_229,horse_man,Plant_6] 0
 x[CLUSTER_229,horse_man,Plant_7] 0
-x[CLUSTER_229,horse_man,Plant_8] 0.0004663
+x[CLUSTER_229,horse_man,Plant_8] 0
 x[CLUSTER_229,horse_man,Plant_9] 0
 x[CLUSTER_229,pig_slu,Plant_0] 0
 x[CLUSTER_229,pig_slu,Plant_1] 0
@@ -17588,7 +17588,7 @@ x[CLUSTER_229,pig_man,Plant_4] 0
 x[CLUSTER_229,pig_man,Plant_5] 0
 x[CLUSTER_229,pig_man,Plant_6] 0
 x[CLUSTER_229,pig_man,Plant_7] 0
-x[CLUSTER_229,pig_man,Plant_8] 3.8028208999999994e-05
+x[CLUSTER_229,pig_man,Plant_8] 0
 x[CLUSTER_229,pig_man,Plant_9] 0
 x[CLUSTER_229,cereal_str,Plant_0] 0
 x[CLUSTER_229,cereal_str,Plant_1] 0
@@ -17667,7 +17667,7 @@ x[CLUSTER_23,cattle_man,Plant_3] 0
 x[CLUSTER_23,cattle_man,Plant_4] 0
 x[CLUSTER_23,cattle_man,Plant_5] 0
 x[CLUSTER_23,cattle_man,Plant_6] 0
-x[CLUSTER_23,cattle_man,Plant_7] 4.2293999999999995e-03
+x[CLUSTER_23,cattle_man,Plant_7] 0
 x[CLUSTER_23,cattle_man,Plant_8] 0
 x[CLUSTER_23,cattle_man,Plant_9] 0
 x[CLUSTER_23,cattle_slu,Plant_0] 0
@@ -17687,7 +17687,7 @@ x[CLUSTER_23,horse_man,Plant_3] 0
 x[CLUSTER_23,horse_man,Plant_4] 0
 x[CLUSTER_23,horse_man,Plant_5] 0
 x[CLUSTER_23,horse_man,Plant_6] 0
-x[CLUSTER_23,horse_man,Plant_7] 0.0019204
+x[CLUSTER_23,horse_man,Plant_7] 0
 x[CLUSTER_23,horse_man,Plant_8] 0
 x[CLUSTER_23,horse_man,Plant_9] 0
 x[CLUSTER_23,pig_slu,Plant_0] 0
@@ -17780,7 +17780,7 @@ x[CLUSTER_23,legume_str,Plant_6] 0
 x[CLUSTER_23,legume_str,Plant_7] 0
 x[CLUSTER_23,legume_str,Plant_8] 0
 x[CLUSTER_23,legume_str,Plant_9] 0
-x[CLUSTER_230,cattle_man,Plant_0] 0.01137
+x[CLUSTER_230,cattle_man,Plant_0] 0
 x[CLUSTER_230,cattle_man,Plant_1] 0
 x[CLUSTER_230,cattle_man,Plant_2] 0
 x[CLUSTER_230,cattle_man,Plant_3] 0
@@ -17800,7 +17800,7 @@ x[CLUSTER_230,cattle_slu,Plant_6] 0
 x[CLUSTER_230,cattle_slu,Plant_7] 0
 x[CLUSTER_230,cattle_slu,Plant_8] 0
 x[CLUSTER_230,cattle_slu,Plant_9] 0
-x[CLUSTER_230,horse_man,Plant_0] 0.0009
+x[CLUSTER_230,horse_man,Plant_0] 0
 x[CLUSTER_230,horse_man,Plant_1] 0
 x[CLUSTER_230,horse_man,Plant_2] 0
 x[CLUSTER_230,horse_man,Plant_3] 0
@@ -17820,7 +17820,7 @@ x[CLUSTER_230,pig_slu,Plant_6] 0
 x[CLUSTER_230,pig_slu,Plant_7] 0
 x[CLUSTER_230,pig_slu,Plant_8] 0
 x[CLUSTER_230,pig_slu,Plant_9] 0
-x[CLUSTER_230,pig_man,Plant_0] 0.00015699
+x[CLUSTER_230,pig_man,Plant_0] 0
 x[CLUSTER_230,pig_man,Plant_1] 0
 x[CLUSTER_230,pig_man,Plant_2] 0
 x[CLUSTER_230,pig_man,Plant_3] 0
@@ -17860,7 +17860,7 @@ x[CLUSTER_230,perm_grass,Plant_6] 0
 x[CLUSTER_230,perm_grass,Plant_7] 0
 x[CLUSTER_230,perm_grass,Plant_8] 0
 x[CLUSTER_230,perm_grass,Plant_9] 0
-x[CLUSTER_230,maize_str,Plant_0] 3.0722e-05
+x[CLUSTER_230,maize_str,Plant_0] 0
 x[CLUSTER_230,maize_str,Plant_1] 0
 x[CLUSTER_230,maize_str,Plant_2] 0
 x[CLUSTER_230,maize_str,Plant_3] 0
@@ -17900,7 +17900,7 @@ x[CLUSTER_230,legume_str,Plant_6] 0
 x[CLUSTER_230,legume_str,Plant_7] 0
 x[CLUSTER_230,legume_str,Plant_8] 0
 x[CLUSTER_230,legume_str,Plant_9] 0
-x[CLUSTER_231,cattle_man,Plant_0] 0.01387
+x[CLUSTER_231,cattle_man,Plant_0] 0
 x[CLUSTER_231,cattle_man,Plant_1] 0
 x[CLUSTER_231,cattle_man,Plant_2] 0
 x[CLUSTER_231,cattle_man,Plant_3] 0
@@ -17920,7 +17920,7 @@ x[CLUSTER_231,cattle_slu,Plant_6] 0
 x[CLUSTER_231,cattle_slu,Plant_7] 0
 x[CLUSTER_231,cattle_slu,Plant_8] 0
 x[CLUSTER_231,cattle_slu,Plant_9] 0
-x[CLUSTER_231,horse_man,Plant_0] 0.001176
+x[CLUSTER_231,horse_man,Plant_0] 0
 x[CLUSTER_231,horse_man,Plant_1] 0
 x[CLUSTER_231,horse_man,Plant_2] 0
 x[CLUSTER_231,horse_man,Plant_3] 0
@@ -17940,7 +17940,7 @@ x[CLUSTER_231,pig_slu,Plant_6] 0
 x[CLUSTER_231,pig_slu,Plant_7] 0
 x[CLUSTER_231,pig_slu,Plant_8] 0
 x[CLUSTER_231,pig_slu,Plant_9] 0
-x[CLUSTER_231,pig_man,Plant_0] 1.06436e-05
+x[CLUSTER_231,pig_man,Plant_0] 0
 x[CLUSTER_231,pig_man,Plant_1] 0
 x[CLUSTER_231,pig_man,Plant_2] 0
 x[CLUSTER_231,pig_man,Plant_3] 0
@@ -18022,7 +18022,7 @@ x[CLUSTER_231,legume_str,Plant_8] 0
 x[CLUSTER_231,legume_str,Plant_9] 0
 x[CLUSTER_232,cattle_man,Plant_0] 0
 x[CLUSTER_232,cattle_man,Plant_1] 0
-x[CLUSTER_232,cattle_man,Plant_2] 0.0099
+x[CLUSTER_232,cattle_man,Plant_2] 0
 x[CLUSTER_232,cattle_man,Plant_3] 0
 x[CLUSTER_232,cattle_man,Plant_4] 0
 x[CLUSTER_232,cattle_man,Plant_5] 0
@@ -18032,7 +18032,7 @@ x[CLUSTER_232,cattle_man,Plant_8] 0
 x[CLUSTER_232,cattle_man,Plant_9] 0
 x[CLUSTER_232,cattle_slu,Plant_0] 0
 x[CLUSTER_232,cattle_slu,Plant_1] 0
-x[CLUSTER_232,cattle_slu,Plant_2] 0.0559
+x[CLUSTER_232,cattle_slu,Plant_2] 0
 x[CLUSTER_232,cattle_slu,Plant_3] 0
 x[CLUSTER_232,cattle_slu,Plant_4] 0
 x[CLUSTER_232,cattle_slu,Plant_5] 0
@@ -18042,7 +18042,7 @@ x[CLUSTER_232,cattle_slu,Plant_8] 0
 x[CLUSTER_232,cattle_slu,Plant_9] 0
 x[CLUSTER_232,horse_man,Plant_0] 0
 x[CLUSTER_232,horse_man,Plant_1] 0
-x[CLUSTER_232,horse_man,Plant_2] 0.003168
+x[CLUSTER_232,horse_man,Plant_2] 0
 x[CLUSTER_232,horse_man,Plant_3] 0
 x[CLUSTER_232,horse_man,Plant_4] 0
 x[CLUSTER_232,horse_man,Plant_5] 0
@@ -18062,7 +18062,7 @@ x[CLUSTER_232,pig_slu,Plant_8] 0
 x[CLUSTER_232,pig_slu,Plant_9] 0
 x[CLUSTER_232,pig_man,Plant_0] 0
 x[CLUSTER_232,pig_man,Plant_1] 0
-x[CLUSTER_232,pig_man,Plant_2] 0.00024535
+x[CLUSTER_232,pig_man,Plant_2] 0
 x[CLUSTER_232,pig_man,Plant_3] 0
 x[CLUSTER_232,pig_man,Plant_4] 0
 x[CLUSTER_232,pig_man,Plant_5] 0
@@ -18102,7 +18102,7 @@ x[CLUSTER_232,perm_grass,Plant_8] 0
 x[CLUSTER_232,perm_grass,Plant_9] 0
 x[CLUSTER_232,maize_str,Plant_0] 0
 x[CLUSTER_232,maize_str,Plant_1] 0
-x[CLUSTER_232,maize_str,Plant_2] 0.0003324
+x[CLUSTER_232,maize_str,Plant_2] 0
 x[CLUSTER_232,maize_str,Plant_3] 0
 x[CLUSTER_232,maize_str,Plant_4] 0
 x[CLUSTER_232,maize_str,Plant_5] 0
@@ -18143,7 +18143,7 @@ x[CLUSTER_232,legume_str,Plant_9] 0
 x[CLUSTER_233,cattle_man,Plant_0] 0
 x[CLUSTER_233,cattle_man,Plant_1] 0
 x[CLUSTER_233,cattle_man,Plant_2] 0
-x[CLUSTER_233,cattle_man,Plant_3] 0.00543
+x[CLUSTER_233,cattle_man,Plant_3] 0
 x[CLUSTER_233,cattle_man,Plant_4] 0
 x[CLUSTER_233,cattle_man,Plant_5] 0
 x[CLUSTER_233,cattle_man,Plant_6] 0
@@ -18153,7 +18153,7 @@ x[CLUSTER_233,cattle_man,Plant_9] 0
 x[CLUSTER_233,cattle_slu,Plant_0] 0
 x[CLUSTER_233,cattle_slu,Plant_1] 0
 x[CLUSTER_233,cattle_slu,Plant_2] 0
-x[CLUSTER_233,cattle_slu,Plant_3] 0.01883
+x[CLUSTER_233,cattle_slu,Plant_3] 0
 x[CLUSTER_233,cattle_slu,Plant_4] 0
 x[CLUSTER_233,cattle_slu,Plant_5] 0
 x[CLUSTER_233,cattle_slu,Plant_6] 0
@@ -18163,7 +18163,7 @@ x[CLUSTER_233,cattle_slu,Plant_9] 0
 x[CLUSTER_233,horse_man,Plant_0] 0
 x[CLUSTER_233,horse_man,Plant_1] 0
 x[CLUSTER_233,horse_man,Plant_2] 0
-x[CLUSTER_233,horse_man,Plant_3] 0.001224
+x[CLUSTER_233,horse_man,Plant_3] 0
 x[CLUSTER_233,horse_man,Plant_4] 0
 x[CLUSTER_233,horse_man,Plant_5] 0
 x[CLUSTER_233,horse_man,Plant_6] 0
@@ -18183,7 +18183,7 @@ x[CLUSTER_233,pig_slu,Plant_9] 0
 x[CLUSTER_233,pig_man,Plant_0] 0
 x[CLUSTER_233,pig_man,Plant_1] 0
 x[CLUSTER_233,pig_man,Plant_2] 0
-x[CLUSTER_233,pig_man,Plant_3] 0.0004352
+x[CLUSTER_233,pig_man,Plant_3] 0
 x[CLUSTER_233,pig_man,Plant_4] 0
 x[CLUSTER_233,pig_man,Plant_5] 0
 x[CLUSTER_233,pig_man,Plant_6] 0
@@ -18264,7 +18264,7 @@ x[CLUSTER_234,cattle_man,Plant_0] 0
 x[CLUSTER_234,cattle_man,Plant_1] 0
 x[CLUSTER_234,cattle_man,Plant_2] 0
 x[CLUSTER_234,cattle_man,Plant_3] 0
-x[CLUSTER_234,cattle_man,Plant_4] 2.8380000000000023e-02
+x[CLUSTER_234,cattle_man,Plant_4] 0
 x[CLUSTER_234,cattle_man,Plant_5] 0
 x[CLUSTER_234,cattle_man,Plant_6] 0
 x[CLUSTER_234,cattle_man,Plant_7] 0
@@ -18284,7 +18284,7 @@ x[CLUSTER_234,horse_man,Plant_0] 0
 x[CLUSTER_234,horse_man,Plant_1] 0
 x[CLUSTER_234,horse_man,Plant_2] 0
 x[CLUSTER_234,horse_man,Plant_3] 0
-x[CLUSTER_234,horse_man,Plant_4] 0.002507
+x[CLUSTER_234,horse_man,Plant_4] 0
 x[CLUSTER_234,horse_man,Plant_5] 0
 x[CLUSTER_234,horse_man,Plant_6] 0
 x[CLUSTER_234,horse_man,Plant_7] 0
@@ -18304,7 +18304,7 @@ x[CLUSTER_234,pig_man,Plant_0] 0
 x[CLUSTER_234,pig_man,Plant_1] 0
 x[CLUSTER_234,pig_man,Plant_2] 0
 x[CLUSTER_234,pig_man,Plant_3] 0
-x[CLUSTER_234,pig_man,Plant_4] 0.0004723
+x[CLUSTER_234,pig_man,Plant_4] 0
 x[CLUSTER_234,pig_man,Plant_5] 0
 x[CLUSTER_234,pig_man,Plant_6] 0
 x[CLUSTER_234,pig_man,Plant_7] 0
@@ -18388,7 +18388,7 @@ x[CLUSTER_235,cattle_man,Plant_4] 0
 x[CLUSTER_235,cattle_man,Plant_5] 0
 x[CLUSTER_235,cattle_man,Plant_6] 0
 x[CLUSTER_235,cattle_man,Plant_7] 0
-x[CLUSTER_235,cattle_man,Plant_8] 0.003182
+x[CLUSTER_235,cattle_man,Plant_8] 0
 x[CLUSTER_235,cattle_man,Plant_9] 0
 x[CLUSTER_235,cattle_slu,Plant_0] 0
 x[CLUSTER_235,cattle_slu,Plant_1] 0
@@ -18398,7 +18398,7 @@ x[CLUSTER_235,cattle_slu,Plant_4] 0
 x[CLUSTER_235,cattle_slu,Plant_5] 0
 x[CLUSTER_235,cattle_slu,Plant_6] 0
 x[CLUSTER_235,cattle_slu,Plant_7] 0
-x[CLUSTER_235,cattle_slu,Plant_8] 0.01197
+x[CLUSTER_235,cattle_slu,Plant_8] 0
 x[CLUSTER_235,cattle_slu,Plant_9] 0
 x[CLUSTER_235,horse_man,Plant_0] 0
 x[CLUSTER_235,horse_man,Plant_1] 0
@@ -18408,7 +18408,7 @@ x[CLUSTER_235,horse_man,Plant_4] 0
 x[CLUSTER_235,horse_man,Plant_5] 0
 x[CLUSTER_235,horse_man,Plant_6] 0
 x[CLUSTER_235,horse_man,Plant_7] 0
-x[CLUSTER_235,horse_man,Plant_8] 0.0013077
+x[CLUSTER_235,horse_man,Plant_8] 0
 x[CLUSTER_235,horse_man,Plant_9] 0
 x[CLUSTER_235,pig_slu,Plant_0] 0
 x[CLUSTER_235,pig_slu,Plant_1] 0
@@ -18428,7 +18428,7 @@ x[CLUSTER_235,pig_man,Plant_4] 0
 x[CLUSTER_235,pig_man,Plant_5] 0
 x[CLUSTER_235,pig_man,Plant_6] 0
 x[CLUSTER_235,pig_man,Plant_7] 0
-x[CLUSTER_235,pig_man,Plant_8] 4.3977999999999997e-04
+x[CLUSTER_235,pig_man,Plant_8] 0
 x[CLUSTER_235,pig_man,Plant_9] 0
 x[CLUSTER_235,cereal_str,Plant_0] 0
 x[CLUSTER_235,cereal_str,Plant_1] 0
@@ -18468,7 +18468,7 @@ x[CLUSTER_235,maize_str,Plant_4] 0
 x[CLUSTER_235,maize_str,Plant_5] 0
 x[CLUSTER_235,maize_str,Plant_6] 0
 x[CLUSTER_235,maize_str,Plant_7] 0
-x[CLUSTER_235,maize_str,Plant_8] 0.001195
+x[CLUSTER_235,maize_str,Plant_8] 0
 x[CLUSTER_235,maize_str,Plant_9] 0
 x[CLUSTER_235,beet_leaf,Plant_0] 0
 x[CLUSTER_235,beet_leaf,Plant_1] 0
@@ -18507,7 +18507,7 @@ x[CLUSTER_236,cattle_man,Plant_3] 0
 x[CLUSTER_236,cattle_man,Plant_4] 0
 x[CLUSTER_236,cattle_man,Plant_5] 0
 x[CLUSTER_236,cattle_man,Plant_6] 0
-x[CLUSTER_236,cattle_man,Plant_7] 0.0011774
+x[CLUSTER_236,cattle_man,Plant_7] 0
 x[CLUSTER_236,cattle_man,Plant_8] 0
 x[CLUSTER_236,cattle_man,Plant_9] 0
 x[CLUSTER_236,cattle_slu,Plant_0] 0
@@ -18517,7 +18517,7 @@ x[CLUSTER_236,cattle_slu,Plant_3] 0
 x[CLUSTER_236,cattle_slu,Plant_4] 0
 x[CLUSTER_236,cattle_slu,Plant_5] 0
 x[CLUSTER_236,cattle_slu,Plant_6] 0
-x[CLUSTER_236,cattle_slu,Plant_7] 7.5660000000000007e-04
+x[CLUSTER_236,cattle_slu,Plant_7] 0
 x[CLUSTER_236,cattle_slu,Plant_8] 0
 x[CLUSTER_236,cattle_slu,Plant_9] 0
 x[CLUSTER_236,horse_man,Plant_0] 0
@@ -18527,7 +18527,7 @@ x[CLUSTER_236,horse_man,Plant_3] 0
 x[CLUSTER_236,horse_man,Plant_4] 0
 x[CLUSTER_236,horse_man,Plant_5] 0
 x[CLUSTER_236,horse_man,Plant_6] 0
-x[CLUSTER_236,horse_man,Plant_7] 0.0010455
+x[CLUSTER_236,horse_man,Plant_7] 0
 x[CLUSTER_236,horse_man,Plant_8] 0
 x[CLUSTER_236,horse_man,Plant_9] 0
 x[CLUSTER_236,pig_slu,Plant_0] 0
@@ -18537,7 +18537,7 @@ x[CLUSTER_236,pig_slu,Plant_3] 0
 x[CLUSTER_236,pig_slu,Plant_4] 0
 x[CLUSTER_236,pig_slu,Plant_5] 0
 x[CLUSTER_236,pig_slu,Plant_6] 0
-x[CLUSTER_236,pig_slu,Plant_7] 0.002645
+x[CLUSTER_236,pig_slu,Plant_7] 0
 x[CLUSTER_236,pig_slu,Plant_8] 0
 x[CLUSTER_236,pig_slu,Plant_9] 0
 x[CLUSTER_236,pig_man,Plant_0] 0
@@ -18547,7 +18547,7 @@ x[CLUSTER_236,pig_man,Plant_3] 0
 x[CLUSTER_236,pig_man,Plant_4] 0
 x[CLUSTER_236,pig_man,Plant_5] 0
 x[CLUSTER_236,pig_man,Plant_6] 0
-x[CLUSTER_236,pig_man,Plant_7] 0.0001447
+x[CLUSTER_236,pig_man,Plant_7] 0
 x[CLUSTER_236,pig_man,Plant_8] 0
 x[CLUSTER_236,pig_man,Plant_9] 0
 x[CLUSTER_236,cereal_str,Plant_0] 0
@@ -18569,7 +18569,7 @@ x[CLUSTER_236,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_236,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_236,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_236,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_236,clover_alfalfa_grass,Plant_9] 0.00757700461
+x[CLUSTER_236,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_236,perm_grass,Plant_0] 0
 x[CLUSTER_236,perm_grass,Plant_1] 0
 x[CLUSTER_236,perm_grass,Plant_2] 0
@@ -18589,7 +18589,7 @@ x[CLUSTER_236,maize_str,Plant_5] 0
 x[CLUSTER_236,maize_str,Plant_6] 0
 x[CLUSTER_236,maize_str,Plant_7] 0
 x[CLUSTER_236,maize_str,Plant_8] 0
-x[CLUSTER_236,maize_str,Plant_9] 4.6399999999999996e-05
+x[CLUSTER_236,maize_str,Plant_9] 0
 x[CLUSTER_236,beet_leaf,Plant_0] 0
 x[CLUSTER_236,beet_leaf,Plant_1] 0
 x[CLUSTER_236,beet_leaf,Plant_2] 0
@@ -18622,7 +18622,7 @@ x[CLUSTER_236,legume_str,Plant_8] 0
 x[CLUSTER_236,legume_str,Plant_9] 0
 x[CLUSTER_237,cattle_man,Plant_0] 0
 x[CLUSTER_237,cattle_man,Plant_1] 0
-x[CLUSTER_237,cattle_man,Plant_2] 0.004862
+x[CLUSTER_237,cattle_man,Plant_2] 0
 x[CLUSTER_237,cattle_man,Plant_3] 0
 x[CLUSTER_237,cattle_man,Plant_4] 0
 x[CLUSTER_237,cattle_man,Plant_5] 0
@@ -18642,7 +18642,7 @@ x[CLUSTER_237,cattle_slu,Plant_8] 0
 x[CLUSTER_237,cattle_slu,Plant_9] 0
 x[CLUSTER_237,horse_man,Plant_0] 0
 x[CLUSTER_237,horse_man,Plant_1] 0
-x[CLUSTER_237,horse_man,Plant_2] 0.00047863
+x[CLUSTER_237,horse_man,Plant_2] 0
 x[CLUSTER_237,horse_man,Plant_3] 0
 x[CLUSTER_237,horse_man,Plant_4] 0
 x[CLUSTER_237,horse_man,Plant_5] 0
@@ -18662,7 +18662,7 @@ x[CLUSTER_237,pig_slu,Plant_8] 0
 x[CLUSTER_237,pig_slu,Plant_9] 0
 x[CLUSTER_237,pig_man,Plant_0] 0
 x[CLUSTER_237,pig_man,Plant_1] 0
-x[CLUSTER_237,pig_man,Plant_2] 0.000687516
+x[CLUSTER_237,pig_man,Plant_2] 0
 x[CLUSTER_237,pig_man,Plant_3] 0
 x[CLUSTER_237,pig_man,Plant_4] 0
 x[CLUSTER_237,pig_man,Plant_5] 0
@@ -18767,7 +18767,7 @@ x[CLUSTER_238,horse_man,Plant_3] 0
 x[CLUSTER_238,horse_man,Plant_4] 0
 x[CLUSTER_238,horse_man,Plant_5] 0
 x[CLUSTER_238,horse_man,Plant_6] 0
-x[CLUSTER_238,horse_man,Plant_7] 0.0008207
+x[CLUSTER_238,horse_man,Plant_7] 0
 x[CLUSTER_238,horse_man,Plant_8] 0
 x[CLUSTER_238,horse_man,Plant_9] 0
 x[CLUSTER_238,pig_slu,Plant_0] 0
@@ -18787,7 +18787,7 @@ x[CLUSTER_238,pig_man,Plant_3] 0
 x[CLUSTER_238,pig_man,Plant_4] 0
 x[CLUSTER_238,pig_man,Plant_5] 0
 x[CLUSTER_238,pig_man,Plant_6] 0
-x[CLUSTER_238,pig_man,Plant_7] 0.00012338
+x[CLUSTER_238,pig_man,Plant_7] 0
 x[CLUSTER_238,pig_man,Plant_8] 0
 x[CLUSTER_238,pig_man,Plant_9] 0
 x[CLUSTER_238,cereal_str,Plant_0] 0
@@ -18865,7 +18865,7 @@ x[CLUSTER_239,cattle_man,Plant_1] 0
 x[CLUSTER_239,cattle_man,Plant_2] 0
 x[CLUSTER_239,cattle_man,Plant_3] 0
 x[CLUSTER_239,cattle_man,Plant_4] 0
-x[CLUSTER_239,cattle_man,Plant_5] 0.003789
+x[CLUSTER_239,cattle_man,Plant_5] 0
 x[CLUSTER_239,cattle_man,Plant_6] 0
 x[CLUSTER_239,cattle_man,Plant_7] 0
 x[CLUSTER_239,cattle_man,Plant_8] 0
@@ -18875,7 +18875,7 @@ x[CLUSTER_239,cattle_slu,Plant_1] 0
 x[CLUSTER_239,cattle_slu,Plant_2] 0
 x[CLUSTER_239,cattle_slu,Plant_3] 0
 x[CLUSTER_239,cattle_slu,Plant_4] 0
-x[CLUSTER_239,cattle_slu,Plant_5] 0.01288
+x[CLUSTER_239,cattle_slu,Plant_5] 0
 x[CLUSTER_239,cattle_slu,Plant_6] 0
 x[CLUSTER_239,cattle_slu,Plant_7] 0
 x[CLUSTER_239,cattle_slu,Plant_8] 0
@@ -18885,7 +18885,7 @@ x[CLUSTER_239,horse_man,Plant_1] 0
 x[CLUSTER_239,horse_man,Plant_2] 0
 x[CLUSTER_239,horse_man,Plant_3] 0
 x[CLUSTER_239,horse_man,Plant_4] 0
-x[CLUSTER_239,horse_man,Plant_5] 0.0028825
+x[CLUSTER_239,horse_man,Plant_5] 0
 x[CLUSTER_239,horse_man,Plant_6] 0
 x[CLUSTER_239,horse_man,Plant_7] 0
 x[CLUSTER_239,horse_man,Plant_8] 0
@@ -18905,7 +18905,7 @@ x[CLUSTER_239,pig_man,Plant_1] 0
 x[CLUSTER_239,pig_man,Plant_2] 0
 x[CLUSTER_239,pig_man,Plant_3] 0
 x[CLUSTER_239,pig_man,Plant_4] 0
-x[CLUSTER_239,pig_man,Plant_5] 0.00093174
+x[CLUSTER_239,pig_man,Plant_5] 0
 x[CLUSTER_239,pig_man,Plant_6] 0
 x[CLUSTER_239,pig_man,Plant_7] 0
 x[CLUSTER_239,pig_man,Plant_8] 0
@@ -18989,7 +18989,7 @@ x[CLUSTER_24,cattle_man,Plant_5] 0
 x[CLUSTER_24,cattle_man,Plant_6] 0
 x[CLUSTER_24,cattle_man,Plant_7] 0
 x[CLUSTER_24,cattle_man,Plant_8] 0
-x[CLUSTER_24,cattle_man,Plant_9] 0.015326
+x[CLUSTER_24,cattle_man,Plant_9] 0
 x[CLUSTER_24,cattle_slu,Plant_0] 0
 x[CLUSTER_24,cattle_slu,Plant_1] 0
 x[CLUSTER_24,cattle_slu,Plant_2] 0
@@ -19009,7 +19009,7 @@ x[CLUSTER_24,horse_man,Plant_5] 0
 x[CLUSTER_24,horse_man,Plant_6] 0
 x[CLUSTER_24,horse_man,Plant_7] 0
 x[CLUSTER_24,horse_man,Plant_8] 0
-x[CLUSTER_24,horse_man,Plant_9] 0.0015865
+x[CLUSTER_24,horse_man,Plant_9] 0
 x[CLUSTER_24,pig_slu,Plant_0] 0
 x[CLUSTER_24,pig_slu,Plant_1] 0
 x[CLUSTER_24,pig_slu,Plant_2] 0
@@ -19027,7 +19027,7 @@ x[CLUSTER_24,pig_man,Plant_3] 0
 x[CLUSTER_24,pig_man,Plant_4] 0
 x[CLUSTER_24,pig_man,Plant_5] 0
 x[CLUSTER_24,pig_man,Plant_6] 0
-x[CLUSTER_24,pig_man,Plant_7] 0.00043894
+x[CLUSTER_24,pig_man,Plant_7] 0
 x[CLUSTER_24,pig_man,Plant_8] 0
 x[CLUSTER_24,pig_man,Plant_9] 0
 x[CLUSTER_24,cereal_str,Plant_0] 0
@@ -19049,7 +19049,7 @@ x[CLUSTER_24,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_24,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_24,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_24,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_24,clover_alfalfa_grass,Plant_9] 0.012192
+x[CLUSTER_24,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_24,perm_grass,Plant_0] 0
 x[CLUSTER_24,perm_grass,Plant_1] 0
 x[CLUSTER_24,perm_grass,Plant_2] 0
@@ -19069,7 +19069,7 @@ x[CLUSTER_24,maize_str,Plant_5] 0
 x[CLUSTER_24,maize_str,Plant_6] 0
 x[CLUSTER_24,maize_str,Plant_7] 0
 x[CLUSTER_24,maize_str,Plant_8] 0
-x[CLUSTER_24,maize_str,Plant_9] 0.00061037
+x[CLUSTER_24,maize_str,Plant_9] 0
 x[CLUSTER_24,beet_leaf,Plant_0] 0
 x[CLUSTER_24,beet_leaf,Plant_1] 0
 x[CLUSTER_24,beet_leaf,Plant_2] 0
@@ -19100,7 +19100,7 @@ x[CLUSTER_24,legume_str,Plant_6] 0
 x[CLUSTER_24,legume_str,Plant_7] 0
 x[CLUSTER_24,legume_str,Plant_8] 0
 x[CLUSTER_24,legume_str,Plant_9] 0
-x[CLUSTER_240,cattle_man,Plant_0] 4.0204000000000005e-04
+x[CLUSTER_240,cattle_man,Plant_0] 0
 x[CLUSTER_240,cattle_man,Plant_1] 0
 x[CLUSTER_240,cattle_man,Plant_2] 0
 x[CLUSTER_240,cattle_man,Plant_3] 0
@@ -19120,7 +19120,7 @@ x[CLUSTER_240,cattle_slu,Plant_6] 0
 x[CLUSTER_240,cattle_slu,Plant_7] 0
 x[CLUSTER_240,cattle_slu,Plant_8] 0
 x[CLUSTER_240,cattle_slu,Plant_9] 0
-x[CLUSTER_240,horse_man,Plant_0] 0.0001725
+x[CLUSTER_240,horse_man,Plant_0] 0
 x[CLUSTER_240,horse_man,Plant_1] 0
 x[CLUSTER_240,horse_man,Plant_2] 0
 x[CLUSTER_240,horse_man,Plant_3] 0
@@ -19145,7 +19145,7 @@ x[CLUSTER_240,pig_man,Plant_1] 0
 x[CLUSTER_240,pig_man,Plant_2] 0
 x[CLUSTER_240,pig_man,Plant_3] 0
 x[CLUSTER_240,pig_man,Plant_4] 0
-x[CLUSTER_240,pig_man,Plant_5] 2.4931000000000002e-05
+x[CLUSTER_240,pig_man,Plant_5] 0
 x[CLUSTER_240,pig_man,Plant_6] 0
 x[CLUSTER_240,pig_man,Plant_7] 0
 x[CLUSTER_240,pig_man,Plant_8] 0
@@ -19223,7 +19223,7 @@ x[CLUSTER_240,legume_str,Plant_9] 0
 x[CLUSTER_241,cattle_man,Plant_0] 0
 x[CLUSTER_241,cattle_man,Plant_1] 0
 x[CLUSTER_241,cattle_man,Plant_2] 0
-x[CLUSTER_241,cattle_man,Plant_3] 0.01043
+x[CLUSTER_241,cattle_man,Plant_3] 0
 x[CLUSTER_241,cattle_man,Plant_4] 0
 x[CLUSTER_241,cattle_man,Plant_5] 0
 x[CLUSTER_241,cattle_man,Plant_6] 0
@@ -19243,7 +19243,7 @@ x[CLUSTER_241,cattle_slu,Plant_9] 0
 x[CLUSTER_241,horse_man,Plant_0] 0
 x[CLUSTER_241,horse_man,Plant_1] 0
 x[CLUSTER_241,horse_man,Plant_2] 0
-x[CLUSTER_241,horse_man,Plant_3] 9.6810000000000006e-04
+x[CLUSTER_241,horse_man,Plant_3] 0
 x[CLUSTER_241,horse_man,Plant_4] 0
 x[CLUSTER_241,horse_man,Plant_5] 0
 x[CLUSTER_241,horse_man,Plant_6] 0
@@ -19342,7 +19342,7 @@ x[CLUSTER_241,legume_str,Plant_8] 0
 x[CLUSTER_241,legume_str,Plant_9] 0
 x[CLUSTER_242,cattle_man,Plant_0] 0
 x[CLUSTER_242,cattle_man,Plant_1] 0
-x[CLUSTER_242,cattle_man,Plant_2] 0.0113
+x[CLUSTER_242,cattle_man,Plant_2] 0
 x[CLUSTER_242,cattle_man,Plant_3] 0
 x[CLUSTER_242,cattle_man,Plant_4] 0
 x[CLUSTER_242,cattle_man,Plant_5] 0
@@ -19352,7 +19352,7 @@ x[CLUSTER_242,cattle_man,Plant_8] 0
 x[CLUSTER_242,cattle_man,Plant_9] 0
 x[CLUSTER_242,cattle_slu,Plant_0] 0
 x[CLUSTER_242,cattle_slu,Plant_1] 0
-x[CLUSTER_242,cattle_slu,Plant_2] 0.0831
+x[CLUSTER_242,cattle_slu,Plant_2] 0
 x[CLUSTER_242,cattle_slu,Plant_3] 0
 x[CLUSTER_242,cattle_slu,Plant_4] 0
 x[CLUSTER_242,cattle_slu,Plant_5] 0
@@ -19362,7 +19362,7 @@ x[CLUSTER_242,cattle_slu,Plant_8] 0
 x[CLUSTER_242,cattle_slu,Plant_9] 0
 x[CLUSTER_242,horse_man,Plant_0] 0
 x[CLUSTER_242,horse_man,Plant_1] 0
-x[CLUSTER_242,horse_man,Plant_2] 0.00085
+x[CLUSTER_242,horse_man,Plant_2] 0
 x[CLUSTER_242,horse_man,Plant_3] 0
 x[CLUSTER_242,horse_man,Plant_4] 0
 x[CLUSTER_242,horse_man,Plant_5] 0
@@ -19382,7 +19382,7 @@ x[CLUSTER_242,pig_slu,Plant_8] 0
 x[CLUSTER_242,pig_slu,Plant_9] 0
 x[CLUSTER_242,pig_man,Plant_0] 0
 x[CLUSTER_242,pig_man,Plant_1] 0
-x[CLUSTER_242,pig_man,Plant_2] 0.0002579398
+x[CLUSTER_242,pig_man,Plant_2] 0
 x[CLUSTER_242,pig_man,Plant_3] 0
 x[CLUSTER_242,pig_man,Plant_4] 0
 x[CLUSTER_242,pig_man,Plant_5] 0
@@ -19429,7 +19429,7 @@ x[CLUSTER_242,maize_str,Plant_5] 0
 x[CLUSTER_242,maize_str,Plant_6] 0
 x[CLUSTER_242,maize_str,Plant_7] 0
 x[CLUSTER_242,maize_str,Plant_8] 0
-x[CLUSTER_242,maize_str,Plant_9] 8.2099999999999990e-05
+x[CLUSTER_242,maize_str,Plant_9] 0
 x[CLUSTER_242,beet_leaf,Plant_0] 0
 x[CLUSTER_242,beet_leaf,Plant_1] 0
 x[CLUSTER_242,beet_leaf,Plant_2] 0
@@ -19461,7 +19461,7 @@ x[CLUSTER_242,legume_str,Plant_7] 0
 x[CLUSTER_242,legume_str,Plant_8] 0
 x[CLUSTER_242,legume_str,Plant_9] 0
 x[CLUSTER_243,cattle_man,Plant_0] 0
-x[CLUSTER_243,cattle_man,Plant_1] 0.01932
+x[CLUSTER_243,cattle_man,Plant_1] 0
 x[CLUSTER_243,cattle_man,Plant_2] 0
 x[CLUSTER_243,cattle_man,Plant_3] 0
 x[CLUSTER_243,cattle_man,Plant_4] 0
@@ -19471,7 +19471,7 @@ x[CLUSTER_243,cattle_man,Plant_7] 0
 x[CLUSTER_243,cattle_man,Plant_8] 0
 x[CLUSTER_243,cattle_man,Plant_9] 0
 x[CLUSTER_243,cattle_slu,Plant_0] 0
-x[CLUSTER_243,cattle_slu,Plant_1] 0.0941
+x[CLUSTER_243,cattle_slu,Plant_1] 0
 x[CLUSTER_243,cattle_slu,Plant_2] 0
 x[CLUSTER_243,cattle_slu,Plant_3] 0
 x[CLUSTER_243,cattle_slu,Plant_4] 0
@@ -19481,7 +19481,7 @@ x[CLUSTER_243,cattle_slu,Plant_7] 0
 x[CLUSTER_243,cattle_slu,Plant_8] 0
 x[CLUSTER_243,cattle_slu,Plant_9] 0
 x[CLUSTER_243,horse_man,Plant_0] 0
-x[CLUSTER_243,horse_man,Plant_1] 0.002781
+x[CLUSTER_243,horse_man,Plant_1] 0
 x[CLUSTER_243,horse_man,Plant_2] 0
 x[CLUSTER_243,horse_man,Plant_3] 0
 x[CLUSTER_243,horse_man,Plant_4] 0
@@ -19586,7 +19586,7 @@ x[CLUSTER_244,cattle_man,Plant_2] 0
 x[CLUSTER_244,cattle_man,Plant_3] 0
 x[CLUSTER_244,cattle_man,Plant_4] 0
 x[CLUSTER_244,cattle_man,Plant_5] 0
-x[CLUSTER_244,cattle_man,Plant_6] 0.01865
+x[CLUSTER_244,cattle_man,Plant_6] 0
 x[CLUSTER_244,cattle_man,Plant_7] 0
 x[CLUSTER_244,cattle_man,Plant_8] 0
 x[CLUSTER_244,cattle_man,Plant_9] 0
@@ -19606,7 +19606,7 @@ x[CLUSTER_244,horse_man,Plant_2] 0
 x[CLUSTER_244,horse_man,Plant_3] 0
 x[CLUSTER_244,horse_man,Plant_4] 0
 x[CLUSTER_244,horse_man,Plant_5] 0
-x[CLUSTER_244,horse_man,Plant_6] 0.00307
+x[CLUSTER_244,horse_man,Plant_6] 0
 x[CLUSTER_244,horse_man,Plant_7] 0
 x[CLUSTER_244,horse_man,Plant_8] 0
 x[CLUSTER_244,horse_man,Plant_9] 0
@@ -19704,7 +19704,7 @@ x[CLUSTER_245,cattle_man,Plant_0] 0
 x[CLUSTER_245,cattle_man,Plant_1] 0
 x[CLUSTER_245,cattle_man,Plant_2] 0
 x[CLUSTER_245,cattle_man,Plant_3] 0
-x[CLUSTER_245,cattle_man,Plant_4] 0.013085
+x[CLUSTER_245,cattle_man,Plant_4] 0
 x[CLUSTER_245,cattle_man,Plant_5] 0
 x[CLUSTER_245,cattle_man,Plant_6] 0
 x[CLUSTER_245,cattle_man,Plant_7] 0
@@ -19714,7 +19714,7 @@ x[CLUSTER_245,cattle_slu,Plant_0] 0
 x[CLUSTER_245,cattle_slu,Plant_1] 0
 x[CLUSTER_245,cattle_slu,Plant_2] 0
 x[CLUSTER_245,cattle_slu,Plant_3] 0
-x[CLUSTER_245,cattle_slu,Plant_4] 0.08374
+x[CLUSTER_245,cattle_slu,Plant_4] 0
 x[CLUSTER_245,cattle_slu,Plant_5] 0
 x[CLUSTER_245,cattle_slu,Plant_6] 0
 x[CLUSTER_245,cattle_slu,Plant_7] 0
@@ -19724,7 +19724,7 @@ x[CLUSTER_245,horse_man,Plant_0] 0
 x[CLUSTER_245,horse_man,Plant_1] 0
 x[CLUSTER_245,horse_man,Plant_2] 0
 x[CLUSTER_245,horse_man,Plant_3] 0
-x[CLUSTER_245,horse_man,Plant_4] 7.9389999999999994e-04
+x[CLUSTER_245,horse_man,Plant_4] 0
 x[CLUSTER_245,horse_man,Plant_5] 0
 x[CLUSTER_245,horse_man,Plant_6] 0
 x[CLUSTER_245,horse_man,Plant_7] 0
@@ -19744,7 +19744,7 @@ x[CLUSTER_245,pig_man,Plant_0] 0
 x[CLUSTER_245,pig_man,Plant_1] 0
 x[CLUSTER_245,pig_man,Plant_2] 0
 x[CLUSTER_245,pig_man,Plant_3] 0
-x[CLUSTER_245,pig_man,Plant_4] 0.0003818
+x[CLUSTER_245,pig_man,Plant_4] 0
 x[CLUSTER_245,pig_man,Plant_5] 0
 x[CLUSTER_245,pig_man,Plant_6] 0
 x[CLUSTER_245,pig_man,Plant_7] 0
@@ -19827,7 +19827,7 @@ x[CLUSTER_246,cattle_man,Plant_3] 0
 x[CLUSTER_246,cattle_man,Plant_4] 0
 x[CLUSTER_246,cattle_man,Plant_5] 0
 x[CLUSTER_246,cattle_man,Plant_6] 0
-x[CLUSTER_246,cattle_man,Plant_7] 0.0022793
+x[CLUSTER_246,cattle_man,Plant_7] 0
 x[CLUSTER_246,cattle_man,Plant_8] 0
 x[CLUSTER_246,cattle_man,Plant_9] 0
 x[CLUSTER_246,cattle_slu,Plant_0] 0
@@ -19837,7 +19837,7 @@ x[CLUSTER_246,cattle_slu,Plant_3] 0
 x[CLUSTER_246,cattle_slu,Plant_4] 0
 x[CLUSTER_246,cattle_slu,Plant_5] 0
 x[CLUSTER_246,cattle_slu,Plant_6] 0
-x[CLUSTER_246,cattle_slu,Plant_7] 0.0009958
+x[CLUSTER_246,cattle_slu,Plant_7] 0
 x[CLUSTER_246,cattle_slu,Plant_8] 0
 x[CLUSTER_246,cattle_slu,Plant_9] 0
 x[CLUSTER_246,horse_man,Plant_0] 0
@@ -19847,7 +19847,7 @@ x[CLUSTER_246,horse_man,Plant_3] 0
 x[CLUSTER_246,horse_man,Plant_4] 0
 x[CLUSTER_246,horse_man,Plant_5] 0
 x[CLUSTER_246,horse_man,Plant_6] 0
-x[CLUSTER_246,horse_man,Plant_7] 0.0011604
+x[CLUSTER_246,horse_man,Plant_7] 0
 x[CLUSTER_246,horse_man,Plant_8] 0
 x[CLUSTER_246,horse_man,Plant_9] 0
 x[CLUSTER_246,pig_slu,Plant_0] 0
@@ -19857,7 +19857,7 @@ x[CLUSTER_246,pig_slu,Plant_3] 0
 x[CLUSTER_246,pig_slu,Plant_4] 0
 x[CLUSTER_246,pig_slu,Plant_5] 0
 x[CLUSTER_246,pig_slu,Plant_6] 0
-x[CLUSTER_246,pig_slu,Plant_7] 1.5261720577425947e-03
+x[CLUSTER_246,pig_slu,Plant_7] 0
 x[CLUSTER_246,pig_slu,Plant_8] 0
 x[CLUSTER_246,pig_slu,Plant_9] 0
 x[CLUSTER_246,pig_man,Plant_0] 0
@@ -19867,7 +19867,7 @@ x[CLUSTER_246,pig_man,Plant_3] 0
 x[CLUSTER_246,pig_man,Plant_4] 0
 x[CLUSTER_246,pig_man,Plant_5] 0
 x[CLUSTER_246,pig_man,Plant_6] 0
-x[CLUSTER_246,pig_man,Plant_7] 0.000400322
+x[CLUSTER_246,pig_man,Plant_7] 0
 x[CLUSTER_246,pig_man,Plant_8] 0
 x[CLUSTER_246,pig_man,Plant_9] 0
 x[CLUSTER_246,cereal_str,Plant_0] 0
@@ -19909,7 +19909,7 @@ x[CLUSTER_246,maize_str,Plant_5] 0
 x[CLUSTER_246,maize_str,Plant_6] 0
 x[CLUSTER_246,maize_str,Plant_7] 0
 x[CLUSTER_246,maize_str,Plant_8] 0
-x[CLUSTER_246,maize_str,Plant_9] 0.0001563
+x[CLUSTER_246,maize_str,Plant_9] 0
 x[CLUSTER_246,beet_leaf,Plant_0] 0
 x[CLUSTER_246,beet_leaf,Plant_1] 0
 x[CLUSTER_246,beet_leaf,Plant_2] 0
@@ -19949,7 +19949,7 @@ x[CLUSTER_247,cattle_man,Plant_5] 0
 x[CLUSTER_247,cattle_man,Plant_6] 0
 x[CLUSTER_247,cattle_man,Plant_7] 0
 x[CLUSTER_247,cattle_man,Plant_8] 0
-x[CLUSTER_247,cattle_man,Plant_9] 0.002871
+x[CLUSTER_247,cattle_man,Plant_9] 0
 x[CLUSTER_247,cattle_slu,Plant_0] 0
 x[CLUSTER_247,cattle_slu,Plant_1] 0
 x[CLUSTER_247,cattle_slu,Plant_2] 0
@@ -19969,7 +19969,7 @@ x[CLUSTER_247,horse_man,Plant_5] 0
 x[CLUSTER_247,horse_man,Plant_6] 0
 x[CLUSTER_247,horse_man,Plant_7] 0
 x[CLUSTER_247,horse_man,Plant_8] 0
-x[CLUSTER_247,horse_man,Plant_9] 0.000632
+x[CLUSTER_247,horse_man,Plant_9] 0
 x[CLUSTER_247,pig_slu,Plant_0] 0
 x[CLUSTER_247,pig_slu,Plant_1] 0
 x[CLUSTER_247,pig_slu,Plant_2] 0
@@ -19987,7 +19987,7 @@ x[CLUSTER_247,pig_man,Plant_3] 0
 x[CLUSTER_247,pig_man,Plant_4] 0
 x[CLUSTER_247,pig_man,Plant_5] 0
 x[CLUSTER_247,pig_man,Plant_6] 0
-x[CLUSTER_247,pig_man,Plant_7] 0.000228
+x[CLUSTER_247,pig_man,Plant_7] 0
 x[CLUSTER_247,pig_man,Plant_8] 0
 x[CLUSTER_247,pig_man,Plant_9] 0
 x[CLUSTER_247,cereal_str,Plant_0] 0
@@ -20009,7 +20009,7 @@ x[CLUSTER_247,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_247,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_247,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_247,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_247,clover_alfalfa_grass,Plant_9] 0.00432
+x[CLUSTER_247,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_247,perm_grass,Plant_0] 0
 x[CLUSTER_247,perm_grass,Plant_1] 0
 x[CLUSTER_247,perm_grass,Plant_2] 0
@@ -20029,7 +20029,7 @@ x[CLUSTER_247,maize_str,Plant_5] 0
 x[CLUSTER_247,maize_str,Plant_6] 0
 x[CLUSTER_247,maize_str,Plant_7] 0
 x[CLUSTER_247,maize_str,Plant_8] 0
-x[CLUSTER_247,maize_str,Plant_9] 1.6109999999999999e-04
+x[CLUSTER_247,maize_str,Plant_9] 0
 x[CLUSTER_247,beet_leaf,Plant_0] 0
 x[CLUSTER_247,beet_leaf,Plant_1] 0
 x[CLUSTER_247,beet_leaf,Plant_2] 0
@@ -20068,7 +20068,7 @@ x[CLUSTER_248,cattle_man,Plant_4] 0
 x[CLUSTER_248,cattle_man,Plant_5] 0
 x[CLUSTER_248,cattle_man,Plant_6] 0
 x[CLUSTER_248,cattle_man,Plant_7] 0
-x[CLUSTER_248,cattle_man,Plant_8] 0.000377
+x[CLUSTER_248,cattle_man,Plant_8] 0
 x[CLUSTER_248,cattle_man,Plant_9] 0
 x[CLUSTER_248,cattle_slu,Plant_0] 0
 x[CLUSTER_248,cattle_slu,Plant_1] 0
@@ -20082,7 +20082,7 @@ x[CLUSTER_248,cattle_slu,Plant_8] 0
 x[CLUSTER_248,cattle_slu,Plant_9] 0
 x[CLUSTER_248,horse_man,Plant_0] 0
 x[CLUSTER_248,horse_man,Plant_1] 0
-x[CLUSTER_248,horse_man,Plant_2] 0.0002584
+x[CLUSTER_248,horse_man,Plant_2] 0
 x[CLUSTER_248,horse_man,Plant_3] 0
 x[CLUSTER_248,horse_man,Plant_4] 0
 x[CLUSTER_248,horse_man,Plant_5] 0
@@ -20108,7 +20108,7 @@ x[CLUSTER_248,pig_man,Plant_4] 0
 x[CLUSTER_248,pig_man,Plant_5] 0
 x[CLUSTER_248,pig_man,Plant_6] 0
 x[CLUSTER_248,pig_man,Plant_7] 0
-x[CLUSTER_248,pig_man,Plant_8] 0.000337
+x[CLUSTER_248,pig_man,Plant_8] 0
 x[CLUSTER_248,pig_man,Plant_9] 0
 x[CLUSTER_248,cereal_str,Plant_0] 0
 x[CLUSTER_248,cereal_str,Plant_1] 0
@@ -20184,7 +20184,7 @@ x[CLUSTER_249,cattle_man,Plant_0] 0
 x[CLUSTER_249,cattle_man,Plant_1] 0
 x[CLUSTER_249,cattle_man,Plant_2] 0
 x[CLUSTER_249,cattle_man,Plant_3] 0
-x[CLUSTER_249,cattle_man,Plant_4] 0.009836
+x[CLUSTER_249,cattle_man,Plant_4] 0
 x[CLUSTER_249,cattle_man,Plant_5] 0
 x[CLUSTER_249,cattle_man,Plant_6] 0
 x[CLUSTER_249,cattle_man,Plant_7] 0
@@ -20204,7 +20204,7 @@ x[CLUSTER_249,horse_man,Plant_0] 0
 x[CLUSTER_249,horse_man,Plant_1] 0
 x[CLUSTER_249,horse_man,Plant_2] 0
 x[CLUSTER_249,horse_man,Plant_3] 0
-x[CLUSTER_249,horse_man,Plant_4] 0.001754
+x[CLUSTER_249,horse_man,Plant_4] 0
 x[CLUSTER_249,horse_man,Plant_5] 0
 x[CLUSTER_249,horse_man,Plant_6] 0
 x[CLUSTER_249,horse_man,Plant_7] 0
@@ -20220,7 +20220,7 @@ x[CLUSTER_249,pig_slu,Plant_6] 0
 x[CLUSTER_249,pig_slu,Plant_7] 0
 x[CLUSTER_249,pig_slu,Plant_8] 0
 x[CLUSTER_249,pig_slu,Plant_9] 0
-x[CLUSTER_249,pig_man,Plant_0] 5.0923000000000006e-04
+x[CLUSTER_249,pig_man,Plant_0] 0
 x[CLUSTER_249,pig_man,Plant_1] 0
 x[CLUSTER_249,pig_man,Plant_2] 0
 x[CLUSTER_249,pig_man,Plant_3] 0
@@ -20304,7 +20304,7 @@ x[CLUSTER_25,cattle_man,Plant_0] 0
 x[CLUSTER_25,cattle_man,Plant_1] 0
 x[CLUSTER_25,cattle_man,Plant_2] 0
 x[CLUSTER_25,cattle_man,Plant_3] 0
-x[CLUSTER_25,cattle_man,Plant_4] 0.00246958
+x[CLUSTER_25,cattle_man,Plant_4] 0
 x[CLUSTER_25,cattle_man,Plant_5] 0
 x[CLUSTER_25,cattle_man,Plant_6] 0
 x[CLUSTER_25,cattle_man,Plant_7] 0
@@ -20324,7 +20324,7 @@ x[CLUSTER_25,horse_man,Plant_0] 0
 x[CLUSTER_25,horse_man,Plant_1] 0
 x[CLUSTER_25,horse_man,Plant_2] 0
 x[CLUSTER_25,horse_man,Plant_3] 0
-x[CLUSTER_25,horse_man,Plant_4] 0.0003951
+x[CLUSTER_25,horse_man,Plant_4] 0
 x[CLUSTER_25,horse_man,Plant_5] 0
 x[CLUSTER_25,horse_man,Plant_6] 0
 x[CLUSTER_25,horse_man,Plant_7] 0
@@ -20423,7 +20423,7 @@ x[CLUSTER_25,legume_str,Plant_9] 0
 x[CLUSTER_250,cattle_man,Plant_0] 0
 x[CLUSTER_250,cattle_man,Plant_1] 0
 x[CLUSTER_250,cattle_man,Plant_2] 0
-x[CLUSTER_250,cattle_man,Plant_3] 0.00873582
+x[CLUSTER_250,cattle_man,Plant_3] 0
 x[CLUSTER_250,cattle_man,Plant_4] 0
 x[CLUSTER_250,cattle_man,Plant_5] 0
 x[CLUSTER_250,cattle_man,Plant_6] 0
@@ -20443,7 +20443,7 @@ x[CLUSTER_250,cattle_slu,Plant_9] 0
 x[CLUSTER_250,horse_man,Plant_0] 0
 x[CLUSTER_250,horse_man,Plant_1] 0
 x[CLUSTER_250,horse_man,Plant_2] 0
-x[CLUSTER_250,horse_man,Plant_3] 0.00119
+x[CLUSTER_250,horse_man,Plant_3] 0
 x[CLUSTER_250,horse_man,Plant_4] 0
 x[CLUSTER_250,horse_man,Plant_5] 0
 x[CLUSTER_250,horse_man,Plant_6] 0
@@ -20463,7 +20463,7 @@ x[CLUSTER_250,pig_slu,Plant_9] 0
 x[CLUSTER_250,pig_man,Plant_0] 0
 x[CLUSTER_250,pig_man,Plant_1] 0
 x[CLUSTER_250,pig_man,Plant_2] 0
-x[CLUSTER_250,pig_man,Plant_3] 5.4334000000000005e-05
+x[CLUSTER_250,pig_man,Plant_3] 0
 x[CLUSTER_250,pig_man,Plant_4] 0
 x[CLUSTER_250,pig_man,Plant_5] 0
 x[CLUSTER_250,pig_man,Plant_6] 0
@@ -20547,7 +20547,7 @@ x[CLUSTER_251,cattle_man,Plant_3] 0
 x[CLUSTER_251,cattle_man,Plant_4] 0
 x[CLUSTER_251,cattle_man,Plant_5] 0
 x[CLUSTER_251,cattle_man,Plant_6] 0
-x[CLUSTER_251,cattle_man,Plant_7] 1.7184000000000001e-03
+x[CLUSTER_251,cattle_man,Plant_7] 0
 x[CLUSTER_251,cattle_man,Plant_8] 0
 x[CLUSTER_251,cattle_man,Plant_9] 0
 x[CLUSTER_251,cattle_slu,Plant_0] 0
@@ -20557,7 +20557,7 @@ x[CLUSTER_251,cattle_slu,Plant_3] 0
 x[CLUSTER_251,cattle_slu,Plant_4] 0
 x[CLUSTER_251,cattle_slu,Plant_5] 0
 x[CLUSTER_251,cattle_slu,Plant_6] 0
-x[CLUSTER_251,cattle_slu,Plant_7] 1.5927999999999554e-03
+x[CLUSTER_251,cattle_slu,Plant_7] 0
 x[CLUSTER_251,cattle_slu,Plant_8] 0
 x[CLUSTER_251,cattle_slu,Plant_9] 0
 x[CLUSTER_251,horse_man,Plant_0] 0
@@ -20567,7 +20567,7 @@ x[CLUSTER_251,horse_man,Plant_3] 0
 x[CLUSTER_251,horse_man,Plant_4] 0
 x[CLUSTER_251,horse_man,Plant_5] 0
 x[CLUSTER_251,horse_man,Plant_6] 0
-x[CLUSTER_251,horse_man,Plant_7] 2.3930000000000002e-04
+x[CLUSTER_251,horse_man,Plant_7] 0
 x[CLUSTER_251,horse_man,Plant_8] 0
 x[CLUSTER_251,horse_man,Plant_9] 0
 x[CLUSTER_251,pig_slu,Plant_0] 0
@@ -20577,7 +20577,7 @@ x[CLUSTER_251,pig_slu,Plant_3] 0
 x[CLUSTER_251,pig_slu,Plant_4] 0
 x[CLUSTER_251,pig_slu,Plant_5] 0
 x[CLUSTER_251,pig_slu,Plant_6] 0
-x[CLUSTER_251,pig_slu,Plant_7] 0.005721
+x[CLUSTER_251,pig_slu,Plant_7] 0
 x[CLUSTER_251,pig_slu,Plant_8] 0
 x[CLUSTER_251,pig_slu,Plant_9] 0
 x[CLUSTER_251,pig_man,Plant_0] 0
@@ -20587,7 +20587,7 @@ x[CLUSTER_251,pig_man,Plant_3] 0
 x[CLUSTER_251,pig_man,Plant_4] 0
 x[CLUSTER_251,pig_man,Plant_5] 0
 x[CLUSTER_251,pig_man,Plant_6] 0
-x[CLUSTER_251,pig_man,Plant_7] 0.00033571
+x[CLUSTER_251,pig_man,Plant_7] 0
 x[CLUSTER_251,pig_man,Plant_8] 0
 x[CLUSTER_251,pig_man,Plant_9] 0
 x[CLUSTER_251,cereal_str,Plant_0] 0
@@ -20661,7 +20661,7 @@ x[CLUSTER_251,legume_str,Plant_7] 0
 x[CLUSTER_251,legume_str,Plant_8] 0
 x[CLUSTER_251,legume_str,Plant_9] 0
 x[CLUSTER_252,cattle_man,Plant_0] 0
-x[CLUSTER_252,cattle_man,Plant_1] 0.02395
+x[CLUSTER_252,cattle_man,Plant_1] 0
 x[CLUSTER_252,cattle_man,Plant_2] 0
 x[CLUSTER_252,cattle_man,Plant_3] 0
 x[CLUSTER_252,cattle_man,Plant_4] 0
@@ -20681,7 +20681,7 @@ x[CLUSTER_252,cattle_slu,Plant_7] 0
 x[CLUSTER_252,cattle_slu,Plant_8] 0
 x[CLUSTER_252,cattle_slu,Plant_9] 0
 x[CLUSTER_252,horse_man,Plant_0] 0
-x[CLUSTER_252,horse_man,Plant_1] 0.002046
+x[CLUSTER_252,horse_man,Plant_1] 0
 x[CLUSTER_252,horse_man,Plant_2] 0
 x[CLUSTER_252,horse_man,Plant_3] 0
 x[CLUSTER_252,horse_man,Plant_4] 0
@@ -20788,7 +20788,7 @@ x[CLUSTER_253,cattle_man,Plant_4] 0
 x[CLUSTER_253,cattle_man,Plant_5] 0
 x[CLUSTER_253,cattle_man,Plant_6] 0
 x[CLUSTER_253,cattle_man,Plant_7] 0
-x[CLUSTER_253,cattle_man,Plant_8] 0.006043
+x[CLUSTER_253,cattle_man,Plant_8] 0
 x[CLUSTER_253,cattle_man,Plant_9] 0
 x[CLUSTER_253,cattle_slu,Plant_0] 0
 x[CLUSTER_253,cattle_slu,Plant_1] 0
@@ -20808,7 +20808,7 @@ x[CLUSTER_253,horse_man,Plant_4] 0
 x[CLUSTER_253,horse_man,Plant_5] 0
 x[CLUSTER_253,horse_man,Plant_6] 0
 x[CLUSTER_253,horse_man,Plant_7] 0
-x[CLUSTER_253,horse_man,Plant_8] 0.003082
+x[CLUSTER_253,horse_man,Plant_8] 0
 x[CLUSTER_253,horse_man,Plant_9] 0
 x[CLUSTER_253,pig_slu,Plant_0] 0
 x[CLUSTER_253,pig_slu,Plant_1] 0
@@ -20828,7 +20828,7 @@ x[CLUSTER_253,pig_man,Plant_4] 0
 x[CLUSTER_253,pig_man,Plant_5] 0
 x[CLUSTER_253,pig_man,Plant_6] 0
 x[CLUSTER_253,pig_man,Plant_7] 0
-x[CLUSTER_253,pig_man,Plant_8] 3.7927999999999996e-04
+x[CLUSTER_253,pig_man,Plant_8] 0
 x[CLUSTER_253,pig_man,Plant_9] 0
 x[CLUSTER_253,cereal_str,Plant_0] 0
 x[CLUSTER_253,cereal_str,Plant_1] 0
@@ -20903,7 +20903,7 @@ x[CLUSTER_253,legume_str,Plant_9] 0
 x[CLUSTER_254,cattle_man,Plant_0] 0
 x[CLUSTER_254,cattle_man,Plant_1] 0
 x[CLUSTER_254,cattle_man,Plant_2] 0
-x[CLUSTER_254,cattle_man,Plant_3] 0.008256
+x[CLUSTER_254,cattle_man,Plant_3] 0
 x[CLUSTER_254,cattle_man,Plant_4] 0
 x[CLUSTER_254,cattle_man,Plant_5] 0
 x[CLUSTER_254,cattle_man,Plant_6] 0
@@ -20923,7 +20923,7 @@ x[CLUSTER_254,cattle_slu,Plant_9] 0
 x[CLUSTER_254,horse_man,Plant_0] 0
 x[CLUSTER_254,horse_man,Plant_1] 0
 x[CLUSTER_254,horse_man,Plant_2] 0
-x[CLUSTER_254,horse_man,Plant_3] 0.0017115
+x[CLUSTER_254,horse_man,Plant_3] 0
 x[CLUSTER_254,horse_man,Plant_4] 0
 x[CLUSTER_254,horse_man,Plant_5] 0
 x[CLUSTER_254,horse_man,Plant_6] 0
@@ -21024,7 +21024,7 @@ x[CLUSTER_255,cattle_man,Plant_0] 0
 x[CLUSTER_255,cattle_man,Plant_1] 0
 x[CLUSTER_255,cattle_man,Plant_2] 0
 x[CLUSTER_255,cattle_man,Plant_3] 0
-x[CLUSTER_255,cattle_man,Plant_4] 0.0051
+x[CLUSTER_255,cattle_man,Plant_4] 0
 x[CLUSTER_255,cattle_man,Plant_5] 0
 x[CLUSTER_255,cattle_man,Plant_6] 0
 x[CLUSTER_255,cattle_man,Plant_7] 0
@@ -21044,7 +21044,7 @@ x[CLUSTER_255,horse_man,Plant_0] 0
 x[CLUSTER_255,horse_man,Plant_1] 0
 x[CLUSTER_255,horse_man,Plant_2] 0
 x[CLUSTER_255,horse_man,Plant_3] 0
-x[CLUSTER_255,horse_man,Plant_4] 0.0017205
+x[CLUSTER_255,horse_man,Plant_4] 0
 x[CLUSTER_255,horse_man,Plant_5] 0
 x[CLUSTER_255,horse_man,Plant_6] 0
 x[CLUSTER_255,horse_man,Plant_7] 0
@@ -21064,7 +21064,7 @@ x[CLUSTER_255,pig_man,Plant_0] 0
 x[CLUSTER_255,pig_man,Plant_1] 0
 x[CLUSTER_255,pig_man,Plant_2] 0
 x[CLUSTER_255,pig_man,Plant_3] 0
-x[CLUSTER_255,pig_man,Plant_4] 0.00020436
+x[CLUSTER_255,pig_man,Plant_4] 0
 x[CLUSTER_255,pig_man,Plant_5] 0
 x[CLUSTER_255,pig_man,Plant_6] 0
 x[CLUSTER_255,pig_man,Plant_7] 0
@@ -21089,7 +21089,7 @@ x[CLUSTER_255,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_255,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_255,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_255,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_255,clover_alfalfa_grass,Plant_9] 0.003538277
+x[CLUSTER_255,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_255,perm_grass,Plant_0] 0
 x[CLUSTER_255,perm_grass,Plant_1] 0
 x[CLUSTER_255,perm_grass,Plant_2] 0
@@ -21109,7 +21109,7 @@ x[CLUSTER_255,maize_str,Plant_5] 0
 x[CLUSTER_255,maize_str,Plant_6] 0
 x[CLUSTER_255,maize_str,Plant_7] 0
 x[CLUSTER_255,maize_str,Plant_8] 0
-x[CLUSTER_255,maize_str,Plant_9] 9.114e-05
+x[CLUSTER_255,maize_str,Plant_9] 0
 x[CLUSTER_255,beet_leaf,Plant_0] 0
 x[CLUSTER_255,beet_leaf,Plant_1] 0
 x[CLUSTER_255,beet_leaf,Plant_2] 0
@@ -21148,7 +21148,7 @@ x[CLUSTER_256,cattle_man,Plant_4] 0
 x[CLUSTER_256,cattle_man,Plant_5] 0
 x[CLUSTER_256,cattle_man,Plant_6] 0
 x[CLUSTER_256,cattle_man,Plant_7] 0
-x[CLUSTER_256,cattle_man,Plant_8] 0.00266696
+x[CLUSTER_256,cattle_man,Plant_8] 0
 x[CLUSTER_256,cattle_man,Plant_9] 0
 x[CLUSTER_256,cattle_slu,Plant_0] 0
 x[CLUSTER_256,cattle_slu,Plant_1] 0
@@ -21168,7 +21168,7 @@ x[CLUSTER_256,horse_man,Plant_4] 0
 x[CLUSTER_256,horse_man,Plant_5] 0
 x[CLUSTER_256,horse_man,Plant_6] 0
 x[CLUSTER_256,horse_man,Plant_7] 0
-x[CLUSTER_256,horse_man,Plant_8] 0.00293
+x[CLUSTER_256,horse_man,Plant_8] 0
 x[CLUSTER_256,horse_man,Plant_9] 0
 x[CLUSTER_256,pig_slu,Plant_0] 0
 x[CLUSTER_256,pig_slu,Plant_1] 0
@@ -21185,7 +21185,7 @@ x[CLUSTER_256,pig_man,Plant_1] 0
 x[CLUSTER_256,pig_man,Plant_2] 0
 x[CLUSTER_256,pig_man,Plant_3] 0
 x[CLUSTER_256,pig_man,Plant_4] 0
-x[CLUSTER_256,pig_man,Plant_5] 1.48359e-05
+x[CLUSTER_256,pig_man,Plant_5] 0
 x[CLUSTER_256,pig_man,Plant_6] 0
 x[CLUSTER_256,pig_man,Plant_7] 0
 x[CLUSTER_256,pig_man,Plant_8] 0
@@ -21265,7 +21265,7 @@ x[CLUSTER_257,cattle_man,Plant_1] 0
 x[CLUSTER_257,cattle_man,Plant_2] 0
 x[CLUSTER_257,cattle_man,Plant_3] 0
 x[CLUSTER_257,cattle_man,Plant_4] 0
-x[CLUSTER_257,cattle_man,Plant_5] 0.0005125
+x[CLUSTER_257,cattle_man,Plant_5] 0
 x[CLUSTER_257,cattle_man,Plant_6] 0
 x[CLUSTER_257,cattle_man,Plant_7] 0
 x[CLUSTER_257,cattle_man,Plant_8] 0
@@ -21275,7 +21275,7 @@ x[CLUSTER_257,cattle_slu,Plant_1] 0
 x[CLUSTER_257,cattle_slu,Plant_2] 0
 x[CLUSTER_257,cattle_slu,Plant_3] 0
 x[CLUSTER_257,cattle_slu,Plant_4] 0
-x[CLUSTER_257,cattle_slu,Plant_5] 0.003397
+x[CLUSTER_257,cattle_slu,Plant_5] 0
 x[CLUSTER_257,cattle_slu,Plant_6] 0
 x[CLUSTER_257,cattle_slu,Plant_7] 0
 x[CLUSTER_257,cattle_slu,Plant_8] 0
@@ -21285,7 +21285,7 @@ x[CLUSTER_257,horse_man,Plant_1] 0
 x[CLUSTER_257,horse_man,Plant_2] 0
 x[CLUSTER_257,horse_man,Plant_3] 0
 x[CLUSTER_257,horse_man,Plant_4] 0
-x[CLUSTER_257,horse_man,Plant_5] 0.001598
+x[CLUSTER_257,horse_man,Plant_5] 0
 x[CLUSTER_257,horse_man,Plant_6] 0
 x[CLUSTER_257,horse_man,Plant_7] 0
 x[CLUSTER_257,horse_man,Plant_8] 0
@@ -21295,7 +21295,7 @@ x[CLUSTER_257,pig_slu,Plant_1] 0
 x[CLUSTER_257,pig_slu,Plant_2] 0
 x[CLUSTER_257,pig_slu,Plant_3] 0
 x[CLUSTER_257,pig_slu,Plant_4] 0
-x[CLUSTER_257,pig_slu,Plant_5] 3.0294000000000078e-02
+x[CLUSTER_257,pig_slu,Plant_5] 0
 x[CLUSTER_257,pig_slu,Plant_6] 0
 x[CLUSTER_257,pig_slu,Plant_7] 0
 x[CLUSTER_257,pig_slu,Plant_8] 0
@@ -21305,7 +21305,7 @@ x[CLUSTER_257,pig_man,Plant_1] 0
 x[CLUSTER_257,pig_man,Plant_2] 0
 x[CLUSTER_257,pig_man,Plant_3] 0
 x[CLUSTER_257,pig_man,Plant_4] 0
-x[CLUSTER_257,pig_man,Plant_5] 1.7044100000000002e-03
+x[CLUSTER_257,pig_man,Plant_5] 0
 x[CLUSTER_257,pig_man,Plant_6] 0
 x[CLUSTER_257,pig_man,Plant_7] 0
 x[CLUSTER_257,pig_man,Plant_8] 0
@@ -21325,7 +21325,7 @@ x[CLUSTER_257,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_4] 0
-x[CLUSTER_257,clover_alfalfa_grass,Plant_5] 0.00386
+x[CLUSTER_257,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_257,clover_alfalfa_grass,Plant_8] 0
@@ -21345,7 +21345,7 @@ x[CLUSTER_257,maize_str,Plant_1] 0
 x[CLUSTER_257,maize_str,Plant_2] 0
 x[CLUSTER_257,maize_str,Plant_3] 0
 x[CLUSTER_257,maize_str,Plant_4] 0
-x[CLUSTER_257,maize_str,Plant_5] 0.004463
+x[CLUSTER_257,maize_str,Plant_5] 0
 x[CLUSTER_257,maize_str,Plant_6] 0
 x[CLUSTER_257,maize_str,Plant_7] 0
 x[CLUSTER_257,maize_str,Plant_8] 0
@@ -21383,7 +21383,7 @@ x[CLUSTER_257,legume_str,Plant_9] 0
 x[CLUSTER_258,cattle_man,Plant_0] 0
 x[CLUSTER_258,cattle_man,Plant_1] 0
 x[CLUSTER_258,cattle_man,Plant_2] 0
-x[CLUSTER_258,cattle_man,Plant_3] 0.01682
+x[CLUSTER_258,cattle_man,Plant_3] 0
 x[CLUSTER_258,cattle_man,Plant_4] 0
 x[CLUSTER_258,cattle_man,Plant_5] 0
 x[CLUSTER_258,cattle_man,Plant_6] 0
@@ -21403,7 +21403,7 @@ x[CLUSTER_258,cattle_slu,Plant_9] 0
 x[CLUSTER_258,horse_man,Plant_0] 0
 x[CLUSTER_258,horse_man,Plant_1] 0
 x[CLUSTER_258,horse_man,Plant_2] 0
-x[CLUSTER_258,horse_man,Plant_3] 0.001914
+x[CLUSTER_258,horse_man,Plant_3] 0
 x[CLUSTER_258,horse_man,Plant_4] 0
 x[CLUSTER_258,horse_man,Plant_5] 0
 x[CLUSTER_258,horse_man,Plant_6] 0
@@ -21500,7 +21500,7 @@ x[CLUSTER_258,legume_str,Plant_6] 0
 x[CLUSTER_258,legume_str,Plant_7] 0
 x[CLUSTER_258,legume_str,Plant_8] 0
 x[CLUSTER_258,legume_str,Plant_9] 0
-x[CLUSTER_259,cattle_man,Plant_0] 0.011538
+x[CLUSTER_259,cattle_man,Plant_0] 0
 x[CLUSTER_259,cattle_man,Plant_1] 0
 x[CLUSTER_259,cattle_man,Plant_2] 0
 x[CLUSTER_259,cattle_man,Plant_3] 0
@@ -21520,7 +21520,7 @@ x[CLUSTER_259,cattle_slu,Plant_6] 0
 x[CLUSTER_259,cattle_slu,Plant_7] 0
 x[CLUSTER_259,cattle_slu,Plant_8] 0
 x[CLUSTER_259,cattle_slu,Plant_9] 0
-x[CLUSTER_259,horse_man,Plant_0] 0.0008176
+x[CLUSTER_259,horse_man,Plant_0] 0
 x[CLUSTER_259,horse_man,Plant_1] 0
 x[CLUSTER_259,horse_man,Plant_2] 0
 x[CLUSTER_259,horse_man,Plant_3] 0
@@ -21540,7 +21540,7 @@ x[CLUSTER_259,pig_slu,Plant_6] 0
 x[CLUSTER_259,pig_slu,Plant_7] 0
 x[CLUSTER_259,pig_slu,Plant_8] 0
 x[CLUSTER_259,pig_slu,Plant_9] 0
-x[CLUSTER_259,pig_man,Plant_0] 0.00026008
+x[CLUSTER_259,pig_man,Plant_0] 0
 x[CLUSTER_259,pig_man,Plant_1] 0
 x[CLUSTER_259,pig_man,Plant_2] 0
 x[CLUSTER_259,pig_man,Plant_3] 0
@@ -21580,7 +21580,7 @@ x[CLUSTER_259,perm_grass,Plant_6] 0
 x[CLUSTER_259,perm_grass,Plant_7] 0
 x[CLUSTER_259,perm_grass,Plant_8] 0
 x[CLUSTER_259,perm_grass,Plant_9] 0
-x[CLUSTER_259,maize_str,Plant_0] 5.1e-05
+x[CLUSTER_259,maize_str,Plant_0] 0
 x[CLUSTER_259,maize_str,Plant_1] 0
 x[CLUSTER_259,maize_str,Plant_2] 0
 x[CLUSTER_259,maize_str,Plant_3] 0
@@ -21626,7 +21626,7 @@ x[CLUSTER_26,cattle_man,Plant_2] 0
 x[CLUSTER_26,cattle_man,Plant_3] 0
 x[CLUSTER_26,cattle_man,Plant_4] 0
 x[CLUSTER_26,cattle_man,Plant_5] 0
-x[CLUSTER_26,cattle_man,Plant_6] 0.02739
+x[CLUSTER_26,cattle_man,Plant_6] 0
 x[CLUSTER_26,cattle_man,Plant_7] 0
 x[CLUSTER_26,cattle_man,Plant_8] 0
 x[CLUSTER_26,cattle_man,Plant_9] 0
@@ -21646,7 +21646,7 @@ x[CLUSTER_26,horse_man,Plant_2] 0
 x[CLUSTER_26,horse_man,Plant_3] 0
 x[CLUSTER_26,horse_man,Plant_4] 0
 x[CLUSTER_26,horse_man,Plant_5] 0
-x[CLUSTER_26,horse_man,Plant_6] 0.004471
+x[CLUSTER_26,horse_man,Plant_6] 0
 x[CLUSTER_26,horse_man,Plant_7] 0
 x[CLUSTER_26,horse_man,Plant_8] 0
 x[CLUSTER_26,horse_man,Plant_9] 0
@@ -21747,7 +21747,7 @@ x[CLUSTER_260,cattle_man,Plant_3] 0
 x[CLUSTER_260,cattle_man,Plant_4] 0
 x[CLUSTER_260,cattle_man,Plant_5] 0
 x[CLUSTER_260,cattle_man,Plant_6] 0
-x[CLUSTER_260,cattle_man,Plant_7] 0.004728
+x[CLUSTER_260,cattle_man,Plant_7] 0
 x[CLUSTER_260,cattle_man,Plant_8] 0
 x[CLUSTER_260,cattle_man,Plant_9] 0
 x[CLUSTER_260,cattle_slu,Plant_0] 0
@@ -21757,7 +21757,7 @@ x[CLUSTER_260,cattle_slu,Plant_3] 0
 x[CLUSTER_260,cattle_slu,Plant_4] 0
 x[CLUSTER_260,cattle_slu,Plant_5] 0
 x[CLUSTER_260,cattle_slu,Plant_6] 0
-x[CLUSTER_260,cattle_slu,Plant_7] 0.0063
+x[CLUSTER_260,cattle_slu,Plant_7] 0
 x[CLUSTER_260,cattle_slu,Plant_8] 0
 x[CLUSTER_260,cattle_slu,Plant_9] 0
 x[CLUSTER_260,horse_man,Plant_0] 0
@@ -21767,7 +21767,7 @@ x[CLUSTER_260,horse_man,Plant_3] 0
 x[CLUSTER_260,horse_man,Plant_4] 0
 x[CLUSTER_260,horse_man,Plant_5] 0
 x[CLUSTER_260,horse_man,Plant_6] 0
-x[CLUSTER_260,horse_man,Plant_7] 0.001035
+x[CLUSTER_260,horse_man,Plant_7] 0
 x[CLUSTER_260,horse_man,Plant_8] 0
 x[CLUSTER_260,horse_man,Plant_9] 0
 x[CLUSTER_260,pig_slu,Plant_0] 0
@@ -21787,7 +21787,7 @@ x[CLUSTER_260,pig_man,Plant_3] 0
 x[CLUSTER_260,pig_man,Plant_4] 0
 x[CLUSTER_260,pig_man,Plant_5] 0
 x[CLUSTER_260,pig_man,Plant_6] 0
-x[CLUSTER_260,pig_man,Plant_7] 4.5446e-05
+x[CLUSTER_260,pig_man,Plant_7] 0
 x[CLUSTER_260,pig_man,Plant_8] 0
 x[CLUSTER_260,pig_man,Plant_9] 0
 x[CLUSTER_260,cereal_str,Plant_0] 0
@@ -21864,7 +21864,7 @@ x[CLUSTER_261,cattle_man,Plant_0] 0
 x[CLUSTER_261,cattle_man,Plant_1] 0
 x[CLUSTER_261,cattle_man,Plant_2] 0
 x[CLUSTER_261,cattle_man,Plant_3] 0
-x[CLUSTER_261,cattle_man,Plant_4] 0.01067
+x[CLUSTER_261,cattle_man,Plant_4] 0
 x[CLUSTER_261,cattle_man,Plant_5] 0
 x[CLUSTER_261,cattle_man,Plant_6] 0
 x[CLUSTER_261,cattle_man,Plant_7] 0
@@ -21874,7 +21874,7 @@ x[CLUSTER_261,cattle_slu,Plant_0] 0
 x[CLUSTER_261,cattle_slu,Plant_1] 0
 x[CLUSTER_261,cattle_slu,Plant_2] 0
 x[CLUSTER_261,cattle_slu,Plant_3] 0
-x[CLUSTER_261,cattle_slu,Plant_4] 1.3330603840645910e-02
+x[CLUSTER_261,cattle_slu,Plant_4] 0
 x[CLUSTER_261,cattle_slu,Plant_5] 0
 x[CLUSTER_261,cattle_slu,Plant_6] 0
 x[CLUSTER_261,cattle_slu,Plant_7] 0
@@ -21884,7 +21884,7 @@ x[CLUSTER_261,horse_man,Plant_0] 0
 x[CLUSTER_261,horse_man,Plant_1] 0
 x[CLUSTER_261,horse_man,Plant_2] 0
 x[CLUSTER_261,horse_man,Plant_3] 0
-x[CLUSTER_261,horse_man,Plant_4] 1.0882000000000079e-03
+x[CLUSTER_261,horse_man,Plant_4] 0
 x[CLUSTER_261,horse_man,Plant_5] 0
 x[CLUSTER_261,horse_man,Plant_6] 0
 x[CLUSTER_261,horse_man,Plant_7] 0
@@ -21904,7 +21904,7 @@ x[CLUSTER_261,pig_man,Plant_0] 0
 x[CLUSTER_261,pig_man,Plant_1] 0
 x[CLUSTER_261,pig_man,Plant_2] 0
 x[CLUSTER_261,pig_man,Plant_3] 0
-x[CLUSTER_261,pig_man,Plant_4] 4.2392000000000003e-05
+x[CLUSTER_261,pig_man,Plant_4] 0
 x[CLUSTER_261,pig_man,Plant_5] 0
 x[CLUSTER_261,pig_man,Plant_6] 0
 x[CLUSTER_261,pig_man,Plant_7] 0
@@ -21944,7 +21944,7 @@ x[CLUSTER_261,maize_str,Plant_0] 0
 x[CLUSTER_261,maize_str,Plant_1] 0
 x[CLUSTER_261,maize_str,Plant_2] 0
 x[CLUSTER_261,maize_str,Plant_3] 0
-x[CLUSTER_261,maize_str,Plant_4] 0.00013271
+x[CLUSTER_261,maize_str,Plant_4] 0
 x[CLUSTER_261,maize_str,Plant_5] 0
 x[CLUSTER_261,maize_str,Plant_6] 0
 x[CLUSTER_261,maize_str,Plant_7] 0
@@ -21980,7 +21980,7 @@ x[CLUSTER_261,legume_str,Plant_6] 0
 x[CLUSTER_261,legume_str,Plant_7] 0
 x[CLUSTER_261,legume_str,Plant_8] 0
 x[CLUSTER_261,legume_str,Plant_9] 0
-x[CLUSTER_262,cattle_man,Plant_0] 0.00732
+x[CLUSTER_262,cattle_man,Plant_0] 0
 x[CLUSTER_262,cattle_man,Plant_1] 0
 x[CLUSTER_262,cattle_man,Plant_2] 0
 x[CLUSTER_262,cattle_man,Plant_3] 0
@@ -22000,7 +22000,7 @@ x[CLUSTER_262,cattle_slu,Plant_6] 0
 x[CLUSTER_262,cattle_slu,Plant_7] 0
 x[CLUSTER_262,cattle_slu,Plant_8] 0
 x[CLUSTER_262,cattle_slu,Plant_9] 0
-x[CLUSTER_262,horse_man,Plant_0] 0.000491
+x[CLUSTER_262,horse_man,Plant_0] 0
 x[CLUSTER_262,horse_man,Plant_1] 0
 x[CLUSTER_262,horse_man,Plant_2] 0
 x[CLUSTER_262,horse_man,Plant_3] 0
@@ -22020,7 +22020,7 @@ x[CLUSTER_262,pig_slu,Plant_6] 0
 x[CLUSTER_262,pig_slu,Plant_7] 0
 x[CLUSTER_262,pig_slu,Plant_8] 0
 x[CLUSTER_262,pig_slu,Plant_9] 0
-x[CLUSTER_262,pig_man,Plant_0] 5.5520000000000004e-05
+x[CLUSTER_262,pig_man,Plant_0] 0
 x[CLUSTER_262,pig_man,Plant_1] 0
 x[CLUSTER_262,pig_man,Plant_2] 0
 x[CLUSTER_262,pig_man,Plant_3] 0
@@ -22105,7 +22105,7 @@ x[CLUSTER_263,cattle_man,Plant_1] 0
 x[CLUSTER_263,cattle_man,Plant_2] 0
 x[CLUSTER_263,cattle_man,Plant_3] 0
 x[CLUSTER_263,cattle_man,Plant_4] 0
-x[CLUSTER_263,cattle_man,Plant_5] 0.01115151
+x[CLUSTER_263,cattle_man,Plant_5] 0
 x[CLUSTER_263,cattle_man,Plant_6] 0
 x[CLUSTER_263,cattle_man,Plant_7] 0
 x[CLUSTER_263,cattle_man,Plant_8] 0
@@ -22125,7 +22125,7 @@ x[CLUSTER_263,horse_man,Plant_1] 0
 x[CLUSTER_263,horse_man,Plant_2] 0
 x[CLUSTER_263,horse_man,Plant_3] 0
 x[CLUSTER_263,horse_man,Plant_4] 0
-x[CLUSTER_263,horse_man,Plant_5] 0.003265
+x[CLUSTER_263,horse_man,Plant_5] 0
 x[CLUSTER_263,horse_man,Plant_6] 0
 x[CLUSTER_263,horse_man,Plant_7] 0
 x[CLUSTER_263,horse_man,Plant_8] 0
@@ -22145,7 +22145,7 @@ x[CLUSTER_263,pig_man,Plant_1] 0
 x[CLUSTER_263,pig_man,Plant_2] 0
 x[CLUSTER_263,pig_man,Plant_3] 0
 x[CLUSTER_263,pig_man,Plant_4] 0
-x[CLUSTER_263,pig_man,Plant_5] 1.9821000000000001e-04
+x[CLUSTER_263,pig_man,Plant_5] 0
 x[CLUSTER_263,pig_man,Plant_6] 0
 x[CLUSTER_263,pig_man,Plant_7] 0
 x[CLUSTER_263,pig_man,Plant_8] 0
@@ -22221,7 +22221,7 @@ x[CLUSTER_263,legume_str,Plant_7] 0
 x[CLUSTER_263,legume_str,Plant_8] 0
 x[CLUSTER_263,legume_str,Plant_9] 0
 x[CLUSTER_264,cattle_man,Plant_0] 0
-x[CLUSTER_264,cattle_man,Plant_1] 0.03357
+x[CLUSTER_264,cattle_man,Plant_1] 0
 x[CLUSTER_264,cattle_man,Plant_2] 0
 x[CLUSTER_264,cattle_man,Plant_3] 0
 x[CLUSTER_264,cattle_man,Plant_4] 0
@@ -22248,7 +22248,7 @@ x[CLUSTER_264,horse_man,Plant_4] 0
 x[CLUSTER_264,horse_man,Plant_5] 0
 x[CLUSTER_264,horse_man,Plant_6] 0
 x[CLUSTER_264,horse_man,Plant_7] 0
-x[CLUSTER_264,horse_man,Plant_8] 0.000387684
+x[CLUSTER_264,horse_man,Plant_8] 0
 x[CLUSTER_264,horse_man,Plant_9] 0
 x[CLUSTER_264,pig_slu,Plant_0] 0
 x[CLUSTER_264,pig_slu,Plant_1] 0
@@ -22268,7 +22268,7 @@ x[CLUSTER_264,pig_man,Plant_4] 0
 x[CLUSTER_264,pig_man,Plant_5] 0
 x[CLUSTER_264,pig_man,Plant_6] 0
 x[CLUSTER_264,pig_man,Plant_7] 0
-x[CLUSTER_264,pig_man,Plant_8] 1.0019925000000001e-04
+x[CLUSTER_264,pig_man,Plant_8] 0
 x[CLUSTER_264,pig_man,Plant_9] 0
 x[CLUSTER_264,cereal_str,Plant_0] 0
 x[CLUSTER_264,cereal_str,Plant_1] 0
@@ -22344,7 +22344,7 @@ x[CLUSTER_265,cattle_man,Plant_0] 0
 x[CLUSTER_265,cattle_man,Plant_1] 0
 x[CLUSTER_265,cattle_man,Plant_2] 0
 x[CLUSTER_265,cattle_man,Plant_3] 0
-x[CLUSTER_265,cattle_man,Plant_4] 0.001417
+x[CLUSTER_265,cattle_man,Plant_4] 0
 x[CLUSTER_265,cattle_man,Plant_5] 0
 x[CLUSTER_265,cattle_man,Plant_6] 0
 x[CLUSTER_265,cattle_man,Plant_7] 0
@@ -22364,7 +22364,7 @@ x[CLUSTER_265,horse_man,Plant_0] 0
 x[CLUSTER_265,horse_man,Plant_1] 0
 x[CLUSTER_265,horse_man,Plant_2] 0
 x[CLUSTER_265,horse_man,Plant_3] 0
-x[CLUSTER_265,horse_man,Plant_4] 1.1190999999999998e-03
+x[CLUSTER_265,horse_man,Plant_4] 0
 x[CLUSTER_265,horse_man,Plant_5] 0
 x[CLUSTER_265,horse_man,Plant_6] 0
 x[CLUSTER_265,horse_man,Plant_7] 0
@@ -22384,7 +22384,7 @@ x[CLUSTER_265,pig_man,Plant_0] 0
 x[CLUSTER_265,pig_man,Plant_1] 0
 x[CLUSTER_265,pig_man,Plant_2] 0
 x[CLUSTER_265,pig_man,Plant_3] 0
-x[CLUSTER_265,pig_man,Plant_4] 3.979e-05
+x[CLUSTER_265,pig_man,Plant_4] 0
 x[CLUSTER_265,pig_man,Plant_5] 0
 x[CLUSTER_265,pig_man,Plant_6] 0
 x[CLUSTER_265,pig_man,Plant_7] 0
@@ -22409,7 +22409,7 @@ x[CLUSTER_265,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_265,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_265,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_265,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_265,clover_alfalfa_grass,Plant_9] 0.0022065
+x[CLUSTER_265,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_265,perm_grass,Plant_0] 0
 x[CLUSTER_265,perm_grass,Plant_1] 0
 x[CLUSTER_265,perm_grass,Plant_2] 0
@@ -22429,7 +22429,7 @@ x[CLUSTER_265,maize_str,Plant_5] 0
 x[CLUSTER_265,maize_str,Plant_6] 0
 x[CLUSTER_265,maize_str,Plant_7] 0
 x[CLUSTER_265,maize_str,Plant_8] 0
-x[CLUSTER_265,maize_str,Plant_9] 0.00014962
+x[CLUSTER_265,maize_str,Plant_9] 0
 x[CLUSTER_265,beet_leaf,Plant_0] 0
 x[CLUSTER_265,beet_leaf,Plant_1] 0
 x[CLUSTER_265,beet_leaf,Plant_2] 0
@@ -22462,7 +22462,7 @@ x[CLUSTER_265,legume_str,Plant_8] 0
 x[CLUSTER_265,legume_str,Plant_9] 0
 x[CLUSTER_266,cattle_man,Plant_0] 0
 x[CLUSTER_266,cattle_man,Plant_1] 0
-x[CLUSTER_266,cattle_man,Plant_2] 0.0058648
+x[CLUSTER_266,cattle_man,Plant_2] 0
 x[CLUSTER_266,cattle_man,Plant_3] 0
 x[CLUSTER_266,cattle_man,Plant_4] 0
 x[CLUSTER_266,cattle_man,Plant_5] 0
@@ -22472,7 +22472,7 @@ x[CLUSTER_266,cattle_man,Plant_8] 0
 x[CLUSTER_266,cattle_man,Plant_9] 0
 x[CLUSTER_266,cattle_slu,Plant_0] 0
 x[CLUSTER_266,cattle_slu,Plant_1] 0
-x[CLUSTER_266,cattle_slu,Plant_2] 3.4979999999999893e-02
+x[CLUSTER_266,cattle_slu,Plant_2] 0
 x[CLUSTER_266,cattle_slu,Plant_3] 0
 x[CLUSTER_266,cattle_slu,Plant_4] 0
 x[CLUSTER_266,cattle_slu,Plant_5] 0
@@ -22482,7 +22482,7 @@ x[CLUSTER_266,cattle_slu,Plant_8] 0
 x[CLUSTER_266,cattle_slu,Plant_9] 0
 x[CLUSTER_266,horse_man,Plant_0] 0
 x[CLUSTER_266,horse_man,Plant_1] 0
-x[CLUSTER_266,horse_man,Plant_2] 2.7101260000000004e-04
+x[CLUSTER_266,horse_man,Plant_2] 0
 x[CLUSTER_266,horse_man,Plant_3] 0
 x[CLUSTER_266,horse_man,Plant_4] 0
 x[CLUSTER_266,horse_man,Plant_5] 0
@@ -22502,7 +22502,7 @@ x[CLUSTER_266,pig_slu,Plant_8] 0
 x[CLUSTER_266,pig_slu,Plant_9] 0
 x[CLUSTER_266,pig_man,Plant_0] 0
 x[CLUSTER_266,pig_man,Plant_1] 0
-x[CLUSTER_266,pig_man,Plant_2] 0.00061651
+x[CLUSTER_266,pig_man,Plant_2] 0
 x[CLUSTER_266,pig_man,Plant_3] 0
 x[CLUSTER_266,pig_man,Plant_4] 0
 x[CLUSTER_266,pig_man,Plant_5] 0
@@ -22585,7 +22585,7 @@ x[CLUSTER_267,cattle_man,Plant_1] 0
 x[CLUSTER_267,cattle_man,Plant_2] 0
 x[CLUSTER_267,cattle_man,Plant_3] 0
 x[CLUSTER_267,cattle_man,Plant_4] 0
-x[CLUSTER_267,cattle_man,Plant_5] 0.00617
+x[CLUSTER_267,cattle_man,Plant_5] 0
 x[CLUSTER_267,cattle_man,Plant_6] 0
 x[CLUSTER_267,cattle_man,Plant_7] 0
 x[CLUSTER_267,cattle_man,Plant_8] 0
@@ -22595,7 +22595,7 @@ x[CLUSTER_267,cattle_slu,Plant_1] 0
 x[CLUSTER_267,cattle_slu,Plant_2] 0
 x[CLUSTER_267,cattle_slu,Plant_3] 0
 x[CLUSTER_267,cattle_slu,Plant_4] 0
-x[CLUSTER_267,cattle_slu,Plant_5] 0.02722
+x[CLUSTER_267,cattle_slu,Plant_5] 0
 x[CLUSTER_267,cattle_slu,Plant_6] 0
 x[CLUSTER_267,cattle_slu,Plant_7] 0
 x[CLUSTER_267,cattle_slu,Plant_8] 0
@@ -22605,7 +22605,7 @@ x[CLUSTER_267,horse_man,Plant_1] 0
 x[CLUSTER_267,horse_man,Plant_2] 0
 x[CLUSTER_267,horse_man,Plant_3] 0
 x[CLUSTER_267,horse_man,Plant_4] 0
-x[CLUSTER_267,horse_man,Plant_5] 0.000951
+x[CLUSTER_267,horse_man,Plant_5] 0
 x[CLUSTER_267,horse_man,Plant_6] 0
 x[CLUSTER_267,horse_man,Plant_7] 0
 x[CLUSTER_267,horse_man,Plant_8] 0
@@ -22625,7 +22625,7 @@ x[CLUSTER_267,pig_man,Plant_1] 0
 x[CLUSTER_267,pig_man,Plant_2] 0
 x[CLUSTER_267,pig_man,Plant_3] 0
 x[CLUSTER_267,pig_man,Plant_4] 0
-x[CLUSTER_267,pig_man,Plant_5] 0.0007788
+x[CLUSTER_267,pig_man,Plant_5] 0
 x[CLUSTER_267,pig_man,Plant_6] 0
 x[CLUSTER_267,pig_man,Plant_7] 0
 x[CLUSTER_267,pig_man,Plant_8] 0
@@ -22721,7 +22721,7 @@ x[CLUSTER_268,cattle_slu,Plant_7] 0
 x[CLUSTER_268,cattle_slu,Plant_8] 0
 x[CLUSTER_268,cattle_slu,Plant_9] 0
 x[CLUSTER_268,horse_man,Plant_0] 0
-x[CLUSTER_268,horse_man,Plant_1] 0.00128541
+x[CLUSTER_268,horse_man,Plant_1] 0
 x[CLUSTER_268,horse_man,Plant_2] 0
 x[CLUSTER_268,horse_man,Plant_3] 0
 x[CLUSTER_268,horse_man,Plant_4] 0
@@ -22824,7 +22824,7 @@ x[CLUSTER_269,cattle_man,Plant_0] 0
 x[CLUSTER_269,cattle_man,Plant_1] 0
 x[CLUSTER_269,cattle_man,Plant_2] 0
 x[CLUSTER_269,cattle_man,Plant_3] 0
-x[CLUSTER_269,cattle_man,Plant_4] 0.010313
+x[CLUSTER_269,cattle_man,Plant_4] 0
 x[CLUSTER_269,cattle_man,Plant_5] 0
 x[CLUSTER_269,cattle_man,Plant_6] 0
 x[CLUSTER_269,cattle_man,Plant_7] 0
@@ -22834,7 +22834,7 @@ x[CLUSTER_269,cattle_slu,Plant_0] 0
 x[CLUSTER_269,cattle_slu,Plant_1] 0
 x[CLUSTER_269,cattle_slu,Plant_2] 0
 x[CLUSTER_269,cattle_slu,Plant_3] 0
-x[CLUSTER_269,cattle_slu,Plant_4] 0.070838
+x[CLUSTER_269,cattle_slu,Plant_4] 0
 x[CLUSTER_269,cattle_slu,Plant_5] 0
 x[CLUSTER_269,cattle_slu,Plant_6] 0
 x[CLUSTER_269,cattle_slu,Plant_7] 0
@@ -22844,7 +22844,7 @@ x[CLUSTER_269,horse_man,Plant_0] 0
 x[CLUSTER_269,horse_man,Plant_1] 0
 x[CLUSTER_269,horse_man,Plant_2] 0
 x[CLUSTER_269,horse_man,Plant_3] 0
-x[CLUSTER_269,horse_man,Plant_4] 2.3878000000000003e-03
+x[CLUSTER_269,horse_man,Plant_4] 0
 x[CLUSTER_269,horse_man,Plant_5] 0
 x[CLUSTER_269,horse_man,Plant_6] 0
 x[CLUSTER_269,horse_man,Plant_7] 0
@@ -22864,7 +22864,7 @@ x[CLUSTER_269,pig_man,Plant_0] 0
 x[CLUSTER_269,pig_man,Plant_1] 0
 x[CLUSTER_269,pig_man,Plant_2] 0
 x[CLUSTER_269,pig_man,Plant_3] 0
-x[CLUSTER_269,pig_man,Plant_4] 0.000389745
+x[CLUSTER_269,pig_man,Plant_4] 0
 x[CLUSTER_269,pig_man,Plant_5] 0
 x[CLUSTER_269,pig_man,Plant_6] 0
 x[CLUSTER_269,pig_man,Plant_7] 0
@@ -22941,7 +22941,7 @@ x[CLUSTER_269,legume_str,Plant_7] 0
 x[CLUSTER_269,legume_str,Plant_8] 0
 x[CLUSTER_269,legume_str,Plant_9] 0
 x[CLUSTER_27,cattle_man,Plant_0] 0
-x[CLUSTER_27,cattle_man,Plant_1] 0.018405
+x[CLUSTER_27,cattle_man,Plant_1] 0
 x[CLUSTER_27,cattle_man,Plant_2] 0
 x[CLUSTER_27,cattle_man,Plant_3] 0
 x[CLUSTER_27,cattle_man,Plant_4] 0
@@ -22961,7 +22961,7 @@ x[CLUSTER_27,cattle_slu,Plant_7] 0
 x[CLUSTER_27,cattle_slu,Plant_8] 0
 x[CLUSTER_27,cattle_slu,Plant_9] 0
 x[CLUSTER_27,horse_man,Plant_0] 0
-x[CLUSTER_27,horse_man,Plant_1] 0.004194
+x[CLUSTER_27,horse_man,Plant_1] 0
 x[CLUSTER_27,horse_man,Plant_2] 0
 x[CLUSTER_27,horse_man,Plant_3] 0
 x[CLUSTER_27,horse_man,Plant_4] 0
@@ -23063,7 +23063,7 @@ x[CLUSTER_27,legume_str,Plant_9] 0
 x[CLUSTER_270,cattle_man,Plant_0] 0
 x[CLUSTER_270,cattle_man,Plant_1] 0
 x[CLUSTER_270,cattle_man,Plant_2] 0
-x[CLUSTER_270,cattle_man,Plant_3] 0.009712
+x[CLUSTER_270,cattle_man,Plant_3] 0
 x[CLUSTER_270,cattle_man,Plant_4] 0
 x[CLUSTER_270,cattle_man,Plant_5] 0
 x[CLUSTER_270,cattle_man,Plant_6] 0
@@ -23073,7 +23073,7 @@ x[CLUSTER_270,cattle_man,Plant_9] 0
 x[CLUSTER_270,cattle_slu,Plant_0] 0
 x[CLUSTER_270,cattle_slu,Plant_1] 0
 x[CLUSTER_270,cattle_slu,Plant_2] 0
-x[CLUSTER_270,cattle_slu,Plant_3] 0.04759
+x[CLUSTER_270,cattle_slu,Plant_3] 0
 x[CLUSTER_270,cattle_slu,Plant_4] 0
 x[CLUSTER_270,cattle_slu,Plant_5] 0
 x[CLUSTER_270,cattle_slu,Plant_6] 0
@@ -23083,7 +23083,7 @@ x[CLUSTER_270,cattle_slu,Plant_9] 0
 x[CLUSTER_270,horse_man,Plant_0] 0
 x[CLUSTER_270,horse_man,Plant_1] 0
 x[CLUSTER_270,horse_man,Plant_2] 0
-x[CLUSTER_270,horse_man,Plant_3] 0.002875
+x[CLUSTER_270,horse_man,Plant_3] 0
 x[CLUSTER_270,horse_man,Plant_4] 0
 x[CLUSTER_270,horse_man,Plant_5] 0
 x[CLUSTER_270,horse_man,Plant_6] 0
@@ -23103,7 +23103,7 @@ x[CLUSTER_270,pig_slu,Plant_9] 0
 x[CLUSTER_270,pig_man,Plant_0] 0
 x[CLUSTER_270,pig_man,Plant_1] 0
 x[CLUSTER_270,pig_man,Plant_2] 0
-x[CLUSTER_270,pig_man,Plant_3] 6.12952e-05
+x[CLUSTER_270,pig_man,Plant_3] 0
 x[CLUSTER_270,pig_man,Plant_4] 0
 x[CLUSTER_270,pig_man,Plant_5] 0
 x[CLUSTER_270,pig_man,Plant_6] 0
@@ -23209,7 +23209,7 @@ x[CLUSTER_271,horse_man,Plant_5] 0
 x[CLUSTER_271,horse_man,Plant_6] 0
 x[CLUSTER_271,horse_man,Plant_7] 0
 x[CLUSTER_271,horse_man,Plant_8] 0
-x[CLUSTER_271,horse_man,Plant_9] 0.0002784
+x[CLUSTER_271,horse_man,Plant_9] 0
 x[CLUSTER_271,pig_slu,Plant_0] 0
 x[CLUSTER_271,pig_slu,Plant_1] 0
 x[CLUSTER_271,pig_slu,Plant_2] 0
@@ -23227,7 +23227,7 @@ x[CLUSTER_271,pig_man,Plant_3] 0
 x[CLUSTER_271,pig_man,Plant_4] 0
 x[CLUSTER_271,pig_man,Plant_5] 0
 x[CLUSTER_271,pig_man,Plant_6] 0
-x[CLUSTER_271,pig_man,Plant_7] 0.0008317
+x[CLUSTER_271,pig_man,Plant_7] 0
 x[CLUSTER_271,pig_man,Plant_8] 0
 x[CLUSTER_271,pig_man,Plant_9] 0
 x[CLUSTER_271,cereal_str,Plant_0] 0
@@ -23249,7 +23249,7 @@ x[CLUSTER_271,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_271,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_271,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_271,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_271,clover_alfalfa_grass,Plant_9] 0.003043
+x[CLUSTER_271,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_271,perm_grass,Plant_0] 0
 x[CLUSTER_271,perm_grass,Plant_1] 0
 x[CLUSTER_271,perm_grass,Plant_2] 0
@@ -23269,7 +23269,7 @@ x[CLUSTER_271,maize_str,Plant_5] 0
 x[CLUSTER_271,maize_str,Plant_6] 0
 x[CLUSTER_271,maize_str,Plant_7] 0
 x[CLUSTER_271,maize_str,Plant_8] 0
-x[CLUSTER_271,maize_str,Plant_9] 0.0002663
+x[CLUSTER_271,maize_str,Plant_9] 0
 x[CLUSTER_271,beet_leaf,Plant_0] 0
 x[CLUSTER_271,beet_leaf,Plant_1] 0
 x[CLUSTER_271,beet_leaf,Plant_2] 0
@@ -23302,7 +23302,7 @@ x[CLUSTER_271,legume_str,Plant_8] 0
 x[CLUSTER_271,legume_str,Plant_9] 0
 x[CLUSTER_272,cattle_man,Plant_0] 0
 x[CLUSTER_272,cattle_man,Plant_1] 0
-x[CLUSTER_272,cattle_man,Plant_2] 3.1669000000000003e-03
+x[CLUSTER_272,cattle_man,Plant_2] 0
 x[CLUSTER_272,cattle_man,Plant_3] 0
 x[CLUSTER_272,cattle_man,Plant_4] 0
 x[CLUSTER_272,cattle_man,Plant_5] 0
@@ -23322,7 +23322,7 @@ x[CLUSTER_272,cattle_slu,Plant_8] 0
 x[CLUSTER_272,cattle_slu,Plant_9] 0
 x[CLUSTER_272,horse_man,Plant_0] 0
 x[CLUSTER_272,horse_man,Plant_1] 0
-x[CLUSTER_272,horse_man,Plant_2] 0.001033
+x[CLUSTER_272,horse_man,Plant_2] 0
 x[CLUSTER_272,horse_man,Plant_3] 0
 x[CLUSTER_272,horse_man,Plant_4] 0
 x[CLUSTER_272,horse_man,Plant_5] 0
@@ -23369,7 +23369,7 @@ x[CLUSTER_272,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_272,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_272,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_272,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_272,clover_alfalfa_grass,Plant_9] 0.0009617
+x[CLUSTER_272,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_272,perm_grass,Plant_0] 0
 x[CLUSTER_272,perm_grass,Plant_1] 0
 x[CLUSTER_272,perm_grass,Plant_2] 0
@@ -23389,7 +23389,7 @@ x[CLUSTER_272,maize_str,Plant_5] 0
 x[CLUSTER_272,maize_str,Plant_6] 0
 x[CLUSTER_272,maize_str,Plant_7] 0
 x[CLUSTER_272,maize_str,Plant_8] 0
-x[CLUSTER_272,maize_str,Plant_9] 2.76e-05
+x[CLUSTER_272,maize_str,Plant_9] 0
 x[CLUSTER_272,beet_leaf,Plant_0] 0
 x[CLUSTER_272,beet_leaf,Plant_1] 0
 x[CLUSTER_272,beet_leaf,Plant_2] 0
@@ -23423,7 +23423,7 @@ x[CLUSTER_272,legume_str,Plant_9] 0
 x[CLUSTER_273,cattle_man,Plant_0] 0
 x[CLUSTER_273,cattle_man,Plant_1] 0
 x[CLUSTER_273,cattle_man,Plant_2] 0
-x[CLUSTER_273,cattle_man,Plant_3] 0.00669
+x[CLUSTER_273,cattle_man,Plant_3] 0
 x[CLUSTER_273,cattle_man,Plant_4] 0
 x[CLUSTER_273,cattle_man,Plant_5] 0
 x[CLUSTER_273,cattle_man,Plant_6] 0
@@ -23443,7 +23443,7 @@ x[CLUSTER_273,cattle_slu,Plant_9] 0
 x[CLUSTER_273,horse_man,Plant_0] 0
 x[CLUSTER_273,horse_man,Plant_1] 0
 x[CLUSTER_273,horse_man,Plant_2] 0
-x[CLUSTER_273,horse_man,Plant_3] 0.001064
+x[CLUSTER_273,horse_man,Plant_3] 0
 x[CLUSTER_273,horse_man,Plant_4] 0
 x[CLUSTER_273,horse_man,Plant_5] 0
 x[CLUSTER_273,horse_man,Plant_6] 0
@@ -23463,7 +23463,7 @@ x[CLUSTER_273,pig_slu,Plant_9] 0
 x[CLUSTER_273,pig_man,Plant_0] 0
 x[CLUSTER_273,pig_man,Plant_1] 0
 x[CLUSTER_273,pig_man,Plant_2] 0
-x[CLUSTER_273,pig_man,Plant_3] 5.2460000000000007e-04
+x[CLUSTER_273,pig_man,Plant_3] 0
 x[CLUSTER_273,pig_man,Plant_4] 0
 x[CLUSTER_273,pig_man,Plant_5] 0
 x[CLUSTER_273,pig_man,Plant_6] 0
@@ -23543,7 +23543,7 @@ x[CLUSTER_273,legume_str,Plant_9] 0
 x[CLUSTER_274,cattle_man,Plant_0] 0
 x[CLUSTER_274,cattle_man,Plant_1] 0
 x[CLUSTER_274,cattle_man,Plant_2] 0
-x[CLUSTER_274,cattle_man,Plant_3] 0.002163
+x[CLUSTER_274,cattle_man,Plant_3] 0
 x[CLUSTER_274,cattle_man,Plant_4] 0
 x[CLUSTER_274,cattle_man,Plant_5] 0
 x[CLUSTER_274,cattle_man,Plant_6] 0
@@ -23553,7 +23553,7 @@ x[CLUSTER_274,cattle_man,Plant_9] 0
 x[CLUSTER_274,cattle_slu,Plant_0] 0
 x[CLUSTER_274,cattle_slu,Plant_1] 0
 x[CLUSTER_274,cattle_slu,Plant_2] 0
-x[CLUSTER_274,cattle_slu,Plant_3] 0.01122
+x[CLUSTER_274,cattle_slu,Plant_3] 0
 x[CLUSTER_274,cattle_slu,Plant_4] 0
 x[CLUSTER_274,cattle_slu,Plant_5] 0
 x[CLUSTER_274,cattle_slu,Plant_6] 0
@@ -23563,7 +23563,7 @@ x[CLUSTER_274,cattle_slu,Plant_9] 0
 x[CLUSTER_274,horse_man,Plant_0] 0
 x[CLUSTER_274,horse_man,Plant_1] 0
 x[CLUSTER_274,horse_man,Plant_2] 0
-x[CLUSTER_274,horse_man,Plant_3] 0.0007834
+x[CLUSTER_274,horse_man,Plant_3] 0
 x[CLUSTER_274,horse_man,Plant_4] 0
 x[CLUSTER_274,horse_man,Plant_5] 0
 x[CLUSTER_274,horse_man,Plant_6] 0
@@ -23583,7 +23583,7 @@ x[CLUSTER_274,pig_slu,Plant_9] 0
 x[CLUSTER_274,pig_man,Plant_0] 0
 x[CLUSTER_274,pig_man,Plant_1] 0
 x[CLUSTER_274,pig_man,Plant_2] 0
-x[CLUSTER_274,pig_man,Plant_3] 5.8789999999999992e-04
+x[CLUSTER_274,pig_man,Plant_3] 0
 x[CLUSTER_274,pig_man,Plant_4] 0
 x[CLUSTER_274,pig_man,Plant_5] 0
 x[CLUSTER_274,pig_man,Plant_6] 0
@@ -23667,7 +23667,7 @@ x[CLUSTER_275,cattle_man,Plant_3] 0
 x[CLUSTER_275,cattle_man,Plant_4] 0
 x[CLUSTER_275,cattle_man,Plant_5] 0
 x[CLUSTER_275,cattle_man,Plant_6] 0
-x[CLUSTER_275,cattle_man,Plant_7] 0.0032125
+x[CLUSTER_275,cattle_man,Plant_7] 0
 x[CLUSTER_275,cattle_man,Plant_8] 0
 x[CLUSTER_275,cattle_man,Plant_9] 0
 x[CLUSTER_275,cattle_slu,Plant_0] 0
@@ -23677,7 +23677,7 @@ x[CLUSTER_275,cattle_slu,Plant_3] 0
 x[CLUSTER_275,cattle_slu,Plant_4] 0
 x[CLUSTER_275,cattle_slu,Plant_5] 0
 x[CLUSTER_275,cattle_slu,Plant_6] 0
-x[CLUSTER_275,cattle_slu,Plant_7] 0.0009896
+x[CLUSTER_275,cattle_slu,Plant_7] 0
 x[CLUSTER_275,cattle_slu,Plant_8] 0
 x[CLUSTER_275,cattle_slu,Plant_9] 0
 x[CLUSTER_275,horse_man,Plant_0] 0
@@ -23687,7 +23687,7 @@ x[CLUSTER_275,horse_man,Plant_3] 0
 x[CLUSTER_275,horse_man,Plant_4] 0
 x[CLUSTER_275,horse_man,Plant_5] 0
 x[CLUSTER_275,horse_man,Plant_6] 0
-x[CLUSTER_275,horse_man,Plant_7] 0.000564
+x[CLUSTER_275,horse_man,Plant_7] 0
 x[CLUSTER_275,horse_man,Plant_8] 0
 x[CLUSTER_275,horse_man,Plant_9] 0
 x[CLUSTER_275,pig_slu,Plant_0] 0
@@ -23749,7 +23749,7 @@ x[CLUSTER_275,maize_str,Plant_5] 0
 x[CLUSTER_275,maize_str,Plant_6] 0
 x[CLUSTER_275,maize_str,Plant_7] 0
 x[CLUSTER_275,maize_str,Plant_8] 0
-x[CLUSTER_275,maize_str,Plant_9] 0.0001305
+x[CLUSTER_275,maize_str,Plant_9] 0
 x[CLUSTER_275,beet_leaf,Plant_0] 0
 x[CLUSTER_275,beet_leaf,Plant_1] 0
 x[CLUSTER_275,beet_leaf,Plant_2] 0
@@ -23783,7 +23783,7 @@ x[CLUSTER_275,legume_str,Plant_9] 0
 x[CLUSTER_276,cattle_man,Plant_0] 0
 x[CLUSTER_276,cattle_man,Plant_1] 0
 x[CLUSTER_276,cattle_man,Plant_2] 0
-x[CLUSTER_276,cattle_man,Plant_3] 0.003122
+x[CLUSTER_276,cattle_man,Plant_3] 0
 x[CLUSTER_276,cattle_man,Plant_4] 0
 x[CLUSTER_276,cattle_man,Plant_5] 0
 x[CLUSTER_276,cattle_man,Plant_6] 0
@@ -23803,7 +23803,7 @@ x[CLUSTER_276,cattle_slu,Plant_9] 0
 x[CLUSTER_276,horse_man,Plant_0] 0
 x[CLUSTER_276,horse_man,Plant_1] 0
 x[CLUSTER_276,horse_man,Plant_2] 0
-x[CLUSTER_276,horse_man,Plant_3] 0.001192
+x[CLUSTER_276,horse_man,Plant_3] 0
 x[CLUSTER_276,horse_man,Plant_4] 0
 x[CLUSTER_276,horse_man,Plant_5] 0
 x[CLUSTER_276,horse_man,Plant_6] 0
@@ -23907,7 +23907,7 @@ x[CLUSTER_277,cattle_man,Plant_3] 0
 x[CLUSTER_277,cattle_man,Plant_4] 0
 x[CLUSTER_277,cattle_man,Plant_5] 0
 x[CLUSTER_277,cattle_man,Plant_6] 0
-x[CLUSTER_277,cattle_man,Plant_7] 0.00687
+x[CLUSTER_277,cattle_man,Plant_7] 0
 x[CLUSTER_277,cattle_man,Plant_8] 0
 x[CLUSTER_277,cattle_man,Plant_9] 0
 x[CLUSTER_277,cattle_slu,Plant_0] 0
@@ -23917,7 +23917,7 @@ x[CLUSTER_277,cattle_slu,Plant_3] 0
 x[CLUSTER_277,cattle_slu,Plant_4] 0
 x[CLUSTER_277,cattle_slu,Plant_5] 0
 x[CLUSTER_277,cattle_slu,Plant_6] 0
-x[CLUSTER_277,cattle_slu,Plant_7] 4.8451000000000006e-03
+x[CLUSTER_277,cattle_slu,Plant_7] 0
 x[CLUSTER_277,cattle_slu,Plant_8] 0
 x[CLUSTER_277,cattle_slu,Plant_9] 0
 x[CLUSTER_277,horse_man,Plant_0] 0
@@ -23927,7 +23927,7 @@ x[CLUSTER_277,horse_man,Plant_3] 0
 x[CLUSTER_277,horse_man,Plant_4] 0
 x[CLUSTER_277,horse_man,Plant_5] 0
 x[CLUSTER_277,horse_man,Plant_6] 0
-x[CLUSTER_277,horse_man,Plant_7] 0.0008723
+x[CLUSTER_277,horse_man,Plant_7] 0
 x[CLUSTER_277,horse_man,Plant_8] 0
 x[CLUSTER_277,horse_man,Plant_9] 0
 x[CLUSTER_277,pig_slu,Plant_0] 0
@@ -23937,7 +23937,7 @@ x[CLUSTER_277,pig_slu,Plant_3] 0
 x[CLUSTER_277,pig_slu,Plant_4] 0
 x[CLUSTER_277,pig_slu,Plant_5] 0
 x[CLUSTER_277,pig_slu,Plant_6] 0
-x[CLUSTER_277,pig_slu,Plant_7] 0.00465006
+x[CLUSTER_277,pig_slu,Plant_7] 0
 x[CLUSTER_277,pig_slu,Plant_8] 0
 x[CLUSTER_277,pig_slu,Plant_9] 0
 x[CLUSTER_277,pig_man,Plant_0] 0
@@ -23947,7 +23947,7 @@ x[CLUSTER_277,pig_man,Plant_3] 0
 x[CLUSTER_277,pig_man,Plant_4] 0
 x[CLUSTER_277,pig_man,Plant_5] 0
 x[CLUSTER_277,pig_man,Plant_6] 0
-x[CLUSTER_277,pig_man,Plant_7] 0.000203959
+x[CLUSTER_277,pig_man,Plant_7] 0
 x[CLUSTER_277,pig_man,Plant_8] 0
 x[CLUSTER_277,pig_man,Plant_9] 0
 x[CLUSTER_277,cereal_str,Plant_0] 0
@@ -23967,7 +23967,7 @@ x[CLUSTER_277,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_277,clover_alfalfa_grass,Plant_4] 0
 x[CLUSTER_277,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_277,clover_alfalfa_grass,Plant_6] 0
-x[CLUSTER_277,clover_alfalfa_grass,Plant_7] 0.003792
+x[CLUSTER_277,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_277,clover_alfalfa_grass,Plant_8] 0
 x[CLUSTER_277,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_277,perm_grass,Plant_0] 0
@@ -23989,7 +23989,7 @@ x[CLUSTER_277,maize_str,Plant_5] 0
 x[CLUSTER_277,maize_str,Plant_6] 0
 x[CLUSTER_277,maize_str,Plant_7] 0
 x[CLUSTER_277,maize_str,Plant_8] 0
-x[CLUSTER_277,maize_str,Plant_9] 5.2900000000000005e-05
+x[CLUSTER_277,maize_str,Plant_9] 0
 x[CLUSTER_277,beet_leaf,Plant_0] 0
 x[CLUSTER_277,beet_leaf,Plant_1] 0
 x[CLUSTER_277,beet_leaf,Plant_2] 0
@@ -24022,7 +24022,7 @@ x[CLUSTER_277,legume_str,Plant_8] 0
 x[CLUSTER_277,legume_str,Plant_9] 0
 x[CLUSTER_278,cattle_man,Plant_0] 0
 x[CLUSTER_278,cattle_man,Plant_1] 0
-x[CLUSTER_278,cattle_man,Plant_2] 0.0052747
+x[CLUSTER_278,cattle_man,Plant_2] 0
 x[CLUSTER_278,cattle_man,Plant_3] 0
 x[CLUSTER_278,cattle_man,Plant_4] 0
 x[CLUSTER_278,cattle_man,Plant_5] 0
@@ -24042,7 +24042,7 @@ x[CLUSTER_278,cattle_slu,Plant_8] 0
 x[CLUSTER_278,cattle_slu,Plant_9] 0
 x[CLUSTER_278,horse_man,Plant_0] 0
 x[CLUSTER_278,horse_man,Plant_1] 0
-x[CLUSTER_278,horse_man,Plant_2] 6.6070000000000007e-04
+x[CLUSTER_278,horse_man,Plant_2] 0
 x[CLUSTER_278,horse_man,Plant_3] 0
 x[CLUSTER_278,horse_man,Plant_4] 0
 x[CLUSTER_278,horse_man,Plant_5] 0
@@ -24062,7 +24062,7 @@ x[CLUSTER_278,pig_slu,Plant_8] 0
 x[CLUSTER_278,pig_slu,Plant_9] 0
 x[CLUSTER_278,pig_man,Plant_0] 0
 x[CLUSTER_278,pig_man,Plant_1] 0
-x[CLUSTER_278,pig_man,Plant_2] 0.000334991
+x[CLUSTER_278,pig_man,Plant_2] 0
 x[CLUSTER_278,pig_man,Plant_3] 0
 x[CLUSTER_278,pig_man,Plant_4] 0
 x[CLUSTER_278,pig_man,Plant_5] 0
@@ -24145,7 +24145,7 @@ x[CLUSTER_279,cattle_man,Plant_1] 0
 x[CLUSTER_279,cattle_man,Plant_2] 0
 x[CLUSTER_279,cattle_man,Plant_3] 0
 x[CLUSTER_279,cattle_man,Plant_4] 0
-x[CLUSTER_279,cattle_man,Plant_5] 0.02173
+x[CLUSTER_279,cattle_man,Plant_5] 0
 x[CLUSTER_279,cattle_man,Plant_6] 0
 x[CLUSTER_279,cattle_man,Plant_7] 0
 x[CLUSTER_279,cattle_man,Plant_8] 0
@@ -24165,7 +24165,7 @@ x[CLUSTER_279,horse_man,Plant_1] 0
 x[CLUSTER_279,horse_man,Plant_2] 0
 x[CLUSTER_279,horse_man,Plant_3] 0
 x[CLUSTER_279,horse_man,Plant_4] 0
-x[CLUSTER_279,horse_man,Plant_5] 0.0016653
+x[CLUSTER_279,horse_man,Plant_5] 0
 x[CLUSTER_279,horse_man,Plant_6] 0
 x[CLUSTER_279,horse_man,Plant_7] 0
 x[CLUSTER_279,horse_man,Plant_8] 0
@@ -24185,7 +24185,7 @@ x[CLUSTER_279,pig_man,Plant_1] 0
 x[CLUSTER_279,pig_man,Plant_2] 0
 x[CLUSTER_279,pig_man,Plant_3] 0
 x[CLUSTER_279,pig_man,Plant_4] 0
-x[CLUSTER_279,pig_man,Plant_5] 7.2384001640000007e-04
+x[CLUSTER_279,pig_man,Plant_5] 0
 x[CLUSTER_279,pig_man,Plant_6] 0
 x[CLUSTER_279,pig_man,Plant_7] 0
 x[CLUSTER_279,pig_man,Plant_8] 0
@@ -24261,7 +24261,7 @@ x[CLUSTER_279,legume_str,Plant_7] 0
 x[CLUSTER_279,legume_str,Plant_8] 0
 x[CLUSTER_279,legume_str,Plant_9] 0
 x[CLUSTER_28,cattle_man,Plant_0] 0
-x[CLUSTER_28,cattle_man,Plant_1] 0.00841
+x[CLUSTER_28,cattle_man,Plant_1] 0
 x[CLUSTER_28,cattle_man,Plant_2] 0
 x[CLUSTER_28,cattle_man,Plant_3] 0
 x[CLUSTER_28,cattle_man,Plant_4] 0
@@ -24281,7 +24281,7 @@ x[CLUSTER_28,cattle_slu,Plant_7] 0
 x[CLUSTER_28,cattle_slu,Plant_8] 0
 x[CLUSTER_28,cattle_slu,Plant_9] 0
 x[CLUSTER_28,horse_man,Plant_0] 0
-x[CLUSTER_28,horse_man,Plant_1] 2.7619000000000003e-03
+x[CLUSTER_28,horse_man,Plant_1] 0
 x[CLUSTER_28,horse_man,Plant_2] 0
 x[CLUSTER_28,horse_man,Plant_3] 0
 x[CLUSTER_28,horse_man,Plant_4] 0
@@ -24380,7 +24380,7 @@ x[CLUSTER_28,legume_str,Plant_6] 0
 x[CLUSTER_28,legume_str,Plant_7] 0
 x[CLUSTER_28,legume_str,Plant_8] 0
 x[CLUSTER_28,legume_str,Plant_9] 0
-x[CLUSTER_280,cattle_man,Plant_0] 0.007664
+x[CLUSTER_280,cattle_man,Plant_0] 0
 x[CLUSTER_280,cattle_man,Plant_1] 0
 x[CLUSTER_280,cattle_man,Plant_2] 0
 x[CLUSTER_280,cattle_man,Plant_3] 0
@@ -24400,7 +24400,7 @@ x[CLUSTER_280,cattle_slu,Plant_6] 0
 x[CLUSTER_280,cattle_slu,Plant_7] 0
 x[CLUSTER_280,cattle_slu,Plant_8] 0
 x[CLUSTER_280,cattle_slu,Plant_9] 0
-x[CLUSTER_280,horse_man,Plant_0] 1.1012770000000001e-03
+x[CLUSTER_280,horse_man,Plant_0] 0
 x[CLUSTER_280,horse_man,Plant_1] 0
 x[CLUSTER_280,horse_man,Plant_2] 0
 x[CLUSTER_280,horse_man,Plant_3] 0
@@ -24420,7 +24420,7 @@ x[CLUSTER_280,pig_slu,Plant_6] 0
 x[CLUSTER_280,pig_slu,Plant_7] 0
 x[CLUSTER_280,pig_slu,Plant_8] 0
 x[CLUSTER_280,pig_slu,Plant_9] 0
-x[CLUSTER_280,pig_man,Plant_0] 1.7130000000000002e-04
+x[CLUSTER_280,pig_man,Plant_0] 0
 x[CLUSTER_280,pig_man,Plant_1] 0
 x[CLUSTER_280,pig_man,Plant_2] 0
 x[CLUSTER_280,pig_man,Plant_3] 0
@@ -24460,7 +24460,7 @@ x[CLUSTER_280,perm_grass,Plant_6] 0
 x[CLUSTER_280,perm_grass,Plant_7] 0
 x[CLUSTER_280,perm_grass,Plant_8] 0
 x[CLUSTER_280,perm_grass,Plant_9] 0
-x[CLUSTER_280,maize_str,Plant_0] 2.9069999999999996e-04
+x[CLUSTER_280,maize_str,Plant_0] 0
 x[CLUSTER_280,maize_str,Plant_1] 0
 x[CLUSTER_280,maize_str,Plant_2] 0
 x[CLUSTER_280,maize_str,Plant_3] 0
@@ -24526,7 +24526,7 @@ x[CLUSTER_281,horse_man,Plant_2] 0
 x[CLUSTER_281,horse_man,Plant_3] 0
 x[CLUSTER_281,horse_man,Plant_4] 0
 x[CLUSTER_281,horse_man,Plant_5] 0
-x[CLUSTER_281,horse_man,Plant_6] 0.0010245
+x[CLUSTER_281,horse_man,Plant_6] 0
 x[CLUSTER_281,horse_man,Plant_7] 0
 x[CLUSTER_281,horse_man,Plant_8] 0
 x[CLUSTER_281,horse_man,Plant_9] 0
@@ -24623,7 +24623,7 @@ x[CLUSTER_281,legume_str,Plant_9] 0
 x[CLUSTER_282,cattle_man,Plant_0] 0
 x[CLUSTER_282,cattle_man,Plant_1] 0
 x[CLUSTER_282,cattle_man,Plant_2] 0
-x[CLUSTER_282,cattle_man,Plant_3] 0.01002
+x[CLUSTER_282,cattle_man,Plant_3] 0
 x[CLUSTER_282,cattle_man,Plant_4] 0
 x[CLUSTER_282,cattle_man,Plant_5] 0
 x[CLUSTER_282,cattle_man,Plant_6] 0
@@ -24633,7 +24633,7 @@ x[CLUSTER_282,cattle_man,Plant_9] 0
 x[CLUSTER_282,cattle_slu,Plant_0] 0
 x[CLUSTER_282,cattle_slu,Plant_1] 0
 x[CLUSTER_282,cattle_slu,Plant_2] 0
-x[CLUSTER_282,cattle_slu,Plant_3] 0.0489
+x[CLUSTER_282,cattle_slu,Plant_3] 0
 x[CLUSTER_282,cattle_slu,Plant_4] 0
 x[CLUSTER_282,cattle_slu,Plant_5] 0
 x[CLUSTER_282,cattle_slu,Plant_6] 0
@@ -24643,7 +24643,7 @@ x[CLUSTER_282,cattle_slu,Plant_9] 0
 x[CLUSTER_282,horse_man,Plant_0] 0
 x[CLUSTER_282,horse_man,Plant_1] 0
 x[CLUSTER_282,horse_man,Plant_2] 0
-x[CLUSTER_282,horse_man,Plant_3] 0.001029
+x[CLUSTER_282,horse_man,Plant_3] 0
 x[CLUSTER_282,horse_man,Plant_4] 0
 x[CLUSTER_282,horse_man,Plant_5] 0
 x[CLUSTER_282,horse_man,Plant_6] 0
@@ -24663,7 +24663,7 @@ x[CLUSTER_282,pig_slu,Plant_9] 0
 x[CLUSTER_282,pig_man,Plant_0] 0
 x[CLUSTER_282,pig_man,Plant_1] 0
 x[CLUSTER_282,pig_man,Plant_2] 0
-x[CLUSTER_282,pig_man,Plant_3] 0.000277076
+x[CLUSTER_282,pig_man,Plant_3] 0
 x[CLUSTER_282,pig_man,Plant_4] 0
 x[CLUSTER_282,pig_man,Plant_5] 0
 x[CLUSTER_282,pig_man,Plant_6] 0
@@ -24747,7 +24747,7 @@ x[CLUSTER_283,cattle_man,Plant_3] 0
 x[CLUSTER_283,cattle_man,Plant_4] 0
 x[CLUSTER_283,cattle_man,Plant_5] 0
 x[CLUSTER_283,cattle_man,Plant_6] 0
-x[CLUSTER_283,cattle_man,Plant_7] 4.4903999999999994e-03
+x[CLUSTER_283,cattle_man,Plant_7] 0
 x[CLUSTER_283,cattle_man,Plant_8] 0
 x[CLUSTER_283,cattle_man,Plant_9] 0
 x[CLUSTER_283,cattle_slu,Plant_0] 0
@@ -24757,12 +24757,12 @@ x[CLUSTER_283,cattle_slu,Plant_3] 0
 x[CLUSTER_283,cattle_slu,Plant_4] 0
 x[CLUSTER_283,cattle_slu,Plant_5] 0
 x[CLUSTER_283,cattle_slu,Plant_6] 0
-x[CLUSTER_283,cattle_slu,Plant_7] 6.5446999999999719e-03
+x[CLUSTER_283,cattle_slu,Plant_7] 0
 x[CLUSTER_283,cattle_slu,Plant_8] 0
 x[CLUSTER_283,cattle_slu,Plant_9] 0
 x[CLUSTER_283,horse_man,Plant_0] 0
 x[CLUSTER_283,horse_man,Plant_1] 0
-x[CLUSTER_283,horse_man,Plant_2] 0.000349112
+x[CLUSTER_283,horse_man,Plant_2] 0
 x[CLUSTER_283,horse_man,Plant_3] 0
 x[CLUSTER_283,horse_man,Plant_4] 0
 x[CLUSTER_283,horse_man,Plant_5] 0
@@ -24787,7 +24787,7 @@ x[CLUSTER_283,pig_man,Plant_3] 0
 x[CLUSTER_283,pig_man,Plant_4] 0
 x[CLUSTER_283,pig_man,Plant_5] 0
 x[CLUSTER_283,pig_man,Plant_6] 0
-x[CLUSTER_283,pig_man,Plant_7] 0.00163737
+x[CLUSTER_283,pig_man,Plant_7] 0
 x[CLUSTER_283,pig_man,Plant_8] 0
 x[CLUSTER_283,pig_man,Plant_9] 0
 x[CLUSTER_283,cereal_str,Plant_0] 0
@@ -24809,7 +24809,7 @@ x[CLUSTER_283,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_283,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_283,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_283,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_283,clover_alfalfa_grass,Plant_9] 0.004311
+x[CLUSTER_283,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_283,perm_grass,Plant_0] 0
 x[CLUSTER_283,perm_grass,Plant_1] 0
 x[CLUSTER_283,perm_grass,Plant_2] 0
@@ -24829,7 +24829,7 @@ x[CLUSTER_283,maize_str,Plant_5] 0
 x[CLUSTER_283,maize_str,Plant_6] 0
 x[CLUSTER_283,maize_str,Plant_7] 0
 x[CLUSTER_283,maize_str,Plant_8] 0
-x[CLUSTER_283,maize_str,Plant_9] 4.8310000000000003e-04
+x[CLUSTER_283,maize_str,Plant_9] 0
 x[CLUSTER_283,beet_leaf,Plant_0] 0
 x[CLUSTER_283,beet_leaf,Plant_1] 0
 x[CLUSTER_283,beet_leaf,Plant_2] 0
@@ -24863,7 +24863,7 @@ x[CLUSTER_283,legume_str,Plant_9] 0
 x[CLUSTER_284,cattle_man,Plant_0] 0
 x[CLUSTER_284,cattle_man,Plant_1] 0
 x[CLUSTER_284,cattle_man,Plant_2] 0
-x[CLUSTER_284,cattle_man,Plant_3] 1.1527829999999999e-03
+x[CLUSTER_284,cattle_man,Plant_3] 0
 x[CLUSTER_284,cattle_man,Plant_4] 0
 x[CLUSTER_284,cattle_man,Plant_5] 0
 x[CLUSTER_284,cattle_man,Plant_6] 0
@@ -24883,7 +24883,7 @@ x[CLUSTER_284,cattle_slu,Plant_9] 0
 x[CLUSTER_284,horse_man,Plant_0] 0
 x[CLUSTER_284,horse_man,Plant_1] 0
 x[CLUSTER_284,horse_man,Plant_2] 0
-x[CLUSTER_284,horse_man,Plant_3] 0.0001954
+x[CLUSTER_284,horse_man,Plant_3] 0
 x[CLUSTER_284,horse_man,Plant_4] 0
 x[CLUSTER_284,horse_man,Plant_5] 0
 x[CLUSTER_284,horse_man,Plant_6] 0
@@ -24903,7 +24903,7 @@ x[CLUSTER_284,pig_slu,Plant_9] 0
 x[CLUSTER_284,pig_man,Plant_0] 0
 x[CLUSTER_284,pig_man,Plant_1] 0
 x[CLUSTER_284,pig_man,Plant_2] 0
-x[CLUSTER_284,pig_man,Plant_3] 0.0004479
+x[CLUSTER_284,pig_man,Plant_3] 0
 x[CLUSTER_284,pig_man,Plant_4] 0
 x[CLUSTER_284,pig_man,Plant_5] 0
 x[CLUSTER_284,pig_man,Plant_6] 0
@@ -24983,7 +24983,7 @@ x[CLUSTER_284,legume_str,Plant_9] 0
 x[CLUSTER_285,cattle_man,Plant_0] 0
 x[CLUSTER_285,cattle_man,Plant_1] 0
 x[CLUSTER_285,cattle_man,Plant_2] 0
-x[CLUSTER_285,cattle_man,Plant_3] 0.01587
+x[CLUSTER_285,cattle_man,Plant_3] 0
 x[CLUSTER_285,cattle_man,Plant_4] 0
 x[CLUSTER_285,cattle_man,Plant_5] 0
 x[CLUSTER_285,cattle_man,Plant_6] 0
@@ -25003,7 +25003,7 @@ x[CLUSTER_285,cattle_slu,Plant_9] 0
 x[CLUSTER_285,horse_man,Plant_0] 0
 x[CLUSTER_285,horse_man,Plant_1] 0
 x[CLUSTER_285,horse_man,Plant_2] 0
-x[CLUSTER_285,horse_man,Plant_3] 0.003438
+x[CLUSTER_285,horse_man,Plant_3] 0
 x[CLUSTER_285,horse_man,Plant_4] 0
 x[CLUSTER_285,horse_man,Plant_5] 0
 x[CLUSTER_285,horse_man,Plant_6] 0
@@ -25104,7 +25104,7 @@ x[CLUSTER_286,cattle_man,Plant_0] 0
 x[CLUSTER_286,cattle_man,Plant_1] 0
 x[CLUSTER_286,cattle_man,Plant_2] 0
 x[CLUSTER_286,cattle_man,Plant_3] 0
-x[CLUSTER_286,cattle_man,Plant_4] 0.004579
+x[CLUSTER_286,cattle_man,Plant_4] 0
 x[CLUSTER_286,cattle_man,Plant_5] 0
 x[CLUSTER_286,cattle_man,Plant_6] 0
 x[CLUSTER_286,cattle_man,Plant_7] 0
@@ -25124,7 +25124,7 @@ x[CLUSTER_286,horse_man,Plant_0] 0
 x[CLUSTER_286,horse_man,Plant_1] 0
 x[CLUSTER_286,horse_man,Plant_2] 0
 x[CLUSTER_286,horse_man,Plant_3] 0
-x[CLUSTER_286,horse_man,Plant_4] 0.0005021
+x[CLUSTER_286,horse_man,Plant_4] 0
 x[CLUSTER_286,horse_man,Plant_5] 0
 x[CLUSTER_286,horse_man,Plant_6] 0
 x[CLUSTER_286,horse_man,Plant_7] 0
@@ -25144,7 +25144,7 @@ x[CLUSTER_286,pig_man,Plant_0] 0
 x[CLUSTER_286,pig_man,Plant_1] 0
 x[CLUSTER_286,pig_man,Plant_2] 0
 x[CLUSTER_286,pig_man,Plant_3] 0
-x[CLUSTER_286,pig_man,Plant_4] 4.0760000000000004e-04
+x[CLUSTER_286,pig_man,Plant_4] 0
 x[CLUSTER_286,pig_man,Plant_5] 0
 x[CLUSTER_286,pig_man,Plant_6] 0
 x[CLUSTER_286,pig_man,Plant_7] 0
@@ -25221,7 +25221,7 @@ x[CLUSTER_286,legume_str,Plant_7] 0
 x[CLUSTER_286,legume_str,Plant_8] 0
 x[CLUSTER_286,legume_str,Plant_9] 0
 x[CLUSTER_287,cattle_man,Plant_0] 0
-x[CLUSTER_287,cattle_man,Plant_1] 0.002184
+x[CLUSTER_287,cattle_man,Plant_1] 0
 x[CLUSTER_287,cattle_man,Plant_2] 0
 x[CLUSTER_287,cattle_man,Plant_3] 0
 x[CLUSTER_287,cattle_man,Plant_4] 0
@@ -25241,7 +25241,7 @@ x[CLUSTER_287,cattle_slu,Plant_7] 0
 x[CLUSTER_287,cattle_slu,Plant_8] 0
 x[CLUSTER_287,cattle_slu,Plant_9] 0
 x[CLUSTER_287,horse_man,Plant_0] 0
-x[CLUSTER_287,horse_man,Plant_1] 0.001571
+x[CLUSTER_287,horse_man,Plant_1] 0
 x[CLUSTER_287,horse_man,Plant_2] 0
 x[CLUSTER_287,horse_man,Plant_3] 0
 x[CLUSTER_287,horse_man,Plant_4] 0
@@ -25345,7 +25345,7 @@ x[CLUSTER_288,cattle_man,Plant_1] 0
 x[CLUSTER_288,cattle_man,Plant_2] 0
 x[CLUSTER_288,cattle_man,Plant_3] 0
 x[CLUSTER_288,cattle_man,Plant_4] 0
-x[CLUSTER_288,cattle_man,Plant_5] 0.02351
+x[CLUSTER_288,cattle_man,Plant_5] 0
 x[CLUSTER_288,cattle_man,Plant_6] 0
 x[CLUSTER_288,cattle_man,Plant_7] 0
 x[CLUSTER_288,cattle_man,Plant_8] 0
@@ -25365,7 +25365,7 @@ x[CLUSTER_288,horse_man,Plant_1] 0
 x[CLUSTER_288,horse_man,Plant_2] 0
 x[CLUSTER_288,horse_man,Plant_3] 0
 x[CLUSTER_288,horse_man,Plant_4] 0
-x[CLUSTER_288,horse_man,Plant_5] 0.001884
+x[CLUSTER_288,horse_man,Plant_5] 0
 x[CLUSTER_288,horse_man,Plant_6] 0
 x[CLUSTER_288,horse_man,Plant_7] 0
 x[CLUSTER_288,horse_man,Plant_8] 0
@@ -25385,7 +25385,7 @@ x[CLUSTER_288,pig_man,Plant_1] 0
 x[CLUSTER_288,pig_man,Plant_2] 0
 x[CLUSTER_288,pig_man,Plant_3] 0
 x[CLUSTER_288,pig_man,Plant_4] 0
-x[CLUSTER_288,pig_man,Plant_5] 0.000786
+x[CLUSTER_288,pig_man,Plant_5] 0
 x[CLUSTER_288,pig_man,Plant_6] 0
 x[CLUSTER_288,pig_man,Plant_7] 0
 x[CLUSTER_288,pig_man,Plant_8] 0
@@ -25462,7 +25462,7 @@ x[CLUSTER_288,legume_str,Plant_8] 0
 x[CLUSTER_288,legume_str,Plant_9] 0
 x[CLUSTER_289,cattle_man,Plant_0] 0
 x[CLUSTER_289,cattle_man,Plant_1] 0
-x[CLUSTER_289,cattle_man,Plant_2] 0.00292851287
+x[CLUSTER_289,cattle_man,Plant_2] 0
 x[CLUSTER_289,cattle_man,Plant_3] 0
 x[CLUSTER_289,cattle_man,Plant_4] 0
 x[CLUSTER_289,cattle_man,Plant_5] 0
@@ -25482,7 +25482,7 @@ x[CLUSTER_289,cattle_slu,Plant_8] 0
 x[CLUSTER_289,cattle_slu,Plant_9] 0
 x[CLUSTER_289,horse_man,Plant_0] 0
 x[CLUSTER_289,horse_man,Plant_1] 0
-x[CLUSTER_289,horse_man,Plant_2] 0.0007474
+x[CLUSTER_289,horse_man,Plant_2] 0
 x[CLUSTER_289,horse_man,Plant_3] 0
 x[CLUSTER_289,horse_man,Plant_4] 0
 x[CLUSTER_289,horse_man,Plant_5] 0
@@ -25502,7 +25502,7 @@ x[CLUSTER_289,pig_slu,Plant_8] 0
 x[CLUSTER_289,pig_slu,Plant_9] 0
 x[CLUSTER_289,pig_man,Plant_0] 0
 x[CLUSTER_289,pig_man,Plant_1] 0
-x[CLUSTER_289,pig_man,Plant_2] 0.00022268
+x[CLUSTER_289,pig_man,Plant_2] 0
 x[CLUSTER_289,pig_man,Plant_3] 0
 x[CLUSTER_289,pig_man,Plant_4] 0
 x[CLUSTER_289,pig_man,Plant_5] 0
@@ -25529,7 +25529,7 @@ x[CLUSTER_289,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_289,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_289,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_289,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_289,clover_alfalfa_grass,Plant_9] 0.005552
+x[CLUSTER_289,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_289,perm_grass,Plant_0] 0
 x[CLUSTER_289,perm_grass,Plant_1] 0
 x[CLUSTER_289,perm_grass,Plant_2] 0
@@ -25549,7 +25549,7 @@ x[CLUSTER_289,maize_str,Plant_5] 0
 x[CLUSTER_289,maize_str,Plant_6] 0
 x[CLUSTER_289,maize_str,Plant_7] 0
 x[CLUSTER_289,maize_str,Plant_8] 0
-x[CLUSTER_289,maize_str,Plant_9] 0.0004558
+x[CLUSTER_289,maize_str,Plant_9] 0
 x[CLUSTER_289,beet_leaf,Plant_0] 0
 x[CLUSTER_289,beet_leaf,Plant_1] 0
 x[CLUSTER_289,beet_leaf,Plant_2] 0
@@ -25586,7 +25586,7 @@ x[CLUSTER_29,cattle_man,Plant_2] 0
 x[CLUSTER_29,cattle_man,Plant_3] 0
 x[CLUSTER_29,cattle_man,Plant_4] 0
 x[CLUSTER_29,cattle_man,Plant_5] 0
-x[CLUSTER_29,cattle_man,Plant_6] 0.03521
+x[CLUSTER_29,cattle_man,Plant_6] 0
 x[CLUSTER_29,cattle_man,Plant_7] 0
 x[CLUSTER_29,cattle_man,Plant_8] 0
 x[CLUSTER_29,cattle_man,Plant_9] 0
@@ -25596,7 +25596,7 @@ x[CLUSTER_29,cattle_slu,Plant_2] 0
 x[CLUSTER_29,cattle_slu,Plant_3] 0
 x[CLUSTER_29,cattle_slu,Plant_4] 0
 x[CLUSTER_29,cattle_slu,Plant_5] 0
-x[CLUSTER_29,cattle_slu,Plant_6] 1.6247000000000239e-01
+x[CLUSTER_29,cattle_slu,Plant_6] 0
 x[CLUSTER_29,cattle_slu,Plant_7] 0
 x[CLUSTER_29,cattle_slu,Plant_8] 0
 x[CLUSTER_29,cattle_slu,Plant_9] 0
@@ -25606,7 +25606,7 @@ x[CLUSTER_29,horse_man,Plant_2] 0
 x[CLUSTER_29,horse_man,Plant_3] 0
 x[CLUSTER_29,horse_man,Plant_4] 0
 x[CLUSTER_29,horse_man,Plant_5] 0
-x[CLUSTER_29,horse_man,Plant_6] 0.0023387
+x[CLUSTER_29,horse_man,Plant_6] 0
 x[CLUSTER_29,horse_man,Plant_7] 0
 x[CLUSTER_29,horse_man,Plant_8] 0
 x[CLUSTER_29,horse_man,Plant_9] 0
@@ -25700,7 +25700,7 @@ x[CLUSTER_29,legume_str,Plant_6] 0
 x[CLUSTER_29,legume_str,Plant_7] 0
 x[CLUSTER_29,legume_str,Plant_8] 0
 x[CLUSTER_29,legume_str,Plant_9] 0
-x[CLUSTER_290,cattle_man,Plant_0] 0.004269
+x[CLUSTER_290,cattle_man,Plant_0] 0
 x[CLUSTER_290,cattle_man,Plant_1] 0
 x[CLUSTER_290,cattle_man,Plant_2] 0
 x[CLUSTER_290,cattle_man,Plant_3] 0
@@ -25720,7 +25720,7 @@ x[CLUSTER_290,cattle_slu,Plant_6] 0
 x[CLUSTER_290,cattle_slu,Plant_7] 0
 x[CLUSTER_290,cattle_slu,Plant_8] 0
 x[CLUSTER_290,cattle_slu,Plant_9] 0
-x[CLUSTER_290,horse_man,Plant_0] 0.000887
+x[CLUSTER_290,horse_man,Plant_0] 0
 x[CLUSTER_290,horse_man,Plant_1] 0
 x[CLUSTER_290,horse_man,Plant_2] 0
 x[CLUSTER_290,horse_man,Plant_3] 0
@@ -25745,7 +25745,7 @@ x[CLUSTER_290,pig_man,Plant_1] 0
 x[CLUSTER_290,pig_man,Plant_2] 0
 x[CLUSTER_290,pig_man,Plant_3] 0
 x[CLUSTER_290,pig_man,Plant_4] 0
-x[CLUSTER_290,pig_man,Plant_5] 0.000122188
+x[CLUSTER_290,pig_man,Plant_5] 0
 x[CLUSTER_290,pig_man,Plant_6] 0
 x[CLUSTER_290,pig_man,Plant_7] 0
 x[CLUSTER_290,pig_man,Plant_8] 0
@@ -25780,7 +25780,7 @@ x[CLUSTER_290,perm_grass,Plant_6] 0
 x[CLUSTER_290,perm_grass,Plant_7] 0
 x[CLUSTER_290,perm_grass,Plant_8] 0
 x[CLUSTER_290,perm_grass,Plant_9] 0
-x[CLUSTER_290,maize_str,Plant_0] 0.0003887
+x[CLUSTER_290,maize_str,Plant_0] 0
 x[CLUSTER_290,maize_str,Plant_1] 0
 x[CLUSTER_290,maize_str,Plant_2] 0
 x[CLUSTER_290,maize_str,Plant_3] 0
@@ -25823,7 +25823,7 @@ x[CLUSTER_290,legume_str,Plant_9] 0
 x[CLUSTER_291,cattle_man,Plant_0] 0
 x[CLUSTER_291,cattle_man,Plant_1] 0
 x[CLUSTER_291,cattle_man,Plant_2] 0
-x[CLUSTER_291,cattle_man,Plant_3] 2.4573760000000003e-03
+x[CLUSTER_291,cattle_man,Plant_3] 0
 x[CLUSTER_291,cattle_man,Plant_4] 0
 x[CLUSTER_291,cattle_man,Plant_5] 0
 x[CLUSTER_291,cattle_man,Plant_6] 0
@@ -25843,7 +25843,7 @@ x[CLUSTER_291,cattle_slu,Plant_9] 0
 x[CLUSTER_291,horse_man,Plant_0] 0
 x[CLUSTER_291,horse_man,Plant_1] 0
 x[CLUSTER_291,horse_man,Plant_2] 0
-x[CLUSTER_291,horse_man,Plant_3] 0.001658
+x[CLUSTER_291,horse_man,Plant_3] 0
 x[CLUSTER_291,horse_man,Plant_4] 0
 x[CLUSTER_291,horse_man,Plant_5] 0
 x[CLUSTER_291,horse_man,Plant_6] 0
@@ -25863,7 +25863,7 @@ x[CLUSTER_291,pig_slu,Plant_9] 0
 x[CLUSTER_291,pig_man,Plant_0] 0
 x[CLUSTER_291,pig_man,Plant_1] 0
 x[CLUSTER_291,pig_man,Plant_2] 0
-x[CLUSTER_291,pig_man,Plant_3] 0.00774
+x[CLUSTER_291,pig_man,Plant_3] 0
 x[CLUSTER_291,pig_man,Plant_4] 0
 x[CLUSTER_291,pig_man,Plant_5] 0
 x[CLUSTER_291,pig_man,Plant_6] 0
@@ -25943,7 +25943,7 @@ x[CLUSTER_291,legume_str,Plant_9] 0
 x[CLUSTER_292,cattle_man,Plant_0] 0
 x[CLUSTER_292,cattle_man,Plant_1] 0
 x[CLUSTER_292,cattle_man,Plant_2] 0
-x[CLUSTER_292,cattle_man,Plant_3] 0.0089
+x[CLUSTER_292,cattle_man,Plant_3] 0
 x[CLUSTER_292,cattle_man,Plant_4] 0
 x[CLUSTER_292,cattle_man,Plant_5] 0
 x[CLUSTER_292,cattle_man,Plant_6] 0
@@ -25963,7 +25963,7 @@ x[CLUSTER_292,cattle_slu,Plant_9] 0
 x[CLUSTER_292,horse_man,Plant_0] 0
 x[CLUSTER_292,horse_man,Plant_1] 0
 x[CLUSTER_292,horse_man,Plant_2] 0
-x[CLUSTER_292,horse_man,Plant_3] 0.003197
+x[CLUSTER_292,horse_man,Plant_3] 0
 x[CLUSTER_292,horse_man,Plant_4] 0
 x[CLUSTER_292,horse_man,Plant_5] 0
 x[CLUSTER_292,horse_man,Plant_6] 0
@@ -25983,7 +25983,7 @@ x[CLUSTER_292,pig_slu,Plant_9] 0
 x[CLUSTER_292,pig_man,Plant_0] 0
 x[CLUSTER_292,pig_man,Plant_1] 0
 x[CLUSTER_292,pig_man,Plant_2] 0
-x[CLUSTER_292,pig_man,Plant_3] 0.002862
+x[CLUSTER_292,pig_man,Plant_3] 0
 x[CLUSTER_292,pig_man,Plant_4] 0
 x[CLUSTER_292,pig_man,Plant_5] 0
 x[CLUSTER_292,pig_man,Plant_6] 0
@@ -26069,7 +26069,7 @@ x[CLUSTER_293,cattle_man,Plant_5] 0
 x[CLUSTER_293,cattle_man,Plant_6] 0
 x[CLUSTER_293,cattle_man,Plant_7] 0
 x[CLUSTER_293,cattle_man,Plant_8] 0
-x[CLUSTER_293,cattle_man,Plant_9] 0.004637
+x[CLUSTER_293,cattle_man,Plant_9] 0
 x[CLUSTER_293,cattle_slu,Plant_0] 0
 x[CLUSTER_293,cattle_slu,Plant_1] 0
 x[CLUSTER_293,cattle_slu,Plant_2] 0
@@ -26079,7 +26079,7 @@ x[CLUSTER_293,cattle_slu,Plant_5] 0
 x[CLUSTER_293,cattle_slu,Plant_6] 0
 x[CLUSTER_293,cattle_slu,Plant_7] 0
 x[CLUSTER_293,cattle_slu,Plant_8] 0
-x[CLUSTER_293,cattle_slu,Plant_9] 0.019004
+x[CLUSTER_293,cattle_slu,Plant_9] 0
 x[CLUSTER_293,horse_man,Plant_0] 0
 x[CLUSTER_293,horse_man,Plant_1] 0
 x[CLUSTER_293,horse_man,Plant_2] 0
@@ -26089,7 +26089,7 @@ x[CLUSTER_293,horse_man,Plant_5] 0
 x[CLUSTER_293,horse_man,Plant_6] 0
 x[CLUSTER_293,horse_man,Plant_7] 0
 x[CLUSTER_293,horse_man,Plant_8] 0
-x[CLUSTER_293,horse_man,Plant_9] 0.000504
+x[CLUSTER_293,horse_man,Plant_9] 0
 x[CLUSTER_293,pig_slu,Plant_0] 0
 x[CLUSTER_293,pig_slu,Plant_1] 0
 x[CLUSTER_293,pig_slu,Plant_2] 0
@@ -26104,7 +26104,7 @@ x[CLUSTER_293,pig_man,Plant_0] 0
 x[CLUSTER_293,pig_man,Plant_1] 0
 x[CLUSTER_293,pig_man,Plant_2] 0
 x[CLUSTER_293,pig_man,Plant_3] 0
-x[CLUSTER_293,pig_man,Plant_4] 0.0003382269
+x[CLUSTER_293,pig_man,Plant_4] 0
 x[CLUSTER_293,pig_man,Plant_5] 0
 x[CLUSTER_293,pig_man,Plant_6] 0
 x[CLUSTER_293,pig_man,Plant_7] 0
@@ -26129,7 +26129,7 @@ x[CLUSTER_293,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_293,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_293,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_293,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_293,clover_alfalfa_grass,Plant_9] 0.001904
+x[CLUSTER_293,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_293,perm_grass,Plant_0] 0
 x[CLUSTER_293,perm_grass,Plant_1] 0
 x[CLUSTER_293,perm_grass,Plant_2] 0
@@ -26149,7 +26149,7 @@ x[CLUSTER_293,maize_str,Plant_5] 0
 x[CLUSTER_293,maize_str,Plant_6] 0
 x[CLUSTER_293,maize_str,Plant_7] 0
 x[CLUSTER_293,maize_str,Plant_8] 0
-x[CLUSTER_293,maize_str,Plant_9] 1.8119999999999999e-04
+x[CLUSTER_293,maize_str,Plant_9] 0
 x[CLUSTER_293,beet_leaf,Plant_0] 0
 x[CLUSTER_293,beet_leaf,Plant_1] 0
 x[CLUSTER_293,beet_leaf,Plant_2] 0
@@ -26182,7 +26182,7 @@ x[CLUSTER_293,legume_str,Plant_8] 0
 x[CLUSTER_293,legume_str,Plant_9] 0
 x[CLUSTER_294,cattle_man,Plant_0] 0
 x[CLUSTER_294,cattle_man,Plant_1] 0
-x[CLUSTER_294,cattle_man,Plant_2] 0.006386
+x[CLUSTER_294,cattle_man,Plant_2] 0
 x[CLUSTER_294,cattle_man,Plant_3] 0
 x[CLUSTER_294,cattle_man,Plant_4] 0
 x[CLUSTER_294,cattle_man,Plant_5] 0
@@ -26192,7 +26192,7 @@ x[CLUSTER_294,cattle_man,Plant_8] 0
 x[CLUSTER_294,cattle_man,Plant_9] 0
 x[CLUSTER_294,cattle_slu,Plant_0] 0
 x[CLUSTER_294,cattle_slu,Plant_1] 0
-x[CLUSTER_294,cattle_slu,Plant_2] 2.8322100000000360e-02
+x[CLUSTER_294,cattle_slu,Plant_2] 0
 x[CLUSTER_294,cattle_slu,Plant_3] 0
 x[CLUSTER_294,cattle_slu,Plant_4] 0
 x[CLUSTER_294,cattle_slu,Plant_5] 0
@@ -26202,7 +26202,7 @@ x[CLUSTER_294,cattle_slu,Plant_8] 0
 x[CLUSTER_294,cattle_slu,Plant_9] 0
 x[CLUSTER_294,horse_man,Plant_0] 0
 x[CLUSTER_294,horse_man,Plant_1] 0
-x[CLUSTER_294,horse_man,Plant_2] 1.1879000000000002e-03
+x[CLUSTER_294,horse_man,Plant_2] 0
 x[CLUSTER_294,horse_man,Plant_3] 0
 x[CLUSTER_294,horse_man,Plant_4] 0
 x[CLUSTER_294,horse_man,Plant_5] 0
@@ -26222,7 +26222,7 @@ x[CLUSTER_294,pig_slu,Plant_8] 0
 x[CLUSTER_294,pig_slu,Plant_9] 0
 x[CLUSTER_294,pig_man,Plant_0] 0
 x[CLUSTER_294,pig_man,Plant_1] 0
-x[CLUSTER_294,pig_man,Plant_2] 0.0009376
+x[CLUSTER_294,pig_man,Plant_2] 0
 x[CLUSTER_294,pig_man,Plant_3] 0
 x[CLUSTER_294,pig_man,Plant_4] 0
 x[CLUSTER_294,pig_man,Plant_5] 0
@@ -26262,7 +26262,7 @@ x[CLUSTER_294,perm_grass,Plant_8] 0
 x[CLUSTER_294,perm_grass,Plant_9] 0
 x[CLUSTER_294,maize_str,Plant_0] 0
 x[CLUSTER_294,maize_str,Plant_1] 0
-x[CLUSTER_294,maize_str,Plant_2] 0.0001753
+x[CLUSTER_294,maize_str,Plant_2] 0
 x[CLUSTER_294,maize_str,Plant_3] 0
 x[CLUSTER_294,maize_str,Plant_4] 0
 x[CLUSTER_294,maize_str,Plant_5] 0
@@ -26300,7 +26300,7 @@ x[CLUSTER_294,legume_str,Plant_6] 0
 x[CLUSTER_294,legume_str,Plant_7] 0
 x[CLUSTER_294,legume_str,Plant_8] 0
 x[CLUSTER_294,legume_str,Plant_9] 0
-x[CLUSTER_295,cattle_man,Plant_0] 1.0365300000004928e-03
+x[CLUSTER_295,cattle_man,Plant_0] 0
 x[CLUSTER_295,cattle_man,Plant_1] 0
 x[CLUSTER_295,cattle_man,Plant_2] 0
 x[CLUSTER_295,cattle_man,Plant_3] 0
@@ -26320,7 +26320,7 @@ x[CLUSTER_295,cattle_slu,Plant_6] 0
 x[CLUSTER_295,cattle_slu,Plant_7] 0
 x[CLUSTER_295,cattle_slu,Plant_8] 0
 x[CLUSTER_295,cattle_slu,Plant_9] 0
-x[CLUSTER_295,horse_man,Plant_0] 4.6700000000000003e-05
+x[CLUSTER_295,horse_man,Plant_0] 0
 x[CLUSTER_295,horse_man,Plant_1] 0
 x[CLUSTER_295,horse_man,Plant_2] 0
 x[CLUSTER_295,horse_man,Plant_3] 0
@@ -26380,7 +26380,7 @@ x[CLUSTER_295,perm_grass,Plant_6] 0
 x[CLUSTER_295,perm_grass,Plant_7] 0
 x[CLUSTER_295,perm_grass,Plant_8] 0
 x[CLUSTER_295,perm_grass,Plant_9] 0
-x[CLUSTER_295,maize_str,Plant_0] 9.4239371974747660e-04
+x[CLUSTER_295,maize_str,Plant_0] 0
 x[CLUSTER_295,maize_str,Plant_1] 0
 x[CLUSTER_295,maize_str,Plant_2] 0
 x[CLUSTER_295,maize_str,Plant_3] 0
@@ -26423,7 +26423,7 @@ x[CLUSTER_295,legume_str,Plant_9] 0
 x[CLUSTER_296,cattle_man,Plant_0] 0
 x[CLUSTER_296,cattle_man,Plant_1] 0
 x[CLUSTER_296,cattle_man,Plant_2] 0
-x[CLUSTER_296,cattle_man,Plant_3] 0.006573
+x[CLUSTER_296,cattle_man,Plant_3] 0
 x[CLUSTER_296,cattle_man,Plant_4] 0
 x[CLUSTER_296,cattle_man,Plant_5] 0
 x[CLUSTER_296,cattle_man,Plant_6] 0
@@ -26433,7 +26433,7 @@ x[CLUSTER_296,cattle_man,Plant_9] 0
 x[CLUSTER_296,cattle_slu,Plant_0] 0
 x[CLUSTER_296,cattle_slu,Plant_1] 0
 x[CLUSTER_296,cattle_slu,Plant_2] 0
-x[CLUSTER_296,cattle_slu,Plant_3] 0.03712
+x[CLUSTER_296,cattle_slu,Plant_3] 0
 x[CLUSTER_296,cattle_slu,Plant_4] 0
 x[CLUSTER_296,cattle_slu,Plant_5] 0
 x[CLUSTER_296,cattle_slu,Plant_6] 0
@@ -26443,7 +26443,7 @@ x[CLUSTER_296,cattle_slu,Plant_9] 0
 x[CLUSTER_296,horse_man,Plant_0] 0
 x[CLUSTER_296,horse_man,Plant_1] 0
 x[CLUSTER_296,horse_man,Plant_2] 0
-x[CLUSTER_296,horse_man,Plant_3] 0.000902
+x[CLUSTER_296,horse_man,Plant_3] 0
 x[CLUSTER_296,horse_man,Plant_4] 0
 x[CLUSTER_296,horse_man,Plant_5] 0
 x[CLUSTER_296,horse_man,Plant_6] 0
@@ -26548,7 +26548,7 @@ x[CLUSTER_297,cattle_man,Plant_4] 0
 x[CLUSTER_297,cattle_man,Plant_5] 0
 x[CLUSTER_297,cattle_man,Plant_6] 0
 x[CLUSTER_297,cattle_man,Plant_7] 0
-x[CLUSTER_297,cattle_man,Plant_8] 0.01153
+x[CLUSTER_297,cattle_man,Plant_8] 0
 x[CLUSTER_297,cattle_man,Plant_9] 0
 x[CLUSTER_297,cattle_slu,Plant_0] 0
 x[CLUSTER_297,cattle_slu,Plant_1] 0
@@ -26568,7 +26568,7 @@ x[CLUSTER_297,horse_man,Plant_4] 0
 x[CLUSTER_297,horse_man,Plant_5] 0
 x[CLUSTER_297,horse_man,Plant_6] 0
 x[CLUSTER_297,horse_man,Plant_7] 0
-x[CLUSTER_297,horse_man,Plant_8] 0.003459
+x[CLUSTER_297,horse_man,Plant_8] 0
 x[CLUSTER_297,horse_man,Plant_9] 0
 x[CLUSTER_297,pig_slu,Plant_0] 0
 x[CLUSTER_297,pig_slu,Plant_1] 0
@@ -26588,7 +26588,7 @@ x[CLUSTER_297,pig_man,Plant_4] 0
 x[CLUSTER_297,pig_man,Plant_5] 0
 x[CLUSTER_297,pig_man,Plant_6] 0
 x[CLUSTER_297,pig_man,Plant_7] 0
-x[CLUSTER_297,pig_man,Plant_8] 0.000153126
+x[CLUSTER_297,pig_man,Plant_8] 0
 x[CLUSTER_297,pig_man,Plant_9] 0
 x[CLUSTER_297,cereal_str,Plant_0] 0
 x[CLUSTER_297,cereal_str,Plant_1] 0
@@ -26669,7 +26669,7 @@ x[CLUSTER_298,cattle_man,Plant_5] 0
 x[CLUSTER_298,cattle_man,Plant_6] 0
 x[CLUSTER_298,cattle_man,Plant_7] 0
 x[CLUSTER_298,cattle_man,Plant_8] 0
-x[CLUSTER_298,cattle_man,Plant_9] 0.00656
+x[CLUSTER_298,cattle_man,Plant_9] 0
 x[CLUSTER_298,cattle_slu,Plant_0] 0
 x[CLUSTER_298,cattle_slu,Plant_1] 0
 x[CLUSTER_298,cattle_slu,Plant_2] 0
@@ -26682,7 +26682,7 @@ x[CLUSTER_298,cattle_slu,Plant_8] 0
 x[CLUSTER_298,cattle_slu,Plant_9] 0
 x[CLUSTER_298,horse_man,Plant_0] 0
 x[CLUSTER_298,horse_man,Plant_1] 0
-x[CLUSTER_298,horse_man,Plant_2] 0.000591
+x[CLUSTER_298,horse_man,Plant_2] 0
 x[CLUSTER_298,horse_man,Plant_3] 0
 x[CLUSTER_298,horse_man,Plant_4] 0
 x[CLUSTER_298,horse_man,Plant_5] 0
@@ -26729,7 +26729,7 @@ x[CLUSTER_298,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_298,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_298,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_298,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_298,clover_alfalfa_grass,Plant_9] 0.0012828
+x[CLUSTER_298,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_298,perm_grass,Plant_0] 0
 x[CLUSTER_298,perm_grass,Plant_1] 0
 x[CLUSTER_298,perm_grass,Plant_2] 0
@@ -26749,7 +26749,7 @@ x[CLUSTER_298,maize_str,Plant_5] 0
 x[CLUSTER_298,maize_str,Plant_6] 0
 x[CLUSTER_298,maize_str,Plant_7] 0
 x[CLUSTER_298,maize_str,Plant_8] 0
-x[CLUSTER_298,maize_str,Plant_9] 0.00013171
+x[CLUSTER_298,maize_str,Plant_9] 0
 x[CLUSTER_298,beet_leaf,Plant_0] 0
 x[CLUSTER_298,beet_leaf,Plant_1] 0
 x[CLUSTER_298,beet_leaf,Plant_2] 0
@@ -26784,7 +26784,7 @@ x[CLUSTER_299,cattle_man,Plant_0] 0
 x[CLUSTER_299,cattle_man,Plant_1] 0
 x[CLUSTER_299,cattle_man,Plant_2] 0
 x[CLUSTER_299,cattle_man,Plant_3] 0
-x[CLUSTER_299,cattle_man,Plant_4] 0.004359
+x[CLUSTER_299,cattle_man,Plant_4] 0
 x[CLUSTER_299,cattle_man,Plant_5] 0
 x[CLUSTER_299,cattle_man,Plant_6] 0
 x[CLUSTER_299,cattle_man,Plant_7] 0
@@ -26794,7 +26794,7 @@ x[CLUSTER_299,cattle_slu,Plant_0] 0
 x[CLUSTER_299,cattle_slu,Plant_1] 0
 x[CLUSTER_299,cattle_slu,Plant_2] 0
 x[CLUSTER_299,cattle_slu,Plant_3] 0
-x[CLUSTER_299,cattle_slu,Plant_4] 2.0498999999999906e-02
+x[CLUSTER_299,cattle_slu,Plant_4] 0
 x[CLUSTER_299,cattle_slu,Plant_5] 0
 x[CLUSTER_299,cattle_slu,Plant_6] 0
 x[CLUSTER_299,cattle_slu,Plant_7] 0
@@ -26804,7 +26804,7 @@ x[CLUSTER_299,horse_man,Plant_0] 0
 x[CLUSTER_299,horse_man,Plant_1] 0
 x[CLUSTER_299,horse_man,Plant_2] 0
 x[CLUSTER_299,horse_man,Plant_3] 0
-x[CLUSTER_299,horse_man,Plant_4] 8.1779999999999993e-04
+x[CLUSTER_299,horse_man,Plant_4] 0
 x[CLUSTER_299,horse_man,Plant_5] 0
 x[CLUSTER_299,horse_man,Plant_6] 0
 x[CLUSTER_299,horse_man,Plant_7] 0
@@ -26824,7 +26824,7 @@ x[CLUSTER_299,pig_man,Plant_0] 0
 x[CLUSTER_299,pig_man,Plant_1] 0
 x[CLUSTER_299,pig_man,Plant_2] 0
 x[CLUSTER_299,pig_man,Plant_3] 0
-x[CLUSTER_299,pig_man,Plant_4] 0.000111861
+x[CLUSTER_299,pig_man,Plant_4] 0
 x[CLUSTER_299,pig_man,Plant_5] 0
 x[CLUSTER_299,pig_man,Plant_6] 0
 x[CLUSTER_299,pig_man,Plant_7] 0
@@ -26901,7 +26901,7 @@ x[CLUSTER_299,legume_str,Plant_7] 0
 x[CLUSTER_299,legume_str,Plant_8] 0
 x[CLUSTER_299,legume_str,Plant_9] 0
 x[CLUSTER_3,cattle_man,Plant_0] 0
-x[CLUSTER_3,cattle_man,Plant_1] 0.007883
+x[CLUSTER_3,cattle_man,Plant_1] 0
 x[CLUSTER_3,cattle_man,Plant_2] 0
 x[CLUSTER_3,cattle_man,Plant_3] 0
 x[CLUSTER_3,cattle_man,Plant_4] 0
@@ -26928,7 +26928,7 @@ x[CLUSTER_3,horse_man,Plant_4] 0
 x[CLUSTER_3,horse_man,Plant_5] 0
 x[CLUSTER_3,horse_man,Plant_6] 0
 x[CLUSTER_3,horse_man,Plant_7] 0
-x[CLUSTER_3,horse_man,Plant_8] 0.005877
+x[CLUSTER_3,horse_man,Plant_8] 0
 x[CLUSTER_3,horse_man,Plant_9] 0
 x[CLUSTER_3,pig_slu,Plant_0] 0
 x[CLUSTER_3,pig_slu,Plant_1] 0
@@ -26948,7 +26948,7 @@ x[CLUSTER_3,pig_man,Plant_4] 0
 x[CLUSTER_3,pig_man,Plant_5] 0
 x[CLUSTER_3,pig_man,Plant_6] 0
 x[CLUSTER_3,pig_man,Plant_7] 0
-x[CLUSTER_3,pig_man,Plant_8] 1.6916000000000002e-05
+x[CLUSTER_3,pig_man,Plant_8] 0
 x[CLUSTER_3,pig_man,Plant_9] 0
 x[CLUSTER_3,cereal_str,Plant_0] 0
 x[CLUSTER_3,cereal_str,Plant_1] 0
@@ -27022,7 +27022,7 @@ x[CLUSTER_3,legume_str,Plant_8] 0
 x[CLUSTER_3,legume_str,Plant_9] 0
 x[CLUSTER_30,cattle_man,Plant_0] 0
 x[CLUSTER_30,cattle_man,Plant_1] 0
-x[CLUSTER_30,cattle_man,Plant_2] 0.00544659
+x[CLUSTER_30,cattle_man,Plant_2] 0
 x[CLUSTER_30,cattle_man,Plant_3] 0
 x[CLUSTER_30,cattle_man,Plant_4] 0
 x[CLUSTER_30,cattle_man,Plant_5] 0
@@ -27042,7 +27042,7 @@ x[CLUSTER_30,cattle_slu,Plant_8] 0
 x[CLUSTER_30,cattle_slu,Plant_9] 0
 x[CLUSTER_30,horse_man,Plant_0] 0
 x[CLUSTER_30,horse_man,Plant_1] 0
-x[CLUSTER_30,horse_man,Plant_2] 0.00047827
+x[CLUSTER_30,horse_man,Plant_2] 0
 x[CLUSTER_30,horse_man,Plant_3] 0
 x[CLUSTER_30,horse_man,Plant_4] 0
 x[CLUSTER_30,horse_man,Plant_5] 0
@@ -27062,7 +27062,7 @@ x[CLUSTER_30,pig_slu,Plant_8] 0
 x[CLUSTER_30,pig_slu,Plant_9] 0
 x[CLUSTER_30,pig_man,Plant_0] 0
 x[CLUSTER_30,pig_man,Plant_1] 0
-x[CLUSTER_30,pig_man,Plant_2] 0.00228
+x[CLUSTER_30,pig_man,Plant_2] 0
 x[CLUSTER_30,pig_man,Plant_3] 0
 x[CLUSTER_30,pig_man,Plant_4] 0
 x[CLUSTER_30,pig_man,Plant_5] 0
@@ -27109,7 +27109,7 @@ x[CLUSTER_30,maize_str,Plant_5] 0
 x[CLUSTER_30,maize_str,Plant_6] 0
 x[CLUSTER_30,maize_str,Plant_7] 0
 x[CLUSTER_30,maize_str,Plant_8] 0
-x[CLUSTER_30,maize_str,Plant_9] 0.0005304
+x[CLUSTER_30,maize_str,Plant_9] 0
 x[CLUSTER_30,beet_leaf,Plant_0] 0
 x[CLUSTER_30,beet_leaf,Plant_1] 0
 x[CLUSTER_30,beet_leaf,Plant_2] 0
@@ -27145,7 +27145,7 @@ x[CLUSTER_300,cattle_man,Plant_1] 0
 x[CLUSTER_300,cattle_man,Plant_2] 0
 x[CLUSTER_300,cattle_man,Plant_3] 0
 x[CLUSTER_300,cattle_man,Plant_4] 0
-x[CLUSTER_300,cattle_man,Plant_5] 0.01215
+x[CLUSTER_300,cattle_man,Plant_5] 0
 x[CLUSTER_300,cattle_man,Plant_6] 0
 x[CLUSTER_300,cattle_man,Plant_7] 0
 x[CLUSTER_300,cattle_man,Plant_8] 0
@@ -27165,7 +27165,7 @@ x[CLUSTER_300,horse_man,Plant_1] 0
 x[CLUSTER_300,horse_man,Plant_2] 0
 x[CLUSTER_300,horse_man,Plant_3] 0
 x[CLUSTER_300,horse_man,Plant_4] 0
-x[CLUSTER_300,horse_man,Plant_5] 0.006326
+x[CLUSTER_300,horse_man,Plant_5] 0
 x[CLUSTER_300,horse_man,Plant_6] 0
 x[CLUSTER_300,horse_man,Plant_7] 0
 x[CLUSTER_300,horse_man,Plant_8] 0
@@ -27185,7 +27185,7 @@ x[CLUSTER_300,pig_man,Plant_1] 0
 x[CLUSTER_300,pig_man,Plant_2] 0
 x[CLUSTER_300,pig_man,Plant_3] 0
 x[CLUSTER_300,pig_man,Plant_4] 0
-x[CLUSTER_300,pig_man,Plant_5] 5.8184499999999989e-04
+x[CLUSTER_300,pig_man,Plant_5] 0
 x[CLUSTER_300,pig_man,Plant_6] 0
 x[CLUSTER_300,pig_man,Plant_7] 0
 x[CLUSTER_300,pig_man,Plant_8] 0
@@ -27260,7 +27260,7 @@ x[CLUSTER_300,legume_str,Plant_6] 0
 x[CLUSTER_300,legume_str,Plant_7] 0
 x[CLUSTER_300,legume_str,Plant_8] 0
 x[CLUSTER_300,legume_str,Plant_9] 0
-x[CLUSTER_301,cattle_man,Plant_0] 0.002641
+x[CLUSTER_301,cattle_man,Plant_0] 0
 x[CLUSTER_301,cattle_man,Plant_1] 0
 x[CLUSTER_301,cattle_man,Plant_2] 0
 x[CLUSTER_301,cattle_man,Plant_3] 0
@@ -27280,7 +27280,7 @@ x[CLUSTER_301,cattle_slu,Plant_6] 0
 x[CLUSTER_301,cattle_slu,Plant_7] 0
 x[CLUSTER_301,cattle_slu,Plant_8] 0
 x[CLUSTER_301,cattle_slu,Plant_9] 0
-x[CLUSTER_301,horse_man,Plant_0] 0.00076
+x[CLUSTER_301,horse_man,Plant_0] 0
 x[CLUSTER_301,horse_man,Plant_1] 0
 x[CLUSTER_301,horse_man,Plant_2] 0
 x[CLUSTER_301,horse_man,Plant_3] 0
@@ -27300,7 +27300,7 @@ x[CLUSTER_301,pig_slu,Plant_6] 0
 x[CLUSTER_301,pig_slu,Plant_7] 0
 x[CLUSTER_301,pig_slu,Plant_8] 0
 x[CLUSTER_301,pig_slu,Plant_9] 0
-x[CLUSTER_301,pig_man,Plant_0] 2.2522999999999998e-04
+x[CLUSTER_301,pig_man,Plant_0] 0
 x[CLUSTER_301,pig_man,Plant_1] 0
 x[CLUSTER_301,pig_man,Plant_2] 0
 x[CLUSTER_301,pig_man,Plant_3] 0
@@ -27383,7 +27383,7 @@ x[CLUSTER_301,legume_str,Plant_9] 0
 x[CLUSTER_302,cattle_man,Plant_0] 0
 x[CLUSTER_302,cattle_man,Plant_1] 0
 x[CLUSTER_302,cattle_man,Plant_2] 0
-x[CLUSTER_302,cattle_man,Plant_3] 0.01613
+x[CLUSTER_302,cattle_man,Plant_3] 0
 x[CLUSTER_302,cattle_man,Plant_4] 0
 x[CLUSTER_302,cattle_man,Plant_5] 0
 x[CLUSTER_302,cattle_man,Plant_6] 0
@@ -27403,7 +27403,7 @@ x[CLUSTER_302,cattle_slu,Plant_9] 0
 x[CLUSTER_302,horse_man,Plant_0] 0
 x[CLUSTER_302,horse_man,Plant_1] 0
 x[CLUSTER_302,horse_man,Plant_2] 0
-x[CLUSTER_302,horse_man,Plant_3] 0.001597
+x[CLUSTER_302,horse_man,Plant_3] 0
 x[CLUSTER_302,horse_man,Plant_4] 0
 x[CLUSTER_302,horse_man,Plant_5] 0
 x[CLUSTER_302,horse_man,Plant_6] 0
@@ -27423,7 +27423,7 @@ x[CLUSTER_302,pig_slu,Plant_9] 0
 x[CLUSTER_302,pig_man,Plant_0] 0
 x[CLUSTER_302,pig_man,Plant_1] 0
 x[CLUSTER_302,pig_man,Plant_2] 0
-x[CLUSTER_302,pig_man,Plant_3] 0.000141874306
+x[CLUSTER_302,pig_man,Plant_3] 0
 x[CLUSTER_302,pig_man,Plant_4] 0
 x[CLUSTER_302,pig_man,Plant_5] 0
 x[CLUSTER_302,pig_man,Plant_6] 0
@@ -27508,7 +27508,7 @@ x[CLUSTER_303,cattle_man,Plant_4] 0
 x[CLUSTER_303,cattle_man,Plant_5] 0
 x[CLUSTER_303,cattle_man,Plant_6] 0
 x[CLUSTER_303,cattle_man,Plant_7] 0
-x[CLUSTER_303,cattle_man,Plant_8] 0.003262
+x[CLUSTER_303,cattle_man,Plant_8] 0
 x[CLUSTER_303,cattle_man,Plant_9] 0
 x[CLUSTER_303,cattle_slu,Plant_0] 0
 x[CLUSTER_303,cattle_slu,Plant_1] 0
@@ -27528,7 +27528,7 @@ x[CLUSTER_303,horse_man,Plant_4] 0
 x[CLUSTER_303,horse_man,Plant_5] 0
 x[CLUSTER_303,horse_man,Plant_6] 0
 x[CLUSTER_303,horse_man,Plant_7] 0
-x[CLUSTER_303,horse_man,Plant_8] 0.00157
+x[CLUSTER_303,horse_man,Plant_8] 0
 x[CLUSTER_303,horse_man,Plant_9] 0
 x[CLUSTER_303,pig_slu,Plant_0] 0
 x[CLUSTER_303,pig_slu,Plant_1] 0
@@ -27548,7 +27548,7 @@ x[CLUSTER_303,pig_man,Plant_4] 0
 x[CLUSTER_303,pig_man,Plant_5] 0
 x[CLUSTER_303,pig_man,Plant_6] 0
 x[CLUSTER_303,pig_man,Plant_7] 0
-x[CLUSTER_303,pig_man,Plant_8] 0.001707
+x[CLUSTER_303,pig_man,Plant_8] 0
 x[CLUSTER_303,pig_man,Plant_9] 0
 x[CLUSTER_303,cereal_str,Plant_0] 0
 x[CLUSTER_303,cereal_str,Plant_1] 0
@@ -27621,7 +27621,7 @@ x[CLUSTER_303,legume_str,Plant_7] 0
 x[CLUSTER_303,legume_str,Plant_8] 0
 x[CLUSTER_303,legume_str,Plant_9] 0
 x[CLUSTER_304,cattle_man,Plant_0] 0
-x[CLUSTER_304,cattle_man,Plant_1] 0.002118
+x[CLUSTER_304,cattle_man,Plant_1] 0
 x[CLUSTER_304,cattle_man,Plant_2] 0
 x[CLUSTER_304,cattle_man,Plant_3] 0
 x[CLUSTER_304,cattle_man,Plant_4] 0
@@ -27641,7 +27641,7 @@ x[CLUSTER_304,cattle_slu,Plant_7] 0
 x[CLUSTER_304,cattle_slu,Plant_8] 0
 x[CLUSTER_304,cattle_slu,Plant_9] 0
 x[CLUSTER_304,horse_man,Plant_0] 0
-x[CLUSTER_304,horse_man,Plant_1] 0.0007066
+x[CLUSTER_304,horse_man,Plant_1] 0
 x[CLUSTER_304,horse_man,Plant_2] 0
 x[CLUSTER_304,horse_man,Plant_3] 0
 x[CLUSTER_304,horse_man,Plant_4] 0
@@ -27748,7 +27748,7 @@ x[CLUSTER_305,cattle_man,Plant_4] 0
 x[CLUSTER_305,cattle_man,Plant_5] 0
 x[CLUSTER_305,cattle_man,Plant_6] 0
 x[CLUSTER_305,cattle_man,Plant_7] 0
-x[CLUSTER_305,cattle_man,Plant_8] 0.004426
+x[CLUSTER_305,cattle_man,Plant_8] 0
 x[CLUSTER_305,cattle_man,Plant_9] 0
 x[CLUSTER_305,cattle_slu,Plant_0] 0
 x[CLUSTER_305,cattle_slu,Plant_1] 0
@@ -27758,7 +27758,7 @@ x[CLUSTER_305,cattle_slu,Plant_4] 0
 x[CLUSTER_305,cattle_slu,Plant_5] 0
 x[CLUSTER_305,cattle_slu,Plant_6] 0
 x[CLUSTER_305,cattle_slu,Plant_7] 0
-x[CLUSTER_305,cattle_slu,Plant_8] 0.018427
+x[CLUSTER_305,cattle_slu,Plant_8] 0
 x[CLUSTER_305,cattle_slu,Plant_9] 0
 x[CLUSTER_305,horse_man,Plant_0] 0
 x[CLUSTER_305,horse_man,Plant_1] 0
@@ -27768,7 +27768,7 @@ x[CLUSTER_305,horse_man,Plant_4] 0
 x[CLUSTER_305,horse_man,Plant_5] 0
 x[CLUSTER_305,horse_man,Plant_6] 0
 x[CLUSTER_305,horse_man,Plant_7] 0
-x[CLUSTER_305,horse_man,Plant_8] 5.3320000000000006e-04
+x[CLUSTER_305,horse_man,Plant_8] 0
 x[CLUSTER_305,horse_man,Plant_9] 0
 x[CLUSTER_305,pig_slu,Plant_0] 0
 x[CLUSTER_305,pig_slu,Plant_1] 0
@@ -27788,7 +27788,7 @@ x[CLUSTER_305,pig_man,Plant_4] 0
 x[CLUSTER_305,pig_man,Plant_5] 0
 x[CLUSTER_305,pig_man,Plant_6] 0
 x[CLUSTER_305,pig_man,Plant_7] 0
-x[CLUSTER_305,pig_man,Plant_8] 3.8857999999999997e-04
+x[CLUSTER_305,pig_man,Plant_8] 0
 x[CLUSTER_305,pig_man,Plant_9] 0
 x[CLUSTER_305,cereal_str,Plant_0] 0
 x[CLUSTER_305,cereal_str,Plant_1] 0
@@ -27865,7 +27865,7 @@ x[CLUSTER_306,cattle_man,Plant_1] 0
 x[CLUSTER_306,cattle_man,Plant_2] 0
 x[CLUSTER_306,cattle_man,Plant_3] 0
 x[CLUSTER_306,cattle_man,Plant_4] 0
-x[CLUSTER_306,cattle_man,Plant_5] 0.01376
+x[CLUSTER_306,cattle_man,Plant_5] 0
 x[CLUSTER_306,cattle_man,Plant_6] 0
 x[CLUSTER_306,cattle_man,Plant_7] 0
 x[CLUSTER_306,cattle_man,Plant_8] 0
@@ -27875,7 +27875,7 @@ x[CLUSTER_306,cattle_slu,Plant_1] 0
 x[CLUSTER_306,cattle_slu,Plant_2] 0
 x[CLUSTER_306,cattle_slu,Plant_3] 0
 x[CLUSTER_306,cattle_slu,Plant_4] 0
-x[CLUSTER_306,cattle_slu,Plant_5] 4.3809999999999995e-02
+x[CLUSTER_306,cattle_slu,Plant_5] 0
 x[CLUSTER_306,cattle_slu,Plant_6] 0
 x[CLUSTER_306,cattle_slu,Plant_7] 0
 x[CLUSTER_306,cattle_slu,Plant_8] 0
@@ -27885,7 +27885,7 @@ x[CLUSTER_306,horse_man,Plant_1] 0
 x[CLUSTER_306,horse_man,Plant_2] 0
 x[CLUSTER_306,horse_man,Plant_3] 0
 x[CLUSTER_306,horse_man,Plant_4] 0
-x[CLUSTER_306,horse_man,Plant_5] 0.00261
+x[CLUSTER_306,horse_man,Plant_5] 0
 x[CLUSTER_306,horse_man,Plant_6] 0
 x[CLUSTER_306,horse_man,Plant_7] 0
 x[CLUSTER_306,horse_man,Plant_8] 0
@@ -27905,7 +27905,7 @@ x[CLUSTER_306,pig_man,Plant_1] 0
 x[CLUSTER_306,pig_man,Plant_2] 0
 x[CLUSTER_306,pig_man,Plant_3] 0
 x[CLUSTER_306,pig_man,Plant_4] 0
-x[CLUSTER_306,pig_man,Plant_5] 0.0004794
+x[CLUSTER_306,pig_man,Plant_5] 0
 x[CLUSTER_306,pig_man,Plant_6] 0
 x[CLUSTER_306,pig_man,Plant_7] 0
 x[CLUSTER_306,pig_man,Plant_8] 0
@@ -27945,7 +27945,7 @@ x[CLUSTER_306,maize_str,Plant_1] 0
 x[CLUSTER_306,maize_str,Plant_2] 0
 x[CLUSTER_306,maize_str,Plant_3] 0
 x[CLUSTER_306,maize_str,Plant_4] 0
-x[CLUSTER_306,maize_str,Plant_5] 3.7359468216669714e-03
+x[CLUSTER_306,maize_str,Plant_5] 0
 x[CLUSTER_306,maize_str,Plant_6] 0
 x[CLUSTER_306,maize_str,Plant_7] 0
 x[CLUSTER_306,maize_str,Plant_8] 0
@@ -27984,7 +27984,7 @@ x[CLUSTER_307,cattle_man,Plant_0] 0
 x[CLUSTER_307,cattle_man,Plant_1] 0
 x[CLUSTER_307,cattle_man,Plant_2] 0
 x[CLUSTER_307,cattle_man,Plant_3] 0
-x[CLUSTER_307,cattle_man,Plant_4] 0.0036
+x[CLUSTER_307,cattle_man,Plant_4] 0
 x[CLUSTER_307,cattle_man,Plant_5] 0
 x[CLUSTER_307,cattle_man,Plant_6] 0
 x[CLUSTER_307,cattle_man,Plant_7] 0
@@ -27994,7 +27994,7 @@ x[CLUSTER_307,cattle_slu,Plant_0] 0
 x[CLUSTER_307,cattle_slu,Plant_1] 0
 x[CLUSTER_307,cattle_slu,Plant_2] 0
 x[CLUSTER_307,cattle_slu,Plant_3] 0
-x[CLUSTER_307,cattle_slu,Plant_4] 1.6547700000000002e-02
+x[CLUSTER_307,cattle_slu,Plant_4] 0
 x[CLUSTER_307,cattle_slu,Plant_5] 0
 x[CLUSTER_307,cattle_slu,Plant_6] 0
 x[CLUSTER_307,cattle_slu,Plant_7] 0
@@ -28004,7 +28004,7 @@ x[CLUSTER_307,horse_man,Plant_0] 0
 x[CLUSTER_307,horse_man,Plant_1] 0
 x[CLUSTER_307,horse_man,Plant_2] 0
 x[CLUSTER_307,horse_man,Plant_3] 0
-x[CLUSTER_307,horse_man,Plant_4] 0.001101
+x[CLUSTER_307,horse_man,Plant_4] 0
 x[CLUSTER_307,horse_man,Plant_5] 0
 x[CLUSTER_307,horse_man,Plant_6] 0
 x[CLUSTER_307,horse_man,Plant_7] 0
@@ -28126,7 +28126,7 @@ x[CLUSTER_308,horse_man,Plant_2] 0
 x[CLUSTER_308,horse_man,Plant_3] 0
 x[CLUSTER_308,horse_man,Plant_4] 0
 x[CLUSTER_308,horse_man,Plant_5] 0
-x[CLUSTER_308,horse_man,Plant_6] 0.000482
+x[CLUSTER_308,horse_man,Plant_6] 0
 x[CLUSTER_308,horse_man,Plant_7] 0
 x[CLUSTER_308,horse_man,Plant_8] 0
 x[CLUSTER_308,horse_man,Plant_9] 0
@@ -28224,7 +28224,7 @@ x[CLUSTER_309,cattle_man,Plant_0] 0
 x[CLUSTER_309,cattle_man,Plant_1] 0
 x[CLUSTER_309,cattle_man,Plant_2] 0
 x[CLUSTER_309,cattle_man,Plant_3] 0
-x[CLUSTER_309,cattle_man,Plant_4] 0.00763
+x[CLUSTER_309,cattle_man,Plant_4] 0
 x[CLUSTER_309,cattle_man,Plant_5] 0
 x[CLUSTER_309,cattle_man,Plant_6] 0
 x[CLUSTER_309,cattle_man,Plant_7] 0
@@ -28234,7 +28234,7 @@ x[CLUSTER_309,cattle_slu,Plant_0] 0
 x[CLUSTER_309,cattle_slu,Plant_1] 0
 x[CLUSTER_309,cattle_slu,Plant_2] 0
 x[CLUSTER_309,cattle_slu,Plant_3] 0
-x[CLUSTER_309,cattle_slu,Plant_4] 5.6379999999999930e-02
+x[CLUSTER_309,cattle_slu,Plant_4] 0
 x[CLUSTER_309,cattle_slu,Plant_5] 0
 x[CLUSTER_309,cattle_slu,Plant_6] 0
 x[CLUSTER_309,cattle_slu,Plant_7] 0
@@ -28244,7 +28244,7 @@ x[CLUSTER_309,horse_man,Plant_0] 0
 x[CLUSTER_309,horse_man,Plant_1] 0
 x[CLUSTER_309,horse_man,Plant_2] 0
 x[CLUSTER_309,horse_man,Plant_3] 0
-x[CLUSTER_309,horse_man,Plant_4] 0.0002403
+x[CLUSTER_309,horse_man,Plant_4] 0
 x[CLUSTER_309,horse_man,Plant_5] 0
 x[CLUSTER_309,horse_man,Plant_6] 0
 x[CLUSTER_309,horse_man,Plant_7] 0
@@ -28264,7 +28264,7 @@ x[CLUSTER_309,pig_man,Plant_0] 0
 x[CLUSTER_309,pig_man,Plant_1] 0
 x[CLUSTER_309,pig_man,Plant_2] 0
 x[CLUSTER_309,pig_man,Plant_3] 0
-x[CLUSTER_309,pig_man,Plant_4] 0.00021609
+x[CLUSTER_309,pig_man,Plant_4] 0
 x[CLUSTER_309,pig_man,Plant_5] 0
 x[CLUSTER_309,pig_man,Plant_6] 0
 x[CLUSTER_309,pig_man,Plant_7] 0
@@ -28340,7 +28340,7 @@ x[CLUSTER_309,legume_str,Plant_6] 0
 x[CLUSTER_309,legume_str,Plant_7] 0
 x[CLUSTER_309,legume_str,Plant_8] 0
 x[CLUSTER_309,legume_str,Plant_9] 0
-x[CLUSTER_31,cattle_man,Plant_0] 1.1270176000000154e-02
+x[CLUSTER_31,cattle_man,Plant_0] 0
 x[CLUSTER_31,cattle_man,Plant_1] 0
 x[CLUSTER_31,cattle_man,Plant_2] 0
 x[CLUSTER_31,cattle_man,Plant_3] 0
@@ -28350,7 +28350,7 @@ x[CLUSTER_31,cattle_man,Plant_6] 0
 x[CLUSTER_31,cattle_man,Plant_7] 0
 x[CLUSTER_31,cattle_man,Plant_8] 0
 x[CLUSTER_31,cattle_man,Plant_9] 0
-x[CLUSTER_31,cattle_slu,Plant_0] 0.055
+x[CLUSTER_31,cattle_slu,Plant_0] 0
 x[CLUSTER_31,cattle_slu,Plant_1] 0
 x[CLUSTER_31,cattle_slu,Plant_2] 0
 x[CLUSTER_31,cattle_slu,Plant_3] 0
@@ -28360,7 +28360,7 @@ x[CLUSTER_31,cattle_slu,Plant_6] 0
 x[CLUSTER_31,cattle_slu,Plant_7] 0
 x[CLUSTER_31,cattle_slu,Plant_8] 0
 x[CLUSTER_31,cattle_slu,Plant_9] 0
-x[CLUSTER_31,horse_man,Plant_0] 0.003786
+x[CLUSTER_31,horse_man,Plant_0] 0
 x[CLUSTER_31,horse_man,Plant_1] 0
 x[CLUSTER_31,horse_man,Plant_2] 0
 x[CLUSTER_31,horse_man,Plant_3] 0
@@ -28380,7 +28380,7 @@ x[CLUSTER_31,pig_slu,Plant_6] 0
 x[CLUSTER_31,pig_slu,Plant_7] 0
 x[CLUSTER_31,pig_slu,Plant_8] 0
 x[CLUSTER_31,pig_slu,Plant_9] 0
-x[CLUSTER_31,pig_man,Plant_0] 0.0003904
+x[CLUSTER_31,pig_man,Plant_0] 0
 x[CLUSTER_31,pig_man,Plant_1] 0
 x[CLUSTER_31,pig_man,Plant_2] 0
 x[CLUSTER_31,pig_man,Plant_3] 0
@@ -28420,7 +28420,7 @@ x[CLUSTER_31,perm_grass,Plant_6] 0
 x[CLUSTER_31,perm_grass,Plant_7] 0
 x[CLUSTER_31,perm_grass,Plant_8] 0
 x[CLUSTER_31,perm_grass,Plant_9] 0
-x[CLUSTER_31,maize_str,Plant_0] 1.7940999999999999e-03
+x[CLUSTER_31,maize_str,Plant_0] 0
 x[CLUSTER_31,maize_str,Plant_1] 0
 x[CLUSTER_31,maize_str,Plant_2] 0
 x[CLUSTER_31,maize_str,Plant_3] 0
@@ -28467,7 +28467,7 @@ x[CLUSTER_310,cattle_man,Plant_3] 0
 x[CLUSTER_310,cattle_man,Plant_4] 0
 x[CLUSTER_310,cattle_man,Plant_5] 0
 x[CLUSTER_310,cattle_man,Plant_6] 0
-x[CLUSTER_310,cattle_man,Plant_7] 0.00995
+x[CLUSTER_310,cattle_man,Plant_7] 0
 x[CLUSTER_310,cattle_man,Plant_8] 0
 x[CLUSTER_310,cattle_man,Plant_9] 0
 x[CLUSTER_310,cattle_slu,Plant_0] 0
@@ -28487,7 +28487,7 @@ x[CLUSTER_310,horse_man,Plant_3] 0
 x[CLUSTER_310,horse_man,Plant_4] 0
 x[CLUSTER_310,horse_man,Plant_5] 0
 x[CLUSTER_310,horse_man,Plant_6] 0
-x[CLUSTER_310,horse_man,Plant_7] 0.000462
+x[CLUSTER_310,horse_man,Plant_7] 0
 x[CLUSTER_310,horse_man,Plant_8] 0
 x[CLUSTER_310,horse_man,Plant_9] 0
 x[CLUSTER_310,pig_slu,Plant_0] 0
@@ -28507,7 +28507,7 @@ x[CLUSTER_310,pig_man,Plant_3] 0
 x[CLUSTER_310,pig_man,Plant_4] 0
 x[CLUSTER_310,pig_man,Plant_5] 0
 x[CLUSTER_310,pig_man,Plant_6] 0
-x[CLUSTER_310,pig_man,Plant_7] 6.7099999999999991e-05
+x[CLUSTER_310,pig_man,Plant_7] 0
 x[CLUSTER_310,pig_man,Plant_8] 0
 x[CLUSTER_310,pig_man,Plant_9] 0
 x[CLUSTER_310,cereal_str,Plant_0] 0
@@ -28580,7 +28580,7 @@ x[CLUSTER_310,legume_str,Plant_6] 0
 x[CLUSTER_310,legume_str,Plant_7] 0
 x[CLUSTER_310,legume_str,Plant_8] 0
 x[CLUSTER_310,legume_str,Plant_9] 0
-x[CLUSTER_311,cattle_man,Plant_0] 0.0227
+x[CLUSTER_311,cattle_man,Plant_0] 0
 x[CLUSTER_311,cattle_man,Plant_1] 0
 x[CLUSTER_311,cattle_man,Plant_2] 0
 x[CLUSTER_311,cattle_man,Plant_3] 0
@@ -28600,7 +28600,7 @@ x[CLUSTER_311,cattle_slu,Plant_6] 0
 x[CLUSTER_311,cattle_slu,Plant_7] 0
 x[CLUSTER_311,cattle_slu,Plant_8] 0
 x[CLUSTER_311,cattle_slu,Plant_9] 0
-x[CLUSTER_311,horse_man,Plant_0] 1.2505000000000153e-03
+x[CLUSTER_311,horse_man,Plant_0] 0
 x[CLUSTER_311,horse_man,Plant_1] 0
 x[CLUSTER_311,horse_man,Plant_2] 0
 x[CLUSTER_311,horse_man,Plant_3] 0
@@ -28721,7 +28721,7 @@ x[CLUSTER_312,cattle_slu,Plant_7] 0
 x[CLUSTER_312,cattle_slu,Plant_8] 0
 x[CLUSTER_312,cattle_slu,Plant_9] 0
 x[CLUSTER_312,horse_man,Plant_0] 0
-x[CLUSTER_312,horse_man,Plant_1] 0.001544
+x[CLUSTER_312,horse_man,Plant_1] 0
 x[CLUSTER_312,horse_man,Plant_2] 0
 x[CLUSTER_312,horse_man,Plant_3] 0
 x[CLUSTER_312,horse_man,Plant_4] 0
@@ -28821,7 +28821,7 @@ x[CLUSTER_312,legume_str,Plant_7] 0
 x[CLUSTER_312,legume_str,Plant_8] 0
 x[CLUSTER_312,legume_str,Plant_9] 0
 x[CLUSTER_313,cattle_man,Plant_0] 0
-x[CLUSTER_313,cattle_man,Plant_1] 0.02056
+x[CLUSTER_313,cattle_man,Plant_1] 0
 x[CLUSTER_313,cattle_man,Plant_2] 0
 x[CLUSTER_313,cattle_man,Plant_3] 0
 x[CLUSTER_313,cattle_man,Plant_4] 0
@@ -28841,7 +28841,7 @@ x[CLUSTER_313,cattle_slu,Plant_7] 0
 x[CLUSTER_313,cattle_slu,Plant_8] 0
 x[CLUSTER_313,cattle_slu,Plant_9] 0
 x[CLUSTER_313,horse_man,Plant_0] 0
-x[CLUSTER_313,horse_man,Plant_1] 0.00281
+x[CLUSTER_313,horse_man,Plant_1] 0
 x[CLUSTER_313,horse_man,Plant_2] 0
 x[CLUSTER_313,horse_man,Plant_3] 0
 x[CLUSTER_313,horse_man,Plant_4] 0
@@ -28868,7 +28868,7 @@ x[CLUSTER_313,pig_man,Plant_4] 0
 x[CLUSTER_313,pig_man,Plant_5] 0
 x[CLUSTER_313,pig_man,Plant_6] 0
 x[CLUSTER_313,pig_man,Plant_7] 0
-x[CLUSTER_313,pig_man,Plant_8] 1.4106999999999857e-05
+x[CLUSTER_313,pig_man,Plant_8] 0
 x[CLUSTER_313,pig_man,Plant_9] 0
 x[CLUSTER_313,cereal_str,Plant_0] 0
 x[CLUSTER_313,cereal_str,Plant_1] 0
@@ -28942,7 +28942,7 @@ x[CLUSTER_313,legume_str,Plant_8] 0
 x[CLUSTER_313,legume_str,Plant_9] 0
 x[CLUSTER_314,cattle_man,Plant_0] 0
 x[CLUSTER_314,cattle_man,Plant_1] 0
-x[CLUSTER_314,cattle_man,Plant_2] 0.00081291
+x[CLUSTER_314,cattle_man,Plant_2] 0
 x[CLUSTER_314,cattle_man,Plant_3] 0
 x[CLUSTER_314,cattle_man,Plant_4] 0
 x[CLUSTER_314,cattle_man,Plant_5] 0
@@ -28952,7 +28952,7 @@ x[CLUSTER_314,cattle_man,Plant_8] 0
 x[CLUSTER_314,cattle_man,Plant_9] 0
 x[CLUSTER_314,cattle_slu,Plant_0] 0
 x[CLUSTER_314,cattle_slu,Plant_1] 0
-x[CLUSTER_314,cattle_slu,Plant_2] 1.7910988000000003e-02
+x[CLUSTER_314,cattle_slu,Plant_2] 0
 x[CLUSTER_314,cattle_slu,Plant_3] 0
 x[CLUSTER_314,cattle_slu,Plant_4] 0
 x[CLUSTER_314,cattle_slu,Plant_5] 0
@@ -28962,7 +28962,7 @@ x[CLUSTER_314,cattle_slu,Plant_8] 0
 x[CLUSTER_314,cattle_slu,Plant_9] 0
 x[CLUSTER_314,horse_man,Plant_0] 0
 x[CLUSTER_314,horse_man,Plant_1] 0
-x[CLUSTER_314,horse_man,Plant_2] 0.000639
+x[CLUSTER_314,horse_man,Plant_2] 0
 x[CLUSTER_314,horse_man,Plant_3] 0
 x[CLUSTER_314,horse_man,Plant_4] 0
 x[CLUSTER_314,horse_man,Plant_5] 0
@@ -28982,7 +28982,7 @@ x[CLUSTER_314,pig_slu,Plant_8] 0
 x[CLUSTER_314,pig_slu,Plant_9] 0
 x[CLUSTER_314,pig_man,Plant_0] 0
 x[CLUSTER_314,pig_man,Plant_1] 0
-x[CLUSTER_314,pig_man,Plant_2] 0.000452226
+x[CLUSTER_314,pig_man,Plant_2] 0
 x[CLUSTER_314,pig_man,Plant_3] 0
 x[CLUSTER_314,pig_man,Plant_4] 0
 x[CLUSTER_314,pig_man,Plant_5] 0
@@ -29068,7 +29068,7 @@ x[CLUSTER_315,cattle_man,Plant_4] 0
 x[CLUSTER_315,cattle_man,Plant_5] 0
 x[CLUSTER_315,cattle_man,Plant_6] 0
 x[CLUSTER_315,cattle_man,Plant_7] 0
-x[CLUSTER_315,cattle_man,Plant_8] 0.006294
+x[CLUSTER_315,cattle_man,Plant_8] 0
 x[CLUSTER_315,cattle_man,Plant_9] 0
 x[CLUSTER_315,cattle_slu,Plant_0] 0
 x[CLUSTER_315,cattle_slu,Plant_1] 0
@@ -29088,7 +29088,7 @@ x[CLUSTER_315,horse_man,Plant_4] 0
 x[CLUSTER_315,horse_man,Plant_5] 0
 x[CLUSTER_315,horse_man,Plant_6] 0
 x[CLUSTER_315,horse_man,Plant_7] 0
-x[CLUSTER_315,horse_man,Plant_8] 0.0011798
+x[CLUSTER_315,horse_man,Plant_8] 0
 x[CLUSTER_315,horse_man,Plant_9] 0
 x[CLUSTER_315,pig_slu,Plant_0] 0
 x[CLUSTER_315,pig_slu,Plant_1] 0
@@ -29108,7 +29108,7 @@ x[CLUSTER_315,pig_man,Plant_4] 0
 x[CLUSTER_315,pig_man,Plant_5] 0
 x[CLUSTER_315,pig_man,Plant_6] 0
 x[CLUSTER_315,pig_man,Plant_7] 0
-x[CLUSTER_315,pig_man,Plant_8] 3.0438530000000006e-04
+x[CLUSTER_315,pig_man,Plant_8] 0
 x[CLUSTER_315,pig_man,Plant_9] 0
 x[CLUSTER_315,cereal_str,Plant_0] 0
 x[CLUSTER_315,cereal_str,Plant_1] 0
@@ -29188,7 +29188,7 @@ x[CLUSTER_316,cattle_man,Plant_4] 0
 x[CLUSTER_316,cattle_man,Plant_5] 0
 x[CLUSTER_316,cattle_man,Plant_6] 0
 x[CLUSTER_316,cattle_man,Plant_7] 0
-x[CLUSTER_316,cattle_man,Plant_8] 0.007202
+x[CLUSTER_316,cattle_man,Plant_8] 0
 x[CLUSTER_316,cattle_man,Plant_9] 0
 x[CLUSTER_316,cattle_slu,Plant_0] 0
 x[CLUSTER_316,cattle_slu,Plant_1] 0
@@ -29198,7 +29198,7 @@ x[CLUSTER_316,cattle_slu,Plant_4] 0
 x[CLUSTER_316,cattle_slu,Plant_5] 0
 x[CLUSTER_316,cattle_slu,Plant_6] 0
 x[CLUSTER_316,cattle_slu,Plant_7] 0
-x[CLUSTER_316,cattle_slu,Plant_8] 3.2609999999999521e-02
+x[CLUSTER_316,cattle_slu,Plant_8] 0
 x[CLUSTER_316,cattle_slu,Plant_9] 0
 x[CLUSTER_316,horse_man,Plant_0] 0
 x[CLUSTER_316,horse_man,Plant_1] 0
@@ -29208,7 +29208,7 @@ x[CLUSTER_316,horse_man,Plant_4] 0
 x[CLUSTER_316,horse_man,Plant_5] 0
 x[CLUSTER_316,horse_man,Plant_6] 0
 x[CLUSTER_316,horse_man,Plant_7] 0
-x[CLUSTER_316,horse_man,Plant_8] 0.0015053
+x[CLUSTER_316,horse_man,Plant_8] 0
 x[CLUSTER_316,horse_man,Plant_9] 0
 x[CLUSTER_316,pig_slu,Plant_0] 0
 x[CLUSTER_316,pig_slu,Plant_1] 0
@@ -29228,7 +29228,7 @@ x[CLUSTER_316,pig_man,Plant_4] 0
 x[CLUSTER_316,pig_man,Plant_5] 0
 x[CLUSTER_316,pig_man,Plant_6] 0
 x[CLUSTER_316,pig_man,Plant_7] 0
-x[CLUSTER_316,pig_man,Plant_8] 0.0012858
+x[CLUSTER_316,pig_man,Plant_8] 0
 x[CLUSTER_316,pig_man,Plant_9] 0
 x[CLUSTER_316,cereal_str,Plant_0] 0
 x[CLUSTER_316,cereal_str,Plant_1] 0
@@ -29268,7 +29268,7 @@ x[CLUSTER_316,maize_str,Plant_4] 0
 x[CLUSTER_316,maize_str,Plant_5] 0
 x[CLUSTER_316,maize_str,Plant_6] 0
 x[CLUSTER_316,maize_str,Plant_7] 0
-x[CLUSTER_316,maize_str,Plant_8] 2.0212999999999997e-03
+x[CLUSTER_316,maize_str,Plant_8] 0
 x[CLUSTER_316,maize_str,Plant_9] 0
 x[CLUSTER_316,beet_leaf,Plant_0] 0
 x[CLUSTER_316,beet_leaf,Plant_1] 0
@@ -29309,7 +29309,7 @@ x[CLUSTER_317,cattle_man,Plant_5] 0
 x[CLUSTER_317,cattle_man,Plant_6] 0
 x[CLUSTER_317,cattle_man,Plant_7] 0
 x[CLUSTER_317,cattle_man,Plant_8] 0
-x[CLUSTER_317,cattle_man,Plant_9] 0.01186
+x[CLUSTER_317,cattle_man,Plant_9] 0
 x[CLUSTER_317,cattle_slu,Plant_0] 0
 x[CLUSTER_317,cattle_slu,Plant_1] 0
 x[CLUSTER_317,cattle_slu,Plant_2] 0
@@ -29329,7 +29329,7 @@ x[CLUSTER_317,horse_man,Plant_5] 0
 x[CLUSTER_317,horse_man,Plant_6] 0
 x[CLUSTER_317,horse_man,Plant_7] 0
 x[CLUSTER_317,horse_man,Plant_8] 0
-x[CLUSTER_317,horse_man,Plant_9] 0.0002174
+x[CLUSTER_317,horse_man,Plant_9] 0
 x[CLUSTER_317,pig_slu,Plant_0] 0
 x[CLUSTER_317,pig_slu,Plant_1] 0
 x[CLUSTER_317,pig_slu,Plant_2] 0
@@ -29347,7 +29347,7 @@ x[CLUSTER_317,pig_man,Plant_3] 0
 x[CLUSTER_317,pig_man,Plant_4] 0
 x[CLUSTER_317,pig_man,Plant_5] 0
 x[CLUSTER_317,pig_man,Plant_6] 0
-x[CLUSTER_317,pig_man,Plant_7] 9.231e-05
+x[CLUSTER_317,pig_man,Plant_7] 0
 x[CLUSTER_317,pig_man,Plant_8] 0
 x[CLUSTER_317,pig_man,Plant_9] 0
 x[CLUSTER_317,cereal_str,Plant_0] 0
@@ -29369,7 +29369,7 @@ x[CLUSTER_317,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_317,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_317,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_317,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_317,clover_alfalfa_grass,Plant_9] 0.00422
+x[CLUSTER_317,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_317,perm_grass,Plant_0] 0
 x[CLUSTER_317,perm_grass,Plant_1] 0
 x[CLUSTER_317,perm_grass,Plant_2] 0
@@ -29389,7 +29389,7 @@ x[CLUSTER_317,maize_str,Plant_5] 0
 x[CLUSTER_317,maize_str,Plant_6] 0
 x[CLUSTER_317,maize_str,Plant_7] 0
 x[CLUSTER_317,maize_str,Plant_8] 0
-x[CLUSTER_317,maize_str,Plant_9] 0.0001207
+x[CLUSTER_317,maize_str,Plant_9] 0
 x[CLUSTER_317,beet_leaf,Plant_0] 0
 x[CLUSTER_317,beet_leaf,Plant_1] 0
 x[CLUSTER_317,beet_leaf,Plant_2] 0
@@ -29427,7 +29427,7 @@ x[CLUSTER_318,cattle_man,Plant_3] 0
 x[CLUSTER_318,cattle_man,Plant_4] 0
 x[CLUSTER_318,cattle_man,Plant_5] 0
 x[CLUSTER_318,cattle_man,Plant_6] 0
-x[CLUSTER_318,cattle_man,Plant_7] 1.7210000000000031e-02
+x[CLUSTER_318,cattle_man,Plant_7] 0
 x[CLUSTER_318,cattle_man,Plant_8] 0
 x[CLUSTER_318,cattle_man,Plant_9] 0
 x[CLUSTER_318,cattle_slu,Plant_0] 0
@@ -29447,7 +29447,7 @@ x[CLUSTER_318,horse_man,Plant_3] 0
 x[CLUSTER_318,horse_man,Plant_4] 0
 x[CLUSTER_318,horse_man,Plant_5] 0
 x[CLUSTER_318,horse_man,Plant_6] 0
-x[CLUSTER_318,horse_man,Plant_7] 0.0005694
+x[CLUSTER_318,horse_man,Plant_7] 0
 x[CLUSTER_318,horse_man,Plant_8] 0
 x[CLUSTER_318,horse_man,Plant_9] 0
 x[CLUSTER_318,pig_slu,Plant_0] 0
@@ -29543,7 +29543,7 @@ x[CLUSTER_318,legume_str,Plant_9] 0
 x[CLUSTER_319,cattle_man,Plant_0] 0
 x[CLUSTER_319,cattle_man,Plant_1] 0
 x[CLUSTER_319,cattle_man,Plant_2] 0
-x[CLUSTER_319,cattle_man,Plant_3] 0.0097
+x[CLUSTER_319,cattle_man,Plant_3] 0
 x[CLUSTER_319,cattle_man,Plant_4] 0
 x[CLUSTER_319,cattle_man,Plant_5] 0
 x[CLUSTER_319,cattle_man,Plant_6] 0
@@ -29563,7 +29563,7 @@ x[CLUSTER_319,cattle_slu,Plant_9] 0
 x[CLUSTER_319,horse_man,Plant_0] 0
 x[CLUSTER_319,horse_man,Plant_1] 0
 x[CLUSTER_319,horse_man,Plant_2] 0
-x[CLUSTER_319,horse_man,Plant_3] 0.0018215
+x[CLUSTER_319,horse_man,Plant_3] 0
 x[CLUSTER_319,horse_man,Plant_4] 0
 x[CLUSTER_319,horse_man,Plant_5] 0
 x[CLUSTER_319,horse_man,Plant_6] 0
@@ -29583,7 +29583,7 @@ x[CLUSTER_319,pig_slu,Plant_9] 0
 x[CLUSTER_319,pig_man,Plant_0] 0
 x[CLUSTER_319,pig_man,Plant_1] 0
 x[CLUSTER_319,pig_man,Plant_2] 0
-x[CLUSTER_319,pig_man,Plant_3] 0.000343
+x[CLUSTER_319,pig_man,Plant_3] 0
 x[CLUSTER_319,pig_man,Plant_4] 0
 x[CLUSTER_319,pig_man,Plant_5] 0
 x[CLUSTER_319,pig_man,Plant_6] 0
@@ -29660,7 +29660,7 @@ x[CLUSTER_319,legume_str,Plant_6] 0
 x[CLUSTER_319,legume_str,Plant_7] 0
 x[CLUSTER_319,legume_str,Plant_8] 0
 x[CLUSTER_319,legume_str,Plant_9] 0
-x[CLUSTER_32,cattle_man,Plant_0] 2.0691000000000646e-02
+x[CLUSTER_32,cattle_man,Plant_0] 0
 x[CLUSTER_32,cattle_man,Plant_1] 0
 x[CLUSTER_32,cattle_man,Plant_2] 0
 x[CLUSTER_32,cattle_man,Plant_3] 0
@@ -29680,7 +29680,7 @@ x[CLUSTER_32,cattle_slu,Plant_6] 0
 x[CLUSTER_32,cattle_slu,Plant_7] 0
 x[CLUSTER_32,cattle_slu,Plant_8] 0
 x[CLUSTER_32,cattle_slu,Plant_9] 0
-x[CLUSTER_32,horse_man,Plant_0] 1.8429000000000002e-03
+x[CLUSTER_32,horse_man,Plant_0] 0
 x[CLUSTER_32,horse_man,Plant_1] 0
 x[CLUSTER_32,horse_man,Plant_2] 0
 x[CLUSTER_32,horse_man,Plant_3] 0
@@ -29700,7 +29700,7 @@ x[CLUSTER_32,pig_slu,Plant_6] 0
 x[CLUSTER_32,pig_slu,Plant_7] 0
 x[CLUSTER_32,pig_slu,Plant_8] 0
 x[CLUSTER_32,pig_slu,Plant_9] 0
-x[CLUSTER_32,pig_man,Plant_0] 0.0001761042
+x[CLUSTER_32,pig_man,Plant_0] 0
 x[CLUSTER_32,pig_man,Plant_1] 0
 x[CLUSTER_32,pig_man,Plant_2] 0
 x[CLUSTER_32,pig_man,Plant_3] 0
@@ -29740,7 +29740,7 @@ x[CLUSTER_32,perm_grass,Plant_6] 0
 x[CLUSTER_32,perm_grass,Plant_7] 0
 x[CLUSTER_32,perm_grass,Plant_8] 0
 x[CLUSTER_32,perm_grass,Plant_9] 0
-x[CLUSTER_32,maize_str,Plant_0] 1.09e-05
+x[CLUSTER_32,maize_str,Plant_0] 0
 x[CLUSTER_32,maize_str,Plant_1] 0
 x[CLUSTER_32,maize_str,Plant_2] 0
 x[CLUSTER_32,maize_str,Plant_3] 0
@@ -29787,7 +29787,7 @@ x[CLUSTER_320,cattle_man,Plant_3] 0
 x[CLUSTER_320,cattle_man,Plant_4] 0
 x[CLUSTER_320,cattle_man,Plant_5] 0
 x[CLUSTER_320,cattle_man,Plant_6] 0
-x[CLUSTER_320,cattle_man,Plant_7] 0.001036
+x[CLUSTER_320,cattle_man,Plant_7] 0
 x[CLUSTER_320,cattle_man,Plant_8] 0
 x[CLUSTER_320,cattle_man,Plant_9] 0
 x[CLUSTER_320,cattle_slu,Plant_0] 0
@@ -29797,7 +29797,7 @@ x[CLUSTER_320,cattle_slu,Plant_3] 0
 x[CLUSTER_320,cattle_slu,Plant_4] 0
 x[CLUSTER_320,cattle_slu,Plant_5] 0
 x[CLUSTER_320,cattle_slu,Plant_6] 0
-x[CLUSTER_320,cattle_slu,Plant_7] 0.001671
+x[CLUSTER_320,cattle_slu,Plant_7] 0
 x[CLUSTER_320,cattle_slu,Plant_8] 0
 x[CLUSTER_320,cattle_slu,Plant_9] 0
 x[CLUSTER_320,horse_man,Plant_0] 0
@@ -29807,7 +29807,7 @@ x[CLUSTER_320,horse_man,Plant_3] 0
 x[CLUSTER_320,horse_man,Plant_4] 0
 x[CLUSTER_320,horse_man,Plant_5] 0
 x[CLUSTER_320,horse_man,Plant_6] 0
-x[CLUSTER_320,horse_man,Plant_7] 0.0001518
+x[CLUSTER_320,horse_man,Plant_7] 0
 x[CLUSTER_320,horse_man,Plant_8] 0
 x[CLUSTER_320,horse_man,Plant_9] 0
 x[CLUSTER_320,pig_slu,Plant_0] 0
@@ -29827,7 +29827,7 @@ x[CLUSTER_320,pig_man,Plant_3] 0
 x[CLUSTER_320,pig_man,Plant_4] 0
 x[CLUSTER_320,pig_man,Plant_5] 0
 x[CLUSTER_320,pig_man,Plant_6] 0
-x[CLUSTER_320,pig_man,Plant_7] 1.6e-05
+x[CLUSTER_320,pig_man,Plant_7] 0
 x[CLUSTER_320,pig_man,Plant_8] 0
 x[CLUSTER_320,pig_man,Plant_9] 0
 x[CLUSTER_320,cereal_str,Plant_0] 0
@@ -29849,7 +29849,7 @@ x[CLUSTER_320,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_320,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_320,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_320,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_320,clover_alfalfa_grass,Plant_9] 0.0014363
+x[CLUSTER_320,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_320,perm_grass,Plant_0] 0
 x[CLUSTER_320,perm_grass,Plant_1] 0
 x[CLUSTER_320,perm_grass,Plant_2] 0
@@ -29869,7 +29869,7 @@ x[CLUSTER_320,maize_str,Plant_5] 0
 x[CLUSTER_320,maize_str,Plant_6] 0
 x[CLUSTER_320,maize_str,Plant_7] 0
 x[CLUSTER_320,maize_str,Plant_8] 0
-x[CLUSTER_320,maize_str,Plant_9] 2.413e-05
+x[CLUSTER_320,maize_str,Plant_9] 0
 x[CLUSTER_320,beet_leaf,Plant_0] 0
 x[CLUSTER_320,beet_leaf,Plant_1] 0
 x[CLUSTER_320,beet_leaf,Plant_2] 0
@@ -29900,7 +29900,7 @@ x[CLUSTER_320,legume_str,Plant_6] 0
 x[CLUSTER_320,legume_str,Plant_7] 0
 x[CLUSTER_320,legume_str,Plant_8] 0
 x[CLUSTER_320,legume_str,Plant_9] 0
-x[CLUSTER_321,cattle_man,Plant_0] 0.002184
+x[CLUSTER_321,cattle_man,Plant_0] 0
 x[CLUSTER_321,cattle_man,Plant_1] 0
 x[CLUSTER_321,cattle_man,Plant_2] 0
 x[CLUSTER_321,cattle_man,Plant_3] 0
@@ -29920,7 +29920,7 @@ x[CLUSTER_321,cattle_slu,Plant_6] 0
 x[CLUSTER_321,cattle_slu,Plant_7] 0
 x[CLUSTER_321,cattle_slu,Plant_8] 0
 x[CLUSTER_321,cattle_slu,Plant_9] 0
-x[CLUSTER_321,horse_man,Plant_0] 0.001668
+x[CLUSTER_321,horse_man,Plant_0] 0
 x[CLUSTER_321,horse_man,Plant_1] 0
 x[CLUSTER_321,horse_man,Plant_2] 0
 x[CLUSTER_321,horse_man,Plant_3] 0
@@ -29945,7 +29945,7 @@ x[CLUSTER_321,pig_man,Plant_1] 0
 x[CLUSTER_321,pig_man,Plant_2] 0
 x[CLUSTER_321,pig_man,Plant_3] 0
 x[CLUSTER_321,pig_man,Plant_4] 0
-x[CLUSTER_321,pig_man,Plant_5] 5.3327080000000005e-05
+x[CLUSTER_321,pig_man,Plant_5] 0
 x[CLUSTER_321,pig_man,Plant_6] 0
 x[CLUSTER_321,pig_man,Plant_7] 0
 x[CLUSTER_321,pig_man,Plant_8] 0
@@ -30022,7 +30022,7 @@ x[CLUSTER_321,legume_str,Plant_8] 0
 x[CLUSTER_321,legume_str,Plant_9] 0
 x[CLUSTER_322,cattle_man,Plant_0] 0
 x[CLUSTER_322,cattle_man,Plant_1] 0
-x[CLUSTER_322,cattle_man,Plant_2] 5.7899999999999480e-03
+x[CLUSTER_322,cattle_man,Plant_2] 0
 x[CLUSTER_322,cattle_man,Plant_3] 0
 x[CLUSTER_322,cattle_man,Plant_4] 0
 x[CLUSTER_322,cattle_man,Plant_5] 0
@@ -30042,7 +30042,7 @@ x[CLUSTER_322,cattle_slu,Plant_8] 0
 x[CLUSTER_322,cattle_slu,Plant_9] 0
 x[CLUSTER_322,horse_man,Plant_0] 0
 x[CLUSTER_322,horse_man,Plant_1] 0
-x[CLUSTER_322,horse_man,Plant_2] 1.3549999999999760e-03
+x[CLUSTER_322,horse_man,Plant_2] 0
 x[CLUSTER_322,horse_man,Plant_3] 0
 x[CLUSTER_322,horse_man,Plant_4] 0
 x[CLUSTER_322,horse_man,Plant_5] 0
@@ -30062,7 +30062,7 @@ x[CLUSTER_322,pig_slu,Plant_8] 0
 x[CLUSTER_322,pig_slu,Plant_9] 0
 x[CLUSTER_322,pig_man,Plant_0] 0
 x[CLUSTER_322,pig_man,Plant_1] 0
-x[CLUSTER_322,pig_man,Plant_2] 5.748e-05
+x[CLUSTER_322,pig_man,Plant_2] 0
 x[CLUSTER_322,pig_man,Plant_3] 0
 x[CLUSTER_322,pig_man,Plant_4] 0
 x[CLUSTER_322,pig_man,Plant_5] 0
@@ -30146,7 +30146,7 @@ x[CLUSTER_323,cattle_man,Plant_2] 0
 x[CLUSTER_323,cattle_man,Plant_3] 0
 x[CLUSTER_323,cattle_man,Plant_4] 0
 x[CLUSTER_323,cattle_man,Plant_5] 0
-x[CLUSTER_323,cattle_man,Plant_6] 1.8150000000003996e-02
+x[CLUSTER_323,cattle_man,Plant_6] 0
 x[CLUSTER_323,cattle_man,Plant_7] 0
 x[CLUSTER_323,cattle_man,Plant_8] 0
 x[CLUSTER_323,cattle_man,Plant_9] 0
@@ -30165,7 +30165,7 @@ x[CLUSTER_323,horse_man,Plant_1] 0
 x[CLUSTER_323,horse_man,Plant_2] 0
 x[CLUSTER_323,horse_man,Plant_3] 0
 x[CLUSTER_323,horse_man,Plant_4] 0
-x[CLUSTER_323,horse_man,Plant_5] 0.002339
+x[CLUSTER_323,horse_man,Plant_5] 0
 x[CLUSTER_323,horse_man,Plant_6] 0
 x[CLUSTER_323,horse_man,Plant_7] 0
 x[CLUSTER_323,horse_man,Plant_8] 0
@@ -30185,7 +30185,7 @@ x[CLUSTER_323,pig_man,Plant_1] 0
 x[CLUSTER_323,pig_man,Plant_2] 0
 x[CLUSTER_323,pig_man,Plant_3] 0
 x[CLUSTER_323,pig_man,Plant_4] 0
-x[CLUSTER_323,pig_man,Plant_5] 0.00027581
+x[CLUSTER_323,pig_man,Plant_5] 0
 x[CLUSTER_323,pig_man,Plant_6] 0
 x[CLUSTER_323,pig_man,Plant_7] 0
 x[CLUSTER_323,pig_man,Plant_8] 0
@@ -30268,7 +30268,7 @@ x[CLUSTER_324,cattle_man,Plant_4] 0
 x[CLUSTER_324,cattle_man,Plant_5] 0
 x[CLUSTER_324,cattle_man,Plant_6] 0
 x[CLUSTER_324,cattle_man,Plant_7] 0
-x[CLUSTER_324,cattle_man,Plant_8] 0.006315
+x[CLUSTER_324,cattle_man,Plant_8] 0
 x[CLUSTER_324,cattle_man,Plant_9] 0
 x[CLUSTER_324,cattle_slu,Plant_0] 0
 x[CLUSTER_324,cattle_slu,Plant_1] 0
@@ -30288,7 +30288,7 @@ x[CLUSTER_324,horse_man,Plant_4] 0
 x[CLUSTER_324,horse_man,Plant_5] 0
 x[CLUSTER_324,horse_man,Plant_6] 0
 x[CLUSTER_324,horse_man,Plant_7] 0
-x[CLUSTER_324,horse_man,Plant_8] 7.3619000000000006e-04
+x[CLUSTER_324,horse_man,Plant_8] 0
 x[CLUSTER_324,horse_man,Plant_9] 0
 x[CLUSTER_324,pig_slu,Plant_0] 0
 x[CLUSTER_324,pig_slu,Plant_1] 0
@@ -30308,7 +30308,7 @@ x[CLUSTER_324,pig_man,Plant_4] 0
 x[CLUSTER_324,pig_man,Plant_5] 0
 x[CLUSTER_324,pig_man,Plant_6] 0
 x[CLUSTER_324,pig_man,Plant_7] 0
-x[CLUSTER_324,pig_man,Plant_8] 0.00025847
+x[CLUSTER_324,pig_man,Plant_8] 0
 x[CLUSTER_324,pig_man,Plant_9] 0
 x[CLUSTER_324,cereal_str,Plant_0] 0
 x[CLUSTER_324,cereal_str,Plant_1] 0
@@ -30387,7 +30387,7 @@ x[CLUSTER_325,cattle_man,Plant_3] 0
 x[CLUSTER_325,cattle_man,Plant_4] 0
 x[CLUSTER_325,cattle_man,Plant_5] 0
 x[CLUSTER_325,cattle_man,Plant_6] 0
-x[CLUSTER_325,cattle_man,Plant_7] 0.008099
+x[CLUSTER_325,cattle_man,Plant_7] 0
 x[CLUSTER_325,cattle_man,Plant_8] 0
 x[CLUSTER_325,cattle_man,Plant_9] 0
 x[CLUSTER_325,cattle_slu,Plant_0] 0
@@ -30407,7 +30407,7 @@ x[CLUSTER_325,horse_man,Plant_3] 0
 x[CLUSTER_325,horse_man,Plant_4] 0
 x[CLUSTER_325,horse_man,Plant_5] 0
 x[CLUSTER_325,horse_man,Plant_6] 0
-x[CLUSTER_325,horse_man,Plant_7] 3.4018000000000004e-03
+x[CLUSTER_325,horse_man,Plant_7] 0
 x[CLUSTER_325,horse_man,Plant_8] 0
 x[CLUSTER_325,horse_man,Plant_9] 0
 x[CLUSTER_325,pig_slu,Plant_0] 0
@@ -30427,7 +30427,7 @@ x[CLUSTER_325,pig_man,Plant_3] 0
 x[CLUSTER_325,pig_man,Plant_4] 0
 x[CLUSTER_325,pig_man,Plant_5] 0
 x[CLUSTER_325,pig_man,Plant_6] 0
-x[CLUSTER_325,pig_man,Plant_7] 0.00071015139
+x[CLUSTER_325,pig_man,Plant_7] 0
 x[CLUSTER_325,pig_man,Plant_8] 0
 x[CLUSTER_325,pig_man,Plant_9] 0
 x[CLUSTER_325,cereal_str,Plant_0] 0
@@ -30509,7 +30509,7 @@ x[CLUSTER_326,cattle_man,Plant_5] 0
 x[CLUSTER_326,cattle_man,Plant_6] 0
 x[CLUSTER_326,cattle_man,Plant_7] 0
 x[CLUSTER_326,cattle_man,Plant_8] 0
-x[CLUSTER_326,cattle_man,Plant_9] 0.00727
+x[CLUSTER_326,cattle_man,Plant_9] 0
 x[CLUSTER_326,cattle_slu,Plant_0] 0
 x[CLUSTER_326,cattle_slu,Plant_1] 0
 x[CLUSTER_326,cattle_slu,Plant_2] 0
@@ -30524,7 +30524,7 @@ x[CLUSTER_326,horse_man,Plant_0] 0
 x[CLUSTER_326,horse_man,Plant_1] 0
 x[CLUSTER_326,horse_man,Plant_2] 0
 x[CLUSTER_326,horse_man,Plant_3] 0
-x[CLUSTER_326,horse_man,Plant_4] 1.2854000000000001e-03
+x[CLUSTER_326,horse_man,Plant_4] 0
 x[CLUSTER_326,horse_man,Plant_5] 0
 x[CLUSTER_326,horse_man,Plant_6] 0
 x[CLUSTER_326,horse_man,Plant_7] 0
@@ -30544,7 +30544,7 @@ x[CLUSTER_326,pig_man,Plant_0] 0
 x[CLUSTER_326,pig_man,Plant_1] 0
 x[CLUSTER_326,pig_man,Plant_2] 0
 x[CLUSTER_326,pig_man,Plant_3] 0
-x[CLUSTER_326,pig_man,Plant_4] 0.0007073
+x[CLUSTER_326,pig_man,Plant_4] 0
 x[CLUSTER_326,pig_man,Plant_5] 0
 x[CLUSTER_326,pig_man,Plant_6] 0
 x[CLUSTER_326,pig_man,Plant_7] 0
@@ -30569,7 +30569,7 @@ x[CLUSTER_326,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_326,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_326,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_326,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_326,clover_alfalfa_grass,Plant_9] 0.004181
+x[CLUSTER_326,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_326,perm_grass,Plant_0] 0
 x[CLUSTER_326,perm_grass,Plant_1] 0
 x[CLUSTER_326,perm_grass,Plant_2] 0
@@ -30589,7 +30589,7 @@ x[CLUSTER_326,maize_str,Plant_5] 0
 x[CLUSTER_326,maize_str,Plant_6] 0
 x[CLUSTER_326,maize_str,Plant_7] 0
 x[CLUSTER_326,maize_str,Plant_8] 0
-x[CLUSTER_326,maize_str,Plant_9] 0.000598
+x[CLUSTER_326,maize_str,Plant_9] 0
 x[CLUSTER_326,beet_leaf,Plant_0] 0
 x[CLUSTER_326,beet_leaf,Plant_1] 0
 x[CLUSTER_326,beet_leaf,Plant_2] 0
@@ -30624,7 +30624,7 @@ x[CLUSTER_327,cattle_man,Plant_0] 0
 x[CLUSTER_327,cattle_man,Plant_1] 0
 x[CLUSTER_327,cattle_man,Plant_2] 0
 x[CLUSTER_327,cattle_man,Plant_3] 0
-x[CLUSTER_327,cattle_man,Plant_4] 0.00254
+x[CLUSTER_327,cattle_man,Plant_4] 0
 x[CLUSTER_327,cattle_man,Plant_5] 0
 x[CLUSTER_327,cattle_man,Plant_6] 0
 x[CLUSTER_327,cattle_man,Plant_7] 0
@@ -30644,7 +30644,7 @@ x[CLUSTER_327,horse_man,Plant_0] 0
 x[CLUSTER_327,horse_man,Plant_1] 0
 x[CLUSTER_327,horse_man,Plant_2] 0
 x[CLUSTER_327,horse_man,Plant_3] 0
-x[CLUSTER_327,horse_man,Plant_4] 0.0003365
+x[CLUSTER_327,horse_man,Plant_4] 0
 x[CLUSTER_327,horse_man,Plant_5] 0
 x[CLUSTER_327,horse_man,Plant_6] 0
 x[CLUSTER_327,horse_man,Plant_7] 0
@@ -30749,7 +30749,7 @@ x[CLUSTER_328,cattle_man,Plant_5] 0
 x[CLUSTER_328,cattle_man,Plant_6] 0
 x[CLUSTER_328,cattle_man,Plant_7] 0
 x[CLUSTER_328,cattle_man,Plant_8] 0
-x[CLUSTER_328,cattle_man,Plant_9] 0.00912
+x[CLUSTER_328,cattle_man,Plant_9] 0
 x[CLUSTER_328,cattle_slu,Plant_0] 0
 x[CLUSTER_328,cattle_slu,Plant_1] 0
 x[CLUSTER_328,cattle_slu,Plant_2] 0
@@ -30769,7 +30769,7 @@ x[CLUSTER_328,horse_man,Plant_5] 0
 x[CLUSTER_328,horse_man,Plant_6] 0
 x[CLUSTER_328,horse_man,Plant_7] 0
 x[CLUSTER_328,horse_man,Plant_8] 0
-x[CLUSTER_328,horse_man,Plant_9] 0.00033338
+x[CLUSTER_328,horse_man,Plant_9] 0
 x[CLUSTER_328,pig_slu,Plant_0] 0
 x[CLUSTER_328,pig_slu,Plant_1] 0
 x[CLUSTER_328,pig_slu,Plant_2] 0
@@ -30787,7 +30787,7 @@ x[CLUSTER_328,pig_man,Plant_3] 0
 x[CLUSTER_328,pig_man,Plant_4] 0
 x[CLUSTER_328,pig_man,Plant_5] 0
 x[CLUSTER_328,pig_man,Plant_6] 0
-x[CLUSTER_328,pig_man,Plant_7] 8.2457000000000006e-04
+x[CLUSTER_328,pig_man,Plant_7] 0
 x[CLUSTER_328,pig_man,Plant_8] 0
 x[CLUSTER_328,pig_man,Plant_9] 0
 x[CLUSTER_328,cereal_str,Plant_0] 0
@@ -30809,7 +30809,7 @@ x[CLUSTER_328,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_328,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_328,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_328,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_328,clover_alfalfa_grass,Plant_9] 0.006407
+x[CLUSTER_328,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_328,perm_grass,Plant_0] 0
 x[CLUSTER_328,perm_grass,Plant_1] 0
 x[CLUSTER_328,perm_grass,Plant_2] 0
@@ -30829,7 +30829,7 @@ x[CLUSTER_328,maize_str,Plant_5] 0
 x[CLUSTER_328,maize_str,Plant_6] 0
 x[CLUSTER_328,maize_str,Plant_7] 0
 x[CLUSTER_328,maize_str,Plant_8] 0
-x[CLUSTER_328,maize_str,Plant_9] 0.000276
+x[CLUSTER_328,maize_str,Plant_9] 0
 x[CLUSTER_328,beet_leaf,Plant_0] 0
 x[CLUSTER_328,beet_leaf,Plant_1] 0
 x[CLUSTER_328,beet_leaf,Plant_2] 0
@@ -30881,7 +30881,7 @@ x[CLUSTER_329,cattle_slu,Plant_7] 0
 x[CLUSTER_329,cattle_slu,Plant_8] 0
 x[CLUSTER_329,cattle_slu,Plant_9] 0
 x[CLUSTER_329,horse_man,Plant_0] 0
-x[CLUSTER_329,horse_man,Plant_1] 0.001337
+x[CLUSTER_329,horse_man,Plant_1] 0
 x[CLUSTER_329,horse_man,Plant_2] 0
 x[CLUSTER_329,horse_man,Plant_3] 0
 x[CLUSTER_329,horse_man,Plant_4] 0
@@ -30983,7 +30983,7 @@ x[CLUSTER_329,legume_str,Plant_9] 0
 x[CLUSTER_33,cattle_man,Plant_0] 0
 x[CLUSTER_33,cattle_man,Plant_1] 0
 x[CLUSTER_33,cattle_man,Plant_2] 0
-x[CLUSTER_33,cattle_man,Plant_3] 0.006952
+x[CLUSTER_33,cattle_man,Plant_3] 0
 x[CLUSTER_33,cattle_man,Plant_4] 0
 x[CLUSTER_33,cattle_man,Plant_5] 0
 x[CLUSTER_33,cattle_man,Plant_6] 0
@@ -31003,7 +31003,7 @@ x[CLUSTER_33,cattle_slu,Plant_9] 0
 x[CLUSTER_33,horse_man,Plant_0] 0
 x[CLUSTER_33,horse_man,Plant_1] 0
 x[CLUSTER_33,horse_man,Plant_2] 0
-x[CLUSTER_33,horse_man,Plant_3] 0.001803
+x[CLUSTER_33,horse_man,Plant_3] 0
 x[CLUSTER_33,horse_man,Plant_4] 0
 x[CLUSTER_33,horse_man,Plant_5] 0
 x[CLUSTER_33,horse_man,Plant_6] 0
@@ -31103,7 +31103,7 @@ x[CLUSTER_33,legume_str,Plant_9] 0
 x[CLUSTER_330,cattle_man,Plant_0] 0
 x[CLUSTER_330,cattle_man,Plant_1] 0
 x[CLUSTER_330,cattle_man,Plant_2] 0
-x[CLUSTER_330,cattle_man,Plant_3] 0.02196
+x[CLUSTER_330,cattle_man,Plant_3] 0
 x[CLUSTER_330,cattle_man,Plant_4] 0
 x[CLUSTER_330,cattle_man,Plant_5] 0
 x[CLUSTER_330,cattle_man,Plant_6] 0
@@ -31123,7 +31123,7 @@ x[CLUSTER_330,cattle_slu,Plant_9] 0
 x[CLUSTER_330,horse_man,Plant_0] 0
 x[CLUSTER_330,horse_man,Plant_1] 0
 x[CLUSTER_330,horse_man,Plant_2] 0
-x[CLUSTER_330,horse_man,Plant_3] 1.2695999999999999e-03
+x[CLUSTER_330,horse_man,Plant_3] 0
 x[CLUSTER_330,horse_man,Plant_4] 0
 x[CLUSTER_330,horse_man,Plant_5] 0
 x[CLUSTER_330,horse_man,Plant_6] 0
@@ -31145,7 +31145,7 @@ x[CLUSTER_330,pig_man,Plant_1] 0
 x[CLUSTER_330,pig_man,Plant_2] 0
 x[CLUSTER_330,pig_man,Plant_3] 0
 x[CLUSTER_330,pig_man,Plant_4] 0
-x[CLUSTER_330,pig_man,Plant_5] 0.00037871
+x[CLUSTER_330,pig_man,Plant_5] 0
 x[CLUSTER_330,pig_man,Plant_6] 0
 x[CLUSTER_330,pig_man,Plant_7] 0
 x[CLUSTER_330,pig_man,Plant_8] 0
@@ -31224,7 +31224,7 @@ x[CLUSTER_331,cattle_man,Plant_0] 0
 x[CLUSTER_331,cattle_man,Plant_1] 0
 x[CLUSTER_331,cattle_man,Plant_2] 0
 x[CLUSTER_331,cattle_man,Plant_3] 0
-x[CLUSTER_331,cattle_man,Plant_4] 0.0057
+x[CLUSTER_331,cattle_man,Plant_4] 0
 x[CLUSTER_331,cattle_man,Plant_5] 0
 x[CLUSTER_331,cattle_man,Plant_6] 0
 x[CLUSTER_331,cattle_man,Plant_7] 0
@@ -31244,7 +31244,7 @@ x[CLUSTER_331,horse_man,Plant_0] 0
 x[CLUSTER_331,horse_man,Plant_1] 0
 x[CLUSTER_331,horse_man,Plant_2] 0
 x[CLUSTER_331,horse_man,Plant_3] 0
-x[CLUSTER_331,horse_man,Plant_4] 0.00302
+x[CLUSTER_331,horse_man,Plant_4] 0
 x[CLUSTER_331,horse_man,Plant_5] 0
 x[CLUSTER_331,horse_man,Plant_6] 0
 x[CLUSTER_331,horse_man,Plant_7] 0
@@ -31264,7 +31264,7 @@ x[CLUSTER_331,pig_man,Plant_0] 0
 x[CLUSTER_331,pig_man,Plant_1] 0
 x[CLUSTER_331,pig_man,Plant_2] 0
 x[CLUSTER_331,pig_man,Plant_3] 0
-x[CLUSTER_331,pig_man,Plant_4] 0.000621
+x[CLUSTER_331,pig_man,Plant_4] 0
 x[CLUSTER_331,pig_man,Plant_5] 0
 x[CLUSTER_331,pig_man,Plant_6] 0
 x[CLUSTER_331,pig_man,Plant_7] 0
@@ -31289,7 +31289,7 @@ x[CLUSTER_331,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_331,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_331,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_331,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_331,clover_alfalfa_grass,Plant_9] 0.01009
+x[CLUSTER_331,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_331,perm_grass,Plant_0] 0
 x[CLUSTER_331,perm_grass,Plant_1] 0
 x[CLUSTER_331,perm_grass,Plant_2] 0
@@ -31309,7 +31309,7 @@ x[CLUSTER_331,maize_str,Plant_5] 0
 x[CLUSTER_331,maize_str,Plant_6] 0
 x[CLUSTER_331,maize_str,Plant_7] 0
 x[CLUSTER_331,maize_str,Plant_8] 0
-x[CLUSTER_331,maize_str,Plant_9] 0.0002323
+x[CLUSTER_331,maize_str,Plant_9] 0
 x[CLUSTER_331,beet_leaf,Plant_0] 0
 x[CLUSTER_331,beet_leaf,Plant_1] 0
 x[CLUSTER_331,beet_leaf,Plant_2] 0
@@ -31347,7 +31347,7 @@ x[CLUSTER_332,cattle_man,Plant_3] 0
 x[CLUSTER_332,cattle_man,Plant_4] 0
 x[CLUSTER_332,cattle_man,Plant_5] 0
 x[CLUSTER_332,cattle_man,Plant_6] 0
-x[CLUSTER_332,cattle_man,Plant_7] 0.0006203
+x[CLUSTER_332,cattle_man,Plant_7] 0
 x[CLUSTER_332,cattle_man,Plant_8] 0
 x[CLUSTER_332,cattle_man,Plant_9] 0
 x[CLUSTER_332,cattle_slu,Plant_0] 0
@@ -31357,7 +31357,7 @@ x[CLUSTER_332,cattle_slu,Plant_3] 0
 x[CLUSTER_332,cattle_slu,Plant_4] 0
 x[CLUSTER_332,cattle_slu,Plant_5] 0
 x[CLUSTER_332,cattle_slu,Plant_6] 0
-x[CLUSTER_332,cattle_slu,Plant_7] 0.0002698
+x[CLUSTER_332,cattle_slu,Plant_7] 0
 x[CLUSTER_332,cattle_slu,Plant_8] 0
 x[CLUSTER_332,cattle_slu,Plant_9] 0
 x[CLUSTER_332,horse_man,Plant_0] 0
@@ -31367,7 +31367,7 @@ x[CLUSTER_332,horse_man,Plant_3] 0
 x[CLUSTER_332,horse_man,Plant_4] 0
 x[CLUSTER_332,horse_man,Plant_5] 0
 x[CLUSTER_332,horse_man,Plant_6] 0
-x[CLUSTER_332,horse_man,Plant_7] 0.0004046
+x[CLUSTER_332,horse_man,Plant_7] 0
 x[CLUSTER_332,horse_man,Plant_8] 0
 x[CLUSTER_332,horse_man,Plant_9] 0
 x[CLUSTER_332,pig_slu,Plant_0] 0
@@ -31377,7 +31377,7 @@ x[CLUSTER_332,pig_slu,Plant_3] 0
 x[CLUSTER_332,pig_slu,Plant_4] 0
 x[CLUSTER_332,pig_slu,Plant_5] 0
 x[CLUSTER_332,pig_slu,Plant_6] 0
-x[CLUSTER_332,pig_slu,Plant_7] 0.00214538
+x[CLUSTER_332,pig_slu,Plant_7] 0
 x[CLUSTER_332,pig_slu,Plant_8] 0
 x[CLUSTER_332,pig_slu,Plant_9] 0
 x[CLUSTER_332,pig_man,Plant_0] 0
@@ -31387,7 +31387,7 @@ x[CLUSTER_332,pig_man,Plant_3] 0
 x[CLUSTER_332,pig_man,Plant_4] 0
 x[CLUSTER_332,pig_man,Plant_5] 0
 x[CLUSTER_332,pig_man,Plant_6] 0
-x[CLUSTER_332,pig_man,Plant_7] 0.0001328458
+x[CLUSTER_332,pig_man,Plant_7] 0
 x[CLUSTER_332,pig_man,Plant_8] 0
 x[CLUSTER_332,pig_man,Plant_9] 0
 x[CLUSTER_332,cereal_str,Plant_0] 0
@@ -31429,7 +31429,7 @@ x[CLUSTER_332,maize_str,Plant_5] 0
 x[CLUSTER_332,maize_str,Plant_6] 0
 x[CLUSTER_332,maize_str,Plant_7] 0
 x[CLUSTER_332,maize_str,Plant_8] 0
-x[CLUSTER_332,maize_str,Plant_9] 5.04e-05
+x[CLUSTER_332,maize_str,Plant_9] 0
 x[CLUSTER_332,beet_leaf,Plant_0] 0
 x[CLUSTER_332,beet_leaf,Plant_1] 0
 x[CLUSTER_332,beet_leaf,Plant_2] 0
@@ -31460,7 +31460,7 @@ x[CLUSTER_332,legume_str,Plant_6] 0
 x[CLUSTER_332,legume_str,Plant_7] 0
 x[CLUSTER_332,legume_str,Plant_8] 0
 x[CLUSTER_332,legume_str,Plant_9] 0
-x[CLUSTER_333,cattle_man,Plant_0] 0.0113
+x[CLUSTER_333,cattle_man,Plant_0] 0
 x[CLUSTER_333,cattle_man,Plant_1] 0
 x[CLUSTER_333,cattle_man,Plant_2] 0
 x[CLUSTER_333,cattle_man,Plant_3] 0
@@ -31470,7 +31470,7 @@ x[CLUSTER_333,cattle_man,Plant_6] 0
 x[CLUSTER_333,cattle_man,Plant_7] 0
 x[CLUSTER_333,cattle_man,Plant_8] 0
 x[CLUSTER_333,cattle_man,Plant_9] 0
-x[CLUSTER_333,cattle_slu,Plant_0] 5.3090000000000408e-02
+x[CLUSTER_333,cattle_slu,Plant_0] 0
 x[CLUSTER_333,cattle_slu,Plant_1] 0
 x[CLUSTER_333,cattle_slu,Plant_2] 0
 x[CLUSTER_333,cattle_slu,Plant_3] 0
@@ -31480,7 +31480,7 @@ x[CLUSTER_333,cattle_slu,Plant_6] 0
 x[CLUSTER_333,cattle_slu,Plant_7] 0
 x[CLUSTER_333,cattle_slu,Plant_8] 0
 x[CLUSTER_333,cattle_slu,Plant_9] 0
-x[CLUSTER_333,horse_man,Plant_0] 0.0007125
+x[CLUSTER_333,horse_man,Plant_0] 0
 x[CLUSTER_333,horse_man,Plant_1] 0
 x[CLUSTER_333,horse_man,Plant_2] 0
 x[CLUSTER_333,horse_man,Plant_3] 0
@@ -31500,7 +31500,7 @@ x[CLUSTER_333,pig_slu,Plant_6] 0
 x[CLUSTER_333,pig_slu,Plant_7] 0
 x[CLUSTER_333,pig_slu,Plant_8] 0
 x[CLUSTER_333,pig_slu,Plant_9] 0
-x[CLUSTER_333,pig_man,Plant_0] 3.6419999999999996e-04
+x[CLUSTER_333,pig_man,Plant_0] 0
 x[CLUSTER_333,pig_man,Plant_1] 0
 x[CLUSTER_333,pig_man,Plant_2] 0
 x[CLUSTER_333,pig_man,Plant_3] 0
@@ -31540,7 +31540,7 @@ x[CLUSTER_333,perm_grass,Plant_6] 0
 x[CLUSTER_333,perm_grass,Plant_7] 0
 x[CLUSTER_333,perm_grass,Plant_8] 0
 x[CLUSTER_333,perm_grass,Plant_9] 0
-x[CLUSTER_333,maize_str,Plant_0] 1.2209999999999999e-04
+x[CLUSTER_333,maize_str,Plant_0] 0
 x[CLUSTER_333,maize_str,Plant_1] 0
 x[CLUSTER_333,maize_str,Plant_2] 0
 x[CLUSTER_333,maize_str,Plant_3] 0
@@ -31587,7 +31587,7 @@ x[CLUSTER_334,cattle_man,Plant_3] 0
 x[CLUSTER_334,cattle_man,Plant_4] 0
 x[CLUSTER_334,cattle_man,Plant_5] 0
 x[CLUSTER_334,cattle_man,Plant_6] 0
-x[CLUSTER_334,cattle_man,Plant_7] 0.0026413
+x[CLUSTER_334,cattle_man,Plant_7] 0
 x[CLUSTER_334,cattle_man,Plant_8] 0
 x[CLUSTER_334,cattle_man,Plant_9] 0
 x[CLUSTER_334,cattle_slu,Plant_0] 0
@@ -31607,7 +31607,7 @@ x[CLUSTER_334,horse_man,Plant_3] 0
 x[CLUSTER_334,horse_man,Plant_4] 0
 x[CLUSTER_334,horse_man,Plant_5] 0
 x[CLUSTER_334,horse_man,Plant_6] 0
-x[CLUSTER_334,horse_man,Plant_7] 0.0015015
+x[CLUSTER_334,horse_man,Plant_7] 0
 x[CLUSTER_334,horse_man,Plant_8] 0
 x[CLUSTER_334,horse_man,Plant_9] 0
 x[CLUSTER_334,pig_slu,Plant_0] 0
@@ -31627,7 +31627,7 @@ x[CLUSTER_334,pig_man,Plant_3] 0
 x[CLUSTER_334,pig_man,Plant_4] 0
 x[CLUSTER_334,pig_man,Plant_5] 0
 x[CLUSTER_334,pig_man,Plant_6] 0
-x[CLUSTER_334,pig_man,Plant_7] 0.00021422
+x[CLUSTER_334,pig_man,Plant_7] 0
 x[CLUSTER_334,pig_man,Plant_8] 0
 x[CLUSTER_334,pig_man,Plant_9] 0
 x[CLUSTER_334,cereal_str,Plant_0] 0
@@ -31704,7 +31704,7 @@ x[CLUSTER_335,cattle_man,Plant_0] 0
 x[CLUSTER_335,cattle_man,Plant_1] 0
 x[CLUSTER_335,cattle_man,Plant_2] 0
 x[CLUSTER_335,cattle_man,Plant_3] 0
-x[CLUSTER_335,cattle_man,Plant_4] 0.00482
+x[CLUSTER_335,cattle_man,Plant_4] 0
 x[CLUSTER_335,cattle_man,Plant_5] 0
 x[CLUSTER_335,cattle_man,Plant_6] 0
 x[CLUSTER_335,cattle_man,Plant_7] 0
@@ -31714,7 +31714,7 @@ x[CLUSTER_335,cattle_slu,Plant_0] 0
 x[CLUSTER_335,cattle_slu,Plant_1] 0
 x[CLUSTER_335,cattle_slu,Plant_2] 0
 x[CLUSTER_335,cattle_slu,Plant_3] 0
-x[CLUSTER_335,cattle_slu,Plant_4] 3.6399999999999731e-02
+x[CLUSTER_335,cattle_slu,Plant_4] 0
 x[CLUSTER_335,cattle_slu,Plant_5] 0
 x[CLUSTER_335,cattle_slu,Plant_6] 0
 x[CLUSTER_335,cattle_slu,Plant_7] 0
@@ -31724,7 +31724,7 @@ x[CLUSTER_335,horse_man,Plant_0] 0
 x[CLUSTER_335,horse_man,Plant_1] 0
 x[CLUSTER_335,horse_man,Plant_2] 0
 x[CLUSTER_335,horse_man,Plant_3] 0
-x[CLUSTER_335,horse_man,Plant_4] 0.003071
+x[CLUSTER_335,horse_man,Plant_4] 0
 x[CLUSTER_335,horse_man,Plant_5] 0
 x[CLUSTER_335,horse_man,Plant_6] 0
 x[CLUSTER_335,horse_man,Plant_7] 0
@@ -31744,7 +31744,7 @@ x[CLUSTER_335,pig_man,Plant_0] 0
 x[CLUSTER_335,pig_man,Plant_1] 0
 x[CLUSTER_335,pig_man,Plant_2] 0
 x[CLUSTER_335,pig_man,Plant_3] 0
-x[CLUSTER_335,pig_man,Plant_4] 0.000497042
+x[CLUSTER_335,pig_man,Plant_4] 0
 x[CLUSTER_335,pig_man,Plant_5] 0
 x[CLUSTER_335,pig_man,Plant_6] 0
 x[CLUSTER_335,pig_man,Plant_7] 0
@@ -31789,7 +31789,7 @@ x[CLUSTER_335,maize_str,Plant_5] 0
 x[CLUSTER_335,maize_str,Plant_6] 0
 x[CLUSTER_335,maize_str,Plant_7] 0
 x[CLUSTER_335,maize_str,Plant_8] 0
-x[CLUSTER_335,maize_str,Plant_9] 1.63e-05
+x[CLUSTER_335,maize_str,Plant_9] 0
 x[CLUSTER_335,beet_leaf,Plant_0] 0
 x[CLUSTER_335,beet_leaf,Plant_1] 0
 x[CLUSTER_335,beet_leaf,Plant_2] 0
@@ -31827,7 +31827,7 @@ x[CLUSTER_336,cattle_man,Plant_3] 0
 x[CLUSTER_336,cattle_man,Plant_4] 0
 x[CLUSTER_336,cattle_man,Plant_5] 0
 x[CLUSTER_336,cattle_man,Plant_6] 0
-x[CLUSTER_336,cattle_man,Plant_7] 0.00957
+x[CLUSTER_336,cattle_man,Plant_7] 0
 x[CLUSTER_336,cattle_man,Plant_8] 0
 x[CLUSTER_336,cattle_man,Plant_9] 0
 x[CLUSTER_336,cattle_slu,Plant_0] 0
@@ -31837,12 +31837,12 @@ x[CLUSTER_336,cattle_slu,Plant_3] 0
 x[CLUSTER_336,cattle_slu,Plant_4] 0
 x[CLUSTER_336,cattle_slu,Plant_5] 0
 x[CLUSTER_336,cattle_slu,Plant_6] 0
-x[CLUSTER_336,cattle_slu,Plant_7] 0.003179
+x[CLUSTER_336,cattle_slu,Plant_7] 0
 x[CLUSTER_336,cattle_slu,Plant_8] 0
 x[CLUSTER_336,cattle_slu,Plant_9] 0
 x[CLUSTER_336,horse_man,Plant_0] 0
 x[CLUSTER_336,horse_man,Plant_1] 0
-x[CLUSTER_336,horse_man,Plant_2] 0.0005799
+x[CLUSTER_336,horse_man,Plant_2] 0
 x[CLUSTER_336,horse_man,Plant_3] 0
 x[CLUSTER_336,horse_man,Plant_4] 0
 x[CLUSTER_336,horse_man,Plant_5] 0
@@ -31867,7 +31867,7 @@ x[CLUSTER_336,pig_man,Plant_3] 0
 x[CLUSTER_336,pig_man,Plant_4] 0
 x[CLUSTER_336,pig_man,Plant_5] 0
 x[CLUSTER_336,pig_man,Plant_6] 0
-x[CLUSTER_336,pig_man,Plant_7] 0.000552236
+x[CLUSTER_336,pig_man,Plant_7] 0
 x[CLUSTER_336,pig_man,Plant_8] 0
 x[CLUSTER_336,pig_man,Plant_9] 0
 x[CLUSTER_336,cereal_str,Plant_0] 0
@@ -31909,7 +31909,7 @@ x[CLUSTER_336,maize_str,Plant_5] 0
 x[CLUSTER_336,maize_str,Plant_6] 0
 x[CLUSTER_336,maize_str,Plant_7] 0
 x[CLUSTER_336,maize_str,Plant_8] 0
-x[CLUSTER_336,maize_str,Plant_9] 0.00051674
+x[CLUSTER_336,maize_str,Plant_9] 0
 x[CLUSTER_336,beet_leaf,Plant_0] 0
 x[CLUSTER_336,beet_leaf,Plant_1] 0
 x[CLUSTER_336,beet_leaf,Plant_2] 0
@@ -31948,7 +31948,7 @@ x[CLUSTER_337,cattle_man,Plant_4] 0
 x[CLUSTER_337,cattle_man,Plant_5] 0
 x[CLUSTER_337,cattle_man,Plant_6] 0
 x[CLUSTER_337,cattle_man,Plant_7] 0
-x[CLUSTER_337,cattle_man,Plant_8] 0.01354
+x[CLUSTER_337,cattle_man,Plant_8] 0
 x[CLUSTER_337,cattle_man,Plant_9] 0
 x[CLUSTER_337,cattle_slu,Plant_0] 0
 x[CLUSTER_337,cattle_slu,Plant_1] 0
@@ -31968,7 +31968,7 @@ x[CLUSTER_337,horse_man,Plant_4] 0
 x[CLUSTER_337,horse_man,Plant_5] 0
 x[CLUSTER_337,horse_man,Plant_6] 0
 x[CLUSTER_337,horse_man,Plant_7] 0
-x[CLUSTER_337,horse_man,Plant_8] 1.0000599999999999e-03
+x[CLUSTER_337,horse_man,Plant_8] 0
 x[CLUSTER_337,horse_man,Plant_9] 0
 x[CLUSTER_337,pig_slu,Plant_0] 0
 x[CLUSTER_337,pig_slu,Plant_1] 0
@@ -32068,7 +32068,7 @@ x[CLUSTER_338,cattle_man,Plant_4] 0
 x[CLUSTER_338,cattle_man,Plant_5] 0
 x[CLUSTER_338,cattle_man,Plant_6] 0
 x[CLUSTER_338,cattle_man,Plant_7] 0
-x[CLUSTER_338,cattle_man,Plant_8] 6.1025300000002369e-03
+x[CLUSTER_338,cattle_man,Plant_8] 0
 x[CLUSTER_338,cattle_man,Plant_9] 0
 x[CLUSTER_338,cattle_slu,Plant_0] 0
 x[CLUSTER_338,cattle_slu,Plant_1] 0
@@ -32088,7 +32088,7 @@ x[CLUSTER_338,horse_man,Plant_4] 0
 x[CLUSTER_338,horse_man,Plant_5] 0
 x[CLUSTER_338,horse_man,Plant_6] 0
 x[CLUSTER_338,horse_man,Plant_7] 0
-x[CLUSTER_338,horse_man,Plant_8] 0.000816
+x[CLUSTER_338,horse_man,Plant_8] 0
 x[CLUSTER_338,horse_man,Plant_9] 0
 x[CLUSTER_338,pig_slu,Plant_0] 0
 x[CLUSTER_338,pig_slu,Plant_1] 0
@@ -32105,7 +32105,7 @@ x[CLUSTER_338,pig_man,Plant_1] 0
 x[CLUSTER_338,pig_man,Plant_2] 0
 x[CLUSTER_338,pig_man,Plant_3] 0
 x[CLUSTER_338,pig_man,Plant_4] 0
-x[CLUSTER_338,pig_man,Plant_5] 0.000496
+x[CLUSTER_338,pig_man,Plant_5] 0
 x[CLUSTER_338,pig_man,Plant_6] 0
 x[CLUSTER_338,pig_man,Plant_7] 0
 x[CLUSTER_338,pig_man,Plant_8] 0
@@ -32188,7 +32188,7 @@ x[CLUSTER_339,cattle_man,Plant_4] 0
 x[CLUSTER_339,cattle_man,Plant_5] 0
 x[CLUSTER_339,cattle_man,Plant_6] 0
 x[CLUSTER_339,cattle_man,Plant_7] 0
-x[CLUSTER_339,cattle_man,Plant_8] 3.0149169999999998e-03
+x[CLUSTER_339,cattle_man,Plant_8] 0
 x[CLUSTER_339,cattle_man,Plant_9] 0
 x[CLUSTER_339,cattle_slu,Plant_0] 0
 x[CLUSTER_339,cattle_slu,Plant_1] 0
@@ -32198,7 +32198,7 @@ x[CLUSTER_339,cattle_slu,Plant_4] 0
 x[CLUSTER_339,cattle_slu,Plant_5] 0
 x[CLUSTER_339,cattle_slu,Plant_6] 0
 x[CLUSTER_339,cattle_slu,Plant_7] 0
-x[CLUSTER_339,cattle_slu,Plant_8] 0.0167494
+x[CLUSTER_339,cattle_slu,Plant_8] 0
 x[CLUSTER_339,cattle_slu,Plant_9] 0
 x[CLUSTER_339,horse_man,Plant_0] 0
 x[CLUSTER_339,horse_man,Plant_1] 0
@@ -32208,7 +32208,7 @@ x[CLUSTER_339,horse_man,Plant_4] 0
 x[CLUSTER_339,horse_man,Plant_5] 0
 x[CLUSTER_339,horse_man,Plant_6] 0
 x[CLUSTER_339,horse_man,Plant_7] 0
-x[CLUSTER_339,horse_man,Plant_8] 2.1368000000000003e-03
+x[CLUSTER_339,horse_man,Plant_8] 0
 x[CLUSTER_339,horse_man,Plant_9] 0
 x[CLUSTER_339,pig_slu,Plant_0] 0
 x[CLUSTER_339,pig_slu,Plant_1] 0
@@ -32228,7 +32228,7 @@ x[CLUSTER_339,pig_man,Plant_4] 0
 x[CLUSTER_339,pig_man,Plant_5] 0
 x[CLUSTER_339,pig_man,Plant_6] 0
 x[CLUSTER_339,pig_man,Plant_7] 0
-x[CLUSTER_339,pig_man,Plant_8] 0.00058697
+x[CLUSTER_339,pig_man,Plant_8] 0
 x[CLUSTER_339,pig_man,Plant_9] 0
 x[CLUSTER_339,cereal_str,Plant_0] 0
 x[CLUSTER_339,cereal_str,Plant_1] 0
@@ -32305,7 +32305,7 @@ x[CLUSTER_34,cattle_man,Plant_1] 0
 x[CLUSTER_34,cattle_man,Plant_2] 0
 x[CLUSTER_34,cattle_man,Plant_3] 0
 x[CLUSTER_34,cattle_man,Plant_4] 0
-x[CLUSTER_34,cattle_man,Plant_5] 0.0048233
+x[CLUSTER_34,cattle_man,Plant_5] 0
 x[CLUSTER_34,cattle_man,Plant_6] 0
 x[CLUSTER_34,cattle_man,Plant_7] 0
 x[CLUSTER_34,cattle_man,Plant_8] 0
@@ -32315,7 +32315,7 @@ x[CLUSTER_34,cattle_slu,Plant_1] 0
 x[CLUSTER_34,cattle_slu,Plant_2] 0
 x[CLUSTER_34,cattle_slu,Plant_3] 0
 x[CLUSTER_34,cattle_slu,Plant_4] 0
-x[CLUSTER_34,cattle_slu,Plant_5] 1.9123599999999998e-02
+x[CLUSTER_34,cattle_slu,Plant_5] 0
 x[CLUSTER_34,cattle_slu,Plant_6] 0
 x[CLUSTER_34,cattle_slu,Plant_7] 0
 x[CLUSTER_34,cattle_slu,Plant_8] 0
@@ -32325,7 +32325,7 @@ x[CLUSTER_34,horse_man,Plant_1] 0
 x[CLUSTER_34,horse_man,Plant_2] 0
 x[CLUSTER_34,horse_man,Plant_3] 0
 x[CLUSTER_34,horse_man,Plant_4] 0
-x[CLUSTER_34,horse_man,Plant_5] 0.0036603
+x[CLUSTER_34,horse_man,Plant_5] 0
 x[CLUSTER_34,horse_man,Plant_6] 0
 x[CLUSTER_34,horse_man,Plant_7] 0
 x[CLUSTER_34,horse_man,Plant_8] 0
@@ -32345,7 +32345,7 @@ x[CLUSTER_34,pig_man,Plant_1] 0
 x[CLUSTER_34,pig_man,Plant_2] 0
 x[CLUSTER_34,pig_man,Plant_3] 0
 x[CLUSTER_34,pig_man,Plant_4] 0
-x[CLUSTER_34,pig_man,Plant_5] 0.000547047
+x[CLUSTER_34,pig_man,Plant_5] 0
 x[CLUSTER_34,pig_man,Plant_6] 0
 x[CLUSTER_34,pig_man,Plant_7] 0
 x[CLUSTER_34,pig_man,Plant_8] 0
@@ -32425,7 +32425,7 @@ x[CLUSTER_340,cattle_man,Plant_1] 0
 x[CLUSTER_340,cattle_man,Plant_2] 0
 x[CLUSTER_340,cattle_man,Plant_3] 0
 x[CLUSTER_340,cattle_man,Plant_4] 0
-x[CLUSTER_340,cattle_man,Plant_5] 0.000979
+x[CLUSTER_340,cattle_man,Plant_5] 0
 x[CLUSTER_340,cattle_man,Plant_6] 0
 x[CLUSTER_340,cattle_man,Plant_7] 0
 x[CLUSTER_340,cattle_man,Plant_8] 0
@@ -32435,7 +32435,7 @@ x[CLUSTER_340,cattle_slu,Plant_1] 0
 x[CLUSTER_340,cattle_slu,Plant_2] 0
 x[CLUSTER_340,cattle_slu,Plant_3] 0
 x[CLUSTER_340,cattle_slu,Plant_4] 0
-x[CLUSTER_340,cattle_slu,Plant_5] 0.00333
+x[CLUSTER_340,cattle_slu,Plant_5] 0
 x[CLUSTER_340,cattle_slu,Plant_6] 0
 x[CLUSTER_340,cattle_slu,Plant_7] 0
 x[CLUSTER_340,cattle_slu,Plant_8] 0
@@ -32445,7 +32445,7 @@ x[CLUSTER_340,horse_man,Plant_1] 0
 x[CLUSTER_340,horse_man,Plant_2] 0
 x[CLUSTER_340,horse_man,Plant_3] 0
 x[CLUSTER_340,horse_man,Plant_4] 0
-x[CLUSTER_340,horse_man,Plant_5] 0.001279
+x[CLUSTER_340,horse_man,Plant_5] 0
 x[CLUSTER_340,horse_man,Plant_6] 0
 x[CLUSTER_340,horse_man,Plant_7] 0
 x[CLUSTER_340,horse_man,Plant_8] 0
@@ -32465,7 +32465,7 @@ x[CLUSTER_340,pig_man,Plant_1] 0
 x[CLUSTER_340,pig_man,Plant_2] 0
 x[CLUSTER_340,pig_man,Plant_3] 0
 x[CLUSTER_340,pig_man,Plant_4] 0
-x[CLUSTER_340,pig_man,Plant_5] 1.5069999999999998e-04
+x[CLUSTER_340,pig_man,Plant_5] 0
 x[CLUSTER_340,pig_man,Plant_6] 0
 x[CLUSTER_340,pig_man,Plant_7] 0
 x[CLUSTER_340,pig_man,Plant_8] 0
@@ -32548,7 +32548,7 @@ x[CLUSTER_341,cattle_man,Plant_4] 0
 x[CLUSTER_341,cattle_man,Plant_5] 0
 x[CLUSTER_341,cattle_man,Plant_6] 0
 x[CLUSTER_341,cattle_man,Plant_7] 0
-x[CLUSTER_341,cattle_man,Plant_8] 8.6279999999999994e-04
+x[CLUSTER_341,cattle_man,Plant_8] 0
 x[CLUSTER_341,cattle_man,Plant_9] 0
 x[CLUSTER_341,cattle_slu,Plant_0] 0
 x[CLUSTER_341,cattle_slu,Plant_1] 0
@@ -32568,7 +32568,7 @@ x[CLUSTER_341,horse_man,Plant_4] 0
 x[CLUSTER_341,horse_man,Plant_5] 0
 x[CLUSTER_341,horse_man,Plant_6] 0
 x[CLUSTER_341,horse_man,Plant_7] 0
-x[CLUSTER_341,horse_man,Plant_8] 0.0020318
+x[CLUSTER_341,horse_man,Plant_8] 0
 x[CLUSTER_341,horse_man,Plant_9] 0
 x[CLUSTER_341,pig_slu,Plant_0] 0
 x[CLUSTER_341,pig_slu,Plant_1] 0
@@ -32588,7 +32588,7 @@ x[CLUSTER_341,pig_man,Plant_4] 0
 x[CLUSTER_341,pig_man,Plant_5] 0
 x[CLUSTER_341,pig_man,Plant_6] 0
 x[CLUSTER_341,pig_man,Plant_7] 0
-x[CLUSTER_341,pig_man,Plant_8] 1.6094299999999998e-04
+x[CLUSTER_341,pig_man,Plant_8] 0
 x[CLUSTER_341,pig_man,Plant_9] 0
 x[CLUSTER_341,cereal_str,Plant_0] 0
 x[CLUSTER_341,cereal_str,Plant_1] 0
@@ -32668,7 +32668,7 @@ x[CLUSTER_342,cattle_man,Plant_4] 0
 x[CLUSTER_342,cattle_man,Plant_5] 0
 x[CLUSTER_342,cattle_man,Plant_6] 0
 x[CLUSTER_342,cattle_man,Plant_7] 0
-x[CLUSTER_342,cattle_man,Plant_8] 0.004948
+x[CLUSTER_342,cattle_man,Plant_8] 0
 x[CLUSTER_342,cattle_man,Plant_9] 0
 x[CLUSTER_342,cattle_slu,Plant_0] 0
 x[CLUSTER_342,cattle_slu,Plant_1] 0
@@ -32688,7 +32688,7 @@ x[CLUSTER_342,horse_man,Plant_4] 0
 x[CLUSTER_342,horse_man,Plant_5] 0
 x[CLUSTER_342,horse_man,Plant_6] 0
 x[CLUSTER_342,horse_man,Plant_7] 0
-x[CLUSTER_342,horse_man,Plant_8] 0.002247
+x[CLUSTER_342,horse_man,Plant_8] 0
 x[CLUSTER_342,horse_man,Plant_9] 0
 x[CLUSTER_342,pig_slu,Plant_0] 0
 x[CLUSTER_342,pig_slu,Plant_1] 0
@@ -32708,7 +32708,7 @@ x[CLUSTER_342,pig_man,Plant_4] 0
 x[CLUSTER_342,pig_man,Plant_5] 0
 x[CLUSTER_342,pig_man,Plant_6] 0
 x[CLUSTER_342,pig_man,Plant_7] 0
-x[CLUSTER_342,pig_man,Plant_8] 0.0001099
+x[CLUSTER_342,pig_man,Plant_8] 0
 x[CLUSTER_342,pig_man,Plant_9] 0
 x[CLUSTER_342,cereal_str,Plant_0] 0
 x[CLUSTER_342,cereal_str,Plant_1] 0
@@ -32780,7 +32780,7 @@ x[CLUSTER_342,legume_str,Plant_6] 0
 x[CLUSTER_342,legume_str,Plant_7] 0
 x[CLUSTER_342,legume_str,Plant_8] 0
 x[CLUSTER_342,legume_str,Plant_9] 0
-x[CLUSTER_343,cattle_man,Plant_0] 0.01054
+x[CLUSTER_343,cattle_man,Plant_0] 0
 x[CLUSTER_343,cattle_man,Plant_1] 0
 x[CLUSTER_343,cattle_man,Plant_2] 0
 x[CLUSTER_343,cattle_man,Plant_3] 0
@@ -32790,7 +32790,7 @@ x[CLUSTER_343,cattle_man,Plant_6] 0
 x[CLUSTER_343,cattle_man,Plant_7] 0
 x[CLUSTER_343,cattle_man,Plant_8] 0
 x[CLUSTER_343,cattle_man,Plant_9] 0
-x[CLUSTER_343,cattle_slu,Plant_0] 0.0472
+x[CLUSTER_343,cattle_slu,Plant_0] 0
 x[CLUSTER_343,cattle_slu,Plant_1] 0
 x[CLUSTER_343,cattle_slu,Plant_2] 0
 x[CLUSTER_343,cattle_slu,Plant_3] 0
@@ -32800,7 +32800,7 @@ x[CLUSTER_343,cattle_slu,Plant_6] 0
 x[CLUSTER_343,cattle_slu,Plant_7] 0
 x[CLUSTER_343,cattle_slu,Plant_8] 0
 x[CLUSTER_343,cattle_slu,Plant_9] 0
-x[CLUSTER_343,horse_man,Plant_0] 0.000329269
+x[CLUSTER_343,horse_man,Plant_0] 0
 x[CLUSTER_343,horse_man,Plant_1] 0
 x[CLUSTER_343,horse_man,Plant_2] 0
 x[CLUSTER_343,horse_man,Plant_3] 0
@@ -32820,7 +32820,7 @@ x[CLUSTER_343,pig_slu,Plant_6] 0
 x[CLUSTER_343,pig_slu,Plant_7] 0
 x[CLUSTER_343,pig_slu,Plant_8] 0
 x[CLUSTER_343,pig_slu,Plant_9] 0
-x[CLUSTER_343,pig_man,Plant_0] 0.0002967
+x[CLUSTER_343,pig_man,Plant_0] 0
 x[CLUSTER_343,pig_man,Plant_1] 0
 x[CLUSTER_343,pig_man,Plant_2] 0
 x[CLUSTER_343,pig_man,Plant_3] 0
@@ -32860,7 +32860,7 @@ x[CLUSTER_343,perm_grass,Plant_6] 0
 x[CLUSTER_343,perm_grass,Plant_7] 0
 x[CLUSTER_343,perm_grass,Plant_8] 0
 x[CLUSTER_343,perm_grass,Plant_9] 0
-x[CLUSTER_343,maize_str,Plant_0] 1.2732e-05
+x[CLUSTER_343,maize_str,Plant_0] 0
 x[CLUSTER_343,maize_str,Plant_1] 0
 x[CLUSTER_343,maize_str,Plant_2] 0
 x[CLUSTER_343,maize_str,Plant_3] 0
@@ -32908,7 +32908,7 @@ x[CLUSTER_344,cattle_man,Plant_4] 0
 x[CLUSTER_344,cattle_man,Plant_5] 0
 x[CLUSTER_344,cattle_man,Plant_6] 0
 x[CLUSTER_344,cattle_man,Plant_7] 0
-x[CLUSTER_344,cattle_man,Plant_8] 0.00998
+x[CLUSTER_344,cattle_man,Plant_8] 0
 x[CLUSTER_344,cattle_man,Plant_9] 0
 x[CLUSTER_344,cattle_slu,Plant_0] 0
 x[CLUSTER_344,cattle_slu,Plant_1] 0
@@ -32928,7 +32928,7 @@ x[CLUSTER_344,horse_man,Plant_4] 0
 x[CLUSTER_344,horse_man,Plant_5] 0
 x[CLUSTER_344,horse_man,Plant_6] 0
 x[CLUSTER_344,horse_man,Plant_7] 0
-x[CLUSTER_344,horse_man,Plant_8] 0.001961
+x[CLUSTER_344,horse_man,Plant_8] 0
 x[CLUSTER_344,horse_man,Plant_9] 0
 x[CLUSTER_344,pig_slu,Plant_0] 0
 x[CLUSTER_344,pig_slu,Plant_1] 0
@@ -32945,7 +32945,7 @@ x[CLUSTER_344,pig_man,Plant_1] 0
 x[CLUSTER_344,pig_man,Plant_2] 0
 x[CLUSTER_344,pig_man,Plant_3] 0
 x[CLUSTER_344,pig_man,Plant_4] 0
-x[CLUSTER_344,pig_man,Plant_5] 0.0003475
+x[CLUSTER_344,pig_man,Plant_5] 0
 x[CLUSTER_344,pig_man,Plant_6] 0
 x[CLUSTER_344,pig_man,Plant_7] 0
 x[CLUSTER_344,pig_man,Plant_8] 0
@@ -33025,7 +33025,7 @@ x[CLUSTER_345,cattle_man,Plant_1] 0
 x[CLUSTER_345,cattle_man,Plant_2] 0
 x[CLUSTER_345,cattle_man,Plant_3] 0
 x[CLUSTER_345,cattle_man,Plant_4] 0
-x[CLUSTER_345,cattle_man,Plant_5] 0.00887
+x[CLUSTER_345,cattle_man,Plant_5] 0
 x[CLUSTER_345,cattle_man,Plant_6] 0
 x[CLUSTER_345,cattle_man,Plant_7] 0
 x[CLUSTER_345,cattle_man,Plant_8] 0
@@ -33045,7 +33045,7 @@ x[CLUSTER_345,horse_man,Plant_1] 0
 x[CLUSTER_345,horse_man,Plant_2] 0
 x[CLUSTER_345,horse_man,Plant_3] 0
 x[CLUSTER_345,horse_man,Plant_4] 0
-x[CLUSTER_345,horse_man,Plant_5] 0.003059
+x[CLUSTER_345,horse_man,Plant_5] 0
 x[CLUSTER_345,horse_man,Plant_6] 0
 x[CLUSTER_345,horse_man,Plant_7] 0
 x[CLUSTER_345,horse_man,Plant_8] 0
@@ -33065,7 +33065,7 @@ x[CLUSTER_345,pig_man,Plant_1] 0
 x[CLUSTER_345,pig_man,Plant_2] 0
 x[CLUSTER_345,pig_man,Plant_3] 0
 x[CLUSTER_345,pig_man,Plant_4] 0
-x[CLUSTER_345,pig_man,Plant_5] 0.000131752025
+x[CLUSTER_345,pig_man,Plant_5] 0
 x[CLUSTER_345,pig_man,Plant_6] 0
 x[CLUSTER_345,pig_man,Plant_7] 0
 x[CLUSTER_345,pig_man,Plant_8] 0
@@ -33142,7 +33142,7 @@ x[CLUSTER_345,legume_str,Plant_8] 0
 x[CLUSTER_345,legume_str,Plant_9] 0
 x[CLUSTER_346,cattle_man,Plant_0] 0
 x[CLUSTER_346,cattle_man,Plant_1] 0
-x[CLUSTER_346,cattle_man,Plant_2] 0.0001463
+x[CLUSTER_346,cattle_man,Plant_2] 0
 x[CLUSTER_346,cattle_man,Plant_3] 0
 x[CLUSTER_346,cattle_man,Plant_4] 0
 x[CLUSTER_346,cattle_man,Plant_5] 0
@@ -33162,7 +33162,7 @@ x[CLUSTER_346,cattle_slu,Plant_8] 0
 x[CLUSTER_346,cattle_slu,Plant_9] 0
 x[CLUSTER_346,horse_man,Plant_0] 0
 x[CLUSTER_346,horse_man,Plant_1] 0
-x[CLUSTER_346,horse_man,Plant_2] 0.0008046
+x[CLUSTER_346,horse_man,Plant_2] 0
 x[CLUSTER_346,horse_man,Plant_3] 0
 x[CLUSTER_346,horse_man,Plant_4] 0
 x[CLUSTER_346,horse_man,Plant_5] 0
@@ -33264,7 +33264,7 @@ x[CLUSTER_347,cattle_man,Plant_0] 0
 x[CLUSTER_347,cattle_man,Plant_1] 0
 x[CLUSTER_347,cattle_man,Plant_2] 0
 x[CLUSTER_347,cattle_man,Plant_3] 0
-x[CLUSTER_347,cattle_man,Plant_4] 0.000674
+x[CLUSTER_347,cattle_man,Plant_4] 0
 x[CLUSTER_347,cattle_man,Plant_5] 0
 x[CLUSTER_347,cattle_man,Plant_6] 0
 x[CLUSTER_347,cattle_man,Plant_7] 0
@@ -33284,7 +33284,7 @@ x[CLUSTER_347,horse_man,Plant_0] 0
 x[CLUSTER_347,horse_man,Plant_1] 0
 x[CLUSTER_347,horse_man,Plant_2] 0
 x[CLUSTER_347,horse_man,Plant_3] 0
-x[CLUSTER_347,horse_man,Plant_4] 0.0008265
+x[CLUSTER_347,horse_man,Plant_4] 0
 x[CLUSTER_347,horse_man,Plant_5] 0
 x[CLUSTER_347,horse_man,Plant_6] 0
 x[CLUSTER_347,horse_man,Plant_7] 0
@@ -33304,7 +33304,7 @@ x[CLUSTER_347,pig_man,Plant_0] 0
 x[CLUSTER_347,pig_man,Plant_1] 0
 x[CLUSTER_347,pig_man,Plant_2] 0
 x[CLUSTER_347,pig_man,Plant_3] 0
-x[CLUSTER_347,pig_man,Plant_4] 5.5193e-05
+x[CLUSTER_347,pig_man,Plant_4] 0
 x[CLUSTER_347,pig_man,Plant_5] 0
 x[CLUSTER_347,pig_man,Plant_6] 0
 x[CLUSTER_347,pig_man,Plant_7] 0
@@ -33329,7 +33329,7 @@ x[CLUSTER_347,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_347,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_347,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_347,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_347,clover_alfalfa_grass,Plant_9] 2.1330000000001075e-03
+x[CLUSTER_347,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_347,perm_grass,Plant_0] 0
 x[CLUSTER_347,perm_grass,Plant_1] 0
 x[CLUSTER_347,perm_grass,Plant_2] 0
@@ -33349,7 +33349,7 @@ x[CLUSTER_347,maize_str,Plant_5] 0
 x[CLUSTER_347,maize_str,Plant_6] 0
 x[CLUSTER_347,maize_str,Plant_7] 0
 x[CLUSTER_347,maize_str,Plant_8] 0
-x[CLUSTER_347,maize_str,Plant_9] 4.067e-05
+x[CLUSTER_347,maize_str,Plant_9] 0
 x[CLUSTER_347,beet_leaf,Plant_0] 0
 x[CLUSTER_347,beet_leaf,Plant_1] 0
 x[CLUSTER_347,beet_leaf,Plant_2] 0
@@ -33382,7 +33382,7 @@ x[CLUSTER_347,legume_str,Plant_8] 0
 x[CLUSTER_347,legume_str,Plant_9] 0
 x[CLUSTER_348,cattle_man,Plant_0] 0
 x[CLUSTER_348,cattle_man,Plant_1] 0
-x[CLUSTER_348,cattle_man,Plant_2] 0.002194
+x[CLUSTER_348,cattle_man,Plant_2] 0
 x[CLUSTER_348,cattle_man,Plant_3] 0
 x[CLUSTER_348,cattle_man,Plant_4] 0
 x[CLUSTER_348,cattle_man,Plant_5] 0
@@ -33402,7 +33402,7 @@ x[CLUSTER_348,cattle_slu,Plant_8] 0
 x[CLUSTER_348,cattle_slu,Plant_9] 0
 x[CLUSTER_348,horse_man,Plant_0] 0
 x[CLUSTER_348,horse_man,Plant_1] 0
-x[CLUSTER_348,horse_man,Plant_2] 0.000429
+x[CLUSTER_348,horse_man,Plant_2] 0
 x[CLUSTER_348,horse_man,Plant_3] 0
 x[CLUSTER_348,horse_man,Plant_4] 0
 x[CLUSTER_348,horse_man,Plant_5] 0
@@ -33427,7 +33427,7 @@ x[CLUSTER_348,pig_man,Plant_3] 0
 x[CLUSTER_348,pig_man,Plant_4] 0
 x[CLUSTER_348,pig_man,Plant_5] 0
 x[CLUSTER_348,pig_man,Plant_6] 0
-x[CLUSTER_348,pig_man,Plant_7] 2.6419999999999997e-04
+x[CLUSTER_348,pig_man,Plant_7] 0
 x[CLUSTER_348,pig_man,Plant_8] 0
 x[CLUSTER_348,pig_man,Plant_9] 0
 x[CLUSTER_348,cereal_str,Plant_0] 0
@@ -33449,7 +33449,7 @@ x[CLUSTER_348,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_348,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_348,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_348,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_348,clover_alfalfa_grass,Plant_9] 0.00457
+x[CLUSTER_348,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_348,perm_grass,Plant_0] 0
 x[CLUSTER_348,perm_grass,Plant_1] 0
 x[CLUSTER_348,perm_grass,Plant_2] 0
@@ -33469,7 +33469,7 @@ x[CLUSTER_348,maize_str,Plant_5] 0
 x[CLUSTER_348,maize_str,Plant_6] 0
 x[CLUSTER_348,maize_str,Plant_7] 0
 x[CLUSTER_348,maize_str,Plant_8] 0
-x[CLUSTER_348,maize_str,Plant_9] 6.5e-05
+x[CLUSTER_348,maize_str,Plant_9] 0
 x[CLUSTER_348,beet_leaf,Plant_0] 0
 x[CLUSTER_348,beet_leaf,Plant_1] 0
 x[CLUSTER_348,beet_leaf,Plant_2] 0
@@ -33505,7 +33505,7 @@ x[CLUSTER_349,cattle_man,Plant_1] 0
 x[CLUSTER_349,cattle_man,Plant_2] 0
 x[CLUSTER_349,cattle_man,Plant_3] 0
 x[CLUSTER_349,cattle_man,Plant_4] 0
-x[CLUSTER_349,cattle_man,Plant_5] 0.004717
+x[CLUSTER_349,cattle_man,Plant_5] 0
 x[CLUSTER_349,cattle_man,Plant_6] 0
 x[CLUSTER_349,cattle_man,Plant_7] 0
 x[CLUSTER_349,cattle_man,Plant_8] 0
@@ -33525,7 +33525,7 @@ x[CLUSTER_349,horse_man,Plant_1] 0
 x[CLUSTER_349,horse_man,Plant_2] 0
 x[CLUSTER_349,horse_man,Plant_3] 0
 x[CLUSTER_349,horse_man,Plant_4] 0
-x[CLUSTER_349,horse_man,Plant_5] 0.000668
+x[CLUSTER_349,horse_man,Plant_5] 0
 x[CLUSTER_349,horse_man,Plant_6] 0
 x[CLUSTER_349,horse_man,Plant_7] 0
 x[CLUSTER_349,horse_man,Plant_8] 0
@@ -33545,7 +33545,7 @@ x[CLUSTER_349,pig_man,Plant_1] 0
 x[CLUSTER_349,pig_man,Plant_2] 0
 x[CLUSTER_349,pig_man,Plant_3] 0
 x[CLUSTER_349,pig_man,Plant_4] 0
-x[CLUSTER_349,pig_man,Plant_5] 0.000105746
+x[CLUSTER_349,pig_man,Plant_5] 0
 x[CLUSTER_349,pig_man,Plant_6] 0
 x[CLUSTER_349,pig_man,Plant_7] 0
 x[CLUSTER_349,pig_man,Plant_8] 0
@@ -33625,7 +33625,7 @@ x[CLUSTER_35,cattle_man,Plant_1] 0
 x[CLUSTER_35,cattle_man,Plant_2] 0
 x[CLUSTER_35,cattle_man,Plant_3] 0
 x[CLUSTER_35,cattle_man,Plant_4] 0
-x[CLUSTER_35,cattle_man,Plant_5] 0.003291
+x[CLUSTER_35,cattle_man,Plant_5] 0
 x[CLUSTER_35,cattle_man,Plant_6] 0
 x[CLUSTER_35,cattle_man,Plant_7] 0
 x[CLUSTER_35,cattle_man,Plant_8] 0
@@ -33645,7 +33645,7 @@ x[CLUSTER_35,horse_man,Plant_1] 0
 x[CLUSTER_35,horse_man,Plant_2] 0
 x[CLUSTER_35,horse_man,Plant_3] 0
 x[CLUSTER_35,horse_man,Plant_4] 0
-x[CLUSTER_35,horse_man,Plant_5] 6.5529999999999994e-04
+x[CLUSTER_35,horse_man,Plant_5] 0
 x[CLUSTER_35,horse_man,Plant_6] 0
 x[CLUSTER_35,horse_man,Plant_7] 0
 x[CLUSTER_35,horse_man,Plant_8] 0
@@ -33665,7 +33665,7 @@ x[CLUSTER_35,pig_man,Plant_1] 0
 x[CLUSTER_35,pig_man,Plant_2] 0
 x[CLUSTER_35,pig_man,Plant_3] 0
 x[CLUSTER_35,pig_man,Plant_4] 0
-x[CLUSTER_35,pig_man,Plant_5] 0.000754829
+x[CLUSTER_35,pig_man,Plant_5] 0
 x[CLUSTER_35,pig_man,Plant_6] 0
 x[CLUSTER_35,pig_man,Plant_7] 0
 x[CLUSTER_35,pig_man,Plant_8] 0
@@ -33746,7 +33746,7 @@ x[CLUSTER_350,cattle_man,Plant_2] 0
 x[CLUSTER_350,cattle_man,Plant_3] 0
 x[CLUSTER_350,cattle_man,Plant_4] 0
 x[CLUSTER_350,cattle_man,Plant_5] 0
-x[CLUSTER_350,cattle_man,Plant_6] 0.0145
+x[CLUSTER_350,cattle_man,Plant_6] 0
 x[CLUSTER_350,cattle_man,Plant_7] 0
 x[CLUSTER_350,cattle_man,Plant_8] 0
 x[CLUSTER_350,cattle_man,Plant_9] 0
@@ -33766,7 +33766,7 @@ x[CLUSTER_350,horse_man,Plant_2] 0
 x[CLUSTER_350,horse_man,Plant_3] 0
 x[CLUSTER_350,horse_man,Plant_4] 0
 x[CLUSTER_350,horse_man,Plant_5] 0
-x[CLUSTER_350,horse_man,Plant_6] 0.002875
+x[CLUSTER_350,horse_man,Plant_6] 0
 x[CLUSTER_350,horse_man,Plant_7] 0
 x[CLUSTER_350,horse_man,Plant_8] 0
 x[CLUSTER_350,horse_man,Plant_9] 0
@@ -33785,7 +33785,7 @@ x[CLUSTER_350,pig_man,Plant_1] 0
 x[CLUSTER_350,pig_man,Plant_2] 0
 x[CLUSTER_350,pig_man,Plant_3] 0
 x[CLUSTER_350,pig_man,Plant_4] 0
-x[CLUSTER_350,pig_man,Plant_5] 0.00018362
+x[CLUSTER_350,pig_man,Plant_5] 0
 x[CLUSTER_350,pig_man,Plant_6] 0
 x[CLUSTER_350,pig_man,Plant_7] 0
 x[CLUSTER_350,pig_man,Plant_8] 0
@@ -33862,7 +33862,7 @@ x[CLUSTER_350,legume_str,Plant_8] 0
 x[CLUSTER_350,legume_str,Plant_9] 0
 x[CLUSTER_351,cattle_man,Plant_0] 0
 x[CLUSTER_351,cattle_man,Plant_1] 0
-x[CLUSTER_351,cattle_man,Plant_2] 0.01475
+x[CLUSTER_351,cattle_man,Plant_2] 0
 x[CLUSTER_351,cattle_man,Plant_3] 0
 x[CLUSTER_351,cattle_man,Plant_4] 0
 x[CLUSTER_351,cattle_man,Plant_5] 0
@@ -33882,7 +33882,7 @@ x[CLUSTER_351,cattle_slu,Plant_8] 0
 x[CLUSTER_351,cattle_slu,Plant_9] 0
 x[CLUSTER_351,horse_man,Plant_0] 0
 x[CLUSTER_351,horse_man,Plant_1] 0
-x[CLUSTER_351,horse_man,Plant_2] 0.0015
+x[CLUSTER_351,horse_man,Plant_2] 0
 x[CLUSTER_351,horse_man,Plant_3] 0
 x[CLUSTER_351,horse_man,Plant_4] 0
 x[CLUSTER_351,horse_man,Plant_5] 0
@@ -33902,7 +33902,7 @@ x[CLUSTER_351,pig_slu,Plant_8] 0
 x[CLUSTER_351,pig_slu,Plant_9] 0
 x[CLUSTER_351,pig_man,Plant_0] 0
 x[CLUSTER_351,pig_man,Plant_1] 0
-x[CLUSTER_351,pig_man,Plant_2] 4.5630000000000003e-04
+x[CLUSTER_351,pig_man,Plant_2] 0
 x[CLUSTER_351,pig_man,Plant_3] 0
 x[CLUSTER_351,pig_man,Plant_4] 0
 x[CLUSTER_351,pig_man,Plant_5] 0
@@ -33981,7 +33981,7 @@ x[CLUSTER_351,legume_str,Plant_7] 0
 x[CLUSTER_351,legume_str,Plant_8] 0
 x[CLUSTER_351,legume_str,Plant_9] 0
 x[CLUSTER_352,cattle_man,Plant_0] 0
-x[CLUSTER_352,cattle_man,Plant_1] 0.01354
+x[CLUSTER_352,cattle_man,Plant_1] 0
 x[CLUSTER_352,cattle_man,Plant_2] 0
 x[CLUSTER_352,cattle_man,Plant_3] 0
 x[CLUSTER_352,cattle_man,Plant_4] 0
@@ -34001,7 +34001,7 @@ x[CLUSTER_352,cattle_slu,Plant_7] 0
 x[CLUSTER_352,cattle_slu,Plant_8] 0
 x[CLUSTER_352,cattle_slu,Plant_9] 0
 x[CLUSTER_352,horse_man,Plant_0] 0
-x[CLUSTER_352,horse_man,Plant_1] 0.003832
+x[CLUSTER_352,horse_man,Plant_1] 0
 x[CLUSTER_352,horse_man,Plant_2] 0
 x[CLUSTER_352,horse_man,Plant_3] 0
 x[CLUSTER_352,horse_man,Plant_4] 0
@@ -34025,7 +34025,7 @@ x[CLUSTER_352,pig_man,Plant_1] 0
 x[CLUSTER_352,pig_man,Plant_2] 0
 x[CLUSTER_352,pig_man,Plant_3] 0
 x[CLUSTER_352,pig_man,Plant_4] 0
-x[CLUSTER_352,pig_man,Plant_5] 3.21e-05
+x[CLUSTER_352,pig_man,Plant_5] 0
 x[CLUSTER_352,pig_man,Plant_6] 0
 x[CLUSTER_352,pig_man,Plant_7] 0
 x[CLUSTER_352,pig_man,Plant_8] 0
@@ -34108,7 +34108,7 @@ x[CLUSTER_353,cattle_man,Plant_4] 0
 x[CLUSTER_353,cattle_man,Plant_5] 0
 x[CLUSTER_353,cattle_man,Plant_6] 0
 x[CLUSTER_353,cattle_man,Plant_7] 0
-x[CLUSTER_353,cattle_man,Plant_8] 8.9999999999996489e-03
+x[CLUSTER_353,cattle_man,Plant_8] 0
 x[CLUSTER_353,cattle_man,Plant_9] 0
 x[CLUSTER_353,cattle_slu,Plant_0] 0
 x[CLUSTER_353,cattle_slu,Plant_1] 0
@@ -34128,7 +34128,7 @@ x[CLUSTER_353,horse_man,Plant_4] 0
 x[CLUSTER_353,horse_man,Plant_5] 0
 x[CLUSTER_353,horse_man,Plant_6] 0
 x[CLUSTER_353,horse_man,Plant_7] 0
-x[CLUSTER_353,horse_man,Plant_8] 0.00084
+x[CLUSTER_353,horse_man,Plant_8] 0
 x[CLUSTER_353,horse_man,Plant_9] 0
 x[CLUSTER_353,pig_slu,Plant_0] 0
 x[CLUSTER_353,pig_slu,Plant_1] 0
@@ -34148,7 +34148,7 @@ x[CLUSTER_353,pig_man,Plant_4] 0
 x[CLUSTER_353,pig_man,Plant_5] 0
 x[CLUSTER_353,pig_man,Plant_6] 0
 x[CLUSTER_353,pig_man,Plant_7] 0
-x[CLUSTER_353,pig_man,Plant_8] 0.000473
+x[CLUSTER_353,pig_man,Plant_8] 0
 x[CLUSTER_353,pig_man,Plant_9] 0
 x[CLUSTER_353,cereal_str,Plant_0] 0
 x[CLUSTER_353,cereal_str,Plant_1] 0
@@ -34225,7 +34225,7 @@ x[CLUSTER_354,cattle_man,Plant_1] 0
 x[CLUSTER_354,cattle_man,Plant_2] 0
 x[CLUSTER_354,cattle_man,Plant_3] 0
 x[CLUSTER_354,cattle_man,Plant_4] 0
-x[CLUSTER_354,cattle_man,Plant_5] 0.004844
+x[CLUSTER_354,cattle_man,Plant_5] 0
 x[CLUSTER_354,cattle_man,Plant_6] 0
 x[CLUSTER_354,cattle_man,Plant_7] 0
 x[CLUSTER_354,cattle_man,Plant_8] 0
@@ -34243,7 +34243,7 @@ x[CLUSTER_354,cattle_slu,Plant_9] 0
 x[CLUSTER_354,horse_man,Plant_0] 0
 x[CLUSTER_354,horse_man,Plant_1] 0
 x[CLUSTER_354,horse_man,Plant_2] 0
-x[CLUSTER_354,horse_man,Plant_3] 0.0007936
+x[CLUSTER_354,horse_man,Plant_3] 0
 x[CLUSTER_354,horse_man,Plant_4] 0
 x[CLUSTER_354,horse_man,Plant_5] 0
 x[CLUSTER_354,horse_man,Plant_6] 0
@@ -34265,7 +34265,7 @@ x[CLUSTER_354,pig_man,Plant_1] 0
 x[CLUSTER_354,pig_man,Plant_2] 0
 x[CLUSTER_354,pig_man,Plant_3] 0
 x[CLUSTER_354,pig_man,Plant_4] 0
-x[CLUSTER_354,pig_man,Plant_5] 8.8351999999999994e-04
+x[CLUSTER_354,pig_man,Plant_5] 0
 x[CLUSTER_354,pig_man,Plant_6] 0
 x[CLUSTER_354,pig_man,Plant_7] 0
 x[CLUSTER_354,pig_man,Plant_8] 0
@@ -34343,7 +34343,7 @@ x[CLUSTER_354,legume_str,Plant_9] 0
 x[CLUSTER_355,cattle_man,Plant_0] 0
 x[CLUSTER_355,cattle_man,Plant_1] 0
 x[CLUSTER_355,cattle_man,Plant_2] 0
-x[CLUSTER_355,cattle_man,Plant_3] 0.003895
+x[CLUSTER_355,cattle_man,Plant_3] 0
 x[CLUSTER_355,cattle_man,Plant_4] 0
 x[CLUSTER_355,cattle_man,Plant_5] 0
 x[CLUSTER_355,cattle_man,Plant_6] 0
@@ -34363,7 +34363,7 @@ x[CLUSTER_355,cattle_slu,Plant_9] 0
 x[CLUSTER_355,horse_man,Plant_0] 0
 x[CLUSTER_355,horse_man,Plant_1] 0
 x[CLUSTER_355,horse_man,Plant_2] 0
-x[CLUSTER_355,horse_man,Plant_3] 0.001202
+x[CLUSTER_355,horse_man,Plant_3] 0
 x[CLUSTER_355,horse_man,Plant_4] 0
 x[CLUSTER_355,horse_man,Plant_5] 0
 x[CLUSTER_355,horse_man,Plant_6] 0
@@ -34383,7 +34383,7 @@ x[CLUSTER_355,pig_slu,Plant_9] 0
 x[CLUSTER_355,pig_man,Plant_0] 0
 x[CLUSTER_355,pig_man,Plant_1] 0
 x[CLUSTER_355,pig_man,Plant_2] 0
-x[CLUSTER_355,pig_man,Plant_3] 0.001341
+x[CLUSTER_355,pig_man,Plant_3] 0
 x[CLUSTER_355,pig_man,Plant_4] 0
 x[CLUSTER_355,pig_man,Plant_5] 0
 x[CLUSTER_355,pig_man,Plant_6] 0
@@ -34584,7 +34584,7 @@ x[CLUSTER_357,cattle_man,Plant_0] 0
 x[CLUSTER_357,cattle_man,Plant_1] 0
 x[CLUSTER_357,cattle_man,Plant_2] 0
 x[CLUSTER_357,cattle_man,Plant_3] 0
-x[CLUSTER_357,cattle_man,Plant_4] 1.1532000000000023e-02
+x[CLUSTER_357,cattle_man,Plant_4] 0
 x[CLUSTER_357,cattle_man,Plant_5] 0
 x[CLUSTER_357,cattle_man,Plant_6] 0
 x[CLUSTER_357,cattle_man,Plant_7] 0
@@ -34604,7 +34604,7 @@ x[CLUSTER_357,horse_man,Plant_0] 0
 x[CLUSTER_357,horse_man,Plant_1] 0
 x[CLUSTER_357,horse_man,Plant_2] 0
 x[CLUSTER_357,horse_man,Plant_3] 0
-x[CLUSTER_357,horse_man,Plant_4] 1.4037000000000001e-03
+x[CLUSTER_357,horse_man,Plant_4] 0
 x[CLUSTER_357,horse_man,Plant_5] 0
 x[CLUSTER_357,horse_man,Plant_6] 0
 x[CLUSTER_357,horse_man,Plant_7] 0
@@ -34624,7 +34624,7 @@ x[CLUSTER_357,pig_man,Plant_0] 0
 x[CLUSTER_357,pig_man,Plant_1] 0
 x[CLUSTER_357,pig_man,Plant_2] 0
 x[CLUSTER_357,pig_man,Plant_3] 0
-x[CLUSTER_357,pig_man,Plant_4] 0.0008433
+x[CLUSTER_357,pig_man,Plant_4] 0
 x[CLUSTER_357,pig_man,Plant_5] 0
 x[CLUSTER_357,pig_man,Plant_6] 0
 x[CLUSTER_357,pig_man,Plant_7] 0
@@ -34704,7 +34704,7 @@ x[CLUSTER_358,cattle_man,Plant_0] 0
 x[CLUSTER_358,cattle_man,Plant_1] 0
 x[CLUSTER_358,cattle_man,Plant_2] 0
 x[CLUSTER_358,cattle_man,Plant_3] 0
-x[CLUSTER_358,cattle_man,Plant_4] 0.008329
+x[CLUSTER_358,cattle_man,Plant_4] 0
 x[CLUSTER_358,cattle_man,Plant_5] 0
 x[CLUSTER_358,cattle_man,Plant_6] 0
 x[CLUSTER_358,cattle_man,Plant_7] 0
@@ -34714,7 +34714,7 @@ x[CLUSTER_358,cattle_slu,Plant_0] 0
 x[CLUSTER_358,cattle_slu,Plant_1] 0
 x[CLUSTER_358,cattle_slu,Plant_2] 0
 x[CLUSTER_358,cattle_slu,Plant_3] 0
-x[CLUSTER_358,cattle_slu,Plant_4] 0.03844
+x[CLUSTER_358,cattle_slu,Plant_4] 0
 x[CLUSTER_358,cattle_slu,Plant_5] 0
 x[CLUSTER_358,cattle_slu,Plant_6] 0
 x[CLUSTER_358,cattle_slu,Plant_7] 0
@@ -34724,7 +34724,7 @@ x[CLUSTER_358,horse_man,Plant_0] 0
 x[CLUSTER_358,horse_man,Plant_1] 0
 x[CLUSTER_358,horse_man,Plant_2] 0
 x[CLUSTER_358,horse_man,Plant_3] 0
-x[CLUSTER_358,horse_man,Plant_4] 0.0005869
+x[CLUSTER_358,horse_man,Plant_4] 0
 x[CLUSTER_358,horse_man,Plant_5] 0
 x[CLUSTER_358,horse_man,Plant_6] 0
 x[CLUSTER_358,horse_man,Plant_7] 0
@@ -34744,7 +34744,7 @@ x[CLUSTER_358,pig_man,Plant_0] 0
 x[CLUSTER_358,pig_man,Plant_1] 0
 x[CLUSTER_358,pig_man,Plant_2] 0
 x[CLUSTER_358,pig_man,Plant_3] 0
-x[CLUSTER_358,pig_man,Plant_4] 0.00050506
+x[CLUSTER_358,pig_man,Plant_4] 0
 x[CLUSTER_358,pig_man,Plant_5] 0
 x[CLUSTER_358,pig_man,Plant_6] 0
 x[CLUSTER_358,pig_man,Plant_7] 0
@@ -34824,7 +34824,7 @@ x[CLUSTER_359,cattle_man,Plant_0] 0
 x[CLUSTER_359,cattle_man,Plant_1] 0
 x[CLUSTER_359,cattle_man,Plant_2] 0
 x[CLUSTER_359,cattle_man,Plant_3] 0
-x[CLUSTER_359,cattle_man,Plant_4] 0.004205
+x[CLUSTER_359,cattle_man,Plant_4] 0
 x[CLUSTER_359,cattle_man,Plant_5] 0
 x[CLUSTER_359,cattle_man,Plant_6] 0
 x[CLUSTER_359,cattle_man,Plant_7] 0
@@ -34844,7 +34844,7 @@ x[CLUSTER_359,horse_man,Plant_0] 0
 x[CLUSTER_359,horse_man,Plant_1] 0
 x[CLUSTER_359,horse_man,Plant_2] 0
 x[CLUSTER_359,horse_man,Plant_3] 0
-x[CLUSTER_359,horse_man,Plant_4] 0.0003621
+x[CLUSTER_359,horse_man,Plant_4] 0
 x[CLUSTER_359,horse_man,Plant_5] 0
 x[CLUSTER_359,horse_man,Plant_6] 0
 x[CLUSTER_359,horse_man,Plant_7] 0
@@ -34864,7 +34864,7 @@ x[CLUSTER_359,pig_man,Plant_0] 0
 x[CLUSTER_359,pig_man,Plant_1] 0
 x[CLUSTER_359,pig_man,Plant_2] 0
 x[CLUSTER_359,pig_man,Plant_3] 0
-x[CLUSTER_359,pig_man,Plant_4] 1.3946999999999999e-05
+x[CLUSTER_359,pig_man,Plant_4] 0
 x[CLUSTER_359,pig_man,Plant_5] 0
 x[CLUSTER_359,pig_man,Plant_6] 0
 x[CLUSTER_359,pig_man,Plant_7] 0
@@ -34909,7 +34909,7 @@ x[CLUSTER_359,maize_str,Plant_5] 0
 x[CLUSTER_359,maize_str,Plant_6] 0
 x[CLUSTER_359,maize_str,Plant_7] 0
 x[CLUSTER_359,maize_str,Plant_8] 0
-x[CLUSTER_359,maize_str,Plant_9] 3.65e-05
+x[CLUSTER_359,maize_str,Plant_9] 0
 x[CLUSTER_359,beet_leaf,Plant_0] 0
 x[CLUSTER_359,beet_leaf,Plant_1] 0
 x[CLUSTER_359,beet_leaf,Plant_2] 0
@@ -34944,7 +34944,7 @@ x[CLUSTER_36,cattle_man,Plant_0] 0
 x[CLUSTER_36,cattle_man,Plant_1] 0
 x[CLUSTER_36,cattle_man,Plant_2] 0
 x[CLUSTER_36,cattle_man,Plant_3] 0
-x[CLUSTER_36,cattle_man,Plant_4] 0.0053692
+x[CLUSTER_36,cattle_man,Plant_4] 0
 x[CLUSTER_36,cattle_man,Plant_5] 0
 x[CLUSTER_36,cattle_man,Plant_6] 0
 x[CLUSTER_36,cattle_man,Plant_7] 0
@@ -34964,7 +34964,7 @@ x[CLUSTER_36,horse_man,Plant_0] 0
 x[CLUSTER_36,horse_man,Plant_1] 0
 x[CLUSTER_36,horse_man,Plant_2] 0
 x[CLUSTER_36,horse_man,Plant_3] 0
-x[CLUSTER_36,horse_man,Plant_4] 0.0016107
+x[CLUSTER_36,horse_man,Plant_4] 0
 x[CLUSTER_36,horse_man,Plant_5] 0
 x[CLUSTER_36,horse_man,Plant_6] 0
 x[CLUSTER_36,horse_man,Plant_7] 0
@@ -34984,7 +34984,7 @@ x[CLUSTER_36,pig_man,Plant_0] 0
 x[CLUSTER_36,pig_man,Plant_1] 0
 x[CLUSTER_36,pig_man,Plant_2] 0
 x[CLUSTER_36,pig_man,Plant_3] 0
-x[CLUSTER_36,pig_man,Plant_4] 0.001634
+x[CLUSTER_36,pig_man,Plant_4] 0
 x[CLUSTER_36,pig_man,Plant_5] 0
 x[CLUSTER_36,pig_man,Plant_6] 0
 x[CLUSTER_36,pig_man,Plant_7] 0
@@ -35009,7 +35009,7 @@ x[CLUSTER_36,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_36,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_36,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_36,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_36,clover_alfalfa_grass,Plant_9] 0.002226
+x[CLUSTER_36,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_36,perm_grass,Plant_0] 0
 x[CLUSTER_36,perm_grass,Plant_1] 0
 x[CLUSTER_36,perm_grass,Plant_2] 0
@@ -35029,7 +35029,7 @@ x[CLUSTER_36,maize_str,Plant_5] 0
 x[CLUSTER_36,maize_str,Plant_6] 0
 x[CLUSTER_36,maize_str,Plant_7] 0
 x[CLUSTER_36,maize_str,Plant_8] 0
-x[CLUSTER_36,maize_str,Plant_9] 3.8110000000000005e-04
+x[CLUSTER_36,maize_str,Plant_9] 0
 x[CLUSTER_36,beet_leaf,Plant_0] 0
 x[CLUSTER_36,beet_leaf,Plant_1] 0
 x[CLUSTER_36,beet_leaf,Plant_2] 0
@@ -35061,7 +35061,7 @@ x[CLUSTER_36,legume_str,Plant_7] 0
 x[CLUSTER_36,legume_str,Plant_8] 0
 x[CLUSTER_36,legume_str,Plant_9] 0
 x[CLUSTER_360,cattle_man,Plant_0] 0
-x[CLUSTER_360,cattle_man,Plant_1] 0.00889
+x[CLUSTER_360,cattle_man,Plant_1] 0
 x[CLUSTER_360,cattle_man,Plant_2] 0
 x[CLUSTER_360,cattle_man,Plant_3] 0
 x[CLUSTER_360,cattle_man,Plant_4] 0
@@ -35081,7 +35081,7 @@ x[CLUSTER_360,cattle_slu,Plant_7] 0
 x[CLUSTER_360,cattle_slu,Plant_8] 0
 x[CLUSTER_360,cattle_slu,Plant_9] 0
 x[CLUSTER_360,horse_man,Plant_0] 0
-x[CLUSTER_360,horse_man,Plant_1] 0.00236
+x[CLUSTER_360,horse_man,Plant_1] 0
 x[CLUSTER_360,horse_man,Plant_2] 0
 x[CLUSTER_360,horse_man,Plant_3] 0
 x[CLUSTER_360,horse_man,Plant_4] 0
@@ -35182,7 +35182,7 @@ x[CLUSTER_360,legume_str,Plant_8] 0
 x[CLUSTER_360,legume_str,Plant_9] 0
 x[CLUSTER_361,cattle_man,Plant_0] 0
 x[CLUSTER_361,cattle_man,Plant_1] 0
-x[CLUSTER_361,cattle_man,Plant_2] 0.00411129
+x[CLUSTER_361,cattle_man,Plant_2] 0
 x[CLUSTER_361,cattle_man,Plant_3] 0
 x[CLUSTER_361,cattle_man,Plant_4] 0
 x[CLUSTER_361,cattle_man,Plant_5] 0
@@ -35202,7 +35202,7 @@ x[CLUSTER_361,cattle_slu,Plant_8] 0
 x[CLUSTER_361,cattle_slu,Plant_9] 0
 x[CLUSTER_361,horse_man,Plant_0] 0
 x[CLUSTER_361,horse_man,Plant_1] 0
-x[CLUSTER_361,horse_man,Plant_2] 2.0030000000000002e-04
+x[CLUSTER_361,horse_man,Plant_2] 0
 x[CLUSTER_361,horse_man,Plant_3] 0
 x[CLUSTER_361,horse_man,Plant_4] 0
 x[CLUSTER_361,horse_man,Plant_5] 0
@@ -35227,7 +35227,7 @@ x[CLUSTER_361,pig_man,Plant_3] 0
 x[CLUSTER_361,pig_man,Plant_4] 0
 x[CLUSTER_361,pig_man,Plant_5] 0
 x[CLUSTER_361,pig_man,Plant_6] 0
-x[CLUSTER_361,pig_man,Plant_7] 0.0009
+x[CLUSTER_361,pig_man,Plant_7] 0
 x[CLUSTER_361,pig_man,Plant_8] 0
 x[CLUSTER_361,pig_man,Plant_9] 0
 x[CLUSTER_361,cereal_str,Plant_0] 0
@@ -35269,7 +35269,7 @@ x[CLUSTER_361,maize_str,Plant_5] 0
 x[CLUSTER_361,maize_str,Plant_6] 0
 x[CLUSTER_361,maize_str,Plant_7] 0
 x[CLUSTER_361,maize_str,Plant_8] 0
-x[CLUSTER_361,maize_str,Plant_9] 0.0005796
+x[CLUSTER_361,maize_str,Plant_9] 0
 x[CLUSTER_361,beet_leaf,Plant_0] 0
 x[CLUSTER_361,beet_leaf,Plant_1] 0
 x[CLUSTER_361,beet_leaf,Plant_2] 0
@@ -35301,7 +35301,7 @@ x[CLUSTER_361,legume_str,Plant_7] 0
 x[CLUSTER_361,legume_str,Plant_8] 0
 x[CLUSTER_361,legume_str,Plant_9] 0
 x[CLUSTER_362,cattle_man,Plant_0] 0
-x[CLUSTER_362,cattle_man,Plant_1] 0.0131
+x[CLUSTER_362,cattle_man,Plant_1] 0
 x[CLUSTER_362,cattle_man,Plant_2] 0
 x[CLUSTER_362,cattle_man,Plant_3] 0
 x[CLUSTER_362,cattle_man,Plant_4] 0
@@ -35311,7 +35311,7 @@ x[CLUSTER_362,cattle_man,Plant_7] 0
 x[CLUSTER_362,cattle_man,Plant_8] 0
 x[CLUSTER_362,cattle_man,Plant_9] 0
 x[CLUSTER_362,cattle_slu,Plant_0] 0
-x[CLUSTER_362,cattle_slu,Plant_1] 8.1600000000000020e-02
+x[CLUSTER_362,cattle_slu,Plant_1] 0
 x[CLUSTER_362,cattle_slu,Plant_2] 0
 x[CLUSTER_362,cattle_slu,Plant_3] 0
 x[CLUSTER_362,cattle_slu,Plant_4] 0
@@ -35321,7 +35321,7 @@ x[CLUSTER_362,cattle_slu,Plant_7] 0
 x[CLUSTER_362,cattle_slu,Plant_8] 0
 x[CLUSTER_362,cattle_slu,Plant_9] 0
 x[CLUSTER_362,horse_man,Plant_0] 0
-x[CLUSTER_362,horse_man,Plant_1] 0.002769
+x[CLUSTER_362,horse_man,Plant_1] 0
 x[CLUSTER_362,horse_man,Plant_2] 0
 x[CLUSTER_362,horse_man,Plant_3] 0
 x[CLUSTER_362,horse_man,Plant_4] 0
@@ -35426,7 +35426,7 @@ x[CLUSTER_363,cattle_man,Plant_2] 0
 x[CLUSTER_363,cattle_man,Plant_3] 0
 x[CLUSTER_363,cattle_man,Plant_4] 0
 x[CLUSTER_363,cattle_man,Plant_5] 0
-x[CLUSTER_363,cattle_man,Plant_6] 0.01343
+x[CLUSTER_363,cattle_man,Plant_6] 0
 x[CLUSTER_363,cattle_man,Plant_7] 0
 x[CLUSTER_363,cattle_man,Plant_8] 0
 x[CLUSTER_363,cattle_man,Plant_9] 0
@@ -35446,7 +35446,7 @@ x[CLUSTER_363,horse_man,Plant_2] 0
 x[CLUSTER_363,horse_man,Plant_3] 0
 x[CLUSTER_363,horse_man,Plant_4] 0
 x[CLUSTER_363,horse_man,Plant_5] 0
-x[CLUSTER_363,horse_man,Plant_6] 0.00318
+x[CLUSTER_363,horse_man,Plant_6] 0
 x[CLUSTER_363,horse_man,Plant_7] 0
 x[CLUSTER_363,horse_man,Plant_8] 0
 x[CLUSTER_363,horse_man,Plant_9] 0
@@ -35465,7 +35465,7 @@ x[CLUSTER_363,pig_man,Plant_1] 0
 x[CLUSTER_363,pig_man,Plant_2] 0
 x[CLUSTER_363,pig_man,Plant_3] 0
 x[CLUSTER_363,pig_man,Plant_4] 0
-x[CLUSTER_363,pig_man,Plant_5] 0.00015491
+x[CLUSTER_363,pig_man,Plant_5] 0
 x[CLUSTER_363,pig_man,Plant_6] 0
 x[CLUSTER_363,pig_man,Plant_7] 0
 x[CLUSTER_363,pig_man,Plant_8] 0
@@ -35547,7 +35547,7 @@ x[CLUSTER_364,cattle_man,Plant_3] 0
 x[CLUSTER_364,cattle_man,Plant_4] 0
 x[CLUSTER_364,cattle_man,Plant_5] 0
 x[CLUSTER_364,cattle_man,Plant_6] 0
-x[CLUSTER_364,cattle_man,Plant_7] 2.0984000000000003e-03
+x[CLUSTER_364,cattle_man,Plant_7] 0
 x[CLUSTER_364,cattle_man,Plant_8] 0
 x[CLUSTER_364,cattle_man,Plant_9] 0
 x[CLUSTER_364,cattle_slu,Plant_0] 0
@@ -35567,7 +35567,7 @@ x[CLUSTER_364,horse_man,Plant_3] 0
 x[CLUSTER_364,horse_man,Plant_4] 0
 x[CLUSTER_364,horse_man,Plant_5] 0
 x[CLUSTER_364,horse_man,Plant_6] 0
-x[CLUSTER_364,horse_man,Plant_7] 0.0004838
+x[CLUSTER_364,horse_man,Plant_7] 0
 x[CLUSTER_364,horse_man,Plant_8] 0
 x[CLUSTER_364,horse_man,Plant_9] 0
 x[CLUSTER_364,pig_slu,Plant_0] 0
@@ -35668,7 +35668,7 @@ x[CLUSTER_365,cattle_man,Plant_4] 0
 x[CLUSTER_365,cattle_man,Plant_5] 0
 x[CLUSTER_365,cattle_man,Plant_6] 0
 x[CLUSTER_365,cattle_man,Plant_7] 0
-x[CLUSTER_365,cattle_man,Plant_8] 0.01612
+x[CLUSTER_365,cattle_man,Plant_8] 0
 x[CLUSTER_365,cattle_man,Plant_9] 0
 x[CLUSTER_365,cattle_slu,Plant_0] 0
 x[CLUSTER_365,cattle_slu,Plant_1] 0
@@ -35678,7 +35678,7 @@ x[CLUSTER_365,cattle_slu,Plant_4] 0
 x[CLUSTER_365,cattle_slu,Plant_5] 0
 x[CLUSTER_365,cattle_slu,Plant_6] 0
 x[CLUSTER_365,cattle_slu,Plant_7] 0
-x[CLUSTER_365,cattle_slu,Plant_8] 9.4000000000000389e-02
+x[CLUSTER_365,cattle_slu,Plant_8] 0
 x[CLUSTER_365,cattle_slu,Plant_9] 0
 x[CLUSTER_365,horse_man,Plant_0] 0
 x[CLUSTER_365,horse_man,Plant_1] 0
@@ -35688,7 +35688,7 @@ x[CLUSTER_365,horse_man,Plant_4] 0
 x[CLUSTER_365,horse_man,Plant_5] 0
 x[CLUSTER_365,horse_man,Plant_6] 0
 x[CLUSTER_365,horse_man,Plant_7] 0
-x[CLUSTER_365,horse_man,Plant_8] 0.001341
+x[CLUSTER_365,horse_man,Plant_8] 0
 x[CLUSTER_365,horse_man,Plant_9] 0
 x[CLUSTER_365,pig_slu,Plant_0] 0
 x[CLUSTER_365,pig_slu,Plant_1] 0
@@ -35788,7 +35788,7 @@ x[CLUSTER_366,cattle_man,Plant_4] 0
 x[CLUSTER_366,cattle_man,Plant_5] 0
 x[CLUSTER_366,cattle_man,Plant_6] 0
 x[CLUSTER_366,cattle_man,Plant_7] 0
-x[CLUSTER_366,cattle_man,Plant_8] 0.008803
+x[CLUSTER_366,cattle_man,Plant_8] 0
 x[CLUSTER_366,cattle_man,Plant_9] 0
 x[CLUSTER_366,cattle_slu,Plant_0] 0
 x[CLUSTER_366,cattle_slu,Plant_1] 0
@@ -35808,7 +35808,7 @@ x[CLUSTER_366,horse_man,Plant_4] 0
 x[CLUSTER_366,horse_man,Plant_5] 0
 x[CLUSTER_366,horse_man,Plant_6] 0
 x[CLUSTER_366,horse_man,Plant_7] 0
-x[CLUSTER_366,horse_man,Plant_8] 1.9947999999999998e-04
+x[CLUSTER_366,horse_man,Plant_8] 0
 x[CLUSTER_366,horse_man,Plant_9] 0
 x[CLUSTER_366,pig_slu,Plant_0] 0
 x[CLUSTER_366,pig_slu,Plant_1] 0
@@ -35909,7 +35909,7 @@ x[CLUSTER_367,cattle_man,Plant_5] 0
 x[CLUSTER_367,cattle_man,Plant_6] 0
 x[CLUSTER_367,cattle_man,Plant_7] 0
 x[CLUSTER_367,cattle_man,Plant_8] 0
-x[CLUSTER_367,cattle_man,Plant_9] 0.001682
+x[CLUSTER_367,cattle_man,Plant_9] 0
 x[CLUSTER_367,cattle_slu,Plant_0] 0
 x[CLUSTER_367,cattle_slu,Plant_1] 0
 x[CLUSTER_367,cattle_slu,Plant_2] 0
@@ -35924,7 +35924,7 @@ x[CLUSTER_367,horse_man,Plant_0] 0
 x[CLUSTER_367,horse_man,Plant_1] 0
 x[CLUSTER_367,horse_man,Plant_2] 0
 x[CLUSTER_367,horse_man,Plant_3] 0
-x[CLUSTER_367,horse_man,Plant_4] 1.1699000000000002e-03
+x[CLUSTER_367,horse_man,Plant_4] 0
 x[CLUSTER_367,horse_man,Plant_5] 0
 x[CLUSTER_367,horse_man,Plant_6] 0
 x[CLUSTER_367,horse_man,Plant_7] 0
@@ -35944,7 +35944,7 @@ x[CLUSTER_367,pig_man,Plant_0] 0
 x[CLUSTER_367,pig_man,Plant_1] 0
 x[CLUSTER_367,pig_man,Plant_2] 0
 x[CLUSTER_367,pig_man,Plant_3] 0
-x[CLUSTER_367,pig_man,Plant_4] 0.0011842
+x[CLUSTER_367,pig_man,Plant_4] 0
 x[CLUSTER_367,pig_man,Plant_5] 0
 x[CLUSTER_367,pig_man,Plant_6] 0
 x[CLUSTER_367,pig_man,Plant_7] 0
@@ -35969,7 +35969,7 @@ x[CLUSTER_367,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_367,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_367,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_367,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_367,clover_alfalfa_grass,Plant_9] 0.0049300637
+x[CLUSTER_367,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_367,perm_grass,Plant_0] 0
 x[CLUSTER_367,perm_grass,Plant_1] 0
 x[CLUSTER_367,perm_grass,Plant_2] 0
@@ -35989,7 +35989,7 @@ x[CLUSTER_367,maize_str,Plant_5] 0
 x[CLUSTER_367,maize_str,Plant_6] 0
 x[CLUSTER_367,maize_str,Plant_7] 0
 x[CLUSTER_367,maize_str,Plant_8] 0
-x[CLUSTER_367,maize_str,Plant_9] 0.00029688
+x[CLUSTER_367,maize_str,Plant_9] 0
 x[CLUSTER_367,beet_leaf,Plant_0] 0
 x[CLUSTER_367,beet_leaf,Plant_1] 0
 x[CLUSTER_367,beet_leaf,Plant_2] 0
@@ -36028,7 +36028,7 @@ x[CLUSTER_368,cattle_man,Plant_4] 0
 x[CLUSTER_368,cattle_man,Plant_5] 0
 x[CLUSTER_368,cattle_man,Plant_6] 0
 x[CLUSTER_368,cattle_man,Plant_7] 0
-x[CLUSTER_368,cattle_man,Plant_8] 0.006947
+x[CLUSTER_368,cattle_man,Plant_8] 0
 x[CLUSTER_368,cattle_man,Plant_9] 0
 x[CLUSTER_368,cattle_slu,Plant_0] 0
 x[CLUSTER_368,cattle_slu,Plant_1] 0
@@ -36048,7 +36048,7 @@ x[CLUSTER_368,horse_man,Plant_4] 0
 x[CLUSTER_368,horse_man,Plant_5] 0
 x[CLUSTER_368,horse_man,Plant_6] 0
 x[CLUSTER_368,horse_man,Plant_7] 0
-x[CLUSTER_368,horse_man,Plant_8] 1.0017000000000001e-03
+x[CLUSTER_368,horse_man,Plant_8] 0
 x[CLUSTER_368,horse_man,Plant_9] 0
 x[CLUSTER_368,pig_slu,Plant_0] 0
 x[CLUSTER_368,pig_slu,Plant_1] 0
@@ -36068,7 +36068,7 @@ x[CLUSTER_368,pig_man,Plant_4] 0
 x[CLUSTER_368,pig_man,Plant_5] 0
 x[CLUSTER_368,pig_man,Plant_6] 0
 x[CLUSTER_368,pig_man,Plant_7] 0
-x[CLUSTER_368,pig_man,Plant_8] 6.1345e-05
+x[CLUSTER_368,pig_man,Plant_8] 0
 x[CLUSTER_368,pig_man,Plant_9] 0
 x[CLUSTER_368,cereal_str,Plant_0] 0
 x[CLUSTER_368,cereal_str,Plant_1] 0
@@ -36141,7 +36141,7 @@ x[CLUSTER_368,legume_str,Plant_7] 0
 x[CLUSTER_368,legume_str,Plant_8] 0
 x[CLUSTER_368,legume_str,Plant_9] 0
 x[CLUSTER_369,cattle_man,Plant_0] 0
-x[CLUSTER_369,cattle_man,Plant_1] 3.2356999999999998e-03
+x[CLUSTER_369,cattle_man,Plant_1] 0
 x[CLUSTER_369,cattle_man,Plant_2] 0
 x[CLUSTER_369,cattle_man,Plant_3] 0
 x[CLUSTER_369,cattle_man,Plant_4] 0
@@ -36168,7 +36168,7 @@ x[CLUSTER_369,horse_man,Plant_4] 0
 x[CLUSTER_369,horse_man,Plant_5] 0
 x[CLUSTER_369,horse_man,Plant_6] 0
 x[CLUSTER_369,horse_man,Plant_7] 0
-x[CLUSTER_369,horse_man,Plant_8] 0.0035623
+x[CLUSTER_369,horse_man,Plant_8] 0
 x[CLUSTER_369,horse_man,Plant_9] 0
 x[CLUSTER_369,pig_slu,Plant_0] 0
 x[CLUSTER_369,pig_slu,Plant_1] 0
@@ -36263,7 +36263,7 @@ x[CLUSTER_369,legume_str,Plant_9] 0
 x[CLUSTER_37,cattle_man,Plant_0] 0
 x[CLUSTER_37,cattle_man,Plant_1] 0
 x[CLUSTER_37,cattle_man,Plant_2] 0
-x[CLUSTER_37,cattle_man,Plant_3] 3.1919999999996618e-02
+x[CLUSTER_37,cattle_man,Plant_3] 0
 x[CLUSTER_37,cattle_man,Plant_4] 0
 x[CLUSTER_37,cattle_man,Plant_5] 0
 x[CLUSTER_37,cattle_man,Plant_6] 0
@@ -36283,7 +36283,7 @@ x[CLUSTER_37,cattle_slu,Plant_9] 0
 x[CLUSTER_37,horse_man,Plant_0] 0
 x[CLUSTER_37,horse_man,Plant_1] 0
 x[CLUSTER_37,horse_man,Plant_2] 0
-x[CLUSTER_37,horse_man,Plant_3] 0.000943
+x[CLUSTER_37,horse_man,Plant_3] 0
 x[CLUSTER_37,horse_man,Plant_4] 0
 x[CLUSTER_37,horse_man,Plant_5] 0
 x[CLUSTER_37,horse_man,Plant_6] 0
@@ -36305,7 +36305,7 @@ x[CLUSTER_37,pig_man,Plant_1] 0
 x[CLUSTER_37,pig_man,Plant_2] 0
 x[CLUSTER_37,pig_man,Plant_3] 0
 x[CLUSTER_37,pig_man,Plant_4] 0
-x[CLUSTER_37,pig_man,Plant_5] 0.0033538
+x[CLUSTER_37,pig_man,Plant_5] 0
 x[CLUSTER_37,pig_man,Plant_6] 0
 x[CLUSTER_37,pig_man,Plant_7] 0
 x[CLUSTER_37,pig_man,Plant_8] 0
@@ -36380,7 +36380,7 @@ x[CLUSTER_37,legume_str,Plant_6] 0
 x[CLUSTER_37,legume_str,Plant_7] 0
 x[CLUSTER_37,legume_str,Plant_8] 0
 x[CLUSTER_37,legume_str,Plant_9] 0
-x[CLUSTER_370,cattle_man,Plant_0] 0.01109
+x[CLUSTER_370,cattle_man,Plant_0] 0
 x[CLUSTER_370,cattle_man,Plant_1] 0
 x[CLUSTER_370,cattle_man,Plant_2] 0
 x[CLUSTER_370,cattle_man,Plant_3] 0
@@ -36400,7 +36400,7 @@ x[CLUSTER_370,cattle_slu,Plant_6] 0
 x[CLUSTER_370,cattle_slu,Plant_7] 0
 x[CLUSTER_370,cattle_slu,Plant_8] 0
 x[CLUSTER_370,cattle_slu,Plant_9] 0
-x[CLUSTER_370,horse_man,Plant_0] 0.001921
+x[CLUSTER_370,horse_man,Plant_0] 0
 x[CLUSTER_370,horse_man,Plant_1] 0
 x[CLUSTER_370,horse_man,Plant_2] 0
 x[CLUSTER_370,horse_man,Plant_3] 0
@@ -36420,7 +36420,7 @@ x[CLUSTER_370,pig_slu,Plant_6] 0
 x[CLUSTER_370,pig_slu,Plant_7] 0
 x[CLUSTER_370,pig_slu,Plant_8] 0
 x[CLUSTER_370,pig_slu,Plant_9] 0
-x[CLUSTER_370,pig_man,Plant_0] 1.5373134e-05
+x[CLUSTER_370,pig_man,Plant_0] 0
 x[CLUSTER_370,pig_man,Plant_1] 0
 x[CLUSTER_370,pig_man,Plant_2] 0
 x[CLUSTER_370,pig_man,Plant_3] 0
@@ -36505,7 +36505,7 @@ x[CLUSTER_371,cattle_man,Plant_1] 0
 x[CLUSTER_371,cattle_man,Plant_2] 0
 x[CLUSTER_371,cattle_man,Plant_3] 0
 x[CLUSTER_371,cattle_man,Plant_4] 0
-x[CLUSTER_371,cattle_man,Plant_5] 0.01391
+x[CLUSTER_371,cattle_man,Plant_5] 0
 x[CLUSTER_371,cattle_man,Plant_6] 0
 x[CLUSTER_371,cattle_man,Plant_7] 0
 x[CLUSTER_371,cattle_man,Plant_8] 0
@@ -36525,7 +36525,7 @@ x[CLUSTER_371,horse_man,Plant_1] 0
 x[CLUSTER_371,horse_man,Plant_2] 0
 x[CLUSTER_371,horse_man,Plant_3] 0
 x[CLUSTER_371,horse_man,Plant_4] 0
-x[CLUSTER_371,horse_man,Plant_5] 0.0012801
+x[CLUSTER_371,horse_man,Plant_5] 0
 x[CLUSTER_371,horse_man,Plant_6] 0
 x[CLUSTER_371,horse_man,Plant_7] 0
 x[CLUSTER_371,horse_man,Plant_8] 0
@@ -36545,7 +36545,7 @@ x[CLUSTER_371,pig_man,Plant_1] 0
 x[CLUSTER_371,pig_man,Plant_2] 0
 x[CLUSTER_371,pig_man,Plant_3] 0
 x[CLUSTER_371,pig_man,Plant_4] 0
-x[CLUSTER_371,pig_man,Plant_5] 2.2831999999999998e-04
+x[CLUSTER_371,pig_man,Plant_5] 0
 x[CLUSTER_371,pig_man,Plant_6] 0
 x[CLUSTER_371,pig_man,Plant_7] 0
 x[CLUSTER_371,pig_man,Plant_8] 0
@@ -36620,7 +36620,7 @@ x[CLUSTER_371,legume_str,Plant_6] 0
 x[CLUSTER_371,legume_str,Plant_7] 0
 x[CLUSTER_371,legume_str,Plant_8] 0
 x[CLUSTER_371,legume_str,Plant_9] 0
-x[CLUSTER_372,cattle_man,Plant_0] 0.00944
+x[CLUSTER_372,cattle_man,Plant_0] 0
 x[CLUSTER_372,cattle_man,Plant_1] 0
 x[CLUSTER_372,cattle_man,Plant_2] 0
 x[CLUSTER_372,cattle_man,Plant_3] 0
@@ -36630,7 +36630,7 @@ x[CLUSTER_372,cattle_man,Plant_6] 0
 x[CLUSTER_372,cattle_man,Plant_7] 0
 x[CLUSTER_372,cattle_man,Plant_8] 0
 x[CLUSTER_372,cattle_man,Plant_9] 0
-x[CLUSTER_372,cattle_slu,Plant_0] 4.0549999999999829e-02
+x[CLUSTER_372,cattle_slu,Plant_0] 0
 x[CLUSTER_372,cattle_slu,Plant_1] 0
 x[CLUSTER_372,cattle_slu,Plant_2] 0
 x[CLUSTER_372,cattle_slu,Plant_3] 0
@@ -36640,7 +36640,7 @@ x[CLUSTER_372,cattle_slu,Plant_6] 0
 x[CLUSTER_372,cattle_slu,Plant_7] 0
 x[CLUSTER_372,cattle_slu,Plant_8] 0
 x[CLUSTER_372,cattle_slu,Plant_9] 0
-x[CLUSTER_372,horse_man,Plant_0] 0.001283
+x[CLUSTER_372,horse_man,Plant_0] 0
 x[CLUSTER_372,horse_man,Plant_1] 0
 x[CLUSTER_372,horse_man,Plant_2] 0
 x[CLUSTER_372,horse_man,Plant_3] 0
@@ -36660,7 +36660,7 @@ x[CLUSTER_372,pig_slu,Plant_6] 0
 x[CLUSTER_372,pig_slu,Plant_7] 0
 x[CLUSTER_372,pig_slu,Plant_8] 0
 x[CLUSTER_372,pig_slu,Plant_9] 0
-x[CLUSTER_372,pig_man,Plant_0] 0.00012752
+x[CLUSTER_372,pig_man,Plant_0] 0
 x[CLUSTER_372,pig_man,Plant_1] 0
 x[CLUSTER_372,pig_man,Plant_2] 0
 x[CLUSTER_372,pig_man,Plant_3] 0
@@ -36700,7 +36700,7 @@ x[CLUSTER_372,perm_grass,Plant_6] 0
 x[CLUSTER_372,perm_grass,Plant_7] 0
 x[CLUSTER_372,perm_grass,Plant_8] 0
 x[CLUSTER_372,perm_grass,Plant_9] 0
-x[CLUSTER_372,maize_str,Plant_0] 4.5430000000000004e-04
+x[CLUSTER_372,maize_str,Plant_0] 0
 x[CLUSTER_372,maize_str,Plant_1] 0
 x[CLUSTER_372,maize_str,Plant_2] 0
 x[CLUSTER_372,maize_str,Plant_3] 0
@@ -36745,7 +36745,7 @@ x[CLUSTER_373,cattle_man,Plant_1] 0
 x[CLUSTER_373,cattle_man,Plant_2] 0
 x[CLUSTER_373,cattle_man,Plant_3] 0
 x[CLUSTER_373,cattle_man,Plant_4] 0
-x[CLUSTER_373,cattle_man,Plant_5] 0.00093061
+x[CLUSTER_373,cattle_man,Plant_5] 0
 x[CLUSTER_373,cattle_man,Plant_6] 0
 x[CLUSTER_373,cattle_man,Plant_7] 0
 x[CLUSTER_373,cattle_man,Plant_8] 0
@@ -36755,7 +36755,7 @@ x[CLUSTER_373,cattle_slu,Plant_1] 0
 x[CLUSTER_373,cattle_slu,Plant_2] 0
 x[CLUSTER_373,cattle_slu,Plant_3] 0
 x[CLUSTER_373,cattle_slu,Plant_4] 0
-x[CLUSTER_373,cattle_slu,Plant_5] 0.0043508
+x[CLUSTER_373,cattle_slu,Plant_5] 0
 x[CLUSTER_373,cattle_slu,Plant_6] 0
 x[CLUSTER_373,cattle_slu,Plant_7] 0
 x[CLUSTER_373,cattle_slu,Plant_8] 0
@@ -36765,7 +36765,7 @@ x[CLUSTER_373,horse_man,Plant_1] 0
 x[CLUSTER_373,horse_man,Plant_2] 0
 x[CLUSTER_373,horse_man,Plant_3] 0
 x[CLUSTER_373,horse_man,Plant_4] 0
-x[CLUSTER_373,horse_man,Plant_5] 0.0018798
+x[CLUSTER_373,horse_man,Plant_5] 0
 x[CLUSTER_373,horse_man,Plant_6] 0
 x[CLUSTER_373,horse_man,Plant_7] 0
 x[CLUSTER_373,horse_man,Plant_8] 0
@@ -36886,7 +36886,7 @@ x[CLUSTER_374,horse_man,Plant_2] 0
 x[CLUSTER_374,horse_man,Plant_3] 0
 x[CLUSTER_374,horse_man,Plant_4] 0
 x[CLUSTER_374,horse_man,Plant_5] 0
-x[CLUSTER_374,horse_man,Plant_6] 0.001839
+x[CLUSTER_374,horse_man,Plant_6] 0
 x[CLUSTER_374,horse_man,Plant_7] 0
 x[CLUSTER_374,horse_man,Plant_8] 0
 x[CLUSTER_374,horse_man,Plant_9] 0
@@ -36981,7 +36981,7 @@ x[CLUSTER_374,legume_str,Plant_7] 0
 x[CLUSTER_374,legume_str,Plant_8] 0
 x[CLUSTER_374,legume_str,Plant_9] 0
 x[CLUSTER_375,cattle_man,Plant_0] 0
-x[CLUSTER_375,cattle_man,Plant_1] 0.01431
+x[CLUSTER_375,cattle_man,Plant_1] 0
 x[CLUSTER_375,cattle_man,Plant_2] 0
 x[CLUSTER_375,cattle_man,Plant_3] 0
 x[CLUSTER_375,cattle_man,Plant_4] 0
@@ -37008,7 +37008,7 @@ x[CLUSTER_375,horse_man,Plant_4] 0
 x[CLUSTER_375,horse_man,Plant_5] 0
 x[CLUSTER_375,horse_man,Plant_6] 0
 x[CLUSTER_375,horse_man,Plant_7] 0
-x[CLUSTER_375,horse_man,Plant_8] 0.0002805
+x[CLUSTER_375,horse_man,Plant_8] 0
 x[CLUSTER_375,horse_man,Plant_9] 0
 x[CLUSTER_375,pig_slu,Plant_0] 0
 x[CLUSTER_375,pig_slu,Plant_1] 0
@@ -37108,7 +37108,7 @@ x[CLUSTER_376,cattle_man,Plant_4] 0
 x[CLUSTER_376,cattle_man,Plant_5] 0
 x[CLUSTER_376,cattle_man,Plant_6] 0
 x[CLUSTER_376,cattle_man,Plant_7] 0
-x[CLUSTER_376,cattle_man,Plant_8] 0.002955
+x[CLUSTER_376,cattle_man,Plant_8] 0
 x[CLUSTER_376,cattle_man,Plant_9] 0
 x[CLUSTER_376,cattle_slu,Plant_0] 0
 x[CLUSTER_376,cattle_slu,Plant_1] 0
@@ -37128,7 +37128,7 @@ x[CLUSTER_376,horse_man,Plant_4] 0
 x[CLUSTER_376,horse_man,Plant_5] 0
 x[CLUSTER_376,horse_man,Plant_6] 0
 x[CLUSTER_376,horse_man,Plant_7] 0
-x[CLUSTER_376,horse_man,Plant_8] 0.00049496
+x[CLUSTER_376,horse_man,Plant_8] 0
 x[CLUSTER_376,horse_man,Plant_9] 0
 x[CLUSTER_376,pig_slu,Plant_0] 0
 x[CLUSTER_376,pig_slu,Plant_1] 0
@@ -37148,7 +37148,7 @@ x[CLUSTER_376,pig_man,Plant_4] 0
 x[CLUSTER_376,pig_man,Plant_5] 0
 x[CLUSTER_376,pig_man,Plant_6] 0
 x[CLUSTER_376,pig_man,Plant_7] 0
-x[CLUSTER_376,pig_man,Plant_8] 0.0002634000241
+x[CLUSTER_376,pig_man,Plant_8] 0
 x[CLUSTER_376,pig_man,Plant_9] 0
 x[CLUSTER_376,cereal_str,Plant_0] 0
 x[CLUSTER_376,cereal_str,Plant_1] 0
@@ -37228,7 +37228,7 @@ x[CLUSTER_377,cattle_man,Plant_4] 0
 x[CLUSTER_377,cattle_man,Plant_5] 0
 x[CLUSTER_377,cattle_man,Plant_6] 0
 x[CLUSTER_377,cattle_man,Plant_7] 0
-x[CLUSTER_377,cattle_man,Plant_8] 0.0018813
+x[CLUSTER_377,cattle_man,Plant_8] 0
 x[CLUSTER_377,cattle_man,Plant_9] 0
 x[CLUSTER_377,cattle_slu,Plant_0] 0
 x[CLUSTER_377,cattle_slu,Plant_1] 0
@@ -37248,7 +37248,7 @@ x[CLUSTER_377,horse_man,Plant_4] 0
 x[CLUSTER_377,horse_man,Plant_5] 0
 x[CLUSTER_377,horse_man,Plant_6] 0
 x[CLUSTER_377,horse_man,Plant_7] 0
-x[CLUSTER_377,horse_man,Plant_8] 0.0006277
+x[CLUSTER_377,horse_man,Plant_8] 0
 x[CLUSTER_377,horse_man,Plant_9] 0
 x[CLUSTER_377,pig_slu,Plant_0] 0
 x[CLUSTER_377,pig_slu,Plant_1] 0
@@ -37268,7 +37268,7 @@ x[CLUSTER_377,pig_man,Plant_4] 0
 x[CLUSTER_377,pig_man,Plant_5] 0
 x[CLUSTER_377,pig_man,Plant_6] 0
 x[CLUSTER_377,pig_man,Plant_7] 0
-x[CLUSTER_377,pig_man,Plant_8] 0.0002944
+x[CLUSTER_377,pig_man,Plant_8] 0
 x[CLUSTER_377,pig_man,Plant_9] 0
 x[CLUSTER_377,cereal_str,Plant_0] 0
 x[CLUSTER_377,cereal_str,Plant_1] 0
@@ -37346,7 +37346,7 @@ x[CLUSTER_378,cattle_man,Plant_2] 0
 x[CLUSTER_378,cattle_man,Plant_3] 0
 x[CLUSTER_378,cattle_man,Plant_4] 0
 x[CLUSTER_378,cattle_man,Plant_5] 0
-x[CLUSTER_378,cattle_man,Plant_6] 0.0312
+x[CLUSTER_378,cattle_man,Plant_6] 0
 x[CLUSTER_378,cattle_man,Plant_7] 0
 x[CLUSTER_378,cattle_man,Plant_8] 0
 x[CLUSTER_378,cattle_man,Plant_9] 0
@@ -37356,7 +37356,7 @@ x[CLUSTER_378,cattle_slu,Plant_2] 0
 x[CLUSTER_378,cattle_slu,Plant_3] 0
 x[CLUSTER_378,cattle_slu,Plant_4] 0
 x[CLUSTER_378,cattle_slu,Plant_5] 0
-x[CLUSTER_378,cattle_slu,Plant_6] 1.1692837372763754e-01
+x[CLUSTER_378,cattle_slu,Plant_6] 0
 x[CLUSTER_378,cattle_slu,Plant_7] 0
 x[CLUSTER_378,cattle_slu,Plant_8] 0
 x[CLUSTER_378,cattle_slu,Plant_9] 0
@@ -37366,7 +37366,7 @@ x[CLUSTER_378,horse_man,Plant_2] 0
 x[CLUSTER_378,horse_man,Plant_3] 0
 x[CLUSTER_378,horse_man,Plant_4] 0
 x[CLUSTER_378,horse_man,Plant_5] 0
-x[CLUSTER_378,horse_man,Plant_6] 0.001373
+x[CLUSTER_378,horse_man,Plant_6] 0
 x[CLUSTER_378,horse_man,Plant_7] 0
 x[CLUSTER_378,horse_man,Plant_8] 0
 x[CLUSTER_378,horse_man,Plant_9] 0
@@ -37385,7 +37385,7 @@ x[CLUSTER_378,pig_man,Plant_1] 0
 x[CLUSTER_378,pig_man,Plant_2] 0
 x[CLUSTER_378,pig_man,Plant_3] 0
 x[CLUSTER_378,pig_man,Plant_4] 0
-x[CLUSTER_378,pig_man,Plant_5] 0.000297007
+x[CLUSTER_378,pig_man,Plant_5] 0
 x[CLUSTER_378,pig_man,Plant_6] 0
 x[CLUSTER_378,pig_man,Plant_7] 0
 x[CLUSTER_378,pig_man,Plant_8] 0
@@ -37461,7 +37461,7 @@ x[CLUSTER_378,legume_str,Plant_7] 0
 x[CLUSTER_378,legume_str,Plant_8] 0
 x[CLUSTER_378,legume_str,Plant_9] 0
 x[CLUSTER_379,cattle_man,Plant_0] 0
-x[CLUSTER_379,cattle_man,Plant_1] 0.01854
+x[CLUSTER_379,cattle_man,Plant_1] 0
 x[CLUSTER_379,cattle_man,Plant_2] 0
 x[CLUSTER_379,cattle_man,Plant_3] 0
 x[CLUSTER_379,cattle_man,Plant_4] 0
@@ -37488,7 +37488,7 @@ x[CLUSTER_379,horse_man,Plant_4] 0
 x[CLUSTER_379,horse_man,Plant_5] 0
 x[CLUSTER_379,horse_man,Plant_6] 0
 x[CLUSTER_379,horse_man,Plant_7] 0
-x[CLUSTER_379,horse_man,Plant_8] 0.0006125
+x[CLUSTER_379,horse_man,Plant_8] 0
 x[CLUSTER_379,horse_man,Plant_9] 0
 x[CLUSTER_379,pig_slu,Plant_0] 0
 x[CLUSTER_379,pig_slu,Plant_1] 0
@@ -37589,7 +37589,7 @@ x[CLUSTER_38,cattle_man,Plant_5] 0
 x[CLUSTER_38,cattle_man,Plant_6] 0
 x[CLUSTER_38,cattle_man,Plant_7] 0
 x[CLUSTER_38,cattle_man,Plant_8] 0
-x[CLUSTER_38,cattle_man,Plant_9] 0.006536
+x[CLUSTER_38,cattle_man,Plant_9] 0
 x[CLUSTER_38,cattle_slu,Plant_0] 0
 x[CLUSTER_38,cattle_slu,Plant_1] 0
 x[CLUSTER_38,cattle_slu,Plant_2] 0
@@ -37602,7 +37602,7 @@ x[CLUSTER_38,cattle_slu,Plant_8] 0
 x[CLUSTER_38,cattle_slu,Plant_9] 0
 x[CLUSTER_38,horse_man,Plant_0] 0
 x[CLUSTER_38,horse_man,Plant_1] 0
-x[CLUSTER_38,horse_man,Plant_2] 0.0002538
+x[CLUSTER_38,horse_man,Plant_2] 0
 x[CLUSTER_38,horse_man,Plant_3] 0
 x[CLUSTER_38,horse_man,Plant_4] 0
 x[CLUSTER_38,horse_man,Plant_5] 0
@@ -37627,7 +37627,7 @@ x[CLUSTER_38,pig_man,Plant_3] 0
 x[CLUSTER_38,pig_man,Plant_4] 0
 x[CLUSTER_38,pig_man,Plant_5] 0
 x[CLUSTER_38,pig_man,Plant_6] 0
-x[CLUSTER_38,pig_man,Plant_7] 0.00031561
+x[CLUSTER_38,pig_man,Plant_7] 0
 x[CLUSTER_38,pig_man,Plant_8] 0
 x[CLUSTER_38,pig_man,Plant_9] 0
 x[CLUSTER_38,cereal_str,Plant_0] 0
@@ -37649,7 +37649,7 @@ x[CLUSTER_38,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_38,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_38,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_38,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_38,clover_alfalfa_grass,Plant_9] 0.002646
+x[CLUSTER_38,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_38,perm_grass,Plant_0] 0
 x[CLUSTER_38,perm_grass,Plant_1] 0
 x[CLUSTER_38,perm_grass,Plant_2] 0
@@ -37669,7 +37669,7 @@ x[CLUSTER_38,maize_str,Plant_5] 0
 x[CLUSTER_38,maize_str,Plant_6] 0
 x[CLUSTER_38,maize_str,Plant_7] 0
 x[CLUSTER_38,maize_str,Plant_8] 0
-x[CLUSTER_38,maize_str,Plant_9] 3e-05
+x[CLUSTER_38,maize_str,Plant_9] 0
 x[CLUSTER_38,beet_leaf,Plant_0] 0
 x[CLUSTER_38,beet_leaf,Plant_1] 0
 x[CLUSTER_38,beet_leaf,Plant_2] 0
@@ -37704,7 +37704,7 @@ x[CLUSTER_380,cattle_man,Plant_0] 0
 x[CLUSTER_380,cattle_man,Plant_1] 0
 x[CLUSTER_380,cattle_man,Plant_2] 0
 x[CLUSTER_380,cattle_man,Plant_3] 0
-x[CLUSTER_380,cattle_man,Plant_4] 0.00658
+x[CLUSTER_380,cattle_man,Plant_4] 0
 x[CLUSTER_380,cattle_man,Plant_5] 0
 x[CLUSTER_380,cattle_man,Plant_6] 0
 x[CLUSTER_380,cattle_man,Plant_7] 0
@@ -37724,7 +37724,7 @@ x[CLUSTER_380,horse_man,Plant_0] 0
 x[CLUSTER_380,horse_man,Plant_1] 0
 x[CLUSTER_380,horse_man,Plant_2] 0
 x[CLUSTER_380,horse_man,Plant_3] 0
-x[CLUSTER_380,horse_man,Plant_4] 0.001242
+x[CLUSTER_380,horse_man,Plant_4] 0
 x[CLUSTER_380,horse_man,Plant_5] 0
 x[CLUSTER_380,horse_man,Plant_6] 0
 x[CLUSTER_380,horse_man,Plant_7] 0
@@ -37744,7 +37744,7 @@ x[CLUSTER_380,pig_man,Plant_0] 0
 x[CLUSTER_380,pig_man,Plant_1] 0
 x[CLUSTER_380,pig_man,Plant_2] 0
 x[CLUSTER_380,pig_man,Plant_3] 0
-x[CLUSTER_380,pig_man,Plant_4] 0.000507
+x[CLUSTER_380,pig_man,Plant_4] 0
 x[CLUSTER_380,pig_man,Plant_5] 0
 x[CLUSTER_380,pig_man,Plant_6] 0
 x[CLUSTER_380,pig_man,Plant_7] 0
@@ -37769,7 +37769,7 @@ x[CLUSTER_380,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_380,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_380,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_380,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_380,clover_alfalfa_grass,Plant_9] 0.00866
+x[CLUSTER_380,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_380,perm_grass,Plant_0] 0
 x[CLUSTER_380,perm_grass,Plant_1] 0
 x[CLUSTER_380,perm_grass,Plant_2] 0
@@ -37789,7 +37789,7 @@ x[CLUSTER_380,maize_str,Plant_5] 0
 x[CLUSTER_380,maize_str,Plant_6] 0
 x[CLUSTER_380,maize_str,Plant_7] 0
 x[CLUSTER_380,maize_str,Plant_8] 0
-x[CLUSTER_380,maize_str,Plant_9] 9.2900000000000008e-05
+x[CLUSTER_380,maize_str,Plant_9] 0
 x[CLUSTER_380,beet_leaf,Plant_0] 0
 x[CLUSTER_380,beet_leaf,Plant_1] 0
 x[CLUSTER_380,beet_leaf,Plant_2] 0
@@ -37822,7 +37822,7 @@ x[CLUSTER_380,legume_str,Plant_8] 0
 x[CLUSTER_380,legume_str,Plant_9] 0
 x[CLUSTER_381,cattle_man,Plant_0] 0
 x[CLUSTER_381,cattle_man,Plant_1] 0
-x[CLUSTER_381,cattle_man,Plant_2] 0.0041752
+x[CLUSTER_381,cattle_man,Plant_2] 0
 x[CLUSTER_381,cattle_man,Plant_3] 0
 x[CLUSTER_381,cattle_man,Plant_4] 0
 x[CLUSTER_381,cattle_man,Plant_5] 0
@@ -37842,7 +37842,7 @@ x[CLUSTER_381,cattle_slu,Plant_8] 0
 x[CLUSTER_381,cattle_slu,Plant_9] 0
 x[CLUSTER_381,horse_man,Plant_0] 0
 x[CLUSTER_381,horse_man,Plant_1] 0
-x[CLUSTER_381,horse_man,Plant_2] 0.00169289
+x[CLUSTER_381,horse_man,Plant_2] 0
 x[CLUSTER_381,horse_man,Plant_3] 0
 x[CLUSTER_381,horse_man,Plant_4] 0
 x[CLUSTER_381,horse_man,Plant_5] 0
@@ -37862,7 +37862,7 @@ x[CLUSTER_381,pig_slu,Plant_8] 0
 x[CLUSTER_381,pig_slu,Plant_9] 0
 x[CLUSTER_381,pig_man,Plant_0] 0
 x[CLUSTER_381,pig_man,Plant_1] 0
-x[CLUSTER_381,pig_man,Plant_2] 0.000167133571
+x[CLUSTER_381,pig_man,Plant_2] 0
 x[CLUSTER_381,pig_man,Plant_3] 0
 x[CLUSTER_381,pig_man,Plant_4] 0
 x[CLUSTER_381,pig_man,Plant_5] 0
@@ -37909,7 +37909,7 @@ x[CLUSTER_381,maize_str,Plant_5] 0
 x[CLUSTER_381,maize_str,Plant_6] 0
 x[CLUSTER_381,maize_str,Plant_7] 0
 x[CLUSTER_381,maize_str,Plant_8] 0
-x[CLUSTER_381,maize_str,Plant_9] 4.3939999999999996e-05
+x[CLUSTER_381,maize_str,Plant_9] 0
 x[CLUSTER_381,beet_leaf,Plant_0] 0
 x[CLUSTER_381,beet_leaf,Plant_1] 0
 x[CLUSTER_381,beet_leaf,Plant_2] 0
@@ -37942,7 +37942,7 @@ x[CLUSTER_381,legume_str,Plant_8] 0
 x[CLUSTER_381,legume_str,Plant_9] 0
 x[CLUSTER_382,cattle_man,Plant_0] 0
 x[CLUSTER_382,cattle_man,Plant_1] 0
-x[CLUSTER_382,cattle_man,Plant_2] 0.002959
+x[CLUSTER_382,cattle_man,Plant_2] 0
 x[CLUSTER_382,cattle_man,Plant_3] 0
 x[CLUSTER_382,cattle_man,Plant_4] 0
 x[CLUSTER_382,cattle_man,Plant_5] 0
@@ -37962,7 +37962,7 @@ x[CLUSTER_382,cattle_slu,Plant_8] 0
 x[CLUSTER_382,cattle_slu,Plant_9] 0
 x[CLUSTER_382,horse_man,Plant_0] 0
 x[CLUSTER_382,horse_man,Plant_1] 0
-x[CLUSTER_382,horse_man,Plant_2] 0.001045
+x[CLUSTER_382,horse_man,Plant_2] 0
 x[CLUSTER_382,horse_man,Plant_3] 0
 x[CLUSTER_382,horse_man,Plant_4] 0
 x[CLUSTER_382,horse_man,Plant_5] 0
@@ -37982,7 +37982,7 @@ x[CLUSTER_382,pig_slu,Plant_8] 0
 x[CLUSTER_382,pig_slu,Plant_9] 0
 x[CLUSTER_382,pig_man,Plant_0] 0
 x[CLUSTER_382,pig_man,Plant_1] 0
-x[CLUSTER_382,pig_man,Plant_2] 0.000429
+x[CLUSTER_382,pig_man,Plant_2] 0
 x[CLUSTER_382,pig_man,Plant_3] 0
 x[CLUSTER_382,pig_man,Plant_4] 0
 x[CLUSTER_382,pig_man,Plant_5] 0
@@ -38068,7 +38068,7 @@ x[CLUSTER_383,cattle_man,Plant_4] 0
 x[CLUSTER_383,cattle_man,Plant_5] 0
 x[CLUSTER_383,cattle_man,Plant_6] 0
 x[CLUSTER_383,cattle_man,Plant_7] 0
-x[CLUSTER_383,cattle_man,Plant_8] 0.004512
+x[CLUSTER_383,cattle_man,Plant_8] 0
 x[CLUSTER_383,cattle_man,Plant_9] 0
 x[CLUSTER_383,cattle_slu,Plant_0] 0
 x[CLUSTER_383,cattle_slu,Plant_1] 0
@@ -38088,7 +38088,7 @@ x[CLUSTER_383,horse_man,Plant_4] 0
 x[CLUSTER_383,horse_man,Plant_5] 0
 x[CLUSTER_383,horse_man,Plant_6] 0
 x[CLUSTER_383,horse_man,Plant_7] 0
-x[CLUSTER_383,horse_man,Plant_8] 0.0013822
+x[CLUSTER_383,horse_man,Plant_8] 0
 x[CLUSTER_383,horse_man,Plant_9] 0
 x[CLUSTER_383,pig_slu,Plant_0] 0
 x[CLUSTER_383,pig_slu,Plant_1] 0
@@ -38108,7 +38108,7 @@ x[CLUSTER_383,pig_man,Plant_4] 0
 x[CLUSTER_383,pig_man,Plant_5] 0
 x[CLUSTER_383,pig_man,Plant_6] 0
 x[CLUSTER_383,pig_man,Plant_7] 0
-x[CLUSTER_383,pig_man,Plant_8] 0.0003507
+x[CLUSTER_383,pig_man,Plant_8] 0
 x[CLUSTER_383,pig_man,Plant_9] 0
 x[CLUSTER_383,cereal_str,Plant_0] 0
 x[CLUSTER_383,cereal_str,Plant_1] 0
@@ -38184,7 +38184,7 @@ x[CLUSTER_384,cattle_man,Plant_0] 0
 x[CLUSTER_384,cattle_man,Plant_1] 0
 x[CLUSTER_384,cattle_man,Plant_2] 0
 x[CLUSTER_384,cattle_man,Plant_3] 0
-x[CLUSTER_384,cattle_man,Plant_4] 0.00317
+x[CLUSTER_384,cattle_man,Plant_4] 0
 x[CLUSTER_384,cattle_man,Plant_5] 0
 x[CLUSTER_384,cattle_man,Plant_6] 0
 x[CLUSTER_384,cattle_man,Plant_7] 0
@@ -38204,7 +38204,7 @@ x[CLUSTER_384,horse_man,Plant_0] 0
 x[CLUSTER_384,horse_man,Plant_1] 0
 x[CLUSTER_384,horse_man,Plant_2] 0
 x[CLUSTER_384,horse_man,Plant_3] 0
-x[CLUSTER_384,horse_man,Plant_4] 0.000619
+x[CLUSTER_384,horse_man,Plant_4] 0
 x[CLUSTER_384,horse_man,Plant_5] 0
 x[CLUSTER_384,horse_man,Plant_6] 0
 x[CLUSTER_384,horse_man,Plant_7] 0
@@ -38224,7 +38224,7 @@ x[CLUSTER_384,pig_man,Plant_0] 0
 x[CLUSTER_384,pig_man,Plant_1] 0
 x[CLUSTER_384,pig_man,Plant_2] 0
 x[CLUSTER_384,pig_man,Plant_3] 0
-x[CLUSTER_384,pig_man,Plant_4] 0.00012371
+x[CLUSTER_384,pig_man,Plant_4] 0
 x[CLUSTER_384,pig_man,Plant_5] 0
 x[CLUSTER_384,pig_man,Plant_6] 0
 x[CLUSTER_384,pig_man,Plant_7] 0
@@ -38300,7 +38300,7 @@ x[CLUSTER_384,legume_str,Plant_6] 0
 x[CLUSTER_384,legume_str,Plant_7] 0
 x[CLUSTER_384,legume_str,Plant_8] 0
 x[CLUSTER_384,legume_str,Plant_9] 0
-x[CLUSTER_385,cattle_man,Plant_0] 0.00553
+x[CLUSTER_385,cattle_man,Plant_0] 0
 x[CLUSTER_385,cattle_man,Plant_1] 0
 x[CLUSTER_385,cattle_man,Plant_2] 0
 x[CLUSTER_385,cattle_man,Plant_3] 0
@@ -38310,7 +38310,7 @@ x[CLUSTER_385,cattle_man,Plant_6] 0
 x[CLUSTER_385,cattle_man,Plant_7] 0
 x[CLUSTER_385,cattle_man,Plant_8] 0
 x[CLUSTER_385,cattle_man,Plant_9] 0
-x[CLUSTER_385,cattle_slu,Plant_0] 2.1690000000000136e-02
+x[CLUSTER_385,cattle_slu,Plant_0] 0
 x[CLUSTER_385,cattle_slu,Plant_1] 0
 x[CLUSTER_385,cattle_slu,Plant_2] 0
 x[CLUSTER_385,cattle_slu,Plant_3] 0
@@ -38320,7 +38320,7 @@ x[CLUSTER_385,cattle_slu,Plant_6] 0
 x[CLUSTER_385,cattle_slu,Plant_7] 0
 x[CLUSTER_385,cattle_slu,Plant_8] 0
 x[CLUSTER_385,cattle_slu,Plant_9] 0
-x[CLUSTER_385,horse_man,Plant_0] 0.0006163
+x[CLUSTER_385,horse_man,Plant_0] 0
 x[CLUSTER_385,horse_man,Plant_1] 0
 x[CLUSTER_385,horse_man,Plant_2] 0
 x[CLUSTER_385,horse_man,Plant_3] 0
@@ -38340,7 +38340,7 @@ x[CLUSTER_385,pig_slu,Plant_6] 0
 x[CLUSTER_385,pig_slu,Plant_7] 0
 x[CLUSTER_385,pig_slu,Plant_8] 0
 x[CLUSTER_385,pig_slu,Plant_9] 0
-x[CLUSTER_385,pig_man,Plant_0] 0.00040779
+x[CLUSTER_385,pig_man,Plant_0] 0
 x[CLUSTER_385,pig_man,Plant_1] 0
 x[CLUSTER_385,pig_man,Plant_2] 0
 x[CLUSTER_385,pig_man,Plant_3] 0
@@ -38360,7 +38360,7 @@ x[CLUSTER_385,cereal_str,Plant_6] 0
 x[CLUSTER_385,cereal_str,Plant_7] 0
 x[CLUSTER_385,cereal_str,Plant_8] 0
 x[CLUSTER_385,cereal_str,Plant_9] 0
-x[CLUSTER_385,clover_alfalfa_grass,Plant_0] 0.002734
+x[CLUSTER_385,clover_alfalfa_grass,Plant_0] 0
 x[CLUSTER_385,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_385,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_385,clover_alfalfa_grass,Plant_3] 0
@@ -38380,7 +38380,7 @@ x[CLUSTER_385,perm_grass,Plant_6] 0
 x[CLUSTER_385,perm_grass,Plant_7] 0
 x[CLUSTER_385,perm_grass,Plant_8] 0
 x[CLUSTER_385,perm_grass,Plant_9] 0
-x[CLUSTER_385,maize_str,Plant_0] 0.00027019
+x[CLUSTER_385,maize_str,Plant_0] 0
 x[CLUSTER_385,maize_str,Plant_1] 0
 x[CLUSTER_385,maize_str,Plant_2] 0
 x[CLUSTER_385,maize_str,Plant_3] 0
@@ -38425,7 +38425,7 @@ x[CLUSTER_386,cattle_man,Plant_1] 0
 x[CLUSTER_386,cattle_man,Plant_2] 0
 x[CLUSTER_386,cattle_man,Plant_3] 0
 x[CLUSTER_386,cattle_man,Plant_4] 0
-x[CLUSTER_386,cattle_man,Plant_5] 0.00042
+x[CLUSTER_386,cattle_man,Plant_5] 0
 x[CLUSTER_386,cattle_man,Plant_6] 0
 x[CLUSTER_386,cattle_man,Plant_7] 0
 x[CLUSTER_386,cattle_man,Plant_8] 0
@@ -38445,7 +38445,7 @@ x[CLUSTER_386,horse_man,Plant_1] 0
 x[CLUSTER_386,horse_man,Plant_2] 0
 x[CLUSTER_386,horse_man,Plant_3] 0
 x[CLUSTER_386,horse_man,Plant_4] 0
-x[CLUSTER_386,horse_man,Plant_5] 0.003289
+x[CLUSTER_386,horse_man,Plant_5] 0
 x[CLUSTER_386,horse_man,Plant_6] 0
 x[CLUSTER_386,horse_man,Plant_7] 0
 x[CLUSTER_386,horse_man,Plant_8] 0
@@ -38540,7 +38540,7 @@ x[CLUSTER_386,legume_str,Plant_6] 0
 x[CLUSTER_386,legume_str,Plant_7] 0
 x[CLUSTER_386,legume_str,Plant_8] 0
 x[CLUSTER_386,legume_str,Plant_9] 0
-x[CLUSTER_387,cattle_man,Plant_0] 0.007795
+x[CLUSTER_387,cattle_man,Plant_0] 0
 x[CLUSTER_387,cattle_man,Plant_1] 0
 x[CLUSTER_387,cattle_man,Plant_2] 0
 x[CLUSTER_387,cattle_man,Plant_3] 0
@@ -38560,7 +38560,7 @@ x[CLUSTER_387,cattle_slu,Plant_6] 0
 x[CLUSTER_387,cattle_slu,Plant_7] 0
 x[CLUSTER_387,cattle_slu,Plant_8] 0
 x[CLUSTER_387,cattle_slu,Plant_9] 0
-x[CLUSTER_387,horse_man,Plant_0] 0.0017143
+x[CLUSTER_387,horse_man,Plant_0] 0
 x[CLUSTER_387,horse_man,Plant_1] 0
 x[CLUSTER_387,horse_man,Plant_2] 0
 x[CLUSTER_387,horse_man,Plant_3] 0
@@ -38580,7 +38580,7 @@ x[CLUSTER_387,pig_slu,Plant_6] 0
 x[CLUSTER_387,pig_slu,Plant_7] 0
 x[CLUSTER_387,pig_slu,Plant_8] 0
 x[CLUSTER_387,pig_slu,Plant_9] 0
-x[CLUSTER_387,pig_man,Plant_0] 1.8003989999999998e-04
+x[CLUSTER_387,pig_man,Plant_0] 0
 x[CLUSTER_387,pig_man,Plant_1] 0
 x[CLUSTER_387,pig_man,Plant_2] 0
 x[CLUSTER_387,pig_man,Plant_3] 0
@@ -38620,7 +38620,7 @@ x[CLUSTER_387,perm_grass,Plant_6] 0
 x[CLUSTER_387,perm_grass,Plant_7] 0
 x[CLUSTER_387,perm_grass,Plant_8] 0
 x[CLUSTER_387,perm_grass,Plant_9] 0
-x[CLUSTER_387,maize_str,Plant_0] 8.539e-05
+x[CLUSTER_387,maize_str,Plant_0] 0
 x[CLUSTER_387,maize_str,Plant_1] 0
 x[CLUSTER_387,maize_str,Plant_2] 0
 x[CLUSTER_387,maize_str,Plant_3] 0
@@ -38667,7 +38667,7 @@ x[CLUSTER_388,cattle_man,Plant_3] 0
 x[CLUSTER_388,cattle_man,Plant_4] 0
 x[CLUSTER_388,cattle_man,Plant_5] 0
 x[CLUSTER_388,cattle_man,Plant_6] 0
-x[CLUSTER_388,cattle_man,Plant_7] 0.0004904
+x[CLUSTER_388,cattle_man,Plant_7] 0
 x[CLUSTER_388,cattle_man,Plant_8] 0
 x[CLUSTER_388,cattle_man,Plant_9] 0
 x[CLUSTER_388,cattle_slu,Plant_0] 0
@@ -38677,7 +38677,7 @@ x[CLUSTER_388,cattle_slu,Plant_3] 0
 x[CLUSTER_388,cattle_slu,Plant_4] 0
 x[CLUSTER_388,cattle_slu,Plant_5] 0
 x[CLUSTER_388,cattle_slu,Plant_6] 0
-x[CLUSTER_388,cattle_slu,Plant_7] 6.3070000000000010e-04
+x[CLUSTER_388,cattle_slu,Plant_7] 0
 x[CLUSTER_388,cattle_slu,Plant_8] 0
 x[CLUSTER_388,cattle_slu,Plant_9] 0
 x[CLUSTER_388,horse_man,Plant_0] 0
@@ -38687,7 +38687,7 @@ x[CLUSTER_388,horse_man,Plant_3] 0
 x[CLUSTER_388,horse_man,Plant_4] 0
 x[CLUSTER_388,horse_man,Plant_5] 0
 x[CLUSTER_388,horse_man,Plant_6] 0
-x[CLUSTER_388,horse_man,Plant_7] 0.0004103
+x[CLUSTER_388,horse_man,Plant_7] 0
 x[CLUSTER_388,horse_man,Plant_8] 0
 x[CLUSTER_388,horse_man,Plant_9] 0
 x[CLUSTER_388,pig_slu,Plant_0] 0
@@ -38787,7 +38787,7 @@ x[CLUSTER_389,cattle_man,Plant_3] 0
 x[CLUSTER_389,cattle_man,Plant_4] 0
 x[CLUSTER_389,cattle_man,Plant_5] 0
 x[CLUSTER_389,cattle_man,Plant_6] 0
-x[CLUSTER_389,cattle_man,Plant_7] 7.9089999999974736e-04
+x[CLUSTER_389,cattle_man,Plant_7] 0
 x[CLUSTER_389,cattle_man,Plant_8] 0
 x[CLUSTER_389,cattle_man,Plant_9] 0
 x[CLUSTER_389,cattle_slu,Plant_0] 0
@@ -38797,12 +38797,12 @@ x[CLUSTER_389,cattle_slu,Plant_3] 0
 x[CLUSTER_389,cattle_slu,Plant_4] 0
 x[CLUSTER_389,cattle_slu,Plant_5] 0
 x[CLUSTER_389,cattle_slu,Plant_6] 0
-x[CLUSTER_389,cattle_slu,Plant_7] 0.00025
+x[CLUSTER_389,cattle_slu,Plant_7] 0
 x[CLUSTER_389,cattle_slu,Plant_8] 0
 x[CLUSTER_389,cattle_slu,Plant_9] 0
 x[CLUSTER_389,horse_man,Plant_0] 0
 x[CLUSTER_389,horse_man,Plant_1] 0
-x[CLUSTER_389,horse_man,Plant_2] 0.000483
+x[CLUSTER_389,horse_man,Plant_2] 0
 x[CLUSTER_389,horse_man,Plant_3] 0
 x[CLUSTER_389,horse_man,Plant_4] 0
 x[CLUSTER_389,horse_man,Plant_5] 0
@@ -38827,7 +38827,7 @@ x[CLUSTER_389,pig_man,Plant_3] 0
 x[CLUSTER_389,pig_man,Plant_4] 0
 x[CLUSTER_389,pig_man,Plant_5] 0
 x[CLUSTER_389,pig_man,Plant_6] 0
-x[CLUSTER_389,pig_man,Plant_7] 5.8461e-05
+x[CLUSTER_389,pig_man,Plant_7] 0
 x[CLUSTER_389,pig_man,Plant_8] 0
 x[CLUSTER_389,pig_man,Plant_9] 0
 x[CLUSTER_389,cereal_str,Plant_0] 0
@@ -38849,7 +38849,7 @@ x[CLUSTER_389,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_389,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_389,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_389,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_389,clover_alfalfa_grass,Plant_9] 0.0032836
+x[CLUSTER_389,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_389,perm_grass,Plant_0] 0
 x[CLUSTER_389,perm_grass,Plant_1] 0
 x[CLUSTER_389,perm_grass,Plant_2] 0
@@ -38869,7 +38869,7 @@ x[CLUSTER_389,maize_str,Plant_5] 0
 x[CLUSTER_389,maize_str,Plant_6] 0
 x[CLUSTER_389,maize_str,Plant_7] 0
 x[CLUSTER_389,maize_str,Plant_8] 0
-x[CLUSTER_389,maize_str,Plant_9] 0.0001329
+x[CLUSTER_389,maize_str,Plant_9] 0
 x[CLUSTER_389,beet_leaf,Plant_0] 0
 x[CLUSTER_389,beet_leaf,Plant_1] 0
 x[CLUSTER_389,beet_leaf,Plant_2] 0
@@ -38901,7 +38901,7 @@ x[CLUSTER_389,legume_str,Plant_7] 0
 x[CLUSTER_389,legume_str,Plant_8] 0
 x[CLUSTER_389,legume_str,Plant_9] 0
 x[CLUSTER_39,cattle_man,Plant_0] 0
-x[CLUSTER_39,cattle_man,Plant_1] 0.01931
+x[CLUSTER_39,cattle_man,Plant_1] 0
 x[CLUSTER_39,cattle_man,Plant_2] 0
 x[CLUSTER_39,cattle_man,Plant_3] 0
 x[CLUSTER_39,cattle_man,Plant_4] 0
@@ -38921,7 +38921,7 @@ x[CLUSTER_39,cattle_slu,Plant_7] 0
 x[CLUSTER_39,cattle_slu,Plant_8] 0
 x[CLUSTER_39,cattle_slu,Plant_9] 0
 x[CLUSTER_39,horse_man,Plant_0] 0
-x[CLUSTER_39,horse_man,Plant_1] 0.001942
+x[CLUSTER_39,horse_man,Plant_1] 0
 x[CLUSTER_39,horse_man,Plant_2] 0
 x[CLUSTER_39,horse_man,Plant_3] 0
 x[CLUSTER_39,horse_man,Plant_4] 0
@@ -39022,7 +39022,7 @@ x[CLUSTER_39,legume_str,Plant_8] 0
 x[CLUSTER_39,legume_str,Plant_9] 0
 x[CLUSTER_390,cattle_man,Plant_0] 0
 x[CLUSTER_390,cattle_man,Plant_1] 0
-x[CLUSTER_390,cattle_man,Plant_2] 0.0047364
+x[CLUSTER_390,cattle_man,Plant_2] 0
 x[CLUSTER_390,cattle_man,Plant_3] 0
 x[CLUSTER_390,cattle_man,Plant_4] 0
 x[CLUSTER_390,cattle_man,Plant_5] 0
@@ -39042,7 +39042,7 @@ x[CLUSTER_390,cattle_slu,Plant_8] 0
 x[CLUSTER_390,cattle_slu,Plant_9] 0
 x[CLUSTER_390,horse_man,Plant_0] 0
 x[CLUSTER_390,horse_man,Plant_1] 0
-x[CLUSTER_390,horse_man,Plant_2] 0.000147848
+x[CLUSTER_390,horse_man,Plant_2] 0
 x[CLUSTER_390,horse_man,Plant_3] 0
 x[CLUSTER_390,horse_man,Plant_4] 0
 x[CLUSTER_390,horse_man,Plant_5] 0
@@ -39062,7 +39062,7 @@ x[CLUSTER_390,pig_slu,Plant_8] 0
 x[CLUSTER_390,pig_slu,Plant_9] 0
 x[CLUSTER_390,pig_man,Plant_0] 0
 x[CLUSTER_390,pig_man,Plant_1] 0
-x[CLUSTER_390,pig_man,Plant_2] 0.001056886
+x[CLUSTER_390,pig_man,Plant_2] 0
 x[CLUSTER_390,pig_man,Plant_3] 0
 x[CLUSTER_390,pig_man,Plant_4] 0
 x[CLUSTER_390,pig_man,Plant_5] 0
@@ -39141,7 +39141,7 @@ x[CLUSTER_390,legume_str,Plant_7] 0
 x[CLUSTER_390,legume_str,Plant_8] 0
 x[CLUSTER_390,legume_str,Plant_9] 0
 x[CLUSTER_391,cattle_man,Plant_0] 0
-x[CLUSTER_391,cattle_man,Plant_1] 0.011195
+x[CLUSTER_391,cattle_man,Plant_1] 0
 x[CLUSTER_391,cattle_man,Plant_2] 0
 x[CLUSTER_391,cattle_man,Plant_3] 0
 x[CLUSTER_391,cattle_man,Plant_4] 0
@@ -39161,7 +39161,7 @@ x[CLUSTER_391,cattle_slu,Plant_7] 0
 x[CLUSTER_391,cattle_slu,Plant_8] 0
 x[CLUSTER_391,cattle_slu,Plant_9] 0
 x[CLUSTER_391,horse_man,Plant_0] 0
-x[CLUSTER_391,horse_man,Plant_1] 0.003066
+x[CLUSTER_391,horse_man,Plant_1] 0
 x[CLUSTER_391,horse_man,Plant_2] 0
 x[CLUSTER_391,horse_man,Plant_3] 0
 x[CLUSTER_391,horse_man,Plant_4] 0
@@ -39260,7 +39260,7 @@ x[CLUSTER_391,legume_str,Plant_6] 0
 x[CLUSTER_391,legume_str,Plant_7] 0
 x[CLUSTER_391,legume_str,Plant_8] 0
 x[CLUSTER_391,legume_str,Plant_9] 0
-x[CLUSTER_392,cattle_man,Plant_0] 0.0058
+x[CLUSTER_392,cattle_man,Plant_0] 0
 x[CLUSTER_392,cattle_man,Plant_1] 0
 x[CLUSTER_392,cattle_man,Plant_2] 0
 x[CLUSTER_392,cattle_man,Plant_3] 0
@@ -39280,7 +39280,7 @@ x[CLUSTER_392,cattle_slu,Plant_6] 0
 x[CLUSTER_392,cattle_slu,Plant_7] 0
 x[CLUSTER_392,cattle_slu,Plant_8] 0
 x[CLUSTER_392,cattle_slu,Plant_9] 0
-x[CLUSTER_392,horse_man,Plant_0] 0.000513
+x[CLUSTER_392,horse_man,Plant_0] 0
 x[CLUSTER_392,horse_man,Plant_1] 0
 x[CLUSTER_392,horse_man,Plant_2] 0
 x[CLUSTER_392,horse_man,Plant_3] 0
@@ -39300,7 +39300,7 @@ x[CLUSTER_392,pig_slu,Plant_6] 0
 x[CLUSTER_392,pig_slu,Plant_7] 0
 x[CLUSTER_392,pig_slu,Plant_8] 0
 x[CLUSTER_392,pig_slu,Plant_9] 0
-x[CLUSTER_392,pig_man,Plant_0] 4.65e-05
+x[CLUSTER_392,pig_man,Plant_0] 0
 x[CLUSTER_392,pig_man,Plant_1] 0
 x[CLUSTER_392,pig_man,Plant_2] 0
 x[CLUSTER_392,pig_man,Plant_3] 0
@@ -39388,7 +39388,7 @@ x[CLUSTER_393,cattle_man,Plant_4] 0
 x[CLUSTER_393,cattle_man,Plant_5] 0
 x[CLUSTER_393,cattle_man,Plant_6] 0
 x[CLUSTER_393,cattle_man,Plant_7] 0
-x[CLUSTER_393,cattle_man,Plant_8] 0.001357
+x[CLUSTER_393,cattle_man,Plant_8] 0
 x[CLUSTER_393,cattle_man,Plant_9] 0
 x[CLUSTER_393,cattle_slu,Plant_0] 0
 x[CLUSTER_393,cattle_slu,Plant_1] 0
@@ -39398,7 +39398,7 @@ x[CLUSTER_393,cattle_slu,Plant_4] 0
 x[CLUSTER_393,cattle_slu,Plant_5] 0
 x[CLUSTER_393,cattle_slu,Plant_6] 0
 x[CLUSTER_393,cattle_slu,Plant_7] 0
-x[CLUSTER_393,cattle_slu,Plant_8] 0.006467
+x[CLUSTER_393,cattle_slu,Plant_8] 0
 x[CLUSTER_393,cattle_slu,Plant_9] 0
 x[CLUSTER_393,horse_man,Plant_0] 0
 x[CLUSTER_393,horse_man,Plant_1] 0
@@ -39408,7 +39408,7 @@ x[CLUSTER_393,horse_man,Plant_4] 0
 x[CLUSTER_393,horse_man,Plant_5] 0
 x[CLUSTER_393,horse_man,Plant_6] 0
 x[CLUSTER_393,horse_man,Plant_7] 0
-x[CLUSTER_393,horse_man,Plant_8] 9.6810000000000006e-04
+x[CLUSTER_393,horse_man,Plant_8] 0
 x[CLUSTER_393,horse_man,Plant_9] 0
 x[CLUSTER_393,pig_slu,Plant_0] 0
 x[CLUSTER_393,pig_slu,Plant_1] 0
@@ -39448,7 +39448,7 @@ x[CLUSTER_393,clover_alfalfa_grass,Plant_4] 0
 x[CLUSTER_393,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_393,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_393,clover_alfalfa_grass,Plant_7] 0
-x[CLUSTER_393,clover_alfalfa_grass,Plant_8] 0.0002776
+x[CLUSTER_393,clover_alfalfa_grass,Plant_8] 0
 x[CLUSTER_393,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_393,perm_grass,Plant_0] 0
 x[CLUSTER_393,perm_grass,Plant_1] 0
@@ -39468,7 +39468,7 @@ x[CLUSTER_393,maize_str,Plant_4] 0
 x[CLUSTER_393,maize_str,Plant_5] 0
 x[CLUSTER_393,maize_str,Plant_6] 0
 x[CLUSTER_393,maize_str,Plant_7] 0
-x[CLUSTER_393,maize_str,Plant_8] 0.0003115
+x[CLUSTER_393,maize_str,Plant_8] 0
 x[CLUSTER_393,maize_str,Plant_9] 0
 x[CLUSTER_393,beet_leaf,Plant_0] 0
 x[CLUSTER_393,beet_leaf,Plant_1] 0
@@ -39502,7 +39502,7 @@ x[CLUSTER_393,legume_str,Plant_8] 0
 x[CLUSTER_393,legume_str,Plant_9] 0
 x[CLUSTER_394,cattle_man,Plant_0] 0
 x[CLUSTER_394,cattle_man,Plant_1] 0
-x[CLUSTER_394,cattle_man,Plant_2] 0.00608
+x[CLUSTER_394,cattle_man,Plant_2] 0
 x[CLUSTER_394,cattle_man,Plant_3] 0
 x[CLUSTER_394,cattle_man,Plant_4] 0
 x[CLUSTER_394,cattle_man,Plant_5] 0
@@ -39522,7 +39522,7 @@ x[CLUSTER_394,cattle_slu,Plant_8] 0
 x[CLUSTER_394,cattle_slu,Plant_9] 0
 x[CLUSTER_394,horse_man,Plant_0] 0
 x[CLUSTER_394,horse_man,Plant_1] 0
-x[CLUSTER_394,horse_man,Plant_2] 0.0005713
+x[CLUSTER_394,horse_man,Plant_2] 0
 x[CLUSTER_394,horse_man,Plant_3] 0
 x[CLUSTER_394,horse_man,Plant_4] 0
 x[CLUSTER_394,horse_man,Plant_5] 0
@@ -39545,7 +39545,7 @@ x[CLUSTER_394,pig_man,Plant_1] 0
 x[CLUSTER_394,pig_man,Plant_2] 0
 x[CLUSTER_394,pig_man,Plant_3] 0
 x[CLUSTER_394,pig_man,Plant_4] 0
-x[CLUSTER_394,pig_man,Plant_5] 0.0004347
+x[CLUSTER_394,pig_man,Plant_5] 0
 x[CLUSTER_394,pig_man,Plant_6] 0
 x[CLUSTER_394,pig_man,Plant_7] 0
 x[CLUSTER_394,pig_man,Plant_8] 0
@@ -39622,7 +39622,7 @@ x[CLUSTER_394,legume_str,Plant_8] 0
 x[CLUSTER_394,legume_str,Plant_9] 0
 x[CLUSTER_395,cattle_man,Plant_0] 0
 x[CLUSTER_395,cattle_man,Plant_1] 0
-x[CLUSTER_395,cattle_man,Plant_2] 0.0017245
+x[CLUSTER_395,cattle_man,Plant_2] 0
 x[CLUSTER_395,cattle_man,Plant_3] 0
 x[CLUSTER_395,cattle_man,Plant_4] 0
 x[CLUSTER_395,cattle_man,Plant_5] 0
@@ -39642,7 +39642,7 @@ x[CLUSTER_395,cattle_slu,Plant_8] 0
 x[CLUSTER_395,cattle_slu,Plant_9] 0
 x[CLUSTER_395,horse_man,Plant_0] 0
 x[CLUSTER_395,horse_man,Plant_1] 0
-x[CLUSTER_395,horse_man,Plant_2] 5.5207999999999993e-04
+x[CLUSTER_395,horse_man,Plant_2] 0
 x[CLUSTER_395,horse_man,Plant_3] 0
 x[CLUSTER_395,horse_man,Plant_4] 0
 x[CLUSTER_395,horse_man,Plant_5] 0
@@ -39662,7 +39662,7 @@ x[CLUSTER_395,pig_slu,Plant_8] 0
 x[CLUSTER_395,pig_slu,Plant_9] 0
 x[CLUSTER_395,pig_man,Plant_0] 0
 x[CLUSTER_395,pig_man,Plant_1] 0
-x[CLUSTER_395,pig_man,Plant_2] 2.94111e-05
+x[CLUSTER_395,pig_man,Plant_2] 0
 x[CLUSTER_395,pig_man,Plant_3] 0
 x[CLUSTER_395,pig_man,Plant_4] 0
 x[CLUSTER_395,pig_man,Plant_5] 0
@@ -39689,7 +39689,7 @@ x[CLUSTER_395,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_395,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_395,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_395,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_395,clover_alfalfa_grass,Plant_9] 0.001716
+x[CLUSTER_395,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_395,perm_grass,Plant_0] 0
 x[CLUSTER_395,perm_grass,Plant_1] 0
 x[CLUSTER_395,perm_grass,Plant_2] 0
@@ -39709,7 +39709,7 @@ x[CLUSTER_395,maize_str,Plant_5] 0
 x[CLUSTER_395,maize_str,Plant_6] 0
 x[CLUSTER_395,maize_str,Plant_7] 0
 x[CLUSTER_395,maize_str,Plant_8] 0
-x[CLUSTER_395,maize_str,Plant_9] 0.0005824
+x[CLUSTER_395,maize_str,Plant_9] 0
 x[CLUSTER_395,beet_leaf,Plant_0] 0
 x[CLUSTER_395,beet_leaf,Plant_1] 0
 x[CLUSTER_395,beet_leaf,Plant_2] 0
@@ -39765,10 +39765,10 @@ x[CLUSTER_396,horse_man,Plant_1] 0
 x[CLUSTER_396,horse_man,Plant_2] 0
 x[CLUSTER_396,horse_man,Plant_3] 0
 x[CLUSTER_396,horse_man,Plant_4] 0
-x[CLUSTER_396,horse_man,Plant_5] 2.6839467208055438e-05
+x[CLUSTER_396,horse_man,Plant_5] 0
 x[CLUSTER_396,horse_man,Plant_6] 0
 x[CLUSTER_396,horse_man,Plant_7] 0
-x[CLUSTER_396,horse_man,Plant_8] 4.4331605327919453e-03
+x[CLUSTER_396,horse_man,Plant_8] 0
 x[CLUSTER_396,horse_man,Plant_9] 0
 x[CLUSTER_396,pig_slu,Plant_0] 0
 x[CLUSTER_396,pig_slu,Plant_1] 0
@@ -39860,7 +39860,7 @@ x[CLUSTER_396,legume_str,Plant_6] 0
 x[CLUSTER_396,legume_str,Plant_7] 0
 x[CLUSTER_396,legume_str,Plant_8] 0
 x[CLUSTER_396,legume_str,Plant_9] 0
-x[CLUSTER_397,cattle_man,Plant_0] 0.005686
+x[CLUSTER_397,cattle_man,Plant_0] 0
 x[CLUSTER_397,cattle_man,Plant_1] 0
 x[CLUSTER_397,cattle_man,Plant_2] 0
 x[CLUSTER_397,cattle_man,Plant_3] 0
@@ -39880,7 +39880,7 @@ x[CLUSTER_397,cattle_slu,Plant_6] 0
 x[CLUSTER_397,cattle_slu,Plant_7] 0
 x[CLUSTER_397,cattle_slu,Plant_8] 0
 x[CLUSTER_397,cattle_slu,Plant_9] 0
-x[CLUSTER_397,horse_man,Plant_0] 7.9720000000000008e-04
+x[CLUSTER_397,horse_man,Plant_0] 0
 x[CLUSTER_397,horse_man,Plant_1] 0
 x[CLUSTER_397,horse_man,Plant_2] 0
 x[CLUSTER_397,horse_man,Plant_3] 0
@@ -39900,7 +39900,7 @@ x[CLUSTER_397,pig_slu,Plant_6] 0
 x[CLUSTER_397,pig_slu,Plant_7] 0
 x[CLUSTER_397,pig_slu,Plant_8] 0
 x[CLUSTER_397,pig_slu,Plant_9] 0
-x[CLUSTER_397,pig_man,Plant_0] 8.0291e-05
+x[CLUSTER_397,pig_man,Plant_0] 0
 x[CLUSTER_397,pig_man,Plant_1] 0
 x[CLUSTER_397,pig_man,Plant_2] 0
 x[CLUSTER_397,pig_man,Plant_3] 0
@@ -39940,7 +39940,7 @@ x[CLUSTER_397,perm_grass,Plant_6] 0
 x[CLUSTER_397,perm_grass,Plant_7] 0
 x[CLUSTER_397,perm_grass,Plant_8] 0
 x[CLUSTER_397,perm_grass,Plant_9] 0
-x[CLUSTER_397,maize_str,Plant_0] 0.0006589
+x[CLUSTER_397,maize_str,Plant_0] 0
 x[CLUSTER_397,maize_str,Plant_1] 0
 x[CLUSTER_397,maize_str,Plant_2] 0
 x[CLUSTER_397,maize_str,Plant_3] 0
@@ -39983,7 +39983,7 @@ x[CLUSTER_397,legume_str,Plant_9] 0
 x[CLUSTER_398,cattle_man,Plant_0] 0
 x[CLUSTER_398,cattle_man,Plant_1] 0
 x[CLUSTER_398,cattle_man,Plant_2] 0
-x[CLUSTER_398,cattle_man,Plant_3] 0.005117
+x[CLUSTER_398,cattle_man,Plant_3] 0
 x[CLUSTER_398,cattle_man,Plant_4] 0
 x[CLUSTER_398,cattle_man,Plant_5] 0
 x[CLUSTER_398,cattle_man,Plant_6] 0
@@ -40003,7 +40003,7 @@ x[CLUSTER_398,cattle_slu,Plant_9] 0
 x[CLUSTER_398,horse_man,Plant_0] 0
 x[CLUSTER_398,horse_man,Plant_1] 0
 x[CLUSTER_398,horse_man,Plant_2] 0
-x[CLUSTER_398,horse_man,Plant_3] 0.001395
+x[CLUSTER_398,horse_man,Plant_3] 0
 x[CLUSTER_398,horse_man,Plant_4] 0
 x[CLUSTER_398,horse_man,Plant_5] 0
 x[CLUSTER_398,horse_man,Plant_6] 0
@@ -40023,7 +40023,7 @@ x[CLUSTER_398,pig_slu,Plant_9] 0
 x[CLUSTER_398,pig_man,Plant_0] 0
 x[CLUSTER_398,pig_man,Plant_1] 0
 x[CLUSTER_398,pig_man,Plant_2] 0
-x[CLUSTER_398,pig_man,Plant_3] 1.6900018979999998e-04
+x[CLUSTER_398,pig_man,Plant_3] 0
 x[CLUSTER_398,pig_man,Plant_4] 0
 x[CLUSTER_398,pig_man,Plant_5] 0
 x[CLUSTER_398,pig_man,Plant_6] 0
@@ -40105,7 +40105,7 @@ x[CLUSTER_399,cattle_man,Plant_1] 0
 x[CLUSTER_399,cattle_man,Plant_2] 0
 x[CLUSTER_399,cattle_man,Plant_3] 0
 x[CLUSTER_399,cattle_man,Plant_4] 0
-x[CLUSTER_399,cattle_man,Plant_5] 1.2385999999999999e-03
+x[CLUSTER_399,cattle_man,Plant_5] 0
 x[CLUSTER_399,cattle_man,Plant_6] 0
 x[CLUSTER_399,cattle_man,Plant_7] 0
 x[CLUSTER_399,cattle_man,Plant_8] 0
@@ -40115,7 +40115,7 @@ x[CLUSTER_399,cattle_slu,Plant_1] 0
 x[CLUSTER_399,cattle_slu,Plant_2] 0
 x[CLUSTER_399,cattle_slu,Plant_3] 0
 x[CLUSTER_399,cattle_slu,Plant_4] 0
-x[CLUSTER_399,cattle_slu,Plant_5] 0.006217
+x[CLUSTER_399,cattle_slu,Plant_5] 0
 x[CLUSTER_399,cattle_slu,Plant_6] 0
 x[CLUSTER_399,cattle_slu,Plant_7] 0
 x[CLUSTER_399,cattle_slu,Plant_8] 0
@@ -40125,7 +40125,7 @@ x[CLUSTER_399,horse_man,Plant_1] 0
 x[CLUSTER_399,horse_man,Plant_2] 0
 x[CLUSTER_399,horse_man,Plant_3] 0
 x[CLUSTER_399,horse_man,Plant_4] 0
-x[CLUSTER_399,horse_man,Plant_5] 0.0002181
+x[CLUSTER_399,horse_man,Plant_5] 0
 x[CLUSTER_399,horse_man,Plant_6] 0
 x[CLUSTER_399,horse_man,Plant_7] 0
 x[CLUSTER_399,horse_man,Plant_8] 0
@@ -40145,7 +40145,7 @@ x[CLUSTER_399,pig_man,Plant_1] 0
 x[CLUSTER_399,pig_man,Plant_2] 0
 x[CLUSTER_399,pig_man,Plant_3] 0
 x[CLUSTER_399,pig_man,Plant_4] 0
-x[CLUSTER_399,pig_man,Plant_5] 6.4633000000000008e-04
+x[CLUSTER_399,pig_man,Plant_5] 0
 x[CLUSTER_399,pig_man,Plant_6] 0
 x[CLUSTER_399,pig_man,Plant_7] 0
 x[CLUSTER_399,pig_man,Plant_8] 0
@@ -40222,7 +40222,7 @@ x[CLUSTER_399,legume_str,Plant_8] 0
 x[CLUSTER_399,legume_str,Plant_9] 0
 x[CLUSTER_4,cattle_man,Plant_0] 0
 x[CLUSTER_4,cattle_man,Plant_1] 0
-x[CLUSTER_4,cattle_man,Plant_2] 0.020439
+x[CLUSTER_4,cattle_man,Plant_2] 0
 x[CLUSTER_4,cattle_man,Plant_3] 0
 x[CLUSTER_4,cattle_man,Plant_4] 0
 x[CLUSTER_4,cattle_man,Plant_5] 0
@@ -40242,7 +40242,7 @@ x[CLUSTER_4,cattle_slu,Plant_8] 0
 x[CLUSTER_4,cattle_slu,Plant_9] 0
 x[CLUSTER_4,horse_man,Plant_0] 0
 x[CLUSTER_4,horse_man,Plant_1] 0
-x[CLUSTER_4,horse_man,Plant_2] 2.5321999999999996e-03
+x[CLUSTER_4,horse_man,Plant_2] 0
 x[CLUSTER_4,horse_man,Plant_3] 0
 x[CLUSTER_4,horse_man,Plant_4] 0
 x[CLUSTER_4,horse_man,Plant_5] 0
@@ -40267,7 +40267,7 @@ x[CLUSTER_4,pig_man,Plant_3] 0
 x[CLUSTER_4,pig_man,Plant_4] 0
 x[CLUSTER_4,pig_man,Plant_5] 0
 x[CLUSTER_4,pig_man,Plant_6] 0
-x[CLUSTER_4,pig_man,Plant_7] 0.00073049
+x[CLUSTER_4,pig_man,Plant_7] 0
 x[CLUSTER_4,pig_man,Plant_8] 0
 x[CLUSTER_4,pig_man,Plant_9] 0
 x[CLUSTER_4,cereal_str,Plant_0] 0
@@ -40289,7 +40289,7 @@ x[CLUSTER_4,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_4,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_4,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_4,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_4,clover_alfalfa_grass,Plant_9] 0.007467
+x[CLUSTER_4,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_4,perm_grass,Plant_0] 0
 x[CLUSTER_4,perm_grass,Plant_1] 0
 x[CLUSTER_4,perm_grass,Plant_2] 0
@@ -40309,7 +40309,7 @@ x[CLUSTER_4,maize_str,Plant_5] 0
 x[CLUSTER_4,maize_str,Plant_6] 0
 x[CLUSTER_4,maize_str,Plant_7] 0
 x[CLUSTER_4,maize_str,Plant_8] 0
-x[CLUSTER_4,maize_str,Plant_9] 2.8790000000000006e-04
+x[CLUSTER_4,maize_str,Plant_9] 0
 x[CLUSTER_4,beet_leaf,Plant_0] 0
 x[CLUSTER_4,beet_leaf,Plant_1] 0
 x[CLUSTER_4,beet_leaf,Plant_2] 0
@@ -40342,7 +40342,7 @@ x[CLUSTER_4,legume_str,Plant_8] 0
 x[CLUSTER_4,legume_str,Plant_9] 0
 x[CLUSTER_40,cattle_man,Plant_0] 0
 x[CLUSTER_40,cattle_man,Plant_1] 0
-x[CLUSTER_40,cattle_man,Plant_2] 0.005321
+x[CLUSTER_40,cattle_man,Plant_2] 0
 x[CLUSTER_40,cattle_man,Plant_3] 0
 x[CLUSTER_40,cattle_man,Plant_4] 0
 x[CLUSTER_40,cattle_man,Plant_5] 0
@@ -40362,7 +40362,7 @@ x[CLUSTER_40,cattle_slu,Plant_8] 0
 x[CLUSTER_40,cattle_slu,Plant_9] 0
 x[CLUSTER_40,horse_man,Plant_0] 0
 x[CLUSTER_40,horse_man,Plant_1] 0
-x[CLUSTER_40,horse_man,Plant_2] 0.0024576
+x[CLUSTER_40,horse_man,Plant_2] 0
 x[CLUSTER_40,horse_man,Plant_3] 0
 x[CLUSTER_40,horse_man,Plant_4] 0
 x[CLUSTER_40,horse_man,Plant_5] 0
@@ -40382,7 +40382,7 @@ x[CLUSTER_40,pig_slu,Plant_8] 0
 x[CLUSTER_40,pig_slu,Plant_9] 0
 x[CLUSTER_40,pig_man,Plant_0] 0
 x[CLUSTER_40,pig_man,Plant_1] 0
-x[CLUSTER_40,pig_man,Plant_2] 0.00021346
+x[CLUSTER_40,pig_man,Plant_2] 0
 x[CLUSTER_40,pig_man,Plant_3] 0
 x[CLUSTER_40,pig_man,Plant_4] 0
 x[CLUSTER_40,pig_man,Plant_5] 0
@@ -40429,7 +40429,7 @@ x[CLUSTER_40,maize_str,Plant_5] 0
 x[CLUSTER_40,maize_str,Plant_6] 0
 x[CLUSTER_40,maize_str,Plant_7] 0
 x[CLUSTER_40,maize_str,Plant_8] 0
-x[CLUSTER_40,maize_str,Plant_9] 5.3400000000000004e-05
+x[CLUSTER_40,maize_str,Plant_9] 0
 x[CLUSTER_40,beet_leaf,Plant_0] 0
 x[CLUSTER_40,beet_leaf,Plant_1] 0
 x[CLUSTER_40,beet_leaf,Plant_2] 0
@@ -40463,7 +40463,7 @@ x[CLUSTER_40,legume_str,Plant_9] 0
 x[CLUSTER_400,cattle_man,Plant_0] 0
 x[CLUSTER_400,cattle_man,Plant_1] 0
 x[CLUSTER_400,cattle_man,Plant_2] 0
-x[CLUSTER_400,cattle_man,Plant_3] 3.9038000000000002e-03
+x[CLUSTER_400,cattle_man,Plant_3] 0
 x[CLUSTER_400,cattle_man,Plant_4] 0
 x[CLUSTER_400,cattle_man,Plant_5] 0
 x[CLUSTER_400,cattle_man,Plant_6] 0
@@ -40483,7 +40483,7 @@ x[CLUSTER_400,cattle_slu,Plant_9] 0
 x[CLUSTER_400,horse_man,Plant_0] 0
 x[CLUSTER_400,horse_man,Plant_1] 0
 x[CLUSTER_400,horse_man,Plant_2] 0
-x[CLUSTER_400,horse_man,Plant_3] 0.001513
+x[CLUSTER_400,horse_man,Plant_3] 0
 x[CLUSTER_400,horse_man,Plant_4] 0
 x[CLUSTER_400,horse_man,Plant_5] 0
 x[CLUSTER_400,horse_man,Plant_6] 0
@@ -40505,7 +40505,7 @@ x[CLUSTER_400,pig_man,Plant_1] 0
 x[CLUSTER_400,pig_man,Plant_2] 0
 x[CLUSTER_400,pig_man,Plant_3] 0
 x[CLUSTER_400,pig_man,Plant_4] 0
-x[CLUSTER_400,pig_man,Plant_5] 0.002588
+x[CLUSTER_400,pig_man,Plant_5] 0
 x[CLUSTER_400,pig_man,Plant_6] 0
 x[CLUSTER_400,pig_man,Plant_7] 0
 x[CLUSTER_400,pig_man,Plant_8] 0
@@ -40584,7 +40584,7 @@ x[CLUSTER_401,cattle_man,Plant_0] 0
 x[CLUSTER_401,cattle_man,Plant_1] 0
 x[CLUSTER_401,cattle_man,Plant_2] 0
 x[CLUSTER_401,cattle_man,Plant_3] 0
-x[CLUSTER_401,cattle_man,Plant_4] 0.0016668
+x[CLUSTER_401,cattle_man,Plant_4] 0
 x[CLUSTER_401,cattle_man,Plant_5] 0
 x[CLUSTER_401,cattle_man,Plant_6] 0
 x[CLUSTER_401,cattle_man,Plant_7] 0
@@ -40604,7 +40604,7 @@ x[CLUSTER_401,horse_man,Plant_0] 0
 x[CLUSTER_401,horse_man,Plant_1] 0
 x[CLUSTER_401,horse_man,Plant_2] 0
 x[CLUSTER_401,horse_man,Plant_3] 0
-x[CLUSTER_401,horse_man,Plant_4] 0.0009295
+x[CLUSTER_401,horse_man,Plant_4] 0
 x[CLUSTER_401,horse_man,Plant_5] 0
 x[CLUSTER_401,horse_man,Plant_6] 0
 x[CLUSTER_401,horse_man,Plant_7] 0
@@ -40624,7 +40624,7 @@ x[CLUSTER_401,pig_man,Plant_0] 0
 x[CLUSTER_401,pig_man,Plant_1] 0
 x[CLUSTER_401,pig_man,Plant_2] 0
 x[CLUSTER_401,pig_man,Plant_3] 0
-x[CLUSTER_401,pig_man,Plant_4] 0.0001896729
+x[CLUSTER_401,pig_man,Plant_4] 0
 x[CLUSTER_401,pig_man,Plant_5] 0
 x[CLUSTER_401,pig_man,Plant_6] 0
 x[CLUSTER_401,pig_man,Plant_7] 0
@@ -40649,7 +40649,7 @@ x[CLUSTER_401,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_401,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_401,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_401,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_401,clover_alfalfa_grass,Plant_9] 0.00268756
+x[CLUSTER_401,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_401,perm_grass,Plant_0] 0
 x[CLUSTER_401,perm_grass,Plant_1] 0
 x[CLUSTER_401,perm_grass,Plant_2] 0
@@ -40669,7 +40669,7 @@ x[CLUSTER_401,maize_str,Plant_5] 0
 x[CLUSTER_401,maize_str,Plant_6] 0
 x[CLUSTER_401,maize_str,Plant_7] 0
 x[CLUSTER_401,maize_str,Plant_8] 0
-x[CLUSTER_401,maize_str,Plant_9] 1.0070000000000001e-04
+x[CLUSTER_401,maize_str,Plant_9] 0
 x[CLUSTER_401,beet_leaf,Plant_0] 0
 x[CLUSTER_401,beet_leaf,Plant_1] 0
 x[CLUSTER_401,beet_leaf,Plant_2] 0
@@ -40703,7 +40703,7 @@ x[CLUSTER_401,legume_str,Plant_9] 0
 x[CLUSTER_402,cattle_man,Plant_0] 0
 x[CLUSTER_402,cattle_man,Plant_1] 0
 x[CLUSTER_402,cattle_man,Plant_2] 0
-x[CLUSTER_402,cattle_man,Plant_3] 0.001505
+x[CLUSTER_402,cattle_man,Plant_3] 0
 x[CLUSTER_402,cattle_man,Plant_4] 0
 x[CLUSTER_402,cattle_man,Plant_5] 0
 x[CLUSTER_402,cattle_man,Plant_6] 0
@@ -40723,7 +40723,7 @@ x[CLUSTER_402,cattle_slu,Plant_9] 0
 x[CLUSTER_402,horse_man,Plant_0] 0
 x[CLUSTER_402,horse_man,Plant_1] 0
 x[CLUSTER_402,horse_man,Plant_2] 0
-x[CLUSTER_402,horse_man,Plant_3] 0.000859
+x[CLUSTER_402,horse_man,Plant_3] 0
 x[CLUSTER_402,horse_man,Plant_4] 0
 x[CLUSTER_402,horse_man,Plant_5] 0
 x[CLUSTER_402,horse_man,Plant_6] 0
@@ -40743,7 +40743,7 @@ x[CLUSTER_402,pig_slu,Plant_9] 0
 x[CLUSTER_402,pig_man,Plant_0] 0
 x[CLUSTER_402,pig_man,Plant_1] 0
 x[CLUSTER_402,pig_man,Plant_2] 0
-x[CLUSTER_402,pig_man,Plant_3] 0.00154
+x[CLUSTER_402,pig_man,Plant_3] 0
 x[CLUSTER_402,pig_man,Plant_4] 0
 x[CLUSTER_402,pig_man,Plant_5] 0
 x[CLUSTER_402,pig_man,Plant_6] 0
@@ -40825,7 +40825,7 @@ x[CLUSTER_403,cattle_man,Plant_1] 0
 x[CLUSTER_403,cattle_man,Plant_2] 0
 x[CLUSTER_403,cattle_man,Plant_3] 0
 x[CLUSTER_403,cattle_man,Plant_4] 0
-x[CLUSTER_403,cattle_man,Plant_5] 0.009
+x[CLUSTER_403,cattle_man,Plant_5] 0
 x[CLUSTER_403,cattle_man,Plant_6] 0
 x[CLUSTER_403,cattle_man,Plant_7] 0
 x[CLUSTER_403,cattle_man,Plant_8] 0
@@ -40845,7 +40845,7 @@ x[CLUSTER_403,horse_man,Plant_1] 0
 x[CLUSTER_403,horse_man,Plant_2] 0
 x[CLUSTER_403,horse_man,Plant_3] 0
 x[CLUSTER_403,horse_man,Plant_4] 0
-x[CLUSTER_403,horse_man,Plant_5] 0.001197
+x[CLUSTER_403,horse_man,Plant_5] 0
 x[CLUSTER_403,horse_man,Plant_6] 0
 x[CLUSTER_403,horse_man,Plant_7] 0
 x[CLUSTER_403,horse_man,Plant_8] 0
@@ -40865,7 +40865,7 @@ x[CLUSTER_403,pig_man,Plant_1] 0
 x[CLUSTER_403,pig_man,Plant_2] 0
 x[CLUSTER_403,pig_man,Plant_3] 0
 x[CLUSTER_403,pig_man,Plant_4] 0
-x[CLUSTER_403,pig_man,Plant_5] 0.000782
+x[CLUSTER_403,pig_man,Plant_5] 0
 x[CLUSTER_403,pig_man,Plant_6] 0
 x[CLUSTER_403,pig_man,Plant_7] 0
 x[CLUSTER_403,pig_man,Plant_8] 0
@@ -40942,7 +40942,7 @@ x[CLUSTER_403,legume_str,Plant_8] 0
 x[CLUSTER_403,legume_str,Plant_9] 0
 x[CLUSTER_404,cattle_man,Plant_0] 0
 x[CLUSTER_404,cattle_man,Plant_1] 0
-x[CLUSTER_404,cattle_man,Plant_2] 0.00443
+x[CLUSTER_404,cattle_man,Plant_2] 0
 x[CLUSTER_404,cattle_man,Plant_3] 0
 x[CLUSTER_404,cattle_man,Plant_4] 0
 x[CLUSTER_404,cattle_man,Plant_5] 0
@@ -40952,7 +40952,7 @@ x[CLUSTER_404,cattle_man,Plant_8] 0
 x[CLUSTER_404,cattle_man,Plant_9] 0
 x[CLUSTER_404,cattle_slu,Plant_0] 0
 x[CLUSTER_404,cattle_slu,Plant_1] 0
-x[CLUSTER_404,cattle_slu,Plant_2] 4.0279999999999393e-02
+x[CLUSTER_404,cattle_slu,Plant_2] 0
 x[CLUSTER_404,cattle_slu,Plant_3] 0
 x[CLUSTER_404,cattle_slu,Plant_4] 0
 x[CLUSTER_404,cattle_slu,Plant_5] 0
@@ -40962,7 +40962,7 @@ x[CLUSTER_404,cattle_slu,Plant_8] 0
 x[CLUSTER_404,cattle_slu,Plant_9] 0
 x[CLUSTER_404,horse_man,Plant_0] 0
 x[CLUSTER_404,horse_man,Plant_1] 0
-x[CLUSTER_404,horse_man,Plant_2] 0.00186
+x[CLUSTER_404,horse_man,Plant_2] 0
 x[CLUSTER_404,horse_man,Plant_3] 0
 x[CLUSTER_404,horse_man,Plant_4] 0
 x[CLUSTER_404,horse_man,Plant_5] 0
@@ -40982,7 +40982,7 @@ x[CLUSTER_404,pig_slu,Plant_8] 0
 x[CLUSTER_404,pig_slu,Plant_9] 0
 x[CLUSTER_404,pig_man,Plant_0] 0
 x[CLUSTER_404,pig_man,Plant_1] 0
-x[CLUSTER_404,pig_man,Plant_2] 7.5629999999999992e-05
+x[CLUSTER_404,pig_man,Plant_2] 0
 x[CLUSTER_404,pig_man,Plant_3] 0
 x[CLUSTER_404,pig_man,Plant_4] 0
 x[CLUSTER_404,pig_man,Plant_5] 0
@@ -41022,7 +41022,7 @@ x[CLUSTER_404,perm_grass,Plant_8] 0
 x[CLUSTER_404,perm_grass,Plant_9] 0
 x[CLUSTER_404,maize_str,Plant_0] 0
 x[CLUSTER_404,maize_str,Plant_1] 0
-x[CLUSTER_404,maize_str,Plant_2] 1.3790000000000002e-04
+x[CLUSTER_404,maize_str,Plant_2] 0
 x[CLUSTER_404,maize_str,Plant_3] 0
 x[CLUSTER_404,maize_str,Plant_4] 0
 x[CLUSTER_404,maize_str,Plant_5] 0
@@ -41062,7 +41062,7 @@ x[CLUSTER_404,legume_str,Plant_8] 0
 x[CLUSTER_404,legume_str,Plant_9] 0
 x[CLUSTER_405,cattle_man,Plant_0] 0
 x[CLUSTER_405,cattle_man,Plant_1] 0
-x[CLUSTER_405,cattle_man,Plant_2] 0.003574
+x[CLUSTER_405,cattle_man,Plant_2] 0
 x[CLUSTER_405,cattle_man,Plant_3] 0
 x[CLUSTER_405,cattle_man,Plant_4] 0
 x[CLUSTER_405,cattle_man,Plant_5] 0
@@ -41082,7 +41082,7 @@ x[CLUSTER_405,cattle_slu,Plant_8] 0
 x[CLUSTER_405,cattle_slu,Plant_9] 0
 x[CLUSTER_405,horse_man,Plant_0] 0
 x[CLUSTER_405,horse_man,Plant_1] 0
-x[CLUSTER_405,horse_man,Plant_2] 0.0003118
+x[CLUSTER_405,horse_man,Plant_2] 0
 x[CLUSTER_405,horse_man,Plant_3] 0
 x[CLUSTER_405,horse_man,Plant_4] 0
 x[CLUSTER_405,horse_man,Plant_5] 0
@@ -41102,7 +41102,7 @@ x[CLUSTER_405,pig_slu,Plant_8] 0
 x[CLUSTER_405,pig_slu,Plant_9] 0
 x[CLUSTER_405,pig_man,Plant_0] 0
 x[CLUSTER_405,pig_man,Plant_1] 0
-x[CLUSTER_405,pig_man,Plant_2] 0.001316
+x[CLUSTER_405,pig_man,Plant_2] 0
 x[CLUSTER_405,pig_man,Plant_3] 0
 x[CLUSTER_405,pig_man,Plant_4] 0
 x[CLUSTER_405,pig_man,Plant_5] 0
@@ -41129,7 +41129,7 @@ x[CLUSTER_405,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_405,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_405,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_405,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_405,clover_alfalfa_grass,Plant_9] 0.005538
+x[CLUSTER_405,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_405,perm_grass,Plant_0] 0
 x[CLUSTER_405,perm_grass,Plant_1] 0
 x[CLUSTER_405,perm_grass,Plant_2] 0
@@ -41149,7 +41149,7 @@ x[CLUSTER_405,maize_str,Plant_5] 0
 x[CLUSTER_405,maize_str,Plant_6] 0
 x[CLUSTER_405,maize_str,Plant_7] 0
 x[CLUSTER_405,maize_str,Plant_8] 0
-x[CLUSTER_405,maize_str,Plant_9] 4.32e-05
+x[CLUSTER_405,maize_str,Plant_9] 0
 x[CLUSTER_405,beet_leaf,Plant_0] 0
 x[CLUSTER_405,beet_leaf,Plant_1] 0
 x[CLUSTER_405,beet_leaf,Plant_2] 0
@@ -41183,7 +41183,7 @@ x[CLUSTER_405,legume_str,Plant_9] 0
 x[CLUSTER_406,cattle_man,Plant_0] 0
 x[CLUSTER_406,cattle_man,Plant_1] 0
 x[CLUSTER_406,cattle_man,Plant_2] 0
-x[CLUSTER_406,cattle_man,Plant_3] 0.01679
+x[CLUSTER_406,cattle_man,Plant_3] 0
 x[CLUSTER_406,cattle_man,Plant_4] 0
 x[CLUSTER_406,cattle_man,Plant_5] 0
 x[CLUSTER_406,cattle_man,Plant_6] 0
@@ -41203,7 +41203,7 @@ x[CLUSTER_406,cattle_slu,Plant_9] 0
 x[CLUSTER_406,horse_man,Plant_0] 0
 x[CLUSTER_406,horse_man,Plant_1] 0
 x[CLUSTER_406,horse_man,Plant_2] 0
-x[CLUSTER_406,horse_man,Plant_3] 0.001539
+x[CLUSTER_406,horse_man,Plant_3] 0
 x[CLUSTER_406,horse_man,Plant_4] 0
 x[CLUSTER_406,horse_man,Plant_5] 0
 x[CLUSTER_406,horse_man,Plant_6] 0
@@ -41223,7 +41223,7 @@ x[CLUSTER_406,pig_slu,Plant_9] 0
 x[CLUSTER_406,pig_man,Plant_0] 0
 x[CLUSTER_406,pig_man,Plant_1] 0
 x[CLUSTER_406,pig_man,Plant_2] 0
-x[CLUSTER_406,pig_man,Plant_3] 5.2746e-05
+x[CLUSTER_406,pig_man,Plant_3] 0
 x[CLUSTER_406,pig_man,Plant_4] 0
 x[CLUSTER_406,pig_man,Plant_5] 0
 x[CLUSTER_406,pig_man,Plant_6] 0
@@ -41321,7 +41321,7 @@ x[CLUSTER_407,cattle_slu,Plant_7] 0
 x[CLUSTER_407,cattle_slu,Plant_8] 0
 x[CLUSTER_407,cattle_slu,Plant_9] 0
 x[CLUSTER_407,horse_man,Plant_0] 0
-x[CLUSTER_407,horse_man,Plant_1] 0.003348
+x[CLUSTER_407,horse_man,Plant_1] 0
 x[CLUSTER_407,horse_man,Plant_2] 0
 x[CLUSTER_407,horse_man,Plant_3] 0
 x[CLUSTER_407,horse_man,Plant_4] 0
@@ -41420,7 +41420,7 @@ x[CLUSTER_407,legume_str,Plant_6] 0
 x[CLUSTER_407,legume_str,Plant_7] 0
 x[CLUSTER_407,legume_str,Plant_8] 0
 x[CLUSTER_407,legume_str,Plant_9] 0
-x[CLUSTER_408,cattle_man,Plant_0] 0.0075858
+x[CLUSTER_408,cattle_man,Plant_0] 0
 x[CLUSTER_408,cattle_man,Plant_1] 0
 x[CLUSTER_408,cattle_man,Plant_2] 0
 x[CLUSTER_408,cattle_man,Plant_3] 0
@@ -41440,7 +41440,7 @@ x[CLUSTER_408,cattle_slu,Plant_6] 0
 x[CLUSTER_408,cattle_slu,Plant_7] 0
 x[CLUSTER_408,cattle_slu,Plant_8] 0
 x[CLUSTER_408,cattle_slu,Plant_9] 0
-x[CLUSTER_408,horse_man,Plant_0] 0.003122
+x[CLUSTER_408,horse_man,Plant_0] 0
 x[CLUSTER_408,horse_man,Plant_1] 0
 x[CLUSTER_408,horse_man,Plant_2] 0
 x[CLUSTER_408,horse_man,Plant_3] 0
@@ -41460,7 +41460,7 @@ x[CLUSTER_408,pig_slu,Plant_6] 0
 x[CLUSTER_408,pig_slu,Plant_7] 0
 x[CLUSTER_408,pig_slu,Plant_8] 0
 x[CLUSTER_408,pig_slu,Plant_9] 0
-x[CLUSTER_408,pig_man,Plant_0] 5.1160000000000008e-04
+x[CLUSTER_408,pig_man,Plant_0] 0
 x[CLUSTER_408,pig_man,Plant_1] 0
 x[CLUSTER_408,pig_man,Plant_2] 0
 x[CLUSTER_408,pig_man,Plant_3] 0
@@ -41500,7 +41500,7 @@ x[CLUSTER_408,perm_grass,Plant_6] 0
 x[CLUSTER_408,perm_grass,Plant_7] 0
 x[CLUSTER_408,perm_grass,Plant_8] 0
 x[CLUSTER_408,perm_grass,Plant_9] 0
-x[CLUSTER_408,maize_str,Plant_0] 0.000816
+x[CLUSTER_408,maize_str,Plant_0] 0
 x[CLUSTER_408,maize_str,Plant_1] 0
 x[CLUSTER_408,maize_str,Plant_2] 0
 x[CLUSTER_408,maize_str,Plant_3] 0
@@ -41540,7 +41540,7 @@ x[CLUSTER_408,legume_str,Plant_6] 0
 x[CLUSTER_408,legume_str,Plant_7] 0
 x[CLUSTER_408,legume_str,Plant_8] 0
 x[CLUSTER_408,legume_str,Plant_9] 0
-x[CLUSTER_409,cattle_man,Plant_0] 0.01223
+x[CLUSTER_409,cattle_man,Plant_0] 0
 x[CLUSTER_409,cattle_man,Plant_1] 0
 x[CLUSTER_409,cattle_man,Plant_2] 0
 x[CLUSTER_409,cattle_man,Plant_3] 0
@@ -41550,7 +41550,7 @@ x[CLUSTER_409,cattle_man,Plant_6] 0
 x[CLUSTER_409,cattle_man,Plant_7] 0
 x[CLUSTER_409,cattle_man,Plant_8] 0
 x[CLUSTER_409,cattle_man,Plant_9] 0
-x[CLUSTER_409,cattle_slu,Plant_0] 0.05638
+x[CLUSTER_409,cattle_slu,Plant_0] 0
 x[CLUSTER_409,cattle_slu,Plant_1] 0
 x[CLUSTER_409,cattle_slu,Plant_2] 0
 x[CLUSTER_409,cattle_slu,Plant_3] 0
@@ -41560,7 +41560,7 @@ x[CLUSTER_409,cattle_slu,Plant_6] 0
 x[CLUSTER_409,cattle_slu,Plant_7] 0
 x[CLUSTER_409,cattle_slu,Plant_8] 0
 x[CLUSTER_409,cattle_slu,Plant_9] 0
-x[CLUSTER_409,horse_man,Plant_0] 0.000858
+x[CLUSTER_409,horse_man,Plant_0] 0
 x[CLUSTER_409,horse_man,Plant_1] 0
 x[CLUSTER_409,horse_man,Plant_2] 0
 x[CLUSTER_409,horse_man,Plant_3] 0
@@ -41580,7 +41580,7 @@ x[CLUSTER_409,pig_slu,Plant_6] 0
 x[CLUSTER_409,pig_slu,Plant_7] 0
 x[CLUSTER_409,pig_slu,Plant_8] 0
 x[CLUSTER_409,pig_slu,Plant_9] 0
-x[CLUSTER_409,pig_man,Plant_0] 0.0005689
+x[CLUSTER_409,pig_man,Plant_0] 0
 x[CLUSTER_409,pig_man,Plant_1] 0
 x[CLUSTER_409,pig_man,Plant_2] 0
 x[CLUSTER_409,pig_man,Plant_3] 0
@@ -41620,7 +41620,7 @@ x[CLUSTER_409,perm_grass,Plant_6] 0
 x[CLUSTER_409,perm_grass,Plant_7] 0
 x[CLUSTER_409,perm_grass,Plant_8] 0
 x[CLUSTER_409,perm_grass,Plant_9] 0
-x[CLUSTER_409,maize_str,Plant_0] 0.000369
+x[CLUSTER_409,maize_str,Plant_0] 0
 x[CLUSTER_409,maize_str,Plant_1] 0
 x[CLUSTER_409,maize_str,Plant_2] 0
 x[CLUSTER_409,maize_str,Plant_3] 0
@@ -41662,7 +41662,7 @@ x[CLUSTER_409,legume_str,Plant_8] 0
 x[CLUSTER_409,legume_str,Plant_9] 0
 x[CLUSTER_41,cattle_man,Plant_0] 0
 x[CLUSTER_41,cattle_man,Plant_1] 0
-x[CLUSTER_41,cattle_man,Plant_2] 0.0003908
+x[CLUSTER_41,cattle_man,Plant_2] 0
 x[CLUSTER_41,cattle_man,Plant_3] 0
 x[CLUSTER_41,cattle_man,Plant_4] 0
 x[CLUSTER_41,cattle_man,Plant_5] 0
@@ -41682,7 +41682,7 @@ x[CLUSTER_41,cattle_slu,Plant_8] 0
 x[CLUSTER_41,cattle_slu,Plant_9] 0
 x[CLUSTER_41,horse_man,Plant_0] 0
 x[CLUSTER_41,horse_man,Plant_1] 0
-x[CLUSTER_41,horse_man,Plant_2] 0.0021088
+x[CLUSTER_41,horse_man,Plant_2] 0
 x[CLUSTER_41,horse_man,Plant_3] 0
 x[CLUSTER_41,horse_man,Plant_4] 0
 x[CLUSTER_41,horse_man,Plant_5] 0
@@ -41702,7 +41702,7 @@ x[CLUSTER_41,pig_slu,Plant_8] 0
 x[CLUSTER_41,pig_slu,Plant_9] 0
 x[CLUSTER_41,pig_man,Plant_0] 0
 x[CLUSTER_41,pig_man,Plant_1] 0
-x[CLUSTER_41,pig_man,Plant_2] 1.6858599999999998e-05
+x[CLUSTER_41,pig_man,Plant_2] 0
 x[CLUSTER_41,pig_man,Plant_3] 0
 x[CLUSTER_41,pig_man,Plant_4] 0
 x[CLUSTER_41,pig_man,Plant_5] 0
@@ -41729,7 +41729,7 @@ x[CLUSTER_41,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_41,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_41,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_41,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_41,clover_alfalfa_grass,Plant_9] 0.001668
+x[CLUSTER_41,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_41,perm_grass,Plant_0] 0
 x[CLUSTER_41,perm_grass,Plant_1] 0
 x[CLUSTER_41,perm_grass,Plant_2] 0
@@ -41749,7 +41749,7 @@ x[CLUSTER_41,maize_str,Plant_5] 0
 x[CLUSTER_41,maize_str,Plant_6] 0
 x[CLUSTER_41,maize_str,Plant_7] 0
 x[CLUSTER_41,maize_str,Plant_8] 0
-x[CLUSTER_41,maize_str,Plant_9] 8.541e-05
+x[CLUSTER_41,maize_str,Plant_9] 0
 x[CLUSTER_41,beet_leaf,Plant_0] 0
 x[CLUSTER_41,beet_leaf,Plant_1] 0
 x[CLUSTER_41,beet_leaf,Plant_2] 0
@@ -41787,7 +41787,7 @@ x[CLUSTER_410,cattle_man,Plant_3] 0
 x[CLUSTER_410,cattle_man,Plant_4] 0
 x[CLUSTER_410,cattle_man,Plant_5] 0
 x[CLUSTER_410,cattle_man,Plant_6] 0
-x[CLUSTER_410,cattle_man,Plant_7] 0.00809
+x[CLUSTER_410,cattle_man,Plant_7] 0
 x[CLUSTER_410,cattle_man,Plant_8] 0
 x[CLUSTER_410,cattle_man,Plant_9] 0
 x[CLUSTER_410,cattle_slu,Plant_0] 0
@@ -41797,7 +41797,7 @@ x[CLUSTER_410,cattle_slu,Plant_3] 0
 x[CLUSTER_410,cattle_slu,Plant_4] 0
 x[CLUSTER_410,cattle_slu,Plant_5] 0
 x[CLUSTER_410,cattle_slu,Plant_6] 0
-x[CLUSTER_410,cattle_slu,Plant_7] 0.00647
+x[CLUSTER_410,cattle_slu,Plant_7] 0
 x[CLUSTER_410,cattle_slu,Plant_8] 0
 x[CLUSTER_410,cattle_slu,Plant_9] 0
 x[CLUSTER_410,horse_man,Plant_0] 0
@@ -41807,7 +41807,7 @@ x[CLUSTER_410,horse_man,Plant_3] 0
 x[CLUSTER_410,horse_man,Plant_4] 0
 x[CLUSTER_410,horse_man,Plant_5] 0
 x[CLUSTER_410,horse_man,Plant_6] 0
-x[CLUSTER_410,horse_man,Plant_7] 0.0008084
+x[CLUSTER_410,horse_man,Plant_7] 0
 x[CLUSTER_410,horse_man,Plant_8] 0
 x[CLUSTER_410,horse_man,Plant_9] 0
 x[CLUSTER_410,pig_slu,Plant_0] 0
@@ -41817,7 +41817,7 @@ x[CLUSTER_410,pig_slu,Plant_3] 0
 x[CLUSTER_410,pig_slu,Plant_4] 0
 x[CLUSTER_410,pig_slu,Plant_5] 0
 x[CLUSTER_410,pig_slu,Plant_6] 0
-x[CLUSTER_410,pig_slu,Plant_7] 0.004418
+x[CLUSTER_410,pig_slu,Plant_7] 0
 x[CLUSTER_410,pig_slu,Plant_8] 0
 x[CLUSTER_410,pig_slu,Plant_9] 0
 x[CLUSTER_410,pig_man,Plant_0] 0
@@ -41827,7 +41827,7 @@ x[CLUSTER_410,pig_man,Plant_3] 0
 x[CLUSTER_410,pig_man,Plant_4] 0
 x[CLUSTER_410,pig_man,Plant_5] 0
 x[CLUSTER_410,pig_man,Plant_6] 0
-x[CLUSTER_410,pig_man,Plant_7] 0.0002619019
+x[CLUSTER_410,pig_man,Plant_7] 0
 x[CLUSTER_410,pig_man,Plant_8] 0
 x[CLUSTER_410,pig_man,Plant_9] 0
 x[CLUSTER_410,cereal_str,Plant_0] 0
@@ -41869,7 +41869,7 @@ x[CLUSTER_410,maize_str,Plant_5] 0
 x[CLUSTER_410,maize_str,Plant_6] 0
 x[CLUSTER_410,maize_str,Plant_7] 0
 x[CLUSTER_410,maize_str,Plant_8] 0
-x[CLUSTER_410,maize_str,Plant_9] 3.167e-05
+x[CLUSTER_410,maize_str,Plant_9] 0
 x[CLUSTER_410,beet_leaf,Plant_0] 0
 x[CLUSTER_410,beet_leaf,Plant_1] 0
 x[CLUSTER_410,beet_leaf,Plant_2] 0
@@ -41908,7 +41908,7 @@ x[CLUSTER_411,cattle_man,Plant_4] 0
 x[CLUSTER_411,cattle_man,Plant_5] 0
 x[CLUSTER_411,cattle_man,Plant_6] 0
 x[CLUSTER_411,cattle_man,Plant_7] 0
-x[CLUSTER_411,cattle_man,Plant_8] 1.8310000000000225e-02
+x[CLUSTER_411,cattle_man,Plant_8] 0
 x[CLUSTER_411,cattle_man,Plant_9] 0
 x[CLUSTER_411,cattle_slu,Plant_0] 0
 x[CLUSTER_411,cattle_slu,Plant_1] 0
@@ -41928,7 +41928,7 @@ x[CLUSTER_411,horse_man,Plant_4] 0
 x[CLUSTER_411,horse_man,Plant_5] 0
 x[CLUSTER_411,horse_man,Plant_6] 0
 x[CLUSTER_411,horse_man,Plant_7] 0
-x[CLUSTER_411,horse_man,Plant_8] 1.1634000000000002e-03
+x[CLUSTER_411,horse_man,Plant_8] 0
 x[CLUSTER_411,horse_man,Plant_9] 0
 x[CLUSTER_411,pig_slu,Plant_0] 0
 x[CLUSTER_411,pig_slu,Plant_1] 0
@@ -41948,7 +41948,7 @@ x[CLUSTER_411,pig_man,Plant_4] 0
 x[CLUSTER_411,pig_man,Plant_5] 0
 x[CLUSTER_411,pig_man,Plant_6] 0
 x[CLUSTER_411,pig_man,Plant_7] 0
-x[CLUSTER_411,pig_man,Plant_8] 0.00052779
+x[CLUSTER_411,pig_man,Plant_8] 0
 x[CLUSTER_411,pig_man,Plant_9] 0
 x[CLUSTER_411,cereal_str,Plant_0] 0
 x[CLUSTER_411,cereal_str,Plant_1] 0
@@ -42021,7 +42021,7 @@ x[CLUSTER_411,legume_str,Plant_7] 0
 x[CLUSTER_411,legume_str,Plant_8] 0
 x[CLUSTER_411,legume_str,Plant_9] 0
 x[CLUSTER_412,cattle_man,Plant_0] 0
-x[CLUSTER_412,cattle_man,Plant_1] 0.01664
+x[CLUSTER_412,cattle_man,Plant_1] 0
 x[CLUSTER_412,cattle_man,Plant_2] 0
 x[CLUSTER_412,cattle_man,Plant_3] 0
 x[CLUSTER_412,cattle_man,Plant_4] 0
@@ -42031,7 +42031,7 @@ x[CLUSTER_412,cattle_man,Plant_7] 0
 x[CLUSTER_412,cattle_man,Plant_8] 0
 x[CLUSTER_412,cattle_man,Plant_9] 0
 x[CLUSTER_412,cattle_slu,Plant_0] 0
-x[CLUSTER_412,cattle_slu,Plant_1] 0.08453
+x[CLUSTER_412,cattle_slu,Plant_1] 0
 x[CLUSTER_412,cattle_slu,Plant_2] 0
 x[CLUSTER_412,cattle_slu,Plant_3] 0
 x[CLUSTER_412,cattle_slu,Plant_4] 0
@@ -42041,7 +42041,7 @@ x[CLUSTER_412,cattle_slu,Plant_7] 0
 x[CLUSTER_412,cattle_slu,Plant_8] 0
 x[CLUSTER_412,cattle_slu,Plant_9] 0
 x[CLUSTER_412,horse_man,Plant_0] 0
-x[CLUSTER_412,horse_man,Plant_1] 0.002158
+x[CLUSTER_412,horse_man,Plant_1] 0
 x[CLUSTER_412,horse_man,Plant_2] 0
 x[CLUSTER_412,horse_man,Plant_3] 0
 x[CLUSTER_412,horse_man,Plant_4] 0
@@ -42144,7 +42144,7 @@ x[CLUSTER_413,cattle_man,Plant_0] 0
 x[CLUSTER_413,cattle_man,Plant_1] 0
 x[CLUSTER_413,cattle_man,Plant_2] 0
 x[CLUSTER_413,cattle_man,Plant_3] 0
-x[CLUSTER_413,cattle_man,Plant_4] 0.00879
+x[CLUSTER_413,cattle_man,Plant_4] 0
 x[CLUSTER_413,cattle_man,Plant_5] 0
 x[CLUSTER_413,cattle_man,Plant_6] 0
 x[CLUSTER_413,cattle_man,Plant_7] 0
@@ -42164,7 +42164,7 @@ x[CLUSTER_413,horse_man,Plant_0] 0
 x[CLUSTER_413,horse_man,Plant_1] 0
 x[CLUSTER_413,horse_man,Plant_2] 0
 x[CLUSTER_413,horse_man,Plant_3] 0
-x[CLUSTER_413,horse_man,Plant_4] 3.6000000000004778e-05
+x[CLUSTER_413,horse_man,Plant_4] 0
 x[CLUSTER_413,horse_man,Plant_5] 0
 x[CLUSTER_413,horse_man,Plant_6] 0
 x[CLUSTER_413,horse_man,Plant_7] 0
@@ -42184,7 +42184,7 @@ x[CLUSTER_413,pig_man,Plant_0] 0
 x[CLUSTER_413,pig_man,Plant_1] 0
 x[CLUSTER_413,pig_man,Plant_2] 0
 x[CLUSTER_413,pig_man,Plant_3] 0
-x[CLUSTER_413,pig_man,Plant_4] 0.001220808
+x[CLUSTER_413,pig_man,Plant_4] 0
 x[CLUSTER_413,pig_man,Plant_5] 0
 x[CLUSTER_413,pig_man,Plant_6] 0
 x[CLUSTER_413,pig_man,Plant_7] 0
@@ -42264,7 +42264,7 @@ x[CLUSTER_414,cattle_man,Plant_0] 0
 x[CLUSTER_414,cattle_man,Plant_1] 0
 x[CLUSTER_414,cattle_man,Plant_2] 0
 x[CLUSTER_414,cattle_man,Plant_3] 0
-x[CLUSTER_414,cattle_man,Plant_4] 1.3019999999999948e-02
+x[CLUSTER_414,cattle_man,Plant_4] 0
 x[CLUSTER_414,cattle_man,Plant_5] 0
 x[CLUSTER_414,cattle_man,Plant_6] 0
 x[CLUSTER_414,cattle_man,Plant_7] 0
@@ -42284,7 +42284,7 @@ x[CLUSTER_414,horse_man,Plant_0] 0
 x[CLUSTER_414,horse_man,Plant_1] 0
 x[CLUSTER_414,horse_man,Plant_2] 0
 x[CLUSTER_414,horse_man,Plant_3] 0
-x[CLUSTER_414,horse_man,Plant_4] 0.0010481
+x[CLUSTER_414,horse_man,Plant_4] 0
 x[CLUSTER_414,horse_man,Plant_5] 0
 x[CLUSTER_414,horse_man,Plant_6] 0
 x[CLUSTER_414,horse_man,Plant_7] 0
@@ -42304,7 +42304,7 @@ x[CLUSTER_414,pig_man,Plant_0] 0
 x[CLUSTER_414,pig_man,Plant_1] 0
 x[CLUSTER_414,pig_man,Plant_2] 0
 x[CLUSTER_414,pig_man,Plant_3] 0
-x[CLUSTER_414,pig_man,Plant_4] 0.000218538
+x[CLUSTER_414,pig_man,Plant_4] 0
 x[CLUSTER_414,pig_man,Plant_5] 0
 x[CLUSTER_414,pig_man,Plant_6] 0
 x[CLUSTER_414,pig_man,Plant_7] 0
@@ -42388,7 +42388,7 @@ x[CLUSTER_415,cattle_man,Plant_4] 0
 x[CLUSTER_415,cattle_man,Plant_5] 0
 x[CLUSTER_415,cattle_man,Plant_6] 0
 x[CLUSTER_415,cattle_man,Plant_7] 0
-x[CLUSTER_415,cattle_man,Plant_8] 0.00617
+x[CLUSTER_415,cattle_man,Plant_8] 0
 x[CLUSTER_415,cattle_man,Plant_9] 0
 x[CLUSTER_415,cattle_slu,Plant_0] 0
 x[CLUSTER_415,cattle_slu,Plant_1] 0
@@ -42408,7 +42408,7 @@ x[CLUSTER_415,horse_man,Plant_4] 0
 x[CLUSTER_415,horse_man,Plant_5] 0
 x[CLUSTER_415,horse_man,Plant_6] 0
 x[CLUSTER_415,horse_man,Plant_7] 0
-x[CLUSTER_415,horse_man,Plant_8] 0.003241
+x[CLUSTER_415,horse_man,Plant_8] 0
 x[CLUSTER_415,horse_man,Plant_9] 0
 x[CLUSTER_415,pig_slu,Plant_0] 0
 x[CLUSTER_415,pig_slu,Plant_1] 0
@@ -42503,7 +42503,7 @@ x[CLUSTER_415,legume_str,Plant_9] 0
 x[CLUSTER_416,cattle_man,Plant_0] 0
 x[CLUSTER_416,cattle_man,Plant_1] 0
 x[CLUSTER_416,cattle_man,Plant_2] 0
-x[CLUSTER_416,cattle_man,Plant_3] 0.0005539
+x[CLUSTER_416,cattle_man,Plant_3] 0
 x[CLUSTER_416,cattle_man,Plant_4] 0
 x[CLUSTER_416,cattle_man,Plant_5] 0
 x[CLUSTER_416,cattle_man,Plant_6] 0
@@ -42523,7 +42523,7 @@ x[CLUSTER_416,cattle_slu,Plant_9] 0
 x[CLUSTER_416,horse_man,Plant_0] 0
 x[CLUSTER_416,horse_man,Plant_1] 0
 x[CLUSTER_416,horse_man,Plant_2] 0
-x[CLUSTER_416,horse_man,Plant_3] 0.0003872
+x[CLUSTER_416,horse_man,Plant_3] 0
 x[CLUSTER_416,horse_man,Plant_4] 0
 x[CLUSTER_416,horse_man,Plant_5] 0
 x[CLUSTER_416,horse_man,Plant_6] 0
@@ -42627,9 +42627,9 @@ x[CLUSTER_417,cattle_man,Plant_3] 0
 x[CLUSTER_417,cattle_man,Plant_4] 0
 x[CLUSTER_417,cattle_man,Plant_5] 0
 x[CLUSTER_417,cattle_man,Plant_6] 0
-x[CLUSTER_417,cattle_man,Plant_7] 4.9742752663010387e-03
+x[CLUSTER_417,cattle_man,Plant_7] 0
 x[CLUSTER_417,cattle_man,Plant_8] 0
-x[CLUSTER_417,cattle_man,Plant_9] 6.6657247336989606e-03
+x[CLUSTER_417,cattle_man,Plant_9] 0
 x[CLUSTER_417,cattle_slu,Plant_0] 0
 x[CLUSTER_417,cattle_slu,Plant_1] 0
 x[CLUSTER_417,cattle_slu,Plant_2] 0
@@ -42642,7 +42642,7 @@ x[CLUSTER_417,cattle_slu,Plant_8] 0
 x[CLUSTER_417,cattle_slu,Plant_9] 0
 x[CLUSTER_417,horse_man,Plant_0] 0
 x[CLUSTER_417,horse_man,Plant_1] 0
-x[CLUSTER_417,horse_man,Plant_2] 0.0004308
+x[CLUSTER_417,horse_man,Plant_2] 0
 x[CLUSTER_417,horse_man,Plant_3] 0
 x[CLUSTER_417,horse_man,Plant_4] 0
 x[CLUSTER_417,horse_man,Plant_5] 0
@@ -42667,7 +42667,7 @@ x[CLUSTER_417,pig_man,Plant_3] 0
 x[CLUSTER_417,pig_man,Plant_4] 0
 x[CLUSTER_417,pig_man,Plant_5] 0
 x[CLUSTER_417,pig_man,Plant_6] 0
-x[CLUSTER_417,pig_man,Plant_7] 0.00019725
+x[CLUSTER_417,pig_man,Plant_7] 0
 x[CLUSTER_417,pig_man,Plant_8] 0
 x[CLUSTER_417,pig_man,Plant_9] 0
 x[CLUSTER_417,cereal_str,Plant_0] 0
@@ -42689,7 +42689,7 @@ x[CLUSTER_417,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_417,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_417,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_417,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_417,clover_alfalfa_grass,Plant_9] 0.002459
+x[CLUSTER_417,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_417,perm_grass,Plant_0] 0
 x[CLUSTER_417,perm_grass,Plant_1] 0
 x[CLUSTER_417,perm_grass,Plant_2] 0
@@ -42709,7 +42709,7 @@ x[CLUSTER_417,maize_str,Plant_5] 0
 x[CLUSTER_417,maize_str,Plant_6] 0
 x[CLUSTER_417,maize_str,Plant_7] 0
 x[CLUSTER_417,maize_str,Plant_8] 0
-x[CLUSTER_417,maize_str,Plant_9] 8.836e-05
+x[CLUSTER_417,maize_str,Plant_9] 0
 x[CLUSTER_417,beet_leaf,Plant_0] 0
 x[CLUSTER_417,beet_leaf,Plant_1] 0
 x[CLUSTER_417,beet_leaf,Plant_2] 0
@@ -42749,7 +42749,7 @@ x[CLUSTER_418,cattle_man,Plant_5] 0
 x[CLUSTER_418,cattle_man,Plant_6] 0
 x[CLUSTER_418,cattle_man,Plant_7] 0
 x[CLUSTER_418,cattle_man,Plant_8] 0
-x[CLUSTER_418,cattle_man,Plant_9] 0.00542646
+x[CLUSTER_418,cattle_man,Plant_9] 0
 x[CLUSTER_418,cattle_slu,Plant_0] 0
 x[CLUSTER_418,cattle_slu,Plant_1] 0
 x[CLUSTER_418,cattle_slu,Plant_2] 0
@@ -42759,7 +42759,7 @@ x[CLUSTER_418,cattle_slu,Plant_5] 0
 x[CLUSTER_418,cattle_slu,Plant_6] 0
 x[CLUSTER_418,cattle_slu,Plant_7] 0
 x[CLUSTER_418,cattle_slu,Plant_8] 0
-x[CLUSTER_418,cattle_slu,Plant_9] 0.010097
+x[CLUSTER_418,cattle_slu,Plant_9] 0
 x[CLUSTER_418,horse_man,Plant_0] 0
 x[CLUSTER_418,horse_man,Plant_1] 0
 x[CLUSTER_418,horse_man,Plant_2] 0
@@ -42769,7 +42769,7 @@ x[CLUSTER_418,horse_man,Plant_5] 0
 x[CLUSTER_418,horse_man,Plant_6] 0
 x[CLUSTER_418,horse_man,Plant_7] 0
 x[CLUSTER_418,horse_man,Plant_8] 0
-x[CLUSTER_418,horse_man,Plant_9] 0.0001449
+x[CLUSTER_418,horse_man,Plant_9] 0
 x[CLUSTER_418,pig_slu,Plant_0] 0
 x[CLUSTER_418,pig_slu,Plant_1] 0
 x[CLUSTER_418,pig_slu,Plant_2] 0
@@ -42787,7 +42787,7 @@ x[CLUSTER_418,pig_man,Plant_3] 0
 x[CLUSTER_418,pig_man,Plant_4] 0
 x[CLUSTER_418,pig_man,Plant_5] 0
 x[CLUSTER_418,pig_man,Plant_6] 0
-x[CLUSTER_418,pig_man,Plant_7] 0.000116425
+x[CLUSTER_418,pig_man,Plant_7] 0
 x[CLUSTER_418,pig_man,Plant_8] 0
 x[CLUSTER_418,pig_man,Plant_9] 0
 x[CLUSTER_418,cereal_str,Plant_0] 0
@@ -42809,7 +42809,7 @@ x[CLUSTER_418,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_418,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_418,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_418,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_418,clover_alfalfa_grass,Plant_9] 0.000893
+x[CLUSTER_418,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_418,perm_grass,Plant_0] 0
 x[CLUSTER_418,perm_grass,Plant_1] 0
 x[CLUSTER_418,perm_grass,Plant_2] 0
@@ -42829,7 +42829,7 @@ x[CLUSTER_418,maize_str,Plant_5] 0
 x[CLUSTER_418,maize_str,Plant_6] 0
 x[CLUSTER_418,maize_str,Plant_7] 0
 x[CLUSTER_418,maize_str,Plant_8] 0
-x[CLUSTER_418,maize_str,Plant_9] 0.00024758
+x[CLUSTER_418,maize_str,Plant_9] 0
 x[CLUSTER_418,beet_leaf,Plant_0] 0
 x[CLUSTER_418,beet_leaf,Plant_1] 0
 x[CLUSTER_418,beet_leaf,Plant_2] 0
@@ -42864,7 +42864,7 @@ x[CLUSTER_419,cattle_man,Plant_0] 0
 x[CLUSTER_419,cattle_man,Plant_1] 0
 x[CLUSTER_419,cattle_man,Plant_2] 0
 x[CLUSTER_419,cattle_man,Plant_3] 0
-x[CLUSTER_419,cattle_man,Plant_4] 0.002304
+x[CLUSTER_419,cattle_man,Plant_4] 0
 x[CLUSTER_419,cattle_man,Plant_5] 0
 x[CLUSTER_419,cattle_man,Plant_6] 0
 x[CLUSTER_419,cattle_man,Plant_7] 0
@@ -42874,7 +42874,7 @@ x[CLUSTER_419,cattle_slu,Plant_0] 0
 x[CLUSTER_419,cattle_slu,Plant_1] 0
 x[CLUSTER_419,cattle_slu,Plant_2] 0
 x[CLUSTER_419,cattle_slu,Plant_3] 0
-x[CLUSTER_419,cattle_slu,Plant_4] 0.011373
+x[CLUSTER_419,cattle_slu,Plant_4] 0
 x[CLUSTER_419,cattle_slu,Plant_5] 0
 x[CLUSTER_419,cattle_slu,Plant_6] 0
 x[CLUSTER_419,cattle_slu,Plant_7] 0
@@ -42884,7 +42884,7 @@ x[CLUSTER_419,horse_man,Plant_0] 0
 x[CLUSTER_419,horse_man,Plant_1] 0
 x[CLUSTER_419,horse_man,Plant_2] 0
 x[CLUSTER_419,horse_man,Plant_3] 0
-x[CLUSTER_419,horse_man,Plant_4] 0.000791
+x[CLUSTER_419,horse_man,Plant_4] 0
 x[CLUSTER_419,horse_man,Plant_5] 0
 x[CLUSTER_419,horse_man,Plant_6] 0
 x[CLUSTER_419,horse_man,Plant_7] 0
@@ -42904,7 +42904,7 @@ x[CLUSTER_419,pig_man,Plant_0] 0
 x[CLUSTER_419,pig_man,Plant_1] 0
 x[CLUSTER_419,pig_man,Plant_2] 0
 x[CLUSTER_419,pig_man,Plant_3] 0
-x[CLUSTER_419,pig_man,Plant_4] 6.291952e-05
+x[CLUSTER_419,pig_man,Plant_4] 0
 x[CLUSTER_419,pig_man,Plant_5] 0
 x[CLUSTER_419,pig_man,Plant_6] 0
 x[CLUSTER_419,pig_man,Plant_7] 0
@@ -42944,7 +42944,7 @@ x[CLUSTER_419,maize_str,Plant_0] 0
 x[CLUSTER_419,maize_str,Plant_1] 0
 x[CLUSTER_419,maize_str,Plant_2] 0
 x[CLUSTER_419,maize_str,Plant_3] 0
-x[CLUSTER_419,maize_str,Plant_4] 2.34e-05
+x[CLUSTER_419,maize_str,Plant_4] 0
 x[CLUSTER_419,maize_str,Plant_5] 0
 x[CLUSTER_419,maize_str,Plant_6] 0
 x[CLUSTER_419,maize_str,Plant_7] 0
@@ -42988,7 +42988,7 @@ x[CLUSTER_42,cattle_man,Plant_4] 0
 x[CLUSTER_42,cattle_man,Plant_5] 0
 x[CLUSTER_42,cattle_man,Plant_6] 0
 x[CLUSTER_42,cattle_man,Plant_7] 0
-x[CLUSTER_42,cattle_man,Plant_8] 0.015075
+x[CLUSTER_42,cattle_man,Plant_8] 0
 x[CLUSTER_42,cattle_man,Plant_9] 0
 x[CLUSTER_42,cattle_slu,Plant_0] 0
 x[CLUSTER_42,cattle_slu,Plant_1] 0
@@ -42998,7 +42998,7 @@ x[CLUSTER_42,cattle_slu,Plant_4] 0
 x[CLUSTER_42,cattle_slu,Plant_5] 0
 x[CLUSTER_42,cattle_slu,Plant_6] 0
 x[CLUSTER_42,cattle_slu,Plant_7] 0
-x[CLUSTER_42,cattle_slu,Plant_8] 0.06893
+x[CLUSTER_42,cattle_slu,Plant_8] 0
 x[CLUSTER_42,cattle_slu,Plant_9] 0
 x[CLUSTER_42,horse_man,Plant_0] 0
 x[CLUSTER_42,horse_man,Plant_1] 0
@@ -43008,7 +43008,7 @@ x[CLUSTER_42,horse_man,Plant_4] 0
 x[CLUSTER_42,horse_man,Plant_5] 0
 x[CLUSTER_42,horse_man,Plant_6] 0
 x[CLUSTER_42,horse_man,Plant_7] 0
-x[CLUSTER_42,horse_man,Plant_8] 0.0010975
+x[CLUSTER_42,horse_man,Plant_8] 0
 x[CLUSTER_42,horse_man,Plant_9] 0
 x[CLUSTER_42,pig_slu,Plant_0] 0
 x[CLUSTER_42,pig_slu,Plant_1] 0
@@ -43028,7 +43028,7 @@ x[CLUSTER_42,pig_man,Plant_4] 0
 x[CLUSTER_42,pig_man,Plant_5] 0
 x[CLUSTER_42,pig_man,Plant_6] 0
 x[CLUSTER_42,pig_man,Plant_7] 0
-x[CLUSTER_42,pig_man,Plant_8] 0.0018045
+x[CLUSTER_42,pig_man,Plant_8] 0
 x[CLUSTER_42,pig_man,Plant_9] 0
 x[CLUSTER_42,cereal_str,Plant_0] 0
 x[CLUSTER_42,cereal_str,Plant_1] 0
@@ -43102,7 +43102,7 @@ x[CLUSTER_42,legume_str,Plant_8] 0
 x[CLUSTER_42,legume_str,Plant_9] 0
 x[CLUSTER_420,cattle_man,Plant_0] 0
 x[CLUSTER_420,cattle_man,Plant_1] 0
-x[CLUSTER_420,cattle_man,Plant_2] 0.007064
+x[CLUSTER_420,cattle_man,Plant_2] 0
 x[CLUSTER_420,cattle_man,Plant_3] 0
 x[CLUSTER_420,cattle_man,Plant_4] 0
 x[CLUSTER_420,cattle_man,Plant_5] 0
@@ -43122,7 +43122,7 @@ x[CLUSTER_420,cattle_slu,Plant_8] 0
 x[CLUSTER_420,cattle_slu,Plant_9] 0
 x[CLUSTER_420,horse_man,Plant_0] 0
 x[CLUSTER_420,horse_man,Plant_1] 0
-x[CLUSTER_420,horse_man,Plant_2] 0.00031577
+x[CLUSTER_420,horse_man,Plant_2] 0
 x[CLUSTER_420,horse_man,Plant_3] 0
 x[CLUSTER_420,horse_man,Plant_4] 0
 x[CLUSTER_420,horse_man,Plant_5] 0
@@ -43142,7 +43142,7 @@ x[CLUSTER_420,pig_slu,Plant_8] 0
 x[CLUSTER_420,pig_slu,Plant_9] 0
 x[CLUSTER_420,pig_man,Plant_0] 0
 x[CLUSTER_420,pig_man,Plant_1] 0
-x[CLUSTER_420,pig_man,Plant_2] 0.0004125
+x[CLUSTER_420,pig_man,Plant_2] 0
 x[CLUSTER_420,pig_man,Plant_3] 0
 x[CLUSTER_420,pig_man,Plant_4] 0
 x[CLUSTER_420,pig_man,Plant_5] 0
@@ -43169,7 +43169,7 @@ x[CLUSTER_420,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_420,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_420,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_420,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_420,clover_alfalfa_grass,Plant_9] 4.9838443041986258e-03
+x[CLUSTER_420,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_420,perm_grass,Plant_0] 0
 x[CLUSTER_420,perm_grass,Plant_1] 0
 x[CLUSTER_420,perm_grass,Plant_2] 0
@@ -43189,7 +43189,7 @@ x[CLUSTER_420,maize_str,Plant_5] 0
 x[CLUSTER_420,maize_str,Plant_6] 0
 x[CLUSTER_420,maize_str,Plant_7] 0
 x[CLUSTER_420,maize_str,Plant_8] 0
-x[CLUSTER_420,maize_str,Plant_9] 1.83e-05
+x[CLUSTER_420,maize_str,Plant_9] 0
 x[CLUSTER_420,beet_leaf,Plant_0] 0
 x[CLUSTER_420,beet_leaf,Plant_1] 0
 x[CLUSTER_420,beet_leaf,Plant_2] 0
@@ -43222,7 +43222,7 @@ x[CLUSTER_420,legume_str,Plant_8] 0
 x[CLUSTER_420,legume_str,Plant_9] 0
 x[CLUSTER_421,cattle_man,Plant_0] 0
 x[CLUSTER_421,cattle_man,Plant_1] 0
-x[CLUSTER_421,cattle_man,Plant_2] 0.002121
+x[CLUSTER_421,cattle_man,Plant_2] 0
 x[CLUSTER_421,cattle_man,Plant_3] 0
 x[CLUSTER_421,cattle_man,Plant_4] 0
 x[CLUSTER_421,cattle_man,Plant_5] 0
@@ -43242,7 +43242,7 @@ x[CLUSTER_421,cattle_slu,Plant_8] 0
 x[CLUSTER_421,cattle_slu,Plant_9] 0
 x[CLUSTER_421,horse_man,Plant_0] 0
 x[CLUSTER_421,horse_man,Plant_1] 0
-x[CLUSTER_421,horse_man,Plant_2] 0.0008026
+x[CLUSTER_421,horse_man,Plant_2] 0
 x[CLUSTER_421,horse_man,Plant_3] 0
 x[CLUSTER_421,horse_man,Plant_4] 0
 x[CLUSTER_421,horse_man,Plant_5] 0
@@ -43289,7 +43289,7 @@ x[CLUSTER_421,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_421,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_421,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_421,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_421,clover_alfalfa_grass,Plant_9] 0.005187
+x[CLUSTER_421,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_421,perm_grass,Plant_0] 0
 x[CLUSTER_421,perm_grass,Plant_1] 0
 x[CLUSTER_421,perm_grass,Plant_2] 0
@@ -43309,7 +43309,7 @@ x[CLUSTER_421,maize_str,Plant_5] 0
 x[CLUSTER_421,maize_str,Plant_6] 0
 x[CLUSTER_421,maize_str,Plant_7] 0
 x[CLUSTER_421,maize_str,Plant_8] 0
-x[CLUSTER_421,maize_str,Plant_9] 0.0002771
+x[CLUSTER_421,maize_str,Plant_9] 0
 x[CLUSTER_421,beet_leaf,Plant_0] 0
 x[CLUSTER_421,beet_leaf,Plant_1] 0
 x[CLUSTER_421,beet_leaf,Plant_2] 0
@@ -43341,7 +43341,7 @@ x[CLUSTER_421,legume_str,Plant_7] 0
 x[CLUSTER_421,legume_str,Plant_8] 0
 x[CLUSTER_421,legume_str,Plant_9] 0
 x[CLUSTER_422,cattle_man,Plant_0] 0
-x[CLUSTER_422,cattle_man,Plant_1] 0.00467
+x[CLUSTER_422,cattle_man,Plant_1] 0
 x[CLUSTER_422,cattle_man,Plant_2] 0
 x[CLUSTER_422,cattle_man,Plant_3] 0
 x[CLUSTER_422,cattle_man,Plant_4] 0
@@ -43361,7 +43361,7 @@ x[CLUSTER_422,cattle_slu,Plant_7] 0
 x[CLUSTER_422,cattle_slu,Plant_8] 0
 x[CLUSTER_422,cattle_slu,Plant_9] 0
 x[CLUSTER_422,horse_man,Plant_0] 0
-x[CLUSTER_422,horse_man,Plant_1] 0.001414
+x[CLUSTER_422,horse_man,Plant_1] 0
 x[CLUSTER_422,horse_man,Plant_2] 0
 x[CLUSTER_422,horse_man,Plant_3] 0
 x[CLUSTER_422,horse_man,Plant_4] 0
@@ -43465,7 +43465,7 @@ x[CLUSTER_423,cattle_man,Plant_1] 0
 x[CLUSTER_423,cattle_man,Plant_2] 0
 x[CLUSTER_423,cattle_man,Plant_3] 0
 x[CLUSTER_423,cattle_man,Plant_4] 0
-x[CLUSTER_423,cattle_man,Plant_5] 0.02238
+x[CLUSTER_423,cattle_man,Plant_5] 0
 x[CLUSTER_423,cattle_man,Plant_6] 0
 x[CLUSTER_423,cattle_man,Plant_7] 0
 x[CLUSTER_423,cattle_man,Plant_8] 0
@@ -43485,7 +43485,7 @@ x[CLUSTER_423,horse_man,Plant_1] 0
 x[CLUSTER_423,horse_man,Plant_2] 0
 x[CLUSTER_423,horse_man,Plant_3] 0
 x[CLUSTER_423,horse_man,Plant_4] 0
-x[CLUSTER_423,horse_man,Plant_5] 1.6780106000000002e-03
+x[CLUSTER_423,horse_man,Plant_5] 0
 x[CLUSTER_423,horse_man,Plant_6] 0
 x[CLUSTER_423,horse_man,Plant_7] 0
 x[CLUSTER_423,horse_man,Plant_8] 0
@@ -43505,7 +43505,7 @@ x[CLUSTER_423,pig_man,Plant_1] 0
 x[CLUSTER_423,pig_man,Plant_2] 0
 x[CLUSTER_423,pig_man,Plant_3] 0
 x[CLUSTER_423,pig_man,Plant_4] 0
-x[CLUSTER_423,pig_man,Plant_5] 0.000669519
+x[CLUSTER_423,pig_man,Plant_5] 0
 x[CLUSTER_423,pig_man,Plant_6] 0
 x[CLUSTER_423,pig_man,Plant_7] 0
 x[CLUSTER_423,pig_man,Plant_8] 0
@@ -43587,7 +43587,7 @@ x[CLUSTER_424,cattle_man,Plant_3] 0
 x[CLUSTER_424,cattle_man,Plant_4] 0
 x[CLUSTER_424,cattle_man,Plant_5] 0
 x[CLUSTER_424,cattle_man,Plant_6] 0
-x[CLUSTER_424,cattle_man,Plant_7] 0.006654
+x[CLUSTER_424,cattle_man,Plant_7] 0
 x[CLUSTER_424,cattle_man,Plant_8] 0
 x[CLUSTER_424,cattle_man,Plant_9] 0
 x[CLUSTER_424,cattle_slu,Plant_0] 0
@@ -43597,7 +43597,7 @@ x[CLUSTER_424,cattle_slu,Plant_3] 0
 x[CLUSTER_424,cattle_slu,Plant_4] 0
 x[CLUSTER_424,cattle_slu,Plant_5] 0
 x[CLUSTER_424,cattle_slu,Plant_6] 0
-x[CLUSTER_424,cattle_slu,Plant_7] 0.00101
+x[CLUSTER_424,cattle_slu,Plant_7] 0
 x[CLUSTER_424,cattle_slu,Plant_8] 0
 x[CLUSTER_424,cattle_slu,Plant_9] 0
 x[CLUSTER_424,horse_man,Plant_0] 0
@@ -43607,7 +43607,7 @@ x[CLUSTER_424,horse_man,Plant_3] 0
 x[CLUSTER_424,horse_man,Plant_4] 0
 x[CLUSTER_424,horse_man,Plant_5] 0
 x[CLUSTER_424,horse_man,Plant_6] 0
-x[CLUSTER_424,horse_man,Plant_7] 0.00087904
+x[CLUSTER_424,horse_man,Plant_7] 0
 x[CLUSTER_424,horse_man,Plant_8] 0
 x[CLUSTER_424,horse_man,Plant_9] 0
 x[CLUSTER_424,pig_slu,Plant_0] 0
@@ -43617,7 +43617,7 @@ x[CLUSTER_424,pig_slu,Plant_3] 0
 x[CLUSTER_424,pig_slu,Plant_4] 0
 x[CLUSTER_424,pig_slu,Plant_5] 0
 x[CLUSTER_424,pig_slu,Plant_6] 0
-x[CLUSTER_424,pig_slu,Plant_7] 0.00176608
+x[CLUSTER_424,pig_slu,Plant_7] 0
 x[CLUSTER_424,pig_slu,Plant_8] 0
 x[CLUSTER_424,pig_slu,Plant_9] 0
 x[CLUSTER_424,pig_man,Plant_0] 0
@@ -43627,7 +43627,7 @@ x[CLUSTER_424,pig_man,Plant_3] 0
 x[CLUSTER_424,pig_man,Plant_4] 0
 x[CLUSTER_424,pig_man,Plant_5] 0
 x[CLUSTER_424,pig_man,Plant_6] 0
-x[CLUSTER_424,pig_man,Plant_7] 0.000185966
+x[CLUSTER_424,pig_man,Plant_7] 0
 x[CLUSTER_424,pig_man,Plant_8] 0
 x[CLUSTER_424,pig_man,Plant_9] 0
 x[CLUSTER_424,cereal_str,Plant_0] 0
@@ -43702,7 +43702,7 @@ x[CLUSTER_424,legume_str,Plant_8] 0
 x[CLUSTER_424,legume_str,Plant_9] 0
 x[CLUSTER_425,cattle_man,Plant_0] 0
 x[CLUSTER_425,cattle_man,Plant_1] 0
-x[CLUSTER_425,cattle_man,Plant_2] 0.00251295
+x[CLUSTER_425,cattle_man,Plant_2] 0
 x[CLUSTER_425,cattle_man,Plant_3] 0
 x[CLUSTER_425,cattle_man,Plant_4] 0
 x[CLUSTER_425,cattle_man,Plant_5] 0
@@ -43722,7 +43722,7 @@ x[CLUSTER_425,cattle_slu,Plant_8] 0
 x[CLUSTER_425,cattle_slu,Plant_9] 0
 x[CLUSTER_425,horse_man,Plant_0] 0
 x[CLUSTER_425,horse_man,Plant_1] 0
-x[CLUSTER_425,horse_man,Plant_2] 0.0005266
+x[CLUSTER_425,horse_man,Plant_2] 0
 x[CLUSTER_425,horse_man,Plant_3] 0
 x[CLUSTER_425,horse_man,Plant_4] 0
 x[CLUSTER_425,horse_man,Plant_5] 0
@@ -43742,7 +43742,7 @@ x[CLUSTER_425,pig_slu,Plant_8] 0
 x[CLUSTER_425,pig_slu,Plant_9] 0
 x[CLUSTER_425,pig_man,Plant_0] 0
 x[CLUSTER_425,pig_man,Plant_1] 0
-x[CLUSTER_425,pig_man,Plant_2] 1.4561e-05
+x[CLUSTER_425,pig_man,Plant_2] 0
 x[CLUSTER_425,pig_man,Plant_3] 0
 x[CLUSTER_425,pig_man,Plant_4] 0
 x[CLUSTER_425,pig_man,Plant_5] 0
@@ -43769,7 +43769,7 @@ x[CLUSTER_425,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_425,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_425,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_425,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_425,clover_alfalfa_grass,Plant_9] 1.6022999999999999e-03
+x[CLUSTER_425,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_425,perm_grass,Plant_0] 0
 x[CLUSTER_425,perm_grass,Plant_1] 0
 x[CLUSTER_425,perm_grass,Plant_2] 0
@@ -43789,7 +43789,7 @@ x[CLUSTER_425,maize_str,Plant_5] 0
 x[CLUSTER_425,maize_str,Plant_6] 0
 x[CLUSTER_425,maize_str,Plant_7] 0
 x[CLUSTER_425,maize_str,Plant_8] 0
-x[CLUSTER_425,maize_str,Plant_9] 6.434e-05
+x[CLUSTER_425,maize_str,Plant_9] 0
 x[CLUSTER_425,beet_leaf,Plant_0] 0
 x[CLUSTER_425,beet_leaf,Plant_1] 0
 x[CLUSTER_425,beet_leaf,Plant_2] 0
@@ -43827,7 +43827,7 @@ x[CLUSTER_426,cattle_man,Plant_3] 0
 x[CLUSTER_426,cattle_man,Plant_4] 0
 x[CLUSTER_426,cattle_man,Plant_5] 0
 x[CLUSTER_426,cattle_man,Plant_6] 0
-x[CLUSTER_426,cattle_man,Plant_7] 0.005784
+x[CLUSTER_426,cattle_man,Plant_7] 0
 x[CLUSTER_426,cattle_man,Plant_8] 0
 x[CLUSTER_426,cattle_man,Plant_9] 0
 x[CLUSTER_426,cattle_slu,Plant_0] 0
@@ -43837,7 +43837,7 @@ x[CLUSTER_426,cattle_slu,Plant_3] 0
 x[CLUSTER_426,cattle_slu,Plant_4] 0
 x[CLUSTER_426,cattle_slu,Plant_5] 0
 x[CLUSTER_426,cattle_slu,Plant_6] 0
-x[CLUSTER_426,cattle_slu,Plant_7] 0.00744
+x[CLUSTER_426,cattle_slu,Plant_7] 0
 x[CLUSTER_426,cattle_slu,Plant_8] 0
 x[CLUSTER_426,cattle_slu,Plant_9] 0
 x[CLUSTER_426,horse_man,Plant_0] 0
@@ -43847,7 +43847,7 @@ x[CLUSTER_426,horse_man,Plant_3] 0
 x[CLUSTER_426,horse_man,Plant_4] 0
 x[CLUSTER_426,horse_man,Plant_5] 0
 x[CLUSTER_426,horse_man,Plant_6] 0
-x[CLUSTER_426,horse_man,Plant_7] 0.0039622
+x[CLUSTER_426,horse_man,Plant_7] 0
 x[CLUSTER_426,horse_man,Plant_8] 0
 x[CLUSTER_426,horse_man,Plant_9] 0
 x[CLUSTER_426,pig_slu,Plant_0] 0
@@ -43867,7 +43867,7 @@ x[CLUSTER_426,pig_man,Plant_3] 0
 x[CLUSTER_426,pig_man,Plant_4] 0
 x[CLUSTER_426,pig_man,Plant_5] 0
 x[CLUSTER_426,pig_man,Plant_6] 0
-x[CLUSTER_426,pig_man,Plant_7] 4.6732999999999995e-05
+x[CLUSTER_426,pig_man,Plant_7] 0
 x[CLUSTER_426,pig_man,Plant_8] 0
 x[CLUSTER_426,pig_man,Plant_9] 0
 x[CLUSTER_426,cereal_str,Plant_0] 0
@@ -43948,7 +43948,7 @@ x[CLUSTER_427,cattle_man,Plant_4] 0
 x[CLUSTER_427,cattle_man,Plant_5] 0
 x[CLUSTER_427,cattle_man,Plant_6] 0
 x[CLUSTER_427,cattle_man,Plant_7] 0
-x[CLUSTER_427,cattle_man,Plant_8] 0.00893
+x[CLUSTER_427,cattle_man,Plant_8] 0
 x[CLUSTER_427,cattle_man,Plant_9] 0
 x[CLUSTER_427,cattle_slu,Plant_0] 0
 x[CLUSTER_427,cattle_slu,Plant_1] 0
@@ -43958,7 +43958,7 @@ x[CLUSTER_427,cattle_slu,Plant_4] 0
 x[CLUSTER_427,cattle_slu,Plant_5] 0
 x[CLUSTER_427,cattle_slu,Plant_6] 0
 x[CLUSTER_427,cattle_slu,Plant_7] 0
-x[CLUSTER_427,cattle_slu,Plant_8] 0.02566
+x[CLUSTER_427,cattle_slu,Plant_8] 0
 x[CLUSTER_427,cattle_slu,Plant_9] 0
 x[CLUSTER_427,horse_man,Plant_0] 0
 x[CLUSTER_427,horse_man,Plant_1] 0
@@ -43968,7 +43968,7 @@ x[CLUSTER_427,horse_man,Plant_4] 0
 x[CLUSTER_427,horse_man,Plant_5] 0
 x[CLUSTER_427,horse_man,Plant_6] 0
 x[CLUSTER_427,horse_man,Plant_7] 0
-x[CLUSTER_427,horse_man,Plant_8] 3.1045000000000230e-03
+x[CLUSTER_427,horse_man,Plant_8] 0
 x[CLUSTER_427,horse_man,Plant_9] 0
 x[CLUSTER_427,pig_slu,Plant_0] 0
 x[CLUSTER_427,pig_slu,Plant_1] 0
@@ -43988,7 +43988,7 @@ x[CLUSTER_427,pig_man,Plant_4] 0
 x[CLUSTER_427,pig_man,Plant_5] 0
 x[CLUSTER_427,pig_man,Plant_6] 0
 x[CLUSTER_427,pig_man,Plant_7] 0
-x[CLUSTER_427,pig_man,Plant_8] 0.0007992
+x[CLUSTER_427,pig_man,Plant_8] 0
 x[CLUSTER_427,pig_man,Plant_9] 0
 x[CLUSTER_427,cereal_str,Plant_0] 0
 x[CLUSTER_427,cereal_str,Plant_1] 0
@@ -44068,7 +44068,7 @@ x[CLUSTER_428,cattle_man,Plant_4] 0
 x[CLUSTER_428,cattle_man,Plant_5] 0
 x[CLUSTER_428,cattle_man,Plant_6] 0
 x[CLUSTER_428,cattle_man,Plant_7] 0
-x[CLUSTER_428,cattle_man,Plant_8] 0.0065
+x[CLUSTER_428,cattle_man,Plant_8] 0
 x[CLUSTER_428,cattle_man,Plant_9] 0
 x[CLUSTER_428,cattle_slu,Plant_0] 0
 x[CLUSTER_428,cattle_slu,Plant_1] 0
@@ -44088,7 +44088,7 @@ x[CLUSTER_428,horse_man,Plant_4] 0
 x[CLUSTER_428,horse_man,Plant_5] 0
 x[CLUSTER_428,horse_man,Plant_6] 0
 x[CLUSTER_428,horse_man,Plant_7] 0
-x[CLUSTER_428,horse_man,Plant_8] 0.000792
+x[CLUSTER_428,horse_man,Plant_8] 0
 x[CLUSTER_428,horse_man,Plant_9] 0
 x[CLUSTER_428,pig_slu,Plant_0] 0
 x[CLUSTER_428,pig_slu,Plant_1] 0
@@ -44108,7 +44108,7 @@ x[CLUSTER_428,pig_man,Plant_4] 0
 x[CLUSTER_428,pig_man,Plant_5] 0
 x[CLUSTER_428,pig_man,Plant_6] 0
 x[CLUSTER_428,pig_man,Plant_7] 0
-x[CLUSTER_428,pig_man,Plant_8] 5.8397e-05
+x[CLUSTER_428,pig_man,Plant_8] 0
 x[CLUSTER_428,pig_man,Plant_9] 0
 x[CLUSTER_428,cereal_str,Plant_0] 0
 x[CLUSTER_428,cereal_str,Plant_1] 0
@@ -44180,7 +44180,7 @@ x[CLUSTER_428,legume_str,Plant_6] 0
 x[CLUSTER_428,legume_str,Plant_7] 0
 x[CLUSTER_428,legume_str,Plant_8] 0
 x[CLUSTER_428,legume_str,Plant_9] 0
-x[CLUSTER_429,cattle_man,Plant_0] 6.4200000000004167e-03
+x[CLUSTER_429,cattle_man,Plant_0] 0
 x[CLUSTER_429,cattle_man,Plant_1] 0
 x[CLUSTER_429,cattle_man,Plant_2] 0
 x[CLUSTER_429,cattle_man,Plant_3] 0
@@ -44200,7 +44200,7 @@ x[CLUSTER_429,cattle_slu,Plant_6] 0
 x[CLUSTER_429,cattle_slu,Plant_7] 0
 x[CLUSTER_429,cattle_slu,Plant_8] 0
 x[CLUSTER_429,cattle_slu,Plant_9] 0
-x[CLUSTER_429,horse_man,Plant_0] 0.000723
+x[CLUSTER_429,horse_man,Plant_0] 0
 x[CLUSTER_429,horse_man,Plant_1] 0
 x[CLUSTER_429,horse_man,Plant_2] 0
 x[CLUSTER_429,horse_man,Plant_3] 0
@@ -44260,7 +44260,7 @@ x[CLUSTER_429,perm_grass,Plant_6] 0
 x[CLUSTER_429,perm_grass,Plant_7] 0
 x[CLUSTER_429,perm_grass,Plant_8] 0
 x[CLUSTER_429,perm_grass,Plant_9] 0
-x[CLUSTER_429,maize_str,Plant_0] 9.05e-05
+x[CLUSTER_429,maize_str,Plant_0] 0
 x[CLUSTER_429,maize_str,Plant_1] 0
 x[CLUSTER_429,maize_str,Plant_2] 0
 x[CLUSTER_429,maize_str,Plant_3] 0
@@ -44305,7 +44305,7 @@ x[CLUSTER_43,cattle_man,Plant_1] 0
 x[CLUSTER_43,cattle_man,Plant_2] 0
 x[CLUSTER_43,cattle_man,Plant_3] 0
 x[CLUSTER_43,cattle_man,Plant_4] 0
-x[CLUSTER_43,cattle_man,Plant_5] 0.00069737
+x[CLUSTER_43,cattle_man,Plant_5] 0
 x[CLUSTER_43,cattle_man,Plant_6] 0
 x[CLUSTER_43,cattle_man,Plant_7] 0
 x[CLUSTER_43,cattle_man,Plant_8] 0
@@ -44325,7 +44325,7 @@ x[CLUSTER_43,horse_man,Plant_1] 0
 x[CLUSTER_43,horse_man,Plant_2] 0
 x[CLUSTER_43,horse_man,Plant_3] 0
 x[CLUSTER_43,horse_man,Plant_4] 0
-x[CLUSTER_43,horse_man,Plant_5] 1.6091999999999999e-03
+x[CLUSTER_43,horse_man,Plant_5] 0
 x[CLUSTER_43,horse_man,Plant_6] 0
 x[CLUSTER_43,horse_man,Plant_7] 0
 x[CLUSTER_43,horse_man,Plant_8] 0
@@ -44345,7 +44345,7 @@ x[CLUSTER_43,pig_man,Plant_1] 0
 x[CLUSTER_43,pig_man,Plant_2] 0
 x[CLUSTER_43,pig_man,Plant_3] 0
 x[CLUSTER_43,pig_man,Plant_4] 0
-x[CLUSTER_43,pig_man,Plant_5] 3.65e-05
+x[CLUSTER_43,pig_man,Plant_5] 0
 x[CLUSTER_43,pig_man,Plant_6] 0
 x[CLUSTER_43,pig_man,Plant_7] 0
 x[CLUSTER_43,pig_man,Plant_8] 0
@@ -44427,7 +44427,7 @@ x[CLUSTER_430,cattle_man,Plant_3] 0
 x[CLUSTER_430,cattle_man,Plant_4] 0
 x[CLUSTER_430,cattle_man,Plant_5] 0
 x[CLUSTER_430,cattle_man,Plant_6] 0
-x[CLUSTER_430,cattle_man,Plant_7] 0.00118
+x[CLUSTER_430,cattle_man,Plant_7] 0
 x[CLUSTER_430,cattle_man,Plant_8] 0
 x[CLUSTER_430,cattle_man,Plant_9] 0
 x[CLUSTER_430,cattle_slu,Plant_0] 0
@@ -44447,7 +44447,7 @@ x[CLUSTER_430,horse_man,Plant_3] 0
 x[CLUSTER_430,horse_man,Plant_4] 0
 x[CLUSTER_430,horse_man,Plant_5] 0
 x[CLUSTER_430,horse_man,Plant_6] 0
-x[CLUSTER_430,horse_man,Plant_7] 0.00048
+x[CLUSTER_430,horse_man,Plant_7] 0
 x[CLUSTER_430,horse_man,Plant_8] 0
 x[CLUSTER_430,horse_man,Plant_9] 0
 x[CLUSTER_430,pig_slu,Plant_0] 0
@@ -44467,7 +44467,7 @@ x[CLUSTER_430,pig_man,Plant_3] 0
 x[CLUSTER_430,pig_man,Plant_4] 0
 x[CLUSTER_430,pig_man,Plant_5] 0
 x[CLUSTER_430,pig_man,Plant_6] 0
-x[CLUSTER_430,pig_man,Plant_7] 0.000159375
+x[CLUSTER_430,pig_man,Plant_7] 0
 x[CLUSTER_430,pig_man,Plant_8] 0
 x[CLUSTER_430,pig_man,Plant_9] 0
 x[CLUSTER_430,cereal_str,Plant_0] 0
@@ -44489,7 +44489,7 @@ x[CLUSTER_430,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_430,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_430,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_430,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_430,clover_alfalfa_grass,Plant_9] 0.000633
+x[CLUSTER_430,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_430,perm_grass,Plant_0] 0
 x[CLUSTER_430,perm_grass,Plant_1] 0
 x[CLUSTER_430,perm_grass,Plant_2] 0
@@ -44509,7 +44509,7 @@ x[CLUSTER_430,maize_str,Plant_5] 0
 x[CLUSTER_430,maize_str,Plant_6] 0
 x[CLUSTER_430,maize_str,Plant_7] 0
 x[CLUSTER_430,maize_str,Plant_8] 0
-x[CLUSTER_430,maize_str,Plant_9] 5.9930000000000004e-05
+x[CLUSTER_430,maize_str,Plant_9] 0
 x[CLUSTER_430,beet_leaf,Plant_0] 0
 x[CLUSTER_430,beet_leaf,Plant_1] 0
 x[CLUSTER_430,beet_leaf,Plant_2] 0
@@ -44545,7 +44545,7 @@ x[CLUSTER_431,cattle_man,Plant_1] 0
 x[CLUSTER_431,cattle_man,Plant_2] 0
 x[CLUSTER_431,cattle_man,Plant_3] 0
 x[CLUSTER_431,cattle_man,Plant_4] 0
-x[CLUSTER_431,cattle_man,Plant_5] 0.0039002
+x[CLUSTER_431,cattle_man,Plant_5] 0
 x[CLUSTER_431,cattle_man,Plant_6] 0
 x[CLUSTER_431,cattle_man,Plant_7] 0
 x[CLUSTER_431,cattle_man,Plant_8] 0
@@ -44555,7 +44555,7 @@ x[CLUSTER_431,cattle_slu,Plant_1] 0
 x[CLUSTER_431,cattle_slu,Plant_2] 0
 x[CLUSTER_431,cattle_slu,Plant_3] 0
 x[CLUSTER_431,cattle_slu,Plant_4] 0
-x[CLUSTER_431,cattle_slu,Plant_5] 0.013763
+x[CLUSTER_431,cattle_slu,Plant_5] 0
 x[CLUSTER_431,cattle_slu,Plant_6] 0
 x[CLUSTER_431,cattle_slu,Plant_7] 0
 x[CLUSTER_431,cattle_slu,Plant_8] 0
@@ -44565,7 +44565,7 @@ x[CLUSTER_431,horse_man,Plant_1] 0
 x[CLUSTER_431,horse_man,Plant_2] 0
 x[CLUSTER_431,horse_man,Plant_3] 0
 x[CLUSTER_431,horse_man,Plant_4] 0
-x[CLUSTER_431,horse_man,Plant_5] 0.001912
+x[CLUSTER_431,horse_man,Plant_5] 0
 x[CLUSTER_431,horse_man,Plant_6] 0
 x[CLUSTER_431,horse_man,Plant_7] 0
 x[CLUSTER_431,horse_man,Plant_8] 0
@@ -44585,7 +44585,7 @@ x[CLUSTER_431,pig_man,Plant_1] 0
 x[CLUSTER_431,pig_man,Plant_2] 0
 x[CLUSTER_431,pig_man,Plant_3] 0
 x[CLUSTER_431,pig_man,Plant_4] 0
-x[CLUSTER_431,pig_man,Plant_5] 0.00023834
+x[CLUSTER_431,pig_man,Plant_5] 0
 x[CLUSTER_431,pig_man,Plant_6] 0
 x[CLUSTER_431,pig_man,Plant_7] 0
 x[CLUSTER_431,pig_man,Plant_8] 0
@@ -44668,7 +44668,7 @@ x[CLUSTER_432,cattle_man,Plant_4] 0
 x[CLUSTER_432,cattle_man,Plant_5] 0
 x[CLUSTER_432,cattle_man,Plant_6] 0
 x[CLUSTER_432,cattle_man,Plant_7] 0
-x[CLUSTER_432,cattle_man,Plant_8] 0.00334
+x[CLUSTER_432,cattle_man,Plant_8] 0
 x[CLUSTER_432,cattle_man,Plant_9] 0
 x[CLUSTER_432,cattle_slu,Plant_0] 0
 x[CLUSTER_432,cattle_slu,Plant_1] 0
@@ -44688,7 +44688,7 @@ x[CLUSTER_432,horse_man,Plant_4] 0
 x[CLUSTER_432,horse_man,Plant_5] 0
 x[CLUSTER_432,horse_man,Plant_6] 0
 x[CLUSTER_432,horse_man,Plant_7] 0
-x[CLUSTER_432,horse_man,Plant_8] 0.0011223
+x[CLUSTER_432,horse_man,Plant_8] 0
 x[CLUSTER_432,horse_man,Plant_9] 0
 x[CLUSTER_432,pig_slu,Plant_0] 0
 x[CLUSTER_432,pig_slu,Plant_1] 0
@@ -44708,7 +44708,7 @@ x[CLUSTER_432,pig_man,Plant_4] 0
 x[CLUSTER_432,pig_man,Plant_5] 0
 x[CLUSTER_432,pig_man,Plant_6] 0
 x[CLUSTER_432,pig_man,Plant_7] 0
-x[CLUSTER_432,pig_man,Plant_8] 8.01e-05
+x[CLUSTER_432,pig_man,Plant_8] 0
 x[CLUSTER_432,pig_man,Plant_9] 0
 x[CLUSTER_432,cereal_str,Plant_0] 0
 x[CLUSTER_432,cereal_str,Plant_1] 0
@@ -44782,7 +44782,7 @@ x[CLUSTER_432,legume_str,Plant_8] 0
 x[CLUSTER_432,legume_str,Plant_9] 0
 x[CLUSTER_433,cattle_man,Plant_0] 0
 x[CLUSTER_433,cattle_man,Plant_1] 0
-x[CLUSTER_433,cattle_man,Plant_2] 0.0044500297
+x[CLUSTER_433,cattle_man,Plant_2] 0
 x[CLUSTER_433,cattle_man,Plant_3] 0
 x[CLUSTER_433,cattle_man,Plant_4] 0
 x[CLUSTER_433,cattle_man,Plant_5] 0
@@ -44792,7 +44792,7 @@ x[CLUSTER_433,cattle_man,Plant_8] 0
 x[CLUSTER_433,cattle_man,Plant_9] 0
 x[CLUSTER_433,cattle_slu,Plant_0] 0
 x[CLUSTER_433,cattle_slu,Plant_1] 0
-x[CLUSTER_433,cattle_slu,Plant_2] 2.4749999999999675e-02
+x[CLUSTER_433,cattle_slu,Plant_2] 0
 x[CLUSTER_433,cattle_slu,Plant_3] 0
 x[CLUSTER_433,cattle_slu,Plant_4] 0
 x[CLUSTER_433,cattle_slu,Plant_5] 0
@@ -44802,7 +44802,7 @@ x[CLUSTER_433,cattle_slu,Plant_8] 0
 x[CLUSTER_433,cattle_slu,Plant_9] 0
 x[CLUSTER_433,horse_man,Plant_0] 0
 x[CLUSTER_433,horse_man,Plant_1] 0
-x[CLUSTER_433,horse_man,Plant_2] 0.001106
+x[CLUSTER_433,horse_man,Plant_2] 0
 x[CLUSTER_433,horse_man,Plant_3] 0
 x[CLUSTER_433,horse_man,Plant_4] 0
 x[CLUSTER_433,horse_man,Plant_5] 0
@@ -44822,7 +44822,7 @@ x[CLUSTER_433,pig_slu,Plant_8] 0
 x[CLUSTER_433,pig_slu,Plant_9] 0
 x[CLUSTER_433,pig_man,Plant_0] 0
 x[CLUSTER_433,pig_man,Plant_1] 0
-x[CLUSTER_433,pig_man,Plant_2] 0.000179118
+x[CLUSTER_433,pig_man,Plant_2] 0
 x[CLUSTER_433,pig_man,Plant_3] 0
 x[CLUSTER_433,pig_man,Plant_4] 0
 x[CLUSTER_433,pig_man,Plant_5] 0
@@ -44862,7 +44862,7 @@ x[CLUSTER_433,perm_grass,Plant_8] 0
 x[CLUSTER_433,perm_grass,Plant_9] 0
 x[CLUSTER_433,maize_str,Plant_0] 0
 x[CLUSTER_433,maize_str,Plant_1] 0
-x[CLUSTER_433,maize_str,Plant_2] 0.0001245
+x[CLUSTER_433,maize_str,Plant_2] 0
 x[CLUSTER_433,maize_str,Plant_3] 0
 x[CLUSTER_433,maize_str,Plant_4] 0
 x[CLUSTER_433,maize_str,Plant_5] 0
@@ -44901,7 +44901,7 @@ x[CLUSTER_433,legume_str,Plant_7] 0
 x[CLUSTER_433,legume_str,Plant_8] 0
 x[CLUSTER_433,legume_str,Plant_9] 0
 x[CLUSTER_434,cattle_man,Plant_0] 0
-x[CLUSTER_434,cattle_man,Plant_1] 0.01039
+x[CLUSTER_434,cattle_man,Plant_1] 0
 x[CLUSTER_434,cattle_man,Plant_2] 0
 x[CLUSTER_434,cattle_man,Plant_3] 0
 x[CLUSTER_434,cattle_man,Plant_4] 0
@@ -44921,7 +44921,7 @@ x[CLUSTER_434,cattle_slu,Plant_7] 0
 x[CLUSTER_434,cattle_slu,Plant_8] 0
 x[CLUSTER_434,cattle_slu,Plant_9] 0
 x[CLUSTER_434,horse_man,Plant_0] 0
-x[CLUSTER_434,horse_man,Plant_1] 0.0008164
+x[CLUSTER_434,horse_man,Plant_1] 0
 x[CLUSTER_434,horse_man,Plant_2] 0
 x[CLUSTER_434,horse_man,Plant_3] 0
 x[CLUSTER_434,horse_man,Plant_4] 0
@@ -45022,7 +45022,7 @@ x[CLUSTER_434,legume_str,Plant_8] 0
 x[CLUSTER_434,legume_str,Plant_9] 0
 x[CLUSTER_435,cattle_man,Plant_0] 0
 x[CLUSTER_435,cattle_man,Plant_1] 0
-x[CLUSTER_435,cattle_man,Plant_2] 3.9899999999998765e-03
+x[CLUSTER_435,cattle_man,Plant_2] 0
 x[CLUSTER_435,cattle_man,Plant_3] 0
 x[CLUSTER_435,cattle_man,Plant_4] 0
 x[CLUSTER_435,cattle_man,Plant_5] 0
@@ -45042,7 +45042,7 @@ x[CLUSTER_435,cattle_slu,Plant_8] 0
 x[CLUSTER_435,cattle_slu,Plant_9] 0
 x[CLUSTER_435,horse_man,Plant_0] 0
 x[CLUSTER_435,horse_man,Plant_1] 0
-x[CLUSTER_435,horse_man,Plant_2] 0.001508
+x[CLUSTER_435,horse_man,Plant_2] 0
 x[CLUSTER_435,horse_man,Plant_3] 0
 x[CLUSTER_435,horse_man,Plant_4] 0
 x[CLUSTER_435,horse_man,Plant_5] 0
@@ -45062,7 +45062,7 @@ x[CLUSTER_435,pig_slu,Plant_8] 0
 x[CLUSTER_435,pig_slu,Plant_9] 0
 x[CLUSTER_435,pig_man,Plant_0] 0
 x[CLUSTER_435,pig_man,Plant_1] 0
-x[CLUSTER_435,pig_man,Plant_2] 4.6490000000000004e-05
+x[CLUSTER_435,pig_man,Plant_2] 0
 x[CLUSTER_435,pig_man,Plant_3] 0
 x[CLUSTER_435,pig_man,Plant_4] 0
 x[CLUSTER_435,pig_man,Plant_5] 0
@@ -45143,7 +45143,7 @@ x[CLUSTER_435,legume_str,Plant_9] 0
 x[CLUSTER_436,cattle_man,Plant_0] 0
 x[CLUSTER_436,cattle_man,Plant_1] 0
 x[CLUSTER_436,cattle_man,Plant_2] 0
-x[CLUSTER_436,cattle_man,Plant_3] 0.01408
+x[CLUSTER_436,cattle_man,Plant_3] 0
 x[CLUSTER_436,cattle_man,Plant_4] 0
 x[CLUSTER_436,cattle_man,Plant_5] 0
 x[CLUSTER_436,cattle_man,Plant_6] 0
@@ -45163,7 +45163,7 @@ x[CLUSTER_436,cattle_slu,Plant_9] 0
 x[CLUSTER_436,horse_man,Plant_0] 0
 x[CLUSTER_436,horse_man,Plant_1] 0
 x[CLUSTER_436,horse_man,Plant_2] 0
-x[CLUSTER_436,horse_man,Plant_3] 0.00083
+x[CLUSTER_436,horse_man,Plant_3] 0
 x[CLUSTER_436,horse_man,Plant_4] 0
 x[CLUSTER_436,horse_man,Plant_5] 0
 x[CLUSTER_436,horse_man,Plant_6] 0
@@ -45183,7 +45183,7 @@ x[CLUSTER_436,pig_slu,Plant_9] 0
 x[CLUSTER_436,pig_man,Plant_0] 0
 x[CLUSTER_436,pig_man,Plant_1] 0
 x[CLUSTER_436,pig_man,Plant_2] 0
-x[CLUSTER_436,pig_man,Plant_3] 0.000326
+x[CLUSTER_436,pig_man,Plant_3] 0
 x[CLUSTER_436,pig_man,Plant_4] 0
 x[CLUSTER_436,pig_man,Plant_5] 0
 x[CLUSTER_436,pig_man,Plant_6] 0
@@ -45264,7 +45264,7 @@ x[CLUSTER_437,cattle_man,Plant_0] 0
 x[CLUSTER_437,cattle_man,Plant_1] 0
 x[CLUSTER_437,cattle_man,Plant_2] 0
 x[CLUSTER_437,cattle_man,Plant_3] 0
-x[CLUSTER_437,cattle_man,Plant_4] 0.00851
+x[CLUSTER_437,cattle_man,Plant_4] 0
 x[CLUSTER_437,cattle_man,Plant_5] 0
 x[CLUSTER_437,cattle_man,Plant_6] 0
 x[CLUSTER_437,cattle_man,Plant_7] 0
@@ -45274,7 +45274,7 @@ x[CLUSTER_437,cattle_slu,Plant_0] 0
 x[CLUSTER_437,cattle_slu,Plant_1] 0
 x[CLUSTER_437,cattle_slu,Plant_2] 0
 x[CLUSTER_437,cattle_slu,Plant_3] 0
-x[CLUSTER_437,cattle_slu,Plant_4] 6.4300000000000024e-02
+x[CLUSTER_437,cattle_slu,Plant_4] 0
 x[CLUSTER_437,cattle_slu,Plant_5] 0
 x[CLUSTER_437,cattle_slu,Plant_6] 0
 x[CLUSTER_437,cattle_slu,Plant_7] 0
@@ -45284,7 +45284,7 @@ x[CLUSTER_437,horse_man,Plant_0] 0
 x[CLUSTER_437,horse_man,Plant_1] 0
 x[CLUSTER_437,horse_man,Plant_2] 0
 x[CLUSTER_437,horse_man,Plant_3] 0
-x[CLUSTER_437,horse_man,Plant_4] 0.000938
+x[CLUSTER_437,horse_man,Plant_4] 0
 x[CLUSTER_437,horse_man,Plant_5] 0
 x[CLUSTER_437,horse_man,Plant_6] 0
 x[CLUSTER_437,horse_man,Plant_7] 0
@@ -45304,7 +45304,7 @@ x[CLUSTER_437,pig_man,Plant_0] 0
 x[CLUSTER_437,pig_man,Plant_1] 0
 x[CLUSTER_437,pig_man,Plant_2] 0
 x[CLUSTER_437,pig_man,Plant_3] 0
-x[CLUSTER_437,pig_man,Plant_4] 5e-05
+x[CLUSTER_437,pig_man,Plant_4] 0
 x[CLUSTER_437,pig_man,Plant_5] 0
 x[CLUSTER_437,pig_man,Plant_6] 0
 x[CLUSTER_437,pig_man,Plant_7] 0
@@ -45384,7 +45384,7 @@ x[CLUSTER_438,cattle_man,Plant_0] 0
 x[CLUSTER_438,cattle_man,Plant_1] 0
 x[CLUSTER_438,cattle_man,Plant_2] 0
 x[CLUSTER_438,cattle_man,Plant_3] 0
-x[CLUSTER_438,cattle_man,Plant_4] 3.3309999999999607e-03
+x[CLUSTER_438,cattle_man,Plant_4] 0
 x[CLUSTER_438,cattle_man,Plant_5] 0
 x[CLUSTER_438,cattle_man,Plant_6] 0
 x[CLUSTER_438,cattle_man,Plant_7] 0
@@ -45404,7 +45404,7 @@ x[CLUSTER_438,horse_man,Plant_0] 0
 x[CLUSTER_438,horse_man,Plant_1] 0
 x[CLUSTER_438,horse_man,Plant_2] 0
 x[CLUSTER_438,horse_man,Plant_3] 0
-x[CLUSTER_438,horse_man,Plant_4] 0.0008328
+x[CLUSTER_438,horse_man,Plant_4] 0
 x[CLUSTER_438,horse_man,Plant_5] 0
 x[CLUSTER_438,horse_man,Plant_6] 0
 x[CLUSTER_438,horse_man,Plant_7] 0
@@ -45420,7 +45420,7 @@ x[CLUSTER_438,pig_slu,Plant_6] 0
 x[CLUSTER_438,pig_slu,Plant_7] 0
 x[CLUSTER_438,pig_slu,Plant_8] 0
 x[CLUSTER_438,pig_slu,Plant_9] 0
-x[CLUSTER_438,pig_man,Plant_0] 2.2318000000000001e-04
+x[CLUSTER_438,pig_man,Plant_0] 0
 x[CLUSTER_438,pig_man,Plant_1] 0
 x[CLUSTER_438,pig_man,Plant_2] 0
 x[CLUSTER_438,pig_man,Plant_3] 0
@@ -45500,7 +45500,7 @@ x[CLUSTER_438,legume_str,Plant_6] 0
 x[CLUSTER_438,legume_str,Plant_7] 0
 x[CLUSTER_438,legume_str,Plant_8] 0
 x[CLUSTER_438,legume_str,Plant_9] 0
-x[CLUSTER_439,cattle_man,Plant_0] 0.01244
+x[CLUSTER_439,cattle_man,Plant_0] 0
 x[CLUSTER_439,cattle_man,Plant_1] 0
 x[CLUSTER_439,cattle_man,Plant_2] 0
 x[CLUSTER_439,cattle_man,Plant_3] 0
@@ -45510,7 +45510,7 @@ x[CLUSTER_439,cattle_man,Plant_6] 0
 x[CLUSTER_439,cattle_man,Plant_7] 0
 x[CLUSTER_439,cattle_man,Plant_8] 0
 x[CLUSTER_439,cattle_man,Plant_9] 0
-x[CLUSTER_439,cattle_slu,Plant_0] 0.0565
+x[CLUSTER_439,cattle_slu,Plant_0] 0
 x[CLUSTER_439,cattle_slu,Plant_1] 0
 x[CLUSTER_439,cattle_slu,Plant_2] 0
 x[CLUSTER_439,cattle_slu,Plant_3] 0
@@ -45520,7 +45520,7 @@ x[CLUSTER_439,cattle_slu,Plant_6] 0
 x[CLUSTER_439,cattle_slu,Plant_7] 0
 x[CLUSTER_439,cattle_slu,Plant_8] 0
 x[CLUSTER_439,cattle_slu,Plant_9] 0
-x[CLUSTER_439,horse_man,Plant_0] 0.0001637
+x[CLUSTER_439,horse_man,Plant_0] 0
 x[CLUSTER_439,horse_man,Plant_1] 0
 x[CLUSTER_439,horse_man,Plant_2] 0
 x[CLUSTER_439,horse_man,Plant_3] 0
@@ -45540,7 +45540,7 @@ x[CLUSTER_439,pig_slu,Plant_6] 0
 x[CLUSTER_439,pig_slu,Plant_7] 0
 x[CLUSTER_439,pig_slu,Plant_8] 0
 x[CLUSTER_439,pig_slu,Plant_9] 0
-x[CLUSTER_439,pig_man,Plant_0] 0.0006259
+x[CLUSTER_439,pig_man,Plant_0] 0
 x[CLUSTER_439,pig_man,Plant_1] 0
 x[CLUSTER_439,pig_man,Plant_2] 0
 x[CLUSTER_439,pig_man,Plant_3] 0
@@ -45580,7 +45580,7 @@ x[CLUSTER_439,perm_grass,Plant_6] 0
 x[CLUSTER_439,perm_grass,Plant_7] 0
 x[CLUSTER_439,perm_grass,Plant_8] 0
 x[CLUSTER_439,perm_grass,Plant_9] 0
-x[CLUSTER_439,maize_str,Plant_0] 3.7119999999999997e-04
+x[CLUSTER_439,maize_str,Plant_0] 0
 x[CLUSTER_439,maize_str,Plant_1] 0
 x[CLUSTER_439,maize_str,Plant_2] 0
 x[CLUSTER_439,maize_str,Plant_3] 0
@@ -45628,7 +45628,7 @@ x[CLUSTER_44,cattle_man,Plant_4] 0
 x[CLUSTER_44,cattle_man,Plant_5] 0
 x[CLUSTER_44,cattle_man,Plant_6] 0
 x[CLUSTER_44,cattle_man,Plant_7] 0
-x[CLUSTER_44,cattle_man,Plant_8] 0.01466
+x[CLUSTER_44,cattle_man,Plant_8] 0
 x[CLUSTER_44,cattle_man,Plant_9] 0
 x[CLUSTER_44,cattle_slu,Plant_0] 0
 x[CLUSTER_44,cattle_slu,Plant_1] 0
@@ -45648,7 +45648,7 @@ x[CLUSTER_44,horse_man,Plant_4] 0
 x[CLUSTER_44,horse_man,Plant_5] 0
 x[CLUSTER_44,horse_man,Plant_6] 0
 x[CLUSTER_44,horse_man,Plant_7] 0
-x[CLUSTER_44,horse_man,Plant_8] 0.001288
+x[CLUSTER_44,horse_man,Plant_8] 0
 x[CLUSTER_44,horse_man,Plant_9] 0
 x[CLUSTER_44,pig_slu,Plant_0] 0
 x[CLUSTER_44,pig_slu,Plant_1] 0
@@ -45746,7 +45746,7 @@ x[CLUSTER_440,cattle_man,Plant_2] 0
 x[CLUSTER_440,cattle_man,Plant_3] 0
 x[CLUSTER_440,cattle_man,Plant_4] 0
 x[CLUSTER_440,cattle_man,Plant_5] 0
-x[CLUSTER_440,cattle_man,Plant_6] 0.01344
+x[CLUSTER_440,cattle_man,Plant_6] 0
 x[CLUSTER_440,cattle_man,Plant_7] 0
 x[CLUSTER_440,cattle_man,Plant_8] 0
 x[CLUSTER_440,cattle_man,Plant_9] 0
@@ -45766,7 +45766,7 @@ x[CLUSTER_440,horse_man,Plant_2] 0
 x[CLUSTER_440,horse_man,Plant_3] 0
 x[CLUSTER_440,horse_man,Plant_4] 0
 x[CLUSTER_440,horse_man,Plant_5] 0
-x[CLUSTER_440,horse_man,Plant_6] 0.002708
+x[CLUSTER_440,horse_man,Plant_6] 0
 x[CLUSTER_440,horse_man,Plant_7] 0
 x[CLUSTER_440,horse_man,Plant_8] 0
 x[CLUSTER_440,horse_man,Plant_9] 0
@@ -45865,7 +45865,7 @@ x[CLUSTER_441,cattle_man,Plant_1] 0
 x[CLUSTER_441,cattle_man,Plant_2] 0
 x[CLUSTER_441,cattle_man,Plant_3] 0
 x[CLUSTER_441,cattle_man,Plant_4] 0
-x[CLUSTER_441,cattle_man,Plant_5] 0.003147
+x[CLUSTER_441,cattle_man,Plant_5] 0
 x[CLUSTER_441,cattle_man,Plant_6] 0
 x[CLUSTER_441,cattle_man,Plant_7] 0
 x[CLUSTER_441,cattle_man,Plant_8] 0
@@ -45875,7 +45875,7 @@ x[CLUSTER_441,cattle_slu,Plant_1] 0
 x[CLUSTER_441,cattle_slu,Plant_2] 0
 x[CLUSTER_441,cattle_slu,Plant_3] 0
 x[CLUSTER_441,cattle_slu,Plant_4] 0
-x[CLUSTER_441,cattle_slu,Plant_5] 1.2490000000000074e-02
+x[CLUSTER_441,cattle_slu,Plant_5] 0
 x[CLUSTER_441,cattle_slu,Plant_6] 0
 x[CLUSTER_441,cattle_slu,Plant_7] 0
 x[CLUSTER_441,cattle_slu,Plant_8] 0
@@ -45885,7 +45885,7 @@ x[CLUSTER_441,horse_man,Plant_1] 0
 x[CLUSTER_441,horse_man,Plant_2] 0
 x[CLUSTER_441,horse_man,Plant_3] 0
 x[CLUSTER_441,horse_man,Plant_4] 0
-x[CLUSTER_441,horse_man,Plant_5] 0.000821
+x[CLUSTER_441,horse_man,Plant_5] 0
 x[CLUSTER_441,horse_man,Plant_6] 0
 x[CLUSTER_441,horse_man,Plant_7] 0
 x[CLUSTER_441,horse_man,Plant_8] 0
@@ -45905,7 +45905,7 @@ x[CLUSTER_441,pig_man,Plant_1] 0
 x[CLUSTER_441,pig_man,Plant_2] 0
 x[CLUSTER_441,pig_man,Plant_3] 0
 x[CLUSTER_441,pig_man,Plant_4] 0
-x[CLUSTER_441,pig_man,Plant_5] 0.001272
+x[CLUSTER_441,pig_man,Plant_5] 0
 x[CLUSTER_441,pig_man,Plant_6] 0
 x[CLUSTER_441,pig_man,Plant_7] 0
 x[CLUSTER_441,pig_man,Plant_8] 0
@@ -45945,7 +45945,7 @@ x[CLUSTER_441,maize_str,Plant_1] 0
 x[CLUSTER_441,maize_str,Plant_2] 0
 x[CLUSTER_441,maize_str,Plant_3] 0
 x[CLUSTER_441,maize_str,Plant_4] 0
-x[CLUSTER_441,maize_str,Plant_5] 0.002827
+x[CLUSTER_441,maize_str,Plant_5] 0
 x[CLUSTER_441,maize_str,Plant_6] 0
 x[CLUSTER_441,maize_str,Plant_7] 0
 x[CLUSTER_441,maize_str,Plant_8] 0
@@ -45983,7 +45983,7 @@ x[CLUSTER_441,legume_str,Plant_9] 0
 x[CLUSTER_442,cattle_man,Plant_0] 0
 x[CLUSTER_442,cattle_man,Plant_1] 0
 x[CLUSTER_442,cattle_man,Plant_2] 0
-x[CLUSTER_442,cattle_man,Plant_3] 0.01458
+x[CLUSTER_442,cattle_man,Plant_3] 0
 x[CLUSTER_442,cattle_man,Plant_4] 0
 x[CLUSTER_442,cattle_man,Plant_5] 0
 x[CLUSTER_442,cattle_man,Plant_6] 0
@@ -46003,7 +46003,7 @@ x[CLUSTER_442,cattle_slu,Plant_9] 0
 x[CLUSTER_442,horse_man,Plant_0] 0
 x[CLUSTER_442,horse_man,Plant_1] 0
 x[CLUSTER_442,horse_man,Plant_2] 0
-x[CLUSTER_442,horse_man,Plant_3] 0.002096
+x[CLUSTER_442,horse_man,Plant_3] 0
 x[CLUSTER_442,horse_man,Plant_4] 0
 x[CLUSTER_442,horse_man,Plant_5] 0
 x[CLUSTER_442,horse_man,Plant_6] 0
@@ -46101,7 +46101,7 @@ x[CLUSTER_442,legume_str,Plant_7] 0
 x[CLUSTER_442,legume_str,Plant_8] 0
 x[CLUSTER_442,legume_str,Plant_9] 0
 x[CLUSTER_443,cattle_man,Plant_0] 0
-x[CLUSTER_443,cattle_man,Plant_1] 1.2880000000000365e-02
+x[CLUSTER_443,cattle_man,Plant_1] 0
 x[CLUSTER_443,cattle_man,Plant_2] 0
 x[CLUSTER_443,cattle_man,Plant_3] 0
 x[CLUSTER_443,cattle_man,Plant_4] 0
@@ -46128,7 +46128,7 @@ x[CLUSTER_443,horse_man,Plant_4] 0
 x[CLUSTER_443,horse_man,Plant_5] 0
 x[CLUSTER_443,horse_man,Plant_6] 0
 x[CLUSTER_443,horse_man,Plant_7] 0
-x[CLUSTER_443,horse_man,Plant_8] 0.001017
+x[CLUSTER_443,horse_man,Plant_8] 0
 x[CLUSTER_443,horse_man,Plant_9] 0
 x[CLUSTER_443,pig_slu,Plant_0] 0
 x[CLUSTER_443,pig_slu,Plant_1] 0
@@ -46224,7 +46224,7 @@ x[CLUSTER_444,cattle_man,Plant_0] 0
 x[CLUSTER_444,cattle_man,Plant_1] 0
 x[CLUSTER_444,cattle_man,Plant_2] 0
 x[CLUSTER_444,cattle_man,Plant_3] 0
-x[CLUSTER_444,cattle_man,Plant_4] 0.00269
+x[CLUSTER_444,cattle_man,Plant_4] 0
 x[CLUSTER_444,cattle_man,Plant_5] 0
 x[CLUSTER_444,cattle_man,Plant_6] 0
 x[CLUSTER_444,cattle_man,Plant_7] 0
@@ -46244,7 +46244,7 @@ x[CLUSTER_444,horse_man,Plant_0] 0
 x[CLUSTER_444,horse_man,Plant_1] 0
 x[CLUSTER_444,horse_man,Plant_2] 0
 x[CLUSTER_444,horse_man,Plant_3] 0
-x[CLUSTER_444,horse_man,Plant_4] 0.0003792
+x[CLUSTER_444,horse_man,Plant_4] 0
 x[CLUSTER_444,horse_man,Plant_5] 0
 x[CLUSTER_444,horse_man,Plant_6] 0
 x[CLUSTER_444,horse_man,Plant_7] 0
@@ -46264,7 +46264,7 @@ x[CLUSTER_444,pig_man,Plant_0] 0
 x[CLUSTER_444,pig_man,Plant_1] 0
 x[CLUSTER_444,pig_man,Plant_2] 0
 x[CLUSTER_444,pig_man,Plant_3] 0
-x[CLUSTER_444,pig_man,Plant_4] 8.4611000000000007e-05
+x[CLUSTER_444,pig_man,Plant_4] 0
 x[CLUSTER_444,pig_man,Plant_5] 0
 x[CLUSTER_444,pig_man,Plant_6] 0
 x[CLUSTER_444,pig_man,Plant_7] 0
@@ -46289,7 +46289,7 @@ x[CLUSTER_444,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_444,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_444,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_444,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_444,clover_alfalfa_grass,Plant_9] 0.009963
+x[CLUSTER_444,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_444,perm_grass,Plant_0] 0
 x[CLUSTER_444,perm_grass,Plant_1] 0
 x[CLUSTER_444,perm_grass,Plant_2] 0
@@ -46309,7 +46309,7 @@ x[CLUSTER_444,maize_str,Plant_5] 0
 x[CLUSTER_444,maize_str,Plant_6] 0
 x[CLUSTER_444,maize_str,Plant_7] 0
 x[CLUSTER_444,maize_str,Plant_8] 0
-x[CLUSTER_444,maize_str,Plant_9] 4.625e-05
+x[CLUSTER_444,maize_str,Plant_9] 0
 x[CLUSTER_444,beet_leaf,Plant_0] 0
 x[CLUSTER_444,beet_leaf,Plant_1] 0
 x[CLUSTER_444,beet_leaf,Plant_2] 0
@@ -46342,7 +46342,7 @@ x[CLUSTER_444,legume_str,Plant_8] 0
 x[CLUSTER_444,legume_str,Plant_9] 0
 x[CLUSTER_445,cattle_man,Plant_0] 0
 x[CLUSTER_445,cattle_man,Plant_1] 0
-x[CLUSTER_445,cattle_man,Plant_2] 0.0008319
+x[CLUSTER_445,cattle_man,Plant_2] 0
 x[CLUSTER_445,cattle_man,Plant_3] 0
 x[CLUSTER_445,cattle_man,Plant_4] 0
 x[CLUSTER_445,cattle_man,Plant_5] 0
@@ -46362,7 +46362,7 @@ x[CLUSTER_445,cattle_slu,Plant_8] 0
 x[CLUSTER_445,cattle_slu,Plant_9] 0
 x[CLUSTER_445,horse_man,Plant_0] 0
 x[CLUSTER_445,horse_man,Plant_1] 0
-x[CLUSTER_445,horse_man,Plant_2] 5.8691000000000004e-05
+x[CLUSTER_445,horse_man,Plant_2] 0
 x[CLUSTER_445,horse_man,Plant_3] 0
 x[CLUSTER_445,horse_man,Plant_4] 0
 x[CLUSTER_445,horse_man,Plant_5] 0
@@ -46382,7 +46382,7 @@ x[CLUSTER_445,pig_slu,Plant_8] 0
 x[CLUSTER_445,pig_slu,Plant_9] 0
 x[CLUSTER_445,pig_man,Plant_0] 0
 x[CLUSTER_445,pig_man,Plant_1] 0
-x[CLUSTER_445,pig_man,Plant_2] 0.0037
+x[CLUSTER_445,pig_man,Plant_2] 0
 x[CLUSTER_445,pig_man,Plant_3] 0
 x[CLUSTER_445,pig_man,Plant_4] 0
 x[CLUSTER_445,pig_man,Plant_5] 0
@@ -46468,7 +46468,7 @@ x[CLUSTER_446,cattle_man,Plant_4] 0
 x[CLUSTER_446,cattle_man,Plant_5] 0
 x[CLUSTER_446,cattle_man,Plant_6] 0
 x[CLUSTER_446,cattle_man,Plant_7] 0
-x[CLUSTER_446,cattle_man,Plant_8] 0.0116
+x[CLUSTER_446,cattle_man,Plant_8] 0
 x[CLUSTER_446,cattle_man,Plant_9] 0
 x[CLUSTER_446,cattle_slu,Plant_0] 0
 x[CLUSTER_446,cattle_slu,Plant_1] 0
@@ -46488,7 +46488,7 @@ x[CLUSTER_446,horse_man,Plant_4] 0
 x[CLUSTER_446,horse_man,Plant_5] 0
 x[CLUSTER_446,horse_man,Plant_6] 0
 x[CLUSTER_446,horse_man,Plant_7] 0
-x[CLUSTER_446,horse_man,Plant_8] 1.5999999999999587e-03
+x[CLUSTER_446,horse_man,Plant_8] 0
 x[CLUSTER_446,horse_man,Plant_9] 0
 x[CLUSTER_446,pig_slu,Plant_0] 0
 x[CLUSTER_446,pig_slu,Plant_1] 0
@@ -46508,7 +46508,7 @@ x[CLUSTER_446,pig_man,Plant_4] 0
 x[CLUSTER_446,pig_man,Plant_5] 0
 x[CLUSTER_446,pig_man,Plant_6] 0
 x[CLUSTER_446,pig_man,Plant_7] 0
-x[CLUSTER_446,pig_man,Plant_8] 0.0002162920123
+x[CLUSTER_446,pig_man,Plant_8] 0
 x[CLUSTER_446,pig_man,Plant_9] 0
 x[CLUSTER_446,cereal_str,Plant_0] 0
 x[CLUSTER_446,cereal_str,Plant_1] 0
@@ -46585,7 +46585,7 @@ x[CLUSTER_447,cattle_man,Plant_1] 0
 x[CLUSTER_447,cattle_man,Plant_2] 0
 x[CLUSTER_447,cattle_man,Plant_3] 0
 x[CLUSTER_447,cattle_man,Plant_4] 0
-x[CLUSTER_447,cattle_man,Plant_5] 0.00621
+x[CLUSTER_447,cattle_man,Plant_5] 0
 x[CLUSTER_447,cattle_man,Plant_6] 0
 x[CLUSTER_447,cattle_man,Plant_7] 0
 x[CLUSTER_447,cattle_man,Plant_8] 0
@@ -46595,7 +46595,7 @@ x[CLUSTER_447,cattle_slu,Plant_1] 0
 x[CLUSTER_447,cattle_slu,Plant_2] 0
 x[CLUSTER_447,cattle_slu,Plant_3] 0
 x[CLUSTER_447,cattle_slu,Plant_4] 0
-x[CLUSTER_447,cattle_slu,Plant_5] 0.02293
+x[CLUSTER_447,cattle_slu,Plant_5] 0
 x[CLUSTER_447,cattle_slu,Plant_6] 0
 x[CLUSTER_447,cattle_slu,Plant_7] 0
 x[CLUSTER_447,cattle_slu,Plant_8] 0
@@ -46605,7 +46605,7 @@ x[CLUSTER_447,horse_man,Plant_1] 0
 x[CLUSTER_447,horse_man,Plant_2] 0
 x[CLUSTER_447,horse_man,Plant_3] 0
 x[CLUSTER_447,horse_man,Plant_4] 0
-x[CLUSTER_447,horse_man,Plant_5] 0.003973
+x[CLUSTER_447,horse_man,Plant_5] 0
 x[CLUSTER_447,horse_man,Plant_6] 0
 x[CLUSTER_447,horse_man,Plant_7] 0
 x[CLUSTER_447,horse_man,Plant_8] 0
@@ -46625,7 +46625,7 @@ x[CLUSTER_447,pig_man,Plant_1] 0
 x[CLUSTER_447,pig_man,Plant_2] 0
 x[CLUSTER_447,pig_man,Plant_3] 0
 x[CLUSTER_447,pig_man,Plant_4] 0
-x[CLUSTER_447,pig_man,Plant_5] 6.714e-05
+x[CLUSTER_447,pig_man,Plant_5] 0
 x[CLUSTER_447,pig_man,Plant_6] 0
 x[CLUSTER_447,pig_man,Plant_7] 0
 x[CLUSTER_447,pig_man,Plant_8] 0
@@ -46706,7 +46706,7 @@ x[CLUSTER_448,cattle_man,Plant_2] 0
 x[CLUSTER_448,cattle_man,Plant_3] 0
 x[CLUSTER_448,cattle_man,Plant_4] 0
 x[CLUSTER_448,cattle_man,Plant_5] 0
-x[CLUSTER_448,cattle_man,Plant_6] 0.0032
+x[CLUSTER_448,cattle_man,Plant_6] 0
 x[CLUSTER_448,cattle_man,Plant_7] 0
 x[CLUSTER_448,cattle_man,Plant_8] 0
 x[CLUSTER_448,cattle_man,Plant_9] 0
@@ -46726,7 +46726,7 @@ x[CLUSTER_448,horse_man,Plant_2] 0
 x[CLUSTER_448,horse_man,Plant_3] 0
 x[CLUSTER_448,horse_man,Plant_4] 0
 x[CLUSTER_448,horse_man,Plant_5] 0
-x[CLUSTER_448,horse_man,Plant_6] 0.000654
+x[CLUSTER_448,horse_man,Plant_6] 0
 x[CLUSTER_448,horse_man,Plant_7] 0
 x[CLUSTER_448,horse_man,Plant_8] 0
 x[CLUSTER_448,horse_man,Plant_9] 0
@@ -46827,7 +46827,7 @@ x[CLUSTER_449,cattle_man,Plant_3] 0
 x[CLUSTER_449,cattle_man,Plant_4] 0
 x[CLUSTER_449,cattle_man,Plant_5] 0
 x[CLUSTER_449,cattle_man,Plant_6] 0
-x[CLUSTER_449,cattle_man,Plant_7] 0.0070602
+x[CLUSTER_449,cattle_man,Plant_7] 0
 x[CLUSTER_449,cattle_man,Plant_8] 0
 x[CLUSTER_449,cattle_man,Plant_9] 0
 x[CLUSTER_449,cattle_slu,Plant_0] 0
@@ -46847,7 +46847,7 @@ x[CLUSTER_449,horse_man,Plant_3] 0
 x[CLUSTER_449,horse_man,Plant_4] 0
 x[CLUSTER_449,horse_man,Plant_5] 0
 x[CLUSTER_449,horse_man,Plant_6] 0
-x[CLUSTER_449,horse_man,Plant_7] 0.000518500398
+x[CLUSTER_449,horse_man,Plant_7] 0
 x[CLUSTER_449,horse_man,Plant_8] 0
 x[CLUSTER_449,horse_man,Plant_9] 0
 x[CLUSTER_449,pig_slu,Plant_0] 0
@@ -46867,7 +46867,7 @@ x[CLUSTER_449,pig_man,Plant_3] 0
 x[CLUSTER_449,pig_man,Plant_4] 0
 x[CLUSTER_449,pig_man,Plant_5] 0
 x[CLUSTER_449,pig_man,Plant_6] 0
-x[CLUSTER_449,pig_man,Plant_7] 5.7709100000000006e-04
+x[CLUSTER_449,pig_man,Plant_7] 0
 x[CLUSTER_449,pig_man,Plant_8] 0
 x[CLUSTER_449,pig_man,Plant_9] 0
 x[CLUSTER_449,cereal_str,Plant_0] 0
@@ -46909,7 +46909,7 @@ x[CLUSTER_449,maize_str,Plant_5] 0
 x[CLUSTER_449,maize_str,Plant_6] 0
 x[CLUSTER_449,maize_str,Plant_7] 0
 x[CLUSTER_449,maize_str,Plant_8] 0
-x[CLUSTER_449,maize_str,Plant_9] 0.000119
+x[CLUSTER_449,maize_str,Plant_9] 0
 x[CLUSTER_449,beet_leaf,Plant_0] 0
 x[CLUSTER_449,beet_leaf,Plant_1] 0
 x[CLUSTER_449,beet_leaf,Plant_2] 0
@@ -46940,7 +46940,7 @@ x[CLUSTER_449,legume_str,Plant_6] 0
 x[CLUSTER_449,legume_str,Plant_7] 0
 x[CLUSTER_449,legume_str,Plant_8] 0
 x[CLUSTER_449,legume_str,Plant_9] 0
-x[CLUSTER_45,cattle_man,Plant_0] 0.01575
+x[CLUSTER_45,cattle_man,Plant_0] 0
 x[CLUSTER_45,cattle_man,Plant_1] 0
 x[CLUSTER_45,cattle_man,Plant_2] 0
 x[CLUSTER_45,cattle_man,Plant_3] 0
@@ -46960,7 +46960,7 @@ x[CLUSTER_45,cattle_slu,Plant_6] 0
 x[CLUSTER_45,cattle_slu,Plant_7] 0
 x[CLUSTER_45,cattle_slu,Plant_8] 0
 x[CLUSTER_45,cattle_slu,Plant_9] 0
-x[CLUSTER_45,horse_man,Plant_0] 0.001188
+x[CLUSTER_45,horse_man,Plant_0] 0
 x[CLUSTER_45,horse_man,Plant_1] 0
 x[CLUSTER_45,horse_man,Plant_2] 0
 x[CLUSTER_45,horse_man,Plant_3] 0
@@ -46980,7 +46980,7 @@ x[CLUSTER_45,pig_slu,Plant_6] 0
 x[CLUSTER_45,pig_slu,Plant_7] 0
 x[CLUSTER_45,pig_slu,Plant_8] 0
 x[CLUSTER_45,pig_slu,Plant_9] 0
-x[CLUSTER_45,pig_man,Plant_0] 5.5502000000000005e-05
+x[CLUSTER_45,pig_man,Plant_0] 0
 x[CLUSTER_45,pig_man,Plant_1] 0
 x[CLUSTER_45,pig_man,Plant_2] 0
 x[CLUSTER_45,pig_man,Plant_3] 0
@@ -47020,7 +47020,7 @@ x[CLUSTER_45,perm_grass,Plant_6] 0
 x[CLUSTER_45,perm_grass,Plant_7] 0
 x[CLUSTER_45,perm_grass,Plant_8] 0
 x[CLUSTER_45,perm_grass,Plant_9] 0
-x[CLUSTER_45,maize_str,Plant_0] 1.321e-05
+x[CLUSTER_45,maize_str,Plant_0] 0
 x[CLUSTER_45,maize_str,Plant_1] 0
 x[CLUSTER_45,maize_str,Plant_2] 0
 x[CLUSTER_45,maize_str,Plant_3] 0
@@ -47063,7 +47063,7 @@ x[CLUSTER_45,legume_str,Plant_9] 0
 x[CLUSTER_450,cattle_man,Plant_0] 0
 x[CLUSTER_450,cattle_man,Plant_1] 0
 x[CLUSTER_450,cattle_man,Plant_2] 0
-x[CLUSTER_450,cattle_man,Plant_3] 0.01827
+x[CLUSTER_450,cattle_man,Plant_3] 0
 x[CLUSTER_450,cattle_man,Plant_4] 0
 x[CLUSTER_450,cattle_man,Plant_5] 0
 x[CLUSTER_450,cattle_man,Plant_6] 0
@@ -47083,7 +47083,7 @@ x[CLUSTER_450,cattle_slu,Plant_9] 0
 x[CLUSTER_450,horse_man,Plant_0] 0
 x[CLUSTER_450,horse_man,Plant_1] 0
 x[CLUSTER_450,horse_man,Plant_2] 0
-x[CLUSTER_450,horse_man,Plant_3] 0.0009639
+x[CLUSTER_450,horse_man,Plant_3] 0
 x[CLUSTER_450,horse_man,Plant_4] 0
 x[CLUSTER_450,horse_man,Plant_5] 0
 x[CLUSTER_450,horse_man,Plant_6] 0
@@ -47103,7 +47103,7 @@ x[CLUSTER_450,pig_slu,Plant_9] 0
 x[CLUSTER_450,pig_man,Plant_0] 0
 x[CLUSTER_450,pig_man,Plant_1] 0
 x[CLUSTER_450,pig_man,Plant_2] 0
-x[CLUSTER_450,pig_man,Plant_3] 0.0003155
+x[CLUSTER_450,pig_man,Plant_3] 0
 x[CLUSTER_450,pig_man,Plant_4] 0
 x[CLUSTER_450,pig_man,Plant_5] 0
 x[CLUSTER_450,pig_man,Plant_6] 0
@@ -47180,7 +47180,7 @@ x[CLUSTER_450,legume_str,Plant_6] 0
 x[CLUSTER_450,legume_str,Plant_7] 0
 x[CLUSTER_450,legume_str,Plant_8] 0
 x[CLUSTER_450,legume_str,Plant_9] 0
-x[CLUSTER_451,cattle_man,Plant_0] 0.00765
+x[CLUSTER_451,cattle_man,Plant_0] 0
 x[CLUSTER_451,cattle_man,Plant_1] 0
 x[CLUSTER_451,cattle_man,Plant_2] 0
 x[CLUSTER_451,cattle_man,Plant_3] 0
@@ -47200,7 +47200,7 @@ x[CLUSTER_451,cattle_slu,Plant_6] 0
 x[CLUSTER_451,cattle_slu,Plant_7] 0
 x[CLUSTER_451,cattle_slu,Plant_8] 0
 x[CLUSTER_451,cattle_slu,Plant_9] 0
-x[CLUSTER_451,horse_man,Plant_0] 0.000523
+x[CLUSTER_451,horse_man,Plant_0] 0
 x[CLUSTER_451,horse_man,Plant_1] 0
 x[CLUSTER_451,horse_man,Plant_2] 0
 x[CLUSTER_451,horse_man,Plant_3] 0
@@ -47225,7 +47225,7 @@ x[CLUSTER_451,pig_man,Plant_1] 0
 x[CLUSTER_451,pig_man,Plant_2] 0
 x[CLUSTER_451,pig_man,Plant_3] 0
 x[CLUSTER_451,pig_man,Plant_4] 0
-x[CLUSTER_451,pig_man,Plant_5] 0.000528
+x[CLUSTER_451,pig_man,Plant_5] 0
 x[CLUSTER_451,pig_man,Plant_6] 0
 x[CLUSTER_451,pig_man,Plant_7] 0
 x[CLUSTER_451,pig_man,Plant_8] 0
@@ -47308,7 +47308,7 @@ x[CLUSTER_452,cattle_man,Plant_4] 0
 x[CLUSTER_452,cattle_man,Plant_5] 0
 x[CLUSTER_452,cattle_man,Plant_6] 0
 x[CLUSTER_452,cattle_man,Plant_7] 0
-x[CLUSTER_452,cattle_man,Plant_8] 0.00396
+x[CLUSTER_452,cattle_man,Plant_8] 0
 x[CLUSTER_452,cattle_man,Plant_9] 0
 x[CLUSTER_452,cattle_slu,Plant_0] 0
 x[CLUSTER_452,cattle_slu,Plant_1] 0
@@ -47318,7 +47318,7 @@ x[CLUSTER_452,cattle_slu,Plant_4] 0
 x[CLUSTER_452,cattle_slu,Plant_5] 0
 x[CLUSTER_452,cattle_slu,Plant_6] 0
 x[CLUSTER_452,cattle_slu,Plant_7] 0
-x[CLUSTER_452,cattle_slu,Plant_8] 0.01392
+x[CLUSTER_452,cattle_slu,Plant_8] 0
 x[CLUSTER_452,cattle_slu,Plant_9] 0
 x[CLUSTER_452,horse_man,Plant_0] 0
 x[CLUSTER_452,horse_man,Plant_1] 0
@@ -47328,7 +47328,7 @@ x[CLUSTER_452,horse_man,Plant_4] 0
 x[CLUSTER_452,horse_man,Plant_5] 0
 x[CLUSTER_452,horse_man,Plant_6] 0
 x[CLUSTER_452,horse_man,Plant_7] 0
-x[CLUSTER_452,horse_man,Plant_8] 0.000922
+x[CLUSTER_452,horse_man,Plant_8] 0
 x[CLUSTER_452,horse_man,Plant_9] 0
 x[CLUSTER_452,pig_slu,Plant_0] 0
 x[CLUSTER_452,pig_slu,Plant_1] 0
@@ -47348,7 +47348,7 @@ x[CLUSTER_452,pig_man,Plant_4] 0
 x[CLUSTER_452,pig_man,Plant_5] 0
 x[CLUSTER_452,pig_man,Plant_6] 0
 x[CLUSTER_452,pig_man,Plant_7] 0
-x[CLUSTER_452,pig_man,Plant_8] 0.00055
+x[CLUSTER_452,pig_man,Plant_8] 0
 x[CLUSTER_452,pig_man,Plant_9] 0
 x[CLUSTER_452,cereal_str,Plant_0] 0
 x[CLUSTER_452,cereal_str,Plant_1] 0
@@ -47420,7 +47420,7 @@ x[CLUSTER_452,legume_str,Plant_6] 0
 x[CLUSTER_452,legume_str,Plant_7] 0
 x[CLUSTER_452,legume_str,Plant_8] 0
 x[CLUSTER_452,legume_str,Plant_9] 0
-x[CLUSTER_453,cattle_man,Plant_0] 0.0001639
+x[CLUSTER_453,cattle_man,Plant_0] 0
 x[CLUSTER_453,cattle_man,Plant_1] 0
 x[CLUSTER_453,cattle_man,Plant_2] 0
 x[CLUSTER_453,cattle_man,Plant_3] 0
@@ -47440,7 +47440,7 @@ x[CLUSTER_453,cattle_slu,Plant_6] 0
 x[CLUSTER_453,cattle_slu,Plant_7] 0
 x[CLUSTER_453,cattle_slu,Plant_8] 0
 x[CLUSTER_453,cattle_slu,Plant_9] 0
-x[CLUSTER_453,horse_man,Plant_0] 0.0002094
+x[CLUSTER_453,horse_man,Plant_0] 0
 x[CLUSTER_453,horse_man,Plant_1] 0
 x[CLUSTER_453,horse_man,Plant_2] 0
 x[CLUSTER_453,horse_man,Plant_3] 0
@@ -47465,7 +47465,7 @@ x[CLUSTER_453,pig_man,Plant_1] 0
 x[CLUSTER_453,pig_man,Plant_2] 0
 x[CLUSTER_453,pig_man,Plant_3] 0
 x[CLUSTER_453,pig_man,Plant_4] 0
-x[CLUSTER_453,pig_man,Plant_5] 0.000269
+x[CLUSTER_453,pig_man,Plant_5] 0
 x[CLUSTER_453,pig_man,Plant_6] 0
 x[CLUSTER_453,pig_man,Plant_7] 0
 x[CLUSTER_453,pig_man,Plant_8] 0
@@ -47542,7 +47542,7 @@ x[CLUSTER_453,legume_str,Plant_8] 0
 x[CLUSTER_453,legume_str,Plant_9] 0
 x[CLUSTER_454,cattle_man,Plant_0] 0
 x[CLUSTER_454,cattle_man,Plant_1] 0
-x[CLUSTER_454,cattle_man,Plant_2] 0.0057161
+x[CLUSTER_454,cattle_man,Plant_2] 0
 x[CLUSTER_454,cattle_man,Plant_3] 0
 x[CLUSTER_454,cattle_man,Plant_4] 0
 x[CLUSTER_454,cattle_man,Plant_5] 0
@@ -47552,7 +47552,7 @@ x[CLUSTER_454,cattle_man,Plant_8] 0
 x[CLUSTER_454,cattle_man,Plant_9] 0
 x[CLUSTER_454,cattle_slu,Plant_0] 0
 x[CLUSTER_454,cattle_slu,Plant_1] 0
-x[CLUSTER_454,cattle_slu,Plant_2] 3.2900000000000110e-02
+x[CLUSTER_454,cattle_slu,Plant_2] 0
 x[CLUSTER_454,cattle_slu,Plant_3] 0
 x[CLUSTER_454,cattle_slu,Plant_4] 0
 x[CLUSTER_454,cattle_slu,Plant_5] 0
@@ -47562,7 +47562,7 @@ x[CLUSTER_454,cattle_slu,Plant_8] 0
 x[CLUSTER_454,cattle_slu,Plant_9] 0
 x[CLUSTER_454,horse_man,Plant_0] 0
 x[CLUSTER_454,horse_man,Plant_1] 0
-x[CLUSTER_454,horse_man,Plant_2] 0.0001054
+x[CLUSTER_454,horse_man,Plant_2] 0
 x[CLUSTER_454,horse_man,Plant_3] 0
 x[CLUSTER_454,horse_man,Plant_4] 0
 x[CLUSTER_454,horse_man,Plant_5] 0
@@ -47582,7 +47582,7 @@ x[CLUSTER_454,pig_slu,Plant_8] 0
 x[CLUSTER_454,pig_slu,Plant_9] 0
 x[CLUSTER_454,pig_man,Plant_0] 0
 x[CLUSTER_454,pig_man,Plant_1] 0
-x[CLUSTER_454,pig_man,Plant_2] 0.0002798
+x[CLUSTER_454,pig_man,Plant_2] 0
 x[CLUSTER_454,pig_man,Plant_3] 0
 x[CLUSTER_454,pig_man,Plant_4] 0
 x[CLUSTER_454,pig_man,Plant_5] 0
@@ -47622,7 +47622,7 @@ x[CLUSTER_454,perm_grass,Plant_8] 0
 x[CLUSTER_454,perm_grass,Plant_9] 0
 x[CLUSTER_454,maize_str,Plant_0] 0
 x[CLUSTER_454,maize_str,Plant_1] 0
-x[CLUSTER_454,maize_str,Plant_2] 0.0002655
+x[CLUSTER_454,maize_str,Plant_2] 0
 x[CLUSTER_454,maize_str,Plant_3] 0
 x[CLUSTER_454,maize_str,Plant_4] 0
 x[CLUSTER_454,maize_str,Plant_5] 0
@@ -47669,7 +47669,7 @@ x[CLUSTER_455,cattle_man,Plant_5] 0
 x[CLUSTER_455,cattle_man,Plant_6] 0
 x[CLUSTER_455,cattle_man,Plant_7] 0
 x[CLUSTER_455,cattle_man,Plant_8] 0
-x[CLUSTER_455,cattle_man,Plant_9] 0.01164
+x[CLUSTER_455,cattle_man,Plant_9] 0
 x[CLUSTER_455,cattle_slu,Plant_0] 0
 x[CLUSTER_455,cattle_slu,Plant_1] 0
 x[CLUSTER_455,cattle_slu,Plant_2] 0
@@ -47689,7 +47689,7 @@ x[CLUSTER_455,horse_man,Plant_5] 0
 x[CLUSTER_455,horse_man,Plant_6] 0
 x[CLUSTER_455,horse_man,Plant_7] 0
 x[CLUSTER_455,horse_man,Plant_8] 0
-x[CLUSTER_455,horse_man,Plant_9] 0.0008101
+x[CLUSTER_455,horse_man,Plant_9] 0
 x[CLUSTER_455,pig_slu,Plant_0] 0
 x[CLUSTER_455,pig_slu,Plant_1] 0
 x[CLUSTER_455,pig_slu,Plant_2] 0
@@ -47707,7 +47707,7 @@ x[CLUSTER_455,pig_man,Plant_3] 0
 x[CLUSTER_455,pig_man,Plant_4] 0
 x[CLUSTER_455,pig_man,Plant_5] 0
 x[CLUSTER_455,pig_man,Plant_6] 0
-x[CLUSTER_455,pig_man,Plant_7] 0.00048841
+x[CLUSTER_455,pig_man,Plant_7] 0
 x[CLUSTER_455,pig_man,Plant_8] 0
 x[CLUSTER_455,pig_man,Plant_9] 0
 x[CLUSTER_455,cereal_str,Plant_0] 0
@@ -47729,7 +47729,7 @@ x[CLUSTER_455,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_455,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_455,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_455,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_455,clover_alfalfa_grass,Plant_9] 0.004398
+x[CLUSTER_455,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_455,perm_grass,Plant_0] 0
 x[CLUSTER_455,perm_grass,Plant_1] 0
 x[CLUSTER_455,perm_grass,Plant_2] 0
@@ -47749,7 +47749,7 @@ x[CLUSTER_455,maize_str,Plant_5] 0
 x[CLUSTER_455,maize_str,Plant_6] 0
 x[CLUSTER_455,maize_str,Plant_7] 0
 x[CLUSTER_455,maize_str,Plant_8] 0
-x[CLUSTER_455,maize_str,Plant_9] 2.6367000000000003e-04
+x[CLUSTER_455,maize_str,Plant_9] 0
 x[CLUSTER_455,beet_leaf,Plant_0] 0
 x[CLUSTER_455,beet_leaf,Plant_1] 0
 x[CLUSTER_455,beet_leaf,Plant_2] 0
@@ -47783,7 +47783,7 @@ x[CLUSTER_455,legume_str,Plant_9] 0
 x[CLUSTER_456,cattle_man,Plant_0] 0
 x[CLUSTER_456,cattle_man,Plant_1] 0
 x[CLUSTER_456,cattle_man,Plant_2] 0
-x[CLUSTER_456,cattle_man,Plant_3] 1.8534e-05
+x[CLUSTER_456,cattle_man,Plant_3] 0
 x[CLUSTER_456,cattle_man,Plant_4] 0
 x[CLUSTER_456,cattle_man,Plant_5] 0
 x[CLUSTER_456,cattle_man,Plant_6] 0
@@ -47793,7 +47793,7 @@ x[CLUSTER_456,cattle_man,Plant_9] 0
 x[CLUSTER_456,cattle_slu,Plant_0] 0
 x[CLUSTER_456,cattle_slu,Plant_1] 0
 x[CLUSTER_456,cattle_slu,Plant_2] 0
-x[CLUSTER_456,cattle_slu,Plant_3] 4.589e-05
+x[CLUSTER_456,cattle_slu,Plant_3] 0
 x[CLUSTER_456,cattle_slu,Plant_4] 0
 x[CLUSTER_456,cattle_slu,Plant_5] 0
 x[CLUSTER_456,cattle_slu,Plant_6] 0
@@ -47803,7 +47803,7 @@ x[CLUSTER_456,cattle_slu,Plant_9] 0
 x[CLUSTER_456,horse_man,Plant_0] 0
 x[CLUSTER_456,horse_man,Plant_1] 0
 x[CLUSTER_456,horse_man,Plant_2] 0
-x[CLUSTER_456,horse_man,Plant_3] 0.000275
+x[CLUSTER_456,horse_man,Plant_3] 0
 x[CLUSTER_456,horse_man,Plant_4] 0
 x[CLUSTER_456,horse_man,Plant_5] 0
 x[CLUSTER_456,horse_man,Plant_6] 0
@@ -47823,7 +47823,7 @@ x[CLUSTER_456,pig_slu,Plant_9] 0
 x[CLUSTER_456,pig_man,Plant_0] 0
 x[CLUSTER_456,pig_man,Plant_1] 0
 x[CLUSTER_456,pig_man,Plant_2] 0
-x[CLUSTER_456,pig_man,Plant_3] 3.0472000000000002e-05
+x[CLUSTER_456,pig_man,Plant_3] 0
 x[CLUSTER_456,pig_man,Plant_4] 0
 x[CLUSTER_456,pig_man,Plant_5] 0
 x[CLUSTER_456,pig_man,Plant_6] 0
@@ -47903,7 +47903,7 @@ x[CLUSTER_456,legume_str,Plant_9] 0
 x[CLUSTER_457,cattle_man,Plant_0] 0
 x[CLUSTER_457,cattle_man,Plant_1] 0
 x[CLUSTER_457,cattle_man,Plant_2] 0
-x[CLUSTER_457,cattle_man,Plant_3] 0.0114
+x[CLUSTER_457,cattle_man,Plant_3] 0
 x[CLUSTER_457,cattle_man,Plant_4] 0
 x[CLUSTER_457,cattle_man,Plant_5] 0
 x[CLUSTER_457,cattle_man,Plant_6] 0
@@ -47923,7 +47923,7 @@ x[CLUSTER_457,cattle_slu,Plant_9] 0
 x[CLUSTER_457,horse_man,Plant_0] 0
 x[CLUSTER_457,horse_man,Plant_1] 0
 x[CLUSTER_457,horse_man,Plant_2] 0
-x[CLUSTER_457,horse_man,Plant_3] 0.0015125
+x[CLUSTER_457,horse_man,Plant_3] 0
 x[CLUSTER_457,horse_man,Plant_4] 0
 x[CLUSTER_457,horse_man,Plant_5] 0
 x[CLUSTER_457,horse_man,Plant_6] 0
@@ -48025,7 +48025,7 @@ x[CLUSTER_458,cattle_man,Plant_1] 0
 x[CLUSTER_458,cattle_man,Plant_2] 0
 x[CLUSTER_458,cattle_man,Plant_3] 0
 x[CLUSTER_458,cattle_man,Plant_4] 0
-x[CLUSTER_458,cattle_man,Plant_5] 0.00499
+x[CLUSTER_458,cattle_man,Plant_5] 0
 x[CLUSTER_458,cattle_man,Plant_6] 0
 x[CLUSTER_458,cattle_man,Plant_7] 0
 x[CLUSTER_458,cattle_man,Plant_8] 0
@@ -48045,7 +48045,7 @@ x[CLUSTER_458,horse_man,Plant_1] 0
 x[CLUSTER_458,horse_man,Plant_2] 0
 x[CLUSTER_458,horse_man,Plant_3] 0
 x[CLUSTER_458,horse_man,Plant_4] 0
-x[CLUSTER_458,horse_man,Plant_5] 0.00232
+x[CLUSTER_458,horse_man,Plant_5] 0
 x[CLUSTER_458,horse_man,Plant_6] 0
 x[CLUSTER_458,horse_man,Plant_7] 0
 x[CLUSTER_458,horse_man,Plant_8] 0
@@ -48142,7 +48142,7 @@ x[CLUSTER_458,legume_str,Plant_8] 0
 x[CLUSTER_458,legume_str,Plant_9] 0
 x[CLUSTER_459,cattle_man,Plant_0] 0
 x[CLUSTER_459,cattle_man,Plant_1] 0
-x[CLUSTER_459,cattle_man,Plant_2] 3.7191999999999729e-03
+x[CLUSTER_459,cattle_man,Plant_2] 0
 x[CLUSTER_459,cattle_man,Plant_3] 0
 x[CLUSTER_459,cattle_man,Plant_4] 0
 x[CLUSTER_459,cattle_man,Plant_5] 0
@@ -48162,7 +48162,7 @@ x[CLUSTER_459,cattle_slu,Plant_8] 0
 x[CLUSTER_459,cattle_slu,Plant_9] 0
 x[CLUSTER_459,horse_man,Plant_0] 0
 x[CLUSTER_459,horse_man,Plant_1] 0
-x[CLUSTER_459,horse_man,Plant_2] 0.0001674
+x[CLUSTER_459,horse_man,Plant_2] 0
 x[CLUSTER_459,horse_man,Plant_3] 0
 x[CLUSTER_459,horse_man,Plant_4] 0
 x[CLUSTER_459,horse_man,Plant_5] 0
@@ -48182,7 +48182,7 @@ x[CLUSTER_459,pig_slu,Plant_8] 0
 x[CLUSTER_459,pig_slu,Plant_9] 0
 x[CLUSTER_459,pig_man,Plant_0] 0
 x[CLUSTER_459,pig_man,Plant_1] 0
-x[CLUSTER_459,pig_man,Plant_2] 2.4380000000000002e-04
+x[CLUSTER_459,pig_man,Plant_2] 0
 x[CLUSTER_459,pig_man,Plant_3] 0
 x[CLUSTER_459,pig_man,Plant_4] 0
 x[CLUSTER_459,pig_man,Plant_5] 0
@@ -48269,7 +48269,7 @@ x[CLUSTER_46,cattle_man,Plant_5] 0
 x[CLUSTER_46,cattle_man,Plant_6] 0
 x[CLUSTER_46,cattle_man,Plant_7] 0
 x[CLUSTER_46,cattle_man,Plant_8] 0
-x[CLUSTER_46,cattle_man,Plant_9] 0.001697
+x[CLUSTER_46,cattle_man,Plant_9] 0
 x[CLUSTER_46,cattle_slu,Plant_0] 0
 x[CLUSTER_46,cattle_slu,Plant_1] 0
 x[CLUSTER_46,cattle_slu,Plant_2] 0
@@ -48282,7 +48282,7 @@ x[CLUSTER_46,cattle_slu,Plant_8] 0
 x[CLUSTER_46,cattle_slu,Plant_9] 0
 x[CLUSTER_46,horse_man,Plant_0] 0
 x[CLUSTER_46,horse_man,Plant_1] 0
-x[CLUSTER_46,horse_man,Plant_2] 0.002237
+x[CLUSTER_46,horse_man,Plant_2] 0
 x[CLUSTER_46,horse_man,Plant_3] 0
 x[CLUSTER_46,horse_man,Plant_4] 0
 x[CLUSTER_46,horse_man,Plant_5] 0
@@ -48307,7 +48307,7 @@ x[CLUSTER_46,pig_man,Plant_3] 0
 x[CLUSTER_46,pig_man,Plant_4] 0
 x[CLUSTER_46,pig_man,Plant_5] 0
 x[CLUSTER_46,pig_man,Plant_6] 0
-x[CLUSTER_46,pig_man,Plant_7] 8.387871e-05
+x[CLUSTER_46,pig_man,Plant_7] 0
 x[CLUSTER_46,pig_man,Plant_8] 0
 x[CLUSTER_46,pig_man,Plant_9] 0
 x[CLUSTER_46,cereal_str,Plant_0] 0
@@ -48329,7 +48329,7 @@ x[CLUSTER_46,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_46,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_46,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_46,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_46,clover_alfalfa_grass,Plant_9] 0.005228
+x[CLUSTER_46,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_46,perm_grass,Plant_0] 0
 x[CLUSTER_46,perm_grass,Plant_1] 0
 x[CLUSTER_46,perm_grass,Plant_2] 0
@@ -48349,7 +48349,7 @@ x[CLUSTER_46,maize_str,Plant_5] 0
 x[CLUSTER_46,maize_str,Plant_6] 0
 x[CLUSTER_46,maize_str,Plant_7] 0
 x[CLUSTER_46,maize_str,Plant_8] 0
-x[CLUSTER_46,maize_str,Plant_9] 2.1607200000000001e-04
+x[CLUSTER_46,maize_str,Plant_9] 0
 x[CLUSTER_46,beet_leaf,Plant_0] 0
 x[CLUSTER_46,beet_leaf,Plant_1] 0
 x[CLUSTER_46,beet_leaf,Plant_2] 0
@@ -48382,7 +48382,7 @@ x[CLUSTER_46,legume_str,Plant_8] 0
 x[CLUSTER_46,legume_str,Plant_9] 0
 x[CLUSTER_460,cattle_man,Plant_0] 0
 x[CLUSTER_460,cattle_man,Plant_1] 0
-x[CLUSTER_460,cattle_man,Plant_2] 0.0033712
+x[CLUSTER_460,cattle_man,Plant_2] 0
 x[CLUSTER_460,cattle_man,Plant_3] 0
 x[CLUSTER_460,cattle_man,Plant_4] 0
 x[CLUSTER_460,cattle_man,Plant_5] 0
@@ -48402,7 +48402,7 @@ x[CLUSTER_460,cattle_slu,Plant_8] 0
 x[CLUSTER_460,cattle_slu,Plant_9] 0
 x[CLUSTER_460,horse_man,Plant_0] 0
 x[CLUSTER_460,horse_man,Plant_1] 0
-x[CLUSTER_460,horse_man,Plant_2] 0.00039216
+x[CLUSTER_460,horse_man,Plant_2] 0
 x[CLUSTER_460,horse_man,Plant_3] 0
 x[CLUSTER_460,horse_man,Plant_4] 0
 x[CLUSTER_460,horse_man,Plant_5] 0
@@ -48422,7 +48422,7 @@ x[CLUSTER_460,pig_slu,Plant_8] 0
 x[CLUSTER_460,pig_slu,Plant_9] 0
 x[CLUSTER_460,pig_man,Plant_0] 0
 x[CLUSTER_460,pig_man,Plant_1] 0
-x[CLUSTER_460,pig_man,Plant_2] 0.000189907
+x[CLUSTER_460,pig_man,Plant_2] 0
 x[CLUSTER_460,pig_man,Plant_3] 0
 x[CLUSTER_460,pig_man,Plant_4] 0
 x[CLUSTER_460,pig_man,Plant_5] 0
@@ -48504,7 +48504,7 @@ x[CLUSTER_461,cattle_man,Plant_0] 0
 x[CLUSTER_461,cattle_man,Plant_1] 0
 x[CLUSTER_461,cattle_man,Plant_2] 0
 x[CLUSTER_461,cattle_man,Plant_3] 0
-x[CLUSTER_461,cattle_man,Plant_4] 0.003302
+x[CLUSTER_461,cattle_man,Plant_4] 0
 x[CLUSTER_461,cattle_man,Plant_5] 0
 x[CLUSTER_461,cattle_man,Plant_6] 0
 x[CLUSTER_461,cattle_man,Plant_7] 0
@@ -48524,7 +48524,7 @@ x[CLUSTER_461,horse_man,Plant_0] 0
 x[CLUSTER_461,horse_man,Plant_1] 0
 x[CLUSTER_461,horse_man,Plant_2] 0
 x[CLUSTER_461,horse_man,Plant_3] 0
-x[CLUSTER_461,horse_man,Plant_4] 0.001385
+x[CLUSTER_461,horse_man,Plant_4] 0
 x[CLUSTER_461,horse_man,Plant_5] 0
 x[CLUSTER_461,horse_man,Plant_6] 0
 x[CLUSTER_461,horse_man,Plant_7] 0
@@ -48544,7 +48544,7 @@ x[CLUSTER_461,pig_man,Plant_0] 0
 x[CLUSTER_461,pig_man,Plant_1] 0
 x[CLUSTER_461,pig_man,Plant_2] 0
 x[CLUSTER_461,pig_man,Plant_3] 0
-x[CLUSTER_461,pig_man,Plant_4] 0.00013837
+x[CLUSTER_461,pig_man,Plant_4] 0
 x[CLUSTER_461,pig_man,Plant_5] 0
 x[CLUSTER_461,pig_man,Plant_6] 0
 x[CLUSTER_461,pig_man,Plant_7] 0
@@ -48622,7 +48622,7 @@ x[CLUSTER_461,legume_str,Plant_8] 0
 x[CLUSTER_461,legume_str,Plant_9] 0
 x[CLUSTER_462,cattle_man,Plant_0] 0
 x[CLUSTER_462,cattle_man,Plant_1] 0
-x[CLUSTER_462,cattle_man,Plant_2] 0.003029
+x[CLUSTER_462,cattle_man,Plant_2] 0
 x[CLUSTER_462,cattle_man,Plant_3] 0
 x[CLUSTER_462,cattle_man,Plant_4] 0
 x[CLUSTER_462,cattle_man,Plant_5] 0
@@ -48642,7 +48642,7 @@ x[CLUSTER_462,cattle_slu,Plant_8] 0
 x[CLUSTER_462,cattle_slu,Plant_9] 0
 x[CLUSTER_462,horse_man,Plant_0] 0
 x[CLUSTER_462,horse_man,Plant_1] 0
-x[CLUSTER_462,horse_man,Plant_2] 0.000386
+x[CLUSTER_462,horse_man,Plant_2] 0
 x[CLUSTER_462,horse_man,Plant_3] 0
 x[CLUSTER_462,horse_man,Plant_4] 0
 x[CLUSTER_462,horse_man,Plant_5] 0
@@ -48662,7 +48662,7 @@ x[CLUSTER_462,pig_slu,Plant_8] 0
 x[CLUSTER_462,pig_slu,Plant_9] 0
 x[CLUSTER_462,pig_man,Plant_0] 0
 x[CLUSTER_462,pig_man,Plant_1] 0
-x[CLUSTER_462,pig_man,Plant_2] 0.0001694
+x[CLUSTER_462,pig_man,Plant_2] 0
 x[CLUSTER_462,pig_man,Plant_3] 0
 x[CLUSTER_462,pig_man,Plant_4] 0
 x[CLUSTER_462,pig_man,Plant_5] 0
@@ -48748,7 +48748,7 @@ x[CLUSTER_463,cattle_man,Plant_4] 0
 x[CLUSTER_463,cattle_man,Plant_5] 0
 x[CLUSTER_463,cattle_man,Plant_6] 0
 x[CLUSTER_463,cattle_man,Plant_7] 0
-x[CLUSTER_463,cattle_man,Plant_8] 0.003189
+x[CLUSTER_463,cattle_man,Plant_8] 0
 x[CLUSTER_463,cattle_man,Plant_9] 0
 x[CLUSTER_463,cattle_slu,Plant_0] 0
 x[CLUSTER_463,cattle_slu,Plant_1] 0
@@ -48768,7 +48768,7 @@ x[CLUSTER_463,horse_man,Plant_4] 0
 x[CLUSTER_463,horse_man,Plant_5] 0
 x[CLUSTER_463,horse_man,Plant_6] 0
 x[CLUSTER_463,horse_man,Plant_7] 0
-x[CLUSTER_463,horse_man,Plant_8] 0.0003843
+x[CLUSTER_463,horse_man,Plant_8] 0
 x[CLUSTER_463,horse_man,Plant_9] 0
 x[CLUSTER_463,pig_slu,Plant_0] 0
 x[CLUSTER_463,pig_slu,Plant_1] 0
@@ -48788,7 +48788,7 @@ x[CLUSTER_463,pig_man,Plant_4] 0
 x[CLUSTER_463,pig_man,Plant_5] 0
 x[CLUSTER_463,pig_man,Plant_6] 0
 x[CLUSTER_463,pig_man,Plant_7] 0
-x[CLUSTER_463,pig_man,Plant_8] 1.8000318999999998e-04
+x[CLUSTER_463,pig_man,Plant_8] 0
 x[CLUSTER_463,pig_man,Plant_9] 0
 x[CLUSTER_463,cereal_str,Plant_0] 0
 x[CLUSTER_463,cereal_str,Plant_1] 0
@@ -48865,7 +48865,7 @@ x[CLUSTER_464,cattle_man,Plant_1] 0
 x[CLUSTER_464,cattle_man,Plant_2] 0
 x[CLUSTER_464,cattle_man,Plant_3] 0
 x[CLUSTER_464,cattle_man,Plant_4] 0
-x[CLUSTER_464,cattle_man,Plant_5] 0.004492
+x[CLUSTER_464,cattle_man,Plant_5] 0
 x[CLUSTER_464,cattle_man,Plant_6] 0
 x[CLUSTER_464,cattle_man,Plant_7] 0
 x[CLUSTER_464,cattle_man,Plant_8] 0
@@ -48875,7 +48875,7 @@ x[CLUSTER_464,cattle_slu,Plant_1] 0
 x[CLUSTER_464,cattle_slu,Plant_2] 0
 x[CLUSTER_464,cattle_slu,Plant_3] 0
 x[CLUSTER_464,cattle_slu,Plant_4] 0
-x[CLUSTER_464,cattle_slu,Plant_5] 1.9849999999999972e-02
+x[CLUSTER_464,cattle_slu,Plant_5] 0
 x[CLUSTER_464,cattle_slu,Plant_6] 0
 x[CLUSTER_464,cattle_slu,Plant_7] 0
 x[CLUSTER_464,cattle_slu,Plant_8] 0
@@ -48885,7 +48885,7 @@ x[CLUSTER_464,horse_man,Plant_1] 0
 x[CLUSTER_464,horse_man,Plant_2] 0
 x[CLUSTER_464,horse_man,Plant_3] 0
 x[CLUSTER_464,horse_man,Plant_4] 0
-x[CLUSTER_464,horse_man,Plant_5] 0.000752
+x[CLUSTER_464,horse_man,Plant_5] 0
 x[CLUSTER_464,horse_man,Plant_6] 0
 x[CLUSTER_464,horse_man,Plant_7] 0
 x[CLUSTER_464,horse_man,Plant_8] 0
@@ -48905,7 +48905,7 @@ x[CLUSTER_464,pig_man,Plant_1] 0
 x[CLUSTER_464,pig_man,Plant_2] 0
 x[CLUSTER_464,pig_man,Plant_3] 0
 x[CLUSTER_464,pig_man,Plant_4] 0
-x[CLUSTER_464,pig_man,Plant_5] 5.4031999999999994e-05
+x[CLUSTER_464,pig_man,Plant_5] 0
 x[CLUSTER_464,pig_man,Plant_6] 0
 x[CLUSTER_464,pig_man,Plant_7] 0
 x[CLUSTER_464,pig_man,Plant_8] 0
@@ -48984,7 +48984,7 @@ x[CLUSTER_465,cattle_man,Plant_0] 0
 x[CLUSTER_465,cattle_man,Plant_1] 0
 x[CLUSTER_465,cattle_man,Plant_2] 0
 x[CLUSTER_465,cattle_man,Plant_3] 0
-x[CLUSTER_465,cattle_man,Plant_4] 0.00598
+x[CLUSTER_465,cattle_man,Plant_4] 0
 x[CLUSTER_465,cattle_man,Plant_5] 0
 x[CLUSTER_465,cattle_man,Plant_6] 0
 x[CLUSTER_465,cattle_man,Plant_7] 0
@@ -49004,7 +49004,7 @@ x[CLUSTER_465,horse_man,Plant_0] 0
 x[CLUSTER_465,horse_man,Plant_1] 0
 x[CLUSTER_465,horse_man,Plant_2] 0
 x[CLUSTER_465,horse_man,Plant_3] 0
-x[CLUSTER_465,horse_man,Plant_4] 0.001448
+x[CLUSTER_465,horse_man,Plant_4] 0
 x[CLUSTER_465,horse_man,Plant_5] 0
 x[CLUSTER_465,horse_man,Plant_6] 0
 x[CLUSTER_465,horse_man,Plant_7] 0
@@ -49024,7 +49024,7 @@ x[CLUSTER_465,pig_man,Plant_0] 0
 x[CLUSTER_465,pig_man,Plant_1] 0
 x[CLUSTER_465,pig_man,Plant_2] 0
 x[CLUSTER_465,pig_man,Plant_3] 0
-x[CLUSTER_465,pig_man,Plant_4] 0.000518
+x[CLUSTER_465,pig_man,Plant_4] 0
 x[CLUSTER_465,pig_man,Plant_5] 0
 x[CLUSTER_465,pig_man,Plant_6] 0
 x[CLUSTER_465,pig_man,Plant_7] 0
@@ -49049,7 +49049,7 @@ x[CLUSTER_465,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_465,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_465,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_465,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_465,clover_alfalfa_grass,Plant_9] 0.00489
+x[CLUSTER_465,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_465,perm_grass,Plant_0] 0
 x[CLUSTER_465,perm_grass,Plant_1] 0
 x[CLUSTER_465,perm_grass,Plant_2] 0
@@ -49069,7 +49069,7 @@ x[CLUSTER_465,maize_str,Plant_5] 0
 x[CLUSTER_465,maize_str,Plant_6] 0
 x[CLUSTER_465,maize_str,Plant_7] 0
 x[CLUSTER_465,maize_str,Plant_8] 0
-x[CLUSTER_465,maize_str,Plant_9] 0.001243
+x[CLUSTER_465,maize_str,Plant_9] 0
 x[CLUSTER_465,beet_leaf,Plant_0] 0
 x[CLUSTER_465,beet_leaf,Plant_1] 0
 x[CLUSTER_465,beet_leaf,Plant_2] 0
@@ -49105,7 +49105,7 @@ x[CLUSTER_466,cattle_man,Plant_1] 0
 x[CLUSTER_466,cattle_man,Plant_2] 0
 x[CLUSTER_466,cattle_man,Plant_3] 0
 x[CLUSTER_466,cattle_man,Plant_4] 0
-x[CLUSTER_466,cattle_man,Plant_5] 0.01369
+x[CLUSTER_466,cattle_man,Plant_5] 0
 x[CLUSTER_466,cattle_man,Plant_6] 0
 x[CLUSTER_466,cattle_man,Plant_7] 0
 x[CLUSTER_466,cattle_man,Plant_8] 0
@@ -49125,7 +49125,7 @@ x[CLUSTER_466,horse_man,Plant_1] 0
 x[CLUSTER_466,horse_man,Plant_2] 0
 x[CLUSTER_466,horse_man,Plant_3] 0
 x[CLUSTER_466,horse_man,Plant_4] 0
-x[CLUSTER_466,horse_man,Plant_5] 0.004155
+x[CLUSTER_466,horse_man,Plant_5] 0
 x[CLUSTER_466,horse_man,Plant_6] 0
 x[CLUSTER_466,horse_man,Plant_7] 0
 x[CLUSTER_466,horse_man,Plant_8] 0
@@ -49145,7 +49145,7 @@ x[CLUSTER_466,pig_man,Plant_1] 0
 x[CLUSTER_466,pig_man,Plant_2] 0
 x[CLUSTER_466,pig_man,Plant_3] 0
 x[CLUSTER_466,pig_man,Plant_4] 0
-x[CLUSTER_466,pig_man,Plant_5] 4.3271289999999993e-05
+x[CLUSTER_466,pig_man,Plant_5] 0
 x[CLUSTER_466,pig_man,Plant_6] 0
 x[CLUSTER_466,pig_man,Plant_7] 0
 x[CLUSTER_466,pig_man,Plant_8] 0
@@ -49224,7 +49224,7 @@ x[CLUSTER_467,cattle_man,Plant_0] 0
 x[CLUSTER_467,cattle_man,Plant_1] 0
 x[CLUSTER_467,cattle_man,Plant_2] 0
 x[CLUSTER_467,cattle_man,Plant_3] 0
-x[CLUSTER_467,cattle_man,Plant_4] 0.000779
+x[CLUSTER_467,cattle_man,Plant_4] 0
 x[CLUSTER_467,cattle_man,Plant_5] 0
 x[CLUSTER_467,cattle_man,Plant_6] 0
 x[CLUSTER_467,cattle_man,Plant_7] 0
@@ -49244,7 +49244,7 @@ x[CLUSTER_467,horse_man,Plant_0] 0
 x[CLUSTER_467,horse_man,Plant_1] 0
 x[CLUSTER_467,horse_man,Plant_2] 0
 x[CLUSTER_467,horse_man,Plant_3] 0
-x[CLUSTER_467,horse_man,Plant_4] 0.0002665
+x[CLUSTER_467,horse_man,Plant_4] 0
 x[CLUSTER_467,horse_man,Plant_5] 0
 x[CLUSTER_467,horse_man,Plant_6] 0
 x[CLUSTER_467,horse_man,Plant_7] 0
@@ -49264,7 +49264,7 @@ x[CLUSTER_467,pig_man,Plant_0] 0
 x[CLUSTER_467,pig_man,Plant_1] 0
 x[CLUSTER_467,pig_man,Plant_2] 0
 x[CLUSTER_467,pig_man,Plant_3] 0
-x[CLUSTER_467,pig_man,Plant_4] 0.0010409
+x[CLUSTER_467,pig_man,Plant_4] 0
 x[CLUSTER_467,pig_man,Plant_5] 0
 x[CLUSTER_467,pig_man,Plant_6] 0
 x[CLUSTER_467,pig_man,Plant_7] 0
@@ -49289,7 +49289,7 @@ x[CLUSTER_467,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_467,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_467,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_467,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_467,clover_alfalfa_grass,Plant_9] 0.004918
+x[CLUSTER_467,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_467,perm_grass,Plant_0] 0
 x[CLUSTER_467,perm_grass,Plant_1] 0
 x[CLUSTER_467,perm_grass,Plant_2] 0
@@ -49309,7 +49309,7 @@ x[CLUSTER_467,maize_str,Plant_5] 0
 x[CLUSTER_467,maize_str,Plant_6] 0
 x[CLUSTER_467,maize_str,Plant_7] 0
 x[CLUSTER_467,maize_str,Plant_8] 0
-x[CLUSTER_467,maize_str,Plant_9] 0.0002408
+x[CLUSTER_467,maize_str,Plant_9] 0
 x[CLUSTER_467,beet_leaf,Plant_0] 0
 x[CLUSTER_467,beet_leaf,Plant_1] 0
 x[CLUSTER_467,beet_leaf,Plant_2] 0
@@ -49342,7 +49342,7 @@ x[CLUSTER_467,legume_str,Plant_8] 0
 x[CLUSTER_467,legume_str,Plant_9] 0
 x[CLUSTER_468,cattle_man,Plant_0] 0
 x[CLUSTER_468,cattle_man,Plant_1] 0
-x[CLUSTER_468,cattle_man,Plant_2] 0.001492
+x[CLUSTER_468,cattle_man,Plant_2] 0
 x[CLUSTER_468,cattle_man,Plant_3] 0
 x[CLUSTER_468,cattle_man,Plant_4] 0
 x[CLUSTER_468,cattle_man,Plant_5] 0
@@ -49362,7 +49362,7 @@ x[CLUSTER_468,cattle_slu,Plant_8] 0
 x[CLUSTER_468,cattle_slu,Plant_9] 0
 x[CLUSTER_468,horse_man,Plant_0] 0
 x[CLUSTER_468,horse_man,Plant_1] 0
-x[CLUSTER_468,horse_man,Plant_2] 1.12e-05
+x[CLUSTER_468,horse_man,Plant_2] 0
 x[CLUSTER_468,horse_man,Plant_3] 0
 x[CLUSTER_468,horse_man,Plant_4] 0
 x[CLUSTER_468,horse_man,Plant_5] 0
@@ -49409,7 +49409,7 @@ x[CLUSTER_468,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_468,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_468,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_468,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_468,clover_alfalfa_grass,Plant_9] 0.000903
+x[CLUSTER_468,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_468,perm_grass,Plant_0] 0
 x[CLUSTER_468,perm_grass,Plant_1] 0
 x[CLUSTER_468,perm_grass,Plant_2] 0
@@ -49429,7 +49429,7 @@ x[CLUSTER_468,maize_str,Plant_5] 0
 x[CLUSTER_468,maize_str,Plant_6] 0
 x[CLUSTER_468,maize_str,Plant_7] 0
 x[CLUSTER_468,maize_str,Plant_8] 0
-x[CLUSTER_468,maize_str,Plant_9] 0.00012
+x[CLUSTER_468,maize_str,Plant_9] 0
 x[CLUSTER_468,beet_leaf,Plant_0] 0
 x[CLUSTER_468,beet_leaf,Plant_1] 0
 x[CLUSTER_468,beet_leaf,Plant_2] 0
@@ -49465,7 +49465,7 @@ x[CLUSTER_469,cattle_man,Plant_1] 0
 x[CLUSTER_469,cattle_man,Plant_2] 0
 x[CLUSTER_469,cattle_man,Plant_3] 0
 x[CLUSTER_469,cattle_man,Plant_4] 0
-x[CLUSTER_469,cattle_man,Plant_5] 0.003134
+x[CLUSTER_469,cattle_man,Plant_5] 0
 x[CLUSTER_469,cattle_man,Plant_6] 0
 x[CLUSTER_469,cattle_man,Plant_7] 0
 x[CLUSTER_469,cattle_man,Plant_8] 0
@@ -49482,7 +49482,7 @@ x[CLUSTER_469,cattle_slu,Plant_8] 0
 x[CLUSTER_469,cattle_slu,Plant_9] 0
 x[CLUSTER_469,horse_man,Plant_0] 0
 x[CLUSTER_469,horse_man,Plant_1] 0
-x[CLUSTER_469,horse_man,Plant_2] 0.00084
+x[CLUSTER_469,horse_man,Plant_2] 0
 x[CLUSTER_469,horse_man,Plant_3] 0
 x[CLUSTER_469,horse_man,Plant_4] 0
 x[CLUSTER_469,horse_man,Plant_5] 0
@@ -49505,7 +49505,7 @@ x[CLUSTER_469,pig_man,Plant_1] 0
 x[CLUSTER_469,pig_man,Plant_2] 0
 x[CLUSTER_469,pig_man,Plant_3] 0
 x[CLUSTER_469,pig_man,Plant_4] 0
-x[CLUSTER_469,pig_man,Plant_5] 0.000324
+x[CLUSTER_469,pig_man,Plant_5] 0
 x[CLUSTER_469,pig_man,Plant_6] 0
 x[CLUSTER_469,pig_man,Plant_7] 0
 x[CLUSTER_469,pig_man,Plant_8] 0
@@ -49587,7 +49587,7 @@ x[CLUSTER_47,cattle_man,Plant_3] 0
 x[CLUSTER_47,cattle_man,Plant_4] 0
 x[CLUSTER_47,cattle_man,Plant_5] 0
 x[CLUSTER_47,cattle_man,Plant_6] 0
-x[CLUSTER_47,cattle_man,Plant_7] 0.0006817
+x[CLUSTER_47,cattle_man,Plant_7] 0
 x[CLUSTER_47,cattle_man,Plant_8] 0
 x[CLUSTER_47,cattle_man,Plant_9] 0
 x[CLUSTER_47,cattle_slu,Plant_0] 0
@@ -49597,7 +49597,7 @@ x[CLUSTER_47,cattle_slu,Plant_3] 0
 x[CLUSTER_47,cattle_slu,Plant_4] 0
 x[CLUSTER_47,cattle_slu,Plant_5] 0
 x[CLUSTER_47,cattle_slu,Plant_6] 0
-x[CLUSTER_47,cattle_slu,Plant_7] 6.4589999999999992e-04
+x[CLUSTER_47,cattle_slu,Plant_7] 0
 x[CLUSTER_47,cattle_slu,Plant_8] 0
 x[CLUSTER_47,cattle_slu,Plant_9] 0
 x[CLUSTER_47,horse_man,Plant_0] 0
@@ -49607,7 +49607,7 @@ x[CLUSTER_47,horse_man,Plant_3] 0
 x[CLUSTER_47,horse_man,Plant_4] 0
 x[CLUSTER_47,horse_man,Plant_5] 0
 x[CLUSTER_47,horse_man,Plant_6] 0
-x[CLUSTER_47,horse_man,Plant_7] 0.000414
+x[CLUSTER_47,horse_man,Plant_7] 0
 x[CLUSTER_47,horse_man,Plant_8] 0
 x[CLUSTER_47,horse_man,Plant_9] 0
 x[CLUSTER_47,pig_slu,Plant_0] 0
@@ -49700,7 +49700,7 @@ x[CLUSTER_47,legume_str,Plant_6] 0
 x[CLUSTER_47,legume_str,Plant_7] 0
 x[CLUSTER_47,legume_str,Plant_8] 0
 x[CLUSTER_47,legume_str,Plant_9] 0
-x[CLUSTER_470,cattle_man,Plant_0] 0.02597
+x[CLUSTER_470,cattle_man,Plant_0] 0
 x[CLUSTER_470,cattle_man,Plant_1] 0
 x[CLUSTER_470,cattle_man,Plant_2] 0
 x[CLUSTER_470,cattle_man,Plant_3] 0
@@ -49720,7 +49720,7 @@ x[CLUSTER_470,cattle_slu,Plant_6] 0
 x[CLUSTER_470,cattle_slu,Plant_7] 0
 x[CLUSTER_470,cattle_slu,Plant_8] 0
 x[CLUSTER_470,cattle_slu,Plant_9] 0
-x[CLUSTER_470,horse_man,Plant_0] 0.001289
+x[CLUSTER_470,horse_man,Plant_0] 0
 x[CLUSTER_470,horse_man,Plant_1] 0
 x[CLUSTER_470,horse_man,Plant_2] 0
 x[CLUSTER_470,horse_man,Plant_3] 0
@@ -49740,7 +49740,7 @@ x[CLUSTER_470,pig_slu,Plant_6] 0
 x[CLUSTER_470,pig_slu,Plant_7] 0
 x[CLUSTER_470,pig_slu,Plant_8] 0
 x[CLUSTER_470,pig_slu,Plant_9] 0
-x[CLUSTER_470,pig_man,Plant_0] 0.0001905
+x[CLUSTER_470,pig_man,Plant_0] 0
 x[CLUSTER_470,pig_man,Plant_1] 0
 x[CLUSTER_470,pig_man,Plant_2] 0
 x[CLUSTER_470,pig_man,Plant_3] 0
@@ -49824,7 +49824,7 @@ x[CLUSTER_471,cattle_man,Plant_0] 0
 x[CLUSTER_471,cattle_man,Plant_1] 0
 x[CLUSTER_471,cattle_man,Plant_2] 0
 x[CLUSTER_471,cattle_man,Plant_3] 0
-x[CLUSTER_471,cattle_man,Plant_4] 0.000292
+x[CLUSTER_471,cattle_man,Plant_4] 0
 x[CLUSTER_471,cattle_man,Plant_5] 0
 x[CLUSTER_471,cattle_man,Plant_6] 0
 x[CLUSTER_471,cattle_man,Plant_7] 0
@@ -49834,7 +49834,7 @@ x[CLUSTER_471,cattle_slu,Plant_0] 0
 x[CLUSTER_471,cattle_slu,Plant_1] 0
 x[CLUSTER_471,cattle_slu,Plant_2] 0
 x[CLUSTER_471,cattle_slu,Plant_3] 0
-x[CLUSTER_471,cattle_slu,Plant_4] 0.001307
+x[CLUSTER_471,cattle_slu,Plant_4] 0
 x[CLUSTER_471,cattle_slu,Plant_5] 0
 x[CLUSTER_471,cattle_slu,Plant_6] 0
 x[CLUSTER_471,cattle_slu,Plant_7] 0
@@ -49844,7 +49844,7 @@ x[CLUSTER_471,horse_man,Plant_0] 0
 x[CLUSTER_471,horse_man,Plant_1] 0
 x[CLUSTER_471,horse_man,Plant_2] 0
 x[CLUSTER_471,horse_man,Plant_3] 0
-x[CLUSTER_471,horse_man,Plant_4] 0.0002505
+x[CLUSTER_471,horse_man,Plant_4] 0
 x[CLUSTER_471,horse_man,Plant_5] 0
 x[CLUSTER_471,horse_man,Plant_6] 0
 x[CLUSTER_471,horse_man,Plant_7] 0
@@ -49854,7 +49854,7 @@ x[CLUSTER_471,pig_slu,Plant_0] 0
 x[CLUSTER_471,pig_slu,Plant_1] 0
 x[CLUSTER_471,pig_slu,Plant_2] 0
 x[CLUSTER_471,pig_slu,Plant_3] 0
-x[CLUSTER_471,pig_slu,Plant_4] 2.7649999999999998e-05
+x[CLUSTER_471,pig_slu,Plant_4] 0
 x[CLUSTER_471,pig_slu,Plant_5] 0
 x[CLUSTER_471,pig_slu,Plant_6] 0
 x[CLUSTER_471,pig_slu,Plant_7] 0
@@ -49884,7 +49884,7 @@ x[CLUSTER_471,clover_alfalfa_grass,Plant_0] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_3] 0
-x[CLUSTER_471,clover_alfalfa_grass,Plant_4] 2.1280000000000002e-04
+x[CLUSTER_471,clover_alfalfa_grass,Plant_4] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_471,clover_alfalfa_grass,Plant_7] 0
@@ -49940,7 +49940,7 @@ x[CLUSTER_471,legume_str,Plant_6] 0
 x[CLUSTER_471,legume_str,Plant_7] 0
 x[CLUSTER_471,legume_str,Plant_8] 0
 x[CLUSTER_471,legume_str,Plant_9] 0
-x[CLUSTER_472,cattle_man,Plant_0] 0.02481
+x[CLUSTER_472,cattle_man,Plant_0] 0
 x[CLUSTER_472,cattle_man,Plant_1] 0
 x[CLUSTER_472,cattle_man,Plant_2] 0
 x[CLUSTER_472,cattle_man,Plant_3] 0
@@ -49960,7 +49960,7 @@ x[CLUSTER_472,cattle_slu,Plant_6] 0
 x[CLUSTER_472,cattle_slu,Plant_7] 0
 x[CLUSTER_472,cattle_slu,Plant_8] 0
 x[CLUSTER_472,cattle_slu,Plant_9] 0
-x[CLUSTER_472,horse_man,Plant_0] 0.000709
+x[CLUSTER_472,horse_man,Plant_0] 0
 x[CLUSTER_472,horse_man,Plant_1] 0
 x[CLUSTER_472,horse_man,Plant_2] 0
 x[CLUSTER_472,horse_man,Plant_3] 0
@@ -49980,7 +49980,7 @@ x[CLUSTER_472,pig_slu,Plant_6] 0
 x[CLUSTER_472,pig_slu,Plant_7] 0
 x[CLUSTER_472,pig_slu,Plant_8] 0
 x[CLUSTER_472,pig_slu,Plant_9] 0
-x[CLUSTER_472,pig_man,Plant_0] 2.25159e-05
+x[CLUSTER_472,pig_man,Plant_0] 0
 x[CLUSTER_472,pig_man,Plant_1] 0
 x[CLUSTER_472,pig_man,Plant_2] 0
 x[CLUSTER_472,pig_man,Plant_3] 0
@@ -50020,7 +50020,7 @@ x[CLUSTER_472,perm_grass,Plant_6] 0
 x[CLUSTER_472,perm_grass,Plant_7] 0
 x[CLUSTER_472,perm_grass,Plant_8] 0
 x[CLUSTER_472,perm_grass,Plant_9] 0
-x[CLUSTER_472,maize_str,Plant_0] 6.26e-05
+x[CLUSTER_472,maize_str,Plant_0] 0
 x[CLUSTER_472,maize_str,Plant_1] 0
 x[CLUSTER_472,maize_str,Plant_2] 0
 x[CLUSTER_472,maize_str,Plant_3] 0
@@ -50063,7 +50063,7 @@ x[CLUSTER_472,legume_str,Plant_9] 0
 x[CLUSTER_473,cattle_man,Plant_0] 0
 x[CLUSTER_473,cattle_man,Plant_1] 0
 x[CLUSTER_473,cattle_man,Plant_2] 0
-x[CLUSTER_473,cattle_man,Plant_3] 0.01138
+x[CLUSTER_473,cattle_man,Plant_3] 0
 x[CLUSTER_473,cattle_man,Plant_4] 0
 x[CLUSTER_473,cattle_man,Plant_5] 0
 x[CLUSTER_473,cattle_man,Plant_6] 0
@@ -50083,7 +50083,7 @@ x[CLUSTER_473,cattle_slu,Plant_9] 0
 x[CLUSTER_473,horse_man,Plant_0] 0
 x[CLUSTER_473,horse_man,Plant_1] 0
 x[CLUSTER_473,horse_man,Plant_2] 0
-x[CLUSTER_473,horse_man,Plant_3] 0.000745
+x[CLUSTER_473,horse_man,Plant_3] 0
 x[CLUSTER_473,horse_man,Plant_4] 0
 x[CLUSTER_473,horse_man,Plant_5] 0
 x[CLUSTER_473,horse_man,Plant_6] 0
@@ -50103,7 +50103,7 @@ x[CLUSTER_473,pig_slu,Plant_9] 0
 x[CLUSTER_473,pig_man,Plant_0] 0
 x[CLUSTER_473,pig_man,Plant_1] 0
 x[CLUSTER_473,pig_man,Plant_2] 0
-x[CLUSTER_473,pig_man,Plant_3] 0.000511
+x[CLUSTER_473,pig_man,Plant_3] 0
 x[CLUSTER_473,pig_man,Plant_4] 0
 x[CLUSTER_473,pig_man,Plant_5] 0
 x[CLUSTER_473,pig_man,Plant_6] 0
@@ -50186,7 +50186,7 @@ x[CLUSTER_474,cattle_man,Plant_2] 0
 x[CLUSTER_474,cattle_man,Plant_3] 0
 x[CLUSTER_474,cattle_man,Plant_4] 0
 x[CLUSTER_474,cattle_man,Plant_5] 0
-x[CLUSTER_474,cattle_man,Plant_6] 0.01199
+x[CLUSTER_474,cattle_man,Plant_6] 0
 x[CLUSTER_474,cattle_man,Plant_7] 0
 x[CLUSTER_474,cattle_man,Plant_8] 0
 x[CLUSTER_474,cattle_man,Plant_9] 0
@@ -50206,7 +50206,7 @@ x[CLUSTER_474,horse_man,Plant_2] 0
 x[CLUSTER_474,horse_man,Plant_3] 0
 x[CLUSTER_474,horse_man,Plant_4] 0
 x[CLUSTER_474,horse_man,Plant_5] 0
-x[CLUSTER_474,horse_man,Plant_6] 0.001341
+x[CLUSTER_474,horse_man,Plant_6] 0
 x[CLUSTER_474,horse_man,Plant_7] 0
 x[CLUSTER_474,horse_man,Plant_8] 0
 x[CLUSTER_474,horse_man,Plant_9] 0
@@ -50304,7 +50304,7 @@ x[CLUSTER_475,cattle_man,Plant_0] 0
 x[CLUSTER_475,cattle_man,Plant_1] 0
 x[CLUSTER_475,cattle_man,Plant_2] 0
 x[CLUSTER_475,cattle_man,Plant_3] 0
-x[CLUSTER_475,cattle_man,Plant_4] 0.003878
+x[CLUSTER_475,cattle_man,Plant_4] 0
 x[CLUSTER_475,cattle_man,Plant_5] 0
 x[CLUSTER_475,cattle_man,Plant_6] 0
 x[CLUSTER_475,cattle_man,Plant_7] 0
@@ -50324,7 +50324,7 @@ x[CLUSTER_475,horse_man,Plant_0] 0
 x[CLUSTER_475,horse_man,Plant_1] 0
 x[CLUSTER_475,horse_man,Plant_2] 0
 x[CLUSTER_475,horse_man,Plant_3] 0
-x[CLUSTER_475,horse_man,Plant_4] 0.0006659
+x[CLUSTER_475,horse_man,Plant_4] 0
 x[CLUSTER_475,horse_man,Plant_5] 0
 x[CLUSTER_475,horse_man,Plant_6] 0
 x[CLUSTER_475,horse_man,Plant_7] 0
@@ -50344,7 +50344,7 @@ x[CLUSTER_475,pig_man,Plant_0] 0
 x[CLUSTER_475,pig_man,Plant_1] 0
 x[CLUSTER_475,pig_man,Plant_2] 0
 x[CLUSTER_475,pig_man,Plant_3] 0
-x[CLUSTER_475,pig_man,Plant_4] 0.00025066
+x[CLUSTER_475,pig_man,Plant_4] 0
 x[CLUSTER_475,pig_man,Plant_5] 0
 x[CLUSTER_475,pig_man,Plant_6] 0
 x[CLUSTER_475,pig_man,Plant_7] 0
@@ -50422,7 +50422,7 @@ x[CLUSTER_475,legume_str,Plant_8] 0
 x[CLUSTER_475,legume_str,Plant_9] 0
 x[CLUSTER_476,cattle_man,Plant_0] 0
 x[CLUSTER_476,cattle_man,Plant_1] 0
-x[CLUSTER_476,cattle_man,Plant_2] 0.00273
+x[CLUSTER_476,cattle_man,Plant_2] 0
 x[CLUSTER_476,cattle_man,Plant_3] 0
 x[CLUSTER_476,cattle_man,Plant_4] 0
 x[CLUSTER_476,cattle_man,Plant_5] 0
@@ -50442,7 +50442,7 @@ x[CLUSTER_476,cattle_slu,Plant_8] 0
 x[CLUSTER_476,cattle_slu,Plant_9] 0
 x[CLUSTER_476,horse_man,Plant_0] 0
 x[CLUSTER_476,horse_man,Plant_1] 0
-x[CLUSTER_476,horse_man,Plant_2] 0.000492
+x[CLUSTER_476,horse_man,Plant_2] 0
 x[CLUSTER_476,horse_man,Plant_3] 0
 x[CLUSTER_476,horse_man,Plant_4] 0
 x[CLUSTER_476,horse_man,Plant_5] 0
@@ -50540,7 +50540,7 @@ x[CLUSTER_476,legume_str,Plant_6] 0
 x[CLUSTER_476,legume_str,Plant_7] 0
 x[CLUSTER_476,legume_str,Plant_8] 0
 x[CLUSTER_476,legume_str,Plant_9] 0
-x[CLUSTER_477,cattle_man,Plant_0] 6.1299999999991943e-03
+x[CLUSTER_477,cattle_man,Plant_0] 0
 x[CLUSTER_477,cattle_man,Plant_1] 0
 x[CLUSTER_477,cattle_man,Plant_2] 0
 x[CLUSTER_477,cattle_man,Plant_3] 0
@@ -50560,7 +50560,7 @@ x[CLUSTER_477,cattle_slu,Plant_6] 0
 x[CLUSTER_477,cattle_slu,Plant_7] 0
 x[CLUSTER_477,cattle_slu,Plant_8] 0
 x[CLUSTER_477,cattle_slu,Plant_9] 0
-x[CLUSTER_477,horse_man,Plant_0] 0.000908
+x[CLUSTER_477,horse_man,Plant_0] 0
 x[CLUSTER_477,horse_man,Plant_1] 0
 x[CLUSTER_477,horse_man,Plant_2] 0
 x[CLUSTER_477,horse_man,Plant_3] 0
@@ -50620,7 +50620,7 @@ x[CLUSTER_477,perm_grass,Plant_6] 0
 x[CLUSTER_477,perm_grass,Plant_7] 0
 x[CLUSTER_477,perm_grass,Plant_8] 0
 x[CLUSTER_477,perm_grass,Plant_9] 0
-x[CLUSTER_477,maize_str,Plant_0] 1.4130000000000002e-04
+x[CLUSTER_477,maize_str,Plant_0] 0
 x[CLUSTER_477,maize_str,Plant_1] 0
 x[CLUSTER_477,maize_str,Plant_2] 0
 x[CLUSTER_477,maize_str,Plant_3] 0
@@ -50668,7 +50668,7 @@ x[CLUSTER_478,cattle_man,Plant_4] 0
 x[CLUSTER_478,cattle_man,Plant_5] 0
 x[CLUSTER_478,cattle_man,Plant_6] 0
 x[CLUSTER_478,cattle_man,Plant_7] 0
-x[CLUSTER_478,cattle_man,Plant_8] 1.3739999999996069e-03
+x[CLUSTER_478,cattle_man,Plant_8] 0
 x[CLUSTER_478,cattle_man,Plant_9] 0
 x[CLUSTER_478,cattle_slu,Plant_0] 0
 x[CLUSTER_478,cattle_slu,Plant_1] 0
@@ -50688,7 +50688,7 @@ x[CLUSTER_478,horse_man,Plant_4] 0
 x[CLUSTER_478,horse_man,Plant_5] 0
 x[CLUSTER_478,horse_man,Plant_6] 0
 x[CLUSTER_478,horse_man,Plant_7] 0
-x[CLUSTER_478,horse_man,Plant_8] 0.0003401
+x[CLUSTER_478,horse_man,Plant_8] 0
 x[CLUSTER_478,horse_man,Plant_9] 0
 x[CLUSTER_478,pig_slu,Plant_0] 0
 x[CLUSTER_478,pig_slu,Plant_1] 0
@@ -50705,7 +50705,7 @@ x[CLUSTER_478,pig_man,Plant_1] 0
 x[CLUSTER_478,pig_man,Plant_2] 0
 x[CLUSTER_478,pig_man,Plant_3] 0
 x[CLUSTER_478,pig_man,Plant_4] 0
-x[CLUSTER_478,pig_man,Plant_5] 3.5400000000000007e-05
+x[CLUSTER_478,pig_man,Plant_5] 0
 x[CLUSTER_478,pig_man,Plant_6] 0
 x[CLUSTER_478,pig_man,Plant_7] 0
 x[CLUSTER_478,pig_man,Plant_8] 0
@@ -50788,7 +50788,7 @@ x[CLUSTER_479,cattle_man,Plant_4] 0
 x[CLUSTER_479,cattle_man,Plant_5] 0
 x[CLUSTER_479,cattle_man,Plant_6] 0
 x[CLUSTER_479,cattle_man,Plant_7] 0
-x[CLUSTER_479,cattle_man,Plant_8] 0.00687
+x[CLUSTER_479,cattle_man,Plant_8] 0
 x[CLUSTER_479,cattle_man,Plant_9] 0
 x[CLUSTER_479,cattle_slu,Plant_0] 0
 x[CLUSTER_479,cattle_slu,Plant_1] 0
@@ -50798,7 +50798,7 @@ x[CLUSTER_479,cattle_slu,Plant_4] 0
 x[CLUSTER_479,cattle_slu,Plant_5] 0
 x[CLUSTER_479,cattle_slu,Plant_6] 0
 x[CLUSTER_479,cattle_slu,Plant_7] 0
-x[CLUSTER_479,cattle_slu,Plant_8] 4.4370000000000270e-02
+x[CLUSTER_479,cattle_slu,Plant_8] 0
 x[CLUSTER_479,cattle_slu,Plant_9] 0
 x[CLUSTER_479,horse_man,Plant_0] 0
 x[CLUSTER_479,horse_man,Plant_1] 0
@@ -50808,7 +50808,7 @@ x[CLUSTER_479,horse_man,Plant_4] 0
 x[CLUSTER_479,horse_man,Plant_5] 0
 x[CLUSTER_479,horse_man,Plant_6] 0
 x[CLUSTER_479,horse_man,Plant_7] 0
-x[CLUSTER_479,horse_man,Plant_8] 0.001092
+x[CLUSTER_479,horse_man,Plant_8] 0
 x[CLUSTER_479,horse_man,Plant_9] 0
 x[CLUSTER_479,pig_slu,Plant_0] 0
 x[CLUSTER_479,pig_slu,Plant_1] 0
@@ -50905,7 +50905,7 @@ x[CLUSTER_48,cattle_man,Plant_1] 0
 x[CLUSTER_48,cattle_man,Plant_2] 0
 x[CLUSTER_48,cattle_man,Plant_3] 0
 x[CLUSTER_48,cattle_man,Plant_4] 0
-x[CLUSTER_48,cattle_man,Plant_5] 0.004164
+x[CLUSTER_48,cattle_man,Plant_5] 0
 x[CLUSTER_48,cattle_man,Plant_6] 0
 x[CLUSTER_48,cattle_man,Plant_7] 0
 x[CLUSTER_48,cattle_man,Plant_8] 0
@@ -50915,7 +50915,7 @@ x[CLUSTER_48,cattle_slu,Plant_1] 0
 x[CLUSTER_48,cattle_slu,Plant_2] 0
 x[CLUSTER_48,cattle_slu,Plant_3] 0
 x[CLUSTER_48,cattle_slu,Plant_4] 0
-x[CLUSTER_48,cattle_slu,Plant_5] 2.2750000000000062e-02
+x[CLUSTER_48,cattle_slu,Plant_5] 0
 x[CLUSTER_48,cattle_slu,Plant_6] 0
 x[CLUSTER_48,cattle_slu,Plant_7] 0
 x[CLUSTER_48,cattle_slu,Plant_8] 0
@@ -50925,7 +50925,7 @@ x[CLUSTER_48,horse_man,Plant_1] 0
 x[CLUSTER_48,horse_man,Plant_2] 0
 x[CLUSTER_48,horse_man,Plant_3] 0
 x[CLUSTER_48,horse_man,Plant_4] 0
-x[CLUSTER_48,horse_man,Plant_5] 0.00104596
+x[CLUSTER_48,horse_man,Plant_5] 0
 x[CLUSTER_48,horse_man,Plant_6] 0
 x[CLUSTER_48,horse_man,Plant_7] 0
 x[CLUSTER_48,horse_man,Plant_8] 0
@@ -50945,7 +50945,7 @@ x[CLUSTER_48,pig_man,Plant_1] 0
 x[CLUSTER_48,pig_man,Plant_2] 0
 x[CLUSTER_48,pig_man,Plant_3] 0
 x[CLUSTER_48,pig_man,Plant_4] 0
-x[CLUSTER_48,pig_man,Plant_5] 0.0017014
+x[CLUSTER_48,pig_man,Plant_5] 0
 x[CLUSTER_48,pig_man,Plant_6] 0
 x[CLUSTER_48,pig_man,Plant_7] 0
 x[CLUSTER_48,pig_man,Plant_8] 0
@@ -50985,7 +50985,7 @@ x[CLUSTER_48,maize_str,Plant_1] 0
 x[CLUSTER_48,maize_str,Plant_2] 0
 x[CLUSTER_48,maize_str,Plant_3] 0
 x[CLUSTER_48,maize_str,Plant_4] 0
-x[CLUSTER_48,maize_str,Plant_5] 0.004581
+x[CLUSTER_48,maize_str,Plant_5] 0
 x[CLUSTER_48,maize_str,Plant_6] 0
 x[CLUSTER_48,maize_str,Plant_7] 0
 x[CLUSTER_48,maize_str,Plant_8] 0
@@ -51048,7 +51048,7 @@ x[CLUSTER_480,horse_man,Plant_4] 0
 x[CLUSTER_480,horse_man,Plant_5] 0
 x[CLUSTER_480,horse_man,Plant_6] 0
 x[CLUSTER_480,horse_man,Plant_7] 0
-x[CLUSTER_480,horse_man,Plant_8] 5.6060000000000007e-04
+x[CLUSTER_480,horse_man,Plant_8] 0
 x[CLUSTER_480,horse_man,Plant_9] 0
 x[CLUSTER_480,pig_slu,Plant_0] 0
 x[CLUSTER_480,pig_slu,Plant_1] 0
@@ -51145,7 +51145,7 @@ x[CLUSTER_481,cattle_man,Plant_1] 0
 x[CLUSTER_481,cattle_man,Plant_2] 0
 x[CLUSTER_481,cattle_man,Plant_3] 0
 x[CLUSTER_481,cattle_man,Plant_4] 0
-x[CLUSTER_481,cattle_man,Plant_5] 0.00789
+x[CLUSTER_481,cattle_man,Plant_5] 0
 x[CLUSTER_481,cattle_man,Plant_6] 0
 x[CLUSTER_481,cattle_man,Plant_7] 0
 x[CLUSTER_481,cattle_man,Plant_8] 0
@@ -51165,7 +51165,7 @@ x[CLUSTER_481,horse_man,Plant_1] 0
 x[CLUSTER_481,horse_man,Plant_2] 0
 x[CLUSTER_481,horse_man,Plant_3] 0
 x[CLUSTER_481,horse_man,Plant_4] 0
-x[CLUSTER_481,horse_man,Plant_5] 0.001085
+x[CLUSTER_481,horse_man,Plant_5] 0
 x[CLUSTER_481,horse_man,Plant_6] 0
 x[CLUSTER_481,horse_man,Plant_7] 0
 x[CLUSTER_481,horse_man,Plant_8] 0
@@ -51185,7 +51185,7 @@ x[CLUSTER_481,pig_man,Plant_1] 0
 x[CLUSTER_481,pig_man,Plant_2] 0
 x[CLUSTER_481,pig_man,Plant_3] 0
 x[CLUSTER_481,pig_man,Plant_4] 0
-x[CLUSTER_481,pig_man,Plant_5] 0.0005273
+x[CLUSTER_481,pig_man,Plant_5] 0
 x[CLUSTER_481,pig_man,Plant_6] 0
 x[CLUSTER_481,pig_man,Plant_7] 0
 x[CLUSTER_481,pig_man,Plant_8] 0
@@ -51266,7 +51266,7 @@ x[CLUSTER_482,cattle_man,Plant_2] 0
 x[CLUSTER_482,cattle_man,Plant_3] 0
 x[CLUSTER_482,cattle_man,Plant_4] 0
 x[CLUSTER_482,cattle_man,Plant_5] 0
-x[CLUSTER_482,cattle_man,Plant_6] 0.0165
+x[CLUSTER_482,cattle_man,Plant_6] 0
 x[CLUSTER_482,cattle_man,Plant_7] 0
 x[CLUSTER_482,cattle_man,Plant_8] 0
 x[CLUSTER_482,cattle_man,Plant_9] 0
@@ -51276,7 +51276,7 @@ x[CLUSTER_482,cattle_slu,Plant_2] 0
 x[CLUSTER_482,cattle_slu,Plant_3] 0
 x[CLUSTER_482,cattle_slu,Plant_4] 0
 x[CLUSTER_482,cattle_slu,Plant_5] 0
-x[CLUSTER_482,cattle_slu,Plant_6] 0.06759
+x[CLUSTER_482,cattle_slu,Plant_6] 0
 x[CLUSTER_482,cattle_slu,Plant_7] 0
 x[CLUSTER_482,cattle_slu,Plant_8] 0
 x[CLUSTER_482,cattle_slu,Plant_9] 0
@@ -51286,7 +51286,7 @@ x[CLUSTER_482,horse_man,Plant_2] 0
 x[CLUSTER_482,horse_man,Plant_3] 0
 x[CLUSTER_482,horse_man,Plant_4] 0
 x[CLUSTER_482,horse_man,Plant_5] 0
-x[CLUSTER_482,horse_man,Plant_6] 0.0011673
+x[CLUSTER_482,horse_man,Plant_6] 0
 x[CLUSTER_482,horse_man,Plant_7] 0
 x[CLUSTER_482,horse_man,Plant_8] 0
 x[CLUSTER_482,horse_man,Plant_9] 0
@@ -51306,7 +51306,7 @@ x[CLUSTER_482,pig_man,Plant_2] 0
 x[CLUSTER_482,pig_man,Plant_3] 0
 x[CLUSTER_482,pig_man,Plant_4] 0
 x[CLUSTER_482,pig_man,Plant_5] 0
-x[CLUSTER_482,pig_man,Plant_6] 2.899635e-05
+x[CLUSTER_482,pig_man,Plant_6] 0
 x[CLUSTER_482,pig_man,Plant_7] 0
 x[CLUSTER_482,pig_man,Plant_8] 0
 x[CLUSTER_482,pig_man,Plant_9] 0
@@ -51382,7 +51382,7 @@ x[CLUSTER_482,legume_str,Plant_8] 0
 x[CLUSTER_482,legume_str,Plant_9] 0
 x[CLUSTER_483,cattle_man,Plant_0] 0
 x[CLUSTER_483,cattle_man,Plant_1] 0
-x[CLUSTER_483,cattle_man,Plant_2] 0.0021169
+x[CLUSTER_483,cattle_man,Plant_2] 0
 x[CLUSTER_483,cattle_man,Plant_3] 0
 x[CLUSTER_483,cattle_man,Plant_4] 0
 x[CLUSTER_483,cattle_man,Plant_5] 0
@@ -51402,7 +51402,7 @@ x[CLUSTER_483,cattle_slu,Plant_8] 0
 x[CLUSTER_483,cattle_slu,Plant_9] 0
 x[CLUSTER_483,horse_man,Plant_0] 0
 x[CLUSTER_483,horse_man,Plant_1] 0
-x[CLUSTER_483,horse_man,Plant_2] 0.00028975
+x[CLUSTER_483,horse_man,Plant_2] 0
 x[CLUSTER_483,horse_man,Plant_3] 0
 x[CLUSTER_483,horse_man,Plant_4] 0
 x[CLUSTER_483,horse_man,Plant_5] 0
@@ -51427,7 +51427,7 @@ x[CLUSTER_483,pig_man,Plant_3] 0
 x[CLUSTER_483,pig_man,Plant_4] 0
 x[CLUSTER_483,pig_man,Plant_5] 0
 x[CLUSTER_483,pig_man,Plant_6] 0
-x[CLUSTER_483,pig_man,Plant_7] 0.0024589
+x[CLUSTER_483,pig_man,Plant_7] 0
 x[CLUSTER_483,pig_man,Plant_8] 0
 x[CLUSTER_483,pig_man,Plant_9] 0
 x[CLUSTER_483,cereal_str,Plant_0] 0
@@ -51469,7 +51469,7 @@ x[CLUSTER_483,maize_str,Plant_5] 0
 x[CLUSTER_483,maize_str,Plant_6] 0
 x[CLUSTER_483,maize_str,Plant_7] 0
 x[CLUSTER_483,maize_str,Plant_8] 0
-x[CLUSTER_483,maize_str,Plant_9] 0.0003872
+x[CLUSTER_483,maize_str,Plant_9] 0
 x[CLUSTER_483,beet_leaf,Plant_0] 0
 x[CLUSTER_483,beet_leaf,Plant_1] 0
 x[CLUSTER_483,beet_leaf,Plant_2] 0
@@ -51500,7 +51500,7 @@ x[CLUSTER_483,legume_str,Plant_6] 0
 x[CLUSTER_483,legume_str,Plant_7] 0
 x[CLUSTER_483,legume_str,Plant_8] 0
 x[CLUSTER_483,legume_str,Plant_9] 0
-x[CLUSTER_484,cattle_man,Plant_0] 0.01065
+x[CLUSTER_484,cattle_man,Plant_0] 0
 x[CLUSTER_484,cattle_man,Plant_1] 0
 x[CLUSTER_484,cattle_man,Plant_2] 0
 x[CLUSTER_484,cattle_man,Plant_3] 0
@@ -51520,7 +51520,7 @@ x[CLUSTER_484,cattle_slu,Plant_6] 0
 x[CLUSTER_484,cattle_slu,Plant_7] 0
 x[CLUSTER_484,cattle_slu,Plant_8] 0
 x[CLUSTER_484,cattle_slu,Plant_9] 0
-x[CLUSTER_484,horse_man,Plant_0] 0.0004209
+x[CLUSTER_484,horse_man,Plant_0] 0
 x[CLUSTER_484,horse_man,Plant_1] 0
 x[CLUSTER_484,horse_man,Plant_2] 0
 x[CLUSTER_484,horse_man,Plant_3] 0
@@ -51540,7 +51540,7 @@ x[CLUSTER_484,pig_slu,Plant_6] 0
 x[CLUSTER_484,pig_slu,Plant_7] 0
 x[CLUSTER_484,pig_slu,Plant_8] 0
 x[CLUSTER_484,pig_slu,Plant_9] 0
-x[CLUSTER_484,pig_man,Plant_0] 6.49729e-05
+x[CLUSTER_484,pig_man,Plant_0] 0
 x[CLUSTER_484,pig_man,Plant_1] 0
 x[CLUSTER_484,pig_man,Plant_2] 0
 x[CLUSTER_484,pig_man,Plant_3] 0
@@ -51580,7 +51580,7 @@ x[CLUSTER_484,perm_grass,Plant_6] 0
 x[CLUSTER_484,perm_grass,Plant_7] 0
 x[CLUSTER_484,perm_grass,Plant_8] 0
 x[CLUSTER_484,perm_grass,Plant_9] 0
-x[CLUSTER_484,maize_str,Plant_0] 0.0001605
+x[CLUSTER_484,maize_str,Plant_0] 0
 x[CLUSTER_484,maize_str,Plant_1] 0
 x[CLUSTER_484,maize_str,Plant_2] 0
 x[CLUSTER_484,maize_str,Plant_3] 0
@@ -51628,7 +51628,7 @@ x[CLUSTER_485,cattle_man,Plant_4] 0
 x[CLUSTER_485,cattle_man,Plant_5] 0
 x[CLUSTER_485,cattle_man,Plant_6] 0
 x[CLUSTER_485,cattle_man,Plant_7] 0
-x[CLUSTER_485,cattle_man,Plant_8] 0.00374
+x[CLUSTER_485,cattle_man,Plant_8] 0
 x[CLUSTER_485,cattle_man,Plant_9] 0
 x[CLUSTER_485,cattle_slu,Plant_0] 0
 x[CLUSTER_485,cattle_slu,Plant_1] 0
@@ -51638,7 +51638,7 @@ x[CLUSTER_485,cattle_slu,Plant_4] 0
 x[CLUSTER_485,cattle_slu,Plant_5] 0
 x[CLUSTER_485,cattle_slu,Plant_6] 0
 x[CLUSTER_485,cattle_slu,Plant_7] 0
-x[CLUSTER_485,cattle_slu,Plant_8] 0.01251
+x[CLUSTER_485,cattle_slu,Plant_8] 0
 x[CLUSTER_485,cattle_slu,Plant_9] 0
 x[CLUSTER_485,horse_man,Plant_0] 0
 x[CLUSTER_485,horse_man,Plant_1] 0
@@ -51648,7 +51648,7 @@ x[CLUSTER_485,horse_man,Plant_4] 0
 x[CLUSTER_485,horse_man,Plant_5] 0
 x[CLUSTER_485,horse_man,Plant_6] 0
 x[CLUSTER_485,horse_man,Plant_7] 0
-x[CLUSTER_485,horse_man,Plant_8] 0.001447
+x[CLUSTER_485,horse_man,Plant_8] 0
 x[CLUSTER_485,horse_man,Plant_9] 0
 x[CLUSTER_485,pig_slu,Plant_0] 0
 x[CLUSTER_485,pig_slu,Plant_1] 0
@@ -51668,7 +51668,7 @@ x[CLUSTER_485,pig_man,Plant_4] 0
 x[CLUSTER_485,pig_man,Plant_5] 0
 x[CLUSTER_485,pig_man,Plant_6] 0
 x[CLUSTER_485,pig_man,Plant_7] 0
-x[CLUSTER_485,pig_man,Plant_8] 1.9719999999999998e-05
+x[CLUSTER_485,pig_man,Plant_8] 0
 x[CLUSTER_485,pig_man,Plant_9] 0
 x[CLUSTER_485,cereal_str,Plant_0] 0
 x[CLUSTER_485,cereal_str,Plant_1] 0
@@ -51742,7 +51742,7 @@ x[CLUSTER_485,legume_str,Plant_8] 0
 x[CLUSTER_485,legume_str,Plant_9] 0
 x[CLUSTER_486,cattle_man,Plant_0] 0
 x[CLUSTER_486,cattle_man,Plant_1] 0
-x[CLUSTER_486,cattle_man,Plant_2] 0.001158
+x[CLUSTER_486,cattle_man,Plant_2] 0
 x[CLUSTER_486,cattle_man,Plant_3] 0
 x[CLUSTER_486,cattle_man,Plant_4] 0
 x[CLUSTER_486,cattle_man,Plant_5] 0
@@ -51762,7 +51762,7 @@ x[CLUSTER_486,cattle_slu,Plant_8] 0
 x[CLUSTER_486,cattle_slu,Plant_9] 0
 x[CLUSTER_486,horse_man,Plant_0] 0
 x[CLUSTER_486,horse_man,Plant_1] 0
-x[CLUSTER_486,horse_man,Plant_2] 4.2919999999999997e-04
+x[CLUSTER_486,horse_man,Plant_2] 0
 x[CLUSTER_486,horse_man,Plant_3] 0
 x[CLUSTER_486,horse_man,Plant_4] 0
 x[CLUSTER_486,horse_man,Plant_5] 0
@@ -51782,7 +51782,7 @@ x[CLUSTER_486,pig_slu,Plant_8] 0
 x[CLUSTER_486,pig_slu,Plant_9] 0
 x[CLUSTER_486,pig_man,Plant_0] 0
 x[CLUSTER_486,pig_man,Plant_1] 0
-x[CLUSTER_486,pig_man,Plant_2] 0.000772
+x[CLUSTER_486,pig_man,Plant_2] 0
 x[CLUSTER_486,pig_man,Plant_3] 0
 x[CLUSTER_486,pig_man,Plant_4] 0
 x[CLUSTER_486,pig_man,Plant_5] 0
@@ -51867,7 +51867,7 @@ x[CLUSTER_487,cattle_man,Plant_3] 0
 x[CLUSTER_487,cattle_man,Plant_4] 0
 x[CLUSTER_487,cattle_man,Plant_5] 0
 x[CLUSTER_487,cattle_man,Plant_6] 0
-x[CLUSTER_487,cattle_man,Plant_7] 0.0164
+x[CLUSTER_487,cattle_man,Plant_7] 0
 x[CLUSTER_487,cattle_man,Plant_8] 0
 x[CLUSTER_487,cattle_man,Plant_9] 0
 x[CLUSTER_487,cattle_slu,Plant_0] 0
@@ -51877,7 +51877,7 @@ x[CLUSTER_487,cattle_slu,Plant_3] 0
 x[CLUSTER_487,cattle_slu,Plant_4] 0
 x[CLUSTER_487,cattle_slu,Plant_5] 0
 x[CLUSTER_487,cattle_slu,Plant_6] 0
-x[CLUSTER_487,cattle_slu,Plant_7] 0.002333
+x[CLUSTER_487,cattle_slu,Plant_7] 0
 x[CLUSTER_487,cattle_slu,Plant_8] 0
 x[CLUSTER_487,cattle_slu,Plant_9] 0
 x[CLUSTER_487,horse_man,Plant_0] 0
@@ -51887,7 +51887,7 @@ x[CLUSTER_487,horse_man,Plant_3] 0
 x[CLUSTER_487,horse_man,Plant_4] 0
 x[CLUSTER_487,horse_man,Plant_5] 0
 x[CLUSTER_487,horse_man,Plant_6] 0
-x[CLUSTER_487,horse_man,Plant_7] 0.0004315
+x[CLUSTER_487,horse_man,Plant_7] 0
 x[CLUSTER_487,horse_man,Plant_8] 0
 x[CLUSTER_487,horse_man,Plant_9] 0
 x[CLUSTER_487,pig_slu,Plant_0] 0
@@ -51897,7 +51897,7 @@ x[CLUSTER_487,pig_slu,Plant_3] 0
 x[CLUSTER_487,pig_slu,Plant_4] 0
 x[CLUSTER_487,pig_slu,Plant_5] 0
 x[CLUSTER_487,pig_slu,Plant_6] 0
-x[CLUSTER_487,pig_slu,Plant_7] 3.2178000000000003e-03
+x[CLUSTER_487,pig_slu,Plant_7] 0
 x[CLUSTER_487,pig_slu,Plant_8] 0
 x[CLUSTER_487,pig_slu,Plant_9] 0
 x[CLUSTER_487,pig_man,Plant_0] 0
@@ -51907,7 +51907,7 @@ x[CLUSTER_487,pig_man,Plant_3] 0
 x[CLUSTER_487,pig_man,Plant_4] 0
 x[CLUSTER_487,pig_man,Plant_5] 0
 x[CLUSTER_487,pig_man,Plant_6] 0
-x[CLUSTER_487,pig_man,Plant_7] 0.00029925
+x[CLUSTER_487,pig_man,Plant_7] 0
 x[CLUSTER_487,pig_man,Plant_8] 0
 x[CLUSTER_487,pig_man,Plant_9] 0
 x[CLUSTER_487,cereal_str,Plant_0] 0
@@ -51929,7 +51929,7 @@ x[CLUSTER_487,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_487,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_487,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_487,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_487,clover_alfalfa_grass,Plant_9] 0.003453
+x[CLUSTER_487,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_487,perm_grass,Plant_0] 0
 x[CLUSTER_487,perm_grass,Plant_1] 0
 x[CLUSTER_487,perm_grass,Plant_2] 0
@@ -51949,7 +51949,7 @@ x[CLUSTER_487,maize_str,Plant_5] 0
 x[CLUSTER_487,maize_str,Plant_6] 0
 x[CLUSTER_487,maize_str,Plant_7] 0
 x[CLUSTER_487,maize_str,Plant_8] 0
-x[CLUSTER_487,maize_str,Plant_9] 0.0006374
+x[CLUSTER_487,maize_str,Plant_9] 0
 x[CLUSTER_487,beet_leaf,Plant_0] 0
 x[CLUSTER_487,beet_leaf,Plant_1] 0
 x[CLUSTER_487,beet_leaf,Plant_2] 0
@@ -51983,7 +51983,7 @@ x[CLUSTER_487,legume_str,Plant_9] 0
 x[CLUSTER_488,cattle_man,Plant_0] 0
 x[CLUSTER_488,cattle_man,Plant_1] 0
 x[CLUSTER_488,cattle_man,Plant_2] 0
-x[CLUSTER_488,cattle_man,Plant_3] 6.25e-05
+x[CLUSTER_488,cattle_man,Plant_3] 0
 x[CLUSTER_488,cattle_man,Plant_4] 0
 x[CLUSTER_488,cattle_man,Plant_5] 0
 x[CLUSTER_488,cattle_man,Plant_6] 0
@@ -51993,7 +51993,7 @@ x[CLUSTER_488,cattle_man,Plant_9] 0
 x[CLUSTER_488,cattle_slu,Plant_0] 0
 x[CLUSTER_488,cattle_slu,Plant_1] 0
 x[CLUSTER_488,cattle_slu,Plant_2] 0
-x[CLUSTER_488,cattle_slu,Plant_3] 0.000254
+x[CLUSTER_488,cattle_slu,Plant_3] 0
 x[CLUSTER_488,cattle_slu,Plant_4] 0
 x[CLUSTER_488,cattle_slu,Plant_5] 0
 x[CLUSTER_488,cattle_slu,Plant_6] 0
@@ -52003,7 +52003,7 @@ x[CLUSTER_488,cattle_slu,Plant_9] 0
 x[CLUSTER_488,horse_man,Plant_0] 0
 x[CLUSTER_488,horse_man,Plant_1] 0
 x[CLUSTER_488,horse_man,Plant_2] 0
-x[CLUSTER_488,horse_man,Plant_3] 0.0002369
+x[CLUSTER_488,horse_man,Plant_3] 0
 x[CLUSTER_488,horse_man,Plant_4] 0
 x[CLUSTER_488,horse_man,Plant_5] 0
 x[CLUSTER_488,horse_man,Plant_6] 0
@@ -52023,7 +52023,7 @@ x[CLUSTER_488,pig_slu,Plant_9] 0
 x[CLUSTER_488,pig_man,Plant_0] 0
 x[CLUSTER_488,pig_man,Plant_1] 0
 x[CLUSTER_488,pig_man,Plant_2] 0
-x[CLUSTER_488,pig_man,Plant_3] 1.1857999999999999e-03
+x[CLUSTER_488,pig_man,Plant_3] 0
 x[CLUSTER_488,pig_man,Plant_4] 0
 x[CLUSTER_488,pig_man,Plant_5] 0
 x[CLUSTER_488,pig_man,Plant_6] 0
@@ -52101,7 +52101,7 @@ x[CLUSTER_488,legume_str,Plant_7] 0
 x[CLUSTER_488,legume_str,Plant_8] 0
 x[CLUSTER_488,legume_str,Plant_9] 0
 x[CLUSTER_489,cattle_man,Plant_0] 0
-x[CLUSTER_489,cattle_man,Plant_1] 0.001068
+x[CLUSTER_489,cattle_man,Plant_1] 0
 x[CLUSTER_489,cattle_man,Plant_2] 0
 x[CLUSTER_489,cattle_man,Plant_3] 0
 x[CLUSTER_489,cattle_man,Plant_4] 0
@@ -52121,7 +52121,7 @@ x[CLUSTER_489,cattle_slu,Plant_7] 0
 x[CLUSTER_489,cattle_slu,Plant_8] 0
 x[CLUSTER_489,cattle_slu,Plant_9] 0
 x[CLUSTER_489,horse_man,Plant_0] 0
-x[CLUSTER_489,horse_man,Plant_1] 0.0003675
+x[CLUSTER_489,horse_man,Plant_1] 0
 x[CLUSTER_489,horse_man,Plant_2] 0
 x[CLUSTER_489,horse_man,Plant_3] 0
 x[CLUSTER_489,horse_man,Plant_4] 0
@@ -52227,7 +52227,7 @@ x[CLUSTER_49,cattle_man,Plant_3] 0
 x[CLUSTER_49,cattle_man,Plant_4] 0
 x[CLUSTER_49,cattle_man,Plant_5] 0
 x[CLUSTER_49,cattle_man,Plant_6] 0
-x[CLUSTER_49,cattle_man,Plant_7] 0.01549
+x[CLUSTER_49,cattle_man,Plant_7] 0
 x[CLUSTER_49,cattle_man,Plant_8] 0
 x[CLUSTER_49,cattle_man,Plant_9] 0
 x[CLUSTER_49,cattle_slu,Plant_0] 0
@@ -52237,7 +52237,7 @@ x[CLUSTER_49,cattle_slu,Plant_3] 0
 x[CLUSTER_49,cattle_slu,Plant_4] 0
 x[CLUSTER_49,cattle_slu,Plant_5] 0
 x[CLUSTER_49,cattle_slu,Plant_6] 0
-x[CLUSTER_49,cattle_slu,Plant_7] 0.0048014
+x[CLUSTER_49,cattle_slu,Plant_7] 0
 x[CLUSTER_49,cattle_slu,Plant_8] 0
 x[CLUSTER_49,cattle_slu,Plant_9] 0
 x[CLUSTER_49,horse_man,Plant_0] 0
@@ -52247,7 +52247,7 @@ x[CLUSTER_49,horse_man,Plant_3] 0
 x[CLUSTER_49,horse_man,Plant_4] 0
 x[CLUSTER_49,horse_man,Plant_5] 0
 x[CLUSTER_49,horse_man,Plant_6] 0
-x[CLUSTER_49,horse_man,Plant_7] 0.0017101
+x[CLUSTER_49,horse_man,Plant_7] 0
 x[CLUSTER_49,horse_man,Plant_8] 0
 x[CLUSTER_49,horse_man,Plant_9] 0
 x[CLUSTER_49,pig_slu,Plant_0] 0
@@ -52267,7 +52267,7 @@ x[CLUSTER_49,pig_man,Plant_3] 0
 x[CLUSTER_49,pig_man,Plant_4] 0
 x[CLUSTER_49,pig_man,Plant_5] 0
 x[CLUSTER_49,pig_man,Plant_6] 0
-x[CLUSTER_49,pig_man,Plant_7] 0.000231961
+x[CLUSTER_49,pig_man,Plant_7] 0
 x[CLUSTER_49,pig_man,Plant_8] 0
 x[CLUSTER_49,pig_man,Plant_9] 0
 x[CLUSTER_49,cereal_str,Plant_0] 0
@@ -52289,7 +52289,7 @@ x[CLUSTER_49,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_49,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_49,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_49,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_49,clover_alfalfa_grass,Plant_9] 6.0598000000000006e-03
+x[CLUSTER_49,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_49,perm_grass,Plant_0] 0
 x[CLUSTER_49,perm_grass,Plant_1] 0
 x[CLUSTER_49,perm_grass,Plant_2] 0
@@ -52309,7 +52309,7 @@ x[CLUSTER_49,maize_str,Plant_5] 0
 x[CLUSTER_49,maize_str,Plant_6] 0
 x[CLUSTER_49,maize_str,Plant_7] 0
 x[CLUSTER_49,maize_str,Plant_8] 0
-x[CLUSTER_49,maize_str,Plant_9] 5.1629999999999992e-04
+x[CLUSTER_49,maize_str,Plant_9] 0
 x[CLUSTER_49,beet_leaf,Plant_0] 0
 x[CLUSTER_49,beet_leaf,Plant_1] 0
 x[CLUSTER_49,beet_leaf,Plant_2] 0
@@ -52342,7 +52342,7 @@ x[CLUSTER_49,legume_str,Plant_8] 0
 x[CLUSTER_49,legume_str,Plant_9] 0
 x[CLUSTER_490,cattle_man,Plant_0] 0
 x[CLUSTER_490,cattle_man,Plant_1] 0
-x[CLUSTER_490,cattle_man,Plant_2] 0.0036
+x[CLUSTER_490,cattle_man,Plant_2] 0
 x[CLUSTER_490,cattle_man,Plant_3] 0
 x[CLUSTER_490,cattle_man,Plant_4] 0
 x[CLUSTER_490,cattle_man,Plant_5] 0
@@ -52352,7 +52352,7 @@ x[CLUSTER_490,cattle_man,Plant_8] 0
 x[CLUSTER_490,cattle_man,Plant_9] 0
 x[CLUSTER_490,cattle_slu,Plant_0] 0
 x[CLUSTER_490,cattle_slu,Plant_1] 0
-x[CLUSTER_490,cattle_slu,Plant_2] 0.02155
+x[CLUSTER_490,cattle_slu,Plant_2] 0
 x[CLUSTER_490,cattle_slu,Plant_3] 0
 x[CLUSTER_490,cattle_slu,Plant_4] 0
 x[CLUSTER_490,cattle_slu,Plant_5] 0
@@ -52362,7 +52362,7 @@ x[CLUSTER_490,cattle_slu,Plant_8] 0
 x[CLUSTER_490,cattle_slu,Plant_9] 0
 x[CLUSTER_490,horse_man,Plant_0] 0
 x[CLUSTER_490,horse_man,Plant_1] 0
-x[CLUSTER_490,horse_man,Plant_2] 0.0007452
+x[CLUSTER_490,horse_man,Plant_2] 0
 x[CLUSTER_490,horse_man,Plant_3] 0
 x[CLUSTER_490,horse_man,Plant_4] 0
 x[CLUSTER_490,horse_man,Plant_5] 0
@@ -52372,7 +52372,7 @@ x[CLUSTER_490,horse_man,Plant_8] 0
 x[CLUSTER_490,horse_man,Plant_9] 0
 x[CLUSTER_490,pig_slu,Plant_0] 0
 x[CLUSTER_490,pig_slu,Plant_1] 0
-x[CLUSTER_490,pig_slu,Plant_2] 0.00123
+x[CLUSTER_490,pig_slu,Plant_2] 0
 x[CLUSTER_490,pig_slu,Plant_3] 0
 x[CLUSTER_490,pig_slu,Plant_4] 0
 x[CLUSTER_490,pig_slu,Plant_5] 0
@@ -52382,7 +52382,7 @@ x[CLUSTER_490,pig_slu,Plant_8] 0
 x[CLUSTER_490,pig_slu,Plant_9] 0
 x[CLUSTER_490,pig_man,Plant_0] 0
 x[CLUSTER_490,pig_man,Plant_1] 0
-x[CLUSTER_490,pig_man,Plant_2] 0.0001059
+x[CLUSTER_490,pig_man,Plant_2] 0
 x[CLUSTER_490,pig_man,Plant_3] 0
 x[CLUSTER_490,pig_man,Plant_4] 0
 x[CLUSTER_490,pig_man,Plant_5] 0
@@ -52402,7 +52402,7 @@ x[CLUSTER_490,cereal_str,Plant_8] 0
 x[CLUSTER_490,cereal_str,Plant_9] 0
 x[CLUSTER_490,clover_alfalfa_grass,Plant_0] 0
 x[CLUSTER_490,clover_alfalfa_grass,Plant_1] 0
-x[CLUSTER_490,clover_alfalfa_grass,Plant_2] 1.4415455408225298e-03
+x[CLUSTER_490,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_490,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_490,clover_alfalfa_grass,Plant_4] 0
 x[CLUSTER_490,clover_alfalfa_grass,Plant_5] 0
@@ -52422,7 +52422,7 @@ x[CLUSTER_490,perm_grass,Plant_8] 0
 x[CLUSTER_490,perm_grass,Plant_9] 0
 x[CLUSTER_490,maize_str,Plant_0] 0
 x[CLUSTER_490,maize_str,Plant_1] 0
-x[CLUSTER_490,maize_str,Plant_2] 8.01e-05
+x[CLUSTER_490,maize_str,Plant_2] 0
 x[CLUSTER_490,maize_str,Plant_3] 0
 x[CLUSTER_490,maize_str,Plant_4] 0
 x[CLUSTER_490,maize_str,Plant_5] 0
@@ -52469,7 +52469,7 @@ x[CLUSTER_491,cattle_man,Plant_5] 0
 x[CLUSTER_491,cattle_man,Plant_6] 0
 x[CLUSTER_491,cattle_man,Plant_7] 0
 x[CLUSTER_491,cattle_man,Plant_8] 0
-x[CLUSTER_491,cattle_man,Plant_9] 0.006717
+x[CLUSTER_491,cattle_man,Plant_9] 0
 x[CLUSTER_491,cattle_slu,Plant_0] 0
 x[CLUSTER_491,cattle_slu,Plant_1] 0
 x[CLUSTER_491,cattle_slu,Plant_2] 0
@@ -52489,7 +52489,7 @@ x[CLUSTER_491,horse_man,Plant_5] 0
 x[CLUSTER_491,horse_man,Plant_6] 0
 x[CLUSTER_491,horse_man,Plant_7] 0
 x[CLUSTER_491,horse_man,Plant_8] 0
-x[CLUSTER_491,horse_man,Plant_9] 0.0002776
+x[CLUSTER_491,horse_man,Plant_9] 0
 x[CLUSTER_491,pig_slu,Plant_0] 0
 x[CLUSTER_491,pig_slu,Plant_1] 0
 x[CLUSTER_491,pig_slu,Plant_2] 0
@@ -52507,7 +52507,7 @@ x[CLUSTER_491,pig_man,Plant_3] 0
 x[CLUSTER_491,pig_man,Plant_4] 0
 x[CLUSTER_491,pig_man,Plant_5] 0
 x[CLUSTER_491,pig_man,Plant_6] 0
-x[CLUSTER_491,pig_man,Plant_7] 2.3663999999999998e-04
+x[CLUSTER_491,pig_man,Plant_7] 0
 x[CLUSTER_491,pig_man,Plant_8] 0
 x[CLUSTER_491,pig_man,Plant_9] 0
 x[CLUSTER_491,cereal_str,Plant_0] 0
@@ -52529,7 +52529,7 @@ x[CLUSTER_491,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_491,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_491,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_491,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_491,clover_alfalfa_grass,Plant_9] 0.00466
+x[CLUSTER_491,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_491,perm_grass,Plant_0] 0
 x[CLUSTER_491,perm_grass,Plant_1] 0
 x[CLUSTER_491,perm_grass,Plant_2] 0
@@ -52549,7 +52549,7 @@ x[CLUSTER_491,maize_str,Plant_5] 0
 x[CLUSTER_491,maize_str,Plant_6] 0
 x[CLUSTER_491,maize_str,Plant_7] 0
 x[CLUSTER_491,maize_str,Plant_8] 0
-x[CLUSTER_491,maize_str,Plant_9] 5.09e-05
+x[CLUSTER_491,maize_str,Plant_9] 0
 x[CLUSTER_491,beet_leaf,Plant_0] 0
 x[CLUSTER_491,beet_leaf,Plant_1] 0
 x[CLUSTER_491,beet_leaf,Plant_2] 0
@@ -52601,7 +52601,7 @@ x[CLUSTER_492,cattle_slu,Plant_7] 0
 x[CLUSTER_492,cattle_slu,Plant_8] 0
 x[CLUSTER_492,cattle_slu,Plant_9] 0
 x[CLUSTER_492,horse_man,Plant_0] 0
-x[CLUSTER_492,horse_man,Plant_1] 0.000472
+x[CLUSTER_492,horse_man,Plant_1] 0
 x[CLUSTER_492,horse_man,Plant_2] 0
 x[CLUSTER_492,horse_man,Plant_3] 0
 x[CLUSTER_492,horse_man,Plant_4] 0
@@ -52703,7 +52703,7 @@ x[CLUSTER_492,legume_str,Plant_9] 0
 x[CLUSTER_493,cattle_man,Plant_0] 0
 x[CLUSTER_493,cattle_man,Plant_1] 0
 x[CLUSTER_493,cattle_man,Plant_2] 0
-x[CLUSTER_493,cattle_man,Plant_3] 0.00904
+x[CLUSTER_493,cattle_man,Plant_3] 0
 x[CLUSTER_493,cattle_man,Plant_4] 0
 x[CLUSTER_493,cattle_man,Plant_5] 0
 x[CLUSTER_493,cattle_man,Plant_6] 0
@@ -52723,7 +52723,7 @@ x[CLUSTER_493,cattle_slu,Plant_9] 0
 x[CLUSTER_493,horse_man,Plant_0] 0
 x[CLUSTER_493,horse_man,Plant_1] 0
 x[CLUSTER_493,horse_man,Plant_2] 0
-x[CLUSTER_493,horse_man,Plant_3] 0.0009512
+x[CLUSTER_493,horse_man,Plant_3] 0
 x[CLUSTER_493,horse_man,Plant_4] 0
 x[CLUSTER_493,horse_man,Plant_5] 0
 x[CLUSTER_493,horse_man,Plant_6] 0
@@ -52743,7 +52743,7 @@ x[CLUSTER_493,pig_slu,Plant_9] 0
 x[CLUSTER_493,pig_man,Plant_0] 0
 x[CLUSTER_493,pig_man,Plant_1] 0
 x[CLUSTER_493,pig_man,Plant_2] 0
-x[CLUSTER_493,pig_man,Plant_3] 0.00019315
+x[CLUSTER_493,pig_man,Plant_3] 0
 x[CLUSTER_493,pig_man,Plant_4] 0
 x[CLUSTER_493,pig_man,Plant_5] 0
 x[CLUSTER_493,pig_man,Plant_6] 0
@@ -52822,7 +52822,7 @@ x[CLUSTER_493,legume_str,Plant_8] 0
 x[CLUSTER_493,legume_str,Plant_9] 0
 x[CLUSTER_494,cattle_man,Plant_0] 0
 x[CLUSTER_494,cattle_man,Plant_1] 0
-x[CLUSTER_494,cattle_man,Plant_2] 0.00958
+x[CLUSTER_494,cattle_man,Plant_2] 0
 x[CLUSTER_494,cattle_man,Plant_3] 0
 x[CLUSTER_494,cattle_man,Plant_4] 0
 x[CLUSTER_494,cattle_man,Plant_5] 0
@@ -52842,7 +52842,7 @@ x[CLUSTER_494,cattle_slu,Plant_8] 0
 x[CLUSTER_494,cattle_slu,Plant_9] 0
 x[CLUSTER_494,horse_man,Plant_0] 0
 x[CLUSTER_494,horse_man,Plant_1] 0
-x[CLUSTER_494,horse_man,Plant_2] 0.0001049
+x[CLUSTER_494,horse_man,Plant_2] 0
 x[CLUSTER_494,horse_man,Plant_3] 0
 x[CLUSTER_494,horse_man,Plant_4] 0
 x[CLUSTER_494,horse_man,Plant_5] 0
@@ -52867,7 +52867,7 @@ x[CLUSTER_494,pig_man,Plant_3] 0
 x[CLUSTER_494,pig_man,Plant_4] 0
 x[CLUSTER_494,pig_man,Plant_5] 0
 x[CLUSTER_494,pig_man,Plant_6] 0
-x[CLUSTER_494,pig_man,Plant_7] 0.0005669
+x[CLUSTER_494,pig_man,Plant_7] 0
 x[CLUSTER_494,pig_man,Plant_8] 0
 x[CLUSTER_494,pig_man,Plant_9] 0
 x[CLUSTER_494,cereal_str,Plant_0] 0
@@ -52945,7 +52945,7 @@ x[CLUSTER_495,cattle_man,Plant_1] 0
 x[CLUSTER_495,cattle_man,Plant_2] 0
 x[CLUSTER_495,cattle_man,Plant_3] 0
 x[CLUSTER_495,cattle_man,Plant_4] 0
-x[CLUSTER_495,cattle_man,Plant_5] 0.00777
+x[CLUSTER_495,cattle_man,Plant_5] 0
 x[CLUSTER_495,cattle_man,Plant_6] 0
 x[CLUSTER_495,cattle_man,Plant_7] 0
 x[CLUSTER_495,cattle_man,Plant_8] 0
@@ -52965,7 +52965,7 @@ x[CLUSTER_495,horse_man,Plant_1] 0
 x[CLUSTER_495,horse_man,Plant_2] 0
 x[CLUSTER_495,horse_man,Plant_3] 0
 x[CLUSTER_495,horse_man,Plant_4] 0
-x[CLUSTER_495,horse_man,Plant_5] 0.001575
+x[CLUSTER_495,horse_man,Plant_5] 0
 x[CLUSTER_495,horse_man,Plant_6] 0
 x[CLUSTER_495,horse_man,Plant_7] 0
 x[CLUSTER_495,horse_man,Plant_8] 0
@@ -52985,7 +52985,7 @@ x[CLUSTER_495,pig_man,Plant_1] 0
 x[CLUSTER_495,pig_man,Plant_2] 0
 x[CLUSTER_495,pig_man,Plant_3] 0
 x[CLUSTER_495,pig_man,Plant_4] 0
-x[CLUSTER_495,pig_man,Plant_5] 1.8044599999999999e-04
+x[CLUSTER_495,pig_man,Plant_5] 0
 x[CLUSTER_495,pig_man,Plant_6] 0
 x[CLUSTER_495,pig_man,Plant_7] 0
 x[CLUSTER_495,pig_man,Plant_8] 0
@@ -53068,7 +53068,7 @@ x[CLUSTER_496,cattle_man,Plant_4] 0
 x[CLUSTER_496,cattle_man,Plant_5] 0
 x[CLUSTER_496,cattle_man,Plant_6] 0
 x[CLUSTER_496,cattle_man,Plant_7] 0
-x[CLUSTER_496,cattle_man,Plant_8] 0.0066753
+x[CLUSTER_496,cattle_man,Plant_8] 0
 x[CLUSTER_496,cattle_man,Plant_9] 0
 x[CLUSTER_496,cattle_slu,Plant_0] 0
 x[CLUSTER_496,cattle_slu,Plant_1] 0
@@ -53088,7 +53088,7 @@ x[CLUSTER_496,horse_man,Plant_4] 0
 x[CLUSTER_496,horse_man,Plant_5] 0
 x[CLUSTER_496,horse_man,Plant_6] 0
 x[CLUSTER_496,horse_man,Plant_7] 0
-x[CLUSTER_496,horse_man,Plant_8] 0.000451
+x[CLUSTER_496,horse_man,Plant_8] 0
 x[CLUSTER_496,horse_man,Plant_9] 0
 x[CLUSTER_496,pig_slu,Plant_0] 0
 x[CLUSTER_496,pig_slu,Plant_1] 0
@@ -53108,7 +53108,7 @@ x[CLUSTER_496,pig_man,Plant_4] 0
 x[CLUSTER_496,pig_man,Plant_5] 0
 x[CLUSTER_496,pig_man,Plant_6] 0
 x[CLUSTER_496,pig_man,Plant_7] 0
-x[CLUSTER_496,pig_man,Plant_8] 0.0006873
+x[CLUSTER_496,pig_man,Plant_8] 0
 x[CLUSTER_496,pig_man,Plant_9] 0
 x[CLUSTER_496,cereal_str,Plant_0] 0
 x[CLUSTER_496,cereal_str,Plant_1] 0
@@ -53187,7 +53187,7 @@ x[CLUSTER_497,cattle_man,Plant_3] 0
 x[CLUSTER_497,cattle_man,Plant_4] 0
 x[CLUSTER_497,cattle_man,Plant_5] 0
 x[CLUSTER_497,cattle_man,Plant_6] 0
-x[CLUSTER_497,cattle_man,Plant_7] 0.00576
+x[CLUSTER_497,cattle_man,Plant_7] 0
 x[CLUSTER_497,cattle_man,Plant_8] 0
 x[CLUSTER_497,cattle_man,Plant_9] 0
 x[CLUSTER_497,cattle_slu,Plant_0] 0
@@ -53197,7 +53197,7 @@ x[CLUSTER_497,cattle_slu,Plant_3] 0
 x[CLUSTER_497,cattle_slu,Plant_4] 0
 x[CLUSTER_497,cattle_slu,Plant_5] 0
 x[CLUSTER_497,cattle_slu,Plant_6] 0
-x[CLUSTER_497,cattle_slu,Plant_7] 0.00206
+x[CLUSTER_497,cattle_slu,Plant_7] 0
 x[CLUSTER_497,cattle_slu,Plant_8] 0
 x[CLUSTER_497,cattle_slu,Plant_9] 0
 x[CLUSTER_497,horse_man,Plant_0] 0
@@ -53207,7 +53207,7 @@ x[CLUSTER_497,horse_man,Plant_3] 0
 x[CLUSTER_497,horse_man,Plant_4] 0
 x[CLUSTER_497,horse_man,Plant_5] 0
 x[CLUSTER_497,horse_man,Plant_6] 0
-x[CLUSTER_497,horse_man,Plant_7] 0.0001381
+x[CLUSTER_497,horse_man,Plant_7] 0
 x[CLUSTER_497,horse_man,Plant_8] 0
 x[CLUSTER_497,horse_man,Plant_9] 0
 x[CLUSTER_497,pig_slu,Plant_0] 0
@@ -53217,7 +53217,7 @@ x[CLUSTER_497,pig_slu,Plant_3] 0
 x[CLUSTER_497,pig_slu,Plant_4] 0
 x[CLUSTER_497,pig_slu,Plant_5] 0
 x[CLUSTER_497,pig_slu,Plant_6] 0
-x[CLUSTER_497,pig_slu,Plant_7] 0.004918
+x[CLUSTER_497,pig_slu,Plant_7] 0
 x[CLUSTER_497,pig_slu,Plant_8] 0
 x[CLUSTER_497,pig_slu,Plant_9] 0
 x[CLUSTER_497,pig_man,Plant_0] 0
@@ -53227,7 +53227,7 @@ x[CLUSTER_497,pig_man,Plant_3] 0
 x[CLUSTER_497,pig_man,Plant_4] 0
 x[CLUSTER_497,pig_man,Plant_5] 0
 x[CLUSTER_497,pig_man,Plant_6] 0
-x[CLUSTER_497,pig_man,Plant_7] 0.0003479
+x[CLUSTER_497,pig_man,Plant_7] 0
 x[CLUSTER_497,pig_man,Plant_8] 0
 x[CLUSTER_497,pig_man,Plant_9] 0
 x[CLUSTER_497,cereal_str,Plant_0] 0
@@ -53306,7 +53306,7 @@ x[CLUSTER_498,cattle_man,Plant_2] 0
 x[CLUSTER_498,cattle_man,Plant_3] 0
 x[CLUSTER_498,cattle_man,Plant_4] 0
 x[CLUSTER_498,cattle_man,Plant_5] 0
-x[CLUSTER_498,cattle_man,Plant_6] 0.003436
+x[CLUSTER_498,cattle_man,Plant_6] 0
 x[CLUSTER_498,cattle_man,Plant_7] 0
 x[CLUSTER_498,cattle_man,Plant_8] 0
 x[CLUSTER_498,cattle_man,Plant_9] 0
@@ -53325,7 +53325,7 @@ x[CLUSTER_498,horse_man,Plant_1] 0
 x[CLUSTER_498,horse_man,Plant_2] 0
 x[CLUSTER_498,horse_man,Plant_3] 0
 x[CLUSTER_498,horse_man,Plant_4] 0
-x[CLUSTER_498,horse_man,Plant_5] 0.002767
+x[CLUSTER_498,horse_man,Plant_5] 0
 x[CLUSTER_498,horse_man,Plant_6] 0
 x[CLUSTER_498,horse_man,Plant_7] 0
 x[CLUSTER_498,horse_man,Plant_8] 0
@@ -53428,7 +53428,7 @@ x[CLUSTER_499,cattle_man,Plant_4] 0
 x[CLUSTER_499,cattle_man,Plant_5] 0
 x[CLUSTER_499,cattle_man,Plant_6] 0
 x[CLUSTER_499,cattle_man,Plant_7] 0
-x[CLUSTER_499,cattle_man,Plant_8] 0.00437
+x[CLUSTER_499,cattle_man,Plant_8] 0
 x[CLUSTER_499,cattle_man,Plant_9] 0
 x[CLUSTER_499,cattle_slu,Plant_0] 0
 x[CLUSTER_499,cattle_slu,Plant_1] 0
@@ -53448,7 +53448,7 @@ x[CLUSTER_499,horse_man,Plant_4] 0
 x[CLUSTER_499,horse_man,Plant_5] 0
 x[CLUSTER_499,horse_man,Plant_6] 0
 x[CLUSTER_499,horse_man,Plant_7] 0
-x[CLUSTER_499,horse_man,Plant_8] 3.6699999999998986e-03
+x[CLUSTER_499,horse_man,Plant_8] 0
 x[CLUSTER_499,horse_man,Plant_9] 0
 x[CLUSTER_499,pig_slu,Plant_0] 0
 x[CLUSTER_499,pig_slu,Plant_1] 0
@@ -53465,7 +53465,7 @@ x[CLUSTER_499,pig_man,Plant_1] 0
 x[CLUSTER_499,pig_man,Plant_2] 0
 x[CLUSTER_499,pig_man,Plant_3] 0
 x[CLUSTER_499,pig_man,Plant_4] 0
-x[CLUSTER_499,pig_man,Plant_5] 0.00012813
+x[CLUSTER_499,pig_man,Plant_5] 0
 x[CLUSTER_499,pig_man,Plant_6] 0
 x[CLUSTER_499,pig_man,Plant_7] 0
 x[CLUSTER_499,pig_man,Plant_8] 0
@@ -53548,7 +53548,7 @@ x[CLUSTER_5,cattle_man,Plant_4] 0
 x[CLUSTER_5,cattle_man,Plant_5] 0
 x[CLUSTER_5,cattle_man,Plant_6] 0
 x[CLUSTER_5,cattle_man,Plant_7] 0
-x[CLUSTER_5,cattle_man,Plant_8] 0.001031
+x[CLUSTER_5,cattle_man,Plant_8] 0
 x[CLUSTER_5,cattle_man,Plant_9] 0
 x[CLUSTER_5,cattle_slu,Plant_0] 0
 x[CLUSTER_5,cattle_slu,Plant_1] 0
@@ -53568,7 +53568,7 @@ x[CLUSTER_5,horse_man,Plant_4] 0
 x[CLUSTER_5,horse_man,Plant_5] 0
 x[CLUSTER_5,horse_man,Plant_6] 0
 x[CLUSTER_5,horse_man,Plant_7] 0
-x[CLUSTER_5,horse_man,Plant_8] 0.000895
+x[CLUSTER_5,horse_man,Plant_8] 0
 x[CLUSTER_5,horse_man,Plant_9] 0
 x[CLUSTER_5,pig_slu,Plant_0] 0
 x[CLUSTER_5,pig_slu,Plant_1] 0
@@ -53660,7 +53660,7 @@ x[CLUSTER_5,legume_str,Plant_6] 0
 x[CLUSTER_5,legume_str,Plant_7] 0
 x[CLUSTER_5,legume_str,Plant_8] 0
 x[CLUSTER_5,legume_str,Plant_9] 0
-x[CLUSTER_50,cattle_man,Plant_0] 0.01708
+x[CLUSTER_50,cattle_man,Plant_0] 0
 x[CLUSTER_50,cattle_man,Plant_1] 0
 x[CLUSTER_50,cattle_man,Plant_2] 0
 x[CLUSTER_50,cattle_man,Plant_3] 0
@@ -53670,7 +53670,7 @@ x[CLUSTER_50,cattle_man,Plant_6] 0
 x[CLUSTER_50,cattle_man,Plant_7] 0
 x[CLUSTER_50,cattle_man,Plant_8] 0
 x[CLUSTER_50,cattle_man,Plant_9] 0
-x[CLUSTER_50,cattle_slu,Plant_0] 8.3499999999999991e-02
+x[CLUSTER_50,cattle_slu,Plant_0] 0
 x[CLUSTER_50,cattle_slu,Plant_1] 0
 x[CLUSTER_50,cattle_slu,Plant_2] 0
 x[CLUSTER_50,cattle_slu,Plant_3] 0
@@ -53680,7 +53680,7 @@ x[CLUSTER_50,cattle_slu,Plant_6] 0
 x[CLUSTER_50,cattle_slu,Plant_7] 0
 x[CLUSTER_50,cattle_slu,Plant_8] 0
 x[CLUSTER_50,cattle_slu,Plant_9] 0
-x[CLUSTER_50,horse_man,Plant_0] 1.1541300000000002e-03
+x[CLUSTER_50,horse_man,Plant_0] 0
 x[CLUSTER_50,horse_man,Plant_1] 0
 x[CLUSTER_50,horse_man,Plant_2] 0
 x[CLUSTER_50,horse_man,Plant_3] 0
@@ -53690,7 +53690,7 @@ x[CLUSTER_50,horse_man,Plant_6] 0
 x[CLUSTER_50,horse_man,Plant_7] 0
 x[CLUSTER_50,horse_man,Plant_8] 0
 x[CLUSTER_50,horse_man,Plant_9] 0
-x[CLUSTER_50,pig_slu,Plant_0] 0.008187
+x[CLUSTER_50,pig_slu,Plant_0] 0
 x[CLUSTER_50,pig_slu,Plant_1] 0
 x[CLUSTER_50,pig_slu,Plant_2] 0
 x[CLUSTER_50,pig_slu,Plant_3] 0
@@ -53700,7 +53700,7 @@ x[CLUSTER_50,pig_slu,Plant_6] 0
 x[CLUSTER_50,pig_slu,Plant_7] 0
 x[CLUSTER_50,pig_slu,Plant_8] 0
 x[CLUSTER_50,pig_slu,Plant_9] 0
-x[CLUSTER_50,pig_man,Plant_0] 0.0006047121
+x[CLUSTER_50,pig_man,Plant_0] 0
 x[CLUSTER_50,pig_man,Plant_1] 0
 x[CLUSTER_50,pig_man,Plant_2] 0
 x[CLUSTER_50,pig_man,Plant_3] 0
@@ -53720,7 +53720,7 @@ x[CLUSTER_50,cereal_str,Plant_6] 0
 x[CLUSTER_50,cereal_str,Plant_7] 0
 x[CLUSTER_50,cereal_str,Plant_8] 0
 x[CLUSTER_50,cereal_str,Plant_9] 0
-x[CLUSTER_50,clover_alfalfa_grass,Plant_0] 0.014713
+x[CLUSTER_50,clover_alfalfa_grass,Plant_0] 0
 x[CLUSTER_50,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_50,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_50,clover_alfalfa_grass,Plant_3] 0
@@ -53740,7 +53740,7 @@ x[CLUSTER_50,perm_grass,Plant_6] 0
 x[CLUSTER_50,perm_grass,Plant_7] 0
 x[CLUSTER_50,perm_grass,Plant_8] 0
 x[CLUSTER_50,perm_grass,Plant_9] 0
-x[CLUSTER_50,maize_str,Plant_0] 0.0003984
+x[CLUSTER_50,maize_str,Plant_0] 0
 x[CLUSTER_50,maize_str,Plant_1] 0
 x[CLUSTER_50,maize_str,Plant_2] 0
 x[CLUSTER_50,maize_str,Plant_3] 0
@@ -53788,7 +53788,7 @@ x[CLUSTER_500,cattle_man,Plant_4] 0
 x[CLUSTER_500,cattle_man,Plant_5] 0
 x[CLUSTER_500,cattle_man,Plant_6] 0
 x[CLUSTER_500,cattle_man,Plant_7] 0
-x[CLUSTER_500,cattle_man,Plant_8] 0.00543
+x[CLUSTER_500,cattle_man,Plant_8] 0
 x[CLUSTER_500,cattle_man,Plant_9] 0
 x[CLUSTER_500,cattle_slu,Plant_0] 0
 x[CLUSTER_500,cattle_slu,Plant_1] 0
@@ -53808,7 +53808,7 @@ x[CLUSTER_500,horse_man,Plant_4] 0
 x[CLUSTER_500,horse_man,Plant_5] 0
 x[CLUSTER_500,horse_man,Plant_6] 0
 x[CLUSTER_500,horse_man,Plant_7] 0
-x[CLUSTER_500,horse_man,Plant_8] 0.000798
+x[CLUSTER_500,horse_man,Plant_8] 0
 x[CLUSTER_500,horse_man,Plant_9] 0
 x[CLUSTER_500,pig_slu,Plant_0] 0
 x[CLUSTER_500,pig_slu,Plant_1] 0
@@ -53828,7 +53828,7 @@ x[CLUSTER_500,pig_man,Plant_4] 0
 x[CLUSTER_500,pig_man,Plant_5] 0
 x[CLUSTER_500,pig_man,Plant_6] 0
 x[CLUSTER_500,pig_man,Plant_7] 0
-x[CLUSTER_500,pig_man,Plant_8] 3.2309999999999994e-05
+x[CLUSTER_500,pig_man,Plant_8] 0
 x[CLUSTER_500,pig_man,Plant_9] 0
 x[CLUSTER_500,cereal_str,Plant_0] 0
 x[CLUSTER_500,cereal_str,Plant_1] 0
@@ -53905,7 +53905,7 @@ x[CLUSTER_501,cattle_man,Plant_1] 0
 x[CLUSTER_501,cattle_man,Plant_2] 0
 x[CLUSTER_501,cattle_man,Plant_3] 0
 x[CLUSTER_501,cattle_man,Plant_4] 0
-x[CLUSTER_501,cattle_man,Plant_5] 0.00023
+x[CLUSTER_501,cattle_man,Plant_5] 0
 x[CLUSTER_501,cattle_man,Plant_6] 0
 x[CLUSTER_501,cattle_man,Plant_7] 0
 x[CLUSTER_501,cattle_man,Plant_8] 0
@@ -53925,7 +53925,7 @@ x[CLUSTER_501,horse_man,Plant_1] 0
 x[CLUSTER_501,horse_man,Plant_2] 0
 x[CLUSTER_501,horse_man,Plant_3] 0
 x[CLUSTER_501,horse_man,Plant_4] 0
-x[CLUSTER_501,horse_man,Plant_5] 0.0004745
+x[CLUSTER_501,horse_man,Plant_5] 0
 x[CLUSTER_501,horse_man,Plant_6] 0
 x[CLUSTER_501,horse_man,Plant_7] 0
 x[CLUSTER_501,horse_man,Plant_8] 0
@@ -53945,7 +53945,7 @@ x[CLUSTER_501,pig_man,Plant_1] 0
 x[CLUSTER_501,pig_man,Plant_2] 0
 x[CLUSTER_501,pig_man,Plant_3] 0
 x[CLUSTER_501,pig_man,Plant_4] 0
-x[CLUSTER_501,pig_man,Plant_5] 0.001378
+x[CLUSTER_501,pig_man,Plant_5] 0
 x[CLUSTER_501,pig_man,Plant_6] 0
 x[CLUSTER_501,pig_man,Plant_7] 0
 x[CLUSTER_501,pig_man,Plant_8] 0
@@ -54021,7 +54021,7 @@ x[CLUSTER_501,legume_str,Plant_7] 0
 x[CLUSTER_501,legume_str,Plant_8] 0
 x[CLUSTER_501,legume_str,Plant_9] 0
 x[CLUSTER_502,cattle_man,Plant_0] 0
-x[CLUSTER_502,cattle_man,Plant_1] 0.01271
+x[CLUSTER_502,cattle_man,Plant_1] 0
 x[CLUSTER_502,cattle_man,Plant_2] 0
 x[CLUSTER_502,cattle_man,Plant_3] 0
 x[CLUSTER_502,cattle_man,Plant_4] 0
@@ -54031,7 +54031,7 @@ x[CLUSTER_502,cattle_man,Plant_7] 0
 x[CLUSTER_502,cattle_man,Plant_8] 0
 x[CLUSTER_502,cattle_man,Plant_9] 0
 x[CLUSTER_502,cattle_slu,Plant_0] 0
-x[CLUSTER_502,cattle_slu,Plant_1] 4.3822187703799469e-02
+x[CLUSTER_502,cattle_slu,Plant_1] 0
 x[CLUSTER_502,cattle_slu,Plant_2] 0
 x[CLUSTER_502,cattle_slu,Plant_3] 0
 x[CLUSTER_502,cattle_slu,Plant_4] 0
@@ -54041,7 +54041,7 @@ x[CLUSTER_502,cattle_slu,Plant_7] 0
 x[CLUSTER_502,cattle_slu,Plant_8] 0
 x[CLUSTER_502,cattle_slu,Plant_9] 0
 x[CLUSTER_502,horse_man,Plant_0] 0
-x[CLUSTER_502,horse_man,Plant_1] 0.002093
+x[CLUSTER_502,horse_man,Plant_1] 0
 x[CLUSTER_502,horse_man,Plant_2] 0
 x[CLUSTER_502,horse_man,Plant_3] 0
 x[CLUSTER_502,horse_man,Plant_4] 0
@@ -54140,7 +54140,7 @@ x[CLUSTER_502,legume_str,Plant_6] 0
 x[CLUSTER_502,legume_str,Plant_7] 0
 x[CLUSTER_502,legume_str,Plant_8] 0
 x[CLUSTER_502,legume_str,Plant_9] 0
-x[CLUSTER_503,cattle_man,Plant_0] 1.0237100000001034e-03
+x[CLUSTER_503,cattle_man,Plant_0] 0
 x[CLUSTER_503,cattle_man,Plant_1] 0
 x[CLUSTER_503,cattle_man,Plant_2] 0
 x[CLUSTER_503,cattle_man,Plant_3] 0
@@ -54160,7 +54160,7 @@ x[CLUSTER_503,cattle_slu,Plant_6] 0
 x[CLUSTER_503,cattle_slu,Plant_7] 0
 x[CLUSTER_503,cattle_slu,Plant_8] 0
 x[CLUSTER_503,cattle_slu,Plant_9] 0
-x[CLUSTER_503,horse_man,Plant_0] 0.0008471
+x[CLUSTER_503,horse_man,Plant_0] 0
 x[CLUSTER_503,horse_man,Plant_1] 0
 x[CLUSTER_503,horse_man,Plant_2] 0
 x[CLUSTER_503,horse_man,Plant_3] 0
@@ -54220,7 +54220,7 @@ x[CLUSTER_503,perm_grass,Plant_6] 0
 x[CLUSTER_503,perm_grass,Plant_7] 0
 x[CLUSTER_503,perm_grass,Plant_8] 0
 x[CLUSTER_503,perm_grass,Plant_9] 0
-x[CLUSTER_503,maize_str,Plant_0] 0.000953
+x[CLUSTER_503,maize_str,Plant_0] 0
 x[CLUSTER_503,maize_str,Plant_1] 0
 x[CLUSTER_503,maize_str,Plant_2] 0
 x[CLUSTER_503,maize_str,Plant_3] 0
@@ -54265,7 +54265,7 @@ x[CLUSTER_504,cattle_man,Plant_1] 0
 x[CLUSTER_504,cattle_man,Plant_2] 0
 x[CLUSTER_504,cattle_man,Plant_3] 0
 x[CLUSTER_504,cattle_man,Plant_4] 0
-x[CLUSTER_504,cattle_man,Plant_5] 4.1e-05
+x[CLUSTER_504,cattle_man,Plant_5] 0
 x[CLUSTER_504,cattle_man,Plant_6] 0
 x[CLUSTER_504,cattle_man,Plant_7] 0
 x[CLUSTER_504,cattle_man,Plant_8] 0
@@ -54275,7 +54275,7 @@ x[CLUSTER_504,cattle_slu,Plant_1] 0
 x[CLUSTER_504,cattle_slu,Plant_2] 0
 x[CLUSTER_504,cattle_slu,Plant_3] 0
 x[CLUSTER_504,cattle_slu,Plant_4] 0
-x[CLUSTER_504,cattle_slu,Plant_5] 0.000403
+x[CLUSTER_504,cattle_slu,Plant_5] 0
 x[CLUSTER_504,cattle_slu,Plant_6] 0
 x[CLUSTER_504,cattle_slu,Plant_7] 0
 x[CLUSTER_504,cattle_slu,Plant_8] 0
@@ -54285,7 +54285,7 @@ x[CLUSTER_504,horse_man,Plant_1] 0
 x[CLUSTER_504,horse_man,Plant_2] 0
 x[CLUSTER_504,horse_man,Plant_3] 0
 x[CLUSTER_504,horse_man,Plant_4] 0
-x[CLUSTER_504,horse_man,Plant_5] 0.001033
+x[CLUSTER_504,horse_man,Plant_5] 0
 x[CLUSTER_504,horse_man,Plant_6] 0
 x[CLUSTER_504,horse_man,Plant_7] 0
 x[CLUSTER_504,horse_man,Plant_8] 0
@@ -54295,7 +54295,7 @@ x[CLUSTER_504,pig_slu,Plant_1] 0
 x[CLUSTER_504,pig_slu,Plant_2] 0
 x[CLUSTER_504,pig_slu,Plant_3] 0
 x[CLUSTER_504,pig_slu,Plant_4] 0
-x[CLUSTER_504,pig_slu,Plant_5] 0.00718
+x[CLUSTER_504,pig_slu,Plant_5] 0
 x[CLUSTER_504,pig_slu,Plant_6] 0
 x[CLUSTER_504,pig_slu,Plant_7] 0
 x[CLUSTER_504,pig_slu,Plant_8] 0
@@ -54305,7 +54305,7 @@ x[CLUSTER_504,pig_man,Plant_1] 0
 x[CLUSTER_504,pig_man,Plant_2] 0
 x[CLUSTER_504,pig_man,Plant_3] 0
 x[CLUSTER_504,pig_man,Plant_4] 0
-x[CLUSTER_504,pig_man,Plant_5] 0.000442
+x[CLUSTER_504,pig_man,Plant_5] 0
 x[CLUSTER_504,pig_man,Plant_6] 0
 x[CLUSTER_504,pig_man,Plant_7] 0
 x[CLUSTER_504,pig_man,Plant_8] 0
@@ -54325,7 +54325,7 @@ x[CLUSTER_504,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_4] 0
-x[CLUSTER_504,clover_alfalfa_grass,Plant_5] 0.000592509
+x[CLUSTER_504,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_504,clover_alfalfa_grass,Plant_8] 0
@@ -54345,7 +54345,7 @@ x[CLUSTER_504,maize_str,Plant_1] 0
 x[CLUSTER_504,maize_str,Plant_2] 0
 x[CLUSTER_504,maize_str,Plant_3] 0
 x[CLUSTER_504,maize_str,Plant_4] 0
-x[CLUSTER_504,maize_str,Plant_5] 0.001285
+x[CLUSTER_504,maize_str,Plant_5] 0
 x[CLUSTER_504,maize_str,Plant_6] 0
 x[CLUSTER_504,maize_str,Plant_7] 0
 x[CLUSTER_504,maize_str,Plant_8] 0
@@ -54380,7 +54380,7 @@ x[CLUSTER_504,legume_str,Plant_6] 0
 x[CLUSTER_504,legume_str,Plant_7] 0
 x[CLUSTER_504,legume_str,Plant_8] 0
 x[CLUSTER_504,legume_str,Plant_9] 0
-x[CLUSTER_505,cattle_man,Plant_0] 0.01077
+x[CLUSTER_505,cattle_man,Plant_0] 0
 x[CLUSTER_505,cattle_man,Plant_1] 0
 x[CLUSTER_505,cattle_man,Plant_2] 0
 x[CLUSTER_505,cattle_man,Plant_3] 0
@@ -54400,7 +54400,7 @@ x[CLUSTER_505,cattle_slu,Plant_6] 0
 x[CLUSTER_505,cattle_slu,Plant_7] 0
 x[CLUSTER_505,cattle_slu,Plant_8] 0
 x[CLUSTER_505,cattle_slu,Plant_9] 0
-x[CLUSTER_505,horse_man,Plant_0] 0.000942
+x[CLUSTER_505,horse_man,Plant_0] 0
 x[CLUSTER_505,horse_man,Plant_1] 0
 x[CLUSTER_505,horse_man,Plant_2] 0
 x[CLUSTER_505,horse_man,Plant_3] 0
@@ -54460,7 +54460,7 @@ x[CLUSTER_505,perm_grass,Plant_6] 0
 x[CLUSTER_505,perm_grass,Plant_7] 0
 x[CLUSTER_505,perm_grass,Plant_8] 0
 x[CLUSTER_505,perm_grass,Plant_9] 0
-x[CLUSTER_505,maize_str,Plant_0] 1.872e-05
+x[CLUSTER_505,maize_str,Plant_0] 0
 x[CLUSTER_505,maize_str,Plant_1] 0
 x[CLUSTER_505,maize_str,Plant_2] 0
 x[CLUSTER_505,maize_str,Plant_3] 0
@@ -54509,7 +54509,7 @@ x[CLUSTER_506,cattle_man,Plant_5] 0
 x[CLUSTER_506,cattle_man,Plant_6] 0
 x[CLUSTER_506,cattle_man,Plant_7] 0
 x[CLUSTER_506,cattle_man,Plant_8] 0
-x[CLUSTER_506,cattle_man,Plant_9] 0.0017
+x[CLUSTER_506,cattle_man,Plant_9] 0
 x[CLUSTER_506,cattle_slu,Plant_0] 0
 x[CLUSTER_506,cattle_slu,Plant_1] 0
 x[CLUSTER_506,cattle_slu,Plant_2] 0
@@ -54529,7 +54529,7 @@ x[CLUSTER_506,horse_man,Plant_5] 0
 x[CLUSTER_506,horse_man,Plant_6] 0
 x[CLUSTER_506,horse_man,Plant_7] 0
 x[CLUSTER_506,horse_man,Plant_8] 0
-x[CLUSTER_506,horse_man,Plant_9] 0.000529
+x[CLUSTER_506,horse_man,Plant_9] 0
 x[CLUSTER_506,pig_slu,Plant_0] 0
 x[CLUSTER_506,pig_slu,Plant_1] 0
 x[CLUSTER_506,pig_slu,Plant_2] 0
@@ -54547,7 +54547,7 @@ x[CLUSTER_506,pig_man,Plant_3] 0
 x[CLUSTER_506,pig_man,Plant_4] 0
 x[CLUSTER_506,pig_man,Plant_5] 0
 x[CLUSTER_506,pig_man,Plant_6] 0
-x[CLUSTER_506,pig_man,Plant_7] 0.0002280325
+x[CLUSTER_506,pig_man,Plant_7] 0
 x[CLUSTER_506,pig_man,Plant_8] 0
 x[CLUSTER_506,pig_man,Plant_9] 0
 x[CLUSTER_506,cereal_str,Plant_0] 0
@@ -54569,7 +54569,7 @@ x[CLUSTER_506,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_506,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_506,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_506,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_506,clover_alfalfa_grass,Plant_9] 0.00687
+x[CLUSTER_506,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_506,perm_grass,Plant_0] 0
 x[CLUSTER_506,perm_grass,Plant_1] 0
 x[CLUSTER_506,perm_grass,Plant_2] 0
@@ -54589,7 +54589,7 @@ x[CLUSTER_506,maize_str,Plant_5] 0
 x[CLUSTER_506,maize_str,Plant_6] 0
 x[CLUSTER_506,maize_str,Plant_7] 0
 x[CLUSTER_506,maize_str,Plant_8] 0
-x[CLUSTER_506,maize_str,Plant_9] 0.0001464
+x[CLUSTER_506,maize_str,Plant_9] 0
 x[CLUSTER_506,beet_leaf,Plant_0] 0
 x[CLUSTER_506,beet_leaf,Plant_1] 0
 x[CLUSTER_506,beet_leaf,Plant_2] 0
@@ -54628,7 +54628,7 @@ x[CLUSTER_507,cattle_man,Plant_4] 0
 x[CLUSTER_507,cattle_man,Plant_5] 0
 x[CLUSTER_507,cattle_man,Plant_6] 0
 x[CLUSTER_507,cattle_man,Plant_7] 0
-x[CLUSTER_507,cattle_man,Plant_8] 9.8899999999996855e-03
+x[CLUSTER_507,cattle_man,Plant_8] 0
 x[CLUSTER_507,cattle_man,Plant_9] 0
 x[CLUSTER_507,cattle_slu,Plant_0] 0
 x[CLUSTER_507,cattle_slu,Plant_1] 0
@@ -54648,7 +54648,7 @@ x[CLUSTER_507,horse_man,Plant_4] 0
 x[CLUSTER_507,horse_man,Plant_5] 0
 x[CLUSTER_507,horse_man,Plant_6] 0
 x[CLUSTER_507,horse_man,Plant_7] 0
-x[CLUSTER_507,horse_man,Plant_8] 0.0011994
+x[CLUSTER_507,horse_man,Plant_8] 0
 x[CLUSTER_507,horse_man,Plant_9] 0
 x[CLUSTER_507,pig_slu,Plant_0] 0
 x[CLUSTER_507,pig_slu,Plant_1] 0
@@ -54768,7 +54768,7 @@ x[CLUSTER_508,horse_man,Plant_4] 0
 x[CLUSTER_508,horse_man,Plant_5] 0
 x[CLUSTER_508,horse_man,Plant_6] 0
 x[CLUSTER_508,horse_man,Plant_7] 0
-x[CLUSTER_508,horse_man,Plant_8] 0.00381
+x[CLUSTER_508,horse_man,Plant_8] 0
 x[CLUSTER_508,horse_man,Plant_9] 0
 x[CLUSTER_508,pig_slu,Plant_0] 0
 x[CLUSTER_508,pig_slu,Plant_1] 0
@@ -54860,7 +54860,7 @@ x[CLUSTER_508,legume_str,Plant_6] 0
 x[CLUSTER_508,legume_str,Plant_7] 0
 x[CLUSTER_508,legume_str,Plant_8] 0
 x[CLUSTER_508,legume_str,Plant_9] 0
-x[CLUSTER_509,cattle_man,Plant_0] 0.010453
+x[CLUSTER_509,cattle_man,Plant_0] 0
 x[CLUSTER_509,cattle_man,Plant_1] 0
 x[CLUSTER_509,cattle_man,Plant_2] 0
 x[CLUSTER_509,cattle_man,Plant_3] 0
@@ -54880,7 +54880,7 @@ x[CLUSTER_509,cattle_slu,Plant_6] 0
 x[CLUSTER_509,cattle_slu,Plant_7] 0
 x[CLUSTER_509,cattle_slu,Plant_8] 0
 x[CLUSTER_509,cattle_slu,Plant_9] 0
-x[CLUSTER_509,horse_man,Plant_0] 0.000798
+x[CLUSTER_509,horse_man,Plant_0] 0
 x[CLUSTER_509,horse_man,Plant_1] 0
 x[CLUSTER_509,horse_man,Plant_2] 0
 x[CLUSTER_509,horse_man,Plant_3] 0
@@ -54900,7 +54900,7 @@ x[CLUSTER_509,pig_slu,Plant_6] 0
 x[CLUSTER_509,pig_slu,Plant_7] 0
 x[CLUSTER_509,pig_slu,Plant_8] 0
 x[CLUSTER_509,pig_slu,Plant_9] 0
-x[CLUSTER_509,pig_man,Plant_0] 7.0445e-05
+x[CLUSTER_509,pig_man,Plant_0] 0
 x[CLUSTER_509,pig_man,Plant_1] 0
 x[CLUSTER_509,pig_man,Plant_2] 0
 x[CLUSTER_509,pig_man,Plant_3] 0
@@ -54940,7 +54940,7 @@ x[CLUSTER_509,perm_grass,Plant_6] 0
 x[CLUSTER_509,perm_grass,Plant_7] 0
 x[CLUSTER_509,perm_grass,Plant_8] 0
 x[CLUSTER_509,perm_grass,Plant_9] 0
-x[CLUSTER_509,maize_str,Plant_0] 1.86e-05
+x[CLUSTER_509,maize_str,Plant_0] 0
 x[CLUSTER_509,maize_str,Plant_1] 0
 x[CLUSTER_509,maize_str,Plant_2] 0
 x[CLUSTER_509,maize_str,Plant_3] 0
@@ -54981,7 +54981,7 @@ x[CLUSTER_509,legume_str,Plant_7] 0
 x[CLUSTER_509,legume_str,Plant_8] 0
 x[CLUSTER_509,legume_str,Plant_9] 0
 x[CLUSTER_51,cattle_man,Plant_0] 0
-x[CLUSTER_51,cattle_man,Plant_1] 0.02802
+x[CLUSTER_51,cattle_man,Plant_1] 0
 x[CLUSTER_51,cattle_man,Plant_2] 0
 x[CLUSTER_51,cattle_man,Plant_3] 0
 x[CLUSTER_51,cattle_man,Plant_4] 0
@@ -55001,7 +55001,7 @@ x[CLUSTER_51,cattle_slu,Plant_7] 0
 x[CLUSTER_51,cattle_slu,Plant_8] 0
 x[CLUSTER_51,cattle_slu,Plant_9] 0
 x[CLUSTER_51,horse_man,Plant_0] 0
-x[CLUSTER_51,horse_man,Plant_1] 2.6169999999996751e-03
+x[CLUSTER_51,horse_man,Plant_1] 0
 x[CLUSTER_51,horse_man,Plant_2] 0
 x[CLUSTER_51,horse_man,Plant_3] 0
 x[CLUSTER_51,horse_man,Plant_4] 0
@@ -55102,7 +55102,7 @@ x[CLUSTER_51,legume_str,Plant_8] 0
 x[CLUSTER_51,legume_str,Plant_9] 0
 x[CLUSTER_510,cattle_man,Plant_0] 0
 x[CLUSTER_510,cattle_man,Plant_1] 0
-x[CLUSTER_510,cattle_man,Plant_2] 0.0022385
+x[CLUSTER_510,cattle_man,Plant_2] 0
 x[CLUSTER_510,cattle_man,Plant_3] 0
 x[CLUSTER_510,cattle_man,Plant_4] 0
 x[CLUSTER_510,cattle_man,Plant_5] 0
@@ -55122,7 +55122,7 @@ x[CLUSTER_510,cattle_slu,Plant_8] 0
 x[CLUSTER_510,cattle_slu,Plant_9] 0
 x[CLUSTER_510,horse_man,Plant_0] 0
 x[CLUSTER_510,horse_man,Plant_1] 0
-x[CLUSTER_510,horse_man,Plant_2] 0.001319
+x[CLUSTER_510,horse_man,Plant_2] 0
 x[CLUSTER_510,horse_man,Plant_3] 0
 x[CLUSTER_510,horse_man,Plant_4] 0
 x[CLUSTER_510,horse_man,Plant_5] 0
@@ -55189,7 +55189,7 @@ x[CLUSTER_510,maize_str,Plant_5] 0
 x[CLUSTER_510,maize_str,Plant_6] 0
 x[CLUSTER_510,maize_str,Plant_7] 0
 x[CLUSTER_510,maize_str,Plant_8] 0
-x[CLUSTER_510,maize_str,Plant_9] 2.2419e-05
+x[CLUSTER_510,maize_str,Plant_9] 0
 x[CLUSTER_510,beet_leaf,Plant_0] 0
 x[CLUSTER_510,beet_leaf,Plant_1] 0
 x[CLUSTER_510,beet_leaf,Plant_2] 0
@@ -55228,7 +55228,7 @@ x[CLUSTER_511,cattle_man,Plant_4] 0
 x[CLUSTER_511,cattle_man,Plant_5] 0
 x[CLUSTER_511,cattle_man,Plant_6] 0
 x[CLUSTER_511,cattle_man,Plant_7] 0
-x[CLUSTER_511,cattle_man,Plant_8] 2.4980000000004296e-03
+x[CLUSTER_511,cattle_man,Plant_8] 0
 x[CLUSTER_511,cattle_man,Plant_9] 0
 x[CLUSTER_511,cattle_slu,Plant_0] 0
 x[CLUSTER_511,cattle_slu,Plant_1] 0
@@ -55248,7 +55248,7 @@ x[CLUSTER_511,horse_man,Plant_4] 0
 x[CLUSTER_511,horse_man,Plant_5] 0
 x[CLUSTER_511,horse_man,Plant_6] 0
 x[CLUSTER_511,horse_man,Plant_7] 0
-x[CLUSTER_511,horse_man,Plant_8] 1.3083100000000002e-03
+x[CLUSTER_511,horse_man,Plant_8] 0
 x[CLUSTER_511,horse_man,Plant_9] 0
 x[CLUSTER_511,pig_slu,Plant_0] 0
 x[CLUSTER_511,pig_slu,Plant_1] 0
@@ -55268,7 +55268,7 @@ x[CLUSTER_511,pig_man,Plant_4] 0
 x[CLUSTER_511,pig_man,Plant_5] 0
 x[CLUSTER_511,pig_man,Plant_6] 0
 x[CLUSTER_511,pig_man,Plant_7] 0
-x[CLUSTER_511,pig_man,Plant_8] 0.0003176
+x[CLUSTER_511,pig_man,Plant_8] 0
 x[CLUSTER_511,pig_man,Plant_9] 0
 x[CLUSTER_511,cereal_str,Plant_0] 0
 x[CLUSTER_511,cereal_str,Plant_1] 0
@@ -55340,7 +55340,7 @@ x[CLUSTER_511,legume_str,Plant_6] 0
 x[CLUSTER_511,legume_str,Plant_7] 0
 x[CLUSTER_511,legume_str,Plant_8] 0
 x[CLUSTER_511,legume_str,Plant_9] 0
-x[CLUSTER_512,cattle_man,Plant_0] 0.00508
+x[CLUSTER_512,cattle_man,Plant_0] 0
 x[CLUSTER_512,cattle_man,Plant_1] 0
 x[CLUSTER_512,cattle_man,Plant_2] 0
 x[CLUSTER_512,cattle_man,Plant_3] 0
@@ -55360,7 +55360,7 @@ x[CLUSTER_512,cattle_slu,Plant_6] 0
 x[CLUSTER_512,cattle_slu,Plant_7] 0
 x[CLUSTER_512,cattle_slu,Plant_8] 0
 x[CLUSTER_512,cattle_slu,Plant_9] 0
-x[CLUSTER_512,horse_man,Plant_0] 0.000541
+x[CLUSTER_512,horse_man,Plant_0] 0
 x[CLUSTER_512,horse_man,Plant_1] 0
 x[CLUSTER_512,horse_man,Plant_2] 0
 x[CLUSTER_512,horse_man,Plant_3] 0
@@ -55380,7 +55380,7 @@ x[CLUSTER_512,pig_slu,Plant_6] 0
 x[CLUSTER_512,pig_slu,Plant_7] 0
 x[CLUSTER_512,pig_slu,Plant_8] 0
 x[CLUSTER_512,pig_slu,Plant_9] 0
-x[CLUSTER_512,pig_man,Plant_0] 0.000391
+x[CLUSTER_512,pig_man,Plant_0] 0
 x[CLUSTER_512,pig_man,Plant_1] 0
 x[CLUSTER_512,pig_man,Plant_2] 0
 x[CLUSTER_512,pig_man,Plant_3] 0
@@ -55420,7 +55420,7 @@ x[CLUSTER_512,perm_grass,Plant_6] 0
 x[CLUSTER_512,perm_grass,Plant_7] 0
 x[CLUSTER_512,perm_grass,Plant_8] 0
 x[CLUSTER_512,perm_grass,Plant_9] 0
-x[CLUSTER_512,maize_str,Plant_0] 7.2075e-05
+x[CLUSTER_512,maize_str,Plant_0] 0
 x[CLUSTER_512,maize_str,Plant_1] 0
 x[CLUSTER_512,maize_str,Plant_2] 0
 x[CLUSTER_512,maize_str,Plant_3] 0
@@ -55463,7 +55463,7 @@ x[CLUSTER_512,legume_str,Plant_9] 0
 x[CLUSTER_513,cattle_man,Plant_0] 0
 x[CLUSTER_513,cattle_man,Plant_1] 0
 x[CLUSTER_513,cattle_man,Plant_2] 0
-x[CLUSTER_513,cattle_man,Plant_3] 0.00278
+x[CLUSTER_513,cattle_man,Plant_3] 0
 x[CLUSTER_513,cattle_man,Plant_4] 0
 x[CLUSTER_513,cattle_man,Plant_5] 0
 x[CLUSTER_513,cattle_man,Plant_6] 0
@@ -55473,7 +55473,7 @@ x[CLUSTER_513,cattle_man,Plant_9] 0
 x[CLUSTER_513,cattle_slu,Plant_0] 0
 x[CLUSTER_513,cattle_slu,Plant_1] 0
 x[CLUSTER_513,cattle_slu,Plant_2] 0
-x[CLUSTER_513,cattle_slu,Plant_3] 0.005462
+x[CLUSTER_513,cattle_slu,Plant_3] 0
 x[CLUSTER_513,cattle_slu,Plant_4] 0
 x[CLUSTER_513,cattle_slu,Plant_5] 0
 x[CLUSTER_513,cattle_slu,Plant_6] 0
@@ -55483,7 +55483,7 @@ x[CLUSTER_513,cattle_slu,Plant_9] 0
 x[CLUSTER_513,horse_man,Plant_0] 0
 x[CLUSTER_513,horse_man,Plant_1] 0
 x[CLUSTER_513,horse_man,Plant_2] 0
-x[CLUSTER_513,horse_man,Plant_3] 0.001042
+x[CLUSTER_513,horse_man,Plant_3] 0
 x[CLUSTER_513,horse_man,Plant_4] 0
 x[CLUSTER_513,horse_man,Plant_5] 0
 x[CLUSTER_513,horse_man,Plant_6] 0
@@ -55493,7 +55493,7 @@ x[CLUSTER_513,horse_man,Plant_9] 0
 x[CLUSTER_513,pig_slu,Plant_0] 0
 x[CLUSTER_513,pig_slu,Plant_1] 0
 x[CLUSTER_513,pig_slu,Plant_2] 0
-x[CLUSTER_513,pig_slu,Plant_3] 1.0620000000003550e-02
+x[CLUSTER_513,pig_slu,Plant_3] 0
 x[CLUSTER_513,pig_slu,Plant_4] 0
 x[CLUSTER_513,pig_slu,Plant_5] 0
 x[CLUSTER_513,pig_slu,Plant_6] 0
@@ -55503,7 +55503,7 @@ x[CLUSTER_513,pig_slu,Plant_9] 0
 x[CLUSTER_513,pig_man,Plant_0] 0
 x[CLUSTER_513,pig_man,Plant_1] 0
 x[CLUSTER_513,pig_man,Plant_2] 0
-x[CLUSTER_513,pig_man,Plant_3] 0.000657
+x[CLUSTER_513,pig_man,Plant_3] 0
 x[CLUSTER_513,pig_man,Plant_4] 0
 x[CLUSTER_513,pig_man,Plant_5] 0
 x[CLUSTER_513,pig_man,Plant_6] 0
@@ -55583,7 +55583,7 @@ x[CLUSTER_513,legume_str,Plant_9] 0
 x[CLUSTER_514,cattle_man,Plant_0] 0
 x[CLUSTER_514,cattle_man,Plant_1] 0
 x[CLUSTER_514,cattle_man,Plant_2] 0
-x[CLUSTER_514,cattle_man,Plant_3] 0.01158
+x[CLUSTER_514,cattle_man,Plant_3] 0
 x[CLUSTER_514,cattle_man,Plant_4] 0
 x[CLUSTER_514,cattle_man,Plant_5] 0
 x[CLUSTER_514,cattle_man,Plant_6] 0
@@ -55593,7 +55593,7 @@ x[CLUSTER_514,cattle_man,Plant_9] 0
 x[CLUSTER_514,cattle_slu,Plant_0] 0
 x[CLUSTER_514,cattle_slu,Plant_1] 0
 x[CLUSTER_514,cattle_slu,Plant_2] 0
-x[CLUSTER_514,cattle_slu,Plant_3] 6.0209999999999986e-02
+x[CLUSTER_514,cattle_slu,Plant_3] 0
 x[CLUSTER_514,cattle_slu,Plant_4] 0
 x[CLUSTER_514,cattle_slu,Plant_5] 0
 x[CLUSTER_514,cattle_slu,Plant_6] 0
@@ -55603,7 +55603,7 @@ x[CLUSTER_514,cattle_slu,Plant_9] 0
 x[CLUSTER_514,horse_man,Plant_0] 0
 x[CLUSTER_514,horse_man,Plant_1] 0
 x[CLUSTER_514,horse_man,Plant_2] 0
-x[CLUSTER_514,horse_man,Plant_3] 0.001246
+x[CLUSTER_514,horse_man,Plant_3] 0
 x[CLUSTER_514,horse_man,Plant_4] 0
 x[CLUSTER_514,horse_man,Plant_5] 0
 x[CLUSTER_514,horse_man,Plant_6] 0
@@ -55623,7 +55623,7 @@ x[CLUSTER_514,pig_slu,Plant_9] 0
 x[CLUSTER_514,pig_man,Plant_0] 0
 x[CLUSTER_514,pig_man,Plant_1] 0
 x[CLUSTER_514,pig_man,Plant_2] 0
-x[CLUSTER_514,pig_man,Plant_3] 1.3029999999999999e-05
+x[CLUSTER_514,pig_man,Plant_3] 0
 x[CLUSTER_514,pig_man,Plant_4] 0
 x[CLUSTER_514,pig_man,Plant_5] 0
 x[CLUSTER_514,pig_man,Plant_6] 0
@@ -55708,7 +55708,7 @@ x[CLUSTER_515,cattle_man,Plant_4] 0
 x[CLUSTER_515,cattle_man,Plant_5] 0
 x[CLUSTER_515,cattle_man,Plant_6] 0
 x[CLUSTER_515,cattle_man,Plant_7] 0
-x[CLUSTER_515,cattle_man,Plant_8] 0.000991
+x[CLUSTER_515,cattle_man,Plant_8] 0
 x[CLUSTER_515,cattle_man,Plant_9] 0
 x[CLUSTER_515,cattle_slu,Plant_0] 0
 x[CLUSTER_515,cattle_slu,Plant_1] 0
@@ -55718,7 +55718,7 @@ x[CLUSTER_515,cattle_slu,Plant_4] 0
 x[CLUSTER_515,cattle_slu,Plant_5] 0
 x[CLUSTER_515,cattle_slu,Plant_6] 0
 x[CLUSTER_515,cattle_slu,Plant_7] 0
-x[CLUSTER_515,cattle_slu,Plant_8] 1.1746645208479651e-04
+x[CLUSTER_515,cattle_slu,Plant_8] 0
 x[CLUSTER_515,cattle_slu,Plant_9] 0
 x[CLUSTER_515,horse_man,Plant_0] 0
 x[CLUSTER_515,horse_man,Plant_1] 0
@@ -55728,7 +55728,7 @@ x[CLUSTER_515,horse_man,Plant_4] 0
 x[CLUSTER_515,horse_man,Plant_5] 0
 x[CLUSTER_515,horse_man,Plant_6] 0
 x[CLUSTER_515,horse_man,Plant_7] 0
-x[CLUSTER_515,horse_man,Plant_8] 0.0001262
+x[CLUSTER_515,horse_man,Plant_8] 0
 x[CLUSTER_515,horse_man,Plant_9] 0
 x[CLUSTER_515,pig_slu,Plant_0] 0
 x[CLUSTER_515,pig_slu,Plant_1] 0
@@ -55748,7 +55748,7 @@ x[CLUSTER_515,pig_man,Plant_4] 0
 x[CLUSTER_515,pig_man,Plant_5] 0
 x[CLUSTER_515,pig_man,Plant_6] 0
 x[CLUSTER_515,pig_man,Plant_7] 0
-x[CLUSTER_515,pig_man,Plant_8] 0.001089
+x[CLUSTER_515,pig_man,Plant_8] 0
 x[CLUSTER_515,pig_man,Plant_9] 0
 x[CLUSTER_515,cereal_str,Plant_0] 0
 x[CLUSTER_515,cereal_str,Plant_1] 0
@@ -55823,7 +55823,7 @@ x[CLUSTER_515,legume_str,Plant_9] 0
 x[CLUSTER_516,cattle_man,Plant_0] 0
 x[CLUSTER_516,cattle_man,Plant_1] 0
 x[CLUSTER_516,cattle_man,Plant_2] 0
-x[CLUSTER_516,cattle_man,Plant_3] 0.00882
+x[CLUSTER_516,cattle_man,Plant_3] 0
 x[CLUSTER_516,cattle_man,Plant_4] 0
 x[CLUSTER_516,cattle_man,Plant_5] 0
 x[CLUSTER_516,cattle_man,Plant_6] 0
@@ -55843,7 +55843,7 @@ x[CLUSTER_516,cattle_slu,Plant_9] 0
 x[CLUSTER_516,horse_man,Plant_0] 0
 x[CLUSTER_516,horse_man,Plant_1] 0
 x[CLUSTER_516,horse_man,Plant_2] 0
-x[CLUSTER_516,horse_man,Plant_3] 0.001178
+x[CLUSTER_516,horse_man,Plant_3] 0
 x[CLUSTER_516,horse_man,Plant_4] 0
 x[CLUSTER_516,horse_man,Plant_5] 0
 x[CLUSTER_516,horse_man,Plant_6] 0
@@ -55863,7 +55863,7 @@ x[CLUSTER_516,pig_slu,Plant_9] 0
 x[CLUSTER_516,pig_man,Plant_0] 0
 x[CLUSTER_516,pig_man,Plant_1] 0
 x[CLUSTER_516,pig_man,Plant_2] 0
-x[CLUSTER_516,pig_man,Plant_3] 0.000123100375
+x[CLUSTER_516,pig_man,Plant_3] 0
 x[CLUSTER_516,pig_man,Plant_4] 0
 x[CLUSTER_516,pig_man,Plant_5] 0
 x[CLUSTER_516,pig_man,Plant_6] 0
@@ -55949,7 +55949,7 @@ x[CLUSTER_517,cattle_man,Plant_5] 0
 x[CLUSTER_517,cattle_man,Plant_6] 0
 x[CLUSTER_517,cattle_man,Plant_7] 0
 x[CLUSTER_517,cattle_man,Plant_8] 0
-x[CLUSTER_517,cattle_man,Plant_9] 0.002042
+x[CLUSTER_517,cattle_man,Plant_9] 0
 x[CLUSTER_517,cattle_slu,Plant_0] 0
 x[CLUSTER_517,cattle_slu,Plant_1] 0
 x[CLUSTER_517,cattle_slu,Plant_2] 0
@@ -55959,7 +55959,7 @@ x[CLUSTER_517,cattle_slu,Plant_5] 0
 x[CLUSTER_517,cattle_slu,Plant_6] 0
 x[CLUSTER_517,cattle_slu,Plant_7] 0
 x[CLUSTER_517,cattle_slu,Plant_8] 0
-x[CLUSTER_517,cattle_slu,Plant_9] 0.0014555
+x[CLUSTER_517,cattle_slu,Plant_9] 0
 x[CLUSTER_517,horse_man,Plant_0] 0
 x[CLUSTER_517,horse_man,Plant_1] 0
 x[CLUSTER_517,horse_man,Plant_2] 0
@@ -55969,7 +55969,7 @@ x[CLUSTER_517,horse_man,Plant_5] 0
 x[CLUSTER_517,horse_man,Plant_6] 0
 x[CLUSTER_517,horse_man,Plant_7] 0
 x[CLUSTER_517,horse_man,Plant_8] 0
-x[CLUSTER_517,horse_man,Plant_9] 0.0003727
+x[CLUSTER_517,horse_man,Plant_9] 0
 x[CLUSTER_517,pig_slu,Plant_0] 0
 x[CLUSTER_517,pig_slu,Plant_1] 0
 x[CLUSTER_517,pig_slu,Plant_2] 0
@@ -56009,7 +56009,7 @@ x[CLUSTER_517,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_517,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_517,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_517,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_517,clover_alfalfa_grass,Plant_9] 0.001786
+x[CLUSTER_517,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_517,perm_grass,Plant_0] 0
 x[CLUSTER_517,perm_grass,Plant_1] 0
 x[CLUSTER_517,perm_grass,Plant_2] 0
@@ -56029,7 +56029,7 @@ x[CLUSTER_517,maize_str,Plant_5] 0
 x[CLUSTER_517,maize_str,Plant_6] 0
 x[CLUSTER_517,maize_str,Plant_7] 0
 x[CLUSTER_517,maize_str,Plant_8] 0
-x[CLUSTER_517,maize_str,Plant_9] 3.8759999999999995e-05
+x[CLUSTER_517,maize_str,Plant_9] 0
 x[CLUSTER_517,beet_leaf,Plant_0] 0
 x[CLUSTER_517,beet_leaf,Plant_1] 0
 x[CLUSTER_517,beet_leaf,Plant_2] 0
@@ -56064,7 +56064,7 @@ x[CLUSTER_518,cattle_man,Plant_0] 0
 x[CLUSTER_518,cattle_man,Plant_1] 0
 x[CLUSTER_518,cattle_man,Plant_2] 0
 x[CLUSTER_518,cattle_man,Plant_3] 0
-x[CLUSTER_518,cattle_man,Plant_4] 0.00927
+x[CLUSTER_518,cattle_man,Plant_4] 0
 x[CLUSTER_518,cattle_man,Plant_5] 0
 x[CLUSTER_518,cattle_man,Plant_6] 0
 x[CLUSTER_518,cattle_man,Plant_7] 0
@@ -56074,7 +56074,7 @@ x[CLUSTER_518,cattle_slu,Plant_0] 0
 x[CLUSTER_518,cattle_slu,Plant_1] 0
 x[CLUSTER_518,cattle_slu,Plant_2] 0
 x[CLUSTER_518,cattle_slu,Plant_3] 0
-x[CLUSTER_518,cattle_slu,Plant_4] 5.6400000000000651e-02
+x[CLUSTER_518,cattle_slu,Plant_4] 0
 x[CLUSTER_518,cattle_slu,Plant_5] 0
 x[CLUSTER_518,cattle_slu,Plant_6] 0
 x[CLUSTER_518,cattle_slu,Plant_7] 0
@@ -56084,7 +56084,7 @@ x[CLUSTER_518,horse_man,Plant_0] 0
 x[CLUSTER_518,horse_man,Plant_1] 0
 x[CLUSTER_518,horse_man,Plant_2] 0
 x[CLUSTER_518,horse_man,Plant_3] 0
-x[CLUSTER_518,horse_man,Plant_4] 0.001313
+x[CLUSTER_518,horse_man,Plant_4] 0
 x[CLUSTER_518,horse_man,Plant_5] 0
 x[CLUSTER_518,horse_man,Plant_6] 0
 x[CLUSTER_518,horse_man,Plant_7] 0
@@ -56104,7 +56104,7 @@ x[CLUSTER_518,pig_man,Plant_0] 0
 x[CLUSTER_518,pig_man,Plant_1] 0
 x[CLUSTER_518,pig_man,Plant_2] 0
 x[CLUSTER_518,pig_man,Plant_3] 0
-x[CLUSTER_518,pig_man,Plant_4] 0.0002459
+x[CLUSTER_518,pig_man,Plant_4] 0
 x[CLUSTER_518,pig_man,Plant_5] 0
 x[CLUSTER_518,pig_man,Plant_6] 0
 x[CLUSTER_518,pig_man,Plant_7] 0
@@ -56187,7 +56187,7 @@ x[CLUSTER_519,cattle_man,Plant_3] 0
 x[CLUSTER_519,cattle_man,Plant_4] 0
 x[CLUSTER_519,cattle_man,Plant_5] 0
 x[CLUSTER_519,cattle_man,Plant_6] 0
-x[CLUSTER_519,cattle_man,Plant_7] 0.004091
+x[CLUSTER_519,cattle_man,Plant_7] 0
 x[CLUSTER_519,cattle_man,Plant_8] 0
 x[CLUSTER_519,cattle_man,Plant_9] 0
 x[CLUSTER_519,cattle_slu,Plant_0] 0
@@ -56207,7 +56207,7 @@ x[CLUSTER_519,horse_man,Plant_3] 0
 x[CLUSTER_519,horse_man,Plant_4] 0
 x[CLUSTER_519,horse_man,Plant_5] 0
 x[CLUSTER_519,horse_man,Plant_6] 0
-x[CLUSTER_519,horse_man,Plant_7] 0.000814
+x[CLUSTER_519,horse_man,Plant_7] 0
 x[CLUSTER_519,horse_man,Plant_8] 0
 x[CLUSTER_519,horse_man,Plant_9] 0
 x[CLUSTER_519,pig_slu,Plant_0] 0
@@ -56305,7 +56305,7 @@ x[CLUSTER_52,cattle_man,Plant_1] 0
 x[CLUSTER_52,cattle_man,Plant_2] 0
 x[CLUSTER_52,cattle_man,Plant_3] 0
 x[CLUSTER_52,cattle_man,Plant_4] 0
-x[CLUSTER_52,cattle_man,Plant_5] 0.0039845
+x[CLUSTER_52,cattle_man,Plant_5] 0
 x[CLUSTER_52,cattle_man,Plant_6] 0
 x[CLUSTER_52,cattle_man,Plant_7] 0
 x[CLUSTER_52,cattle_man,Plant_8] 0
@@ -56315,7 +56315,7 @@ x[CLUSTER_52,cattle_slu,Plant_1] 0
 x[CLUSTER_52,cattle_slu,Plant_2] 0
 x[CLUSTER_52,cattle_slu,Plant_3] 0
 x[CLUSTER_52,cattle_slu,Plant_4] 0
-x[CLUSTER_52,cattle_slu,Plant_5] 0.020497
+x[CLUSTER_52,cattle_slu,Plant_5] 0
 x[CLUSTER_52,cattle_slu,Plant_6] 0
 x[CLUSTER_52,cattle_slu,Plant_7] 0
 x[CLUSTER_52,cattle_slu,Plant_8] 0
@@ -56325,7 +56325,7 @@ x[CLUSTER_52,horse_man,Plant_1] 0
 x[CLUSTER_52,horse_man,Plant_2] 0
 x[CLUSTER_52,horse_man,Plant_3] 0
 x[CLUSTER_52,horse_man,Plant_4] 0
-x[CLUSTER_52,horse_man,Plant_5] 1.0830999999999998e-03
+x[CLUSTER_52,horse_man,Plant_5] 0
 x[CLUSTER_52,horse_man,Plant_6] 0
 x[CLUSTER_52,horse_man,Plant_7] 0
 x[CLUSTER_52,horse_man,Plant_8] 0
@@ -56335,7 +56335,7 @@ x[CLUSTER_52,pig_slu,Plant_1] 0
 x[CLUSTER_52,pig_slu,Plant_2] 0
 x[CLUSTER_52,pig_slu,Plant_3] 0
 x[CLUSTER_52,pig_slu,Plant_4] 0
-x[CLUSTER_52,pig_slu,Plant_5] 0.0173728
+x[CLUSTER_52,pig_slu,Plant_5] 0
 x[CLUSTER_52,pig_slu,Plant_6] 0
 x[CLUSTER_52,pig_slu,Plant_7] 0
 x[CLUSTER_52,pig_slu,Plant_8] 0
@@ -56345,7 +56345,7 @@ x[CLUSTER_52,pig_man,Plant_1] 0
 x[CLUSTER_52,pig_man,Plant_2] 0
 x[CLUSTER_52,pig_man,Plant_3] 0
 x[CLUSTER_52,pig_man,Plant_4] 0
-x[CLUSTER_52,pig_man,Plant_5] 0.00091746
+x[CLUSTER_52,pig_man,Plant_5] 0
 x[CLUSTER_52,pig_man,Plant_6] 0
 x[CLUSTER_52,pig_man,Plant_7] 0
 x[CLUSTER_52,pig_man,Plant_8] 0
@@ -56385,7 +56385,7 @@ x[CLUSTER_52,maize_str,Plant_1] 0
 x[CLUSTER_52,maize_str,Plant_2] 0
 x[CLUSTER_52,maize_str,Plant_3] 0
 x[CLUSTER_52,maize_str,Plant_4] 0
-x[CLUSTER_52,maize_str,Plant_5] 0.004642
+x[CLUSTER_52,maize_str,Plant_5] 0
 x[CLUSTER_52,maize_str,Plant_6] 0
 x[CLUSTER_52,maize_str,Plant_7] 0
 x[CLUSTER_52,maize_str,Plant_8] 0
@@ -56423,7 +56423,7 @@ x[CLUSTER_52,legume_str,Plant_9] 0
 x[CLUSTER_520,cattle_man,Plant_0] 0
 x[CLUSTER_520,cattle_man,Plant_1] 0
 x[CLUSTER_520,cattle_man,Plant_2] 0
-x[CLUSTER_520,cattle_man,Plant_3] 0.00369
+x[CLUSTER_520,cattle_man,Plant_3] 0
 x[CLUSTER_520,cattle_man,Plant_4] 0
 x[CLUSTER_520,cattle_man,Plant_5] 0
 x[CLUSTER_520,cattle_man,Plant_6] 0
@@ -56443,7 +56443,7 @@ x[CLUSTER_520,cattle_slu,Plant_9] 0
 x[CLUSTER_520,horse_man,Plant_0] 0
 x[CLUSTER_520,horse_man,Plant_1] 0
 x[CLUSTER_520,horse_man,Plant_2] 0
-x[CLUSTER_520,horse_man,Plant_3] 0.000799
+x[CLUSTER_520,horse_man,Plant_3] 0
 x[CLUSTER_520,horse_man,Plant_4] 0
 x[CLUSTER_520,horse_man,Plant_5] 0
 x[CLUSTER_520,horse_man,Plant_6] 0
@@ -56541,7 +56541,7 @@ x[CLUSTER_520,legume_str,Plant_7] 0
 x[CLUSTER_520,legume_str,Plant_8] 0
 x[CLUSTER_520,legume_str,Plant_9] 0
 x[CLUSTER_521,cattle_man,Plant_0] 0
-x[CLUSTER_521,cattle_man,Plant_1] 0.01216
+x[CLUSTER_521,cattle_man,Plant_1] 0
 x[CLUSTER_521,cattle_man,Plant_2] 0
 x[CLUSTER_521,cattle_man,Plant_3] 0
 x[CLUSTER_521,cattle_man,Plant_4] 0
@@ -56561,7 +56561,7 @@ x[CLUSTER_521,cattle_slu,Plant_7] 0
 x[CLUSTER_521,cattle_slu,Plant_8] 0
 x[CLUSTER_521,cattle_slu,Plant_9] 0
 x[CLUSTER_521,horse_man,Plant_0] 0
-x[CLUSTER_521,horse_man,Plant_1] 0.001448
+x[CLUSTER_521,horse_man,Plant_1] 0
 x[CLUSTER_521,horse_man,Plant_2] 0
 x[CLUSTER_521,horse_man,Plant_3] 0
 x[CLUSTER_521,horse_man,Plant_4] 0
@@ -56664,7 +56664,7 @@ x[CLUSTER_522,cattle_man,Plant_0] 0
 x[CLUSTER_522,cattle_man,Plant_1] 0
 x[CLUSTER_522,cattle_man,Plant_2] 0
 x[CLUSTER_522,cattle_man,Plant_3] 0
-x[CLUSTER_522,cattle_man,Plant_4] 0.00658
+x[CLUSTER_522,cattle_man,Plant_4] 0
 x[CLUSTER_522,cattle_man,Plant_5] 0
 x[CLUSTER_522,cattle_man,Plant_6] 0
 x[CLUSTER_522,cattle_man,Plant_7] 0
@@ -56674,7 +56674,7 @@ x[CLUSTER_522,cattle_slu,Plant_0] 0
 x[CLUSTER_522,cattle_slu,Plant_1] 0
 x[CLUSTER_522,cattle_slu,Plant_2] 0
 x[CLUSTER_522,cattle_slu,Plant_3] 0
-x[CLUSTER_522,cattle_slu,Plant_4] 2.9309999999999566e-02
+x[CLUSTER_522,cattle_slu,Plant_4] 0
 x[CLUSTER_522,cattle_slu,Plant_5] 0
 x[CLUSTER_522,cattle_slu,Plant_6] 0
 x[CLUSTER_522,cattle_slu,Plant_7] 0
@@ -56684,7 +56684,7 @@ x[CLUSTER_522,horse_man,Plant_0] 0
 x[CLUSTER_522,horse_man,Plant_1] 0
 x[CLUSTER_522,horse_man,Plant_2] 0
 x[CLUSTER_522,horse_man,Plant_3] 0
-x[CLUSTER_522,horse_man,Plant_4] 0.0002881
+x[CLUSTER_522,horse_man,Plant_4] 0
 x[CLUSTER_522,horse_man,Plant_5] 0
 x[CLUSTER_522,horse_man,Plant_6] 0
 x[CLUSTER_522,horse_man,Plant_7] 0
@@ -56704,7 +56704,7 @@ x[CLUSTER_522,pig_man,Plant_0] 0
 x[CLUSTER_522,pig_man,Plant_1] 0
 x[CLUSTER_522,pig_man,Plant_2] 0
 x[CLUSTER_522,pig_man,Plant_3] 0
-x[CLUSTER_522,pig_man,Plant_4] 0.0001837
+x[CLUSTER_522,pig_man,Plant_4] 0
 x[CLUSTER_522,pig_man,Plant_5] 0
 x[CLUSTER_522,pig_man,Plant_6] 0
 x[CLUSTER_522,pig_man,Plant_7] 0
@@ -56786,7 +56786,7 @@ x[CLUSTER_523,cattle_man,Plant_2] 0
 x[CLUSTER_523,cattle_man,Plant_3] 0
 x[CLUSTER_523,cattle_man,Plant_4] 0
 x[CLUSTER_523,cattle_man,Plant_5] 0
-x[CLUSTER_523,cattle_man,Plant_6] 0.01326
+x[CLUSTER_523,cattle_man,Plant_6] 0
 x[CLUSTER_523,cattle_man,Plant_7] 0
 x[CLUSTER_523,cattle_man,Plant_8] 0
 x[CLUSTER_523,cattle_man,Plant_9] 0
@@ -56806,7 +56806,7 @@ x[CLUSTER_523,horse_man,Plant_2] 0
 x[CLUSTER_523,horse_man,Plant_3] 0
 x[CLUSTER_523,horse_man,Plant_4] 0
 x[CLUSTER_523,horse_man,Plant_5] 0
-x[CLUSTER_523,horse_man,Plant_6] 0.001417
+x[CLUSTER_523,horse_man,Plant_6] 0
 x[CLUSTER_523,horse_man,Plant_7] 0
 x[CLUSTER_523,horse_man,Plant_8] 0
 x[CLUSTER_523,horse_man,Plant_9] 0
@@ -56825,7 +56825,7 @@ x[CLUSTER_523,pig_man,Plant_1] 0
 x[CLUSTER_523,pig_man,Plant_2] 0
 x[CLUSTER_523,pig_man,Plant_3] 0
 x[CLUSTER_523,pig_man,Plant_4] 0
-x[CLUSTER_523,pig_man,Plant_5] 5.67e-05
+x[CLUSTER_523,pig_man,Plant_5] 0
 x[CLUSTER_523,pig_man,Plant_6] 0
 x[CLUSTER_523,pig_man,Plant_7] 0
 x[CLUSTER_523,pig_man,Plant_8] 0
@@ -56902,7 +56902,7 @@ x[CLUSTER_523,legume_str,Plant_8] 0
 x[CLUSTER_523,legume_str,Plant_9] 0
 x[CLUSTER_524,cattle_man,Plant_0] 0
 x[CLUSTER_524,cattle_man,Plant_1] 0
-x[CLUSTER_524,cattle_man,Plant_2] 0.002192
+x[CLUSTER_524,cattle_man,Plant_2] 0
 x[CLUSTER_524,cattle_man,Plant_3] 0
 x[CLUSTER_524,cattle_man,Plant_4] 0
 x[CLUSTER_524,cattle_man,Plant_5] 0
@@ -56922,7 +56922,7 @@ x[CLUSTER_524,cattle_slu,Plant_8] 0
 x[CLUSTER_524,cattle_slu,Plant_9] 0
 x[CLUSTER_524,horse_man,Plant_0] 0
 x[CLUSTER_524,horse_man,Plant_1] 0
-x[CLUSTER_524,horse_man,Plant_2] 0.0016776
+x[CLUSTER_524,horse_man,Plant_2] 0
 x[CLUSTER_524,horse_man,Plant_3] 0
 x[CLUSTER_524,horse_man,Plant_4] 0
 x[CLUSTER_524,horse_man,Plant_5] 0
@@ -56942,7 +56942,7 @@ x[CLUSTER_524,pig_slu,Plant_8] 0
 x[CLUSTER_524,pig_slu,Plant_9] 0
 x[CLUSTER_524,pig_man,Plant_0] 0
 x[CLUSTER_524,pig_man,Plant_1] 0
-x[CLUSTER_524,pig_man,Plant_2] 1.8178e-05
+x[CLUSTER_524,pig_man,Plant_2] 0
 x[CLUSTER_524,pig_man,Plant_3] 0
 x[CLUSTER_524,pig_man,Plant_4] 0
 x[CLUSTER_524,pig_man,Plant_5] 0
@@ -56969,7 +56969,7 @@ x[CLUSTER_524,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_524,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_524,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_524,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_524,clover_alfalfa_grass,Plant_9] 0.0008937475
+x[CLUSTER_524,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_524,perm_grass,Plant_0] 0
 x[CLUSTER_524,perm_grass,Plant_1] 0
 x[CLUSTER_524,perm_grass,Plant_2] 0
@@ -56989,7 +56989,7 @@ x[CLUSTER_524,maize_str,Plant_5] 0
 x[CLUSTER_524,maize_str,Plant_6] 0
 x[CLUSTER_524,maize_str,Plant_7] 0
 x[CLUSTER_524,maize_str,Plant_8] 0
-x[CLUSTER_524,maize_str,Plant_9] 0.0001346
+x[CLUSTER_524,maize_str,Plant_9] 0
 x[CLUSTER_524,beet_leaf,Plant_0] 0
 x[CLUSTER_524,beet_leaf,Plant_1] 0
 x[CLUSTER_524,beet_leaf,Plant_2] 0
@@ -57029,7 +57029,7 @@ x[CLUSTER_525,cattle_man,Plant_5] 0
 x[CLUSTER_525,cattle_man,Plant_6] 0
 x[CLUSTER_525,cattle_man,Plant_7] 0
 x[CLUSTER_525,cattle_man,Plant_8] 0
-x[CLUSTER_525,cattle_man,Plant_9] 0.0049277
+x[CLUSTER_525,cattle_man,Plant_9] 0
 x[CLUSTER_525,cattle_slu,Plant_0] 0
 x[CLUSTER_525,cattle_slu,Plant_1] 0
 x[CLUSTER_525,cattle_slu,Plant_2] 0
@@ -57049,7 +57049,7 @@ x[CLUSTER_525,horse_man,Plant_5] 0
 x[CLUSTER_525,horse_man,Plant_6] 0
 x[CLUSTER_525,horse_man,Plant_7] 0
 x[CLUSTER_525,horse_man,Plant_8] 0
-x[CLUSTER_525,horse_man,Plant_9] 2.906e-05
+x[CLUSTER_525,horse_man,Plant_9] 0
 x[CLUSTER_525,pig_slu,Plant_0] 0
 x[CLUSTER_525,pig_slu,Plant_1] 0
 x[CLUSTER_525,pig_slu,Plant_2] 0
@@ -57067,7 +57067,7 @@ x[CLUSTER_525,pig_man,Plant_3] 0
 x[CLUSTER_525,pig_man,Plant_4] 0
 x[CLUSTER_525,pig_man,Plant_5] 0
 x[CLUSTER_525,pig_man,Plant_6] 0
-x[CLUSTER_525,pig_man,Plant_7] 2.4965e-05
+x[CLUSTER_525,pig_man,Plant_7] 0
 x[CLUSTER_525,pig_man,Plant_8] 0
 x[CLUSTER_525,pig_man,Plant_9] 0
 x[CLUSTER_525,cereal_str,Plant_0] 0
@@ -57089,7 +57089,7 @@ x[CLUSTER_525,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_525,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_525,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_525,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_525,clover_alfalfa_grass,Plant_9] 0.002343
+x[CLUSTER_525,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_525,perm_grass,Plant_0] 0
 x[CLUSTER_525,perm_grass,Plant_1] 0
 x[CLUSTER_525,perm_grass,Plant_2] 0
@@ -57109,7 +57109,7 @@ x[CLUSTER_525,maize_str,Plant_5] 0
 x[CLUSTER_525,maize_str,Plant_6] 0
 x[CLUSTER_525,maize_str,Plant_7] 0
 x[CLUSTER_525,maize_str,Plant_8] 0
-x[CLUSTER_525,maize_str,Plant_9] 1.6100000000000002e-05
+x[CLUSTER_525,maize_str,Plant_9] 0
 x[CLUSTER_525,beet_leaf,Plant_0] 0
 x[CLUSTER_525,beet_leaf,Plant_1] 0
 x[CLUSTER_525,beet_leaf,Plant_2] 0
@@ -57149,7 +57149,7 @@ x[CLUSTER_526,cattle_man,Plant_5] 0
 x[CLUSTER_526,cattle_man,Plant_6] 0
 x[CLUSTER_526,cattle_man,Plant_7] 0
 x[CLUSTER_526,cattle_man,Plant_8] 0
-x[CLUSTER_526,cattle_man,Plant_9] 0.00249
+x[CLUSTER_526,cattle_man,Plant_9] 0
 x[CLUSTER_526,cattle_slu,Plant_0] 0
 x[CLUSTER_526,cattle_slu,Plant_1] 0
 x[CLUSTER_526,cattle_slu,Plant_2] 0
@@ -57164,7 +57164,7 @@ x[CLUSTER_526,horse_man,Plant_0] 0
 x[CLUSTER_526,horse_man,Plant_1] 0
 x[CLUSTER_526,horse_man,Plant_2] 0
 x[CLUSTER_526,horse_man,Plant_3] 0
-x[CLUSTER_526,horse_man,Plant_4] 0.000485
+x[CLUSTER_526,horse_man,Plant_4] 0
 x[CLUSTER_526,horse_man,Plant_5] 0
 x[CLUSTER_526,horse_man,Plant_6] 0
 x[CLUSTER_526,horse_man,Plant_7] 0
@@ -57187,7 +57187,7 @@ x[CLUSTER_526,pig_man,Plant_3] 0
 x[CLUSTER_526,pig_man,Plant_4] 0
 x[CLUSTER_526,pig_man,Plant_5] 0
 x[CLUSTER_526,pig_man,Plant_6] 0
-x[CLUSTER_526,pig_man,Plant_7] 0.000141
+x[CLUSTER_526,pig_man,Plant_7] 0
 x[CLUSTER_526,pig_man,Plant_8] 0
 x[CLUSTER_526,pig_man,Plant_9] 0
 x[CLUSTER_526,cereal_str,Plant_0] 0
@@ -57209,7 +57209,7 @@ x[CLUSTER_526,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_526,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_526,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_526,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_526,clover_alfalfa_grass,Plant_9] 0.00159
+x[CLUSTER_526,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_526,perm_grass,Plant_0] 0
 x[CLUSTER_526,perm_grass,Plant_1] 0
 x[CLUSTER_526,perm_grass,Plant_2] 0
@@ -57281,7 +57281,7 @@ x[CLUSTER_527,cattle_slu,Plant_7] 0
 x[CLUSTER_527,cattle_slu,Plant_8] 0
 x[CLUSTER_527,cattle_slu,Plant_9] 0
 x[CLUSTER_527,horse_man,Plant_0] 0
-x[CLUSTER_527,horse_man,Plant_1] 0.001912
+x[CLUSTER_527,horse_man,Plant_1] 0
 x[CLUSTER_527,horse_man,Plant_2] 0
 x[CLUSTER_527,horse_man,Plant_3] 0
 x[CLUSTER_527,horse_man,Plant_4] 0
@@ -57308,7 +57308,7 @@ x[CLUSTER_527,pig_man,Plant_4] 0
 x[CLUSTER_527,pig_man,Plant_5] 0
 x[CLUSTER_527,pig_man,Plant_6] 0
 x[CLUSTER_527,pig_man,Plant_7] 0
-x[CLUSTER_527,pig_man,Plant_8] 4.80347e-05
+x[CLUSTER_527,pig_man,Plant_8] 0
 x[CLUSTER_527,pig_man,Plant_9] 0
 x[CLUSTER_527,cereal_str,Plant_0] 0
 x[CLUSTER_527,cereal_str,Plant_1] 0
@@ -57383,7 +57383,7 @@ x[CLUSTER_527,legume_str,Plant_9] 0
 x[CLUSTER_528,cattle_man,Plant_0] 0
 x[CLUSTER_528,cattle_man,Plant_1] 0
 x[CLUSTER_528,cattle_man,Plant_2] 0
-x[CLUSTER_528,cattle_man,Plant_3] 0.00794
+x[CLUSTER_528,cattle_man,Plant_3] 0
 x[CLUSTER_528,cattle_man,Plant_4] 0
 x[CLUSTER_528,cattle_man,Plant_5] 0
 x[CLUSTER_528,cattle_man,Plant_6] 0
@@ -57403,7 +57403,7 @@ x[CLUSTER_528,cattle_slu,Plant_9] 0
 x[CLUSTER_528,horse_man,Plant_0] 0
 x[CLUSTER_528,horse_man,Plant_1] 0
 x[CLUSTER_528,horse_man,Plant_2] 0
-x[CLUSTER_528,horse_man,Plant_3] 0.001337
+x[CLUSTER_528,horse_man,Plant_3] 0
 x[CLUSTER_528,horse_man,Plant_4] 0
 x[CLUSTER_528,horse_man,Plant_5] 0
 x[CLUSTER_528,horse_man,Plant_6] 0
@@ -57500,7 +57500,7 @@ x[CLUSTER_528,legume_str,Plant_6] 0
 x[CLUSTER_528,legume_str,Plant_7] 0
 x[CLUSTER_528,legume_str,Plant_8] 0
 x[CLUSTER_528,legume_str,Plant_9] 0
-x[CLUSTER_529,cattle_man,Plant_0] 7.4799999999989380e-03
+x[CLUSTER_529,cattle_man,Plant_0] 0
 x[CLUSTER_529,cattle_man,Plant_1] 0
 x[CLUSTER_529,cattle_man,Plant_2] 0
 x[CLUSTER_529,cattle_man,Plant_3] 0
@@ -57520,7 +57520,7 @@ x[CLUSTER_529,cattle_slu,Plant_6] 0
 x[CLUSTER_529,cattle_slu,Plant_7] 0
 x[CLUSTER_529,cattle_slu,Plant_8] 0
 x[CLUSTER_529,cattle_slu,Plant_9] 0
-x[CLUSTER_529,horse_man,Plant_0] 0.000807
+x[CLUSTER_529,horse_man,Plant_0] 0
 x[CLUSTER_529,horse_man,Plant_1] 0
 x[CLUSTER_529,horse_man,Plant_2] 0
 x[CLUSTER_529,horse_man,Plant_3] 0
@@ -57540,7 +57540,7 @@ x[CLUSTER_529,pig_slu,Plant_6] 0
 x[CLUSTER_529,pig_slu,Plant_7] 0
 x[CLUSTER_529,pig_slu,Plant_8] 0
 x[CLUSTER_529,pig_slu,Plant_9] 0
-x[CLUSTER_529,pig_man,Plant_0] 1.86e-05
+x[CLUSTER_529,pig_man,Plant_0] 0
 x[CLUSTER_529,pig_man,Plant_1] 0
 x[CLUSTER_529,pig_man,Plant_2] 0
 x[CLUSTER_529,pig_man,Plant_3] 0
@@ -57580,7 +57580,7 @@ x[CLUSTER_529,perm_grass,Plant_6] 0
 x[CLUSTER_529,perm_grass,Plant_7] 0
 x[CLUSTER_529,perm_grass,Plant_8] 0
 x[CLUSTER_529,perm_grass,Plant_9] 0
-x[CLUSTER_529,maize_str,Plant_0] 9.92e-05
+x[CLUSTER_529,maize_str,Plant_0] 0
 x[CLUSTER_529,maize_str,Plant_1] 0
 x[CLUSTER_529,maize_str,Plant_2] 0
 x[CLUSTER_529,maize_str,Plant_3] 0
@@ -57621,7 +57621,7 @@ x[CLUSTER_529,legume_str,Plant_7] 0
 x[CLUSTER_529,legume_str,Plant_8] 0
 x[CLUSTER_529,legume_str,Plant_9] 0
 x[CLUSTER_53,cattle_man,Plant_0] 0
-x[CLUSTER_53,cattle_man,Plant_1] 0.00622692
+x[CLUSTER_53,cattle_man,Plant_1] 0
 x[CLUSTER_53,cattle_man,Plant_2] 0
 x[CLUSTER_53,cattle_man,Plant_3] 0
 x[CLUSTER_53,cattle_man,Plant_4] 0
@@ -57641,7 +57641,7 @@ x[CLUSTER_53,cattle_slu,Plant_7] 0
 x[CLUSTER_53,cattle_slu,Plant_8] 0
 x[CLUSTER_53,cattle_slu,Plant_9] 0
 x[CLUSTER_53,horse_man,Plant_0] 0
-x[CLUSTER_53,horse_man,Plant_1] 0.001543
+x[CLUSTER_53,horse_man,Plant_1] 0
 x[CLUSTER_53,horse_man,Plant_2] 0
 x[CLUSTER_53,horse_man,Plant_3] 0
 x[CLUSTER_53,horse_man,Plant_4] 0
@@ -57747,7 +57747,7 @@ x[CLUSTER_530,cattle_man,Plant_3] 0
 x[CLUSTER_530,cattle_man,Plant_4] 0
 x[CLUSTER_530,cattle_man,Plant_5] 0
 x[CLUSTER_530,cattle_man,Plant_6] 0
-x[CLUSTER_530,cattle_man,Plant_7] 0.001179
+x[CLUSTER_530,cattle_man,Plant_7] 0
 x[CLUSTER_530,cattle_man,Plant_8] 0
 x[CLUSTER_530,cattle_man,Plant_9] 0
 x[CLUSTER_530,cattle_slu,Plant_0] 0
@@ -57757,7 +57757,7 @@ x[CLUSTER_530,cattle_slu,Plant_3] 0
 x[CLUSTER_530,cattle_slu,Plant_4] 0
 x[CLUSTER_530,cattle_slu,Plant_5] 0
 x[CLUSTER_530,cattle_slu,Plant_6] 0
-x[CLUSTER_530,cattle_slu,Plant_7] 0.00118
+x[CLUSTER_530,cattle_slu,Plant_7] 0
 x[CLUSTER_530,cattle_slu,Plant_8] 0
 x[CLUSTER_530,cattle_slu,Plant_9] 0
 x[CLUSTER_530,horse_man,Plant_0] 0
@@ -57767,7 +57767,7 @@ x[CLUSTER_530,horse_man,Plant_3] 0
 x[CLUSTER_530,horse_man,Plant_4] 0
 x[CLUSTER_530,horse_man,Plant_5] 0
 x[CLUSTER_530,horse_man,Plant_6] 0
-x[CLUSTER_530,horse_man,Plant_7] 4.4360000000000005e-04
+x[CLUSTER_530,horse_man,Plant_7] 0
 x[CLUSTER_530,horse_man,Plant_8] 0
 x[CLUSTER_530,horse_man,Plant_9] 0
 x[CLUSTER_530,pig_slu,Plant_0] 0
@@ -57787,7 +57787,7 @@ x[CLUSTER_530,pig_man,Plant_3] 0
 x[CLUSTER_530,pig_man,Plant_4] 0
 x[CLUSTER_530,pig_man,Plant_5] 0
 x[CLUSTER_530,pig_man,Plant_6] 0
-x[CLUSTER_530,pig_man,Plant_7] 8.45e-05
+x[CLUSTER_530,pig_man,Plant_7] 0
 x[CLUSTER_530,pig_man,Plant_8] 0
 x[CLUSTER_530,pig_man,Plant_9] 0
 x[CLUSTER_530,cereal_str,Plant_0] 0
@@ -57868,7 +57868,7 @@ x[CLUSTER_531,cattle_man,Plant_4] 0
 x[CLUSTER_531,cattle_man,Plant_5] 0
 x[CLUSTER_531,cattle_man,Plant_6] 0
 x[CLUSTER_531,cattle_man,Plant_7] 0
-x[CLUSTER_531,cattle_man,Plant_8] 0.00075
+x[CLUSTER_531,cattle_man,Plant_8] 0
 x[CLUSTER_531,cattle_man,Plant_9] 0
 x[CLUSTER_531,cattle_slu,Plant_0] 0
 x[CLUSTER_531,cattle_slu,Plant_1] 0
@@ -57878,7 +57878,7 @@ x[CLUSTER_531,cattle_slu,Plant_4] 0
 x[CLUSTER_531,cattle_slu,Plant_5] 0
 x[CLUSTER_531,cattle_slu,Plant_6] 0
 x[CLUSTER_531,cattle_slu,Plant_7] 0
-x[CLUSTER_531,cattle_slu,Plant_8] 0.000515
+x[CLUSTER_531,cattle_slu,Plant_8] 0
 x[CLUSTER_531,cattle_slu,Plant_9] 0
 x[CLUSTER_531,horse_man,Plant_0] 0
 x[CLUSTER_531,horse_man,Plant_1] 0
@@ -57888,7 +57888,7 @@ x[CLUSTER_531,horse_man,Plant_4] 0
 x[CLUSTER_531,horse_man,Plant_5] 0
 x[CLUSTER_531,horse_man,Plant_6] 0
 x[CLUSTER_531,horse_man,Plant_7] 0
-x[CLUSTER_531,horse_man,Plant_8] 0.0004249
+x[CLUSTER_531,horse_man,Plant_8] 0
 x[CLUSTER_531,horse_man,Plant_9] 0
 x[CLUSTER_531,pig_slu,Plant_0] 0
 x[CLUSTER_531,pig_slu,Plant_1] 0
@@ -57908,7 +57908,7 @@ x[CLUSTER_531,pig_man,Plant_4] 0
 x[CLUSTER_531,pig_man,Plant_5] 0
 x[CLUSTER_531,pig_man,Plant_6] 0
 x[CLUSTER_531,pig_man,Plant_7] 0
-x[CLUSTER_531,pig_man,Plant_8] 0.000133
+x[CLUSTER_531,pig_man,Plant_8] 0
 x[CLUSTER_531,pig_man,Plant_9] 0
 x[CLUSTER_531,cereal_str,Plant_0] 0
 x[CLUSTER_531,cereal_str,Plant_1] 0
@@ -57982,7 +57982,7 @@ x[CLUSTER_531,legume_str,Plant_8] 0
 x[CLUSTER_531,legume_str,Plant_9] 0
 x[CLUSTER_532,cattle_man,Plant_0] 0
 x[CLUSTER_532,cattle_man,Plant_1] 0
-x[CLUSTER_532,cattle_man,Plant_2] 0.0035100508
+x[CLUSTER_532,cattle_man,Plant_2] 0
 x[CLUSTER_532,cattle_man,Plant_3] 0
 x[CLUSTER_532,cattle_man,Plant_4] 0
 x[CLUSTER_532,cattle_man,Plant_5] 0
@@ -57992,7 +57992,7 @@ x[CLUSTER_532,cattle_man,Plant_8] 0
 x[CLUSTER_532,cattle_man,Plant_9] 0
 x[CLUSTER_532,cattle_slu,Plant_0] 0
 x[CLUSTER_532,cattle_slu,Plant_1] 0
-x[CLUSTER_532,cattle_slu,Plant_2] 0.02139
+x[CLUSTER_532,cattle_slu,Plant_2] 0
 x[CLUSTER_532,cattle_slu,Plant_3] 0
 x[CLUSTER_532,cattle_slu,Plant_4] 0
 x[CLUSTER_532,cattle_slu,Plant_5] 0
@@ -58002,7 +58002,7 @@ x[CLUSTER_532,cattle_slu,Plant_8] 0
 x[CLUSTER_532,cattle_slu,Plant_9] 0
 x[CLUSTER_532,horse_man,Plant_0] 0
 x[CLUSTER_532,horse_man,Plant_1] 0
-x[CLUSTER_532,horse_man,Plant_2] 1.7769999999999998e-04
+x[CLUSTER_532,horse_man,Plant_2] 0
 x[CLUSTER_532,horse_man,Plant_3] 0
 x[CLUSTER_532,horse_man,Plant_4] 0
 x[CLUSTER_532,horse_man,Plant_5] 0
@@ -58022,7 +58022,7 @@ x[CLUSTER_532,pig_slu,Plant_8] 0
 x[CLUSTER_532,pig_slu,Plant_9] 0
 x[CLUSTER_532,pig_man,Plant_0] 0
 x[CLUSTER_532,pig_man,Plant_1] 0
-x[CLUSTER_532,pig_man,Plant_2] 4.1116000000000004e-04
+x[CLUSTER_532,pig_man,Plant_2] 0
 x[CLUSTER_532,pig_man,Plant_3] 0
 x[CLUSTER_532,pig_man,Plant_4] 0
 x[CLUSTER_532,pig_man,Plant_5] 0
@@ -58069,7 +58069,7 @@ x[CLUSTER_532,maize_str,Plant_5] 0
 x[CLUSTER_532,maize_str,Plant_6] 0
 x[CLUSTER_532,maize_str,Plant_7] 0
 x[CLUSTER_532,maize_str,Plant_8] 0
-x[CLUSTER_532,maize_str,Plant_9] 6.79e-05
+x[CLUSTER_532,maize_str,Plant_9] 0
 x[CLUSTER_532,beet_leaf,Plant_0] 0
 x[CLUSTER_532,beet_leaf,Plant_1] 0
 x[CLUSTER_532,beet_leaf,Plant_2] 0
@@ -58108,7 +58108,7 @@ x[CLUSTER_533,cattle_man,Plant_4] 0
 x[CLUSTER_533,cattle_man,Plant_5] 0
 x[CLUSTER_533,cattle_man,Plant_6] 0
 x[CLUSTER_533,cattle_man,Plant_7] 0
-x[CLUSTER_533,cattle_man,Plant_8] 0.000693
+x[CLUSTER_533,cattle_man,Plant_8] 0
 x[CLUSTER_533,cattle_man,Plant_9] 0
 x[CLUSTER_533,cattle_slu,Plant_0] 0
 x[CLUSTER_533,cattle_slu,Plant_1] 0
@@ -58128,7 +58128,7 @@ x[CLUSTER_533,horse_man,Plant_4] 0
 x[CLUSTER_533,horse_man,Plant_5] 0
 x[CLUSTER_533,horse_man,Plant_6] 0
 x[CLUSTER_533,horse_man,Plant_7] 0
-x[CLUSTER_533,horse_man,Plant_8] 0.000654
+x[CLUSTER_533,horse_man,Plant_8] 0
 x[CLUSTER_533,horse_man,Plant_9] 0
 x[CLUSTER_533,pig_slu,Plant_0] 0
 x[CLUSTER_533,pig_slu,Plant_1] 0
@@ -58148,7 +58148,7 @@ x[CLUSTER_533,pig_man,Plant_4] 0
 x[CLUSTER_533,pig_man,Plant_5] 0
 x[CLUSTER_533,pig_man,Plant_6] 0
 x[CLUSTER_533,pig_man,Plant_7] 0
-x[CLUSTER_533,pig_man,Plant_8] 7.0100000000000010e-05
+x[CLUSTER_533,pig_man,Plant_8] 0
 x[CLUSTER_533,pig_man,Plant_9] 0
 x[CLUSTER_533,cereal_str,Plant_0] 0
 x[CLUSTER_533,cereal_str,Plant_1] 0
@@ -58228,7 +58228,7 @@ x[CLUSTER_534,cattle_man,Plant_4] 0
 x[CLUSTER_534,cattle_man,Plant_5] 0
 x[CLUSTER_534,cattle_man,Plant_6] 0
 x[CLUSTER_534,cattle_man,Plant_7] 0
-x[CLUSTER_534,cattle_man,Plant_8] 0.002189
+x[CLUSTER_534,cattle_man,Plant_8] 0
 x[CLUSTER_534,cattle_man,Plant_9] 0
 x[CLUSTER_534,cattle_slu,Plant_0] 0
 x[CLUSTER_534,cattle_slu,Plant_1] 0
@@ -58248,7 +58248,7 @@ x[CLUSTER_534,horse_man,Plant_4] 0
 x[CLUSTER_534,horse_man,Plant_5] 0
 x[CLUSTER_534,horse_man,Plant_6] 0
 x[CLUSTER_534,horse_man,Plant_7] 0
-x[CLUSTER_534,horse_man,Plant_8] 0.0018736
+x[CLUSTER_534,horse_man,Plant_8] 0
 x[CLUSTER_534,horse_man,Plant_9] 0
 x[CLUSTER_534,pig_slu,Plant_0] 0
 x[CLUSTER_534,pig_slu,Plant_1] 0
@@ -58268,7 +58268,7 @@ x[CLUSTER_534,pig_man,Plant_4] 0
 x[CLUSTER_534,pig_man,Plant_5] 0
 x[CLUSTER_534,pig_man,Plant_6] 0
 x[CLUSTER_534,pig_man,Plant_7] 0
-x[CLUSTER_534,pig_man,Plant_8] 0.001003
+x[CLUSTER_534,pig_man,Plant_8] 0
 x[CLUSTER_534,pig_man,Plant_9] 0
 x[CLUSTER_534,cereal_str,Plant_0] 0
 x[CLUSTER_534,cereal_str,Plant_1] 0
@@ -58344,7 +58344,7 @@ x[CLUSTER_535,cattle_man,Plant_0] 0
 x[CLUSTER_535,cattle_man,Plant_1] 0
 x[CLUSTER_535,cattle_man,Plant_2] 0
 x[CLUSTER_535,cattle_man,Plant_3] 0
-x[CLUSTER_535,cattle_man,Plant_4] 0.001578
+x[CLUSTER_535,cattle_man,Plant_4] 0
 x[CLUSTER_535,cattle_man,Plant_5] 0
 x[CLUSTER_535,cattle_man,Plant_6] 0
 x[CLUSTER_535,cattle_man,Plant_7] 0
@@ -58364,7 +58364,7 @@ x[CLUSTER_535,horse_man,Plant_0] 0
 x[CLUSTER_535,horse_man,Plant_1] 0
 x[CLUSTER_535,horse_man,Plant_2] 0
 x[CLUSTER_535,horse_man,Plant_3] 0
-x[CLUSTER_535,horse_man,Plant_4] 0.000706
+x[CLUSTER_535,horse_man,Plant_4] 0
 x[CLUSTER_535,horse_man,Plant_5] 0
 x[CLUSTER_535,horse_man,Plant_6] 0
 x[CLUSTER_535,horse_man,Plant_7] 0
@@ -58384,7 +58384,7 @@ x[CLUSTER_535,pig_man,Plant_0] 0
 x[CLUSTER_535,pig_man,Plant_1] 0
 x[CLUSTER_535,pig_man,Plant_2] 0
 x[CLUSTER_535,pig_man,Plant_3] 0
-x[CLUSTER_535,pig_man,Plant_4] 0.0003033
+x[CLUSTER_535,pig_man,Plant_4] 0
 x[CLUSTER_535,pig_man,Plant_5] 0
 x[CLUSTER_535,pig_man,Plant_6] 0
 x[CLUSTER_535,pig_man,Plant_7] 0
@@ -58409,7 +58409,7 @@ x[CLUSTER_535,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_535,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_535,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_535,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_535,clover_alfalfa_grass,Plant_9] 0.0005073
+x[CLUSTER_535,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_535,perm_grass,Plant_0] 0
 x[CLUSTER_535,perm_grass,Plant_1] 0
 x[CLUSTER_535,perm_grass,Plant_2] 0
@@ -58429,7 +58429,7 @@ x[CLUSTER_535,maize_str,Plant_5] 0
 x[CLUSTER_535,maize_str,Plant_6] 0
 x[CLUSTER_535,maize_str,Plant_7] 0
 x[CLUSTER_535,maize_str,Plant_8] 0
-x[CLUSTER_535,maize_str,Plant_9] 0.000176
+x[CLUSTER_535,maize_str,Plant_9] 0
 x[CLUSTER_535,beet_leaf,Plant_0] 0
 x[CLUSTER_535,beet_leaf,Plant_1] 0
 x[CLUSTER_535,beet_leaf,Plant_2] 0
@@ -58460,7 +58460,7 @@ x[CLUSTER_535,legume_str,Plant_6] 0
 x[CLUSTER_535,legume_str,Plant_7] 0
 x[CLUSTER_535,legume_str,Plant_8] 0
 x[CLUSTER_535,legume_str,Plant_9] 0
-x[CLUSTER_536,cattle_man,Plant_0] 0.003358
+x[CLUSTER_536,cattle_man,Plant_0] 0
 x[CLUSTER_536,cattle_man,Plant_1] 0
 x[CLUSTER_536,cattle_man,Plant_2] 0
 x[CLUSTER_536,cattle_man,Plant_3] 0
@@ -58480,7 +58480,7 @@ x[CLUSTER_536,cattle_slu,Plant_6] 0
 x[CLUSTER_536,cattle_slu,Plant_7] 0
 x[CLUSTER_536,cattle_slu,Plant_8] 0
 x[CLUSTER_536,cattle_slu,Plant_9] 0
-x[CLUSTER_536,horse_man,Plant_0] 0.0004839
+x[CLUSTER_536,horse_man,Plant_0] 0
 x[CLUSTER_536,horse_man,Plant_1] 0
 x[CLUSTER_536,horse_man,Plant_2] 0
 x[CLUSTER_536,horse_man,Plant_3] 0
@@ -58500,7 +58500,7 @@ x[CLUSTER_536,pig_slu,Plant_6] 0
 x[CLUSTER_536,pig_slu,Plant_7] 0
 x[CLUSTER_536,pig_slu,Plant_8] 0
 x[CLUSTER_536,pig_slu,Plant_9] 0
-x[CLUSTER_536,pig_man,Plant_0] 0.0001686
+x[CLUSTER_536,pig_man,Plant_0] 0
 x[CLUSTER_536,pig_man,Plant_1] 0
 x[CLUSTER_536,pig_man,Plant_2] 0
 x[CLUSTER_536,pig_man,Plant_3] 0
@@ -58583,7 +58583,7 @@ x[CLUSTER_536,legume_str,Plant_9] 0
 x[CLUSTER_537,cattle_man,Plant_0] 0
 x[CLUSTER_537,cattle_man,Plant_1] 0
 x[CLUSTER_537,cattle_man,Plant_2] 0
-x[CLUSTER_537,cattle_man,Plant_3] 0.002682
+x[CLUSTER_537,cattle_man,Plant_3] 0
 x[CLUSTER_537,cattle_man,Plant_4] 0
 x[CLUSTER_537,cattle_man,Plant_5] 0
 x[CLUSTER_537,cattle_man,Plant_6] 0
@@ -58603,7 +58603,7 @@ x[CLUSTER_537,cattle_slu,Plant_9] 0
 x[CLUSTER_537,horse_man,Plant_0] 0
 x[CLUSTER_537,horse_man,Plant_1] 0
 x[CLUSTER_537,horse_man,Plant_2] 0
-x[CLUSTER_537,horse_man,Plant_3] 0.001468
+x[CLUSTER_537,horse_man,Plant_3] 0
 x[CLUSTER_537,horse_man,Plant_4] 0
 x[CLUSTER_537,horse_man,Plant_5] 0
 x[CLUSTER_537,horse_man,Plant_6] 0
@@ -58623,7 +58623,7 @@ x[CLUSTER_537,pig_slu,Plant_9] 0
 x[CLUSTER_537,pig_man,Plant_0] 0
 x[CLUSTER_537,pig_man,Plant_1] 0
 x[CLUSTER_537,pig_man,Plant_2] 0
-x[CLUSTER_537,pig_man,Plant_3] 0.002429
+x[CLUSTER_537,pig_man,Plant_3] 0
 x[CLUSTER_537,pig_man,Plant_4] 0
 x[CLUSTER_537,pig_man,Plant_5] 0
 x[CLUSTER_537,pig_man,Plant_6] 0
@@ -58707,7 +58707,7 @@ x[CLUSTER_538,cattle_man,Plant_3] 0
 x[CLUSTER_538,cattle_man,Plant_4] 0
 x[CLUSTER_538,cattle_man,Plant_5] 0
 x[CLUSTER_538,cattle_man,Plant_6] 0
-x[CLUSTER_538,cattle_man,Plant_7] 0.003387
+x[CLUSTER_538,cattle_man,Plant_7] 0
 x[CLUSTER_538,cattle_man,Plant_8] 0
 x[CLUSTER_538,cattle_man,Plant_9] 0
 x[CLUSTER_538,cattle_slu,Plant_0] 0
@@ -58717,7 +58717,7 @@ x[CLUSTER_538,cattle_slu,Plant_3] 0
 x[CLUSTER_538,cattle_slu,Plant_4] 0
 x[CLUSTER_538,cattle_slu,Plant_5] 0
 x[CLUSTER_538,cattle_slu,Plant_6] 0
-x[CLUSTER_538,cattle_slu,Plant_7] 0.003543
+x[CLUSTER_538,cattle_slu,Plant_7] 0
 x[CLUSTER_538,cattle_slu,Plant_8] 0
 x[CLUSTER_538,cattle_slu,Plant_9] 0
 x[CLUSTER_538,horse_man,Plant_0] 0
@@ -58727,7 +58727,7 @@ x[CLUSTER_538,horse_man,Plant_3] 0
 x[CLUSTER_538,horse_man,Plant_4] 0
 x[CLUSTER_538,horse_man,Plant_5] 0
 x[CLUSTER_538,horse_man,Plant_6] 0
-x[CLUSTER_538,horse_man,Plant_7] 0.0007684
+x[CLUSTER_538,horse_man,Plant_7] 0
 x[CLUSTER_538,horse_man,Plant_8] 0
 x[CLUSTER_538,horse_man,Plant_9] 0
 x[CLUSTER_538,pig_slu,Plant_0] 0
@@ -58747,7 +58747,7 @@ x[CLUSTER_538,pig_man,Plant_3] 0
 x[CLUSTER_538,pig_man,Plant_4] 0
 x[CLUSTER_538,pig_man,Plant_5] 0
 x[CLUSTER_538,pig_man,Plant_6] 0
-x[CLUSTER_538,pig_man,Plant_7] 0.000151197
+x[CLUSTER_538,pig_man,Plant_7] 0
 x[CLUSTER_538,pig_man,Plant_8] 0
 x[CLUSTER_538,pig_man,Plant_9] 0
 x[CLUSTER_538,cereal_str,Plant_0] 0
@@ -58769,7 +58769,7 @@ x[CLUSTER_538,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_538,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_538,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_538,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_538,clover_alfalfa_grass,Plant_9] 0.002378
+x[CLUSTER_538,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_538,perm_grass,Plant_0] 0
 x[CLUSTER_538,perm_grass,Plant_1] 0
 x[CLUSTER_538,perm_grass,Plant_2] 0
@@ -58789,7 +58789,7 @@ x[CLUSTER_538,maize_str,Plant_5] 0
 x[CLUSTER_538,maize_str,Plant_6] 0
 x[CLUSTER_538,maize_str,Plant_7] 0
 x[CLUSTER_538,maize_str,Plant_8] 0
-x[CLUSTER_538,maize_str,Plant_9] 2.46e-05
+x[CLUSTER_538,maize_str,Plant_9] 0
 x[CLUSTER_538,beet_leaf,Plant_0] 0
 x[CLUSTER_538,beet_leaf,Plant_1] 0
 x[CLUSTER_538,beet_leaf,Plant_2] 0
@@ -58824,7 +58824,7 @@ x[CLUSTER_539,cattle_man,Plant_0] 0
 x[CLUSTER_539,cattle_man,Plant_1] 0
 x[CLUSTER_539,cattle_man,Plant_2] 0
 x[CLUSTER_539,cattle_man,Plant_3] 0
-x[CLUSTER_539,cattle_man,Plant_4] 0.002743
+x[CLUSTER_539,cattle_man,Plant_4] 0
 x[CLUSTER_539,cattle_man,Plant_5] 0
 x[CLUSTER_539,cattle_man,Plant_6] 0
 x[CLUSTER_539,cattle_man,Plant_7] 0
@@ -58844,7 +58844,7 @@ x[CLUSTER_539,horse_man,Plant_0] 0
 x[CLUSTER_539,horse_man,Plant_1] 0
 x[CLUSTER_539,horse_man,Plant_2] 0
 x[CLUSTER_539,horse_man,Plant_3] 0
-x[CLUSTER_539,horse_man,Plant_4] 0.000433
+x[CLUSTER_539,horse_man,Plant_4] 0
 x[CLUSTER_539,horse_man,Plant_5] 0
 x[CLUSTER_539,horse_man,Plant_6] 0
 x[CLUSTER_539,horse_man,Plant_7] 0
@@ -58889,7 +58889,7 @@ x[CLUSTER_539,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_539,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_539,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_539,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_539,clover_alfalfa_grass,Plant_9] 0.00198
+x[CLUSTER_539,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_539,perm_grass,Plant_0] 0
 x[CLUSTER_539,perm_grass,Plant_1] 0
 x[CLUSTER_539,perm_grass,Plant_2] 0
@@ -58909,7 +58909,7 @@ x[CLUSTER_539,maize_str,Plant_5] 0
 x[CLUSTER_539,maize_str,Plant_6] 0
 x[CLUSTER_539,maize_str,Plant_7] 0
 x[CLUSTER_539,maize_str,Plant_8] 0
-x[CLUSTER_539,maize_str,Plant_9] 6.5900231e-05
+x[CLUSTER_539,maize_str,Plant_9] 0
 x[CLUSTER_539,beet_leaf,Plant_0] 0
 x[CLUSTER_539,beet_leaf,Plant_1] 0
 x[CLUSTER_539,beet_leaf,Plant_2] 0
@@ -58966,7 +58966,7 @@ x[CLUSTER_54,horse_man,Plant_2] 0
 x[CLUSTER_54,horse_man,Plant_3] 0
 x[CLUSTER_54,horse_man,Plant_4] 0
 x[CLUSTER_54,horse_man,Plant_5] 0
-x[CLUSTER_54,horse_man,Plant_6] 0.001695
+x[CLUSTER_54,horse_man,Plant_6] 0
 x[CLUSTER_54,horse_man,Plant_7] 0
 x[CLUSTER_54,horse_man,Plant_8] 0
 x[CLUSTER_54,horse_man,Plant_9] 0
@@ -59063,7 +59063,7 @@ x[CLUSTER_54,legume_str,Plant_9] 0
 x[CLUSTER_540,cattle_man,Plant_0] 0
 x[CLUSTER_540,cattle_man,Plant_1] 0
 x[CLUSTER_540,cattle_man,Plant_2] 0
-x[CLUSTER_540,cattle_man,Plant_3] 0.00251
+x[CLUSTER_540,cattle_man,Plant_3] 0
 x[CLUSTER_540,cattle_man,Plant_4] 0
 x[CLUSTER_540,cattle_man,Plant_5] 0
 x[CLUSTER_540,cattle_man,Plant_6] 0
@@ -59083,7 +59083,7 @@ x[CLUSTER_540,cattle_slu,Plant_9] 0
 x[CLUSTER_540,horse_man,Plant_0] 0
 x[CLUSTER_540,horse_man,Plant_1] 0
 x[CLUSTER_540,horse_man,Plant_2] 0
-x[CLUSTER_540,horse_man,Plant_3] 0.00139
+x[CLUSTER_540,horse_man,Plant_3] 0
 x[CLUSTER_540,horse_man,Plant_4] 0
 x[CLUSTER_540,horse_man,Plant_5] 0
 x[CLUSTER_540,horse_man,Plant_6] 0
@@ -59183,7 +59183,7 @@ x[CLUSTER_540,legume_str,Plant_9] 0
 x[CLUSTER_541,cattle_man,Plant_0] 0
 x[CLUSTER_541,cattle_man,Plant_1] 0
 x[CLUSTER_541,cattle_man,Plant_2] 0
-x[CLUSTER_541,cattle_man,Plant_3] 0.004103
+x[CLUSTER_541,cattle_man,Plant_3] 0
 x[CLUSTER_541,cattle_man,Plant_4] 0
 x[CLUSTER_541,cattle_man,Plant_5] 0
 x[CLUSTER_541,cattle_man,Plant_6] 0
@@ -59203,7 +59203,7 @@ x[CLUSTER_541,cattle_slu,Plant_9] 0
 x[CLUSTER_541,horse_man,Plant_0] 0
 x[CLUSTER_541,horse_man,Plant_1] 0
 x[CLUSTER_541,horse_man,Plant_2] 0
-x[CLUSTER_541,horse_man,Plant_3] 0.0008355
+x[CLUSTER_541,horse_man,Plant_3] 0
 x[CLUSTER_541,horse_man,Plant_4] 0
 x[CLUSTER_541,horse_man,Plant_5] 0
 x[CLUSTER_541,horse_man,Plant_6] 0
@@ -59300,7 +59300,7 @@ x[CLUSTER_541,legume_str,Plant_6] 0
 x[CLUSTER_541,legume_str,Plant_7] 0
 x[CLUSTER_541,legume_str,Plant_8] 0
 x[CLUSTER_541,legume_str,Plant_9] 0
-x[CLUSTER_542,cattle_man,Plant_0] 0.02036
+x[CLUSTER_542,cattle_man,Plant_0] 0
 x[CLUSTER_542,cattle_man,Plant_1] 0
 x[CLUSTER_542,cattle_man,Plant_2] 0
 x[CLUSTER_542,cattle_man,Plant_3] 0
@@ -59310,7 +59310,7 @@ x[CLUSTER_542,cattle_man,Plant_6] 0
 x[CLUSTER_542,cattle_man,Plant_7] 0
 x[CLUSTER_542,cattle_man,Plant_8] 0
 x[CLUSTER_542,cattle_man,Plant_9] 0
-x[CLUSTER_542,cattle_slu,Plant_0] 1.0099999999999974e-01
+x[CLUSTER_542,cattle_slu,Plant_0] 0
 x[CLUSTER_542,cattle_slu,Plant_1] 0
 x[CLUSTER_542,cattle_slu,Plant_2] 0
 x[CLUSTER_542,cattle_slu,Plant_3] 0
@@ -59320,7 +59320,7 @@ x[CLUSTER_542,cattle_slu,Plant_6] 0
 x[CLUSTER_542,cattle_slu,Plant_7] 0
 x[CLUSTER_542,cattle_slu,Plant_8] 0
 x[CLUSTER_542,cattle_slu,Plant_9] 0
-x[CLUSTER_542,horse_man,Plant_0] 0.0014521
+x[CLUSTER_542,horse_man,Plant_0] 0
 x[CLUSTER_542,horse_man,Plant_1] 0
 x[CLUSTER_542,horse_man,Plant_2] 0
 x[CLUSTER_542,horse_man,Plant_3] 0
@@ -59340,7 +59340,7 @@ x[CLUSTER_542,pig_slu,Plant_6] 0
 x[CLUSTER_542,pig_slu,Plant_7] 0
 x[CLUSTER_542,pig_slu,Plant_8] 0
 x[CLUSTER_542,pig_slu,Plant_9] 0
-x[CLUSTER_542,pig_man,Plant_0] 0.00056419
+x[CLUSTER_542,pig_man,Plant_0] 0
 x[CLUSTER_542,pig_man,Plant_1] 0
 x[CLUSTER_542,pig_man,Plant_2] 0
 x[CLUSTER_542,pig_man,Plant_3] 0
@@ -59380,7 +59380,7 @@ x[CLUSTER_542,perm_grass,Plant_6] 0
 x[CLUSTER_542,perm_grass,Plant_7] 0
 x[CLUSTER_542,perm_grass,Plant_8] 0
 x[CLUSTER_542,perm_grass,Plant_9] 0
-x[CLUSTER_542,maize_str,Plant_0] 0.00011414
+x[CLUSTER_542,maize_str,Plant_0] 0
 x[CLUSTER_542,maize_str,Plant_1] 0
 x[CLUSTER_542,maize_str,Plant_2] 0
 x[CLUSTER_542,maize_str,Plant_3] 0
@@ -59428,7 +59428,7 @@ x[CLUSTER_543,cattle_man,Plant_4] 0
 x[CLUSTER_543,cattle_man,Plant_5] 0
 x[CLUSTER_543,cattle_man,Plant_6] 0
 x[CLUSTER_543,cattle_man,Plant_7] 0
-x[CLUSTER_543,cattle_man,Plant_8] 0.01057
+x[CLUSTER_543,cattle_man,Plant_8] 0
 x[CLUSTER_543,cattle_man,Plant_9] 0
 x[CLUSTER_543,cattle_slu,Plant_0] 0
 x[CLUSTER_543,cattle_slu,Plant_1] 0
@@ -59448,7 +59448,7 @@ x[CLUSTER_543,horse_man,Plant_4] 0
 x[CLUSTER_543,horse_man,Plant_5] 0
 x[CLUSTER_543,horse_man,Plant_6] 0
 x[CLUSTER_543,horse_man,Plant_7] 0
-x[CLUSTER_543,horse_man,Plant_8] 0.0001589
+x[CLUSTER_543,horse_man,Plant_8] 0
 x[CLUSTER_543,horse_man,Plant_9] 0
 x[CLUSTER_543,pig_slu,Plant_0] 0
 x[CLUSTER_543,pig_slu,Plant_1] 0
@@ -59468,7 +59468,7 @@ x[CLUSTER_543,pig_man,Plant_4] 0
 x[CLUSTER_543,pig_man,Plant_5] 0
 x[CLUSTER_543,pig_man,Plant_6] 0
 x[CLUSTER_543,pig_man,Plant_7] 0
-x[CLUSTER_543,pig_man,Plant_8] 3.6089e-05
+x[CLUSTER_543,pig_man,Plant_8] 0
 x[CLUSTER_543,pig_man,Plant_9] 0
 x[CLUSTER_543,cereal_str,Plant_0] 0
 x[CLUSTER_543,cereal_str,Plant_1] 0
@@ -59545,7 +59545,7 @@ x[CLUSTER_544,cattle_man,Plant_1] 0
 x[CLUSTER_544,cattle_man,Plant_2] 0
 x[CLUSTER_544,cattle_man,Plant_3] 0
 x[CLUSTER_544,cattle_man,Plant_4] 0
-x[CLUSTER_544,cattle_man,Plant_5] 0.00552
+x[CLUSTER_544,cattle_man,Plant_5] 0
 x[CLUSTER_544,cattle_man,Plant_6] 0
 x[CLUSTER_544,cattle_man,Plant_7] 0
 x[CLUSTER_544,cattle_man,Plant_8] 0
@@ -59555,7 +59555,7 @@ x[CLUSTER_544,cattle_slu,Plant_1] 0
 x[CLUSTER_544,cattle_slu,Plant_2] 0
 x[CLUSTER_544,cattle_slu,Plant_3] 0
 x[CLUSTER_544,cattle_slu,Plant_4] 0
-x[CLUSTER_544,cattle_slu,Plant_5] 0.01525
+x[CLUSTER_544,cattle_slu,Plant_5] 0
 x[CLUSTER_544,cattle_slu,Plant_6] 0
 x[CLUSTER_544,cattle_slu,Plant_7] 0
 x[CLUSTER_544,cattle_slu,Plant_8] 0
@@ -59585,7 +59585,7 @@ x[CLUSTER_544,pig_man,Plant_1] 0
 x[CLUSTER_544,pig_man,Plant_2] 0
 x[CLUSTER_544,pig_man,Plant_3] 0
 x[CLUSTER_544,pig_man,Plant_4] 0
-x[CLUSTER_544,pig_man,Plant_5] 1.5550000000000002e-05
+x[CLUSTER_544,pig_man,Plant_5] 0
 x[CLUSTER_544,pig_man,Plant_6] 0
 x[CLUSTER_544,pig_man,Plant_7] 0
 x[CLUSTER_544,pig_man,Plant_8] 0
@@ -59665,7 +59665,7 @@ x[CLUSTER_545,cattle_man,Plant_1] 0
 x[CLUSTER_545,cattle_man,Plant_2] 0
 x[CLUSTER_545,cattle_man,Plant_3] 0
 x[CLUSTER_545,cattle_man,Plant_4] 0
-x[CLUSTER_545,cattle_man,Plant_5] 0.00108
+x[CLUSTER_545,cattle_man,Plant_5] 0
 x[CLUSTER_545,cattle_man,Plant_6] 0
 x[CLUSTER_545,cattle_man,Plant_7] 0
 x[CLUSTER_545,cattle_man,Plant_8] 0
@@ -59675,7 +59675,7 @@ x[CLUSTER_545,cattle_slu,Plant_1] 0
 x[CLUSTER_545,cattle_slu,Plant_2] 0
 x[CLUSTER_545,cattle_slu,Plant_3] 0
 x[CLUSTER_545,cattle_slu,Plant_4] 0
-x[CLUSTER_545,cattle_slu,Plant_5] 0.00363
+x[CLUSTER_545,cattle_slu,Plant_5] 0
 x[CLUSTER_545,cattle_slu,Plant_6] 0
 x[CLUSTER_545,cattle_slu,Plant_7] 0
 x[CLUSTER_545,cattle_slu,Plant_8] 0
@@ -59685,7 +59685,7 @@ x[CLUSTER_545,horse_man,Plant_1] 0
 x[CLUSTER_545,horse_man,Plant_2] 0
 x[CLUSTER_545,horse_man,Plant_3] 0
 x[CLUSTER_545,horse_man,Plant_4] 0
-x[CLUSTER_545,horse_man,Plant_5] 0.001719
+x[CLUSTER_545,horse_man,Plant_5] 0
 x[CLUSTER_545,horse_man,Plant_6] 0
 x[CLUSTER_545,horse_man,Plant_7] 0
 x[CLUSTER_545,horse_man,Plant_8] 0
@@ -59695,7 +59695,7 @@ x[CLUSTER_545,pig_slu,Plant_1] 0
 x[CLUSTER_545,pig_slu,Plant_2] 0
 x[CLUSTER_545,pig_slu,Plant_3] 0
 x[CLUSTER_545,pig_slu,Plant_4] 0
-x[CLUSTER_545,pig_slu,Plant_5] 0.00382
+x[CLUSTER_545,pig_slu,Plant_5] 0
 x[CLUSTER_545,pig_slu,Plant_6] 0
 x[CLUSTER_545,pig_slu,Plant_7] 0
 x[CLUSTER_545,pig_slu,Plant_8] 0
@@ -59705,7 +59705,7 @@ x[CLUSTER_545,pig_man,Plant_1] 0
 x[CLUSTER_545,pig_man,Plant_2] 0
 x[CLUSTER_545,pig_man,Plant_3] 0
 x[CLUSTER_545,pig_man,Plant_4] 0
-x[CLUSTER_545,pig_man,Plant_5] 0.0002271
+x[CLUSTER_545,pig_man,Plant_5] 0
 x[CLUSTER_545,pig_man,Plant_6] 0
 x[CLUSTER_545,pig_man,Plant_7] 0
 x[CLUSTER_545,pig_man,Plant_8] 0
@@ -59725,7 +59725,7 @@ x[CLUSTER_545,clover_alfalfa_grass,Plant_1] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_2] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_3] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_4] 0
-x[CLUSTER_545,clover_alfalfa_grass,Plant_5] 0.00222
+x[CLUSTER_545,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_545,clover_alfalfa_grass,Plant_8] 0
@@ -59745,7 +59745,7 @@ x[CLUSTER_545,maize_str,Plant_1] 0
 x[CLUSTER_545,maize_str,Plant_2] 0
 x[CLUSTER_545,maize_str,Plant_3] 0
 x[CLUSTER_545,maize_str,Plant_4] 0
-x[CLUSTER_545,maize_str,Plant_5] 0.0027
+x[CLUSTER_545,maize_str,Plant_5] 0
 x[CLUSTER_545,maize_str,Plant_6] 0
 x[CLUSTER_545,maize_str,Plant_7] 0
 x[CLUSTER_545,maize_str,Plant_8] 0
@@ -59807,7 +59807,7 @@ x[CLUSTER_546,horse_man,Plant_3] 0
 x[CLUSTER_546,horse_man,Plant_4] 0
 x[CLUSTER_546,horse_man,Plant_5] 0
 x[CLUSTER_546,horse_man,Plant_6] 0
-x[CLUSTER_546,horse_man,Plant_7] 0.000444
+x[CLUSTER_546,horse_man,Plant_7] 0
 x[CLUSTER_546,horse_man,Plant_8] 0
 x[CLUSTER_546,horse_man,Plant_9] 0
 x[CLUSTER_546,pig_slu,Plant_0] 0
@@ -59903,7 +59903,7 @@ x[CLUSTER_546,legume_str,Plant_9] 0
 x[CLUSTER_547,cattle_man,Plant_0] 0
 x[CLUSTER_547,cattle_man,Plant_1] 0
 x[CLUSTER_547,cattle_man,Plant_2] 0
-x[CLUSTER_547,cattle_man,Plant_3] 0.01079
+x[CLUSTER_547,cattle_man,Plant_3] 0
 x[CLUSTER_547,cattle_man,Plant_4] 0
 x[CLUSTER_547,cattle_man,Plant_5] 0
 x[CLUSTER_547,cattle_man,Plant_6] 0
@@ -59923,7 +59923,7 @@ x[CLUSTER_547,cattle_slu,Plant_9] 0
 x[CLUSTER_547,horse_man,Plant_0] 0
 x[CLUSTER_547,horse_man,Plant_1] 0
 x[CLUSTER_547,horse_man,Plant_2] 0
-x[CLUSTER_547,horse_man,Plant_3] 0.001621
+x[CLUSTER_547,horse_man,Plant_3] 0
 x[CLUSTER_547,horse_man,Plant_4] 0
 x[CLUSTER_547,horse_man,Plant_5] 0
 x[CLUSTER_547,horse_man,Plant_6] 0
@@ -60028,7 +60028,7 @@ x[CLUSTER_548,cattle_man,Plant_4] 0
 x[CLUSTER_548,cattle_man,Plant_5] 0
 x[CLUSTER_548,cattle_man,Plant_6] 0
 x[CLUSTER_548,cattle_man,Plant_7] 0
-x[CLUSTER_548,cattle_man,Plant_8] 0.007311
+x[CLUSTER_548,cattle_man,Plant_8] 0
 x[CLUSTER_548,cattle_man,Plant_9] 0
 x[CLUSTER_548,cattle_slu,Plant_0] 0
 x[CLUSTER_548,cattle_slu,Plant_1] 0
@@ -60048,7 +60048,7 @@ x[CLUSTER_548,horse_man,Plant_4] 0
 x[CLUSTER_548,horse_man,Plant_5] 0
 x[CLUSTER_548,horse_man,Plant_6] 0
 x[CLUSTER_548,horse_man,Plant_7] 0
-x[CLUSTER_548,horse_man,Plant_8] 0.002324
+x[CLUSTER_548,horse_man,Plant_8] 0
 x[CLUSTER_548,horse_man,Plant_9] 0
 x[CLUSTER_548,pig_slu,Plant_0] 0
 x[CLUSTER_548,pig_slu,Plant_1] 0
@@ -60143,7 +60143,7 @@ x[CLUSTER_548,legume_str,Plant_9] 0
 x[CLUSTER_549,cattle_man,Plant_0] 0
 x[CLUSTER_549,cattle_man,Plant_1] 0
 x[CLUSTER_549,cattle_man,Plant_2] 0
-x[CLUSTER_549,cattle_man,Plant_3] 0.00658
+x[CLUSTER_549,cattle_man,Plant_3] 0
 x[CLUSTER_549,cattle_man,Plant_4] 0
 x[CLUSTER_549,cattle_man,Plant_5] 0
 x[CLUSTER_549,cattle_man,Plant_6] 0
@@ -60153,7 +60153,7 @@ x[CLUSTER_549,cattle_man,Plant_9] 0
 x[CLUSTER_549,cattle_slu,Plant_0] 0
 x[CLUSTER_549,cattle_slu,Plant_1] 0
 x[CLUSTER_549,cattle_slu,Plant_2] 0
-x[CLUSTER_549,cattle_slu,Plant_3] 0.0389
+x[CLUSTER_549,cattle_slu,Plant_3] 0
 x[CLUSTER_549,cattle_slu,Plant_4] 0
 x[CLUSTER_549,cattle_slu,Plant_5] 0
 x[CLUSTER_549,cattle_slu,Plant_6] 0
@@ -60163,7 +60163,7 @@ x[CLUSTER_549,cattle_slu,Plant_9] 0
 x[CLUSTER_549,horse_man,Plant_0] 0
 x[CLUSTER_549,horse_man,Plant_1] 0
 x[CLUSTER_549,horse_man,Plant_2] 0
-x[CLUSTER_549,horse_man,Plant_3] 0.001622
+x[CLUSTER_549,horse_man,Plant_3] 0
 x[CLUSTER_549,horse_man,Plant_4] 0
 x[CLUSTER_549,horse_man,Plant_5] 0
 x[CLUSTER_549,horse_man,Plant_6] 0
@@ -60262,7 +60262,7 @@ x[CLUSTER_549,legume_str,Plant_8] 0
 x[CLUSTER_549,legume_str,Plant_9] 0
 x[CLUSTER_55,cattle_man,Plant_0] 0
 x[CLUSTER_55,cattle_man,Plant_1] 0
-x[CLUSTER_55,cattle_man,Plant_2] 0.003272
+x[CLUSTER_55,cattle_man,Plant_2] 0
 x[CLUSTER_55,cattle_man,Plant_3] 0
 x[CLUSTER_55,cattle_man,Plant_4] 0
 x[CLUSTER_55,cattle_man,Plant_5] 0
@@ -60282,7 +60282,7 @@ x[CLUSTER_55,cattle_slu,Plant_8] 0
 x[CLUSTER_55,cattle_slu,Plant_9] 0
 x[CLUSTER_55,horse_man,Plant_0] 0
 x[CLUSTER_55,horse_man,Plant_1] 0
-x[CLUSTER_55,horse_man,Plant_2] 0.0030763
+x[CLUSTER_55,horse_man,Plant_2] 0
 x[CLUSTER_55,horse_man,Plant_3] 0
 x[CLUSTER_55,horse_man,Plant_4] 0
 x[CLUSTER_55,horse_man,Plant_5] 0
@@ -60302,7 +60302,7 @@ x[CLUSTER_55,pig_slu,Plant_8] 0
 x[CLUSTER_55,pig_slu,Plant_9] 0
 x[CLUSTER_55,pig_man,Plant_0] 0
 x[CLUSTER_55,pig_man,Plant_1] 0
-x[CLUSTER_55,pig_man,Plant_2] 4.6479999999999995e-05
+x[CLUSTER_55,pig_man,Plant_2] 0
 x[CLUSTER_55,pig_man,Plant_3] 0
 x[CLUSTER_55,pig_man,Plant_4] 0
 x[CLUSTER_55,pig_man,Plant_5] 0
@@ -60349,7 +60349,7 @@ x[CLUSTER_55,maize_str,Plant_5] 0
 x[CLUSTER_55,maize_str,Plant_6] 0
 x[CLUSTER_55,maize_str,Plant_7] 0
 x[CLUSTER_55,maize_str,Plant_8] 0
-x[CLUSTER_55,maize_str,Plant_9] 3.2960000000000004e-04
+x[CLUSTER_55,maize_str,Plant_9] 0
 x[CLUSTER_55,beet_leaf,Plant_0] 0
 x[CLUSTER_55,beet_leaf,Plant_1] 0
 x[CLUSTER_55,beet_leaf,Plant_2] 0
@@ -60387,7 +60387,7 @@ x[CLUSTER_56,cattle_man,Plant_3] 0
 x[CLUSTER_56,cattle_man,Plant_4] 0
 x[CLUSTER_56,cattle_man,Plant_5] 0
 x[CLUSTER_56,cattle_man,Plant_6] 0
-x[CLUSTER_56,cattle_man,Plant_7] 5.4443999999999994e-03
+x[CLUSTER_56,cattle_man,Plant_7] 0
 x[CLUSTER_56,cattle_man,Plant_8] 0
 x[CLUSTER_56,cattle_man,Plant_9] 0
 x[CLUSTER_56,cattle_slu,Plant_0] 0
@@ -60397,7 +60397,7 @@ x[CLUSTER_56,cattle_slu,Plant_3] 0
 x[CLUSTER_56,cattle_slu,Plant_4] 0
 x[CLUSTER_56,cattle_slu,Plant_5] 0
 x[CLUSTER_56,cattle_slu,Plant_6] 0
-x[CLUSTER_56,cattle_slu,Plant_7] 0.00420012
+x[CLUSTER_56,cattle_slu,Plant_7] 0
 x[CLUSTER_56,cattle_slu,Plant_8] 0
 x[CLUSTER_56,cattle_slu,Plant_9] 0
 x[CLUSTER_56,horse_man,Plant_0] 0
@@ -60407,7 +60407,7 @@ x[CLUSTER_56,horse_man,Plant_3] 0
 x[CLUSTER_56,horse_man,Plant_4] 0
 x[CLUSTER_56,horse_man,Plant_5] 0
 x[CLUSTER_56,horse_man,Plant_6] 0
-x[CLUSTER_56,horse_man,Plant_7] 0.0018468
+x[CLUSTER_56,horse_man,Plant_7] 0
 x[CLUSTER_56,horse_man,Plant_8] 0
 x[CLUSTER_56,horse_man,Plant_9] 0
 x[CLUSTER_56,pig_slu,Plant_0] 0
@@ -60427,7 +60427,7 @@ x[CLUSTER_56,pig_man,Plant_3] 0
 x[CLUSTER_56,pig_man,Plant_4] 0
 x[CLUSTER_56,pig_man,Plant_5] 0
 x[CLUSTER_56,pig_man,Plant_6] 0
-x[CLUSTER_56,pig_man,Plant_7] 0.00042776
+x[CLUSTER_56,pig_man,Plant_7] 0
 x[CLUSTER_56,pig_man,Plant_8] 0
 x[CLUSTER_56,pig_man,Plant_9] 0
 x[CLUSTER_56,cereal_str,Plant_0] 0
@@ -60505,7 +60505,7 @@ x[CLUSTER_57,cattle_man,Plant_1] 0
 x[CLUSTER_57,cattle_man,Plant_2] 0
 x[CLUSTER_57,cattle_man,Plant_3] 0
 x[CLUSTER_57,cattle_man,Plant_4] 0
-x[CLUSTER_57,cattle_man,Plant_5] 1.2629000000000002e-03
+x[CLUSTER_57,cattle_man,Plant_5] 0
 x[CLUSTER_57,cattle_man,Plant_6] 0
 x[CLUSTER_57,cattle_man,Plant_7] 0
 x[CLUSTER_57,cattle_man,Plant_8] 0
@@ -60525,7 +60525,7 @@ x[CLUSTER_57,horse_man,Plant_1] 0
 x[CLUSTER_57,horse_man,Plant_2] 0
 x[CLUSTER_57,horse_man,Plant_3] 0
 x[CLUSTER_57,horse_man,Plant_4] 0
-x[CLUSTER_57,horse_man,Plant_5] 0.00142
+x[CLUSTER_57,horse_man,Plant_5] 0
 x[CLUSTER_57,horse_man,Plant_6] 0
 x[CLUSTER_57,horse_man,Plant_7] 0
 x[CLUSTER_57,horse_man,Plant_8] 0
@@ -60626,7 +60626,7 @@ x[CLUSTER_58,cattle_man,Plant_2] 0
 x[CLUSTER_58,cattle_man,Plant_3] 0
 x[CLUSTER_58,cattle_man,Plant_4] 0
 x[CLUSTER_58,cattle_man,Plant_5] 0
-x[CLUSTER_58,cattle_man,Plant_6] 0.04901
+x[CLUSTER_58,cattle_man,Plant_6] 0
 x[CLUSTER_58,cattle_man,Plant_7] 0
 x[CLUSTER_58,cattle_man,Plant_8] 0
 x[CLUSTER_58,cattle_man,Plant_9] 0
@@ -60646,7 +60646,7 @@ x[CLUSTER_58,horse_man,Plant_2] 0
 x[CLUSTER_58,horse_man,Plant_3] 0
 x[CLUSTER_58,horse_man,Plant_4] 0
 x[CLUSTER_58,horse_man,Plant_5] 0
-x[CLUSTER_58,horse_man,Plant_6] 0.0037396
+x[CLUSTER_58,horse_man,Plant_6] 0
 x[CLUSTER_58,horse_man,Plant_7] 0
 x[CLUSTER_58,horse_man,Plant_8] 0
 x[CLUSTER_58,horse_man,Plant_9] 0
@@ -60665,7 +60665,7 @@ x[CLUSTER_58,pig_man,Plant_1] 0
 x[CLUSTER_58,pig_man,Plant_2] 0
 x[CLUSTER_58,pig_man,Plant_3] 0
 x[CLUSTER_58,pig_man,Plant_4] 0
-x[CLUSTER_58,pig_man,Plant_5] 0.0005857193
+x[CLUSTER_58,pig_man,Plant_5] 0
 x[CLUSTER_58,pig_man,Plant_6] 0
 x[CLUSTER_58,pig_man,Plant_7] 0
 x[CLUSTER_58,pig_man,Plant_8] 0
@@ -60740,7 +60740,7 @@ x[CLUSTER_58,legume_str,Plant_6] 0
 x[CLUSTER_58,legume_str,Plant_7] 0
 x[CLUSTER_58,legume_str,Plant_8] 0
 x[CLUSTER_58,legume_str,Plant_9] 0
-x[CLUSTER_59,cattle_man,Plant_0] 0.005668
+x[CLUSTER_59,cattle_man,Plant_0] 0
 x[CLUSTER_59,cattle_man,Plant_1] 0
 x[CLUSTER_59,cattle_man,Plant_2] 0
 x[CLUSTER_59,cattle_man,Plant_3] 0
@@ -60760,7 +60760,7 @@ x[CLUSTER_59,cattle_slu,Plant_6] 0
 x[CLUSTER_59,cattle_slu,Plant_7] 0
 x[CLUSTER_59,cattle_slu,Plant_8] 0
 x[CLUSTER_59,cattle_slu,Plant_9] 0
-x[CLUSTER_59,horse_man,Plant_0] 0.000456477
+x[CLUSTER_59,horse_man,Plant_0] 0
 x[CLUSTER_59,horse_man,Plant_1] 0
 x[CLUSTER_59,horse_man,Plant_2] 0
 x[CLUSTER_59,horse_man,Plant_3] 0
@@ -60780,7 +60780,7 @@ x[CLUSTER_59,pig_slu,Plant_6] 0
 x[CLUSTER_59,pig_slu,Plant_7] 0
 x[CLUSTER_59,pig_slu,Plant_8] 0
 x[CLUSTER_59,pig_slu,Plant_9] 0
-x[CLUSTER_59,pig_man,Plant_0] 5.6019e-05
+x[CLUSTER_59,pig_man,Plant_0] 0
 x[CLUSTER_59,pig_man,Plant_1] 0
 x[CLUSTER_59,pig_man,Plant_2] 0
 x[CLUSTER_59,pig_man,Plant_3] 0
@@ -60820,7 +60820,7 @@ x[CLUSTER_59,perm_grass,Plant_6] 0
 x[CLUSTER_59,perm_grass,Plant_7] 0
 x[CLUSTER_59,perm_grass,Plant_8] 0
 x[CLUSTER_59,perm_grass,Plant_9] 0
-x[CLUSTER_59,maize_str,Plant_0] 7.7900000000000010e-05
+x[CLUSTER_59,maize_str,Plant_0] 0
 x[CLUSTER_59,maize_str,Plant_1] 0
 x[CLUSTER_59,maize_str,Plant_2] 0
 x[CLUSTER_59,maize_str,Plant_3] 0
@@ -60868,7 +60868,7 @@ x[CLUSTER_6,cattle_man,Plant_4] 0
 x[CLUSTER_6,cattle_man,Plant_5] 0
 x[CLUSTER_6,cattle_man,Plant_6] 0
 x[CLUSTER_6,cattle_man,Plant_7] 0
-x[CLUSTER_6,cattle_man,Plant_8] 8.1016999999999992e-04
+x[CLUSTER_6,cattle_man,Plant_8] 0
 x[CLUSTER_6,cattle_man,Plant_9] 0
 x[CLUSTER_6,cattle_slu,Plant_0] 0
 x[CLUSTER_6,cattle_slu,Plant_1] 0
@@ -60888,7 +60888,7 @@ x[CLUSTER_6,horse_man,Plant_4] 0
 x[CLUSTER_6,horse_man,Plant_5] 0
 x[CLUSTER_6,horse_man,Plant_6] 0
 x[CLUSTER_6,horse_man,Plant_7] 0
-x[CLUSTER_6,horse_man,Plant_8] 0.000339439139
+x[CLUSTER_6,horse_man,Plant_8] 0
 x[CLUSTER_6,horse_man,Plant_9] 0
 x[CLUSTER_6,pig_slu,Plant_0] 0
 x[CLUSTER_6,pig_slu,Plant_1] 0
@@ -60908,7 +60908,7 @@ x[CLUSTER_6,pig_man,Plant_4] 0
 x[CLUSTER_6,pig_man,Plant_5] 0
 x[CLUSTER_6,pig_man,Plant_6] 0
 x[CLUSTER_6,pig_man,Plant_7] 0
-x[CLUSTER_6,pig_man,Plant_8] 0.0018167
+x[CLUSTER_6,pig_man,Plant_8] 0
 x[CLUSTER_6,pig_man,Plant_9] 0
 x[CLUSTER_6,cereal_str,Plant_0] 0
 x[CLUSTER_6,cereal_str,Plant_1] 0
@@ -60987,7 +60987,7 @@ x[CLUSTER_60,cattle_man,Plant_3] 0
 x[CLUSTER_60,cattle_man,Plant_4] 0
 x[CLUSTER_60,cattle_man,Plant_5] 0
 x[CLUSTER_60,cattle_man,Plant_6] 0
-x[CLUSTER_60,cattle_man,Plant_7] 0.006475
+x[CLUSTER_60,cattle_man,Plant_7] 0
 x[CLUSTER_60,cattle_man,Plant_8] 0
 x[CLUSTER_60,cattle_man,Plant_9] 0
 x[CLUSTER_60,cattle_slu,Plant_0] 0
@@ -60997,7 +60997,7 @@ x[CLUSTER_60,cattle_slu,Plant_3] 0
 x[CLUSTER_60,cattle_slu,Plant_4] 0
 x[CLUSTER_60,cattle_slu,Plant_5] 0
 x[CLUSTER_60,cattle_slu,Plant_6] 0
-x[CLUSTER_60,cattle_slu,Plant_7] 0.007095
+x[CLUSTER_60,cattle_slu,Plant_7] 0
 x[CLUSTER_60,cattle_slu,Plant_8] 0
 x[CLUSTER_60,cattle_slu,Plant_9] 0
 x[CLUSTER_60,horse_man,Plant_0] 0
@@ -61007,7 +61007,7 @@ x[CLUSTER_60,horse_man,Plant_3] 0
 x[CLUSTER_60,horse_man,Plant_4] 0
 x[CLUSTER_60,horse_man,Plant_5] 0
 x[CLUSTER_60,horse_man,Plant_6] 0
-x[CLUSTER_60,horse_man,Plant_7] 0.0025078
+x[CLUSTER_60,horse_man,Plant_7] 0
 x[CLUSTER_60,horse_man,Plant_8] 0
 x[CLUSTER_60,horse_man,Plant_9] 0
 x[CLUSTER_60,pig_slu,Plant_0] 0
@@ -61027,7 +61027,7 @@ x[CLUSTER_60,pig_man,Plant_3] 0
 x[CLUSTER_60,pig_man,Plant_4] 0
 x[CLUSTER_60,pig_man,Plant_5] 0
 x[CLUSTER_60,pig_man,Plant_6] 0
-x[CLUSTER_60,pig_man,Plant_7] 4.5158200000000004e-05
+x[CLUSTER_60,pig_man,Plant_7] 0
 x[CLUSTER_60,pig_man,Plant_8] 0
 x[CLUSTER_60,pig_man,Plant_9] 0
 x[CLUSTER_60,cereal_str,Plant_0] 0
@@ -61103,7 +61103,7 @@ x[CLUSTER_60,legume_str,Plant_9] 0
 x[CLUSTER_61,cattle_man,Plant_0] 0
 x[CLUSTER_61,cattle_man,Plant_1] 0
 x[CLUSTER_61,cattle_man,Plant_2] 0
-x[CLUSTER_61,cattle_man,Plant_3] 0.03329
+x[CLUSTER_61,cattle_man,Plant_3] 0
 x[CLUSTER_61,cattle_man,Plant_4] 0
 x[CLUSTER_61,cattle_man,Plant_5] 0
 x[CLUSTER_61,cattle_man,Plant_6] 0
@@ -61123,7 +61123,7 @@ x[CLUSTER_61,cattle_slu,Plant_9] 0
 x[CLUSTER_61,horse_man,Plant_0] 0
 x[CLUSTER_61,horse_man,Plant_1] 0
 x[CLUSTER_61,horse_man,Plant_2] 0
-x[CLUSTER_61,horse_man,Plant_3] 0.002388
+x[CLUSTER_61,horse_man,Plant_3] 0
 x[CLUSTER_61,horse_man,Plant_4] 0
 x[CLUSTER_61,horse_man,Plant_5] 0
 x[CLUSTER_61,horse_man,Plant_6] 0
@@ -61143,7 +61143,7 @@ x[CLUSTER_61,pig_slu,Plant_9] 0
 x[CLUSTER_61,pig_man,Plant_0] 0
 x[CLUSTER_61,pig_man,Plant_1] 0
 x[CLUSTER_61,pig_man,Plant_2] 0
-x[CLUSTER_61,pig_man,Plant_3] 0.0003928
+x[CLUSTER_61,pig_man,Plant_3] 0
 x[CLUSTER_61,pig_man,Plant_4] 0
 x[CLUSTER_61,pig_man,Plant_5] 0
 x[CLUSTER_61,pig_man,Plant_6] 0
@@ -61226,7 +61226,7 @@ x[CLUSTER_62,cattle_man,Plant_2] 0
 x[CLUSTER_62,cattle_man,Plant_3] 0
 x[CLUSTER_62,cattle_man,Plant_4] 0
 x[CLUSTER_62,cattle_man,Plant_5] 0
-x[CLUSTER_62,cattle_man,Plant_6] 0.02975
+x[CLUSTER_62,cattle_man,Plant_6] 0
 x[CLUSTER_62,cattle_man,Plant_7] 0
 x[CLUSTER_62,cattle_man,Plant_8] 0
 x[CLUSTER_62,cattle_man,Plant_9] 0
@@ -61246,7 +61246,7 @@ x[CLUSTER_62,horse_man,Plant_2] 0
 x[CLUSTER_62,horse_man,Plant_3] 0
 x[CLUSTER_62,horse_man,Plant_4] 0
 x[CLUSTER_62,horse_man,Plant_5] 0
-x[CLUSTER_62,horse_man,Plant_6] 0.004905
+x[CLUSTER_62,horse_man,Plant_6] 0
 x[CLUSTER_62,horse_man,Plant_7] 0
 x[CLUSTER_62,horse_man,Plant_8] 0
 x[CLUSTER_62,horse_man,Plant_9] 0
@@ -61265,7 +61265,7 @@ x[CLUSTER_62,pig_man,Plant_1] 0
 x[CLUSTER_62,pig_man,Plant_2] 0
 x[CLUSTER_62,pig_man,Plant_3] 0
 x[CLUSTER_62,pig_man,Plant_4] 0
-x[CLUSTER_62,pig_man,Plant_5] 3.3994999999999996e-05
+x[CLUSTER_62,pig_man,Plant_5] 0
 x[CLUSTER_62,pig_man,Plant_6] 0
 x[CLUSTER_62,pig_man,Plant_7] 0
 x[CLUSTER_62,pig_man,Plant_8] 0
@@ -61348,7 +61348,7 @@ x[CLUSTER_63,cattle_man,Plant_4] 0
 x[CLUSTER_63,cattle_man,Plant_5] 0
 x[CLUSTER_63,cattle_man,Plant_6] 0
 x[CLUSTER_63,cattle_man,Plant_7] 0
-x[CLUSTER_63,cattle_man,Plant_8] 0.014627
+x[CLUSTER_63,cattle_man,Plant_8] 0
 x[CLUSTER_63,cattle_man,Plant_9] 0
 x[CLUSTER_63,cattle_slu,Plant_0] 0
 x[CLUSTER_63,cattle_slu,Plant_1] 0
@@ -61368,7 +61368,7 @@ x[CLUSTER_63,horse_man,Plant_4] 0
 x[CLUSTER_63,horse_man,Plant_5] 0
 x[CLUSTER_63,horse_man,Plant_6] 0
 x[CLUSTER_63,horse_man,Plant_7] 0
-x[CLUSTER_63,horse_man,Plant_8] 6.1660000000000239e-03
+x[CLUSTER_63,horse_man,Plant_8] 0
 x[CLUSTER_63,horse_man,Plant_9] 0
 x[CLUSTER_63,pig_slu,Plant_0] 0
 x[CLUSTER_63,pig_slu,Plant_1] 0
@@ -61385,7 +61385,7 @@ x[CLUSTER_63,pig_man,Plant_1] 0
 x[CLUSTER_63,pig_man,Plant_2] 0
 x[CLUSTER_63,pig_man,Plant_3] 0
 x[CLUSTER_63,pig_man,Plant_4] 0
-x[CLUSTER_63,pig_man,Plant_5] 7.920406e-05
+x[CLUSTER_63,pig_man,Plant_5] 0
 x[CLUSTER_63,pig_man,Plant_6] 0
 x[CLUSTER_63,pig_man,Plant_7] 0
 x[CLUSTER_63,pig_man,Plant_8] 0
@@ -61463,9 +61463,9 @@ x[CLUSTER_63,legume_str,Plant_9] 0
 x[CLUSTER_64,cattle_man,Plant_0] 0
 x[CLUSTER_64,cattle_man,Plant_1] 0
 x[CLUSTER_64,cattle_man,Plant_2] 0
-x[CLUSTER_64,cattle_man,Plant_3] 3.8262009405189631e-03
+x[CLUSTER_64,cattle_man,Plant_3] 0
 x[CLUSTER_64,cattle_man,Plant_4] 0
-x[CLUSTER_64,cattle_man,Plant_5] 3.1683799059481037e-02
+x[CLUSTER_64,cattle_man,Plant_5] 0
 x[CLUSTER_64,cattle_man,Plant_6] 0
 x[CLUSTER_64,cattle_man,Plant_7] 0
 x[CLUSTER_64,cattle_man,Plant_8] 0
@@ -61483,7 +61483,7 @@ x[CLUSTER_64,cattle_slu,Plant_9] 0
 x[CLUSTER_64,horse_man,Plant_0] 0
 x[CLUSTER_64,horse_man,Plant_1] 0
 x[CLUSTER_64,horse_man,Plant_2] 0
-x[CLUSTER_64,horse_man,Plant_3] 0.0017538
+x[CLUSTER_64,horse_man,Plant_3] 0
 x[CLUSTER_64,horse_man,Plant_4] 0
 x[CLUSTER_64,horse_man,Plant_5] 0
 x[CLUSTER_64,horse_man,Plant_6] 0
@@ -61505,7 +61505,7 @@ x[CLUSTER_64,pig_man,Plant_1] 0
 x[CLUSTER_64,pig_man,Plant_2] 0
 x[CLUSTER_64,pig_man,Plant_3] 0
 x[CLUSTER_64,pig_man,Plant_4] 0
-x[CLUSTER_64,pig_man,Plant_5] 0.0011904
+x[CLUSTER_64,pig_man,Plant_5] 0
 x[CLUSTER_64,pig_man,Plant_6] 0
 x[CLUSTER_64,pig_man,Plant_7] 0
 x[CLUSTER_64,pig_man,Plant_8] 0
@@ -61581,7 +61581,7 @@ x[CLUSTER_64,legume_str,Plant_7] 0
 x[CLUSTER_64,legume_str,Plant_8] 0
 x[CLUSTER_64,legume_str,Plant_9] 0
 x[CLUSTER_65,cattle_man,Plant_0] 0
-x[CLUSTER_65,cattle_man,Plant_1] 0.02931
+x[CLUSTER_65,cattle_man,Plant_1] 0
 x[CLUSTER_65,cattle_man,Plant_2] 0
 x[CLUSTER_65,cattle_man,Plant_3] 0
 x[CLUSTER_65,cattle_man,Plant_4] 0
@@ -61601,7 +61601,7 @@ x[CLUSTER_65,cattle_slu,Plant_7] 0
 x[CLUSTER_65,cattle_slu,Plant_8] 0
 x[CLUSTER_65,cattle_slu,Plant_9] 0
 x[CLUSTER_65,horse_man,Plant_0] 0
-x[CLUSTER_65,horse_man,Plant_1] 0.002654
+x[CLUSTER_65,horse_man,Plant_1] 0
 x[CLUSTER_65,horse_man,Plant_2] 0
 x[CLUSTER_65,horse_man,Plant_3] 0
 x[CLUSTER_65,horse_man,Plant_4] 0
@@ -61628,7 +61628,7 @@ x[CLUSTER_65,pig_man,Plant_4] 0
 x[CLUSTER_65,pig_man,Plant_5] 0
 x[CLUSTER_65,pig_man,Plant_6] 0
 x[CLUSTER_65,pig_man,Plant_7] 0
-x[CLUSTER_65,pig_man,Plant_8] 0.000165989
+x[CLUSTER_65,pig_man,Plant_8] 0
 x[CLUSTER_65,pig_man,Plant_9] 0
 x[CLUSTER_65,cereal_str,Plant_0] 0
 x[CLUSTER_65,cereal_str,Plant_1] 0
@@ -61702,7 +61702,7 @@ x[CLUSTER_65,legume_str,Plant_8] 0
 x[CLUSTER_65,legume_str,Plant_9] 0
 x[CLUSTER_66,cattle_man,Plant_0] 0
 x[CLUSTER_66,cattle_man,Plant_1] 0
-x[CLUSTER_66,cattle_man,Plant_2] 0.0026410375
+x[CLUSTER_66,cattle_man,Plant_2] 0
 x[CLUSTER_66,cattle_man,Plant_3] 0
 x[CLUSTER_66,cattle_man,Plant_4] 0
 x[CLUSTER_66,cattle_man,Plant_5] 0
@@ -61722,7 +61722,7 @@ x[CLUSTER_66,cattle_slu,Plant_8] 0
 x[CLUSTER_66,cattle_slu,Plant_9] 0
 x[CLUSTER_66,horse_man,Plant_0] 0
 x[CLUSTER_66,horse_man,Plant_1] 0
-x[CLUSTER_66,horse_man,Plant_2] 8.8000908000000007e-04
+x[CLUSTER_66,horse_man,Plant_2] 0
 x[CLUSTER_66,horse_man,Plant_3] 0
 x[CLUSTER_66,horse_man,Plant_4] 0
 x[CLUSTER_66,horse_man,Plant_5] 0
@@ -61742,7 +61742,7 @@ x[CLUSTER_66,pig_slu,Plant_8] 0
 x[CLUSTER_66,pig_slu,Plant_9] 0
 x[CLUSTER_66,pig_man,Plant_0] 0
 x[CLUSTER_66,pig_man,Plant_1] 0
-x[CLUSTER_66,pig_man,Plant_2] 0.000180310571
+x[CLUSTER_66,pig_man,Plant_2] 0
 x[CLUSTER_66,pig_man,Plant_3] 0
 x[CLUSTER_66,pig_man,Plant_4] 0
 x[CLUSTER_66,pig_man,Plant_5] 0
@@ -61826,7 +61826,7 @@ x[CLUSTER_67,cattle_man,Plant_2] 0
 x[CLUSTER_67,cattle_man,Plant_3] 0
 x[CLUSTER_67,cattle_man,Plant_4] 0
 x[CLUSTER_67,cattle_man,Plant_5] 0
-x[CLUSTER_67,cattle_man,Plant_6] 0.01227
+x[CLUSTER_67,cattle_man,Plant_6] 0
 x[CLUSTER_67,cattle_man,Plant_7] 0
 x[CLUSTER_67,cattle_man,Plant_8] 0
 x[CLUSTER_67,cattle_man,Plant_9] 0
@@ -61846,7 +61846,7 @@ x[CLUSTER_67,horse_man,Plant_2] 0
 x[CLUSTER_67,horse_man,Plant_3] 0
 x[CLUSTER_67,horse_man,Plant_4] 0
 x[CLUSTER_67,horse_man,Plant_5] 0
-x[CLUSTER_67,horse_man,Plant_6] 2.2765999999999997e-03
+x[CLUSTER_67,horse_man,Plant_6] 0
 x[CLUSTER_67,horse_man,Plant_7] 0
 x[CLUSTER_67,horse_man,Plant_8] 0
 x[CLUSTER_67,horse_man,Plant_9] 0
@@ -61943,7 +61943,7 @@ x[CLUSTER_67,legume_str,Plant_9] 0
 x[CLUSTER_68,cattle_man,Plant_0] 0
 x[CLUSTER_68,cattle_man,Plant_1] 0
 x[CLUSTER_68,cattle_man,Plant_2] 0
-x[CLUSTER_68,cattle_man,Plant_3] 2.7153000000000004e-03
+x[CLUSTER_68,cattle_man,Plant_3] 0
 x[CLUSTER_68,cattle_man,Plant_4] 0
 x[CLUSTER_68,cattle_man,Plant_5] 0
 x[CLUSTER_68,cattle_man,Plant_6] 0
@@ -61953,7 +61953,7 @@ x[CLUSTER_68,cattle_man,Plant_9] 0
 x[CLUSTER_68,cattle_slu,Plant_0] 0
 x[CLUSTER_68,cattle_slu,Plant_1] 0
 x[CLUSTER_68,cattle_slu,Plant_2] 0
-x[CLUSTER_68,cattle_slu,Plant_3] 0.000608
+x[CLUSTER_68,cattle_slu,Plant_3] 0
 x[CLUSTER_68,cattle_slu,Plant_4] 0
 x[CLUSTER_68,cattle_slu,Plant_5] 0
 x[CLUSTER_68,cattle_slu,Plant_6] 0
@@ -61963,7 +61963,7 @@ x[CLUSTER_68,cattle_slu,Plant_9] 0
 x[CLUSTER_68,horse_man,Plant_0] 0
 x[CLUSTER_68,horse_man,Plant_1] 0
 x[CLUSTER_68,horse_man,Plant_2] 0
-x[CLUSTER_68,horse_man,Plant_3] 0.0011553
+x[CLUSTER_68,horse_man,Plant_3] 0
 x[CLUSTER_68,horse_man,Plant_4] 0
 x[CLUSTER_68,horse_man,Plant_5] 0
 x[CLUSTER_68,horse_man,Plant_6] 0
@@ -61983,7 +61983,7 @@ x[CLUSTER_68,pig_slu,Plant_9] 0
 x[CLUSTER_68,pig_man,Plant_0] 0
 x[CLUSTER_68,pig_man,Plant_1] 0
 x[CLUSTER_68,pig_man,Plant_2] 0
-x[CLUSTER_68,pig_man,Plant_3] 1.2414000000000106e-03
+x[CLUSTER_68,pig_man,Plant_3] 0
 x[CLUSTER_68,pig_man,Plant_4] 0
 x[CLUSTER_68,pig_man,Plant_5] 0
 x[CLUSTER_68,pig_man,Plant_6] 0
@@ -62065,7 +62065,7 @@ x[CLUSTER_69,cattle_man,Plant_1] 0
 x[CLUSTER_69,cattle_man,Plant_2] 0
 x[CLUSTER_69,cattle_man,Plant_3] 0
 x[CLUSTER_69,cattle_man,Plant_4] 0
-x[CLUSTER_69,cattle_man,Plant_5] 0.04094
+x[CLUSTER_69,cattle_man,Plant_5] 0
 x[CLUSTER_69,cattle_man,Plant_6] 0
 x[CLUSTER_69,cattle_man,Plant_7] 0
 x[CLUSTER_69,cattle_man,Plant_8] 0
@@ -62085,7 +62085,7 @@ x[CLUSTER_69,horse_man,Plant_1] 0
 x[CLUSTER_69,horse_man,Plant_2] 0
 x[CLUSTER_69,horse_man,Plant_3] 0
 x[CLUSTER_69,horse_man,Plant_4] 0
-x[CLUSTER_69,horse_man,Plant_5] 2.4411999999999997e-03
+x[CLUSTER_69,horse_man,Plant_5] 0
 x[CLUSTER_69,horse_man,Plant_6] 0
 x[CLUSTER_69,horse_man,Plant_7] 0
 x[CLUSTER_69,horse_man,Plant_8] 0
@@ -62105,7 +62105,7 @@ x[CLUSTER_69,pig_man,Plant_1] 0
 x[CLUSTER_69,pig_man,Plant_2] 0
 x[CLUSTER_69,pig_man,Plant_3] 0
 x[CLUSTER_69,pig_man,Plant_4] 0
-x[CLUSTER_69,pig_man,Plant_5] 1.2474300000000001e-03
+x[CLUSTER_69,pig_man,Plant_5] 0
 x[CLUSTER_69,pig_man,Plant_6] 0
 x[CLUSTER_69,pig_man,Plant_7] 0
 x[CLUSTER_69,pig_man,Plant_8] 0
@@ -62180,7 +62180,7 @@ x[CLUSTER_69,legume_str,Plant_6] 0
 x[CLUSTER_69,legume_str,Plant_7] 0
 x[CLUSTER_69,legume_str,Plant_8] 0
 x[CLUSTER_69,legume_str,Plant_9] 0
-x[CLUSTER_7,cattle_man,Plant_0] 0.006818
+x[CLUSTER_7,cattle_man,Plant_0] 0
 x[CLUSTER_7,cattle_man,Plant_1] 0
 x[CLUSTER_7,cattle_man,Plant_2] 0
 x[CLUSTER_7,cattle_man,Plant_3] 0
@@ -62190,7 +62190,7 @@ x[CLUSTER_7,cattle_man,Plant_6] 0
 x[CLUSTER_7,cattle_man,Plant_7] 0
 x[CLUSTER_7,cattle_man,Plant_8] 0
 x[CLUSTER_7,cattle_man,Plant_9] 0
-x[CLUSTER_7,cattle_slu,Plant_0] 0.03367
+x[CLUSTER_7,cattle_slu,Plant_0] 0
 x[CLUSTER_7,cattle_slu,Plant_1] 0
 x[CLUSTER_7,cattle_slu,Plant_2] 0
 x[CLUSTER_7,cattle_slu,Plant_3] 0
@@ -62200,7 +62200,7 @@ x[CLUSTER_7,cattle_slu,Plant_6] 0
 x[CLUSTER_7,cattle_slu,Plant_7] 0
 x[CLUSTER_7,cattle_slu,Plant_8] 0
 x[CLUSTER_7,cattle_slu,Plant_9] 0
-x[CLUSTER_7,horse_man,Plant_0] 8.4379999999999991e-04
+x[CLUSTER_7,horse_man,Plant_0] 0
 x[CLUSTER_7,horse_man,Plant_1] 0
 x[CLUSTER_7,horse_man,Plant_2] 0
 x[CLUSTER_7,horse_man,Plant_3] 0
@@ -62220,7 +62220,7 @@ x[CLUSTER_7,pig_slu,Plant_6] 0
 x[CLUSTER_7,pig_slu,Plant_7] 0
 x[CLUSTER_7,pig_slu,Plant_8] 0
 x[CLUSTER_7,pig_slu,Plant_9] 0
-x[CLUSTER_7,pig_man,Plant_0] 0.000353272
+x[CLUSTER_7,pig_man,Plant_0] 0
 x[CLUSTER_7,pig_man,Plant_1] 0
 x[CLUSTER_7,pig_man,Plant_2] 0
 x[CLUSTER_7,pig_man,Plant_3] 0
@@ -62260,7 +62260,7 @@ x[CLUSTER_7,perm_grass,Plant_6] 0
 x[CLUSTER_7,perm_grass,Plant_7] 0
 x[CLUSTER_7,perm_grass,Plant_8] 0
 x[CLUSTER_7,perm_grass,Plant_9] 0
-x[CLUSTER_7,maize_str,Plant_0] 1.5340000000000002e-04
+x[CLUSTER_7,maize_str,Plant_0] 0
 x[CLUSTER_7,maize_str,Plant_1] 0
 x[CLUSTER_7,maize_str,Plant_2] 0
 x[CLUSTER_7,maize_str,Plant_3] 0
@@ -62303,7 +62303,7 @@ x[CLUSTER_7,legume_str,Plant_9] 0
 x[CLUSTER_70,cattle_man,Plant_0] 0
 x[CLUSTER_70,cattle_man,Plant_1] 0
 x[CLUSTER_70,cattle_man,Plant_2] 0
-x[CLUSTER_70,cattle_man,Plant_3] 0.018095
+x[CLUSTER_70,cattle_man,Plant_3] 0
 x[CLUSTER_70,cattle_man,Plant_4] 0
 x[CLUSTER_70,cattle_man,Plant_5] 0
 x[CLUSTER_70,cattle_man,Plant_6] 0
@@ -62313,7 +62313,7 @@ x[CLUSTER_70,cattle_man,Plant_9] 0
 x[CLUSTER_70,cattle_slu,Plant_0] 0
 x[CLUSTER_70,cattle_slu,Plant_1] 0
 x[CLUSTER_70,cattle_slu,Plant_2] 0
-x[CLUSTER_70,cattle_slu,Plant_3] 0.07482
+x[CLUSTER_70,cattle_slu,Plant_3] 0
 x[CLUSTER_70,cattle_slu,Plant_4] 0
 x[CLUSTER_70,cattle_slu,Plant_5] 0
 x[CLUSTER_70,cattle_slu,Plant_6] 0
@@ -62323,7 +62323,7 @@ x[CLUSTER_70,cattle_slu,Plant_9] 0
 x[CLUSTER_70,horse_man,Plant_0] 0
 x[CLUSTER_70,horse_man,Plant_1] 0
 x[CLUSTER_70,horse_man,Plant_2] 0
-x[CLUSTER_70,horse_man,Plant_3] 1.0878589999999998e-03
+x[CLUSTER_70,horse_man,Plant_3] 0
 x[CLUSTER_70,horse_man,Plant_4] 0
 x[CLUSTER_70,horse_man,Plant_5] 0
 x[CLUSTER_70,horse_man,Plant_6] 0
@@ -62343,7 +62343,7 @@ x[CLUSTER_70,pig_slu,Plant_9] 0
 x[CLUSTER_70,pig_man,Plant_0] 0
 x[CLUSTER_70,pig_man,Plant_1] 0
 x[CLUSTER_70,pig_man,Plant_2] 0
-x[CLUSTER_70,pig_man,Plant_3] 0.000751
+x[CLUSTER_70,pig_man,Plant_3] 0
 x[CLUSTER_70,pig_man,Plant_4] 0
 x[CLUSTER_70,pig_man,Plant_5] 0
 x[CLUSTER_70,pig_man,Plant_6] 0
@@ -62425,7 +62425,7 @@ x[CLUSTER_71,cattle_man,Plant_1] 0
 x[CLUSTER_71,cattle_man,Plant_2] 0
 x[CLUSTER_71,cattle_man,Plant_3] 0
 x[CLUSTER_71,cattle_man,Plant_4] 0
-x[CLUSTER_71,cattle_man,Plant_5] 0.008797
+x[CLUSTER_71,cattle_man,Plant_5] 0
 x[CLUSTER_71,cattle_man,Plant_6] 0
 x[CLUSTER_71,cattle_man,Plant_7] 0
 x[CLUSTER_71,cattle_man,Plant_8] 0
@@ -62435,7 +62435,7 @@ x[CLUSTER_71,cattle_slu,Plant_1] 0
 x[CLUSTER_71,cattle_slu,Plant_2] 0
 x[CLUSTER_71,cattle_slu,Plant_3] 0
 x[CLUSTER_71,cattle_slu,Plant_4] 0
-x[CLUSTER_71,cattle_slu,Plant_5] 3.0709999999999557e-02
+x[CLUSTER_71,cattle_slu,Plant_5] 0
 x[CLUSTER_71,cattle_slu,Plant_6] 0
 x[CLUSTER_71,cattle_slu,Plant_7] 0
 x[CLUSTER_71,cattle_slu,Plant_8] 0
@@ -62445,7 +62445,7 @@ x[CLUSTER_71,horse_man,Plant_1] 0
 x[CLUSTER_71,horse_man,Plant_2] 0
 x[CLUSTER_71,horse_man,Plant_3] 0
 x[CLUSTER_71,horse_man,Plant_4] 0
-x[CLUSTER_71,horse_man,Plant_5] 0.0029489
+x[CLUSTER_71,horse_man,Plant_5] 0
 x[CLUSTER_71,horse_man,Plant_6] 0
 x[CLUSTER_71,horse_man,Plant_7] 0
 x[CLUSTER_71,horse_man,Plant_8] 0
@@ -62465,7 +62465,7 @@ x[CLUSTER_71,pig_man,Plant_1] 0
 x[CLUSTER_71,pig_man,Plant_2] 0
 x[CLUSTER_71,pig_man,Plant_3] 0
 x[CLUSTER_71,pig_man,Plant_4] 0
-x[CLUSTER_71,pig_man,Plant_5] 2.2634800000000002e-04
+x[CLUSTER_71,pig_man,Plant_5] 0
 x[CLUSTER_71,pig_man,Plant_6] 0
 x[CLUSTER_71,pig_man,Plant_7] 0
 x[CLUSTER_71,pig_man,Plant_8] 0
@@ -62542,7 +62542,7 @@ x[CLUSTER_71,legume_str,Plant_8] 0
 x[CLUSTER_71,legume_str,Plant_9] 0
 x[CLUSTER_72,cattle_man,Plant_0] 0
 x[CLUSTER_72,cattle_man,Plant_1] 0
-x[CLUSTER_72,cattle_man,Plant_2] 0.02165
+x[CLUSTER_72,cattle_man,Plant_2] 0
 x[CLUSTER_72,cattle_man,Plant_3] 0
 x[CLUSTER_72,cattle_man,Plant_4] 0
 x[CLUSTER_72,cattle_man,Plant_5] 0
@@ -62562,7 +62562,7 @@ x[CLUSTER_72,cattle_slu,Plant_8] 0
 x[CLUSTER_72,cattle_slu,Plant_9] 0
 x[CLUSTER_72,horse_man,Plant_0] 0
 x[CLUSTER_72,horse_man,Plant_1] 0
-x[CLUSTER_72,horse_man,Plant_2] 0.004938
+x[CLUSTER_72,horse_man,Plant_2] 0
 x[CLUSTER_72,horse_man,Plant_3] 0
 x[CLUSTER_72,horse_man,Plant_4] 0
 x[CLUSTER_72,horse_man,Plant_5] 0
@@ -62585,7 +62585,7 @@ x[CLUSTER_72,pig_man,Plant_1] 0
 x[CLUSTER_72,pig_man,Plant_2] 0
 x[CLUSTER_72,pig_man,Plant_3] 0
 x[CLUSTER_72,pig_man,Plant_4] 0
-x[CLUSTER_72,pig_man,Plant_5] 9.4929999999999993e-04
+x[CLUSTER_72,pig_man,Plant_5] 0
 x[CLUSTER_72,pig_man,Plant_6] 0
 x[CLUSTER_72,pig_man,Plant_7] 0
 x[CLUSTER_72,pig_man,Plant_8] 0
@@ -62665,7 +62665,7 @@ x[CLUSTER_73,cattle_man,Plant_1] 0
 x[CLUSTER_73,cattle_man,Plant_2] 0
 x[CLUSTER_73,cattle_man,Plant_3] 0
 x[CLUSTER_73,cattle_man,Plant_4] 0
-x[CLUSTER_73,cattle_man,Plant_5] 0.005812
+x[CLUSTER_73,cattle_man,Plant_5] 0
 x[CLUSTER_73,cattle_man,Plant_6] 0
 x[CLUSTER_73,cattle_man,Plant_7] 0
 x[CLUSTER_73,cattle_man,Plant_8] 0
@@ -62685,7 +62685,7 @@ x[CLUSTER_73,horse_man,Plant_1] 0
 x[CLUSTER_73,horse_man,Plant_2] 0
 x[CLUSTER_73,horse_man,Plant_3] 0
 x[CLUSTER_73,horse_man,Plant_4] 0
-x[CLUSTER_73,horse_man,Plant_5] 0.0016131
+x[CLUSTER_73,horse_man,Plant_5] 0
 x[CLUSTER_73,horse_man,Plant_6] 0
 x[CLUSTER_73,horse_man,Plant_7] 0
 x[CLUSTER_73,horse_man,Plant_8] 0
@@ -62705,7 +62705,7 @@ x[CLUSTER_73,pig_man,Plant_1] 0
 x[CLUSTER_73,pig_man,Plant_2] 0
 x[CLUSTER_73,pig_man,Plant_3] 0
 x[CLUSTER_73,pig_man,Plant_4] 0
-x[CLUSTER_73,pig_man,Plant_5] 0.003455
+x[CLUSTER_73,pig_man,Plant_5] 0
 x[CLUSTER_73,pig_man,Plant_6] 0
 x[CLUSTER_73,pig_man,Plant_7] 0
 x[CLUSTER_73,pig_man,Plant_8] 0
@@ -62781,7 +62781,7 @@ x[CLUSTER_73,legume_str,Plant_7] 0
 x[CLUSTER_73,legume_str,Plant_8] 0
 x[CLUSTER_73,legume_str,Plant_9] 0
 x[CLUSTER_74,cattle_man,Plant_0] 0
-x[CLUSTER_74,cattle_man,Plant_1] 0.02755
+x[CLUSTER_74,cattle_man,Plant_1] 0
 x[CLUSTER_74,cattle_man,Plant_2] 0
 x[CLUSTER_74,cattle_man,Plant_3] 0
 x[CLUSTER_74,cattle_man,Plant_4] 0
@@ -62791,7 +62791,7 @@ x[CLUSTER_74,cattle_man,Plant_7] 0
 x[CLUSTER_74,cattle_man,Plant_8] 0
 x[CLUSTER_74,cattle_man,Plant_9] 0
 x[CLUSTER_74,cattle_slu,Plant_0] 0
-x[CLUSTER_74,cattle_slu,Plant_1] 1.6880000000000006e-01
+x[CLUSTER_74,cattle_slu,Plant_1] 0
 x[CLUSTER_74,cattle_slu,Plant_2] 0
 x[CLUSTER_74,cattle_slu,Plant_3] 0
 x[CLUSTER_74,cattle_slu,Plant_4] 0
@@ -62801,7 +62801,7 @@ x[CLUSTER_74,cattle_slu,Plant_7] 0
 x[CLUSTER_74,cattle_slu,Plant_8] 0
 x[CLUSTER_74,cattle_slu,Plant_9] 0
 x[CLUSTER_74,horse_man,Plant_0] 0
-x[CLUSTER_74,horse_man,Plant_1] 0.00301
+x[CLUSTER_74,horse_man,Plant_1] 0
 x[CLUSTER_74,horse_man,Plant_2] 0
 x[CLUSTER_74,horse_man,Plant_3] 0
 x[CLUSTER_74,horse_man,Plant_4] 0
@@ -62902,7 +62902,7 @@ x[CLUSTER_74,legume_str,Plant_8] 0
 x[CLUSTER_74,legume_str,Plant_9] 0
 x[CLUSTER_75,cattle_man,Plant_0] 0
 x[CLUSTER_75,cattle_man,Plant_1] 0
-x[CLUSTER_75,cattle_man,Plant_2] 1.5511299999999999e-02
+x[CLUSTER_75,cattle_man,Plant_2] 0
 x[CLUSTER_75,cattle_man,Plant_3] 0
 x[CLUSTER_75,cattle_man,Plant_4] 0
 x[CLUSTER_75,cattle_man,Plant_5] 0
@@ -62922,7 +62922,7 @@ x[CLUSTER_75,cattle_slu,Plant_8] 0
 x[CLUSTER_75,cattle_slu,Plant_9] 0
 x[CLUSTER_75,horse_man,Plant_0] 0
 x[CLUSTER_75,horse_man,Plant_1] 0
-x[CLUSTER_75,horse_man,Plant_2] 0.0014545
+x[CLUSTER_75,horse_man,Plant_2] 0
 x[CLUSTER_75,horse_man,Plant_3] 0
 x[CLUSTER_75,horse_man,Plant_4] 0
 x[CLUSTER_75,horse_man,Plant_5] 0
@@ -62947,7 +62947,7 @@ x[CLUSTER_75,pig_man,Plant_3] 0
 x[CLUSTER_75,pig_man,Plant_4] 0
 x[CLUSTER_75,pig_man,Plant_5] 0
 x[CLUSTER_75,pig_man,Plant_6] 0
-x[CLUSTER_75,pig_man,Plant_7] 1.1137200000000001e-03
+x[CLUSTER_75,pig_man,Plant_7] 0
 x[CLUSTER_75,pig_man,Plant_8] 0
 x[CLUSTER_75,pig_man,Plant_9] 0
 x[CLUSTER_75,cereal_str,Plant_0] 0
@@ -62969,7 +62969,7 @@ x[CLUSTER_75,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_75,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_75,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_75,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_75,clover_alfalfa_grass,Plant_9] 0.004346
+x[CLUSTER_75,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_75,perm_grass,Plant_0] 0
 x[CLUSTER_75,perm_grass,Plant_1] 0
 x[CLUSTER_75,perm_grass,Plant_2] 0
@@ -62989,7 +62989,7 @@ x[CLUSTER_75,maize_str,Plant_5] 0
 x[CLUSTER_75,maize_str,Plant_6] 0
 x[CLUSTER_75,maize_str,Plant_7] 0
 x[CLUSTER_75,maize_str,Plant_8] 0
-x[CLUSTER_75,maize_str,Plant_9] 5.5005999999999989e-04
+x[CLUSTER_75,maize_str,Plant_9] 0
 x[CLUSTER_75,beet_leaf,Plant_0] 0
 x[CLUSTER_75,beet_leaf,Plant_1] 0
 x[CLUSTER_75,beet_leaf,Plant_2] 0
@@ -63022,7 +63022,7 @@ x[CLUSTER_75,legume_str,Plant_8] 0
 x[CLUSTER_75,legume_str,Plant_9] 0
 x[CLUSTER_76,cattle_man,Plant_0] 0
 x[CLUSTER_76,cattle_man,Plant_1] 0
-x[CLUSTER_76,cattle_man,Plant_2] 0.002539
+x[CLUSTER_76,cattle_man,Plant_2] 0
 x[CLUSTER_76,cattle_man,Plant_3] 0
 x[CLUSTER_76,cattle_man,Plant_4] 0
 x[CLUSTER_76,cattle_man,Plant_5] 0
@@ -63032,7 +63032,7 @@ x[CLUSTER_76,cattle_man,Plant_8] 0
 x[CLUSTER_76,cattle_man,Plant_9] 0
 x[CLUSTER_76,cattle_slu,Plant_0] 0
 x[CLUSTER_76,cattle_slu,Plant_1] 0
-x[CLUSTER_76,cattle_slu,Plant_2] 1.6801299999999915e-02
+x[CLUSTER_76,cattle_slu,Plant_2] 0
 x[CLUSTER_76,cattle_slu,Plant_3] 0
 x[CLUSTER_76,cattle_slu,Plant_4] 0
 x[CLUSTER_76,cattle_slu,Plant_5] 0
@@ -63042,7 +63042,7 @@ x[CLUSTER_76,cattle_slu,Plant_8] 0
 x[CLUSTER_76,cattle_slu,Plant_9] 0
 x[CLUSTER_76,horse_man,Plant_0] 0
 x[CLUSTER_76,horse_man,Plant_1] 0
-x[CLUSTER_76,horse_man,Plant_2] 0.002263
+x[CLUSTER_76,horse_man,Plant_2] 0
 x[CLUSTER_76,horse_man,Plant_3] 0
 x[CLUSTER_76,horse_man,Plant_4] 0
 x[CLUSTER_76,horse_man,Plant_5] 0
@@ -63062,7 +63062,7 @@ x[CLUSTER_76,pig_slu,Plant_8] 0
 x[CLUSTER_76,pig_slu,Plant_9] 0
 x[CLUSTER_76,pig_man,Plant_0] 0
 x[CLUSTER_76,pig_man,Plant_1] 0
-x[CLUSTER_76,pig_man,Plant_2] 0.00012543
+x[CLUSTER_76,pig_man,Plant_2] 0
 x[CLUSTER_76,pig_man,Plant_3] 0
 x[CLUSTER_76,pig_man,Plant_4] 0
 x[CLUSTER_76,pig_man,Plant_5] 0
@@ -63102,7 +63102,7 @@ x[CLUSTER_76,perm_grass,Plant_8] 0
 x[CLUSTER_76,perm_grass,Plant_9] 0
 x[CLUSTER_76,maize_str,Plant_0] 0
 x[CLUSTER_76,maize_str,Plant_1] 0
-x[CLUSTER_76,maize_str,Plant_2] 9.625e-05
+x[CLUSTER_76,maize_str,Plant_2] 0
 x[CLUSTER_76,maize_str,Plant_3] 0
 x[CLUSTER_76,maize_str,Plant_4] 0
 x[CLUSTER_76,maize_str,Plant_5] 0
@@ -63140,7 +63140,7 @@ x[CLUSTER_76,legume_str,Plant_6] 0
 x[CLUSTER_76,legume_str,Plant_7] 0
 x[CLUSTER_76,legume_str,Plant_8] 0
 x[CLUSTER_76,legume_str,Plant_9] 0
-x[CLUSTER_77,cattle_man,Plant_0] 0.01568
+x[CLUSTER_77,cattle_man,Plant_0] 0
 x[CLUSTER_77,cattle_man,Plant_1] 0
 x[CLUSTER_77,cattle_man,Plant_2] 0
 x[CLUSTER_77,cattle_man,Plant_3] 0
@@ -63160,7 +63160,7 @@ x[CLUSTER_77,cattle_slu,Plant_6] 0
 x[CLUSTER_77,cattle_slu,Plant_7] 0
 x[CLUSTER_77,cattle_slu,Plant_8] 0
 x[CLUSTER_77,cattle_slu,Plant_9] 0
-x[CLUSTER_77,horse_man,Plant_0] 0.00116
+x[CLUSTER_77,horse_man,Plant_0] 0
 x[CLUSTER_77,horse_man,Plant_1] 0
 x[CLUSTER_77,horse_man,Plant_2] 0
 x[CLUSTER_77,horse_man,Plant_3] 0
@@ -63180,7 +63180,7 @@ x[CLUSTER_77,pig_slu,Plant_6] 0
 x[CLUSTER_77,pig_slu,Plant_7] 0
 x[CLUSTER_77,pig_slu,Plant_8] 0
 x[CLUSTER_77,pig_slu,Plant_9] 0
-x[CLUSTER_77,pig_man,Plant_0] 8.27e-05
+x[CLUSTER_77,pig_man,Plant_0] 0
 x[CLUSTER_77,pig_man,Plant_1] 0
 x[CLUSTER_77,pig_man,Plant_2] 0
 x[CLUSTER_77,pig_man,Plant_3] 0
@@ -63262,7 +63262,7 @@ x[CLUSTER_77,legume_str,Plant_8] 0
 x[CLUSTER_77,legume_str,Plant_9] 0
 x[CLUSTER_78,cattle_man,Plant_0] 0
 x[CLUSTER_78,cattle_man,Plant_1] 0
-x[CLUSTER_78,cattle_man,Plant_2] 0.007012
+x[CLUSTER_78,cattle_man,Plant_2] 0
 x[CLUSTER_78,cattle_man,Plant_3] 0
 x[CLUSTER_78,cattle_man,Plant_4] 0
 x[CLUSTER_78,cattle_man,Plant_5] 0
@@ -63272,7 +63272,7 @@ x[CLUSTER_78,cattle_man,Plant_8] 0
 x[CLUSTER_78,cattle_man,Plant_9] 0
 x[CLUSTER_78,cattle_slu,Plant_0] 0
 x[CLUSTER_78,cattle_slu,Plant_1] 0
-x[CLUSTER_78,cattle_slu,Plant_2] 4.5579999999999808e-02
+x[CLUSTER_78,cattle_slu,Plant_2] 0
 x[CLUSTER_78,cattle_slu,Plant_3] 0
 x[CLUSTER_78,cattle_slu,Plant_4] 0
 x[CLUSTER_78,cattle_slu,Plant_5] 0
@@ -63282,7 +63282,7 @@ x[CLUSTER_78,cattle_slu,Plant_8] 0
 x[CLUSTER_78,cattle_slu,Plant_9] 0
 x[CLUSTER_78,horse_man,Plant_0] 0
 x[CLUSTER_78,horse_man,Plant_1] 0
-x[CLUSTER_78,horse_man,Plant_2] 0.0008734
+x[CLUSTER_78,horse_man,Plant_2] 0
 x[CLUSTER_78,horse_man,Plant_3] 0
 x[CLUSTER_78,horse_man,Plant_4] 0
 x[CLUSTER_78,horse_man,Plant_5] 0
@@ -63302,7 +63302,7 @@ x[CLUSTER_78,pig_slu,Plant_8] 0
 x[CLUSTER_78,pig_slu,Plant_9] 0
 x[CLUSTER_78,pig_man,Plant_0] 0
 x[CLUSTER_78,pig_man,Plant_1] 0
-x[CLUSTER_78,pig_man,Plant_2] 0.000141
+x[CLUSTER_78,pig_man,Plant_2] 0
 x[CLUSTER_78,pig_man,Plant_3] 0
 x[CLUSTER_78,pig_man,Plant_4] 0
 x[CLUSTER_78,pig_man,Plant_5] 0
@@ -63342,7 +63342,7 @@ x[CLUSTER_78,perm_grass,Plant_8] 0
 x[CLUSTER_78,perm_grass,Plant_9] 0
 x[CLUSTER_78,maize_str,Plant_0] 0
 x[CLUSTER_78,maize_str,Plant_1] 0
-x[CLUSTER_78,maize_str,Plant_2] 0.000136
+x[CLUSTER_78,maize_str,Plant_2] 0
 x[CLUSTER_78,maize_str,Plant_3] 0
 x[CLUSTER_78,maize_str,Plant_4] 0
 x[CLUSTER_78,maize_str,Plant_5] 0
@@ -63383,7 +63383,7 @@ x[CLUSTER_78,legume_str,Plant_9] 0
 x[CLUSTER_79,cattle_man,Plant_0] 0
 x[CLUSTER_79,cattle_man,Plant_1] 0
 x[CLUSTER_79,cattle_man,Plant_2] 0
-x[CLUSTER_79,cattle_man,Plant_3] 0.01557
+x[CLUSTER_79,cattle_man,Plant_3] 0
 x[CLUSTER_79,cattle_man,Plant_4] 0
 x[CLUSTER_79,cattle_man,Plant_5] 0
 x[CLUSTER_79,cattle_man,Plant_6] 0
@@ -63393,7 +63393,7 @@ x[CLUSTER_79,cattle_man,Plant_9] 0
 x[CLUSTER_79,cattle_slu,Plant_0] 0
 x[CLUSTER_79,cattle_slu,Plant_1] 0
 x[CLUSTER_79,cattle_slu,Plant_2] 0
-x[CLUSTER_79,cattle_slu,Plant_3] 0.0915
+x[CLUSTER_79,cattle_slu,Plant_3] 0
 x[CLUSTER_79,cattle_slu,Plant_4] 0
 x[CLUSTER_79,cattle_slu,Plant_5] 0
 x[CLUSTER_79,cattle_slu,Plant_6] 0
@@ -63403,7 +63403,7 @@ x[CLUSTER_79,cattle_slu,Plant_9] 0
 x[CLUSTER_79,horse_man,Plant_0] 0
 x[CLUSTER_79,horse_man,Plant_1] 0
 x[CLUSTER_79,horse_man,Plant_2] 0
-x[CLUSTER_79,horse_man,Plant_3] 0.001933
+x[CLUSTER_79,horse_man,Plant_3] 0
 x[CLUSTER_79,horse_man,Plant_4] 0
 x[CLUSTER_79,horse_man,Plant_5] 0
 x[CLUSTER_79,horse_man,Plant_6] 0
@@ -63423,7 +63423,7 @@ x[CLUSTER_79,pig_slu,Plant_9] 0
 x[CLUSTER_79,pig_man,Plant_0] 0
 x[CLUSTER_79,pig_man,Plant_1] 0
 x[CLUSTER_79,pig_man,Plant_2] 0
-x[CLUSTER_79,pig_man,Plant_3] 0.00132200245
+x[CLUSTER_79,pig_man,Plant_3] 0
 x[CLUSTER_79,pig_man,Plant_4] 0
 x[CLUSTER_79,pig_man,Plant_5] 0
 x[CLUSTER_79,pig_man,Plant_6] 0
@@ -63506,7 +63506,7 @@ x[CLUSTER_8,cattle_man,Plant_2] 0
 x[CLUSTER_8,cattle_man,Plant_3] 0
 x[CLUSTER_8,cattle_man,Plant_4] 0
 x[CLUSTER_8,cattle_man,Plant_5] 0
-x[CLUSTER_8,cattle_man,Plant_6] 0.0269
+x[CLUSTER_8,cattle_man,Plant_6] 0
 x[CLUSTER_8,cattle_man,Plant_7] 0
 x[CLUSTER_8,cattle_man,Plant_8] 0
 x[CLUSTER_8,cattle_man,Plant_9] 0
@@ -63526,7 +63526,7 @@ x[CLUSTER_8,horse_man,Plant_2] 0
 x[CLUSTER_8,horse_man,Plant_3] 0
 x[CLUSTER_8,horse_man,Plant_4] 0
 x[CLUSTER_8,horse_man,Plant_5] 0
-x[CLUSTER_8,horse_man,Plant_6] 0.00712
+x[CLUSTER_8,horse_man,Plant_6] 0
 x[CLUSTER_8,horse_man,Plant_7] 0
 x[CLUSTER_8,horse_man,Plant_8] 0
 x[CLUSTER_8,horse_man,Plant_9] 0
@@ -63545,7 +63545,7 @@ x[CLUSTER_8,pig_man,Plant_1] 0
 x[CLUSTER_8,pig_man,Plant_2] 0
 x[CLUSTER_8,pig_man,Plant_3] 0
 x[CLUSTER_8,pig_man,Plant_4] 0
-x[CLUSTER_8,pig_man,Plant_5] 1.32831e-05
+x[CLUSTER_8,pig_man,Plant_5] 0
 x[CLUSTER_8,pig_man,Plant_6] 0
 x[CLUSTER_8,pig_man,Plant_7] 0
 x[CLUSTER_8,pig_man,Plant_8] 0
@@ -63627,7 +63627,7 @@ x[CLUSTER_80,cattle_man,Plant_3] 0
 x[CLUSTER_80,cattle_man,Plant_4] 0
 x[CLUSTER_80,cattle_man,Plant_5] 0
 x[CLUSTER_80,cattle_man,Plant_6] 0
-x[CLUSTER_80,cattle_man,Plant_7] 0.0027339
+x[CLUSTER_80,cattle_man,Plant_7] 0
 x[CLUSTER_80,cattle_man,Plant_8] 0
 x[CLUSTER_80,cattle_man,Plant_9] 0
 x[CLUSTER_80,cattle_slu,Plant_0] 0
@@ -63649,7 +63649,7 @@ x[CLUSTER_80,horse_man,Plant_5] 0
 x[CLUSTER_80,horse_man,Plant_6] 0
 x[CLUSTER_80,horse_man,Plant_7] 0
 x[CLUSTER_80,horse_man,Plant_8] 0
-x[CLUSTER_80,horse_man,Plant_9] 0.0002109
+x[CLUSTER_80,horse_man,Plant_9] 0
 x[CLUSTER_80,pig_slu,Plant_0] 0
 x[CLUSTER_80,pig_slu,Plant_1] 0
 x[CLUSTER_80,pig_slu,Plant_2] 0
@@ -63667,7 +63667,7 @@ x[CLUSTER_80,pig_man,Plant_3] 0
 x[CLUSTER_80,pig_man,Plant_4] 0
 x[CLUSTER_80,pig_man,Plant_5] 0
 x[CLUSTER_80,pig_man,Plant_6] 0
-x[CLUSTER_80,pig_man,Plant_7] 0.000275303
+x[CLUSTER_80,pig_man,Plant_7] 0
 x[CLUSTER_80,pig_man,Plant_8] 0
 x[CLUSTER_80,pig_man,Plant_9] 0
 x[CLUSTER_80,cereal_str,Plant_0] 0
@@ -63689,7 +63689,7 @@ x[CLUSTER_80,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_80,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_80,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_80,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_80,clover_alfalfa_grass,Plant_9] 0.003708
+x[CLUSTER_80,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_80,perm_grass,Plant_0] 0
 x[CLUSTER_80,perm_grass,Plant_1] 0
 x[CLUSTER_80,perm_grass,Plant_2] 0
@@ -63709,7 +63709,7 @@ x[CLUSTER_80,maize_str,Plant_5] 0
 x[CLUSTER_80,maize_str,Plant_6] 0
 x[CLUSTER_80,maize_str,Plant_7] 0
 x[CLUSTER_80,maize_str,Plant_8] 0
-x[CLUSTER_80,maize_str,Plant_9] 0.000115
+x[CLUSTER_80,maize_str,Plant_9] 0
 x[CLUSTER_80,beet_leaf,Plant_0] 0
 x[CLUSTER_80,beet_leaf,Plant_1] 0
 x[CLUSTER_80,beet_leaf,Plant_2] 0
@@ -63746,7 +63746,7 @@ x[CLUSTER_81,cattle_man,Plant_2] 0
 x[CLUSTER_81,cattle_man,Plant_3] 0
 x[CLUSTER_81,cattle_man,Plant_4] 0
 x[CLUSTER_81,cattle_man,Plant_5] 0
-x[CLUSTER_81,cattle_man,Plant_6] 0.02647
+x[CLUSTER_81,cattle_man,Plant_6] 0
 x[CLUSTER_81,cattle_man,Plant_7] 0
 x[CLUSTER_81,cattle_man,Plant_8] 0
 x[CLUSTER_81,cattle_man,Plant_9] 0
@@ -63756,7 +63756,7 @@ x[CLUSTER_81,cattle_slu,Plant_2] 0
 x[CLUSTER_81,cattle_slu,Plant_3] 0
 x[CLUSTER_81,cattle_slu,Plant_4] 0
 x[CLUSTER_81,cattle_slu,Plant_5] 0
-x[CLUSTER_81,cattle_slu,Plant_6] 0.12278
+x[CLUSTER_81,cattle_slu,Plant_6] 0
 x[CLUSTER_81,cattle_slu,Plant_7] 0
 x[CLUSTER_81,cattle_slu,Plant_8] 0
 x[CLUSTER_81,cattle_slu,Plant_9] 0
@@ -63766,7 +63766,7 @@ x[CLUSTER_81,horse_man,Plant_2] 0
 x[CLUSTER_81,horse_man,Plant_3] 0
 x[CLUSTER_81,horse_man,Plant_4] 0
 x[CLUSTER_81,horse_man,Plant_5] 0
-x[CLUSTER_81,horse_man,Plant_6] 0.001535
+x[CLUSTER_81,horse_man,Plant_6] 0
 x[CLUSTER_81,horse_man,Plant_7] 0
 x[CLUSTER_81,horse_man,Plant_8] 0
 x[CLUSTER_81,horse_man,Plant_9] 0
@@ -63785,7 +63785,7 @@ x[CLUSTER_81,pig_man,Plant_1] 0
 x[CLUSTER_81,pig_man,Plant_2] 0
 x[CLUSTER_81,pig_man,Plant_3] 0
 x[CLUSTER_81,pig_man,Plant_4] 0
-x[CLUSTER_81,pig_man,Plant_5] 1.29891e-05
+x[CLUSTER_81,pig_man,Plant_5] 0
 x[CLUSTER_81,pig_man,Plant_6] 0
 x[CLUSTER_81,pig_man,Plant_7] 0
 x[CLUSTER_81,pig_man,Plant_8] 0
@@ -63868,7 +63868,7 @@ x[CLUSTER_82,cattle_man,Plant_4] 0
 x[CLUSTER_82,cattle_man,Plant_5] 0
 x[CLUSTER_82,cattle_man,Plant_6] 0
 x[CLUSTER_82,cattle_man,Plant_7] 0
-x[CLUSTER_82,cattle_man,Plant_8] 7.3926999999999994e-03
+x[CLUSTER_82,cattle_man,Plant_8] 0
 x[CLUSTER_82,cattle_man,Plant_9] 0
 x[CLUSTER_82,cattle_slu,Plant_0] 0
 x[CLUSTER_82,cattle_slu,Plant_1] 0
@@ -63888,7 +63888,7 @@ x[CLUSTER_82,horse_man,Plant_4] 0
 x[CLUSTER_82,horse_man,Plant_5] 0
 x[CLUSTER_82,horse_man,Plant_6] 0
 x[CLUSTER_82,horse_man,Plant_7] 0
-x[CLUSTER_82,horse_man,Plant_8] 0.0012201
+x[CLUSTER_82,horse_man,Plant_8] 0
 x[CLUSTER_82,horse_man,Plant_9] 0
 x[CLUSTER_82,pig_slu,Plant_0] 0
 x[CLUSTER_82,pig_slu,Plant_1] 0
@@ -63908,7 +63908,7 @@ x[CLUSTER_82,pig_man,Plant_4] 0
 x[CLUSTER_82,pig_man,Plant_5] 0
 x[CLUSTER_82,pig_man,Plant_6] 0
 x[CLUSTER_82,pig_man,Plant_7] 0
-x[CLUSTER_82,pig_man,Plant_8] 0.000554226263
+x[CLUSTER_82,pig_man,Plant_8] 0
 x[CLUSTER_82,pig_man,Plant_9] 0
 x[CLUSTER_82,cereal_str,Plant_0] 0
 x[CLUSTER_82,cereal_str,Plant_1] 0
@@ -63988,7 +63988,7 @@ x[CLUSTER_83,cattle_man,Plant_4] 0
 x[CLUSTER_83,cattle_man,Plant_5] 0
 x[CLUSTER_83,cattle_man,Plant_6] 0
 x[CLUSTER_83,cattle_man,Plant_7] 0
-x[CLUSTER_83,cattle_man,Plant_8] 0.00853
+x[CLUSTER_83,cattle_man,Plant_8] 0
 x[CLUSTER_83,cattle_man,Plant_9] 0
 x[CLUSTER_83,cattle_slu,Plant_0] 0
 x[CLUSTER_83,cattle_slu,Plant_1] 0
@@ -63998,7 +63998,7 @@ x[CLUSTER_83,cattle_slu,Plant_4] 0
 x[CLUSTER_83,cattle_slu,Plant_5] 0
 x[CLUSTER_83,cattle_slu,Plant_6] 0
 x[CLUSTER_83,cattle_slu,Plant_7] 0
-x[CLUSTER_83,cattle_slu,Plant_8] 4.6619999999999953e-02
+x[CLUSTER_83,cattle_slu,Plant_8] 0
 x[CLUSTER_83,cattle_slu,Plant_9] 0
 x[CLUSTER_83,horse_man,Plant_0] 0
 x[CLUSTER_83,horse_man,Plant_1] 0
@@ -64008,7 +64008,7 @@ x[CLUSTER_83,horse_man,Plant_4] 0
 x[CLUSTER_83,horse_man,Plant_5] 0
 x[CLUSTER_83,horse_man,Plant_6] 0
 x[CLUSTER_83,horse_man,Plant_7] 0
-x[CLUSTER_83,horse_man,Plant_8] 0.002092
+x[CLUSTER_83,horse_man,Plant_8] 0
 x[CLUSTER_83,horse_man,Plant_9] 0
 x[CLUSTER_83,pig_slu,Plant_0] 0
 x[CLUSTER_83,pig_slu,Plant_1] 0
@@ -64028,7 +64028,7 @@ x[CLUSTER_83,pig_man,Plant_4] 0
 x[CLUSTER_83,pig_man,Plant_5] 0
 x[CLUSTER_83,pig_man,Plant_6] 0
 x[CLUSTER_83,pig_man,Plant_7] 0
-x[CLUSTER_83,pig_man,Plant_8] 4.4200000000000004e-05
+x[CLUSTER_83,pig_man,Plant_8] 0
 x[CLUSTER_83,pig_man,Plant_9] 0
 x[CLUSTER_83,cereal_str,Plant_0] 0
 x[CLUSTER_83,cereal_str,Plant_1] 0
@@ -64068,7 +64068,7 @@ x[CLUSTER_83,maize_str,Plant_4] 0
 x[CLUSTER_83,maize_str,Plant_5] 0
 x[CLUSTER_83,maize_str,Plant_6] 0
 x[CLUSTER_83,maize_str,Plant_7] 0
-x[CLUSTER_83,maize_str,Plant_8] 0.000573
+x[CLUSTER_83,maize_str,Plant_8] 0
 x[CLUSTER_83,maize_str,Plant_9] 0
 x[CLUSTER_83,beet_leaf,Plant_0] 0
 x[CLUSTER_83,beet_leaf,Plant_1] 0
@@ -64101,7 +64101,7 @@ x[CLUSTER_83,legume_str,Plant_7] 0
 x[CLUSTER_83,legume_str,Plant_8] 0
 x[CLUSTER_83,legume_str,Plant_9] 0
 x[CLUSTER_84,cattle_man,Plant_0] 0
-x[CLUSTER_84,cattle_man,Plant_1] 1.5427899999999726e-02
+x[CLUSTER_84,cattle_man,Plant_1] 0
 x[CLUSTER_84,cattle_man,Plant_2] 0
 x[CLUSTER_84,cattle_man,Plant_3] 0
 x[CLUSTER_84,cattle_man,Plant_4] 0
@@ -64128,7 +64128,7 @@ x[CLUSTER_84,horse_man,Plant_4] 0
 x[CLUSTER_84,horse_man,Plant_5] 0
 x[CLUSTER_84,horse_man,Plant_6] 0
 x[CLUSTER_84,horse_man,Plant_7] 0
-x[CLUSTER_84,horse_man,Plant_8] 0.004351
+x[CLUSTER_84,horse_man,Plant_8] 0
 x[CLUSTER_84,horse_man,Plant_9] 0
 x[CLUSTER_84,pig_slu,Plant_0] 0
 x[CLUSTER_84,pig_slu,Plant_1] 0
@@ -64246,7 +64246,7 @@ x[CLUSTER_85,horse_man,Plant_2] 0
 x[CLUSTER_85,horse_man,Plant_3] 0
 x[CLUSTER_85,horse_man,Plant_4] 0
 x[CLUSTER_85,horse_man,Plant_5] 0
-x[CLUSTER_85,horse_man,Plant_6] 0.002141
+x[CLUSTER_85,horse_man,Plant_6] 0
 x[CLUSTER_85,horse_man,Plant_7] 0
 x[CLUSTER_85,horse_man,Plant_8] 0
 x[CLUSTER_85,horse_man,Plant_9] 0
@@ -64263,7 +64263,7 @@ x[CLUSTER_85,pig_slu,Plant_9] 0
 x[CLUSTER_85,pig_man,Plant_0] 0
 x[CLUSTER_85,pig_man,Plant_1] 0
 x[CLUSTER_85,pig_man,Plant_2] 0
-x[CLUSTER_85,pig_man,Plant_3] 1.0926269999999999e-04
+x[CLUSTER_85,pig_man,Plant_3] 0
 x[CLUSTER_85,pig_man,Plant_4] 0
 x[CLUSTER_85,pig_man,Plant_5] 0
 x[CLUSTER_85,pig_man,Plant_6] 0
@@ -64341,7 +64341,7 @@ x[CLUSTER_85,legume_str,Plant_7] 0
 x[CLUSTER_85,legume_str,Plant_8] 0
 x[CLUSTER_85,legume_str,Plant_9] 0
 x[CLUSTER_86,cattle_man,Plant_0] 0
-x[CLUSTER_86,cattle_man,Plant_1] 0.015698
+x[CLUSTER_86,cattle_man,Plant_1] 0
 x[CLUSTER_86,cattle_man,Plant_2] 0
 x[CLUSTER_86,cattle_man,Plant_3] 0
 x[CLUSTER_86,cattle_man,Plant_4] 0
@@ -64351,7 +64351,7 @@ x[CLUSTER_86,cattle_man,Plant_7] 0
 x[CLUSTER_86,cattle_man,Plant_8] 0
 x[CLUSTER_86,cattle_man,Plant_9] 0
 x[CLUSTER_86,cattle_slu,Plant_0] 0
-x[CLUSTER_86,cattle_slu,Plant_1] 7.4300000000000185e-02
+x[CLUSTER_86,cattle_slu,Plant_1] 0
 x[CLUSTER_86,cattle_slu,Plant_2] 0
 x[CLUSTER_86,cattle_slu,Plant_3] 0
 x[CLUSTER_86,cattle_slu,Plant_4] 0
@@ -64361,7 +64361,7 @@ x[CLUSTER_86,cattle_slu,Plant_7] 0
 x[CLUSTER_86,cattle_slu,Plant_8] 0
 x[CLUSTER_86,cattle_slu,Plant_9] 0
 x[CLUSTER_86,horse_man,Plant_0] 0
-x[CLUSTER_86,horse_man,Plant_1] 0.001875
+x[CLUSTER_86,horse_man,Plant_1] 0
 x[CLUSTER_86,horse_man,Plant_2] 0
 x[CLUSTER_86,horse_man,Plant_3] 0
 x[CLUSTER_86,horse_man,Plant_4] 0
@@ -64467,7 +64467,7 @@ x[CLUSTER_87,cattle_man,Plant_3] 0
 x[CLUSTER_87,cattle_man,Plant_4] 0
 x[CLUSTER_87,cattle_man,Plant_5] 0
 x[CLUSTER_87,cattle_man,Plant_6] 0
-x[CLUSTER_87,cattle_man,Plant_7] 0.02367
+x[CLUSTER_87,cattle_man,Plant_7] 0
 x[CLUSTER_87,cattle_man,Plant_8] 0
 x[CLUSTER_87,cattle_man,Plant_9] 0
 x[CLUSTER_87,cattle_slu,Plant_0] 0
@@ -64477,12 +64477,12 @@ x[CLUSTER_87,cattle_slu,Plant_3] 0
 x[CLUSTER_87,cattle_slu,Plant_4] 0
 x[CLUSTER_87,cattle_slu,Plant_5] 0
 x[CLUSTER_87,cattle_slu,Plant_6] 0
-x[CLUSTER_87,cattle_slu,Plant_7] 0.004869
+x[CLUSTER_87,cattle_slu,Plant_7] 0
 x[CLUSTER_87,cattle_slu,Plant_8] 0
 x[CLUSTER_87,cattle_slu,Plant_9] 0
 x[CLUSTER_87,horse_man,Plant_0] 0
 x[CLUSTER_87,horse_man,Plant_1] 0
-x[CLUSTER_87,horse_man,Plant_2] 0.00036210543
+x[CLUSTER_87,horse_man,Plant_2] 0
 x[CLUSTER_87,horse_man,Plant_3] 0
 x[CLUSTER_87,horse_man,Plant_4] 0
 x[CLUSTER_87,horse_man,Plant_5] 0
@@ -64507,7 +64507,7 @@ x[CLUSTER_87,pig_man,Plant_3] 0
 x[CLUSTER_87,pig_man,Plant_4] 0
 x[CLUSTER_87,pig_man,Plant_5] 0
 x[CLUSTER_87,pig_man,Plant_6] 0
-x[CLUSTER_87,pig_man,Plant_7] 0.00054404
+x[CLUSTER_87,pig_man,Plant_7] 0
 x[CLUSTER_87,pig_man,Plant_8] 0
 x[CLUSTER_87,pig_man,Plant_9] 0
 x[CLUSTER_87,cereal_str,Plant_0] 0
@@ -64582,7 +64582,7 @@ x[CLUSTER_87,legume_str,Plant_8] 0
 x[CLUSTER_87,legume_str,Plant_9] 0
 x[CLUSTER_88,cattle_man,Plant_0] 0
 x[CLUSTER_88,cattle_man,Plant_1] 0
-x[CLUSTER_88,cattle_man,Plant_2] 0.001437
+x[CLUSTER_88,cattle_man,Plant_2] 0
 x[CLUSTER_88,cattle_man,Plant_3] 0
 x[CLUSTER_88,cattle_man,Plant_4] 0
 x[CLUSTER_88,cattle_man,Plant_5] 0
@@ -64602,7 +64602,7 @@ x[CLUSTER_88,cattle_slu,Plant_8] 0
 x[CLUSTER_88,cattle_slu,Plant_9] 0
 x[CLUSTER_88,horse_man,Plant_0] 0
 x[CLUSTER_88,horse_man,Plant_1] 0
-x[CLUSTER_88,horse_man,Plant_2] 0.0014962
+x[CLUSTER_88,horse_man,Plant_2] 0
 x[CLUSTER_88,horse_man,Plant_3] 0
 x[CLUSTER_88,horse_man,Plant_4] 0
 x[CLUSTER_88,horse_man,Plant_5] 0
@@ -64622,7 +64622,7 @@ x[CLUSTER_88,pig_slu,Plant_8] 0
 x[CLUSTER_88,pig_slu,Plant_9] 0
 x[CLUSTER_88,pig_man,Plant_0] 0
 x[CLUSTER_88,pig_man,Plant_1] 0
-x[CLUSTER_88,pig_man,Plant_2] 4.64858e-05
+x[CLUSTER_88,pig_man,Plant_2] 0
 x[CLUSTER_88,pig_man,Plant_3] 0
 x[CLUSTER_88,pig_man,Plant_4] 0
 x[CLUSTER_88,pig_man,Plant_5] 0
@@ -64649,7 +64649,7 @@ x[CLUSTER_88,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_88,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_88,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_88,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_88,clover_alfalfa_grass,Plant_9] 0.002233000678
+x[CLUSTER_88,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_88,perm_grass,Plant_0] 0
 x[CLUSTER_88,perm_grass,Plant_1] 0
 x[CLUSTER_88,perm_grass,Plant_2] 0
@@ -64669,7 +64669,7 @@ x[CLUSTER_88,maize_str,Plant_5] 0
 x[CLUSTER_88,maize_str,Plant_6] 0
 x[CLUSTER_88,maize_str,Plant_7] 0
 x[CLUSTER_88,maize_str,Plant_8] 0
-x[CLUSTER_88,maize_str,Plant_9] 9.446e-05
+x[CLUSTER_88,maize_str,Plant_9] 0
 x[CLUSTER_88,beet_leaf,Plant_0] 0
 x[CLUSTER_88,beet_leaf,Plant_1] 0
 x[CLUSTER_88,beet_leaf,Plant_2] 0
@@ -64700,7 +64700,7 @@ x[CLUSTER_88,legume_str,Plant_6] 0
 x[CLUSTER_88,legume_str,Plant_7] 0
 x[CLUSTER_88,legume_str,Plant_8] 0
 x[CLUSTER_88,legume_str,Plant_9] 0
-x[CLUSTER_89,cattle_man,Plant_0] 0.00622
+x[CLUSTER_89,cattle_man,Plant_0] 0
 x[CLUSTER_89,cattle_man,Plant_1] 0
 x[CLUSTER_89,cattle_man,Plant_2] 0
 x[CLUSTER_89,cattle_man,Plant_3] 0
@@ -64720,7 +64720,7 @@ x[CLUSTER_89,cattle_slu,Plant_6] 0
 x[CLUSTER_89,cattle_slu,Plant_7] 0
 x[CLUSTER_89,cattle_slu,Plant_8] 0
 x[CLUSTER_89,cattle_slu,Plant_9] 0
-x[CLUSTER_89,horse_man,Plant_0] 1.2744000000000002e-03
+x[CLUSTER_89,horse_man,Plant_0] 0
 x[CLUSTER_89,horse_man,Plant_1] 0
 x[CLUSTER_89,horse_man,Plant_2] 0
 x[CLUSTER_89,horse_man,Plant_3] 0
@@ -64740,7 +64740,7 @@ x[CLUSTER_89,pig_slu,Plant_6] 0
 x[CLUSTER_89,pig_slu,Plant_7] 0
 x[CLUSTER_89,pig_slu,Plant_8] 0
 x[CLUSTER_89,pig_slu,Plant_9] 0
-x[CLUSTER_89,pig_man,Plant_0] 4.9977499999999994e-04
+x[CLUSTER_89,pig_man,Plant_0] 0
 x[CLUSTER_89,pig_man,Plant_1] 0
 x[CLUSTER_89,pig_man,Plant_2] 0
 x[CLUSTER_89,pig_man,Plant_3] 0
@@ -64780,7 +64780,7 @@ x[CLUSTER_89,perm_grass,Plant_6] 0
 x[CLUSTER_89,perm_grass,Plant_7] 0
 x[CLUSTER_89,perm_grass,Plant_8] 0
 x[CLUSTER_89,perm_grass,Plant_9] 0
-x[CLUSTER_89,maize_str,Plant_0] 0.0006014
+x[CLUSTER_89,maize_str,Plant_0] 0
 x[CLUSTER_89,maize_str,Plant_1] 0
 x[CLUSTER_89,maize_str,Plant_2] 0
 x[CLUSTER_89,maize_str,Plant_3] 0
@@ -64828,7 +64828,7 @@ x[CLUSTER_9,cattle_man,Plant_4] 0
 x[CLUSTER_9,cattle_man,Plant_5] 0
 x[CLUSTER_9,cattle_man,Plant_6] 0
 x[CLUSTER_9,cattle_man,Plant_7] 0
-x[CLUSTER_9,cattle_man,Plant_8] 0.0045126
+x[CLUSTER_9,cattle_man,Plant_8] 0
 x[CLUSTER_9,cattle_man,Plant_9] 0
 x[CLUSTER_9,cattle_slu,Plant_0] 0
 x[CLUSTER_9,cattle_slu,Plant_1] 0
@@ -64838,7 +64838,7 @@ x[CLUSTER_9,cattle_slu,Plant_4] 0
 x[CLUSTER_9,cattle_slu,Plant_5] 0
 x[CLUSTER_9,cattle_slu,Plant_6] 0
 x[CLUSTER_9,cattle_slu,Plant_7] 0
-x[CLUSTER_9,cattle_slu,Plant_8] 0.0163229
+x[CLUSTER_9,cattle_slu,Plant_8] 0
 x[CLUSTER_9,cattle_slu,Plant_9] 0
 x[CLUSTER_9,horse_man,Plant_0] 0
 x[CLUSTER_9,horse_man,Plant_1] 0
@@ -64848,7 +64848,7 @@ x[CLUSTER_9,horse_man,Plant_4] 0
 x[CLUSTER_9,horse_man,Plant_5] 0
 x[CLUSTER_9,horse_man,Plant_6] 0
 x[CLUSTER_9,horse_man,Plant_7] 0
-x[CLUSTER_9,horse_man,Plant_8] 0.0018592
+x[CLUSTER_9,horse_man,Plant_8] 0
 x[CLUSTER_9,horse_man,Plant_9] 0
 x[CLUSTER_9,pig_slu,Plant_0] 0
 x[CLUSTER_9,pig_slu,Plant_1] 0
@@ -64868,7 +64868,7 @@ x[CLUSTER_9,pig_man,Plant_4] 0
 x[CLUSTER_9,pig_man,Plant_5] 0
 x[CLUSTER_9,pig_man,Plant_6] 0
 x[CLUSTER_9,pig_man,Plant_7] 0
-x[CLUSTER_9,pig_man,Plant_8] 0.001813
+x[CLUSTER_9,pig_man,Plant_8] 0
 x[CLUSTER_9,pig_man,Plant_9] 0
 x[CLUSTER_9,cereal_str,Plant_0] 0
 x[CLUSTER_9,cereal_str,Plant_1] 0
@@ -64908,7 +64908,7 @@ x[CLUSTER_9,maize_str,Plant_4] 0
 x[CLUSTER_9,maize_str,Plant_5] 0
 x[CLUSTER_9,maize_str,Plant_6] 0
 x[CLUSTER_9,maize_str,Plant_7] 0
-x[CLUSTER_9,maize_str,Plant_8] 0.00294098
+x[CLUSTER_9,maize_str,Plant_8] 0
 x[CLUSTER_9,maize_str,Plant_9] 0
 x[CLUSTER_9,beet_leaf,Plant_0] 0
 x[CLUSTER_9,beet_leaf,Plant_1] 0
@@ -64946,7 +64946,7 @@ x[CLUSTER_90,cattle_man,Plant_2] 0
 x[CLUSTER_90,cattle_man,Plant_3] 0
 x[CLUSTER_90,cattle_man,Plant_4] 0
 x[CLUSTER_90,cattle_man,Plant_5] 0
-x[CLUSTER_90,cattle_man,Plant_6] 0.0098
+x[CLUSTER_90,cattle_man,Plant_6] 0
 x[CLUSTER_90,cattle_man,Plant_7] 0
 x[CLUSTER_90,cattle_man,Plant_8] 0
 x[CLUSTER_90,cattle_man,Plant_9] 0
@@ -64966,7 +64966,7 @@ x[CLUSTER_90,horse_man,Plant_2] 0
 x[CLUSTER_90,horse_man,Plant_3] 0
 x[CLUSTER_90,horse_man,Plant_4] 0
 x[CLUSTER_90,horse_man,Plant_5] 0
-x[CLUSTER_90,horse_man,Plant_6] 0.001376
+x[CLUSTER_90,horse_man,Plant_6] 0
 x[CLUSTER_90,horse_man,Plant_7] 0
 x[CLUSTER_90,horse_man,Plant_8] 0
 x[CLUSTER_90,horse_man,Plant_9] 0
@@ -65063,7 +65063,7 @@ x[CLUSTER_90,legume_str,Plant_9] 0
 x[CLUSTER_91,cattle_man,Plant_0] 0
 x[CLUSTER_91,cattle_man,Plant_1] 0
 x[CLUSTER_91,cattle_man,Plant_2] 0
-x[CLUSTER_91,cattle_man,Plant_3] 0.00158606
+x[CLUSTER_91,cattle_man,Plant_3] 0
 x[CLUSTER_91,cattle_man,Plant_4] 0
 x[CLUSTER_91,cattle_man,Plant_5] 0
 x[CLUSTER_91,cattle_man,Plant_6] 0
@@ -65080,7 +65080,7 @@ x[CLUSTER_91,cattle_slu,Plant_6] 0
 x[CLUSTER_91,cattle_slu,Plant_7] 0
 x[CLUSTER_91,cattle_slu,Plant_8] 0
 x[CLUSTER_91,cattle_slu,Plant_9] 0
-x[CLUSTER_91,horse_man,Plant_0] 0.0006196
+x[CLUSTER_91,horse_man,Plant_0] 0
 x[CLUSTER_91,horse_man,Plant_1] 0
 x[CLUSTER_91,horse_man,Plant_2] 0
 x[CLUSTER_91,horse_man,Plant_3] 0
@@ -65105,7 +65105,7 @@ x[CLUSTER_91,pig_man,Plant_1] 0
 x[CLUSTER_91,pig_man,Plant_2] 0
 x[CLUSTER_91,pig_man,Plant_3] 0
 x[CLUSTER_91,pig_man,Plant_4] 0
-x[CLUSTER_91,pig_man,Plant_5] 0.000218
+x[CLUSTER_91,pig_man,Plant_5] 0
 x[CLUSTER_91,pig_man,Plant_6] 0
 x[CLUSTER_91,pig_man,Plant_7] 0
 x[CLUSTER_91,pig_man,Plant_8] 0
@@ -65183,7 +65183,7 @@ x[CLUSTER_91,legume_str,Plant_9] 0
 x[CLUSTER_92,cattle_man,Plant_0] 0
 x[CLUSTER_92,cattle_man,Plant_1] 0
 x[CLUSTER_92,cattle_man,Plant_2] 0
-x[CLUSTER_92,cattle_man,Plant_3] 0.017416
+x[CLUSTER_92,cattle_man,Plant_3] 0
 x[CLUSTER_92,cattle_man,Plant_4] 0
 x[CLUSTER_92,cattle_man,Plant_5] 0
 x[CLUSTER_92,cattle_man,Plant_6] 0
@@ -65203,7 +65203,7 @@ x[CLUSTER_92,cattle_slu,Plant_9] 0
 x[CLUSTER_92,horse_man,Plant_0] 0
 x[CLUSTER_92,horse_man,Plant_1] 0
 x[CLUSTER_92,horse_man,Plant_2] 0
-x[CLUSTER_92,horse_man,Plant_3] 0.002276
+x[CLUSTER_92,horse_man,Plant_3] 0
 x[CLUSTER_92,horse_man,Plant_4] 0
 x[CLUSTER_92,horse_man,Plant_5] 0
 x[CLUSTER_92,horse_man,Plant_6] 0
@@ -65225,7 +65225,7 @@ x[CLUSTER_92,pig_man,Plant_1] 0
 x[CLUSTER_92,pig_man,Plant_2] 0
 x[CLUSTER_92,pig_man,Plant_3] 0
 x[CLUSTER_92,pig_man,Plant_4] 0
-x[CLUSTER_92,pig_man,Plant_5] 0.000122737
+x[CLUSTER_92,pig_man,Plant_5] 0
 x[CLUSTER_92,pig_man,Plant_6] 0
 x[CLUSTER_92,pig_man,Plant_7] 0
 x[CLUSTER_92,pig_man,Plant_8] 0
@@ -65323,7 +65323,7 @@ x[CLUSTER_93,cattle_slu,Plant_9] 0
 x[CLUSTER_93,horse_man,Plant_0] 0
 x[CLUSTER_93,horse_man,Plant_1] 0
 x[CLUSTER_93,horse_man,Plant_2] 0
-x[CLUSTER_93,horse_man,Plant_3] 0.00436
+x[CLUSTER_93,horse_man,Plant_3] 0
 x[CLUSTER_93,horse_man,Plant_4] 0
 x[CLUSTER_93,horse_man,Plant_5] 0
 x[CLUSTER_93,horse_man,Plant_6] 0
@@ -65343,7 +65343,7 @@ x[CLUSTER_93,pig_slu,Plant_9] 0
 x[CLUSTER_93,pig_man,Plant_0] 0
 x[CLUSTER_93,pig_man,Plant_1] 0
 x[CLUSTER_93,pig_man,Plant_2] 0
-x[CLUSTER_93,pig_man,Plant_3] 5.6565000000000005e-05
+x[CLUSTER_93,pig_man,Plant_3] 0
 x[CLUSTER_93,pig_man,Plant_4] 0
 x[CLUSTER_93,pig_man,Plant_5] 0
 x[CLUSTER_93,pig_man,Plant_6] 0
@@ -65441,7 +65441,7 @@ x[CLUSTER_94,cattle_slu,Plant_7] 0
 x[CLUSTER_94,cattle_slu,Plant_8] 0
 x[CLUSTER_94,cattle_slu,Plant_9] 0
 x[CLUSTER_94,horse_man,Plant_0] 0
-x[CLUSTER_94,horse_man,Plant_1] 0.0009073
+x[CLUSTER_94,horse_man,Plant_1] 0
 x[CLUSTER_94,horse_man,Plant_2] 0
 x[CLUSTER_94,horse_man,Plant_3] 0
 x[CLUSTER_94,horse_man,Plant_4] 0
@@ -65549,7 +65549,7 @@ x[CLUSTER_95,cattle_man,Plant_5] 0
 x[CLUSTER_95,cattle_man,Plant_6] 0
 x[CLUSTER_95,cattle_man,Plant_7] 0
 x[CLUSTER_95,cattle_man,Plant_8] 0
-x[CLUSTER_95,cattle_man,Plant_9] 0.004536
+x[CLUSTER_95,cattle_man,Plant_9] 0
 x[CLUSTER_95,cattle_slu,Plant_0] 0
 x[CLUSTER_95,cattle_slu,Plant_1] 0
 x[CLUSTER_95,cattle_slu,Plant_2] 0
@@ -65569,7 +65569,7 @@ x[CLUSTER_95,horse_man,Plant_5] 0
 x[CLUSTER_95,horse_man,Plant_6] 0
 x[CLUSTER_95,horse_man,Plant_7] 0
 x[CLUSTER_95,horse_man,Plant_8] 0
-x[CLUSTER_95,horse_man,Plant_9] 0.00022922
+x[CLUSTER_95,horse_man,Plant_9] 0
 x[CLUSTER_95,pig_slu,Plant_0] 0
 x[CLUSTER_95,pig_slu,Plant_1] 0
 x[CLUSTER_95,pig_slu,Plant_2] 0
@@ -65587,7 +65587,7 @@ x[CLUSTER_95,pig_man,Plant_3] 0
 x[CLUSTER_95,pig_man,Plant_4] 0
 x[CLUSTER_95,pig_man,Plant_5] 0
 x[CLUSTER_95,pig_man,Plant_6] 0
-x[CLUSTER_95,pig_man,Plant_7] 0.00077892
+x[CLUSTER_95,pig_man,Plant_7] 0
 x[CLUSTER_95,pig_man,Plant_8] 0
 x[CLUSTER_95,pig_man,Plant_9] 0
 x[CLUSTER_95,cereal_str,Plant_0] 0
@@ -65609,7 +65609,7 @@ x[CLUSTER_95,clover_alfalfa_grass,Plant_5] 0
 x[CLUSTER_95,clover_alfalfa_grass,Plant_6] 0
 x[CLUSTER_95,clover_alfalfa_grass,Plant_7] 0
 x[CLUSTER_95,clover_alfalfa_grass,Plant_8] 0
-x[CLUSTER_95,clover_alfalfa_grass,Plant_9] 0.006962
+x[CLUSTER_95,clover_alfalfa_grass,Plant_9] 0
 x[CLUSTER_95,perm_grass,Plant_0] 0
 x[CLUSTER_95,perm_grass,Plant_1] 0
 x[CLUSTER_95,perm_grass,Plant_2] 0
@@ -65629,7 +65629,7 @@ x[CLUSTER_95,maize_str,Plant_5] 0
 x[CLUSTER_95,maize_str,Plant_6] 0
 x[CLUSTER_95,maize_str,Plant_7] 0
 x[CLUSTER_95,maize_str,Plant_8] 0
-x[CLUSTER_95,maize_str,Plant_9] 0.0002319
+x[CLUSTER_95,maize_str,Plant_9] 0
 x[CLUSTER_95,beet_leaf,Plant_0] 0
 x[CLUSTER_95,beet_leaf,Plant_1] 0
 x[CLUSTER_95,beet_leaf,Plant_2] 0
@@ -65662,7 +65662,7 @@ x[CLUSTER_95,legume_str,Plant_8] 0
 x[CLUSTER_95,legume_str,Plant_9] 0
 x[CLUSTER_96,cattle_man,Plant_0] 0
 x[CLUSTER_96,cattle_man,Plant_1] 0
-x[CLUSTER_96,cattle_man,Plant_2] 0.00369
+x[CLUSTER_96,cattle_man,Plant_2] 0
 x[CLUSTER_96,cattle_man,Plant_3] 0
 x[CLUSTER_96,cattle_man,Plant_4] 0
 x[CLUSTER_96,cattle_man,Plant_5] 0
@@ -65672,7 +65672,7 @@ x[CLUSTER_96,cattle_man,Plant_8] 0
 x[CLUSTER_96,cattle_man,Plant_9] 0
 x[CLUSTER_96,cattle_slu,Plant_0] 0
 x[CLUSTER_96,cattle_slu,Plant_1] 0
-x[CLUSTER_96,cattle_slu,Plant_2] 0.02586
+x[CLUSTER_96,cattle_slu,Plant_2] 0
 x[CLUSTER_96,cattle_slu,Plant_3] 0
 x[CLUSTER_96,cattle_slu,Plant_4] 0
 x[CLUSTER_96,cattle_slu,Plant_5] 0
@@ -65682,7 +65682,7 @@ x[CLUSTER_96,cattle_slu,Plant_8] 0
 x[CLUSTER_96,cattle_slu,Plant_9] 0
 x[CLUSTER_96,horse_man,Plant_0] 0
 x[CLUSTER_96,horse_man,Plant_1] 0
-x[CLUSTER_96,horse_man,Plant_2] 2.9438380000000003e-03
+x[CLUSTER_96,horse_man,Plant_2] 0
 x[CLUSTER_96,horse_man,Plant_3] 0
 x[CLUSTER_96,horse_man,Plant_4] 0
 x[CLUSTER_96,horse_man,Plant_5] 0
@@ -65702,7 +65702,7 @@ x[CLUSTER_96,pig_slu,Plant_8] 0
 x[CLUSTER_96,pig_slu,Plant_9] 0
 x[CLUSTER_96,pig_man,Plant_0] 0
 x[CLUSTER_96,pig_man,Plant_1] 0
-x[CLUSTER_96,pig_man,Plant_2] 0.00010714
+x[CLUSTER_96,pig_man,Plant_2] 0
 x[CLUSTER_96,pig_man,Plant_3] 0
 x[CLUSTER_96,pig_man,Plant_4] 0
 x[CLUSTER_96,pig_man,Plant_5] 0
@@ -65749,7 +65749,7 @@ x[CLUSTER_96,maize_str,Plant_5] 0
 x[CLUSTER_96,maize_str,Plant_6] 0
 x[CLUSTER_96,maize_str,Plant_7] 0
 x[CLUSTER_96,maize_str,Plant_8] 0
-x[CLUSTER_96,maize_str,Plant_9] 0.00026174
+x[CLUSTER_96,maize_str,Plant_9] 0
 x[CLUSTER_96,beet_leaf,Plant_0] 0
 x[CLUSTER_96,beet_leaf,Plant_1] 0
 x[CLUSTER_96,beet_leaf,Plant_2] 0
@@ -65787,7 +65787,7 @@ x[CLUSTER_97,cattle_man,Plant_3] 0
 x[CLUSTER_97,cattle_man,Plant_4] 0
 x[CLUSTER_97,cattle_man,Plant_5] 0
 x[CLUSTER_97,cattle_man,Plant_6] 0
-x[CLUSTER_97,cattle_man,Plant_7] 0.004494
+x[CLUSTER_97,cattle_man,Plant_7] 0
 x[CLUSTER_97,cattle_man,Plant_8] 0
 x[CLUSTER_97,cattle_man,Plant_9] 0
 x[CLUSTER_97,cattle_slu,Plant_0] 0
@@ -65797,7 +65797,7 @@ x[CLUSTER_97,cattle_slu,Plant_3] 0
 x[CLUSTER_97,cattle_slu,Plant_4] 0
 x[CLUSTER_97,cattle_slu,Plant_5] 0
 x[CLUSTER_97,cattle_slu,Plant_6] 0
-x[CLUSTER_97,cattle_slu,Plant_7] 0.004389
+x[CLUSTER_97,cattle_slu,Plant_7] 0
 x[CLUSTER_97,cattle_slu,Plant_8] 0
 x[CLUSTER_97,cattle_slu,Plant_9] 0
 x[CLUSTER_97,horse_man,Plant_0] 0
@@ -65807,7 +65807,7 @@ x[CLUSTER_97,horse_man,Plant_3] 0
 x[CLUSTER_97,horse_man,Plant_4] 0
 x[CLUSTER_97,horse_man,Plant_5] 0
 x[CLUSTER_97,horse_man,Plant_6] 0
-x[CLUSTER_97,horse_man,Plant_7] 0.0012668
+x[CLUSTER_97,horse_man,Plant_7] 0
 x[CLUSTER_97,horse_man,Plant_8] 0
 x[CLUSTER_97,horse_man,Plant_9] 0
 x[CLUSTER_97,pig_slu,Plant_0] 0
@@ -65817,7 +65817,7 @@ x[CLUSTER_97,pig_slu,Plant_3] 0
 x[CLUSTER_97,pig_slu,Plant_4] 0
 x[CLUSTER_97,pig_slu,Plant_5] 0
 x[CLUSTER_97,pig_slu,Plant_6] 0
-x[CLUSTER_97,pig_slu,Plant_7] 0.0046139
+x[CLUSTER_97,pig_slu,Plant_7] 0
 x[CLUSTER_97,pig_slu,Plant_8] 0
 x[CLUSTER_97,pig_slu,Plant_9] 0
 x[CLUSTER_97,pig_man,Plant_0] 0
@@ -65827,7 +65827,7 @@ x[CLUSTER_97,pig_man,Plant_3] 0
 x[CLUSTER_97,pig_man,Plant_4] 0
 x[CLUSTER_97,pig_man,Plant_5] 0
 x[CLUSTER_97,pig_man,Plant_6] 0
-x[CLUSTER_97,pig_man,Plant_7] 0.0003026467
+x[CLUSTER_97,pig_man,Plant_7] 0
 x[CLUSTER_97,pig_man,Plant_8] 0
 x[CLUSTER_97,pig_man,Plant_9] 0
 x[CLUSTER_97,cereal_str,Plant_0] 0
@@ -65869,7 +65869,7 @@ x[CLUSTER_97,maize_str,Plant_5] 0
 x[CLUSTER_97,maize_str,Plant_6] 0
 x[CLUSTER_97,maize_str,Plant_7] 0
 x[CLUSTER_97,maize_str,Plant_8] 0
-x[CLUSTER_97,maize_str,Plant_9] 0.0001508
+x[CLUSTER_97,maize_str,Plant_9] 0
 x[CLUSTER_97,beet_leaf,Plant_0] 0
 x[CLUSTER_97,beet_leaf,Plant_1] 0
 x[CLUSTER_97,beet_leaf,Plant_2] 0
@@ -65904,7 +65904,7 @@ x[CLUSTER_98,cattle_man,Plant_0] 0
 x[CLUSTER_98,cattle_man,Plant_1] 0
 x[CLUSTER_98,cattle_man,Plant_2] 0
 x[CLUSTER_98,cattle_man,Plant_3] 0
-x[CLUSTER_98,cattle_man,Plant_4] 5.0021000000000006e-03
+x[CLUSTER_98,cattle_man,Plant_4] 0
 x[CLUSTER_98,cattle_man,Plant_5] 0
 x[CLUSTER_98,cattle_man,Plant_6] 0
 x[CLUSTER_98,cattle_man,Plant_7] 0
@@ -65914,7 +65914,7 @@ x[CLUSTER_98,cattle_slu,Plant_0] 0
 x[CLUSTER_98,cattle_slu,Plant_1] 0
 x[CLUSTER_98,cattle_slu,Plant_2] 0
 x[CLUSTER_98,cattle_slu,Plant_3] 0
-x[CLUSTER_98,cattle_slu,Plant_4] 0.0307045
+x[CLUSTER_98,cattle_slu,Plant_4] 0
 x[CLUSTER_98,cattle_slu,Plant_5] 0
 x[CLUSTER_98,cattle_slu,Plant_6] 0
 x[CLUSTER_98,cattle_slu,Plant_7] 0
@@ -65924,7 +65924,7 @@ x[CLUSTER_98,horse_man,Plant_0] 0
 x[CLUSTER_98,horse_man,Plant_1] 0
 x[CLUSTER_98,horse_man,Plant_2] 0
 x[CLUSTER_98,horse_man,Plant_3] 0
-x[CLUSTER_98,horse_man,Plant_4] 0.0006731
+x[CLUSTER_98,horse_man,Plant_4] 0
 x[CLUSTER_98,horse_man,Plant_5] 0
 x[CLUSTER_98,horse_man,Plant_6] 0
 x[CLUSTER_98,horse_man,Plant_7] 0
@@ -65944,7 +65944,7 @@ x[CLUSTER_98,pig_man,Plant_0] 0
 x[CLUSTER_98,pig_man,Plant_1] 0
 x[CLUSTER_98,pig_man,Plant_2] 0
 x[CLUSTER_98,pig_man,Plant_3] 0
-x[CLUSTER_98,pig_man,Plant_4] 0.000181343
+x[CLUSTER_98,pig_man,Plant_4] 0
 x[CLUSTER_98,pig_man,Plant_5] 0
 x[CLUSTER_98,pig_man,Plant_6] 0
 x[CLUSTER_98,pig_man,Plant_7] 0
@@ -66020,7 +66020,7 @@ x[CLUSTER_98,legume_str,Plant_6] 0
 x[CLUSTER_98,legume_str,Plant_7] 0
 x[CLUSTER_98,legume_str,Plant_8] 0
 x[CLUSTER_98,legume_str,Plant_9] 0
-x[CLUSTER_99,cattle_man,Plant_0] 0.01896
+x[CLUSTER_99,cattle_man,Plant_0] 0
 x[CLUSTER_99,cattle_man,Plant_1] 0
 x[CLUSTER_99,cattle_man,Plant_2] 0
 x[CLUSTER_99,cattle_man,Plant_3] 0
@@ -66030,7 +66030,7 @@ x[CLUSTER_99,cattle_man,Plant_6] 0
 x[CLUSTER_99,cattle_man,Plant_7] 0
 x[CLUSTER_99,cattle_man,Plant_8] 0
 x[CLUSTER_99,cattle_man,Plant_9] 0
-x[CLUSTER_99,cattle_slu,Plant_0] 0.09858
+x[CLUSTER_99,cattle_slu,Plant_0] 0
 x[CLUSTER_99,cattle_slu,Plant_1] 0
 x[CLUSTER_99,cattle_slu,Plant_2] 0
 x[CLUSTER_99,cattle_slu,Plant_3] 0
@@ -66040,7 +66040,7 @@ x[CLUSTER_99,cattle_slu,Plant_6] 0
 x[CLUSTER_99,cattle_slu,Plant_7] 0
 x[CLUSTER_99,cattle_slu,Plant_8] 0
 x[CLUSTER_99,cattle_slu,Plant_9] 0
-x[CLUSTER_99,horse_man,Plant_0] 0.000170398
+x[CLUSTER_99,horse_man,Plant_0] 0
 x[CLUSTER_99,horse_man,Plant_1] 0
 x[CLUSTER_99,horse_man,Plant_2] 0
 x[CLUSTER_99,horse_man,Plant_3] 0
@@ -66060,7 +66060,7 @@ x[CLUSTER_99,pig_slu,Plant_6] 0
 x[CLUSTER_99,pig_slu,Plant_7] 0
 x[CLUSTER_99,pig_slu,Plant_8] 0
 x[CLUSTER_99,pig_slu,Plant_9] 0
-x[CLUSTER_99,pig_man,Plant_0] 0.0001737
+x[CLUSTER_99,pig_man,Plant_0] 0
 x[CLUSTER_99,pig_man,Plant_1] 0
 x[CLUSTER_99,pig_man,Plant_2] 0
 x[CLUSTER_99,pig_man,Plant_3] 0
@@ -66100,7 +66100,7 @@ x[CLUSTER_99,perm_grass,Plant_6] 0
 x[CLUSTER_99,perm_grass,Plant_7] 0
 x[CLUSTER_99,perm_grass,Plant_8] 0
 x[CLUSTER_99,perm_grass,Plant_9] 0
-x[CLUSTER_99,maize_str,Plant_0] 0.000397
+x[CLUSTER_99,maize_str,Plant_0] 0
 x[CLUSTER_99,maize_str,Plant_1] 0
 x[CLUSTER_99,maize_str,Plant_2] 0
 x[CLUSTER_99,maize_str,Plant_3] 0
@@ -66147,7 +66147,7 @@ Y_Plant_0_0_80000000 0
 Y_Plant_0_1_20000000 0
 Y_Plant_0_1_40000000 0
 Y_Plant_0_1_60000000 0
-Y_Plant_0_1_80000000 1
+Y_Plant_0_1_80000000 0
 Y_Plant_0_2_20000000 0
 Y_Plant_0_2_40000000 0
 Y_Plant_0_2_60000000 0
@@ -66163,7 +66163,7 @@ Y_Plant_1_0_80000000 0
 Y_Plant_1_1_20000000 0
 Y_Plant_1_1_40000000 0
 Y_Plant_1_1_60000000 0
-Y_Plant_1_1_80000000 1
+Y_Plant_1_1_80000000 0
 Y_Plant_1_2_20000000 0
 Y_Plant_1_2_40000000 0
 Y_Plant_1_2_60000000 0
@@ -66178,7 +66178,7 @@ Y_Plant_2_0_60000000 0
 Y_Plant_2_0_80000000 0
 Y_Plant_2_1_20000000 0
 Y_Plant_2_1_40000000 0
-Y_Plant_2_1_60000000 1
+Y_Plant_2_1_60000000 0
 Y_Plant_2_1_80000000 0
 Y_Plant_2_2_20000000 0
 Y_Plant_2_2_40000000 0
@@ -66195,7 +66195,7 @@ Y_Plant_3_0_80000000 0
 Y_Plant_3_1_20000000 0
 Y_Plant_3_1_40000000 0
 Y_Plant_3_1_60000000 0
-Y_Plant_3_1_80000000 1
+Y_Plant_3_1_80000000 0
 Y_Plant_3_2_20000000 0
 Y_Plant_3_2_40000000 0
 Y_Plant_3_2_60000000 0
@@ -66210,7 +66210,7 @@ Y_Plant_4_0_60000000 0
 Y_Plant_4_0_80000000 0
 Y_Plant_4_1_20000000 0
 Y_Plant_4_1_40000000 0
-Y_Plant_4_1_60000000 1
+Y_Plant_4_1_60000000 0
 Y_Plant_4_1_80000000 0
 Y_Plant_4_2_20000000 0
 Y_Plant_4_2_40000000 0
@@ -66227,7 +66227,7 @@ Y_Plant_5_0_80000000 0
 Y_Plant_5_1_20000000 0
 Y_Plant_5_1_40000000 0
 Y_Plant_5_1_60000000 0
-Y_Plant_5_1_80000000 1
+Y_Plant_5_1_80000000 0
 Y_Plant_5_2_20000000 0
 Y_Plant_5_2_40000000 0
 Y_Plant_5_2_60000000 0
@@ -66243,7 +66243,7 @@ Y_Plant_6_0_80000000 0
 Y_Plant_6_1_20000000 0
 Y_Plant_6_1_40000000 0
 Y_Plant_6_1_60000000 0
-Y_Plant_6_1_80000000 1
+Y_Plant_6_1_80000000 0
 Y_Plant_6_2_20000000 0
 Y_Plant_6_2_40000000 0
 Y_Plant_6_2_60000000 0
@@ -66257,7 +66257,7 @@ Y_Plant_7_0_40000000 0
 Y_Plant_7_0_60000000 0
 Y_Plant_7_0_80000000 0
 Y_Plant_7_1_20000000 0
-Y_Plant_7_1_40000000 1
+Y_Plant_7_1_40000000 0
 Y_Plant_7_1_60000000 0
 Y_Plant_7_1_80000000 0
 Y_Plant_7_2_20000000 0
@@ -66275,7 +66275,7 @@ Y_Plant_8_0_80000000 0
 Y_Plant_8_1_20000000 0
 Y_Plant_8_1_40000000 0
 Y_Plant_8_1_60000000 0
-Y_Plant_8_1_80000000 1
+Y_Plant_8_1_80000000 0
 Y_Plant_8_2_20000000 0
 Y_Plant_8_2_40000000 0
 Y_Plant_8_2_60000000 0
@@ -66287,7 +66287,7 @@ Y_Plant_8_3_80000000 0
 Y_Plant_9_0_20000000 0
 Y_Plant_9_0_40000000 0
 Y_Plant_9_0_60000000 0
-Y_Plant_9_0_80000000 1
+Y_Plant_9_0_80000000 0
 Y_Plant_9_1_20000000 0
 Y_Plant_9_1_40000000 0
 Y_Plant_9_1_60000000 0
@@ -66300,46 +66300,46 @@ Y_Plant_9_3_20000000 0
 Y_Plant_9_3_40000000 0
 Y_Plant_9_3_60000000 0
 Y_Plant_9_3_80000000 0
-is_active[Plant_0] 1
-is_active[Plant_1] 1
-is_active[Plant_2] 1
-is_active[Plant_3] 1
-is_active[Plant_4] 1
-is_active[Plant_5] 1
-is_active[Plant_6] 1
-is_active[Plant_7] 1
-is_active[Plant_8] 1
-is_active[Plant_9] 1
-UpgSel_Plant_0 1
-UpgSel_Plant_1 1
-UpgSel_Plant_2 1
-UpgSel_Plant_3 1
-UpgSel_Plant_4 1
-UpgSel_Plant_5 1
-UpgSel_Plant_6 1
-UpgSel_Plant_7 1
-UpgSel_Plant_8 1
+is_active[Plant_0] 0
+is_active[Plant_1] 0
+is_active[Plant_2] 0
+is_active[Plant_3] 0
+is_active[Plant_4] 0
+is_active[Plant_5] 0
+is_active[Plant_6] 0
+is_active[Plant_7] 0
+is_active[Plant_8] 0
+is_active[Plant_9] 0
+UpgSel_Plant_0 0
+UpgSel_Plant_1 0
+UpgSel_Plant_2 0
+UpgSel_Plant_3 0
+UpgSel_Plant_4 0
+UpgSel_Plant_5 0
+UpgSel_Plant_6 0
+UpgSel_Plant_7 0
+UpgSel_Plant_8 0
 UpgSel_Plant_9 0
-Rev_loc[Plant_0] 1.5260626173454211e+01
-Rev_loc[Plant_1] 1.5245653788017357e+01
-Rev_loc[Plant_2] 1.1499933823074066e+01
-Rev_loc[Plant_3] 1.5315624071977387e+01
-Rev_loc[Plant_4] 11.5446927526476
-Rev_loc[Plant_5] 1.5259105193597737e+01
-Rev_loc[Plant_6] 1.5241700467827005e+01
-Rev_loc[Plant_7] 7.6668963739320528e+00
-Rev_loc[Plant_8] 1.5254338772661484e+01
-Rev_loc[Plant_9] 2.4062371639915636e+01
-Cost_loc[Plant_0] 1.0642329880761865e+01
-Cost_loc[Plant_1] 1.0638751467952670e+01
-Cost_loc[Plant_2] 8.3052827753330067e+00
-Cost_loc[Plant_3] 1.0655474425122172e+01
-Cost_loc[Plant_4] 8.3159801974364882e+00
-Cost_loc[Plant_5] 1.0641966365287066e+01
-Cost_loc[Plant_6] 1.0637806621076551e+01
-Cost_loc[Plant_7] 5.8457908416364237e+00
-Cost_loc[Plant_8] 1.0640827186643540e+01
-Cost_loc[Plant_9] 8.5647188712082123e+00
+Rev_loc[Plant_0] 0
+Rev_loc[Plant_1] 0
+Rev_loc[Plant_2] 0
+Rev_loc[Plant_3] 0
+Rev_loc[Plant_4] 0
+Rev_loc[Plant_5] 0
+Rev_loc[Plant_6] 0
+Rev_loc[Plant_7] 0
+Rev_loc[Plant_8] 0
+Rev_loc[Plant_9] 0
+Cost_loc[Plant_0] 0
+Cost_loc[Plant_1] 0
+Cost_loc[Plant_2] 0
+Cost_loc[Plant_3] 0
+Cost_loc[Plant_4] 0
+Cost_loc[Plant_5] 0
+Cost_loc[Plant_6] 0
+Cost_loc[Plant_7] 0
+Cost_loc[Plant_8] 0
+Cost_loc[Plant_9] 0
 Rev_alt_selected[Plant_0,0,20000000] 0
 Rev_alt_selected[Plant_0,0,40000000] 0
 Rev_alt_selected[Plant_0,0,60000000] 0
@@ -66347,7 +66347,7 @@ Rev_alt_selected[Plant_0,0,80000000] 0
 Rev_alt_selected[Plant_0,1,20000000] 0
 Rev_alt_selected[Plant_0,1,40000000] 0
 Rev_alt_selected[Plant_0,1,60000000] 0
-Rev_alt_selected[Plant_0,1,80000000] 1.5260626173454211e+01
+Rev_alt_selected[Plant_0,1,80000000] 0
 Rev_alt_selected[Plant_0,2,20000000] 0
 Rev_alt_selected[Plant_0,2,40000000] 0
 Rev_alt_selected[Plant_0,2,60000000] 0
@@ -66363,7 +66363,7 @@ Rev_alt_selected[Plant_1,0,80000000] 0
 Rev_alt_selected[Plant_1,1,20000000] 0
 Rev_alt_selected[Plant_1,1,40000000] 0
 Rev_alt_selected[Plant_1,1,60000000] 0
-Rev_alt_selected[Plant_1,1,80000000] 1.5245653788017357e+01
+Rev_alt_selected[Plant_1,1,80000000] 0
 Rev_alt_selected[Plant_1,2,20000000] 0
 Rev_alt_selected[Plant_1,2,40000000] 0
 Rev_alt_selected[Plant_1,2,60000000] 0
@@ -66378,7 +66378,7 @@ Rev_alt_selected[Plant_2,0,60000000] 0
 Rev_alt_selected[Plant_2,0,80000000] 0
 Rev_alt_selected[Plant_2,1,20000000] 0
 Rev_alt_selected[Plant_2,1,40000000] 0
-Rev_alt_selected[Plant_2,1,60000000] 1.1499933823074066e+01
+Rev_alt_selected[Plant_2,1,60000000] 0
 Rev_alt_selected[Plant_2,1,80000000] 0
 Rev_alt_selected[Plant_2,2,20000000] 0
 Rev_alt_selected[Plant_2,2,40000000] 0
@@ -66395,7 +66395,7 @@ Rev_alt_selected[Plant_3,0,80000000] 0
 Rev_alt_selected[Plant_3,1,20000000] 0
 Rev_alt_selected[Plant_3,1,40000000] 0
 Rev_alt_selected[Plant_3,1,60000000] 0
-Rev_alt_selected[Plant_3,1,80000000] 1.5315624071977387e+01
+Rev_alt_selected[Plant_3,1,80000000] 0
 Rev_alt_selected[Plant_3,2,20000000] 0
 Rev_alt_selected[Plant_3,2,40000000] 0
 Rev_alt_selected[Plant_3,2,60000000] 0
@@ -66410,7 +66410,7 @@ Rev_alt_selected[Plant_4,0,60000000] 0
 Rev_alt_selected[Plant_4,0,80000000] 0
 Rev_alt_selected[Plant_4,1,20000000] 0
 Rev_alt_selected[Plant_4,1,40000000] 0
-Rev_alt_selected[Plant_4,1,60000000] 1.1544692752647197e+01
+Rev_alt_selected[Plant_4,1,60000000] 0
 Rev_alt_selected[Plant_4,1,80000000] 0
 Rev_alt_selected[Plant_4,2,20000000] 0
 Rev_alt_selected[Plant_4,2,40000000] 0
@@ -66427,7 +66427,7 @@ Rev_alt_selected[Plant_5,0,80000000] 0
 Rev_alt_selected[Plant_5,1,20000000] 0
 Rev_alt_selected[Plant_5,1,40000000] 0
 Rev_alt_selected[Plant_5,1,60000000] 0
-Rev_alt_selected[Plant_5,1,80000000] 1.5259105193597737e+01
+Rev_alt_selected[Plant_5,1,80000000] 0
 Rev_alt_selected[Plant_5,2,20000000] 0
 Rev_alt_selected[Plant_5,2,40000000] 0
 Rev_alt_selected[Plant_5,2,60000000] 0
@@ -66443,7 +66443,7 @@ Rev_alt_selected[Plant_6,0,80000000] 0
 Rev_alt_selected[Plant_6,1,20000000] 0
 Rev_alt_selected[Plant_6,1,40000000] 0
 Rev_alt_selected[Plant_6,1,60000000] 0
-Rev_alt_selected[Plant_6,1,80000000] 1.5241700467827005e+01
+Rev_alt_selected[Plant_6,1,80000000] 0
 Rev_alt_selected[Plant_6,2,20000000] 0
 Rev_alt_selected[Plant_6,2,40000000] 0
 Rev_alt_selected[Plant_6,2,60000000] 0
@@ -66457,7 +66457,7 @@ Rev_alt_selected[Plant_7,0,40000000] 0
 Rev_alt_selected[Plant_7,0,60000000] 0
 Rev_alt_selected[Plant_7,0,80000000] 0
 Rev_alt_selected[Plant_7,1,20000000] 0
-Rev_alt_selected[Plant_7,1,40000000] 7.6668963739320528e+00
+Rev_alt_selected[Plant_7,1,40000000] 0
 Rev_alt_selected[Plant_7,1,60000000] 0
 Rev_alt_selected[Plant_7,1,80000000] 0
 Rev_alt_selected[Plant_7,2,20000000] 0
@@ -66475,7 +66475,7 @@ Rev_alt_selected[Plant_8,0,80000000] 0
 Rev_alt_selected[Plant_8,1,20000000] 0
 Rev_alt_selected[Plant_8,1,40000000] 0
 Rev_alt_selected[Plant_8,1,60000000] 0
-Rev_alt_selected[Plant_8,1,80000000] 1.5254338772661484e+01
+Rev_alt_selected[Plant_8,1,80000000] 0
 Rev_alt_selected[Plant_8,2,20000000] 0
 Rev_alt_selected[Plant_8,2,40000000] 0
 Rev_alt_selected[Plant_8,2,60000000] 0
@@ -66487,7 +66487,7 @@ Rev_alt_selected[Plant_8,3,80000000] 0
 Rev_alt_selected[Plant_9,0,20000000] 0
 Rev_alt_selected[Plant_9,0,40000000] 0
 Rev_alt_selected[Plant_9,0,60000000] 0
-Rev_alt_selected[Plant_9,0,80000000] 2.4062371639915636e+01
+Rev_alt_selected[Plant_9,0,80000000] 0
 Rev_alt_selected[Plant_9,1,20000000] 0
 Rev_alt_selected[Plant_9,1,40000000] 0
 Rev_alt_selected[Plant_9,1,60000000] 0
@@ -66507,7 +66507,7 @@ Cost_alt_selected[Plant_0,0,80000000] 0
 Cost_alt_selected[Plant_0,1,20000000] 0
 Cost_alt_selected[Plant_0,1,40000000] 0
 Cost_alt_selected[Plant_0,1,60000000] 0
-Cost_alt_selected[Plant_0,1,80000000] 1.0642329880761865e+01
+Cost_alt_selected[Plant_0,1,80000000] 0
 Cost_alt_selected[Plant_0,2,20000000] 0
 Cost_alt_selected[Plant_0,2,40000000] 0
 Cost_alt_selected[Plant_0,2,60000000] 0
@@ -66523,7 +66523,7 @@ Cost_alt_selected[Plant_1,0,80000000] 0
 Cost_alt_selected[Plant_1,1,20000000] 0
 Cost_alt_selected[Plant_1,1,40000000] 0
 Cost_alt_selected[Plant_1,1,60000000] 0
-Cost_alt_selected[Plant_1,1,80000000] 1.0638751467952668e+01
+Cost_alt_selected[Plant_1,1,80000000] 0
 Cost_alt_selected[Plant_1,2,20000000] 0
 Cost_alt_selected[Plant_1,2,40000000] 0
 Cost_alt_selected[Plant_1,2,60000000] 0
@@ -66538,7 +66538,7 @@ Cost_alt_selected[Plant_2,0,60000000] 0
 Cost_alt_selected[Plant_2,0,80000000] 0
 Cost_alt_selected[Plant_2,1,20000000] 0
 Cost_alt_selected[Plant_2,1,40000000] 0
-Cost_alt_selected[Plant_2,1,60000000] 8.3052827753330067e+00
+Cost_alt_selected[Plant_2,1,60000000] 0
 Cost_alt_selected[Plant_2,1,80000000] 0
 Cost_alt_selected[Plant_2,2,20000000] 0
 Cost_alt_selected[Plant_2,2,40000000] 0
@@ -66555,7 +66555,7 @@ Cost_alt_selected[Plant_3,0,80000000] 0
 Cost_alt_selected[Plant_3,1,20000000] 0
 Cost_alt_selected[Plant_3,1,40000000] 0
 Cost_alt_selected[Plant_3,1,60000000] 0
-Cost_alt_selected[Plant_3,1,80000000] 1.0655474425122172e+01
+Cost_alt_selected[Plant_3,1,80000000] 0
 Cost_alt_selected[Plant_3,2,20000000] 0
 Cost_alt_selected[Plant_3,2,40000000] 0
 Cost_alt_selected[Plant_3,2,60000000] 0
@@ -66570,7 +66570,7 @@ Cost_alt_selected[Plant_4,0,60000000] 0
 Cost_alt_selected[Plant_4,0,80000000] 0
 Cost_alt_selected[Plant_4,1,20000000] 0
 Cost_alt_selected[Plant_4,1,40000000] 0
-Cost_alt_selected[Plant_4,1,60000000] 8.3159801974362555e+00
+Cost_alt_selected[Plant_4,1,60000000] 0
 Cost_alt_selected[Plant_4,1,80000000] 0
 Cost_alt_selected[Plant_4,2,20000000] 0
 Cost_alt_selected[Plant_4,2,40000000] 0
@@ -66587,7 +66587,7 @@ Cost_alt_selected[Plant_5,0,80000000] 0
 Cost_alt_selected[Plant_5,1,20000000] 0
 Cost_alt_selected[Plant_5,1,40000000] 0
 Cost_alt_selected[Plant_5,1,60000000] 0
-Cost_alt_selected[Plant_5,1,80000000] 1.0641966365287066e+01
+Cost_alt_selected[Plant_5,1,80000000] 0
 Cost_alt_selected[Plant_5,2,20000000] 0
 Cost_alt_selected[Plant_5,2,40000000] 0
 Cost_alt_selected[Plant_5,2,60000000] 0
@@ -66603,7 +66603,7 @@ Cost_alt_selected[Plant_6,0,80000000] 0
 Cost_alt_selected[Plant_6,1,20000000] 0
 Cost_alt_selected[Plant_6,1,40000000] 0
 Cost_alt_selected[Plant_6,1,60000000] 0
-Cost_alt_selected[Plant_6,1,80000000] 1.0637806621076551e+01
+Cost_alt_selected[Plant_6,1,80000000] 0
 Cost_alt_selected[Plant_6,2,20000000] 0
 Cost_alt_selected[Plant_6,2,40000000] 0
 Cost_alt_selected[Plant_6,2,60000000] 0
@@ -66617,7 +66617,7 @@ Cost_alt_selected[Plant_7,0,40000000] 0
 Cost_alt_selected[Plant_7,0,60000000] 0
 Cost_alt_selected[Plant_7,0,80000000] 0
 Cost_alt_selected[Plant_7,1,20000000] 0
-Cost_alt_selected[Plant_7,1,40000000] 5.8457908416364237e+00
+Cost_alt_selected[Plant_7,1,40000000] 0
 Cost_alt_selected[Plant_7,1,60000000] 0
 Cost_alt_selected[Plant_7,1,80000000] 0
 Cost_alt_selected[Plant_7,2,20000000] 0
@@ -66635,7 +66635,7 @@ Cost_alt_selected[Plant_8,0,80000000] 0
 Cost_alt_selected[Plant_8,1,20000000] 0
 Cost_alt_selected[Plant_8,1,40000000] 0
 Cost_alt_selected[Plant_8,1,60000000] 0
-Cost_alt_selected[Plant_8,1,80000000] 1.0640827186643540e+01
+Cost_alt_selected[Plant_8,1,80000000] 0
 Cost_alt_selected[Plant_8,2,20000000] 0
 Cost_alt_selected[Plant_8,2,40000000] 0
 Cost_alt_selected[Plant_8,2,60000000] 0
@@ -66647,7 +66647,7 @@ Cost_alt_selected[Plant_8,3,80000000] 0
 Cost_alt_selected[Plant_9,0,20000000] 0
 Cost_alt_selected[Plant_9,0,40000000] 0
 Cost_alt_selected[Plant_9,0,60000000] 0
-Cost_alt_selected[Plant_9,0,80000000] 8.5647188712082123e+00
+Cost_alt_selected[Plant_9,0,80000000] 0
 Cost_alt_selected[Plant_9,1,20000000] 0
 Cost_alt_selected[Plant_9,1,40000000] 0
 Cost_alt_selected[Plant_9,1,60000000] 0
@@ -66660,53 +66660,43 @@ Cost_alt_selected[Plant_9,3,20000000] 0
 Cost_alt_selected[Plant_9,3,40000000] 0
 Cost_alt_selected[Plant_9,3,60000000] 0
 Cost_alt_selected[Plant_9,3,80000000] 0
-aux_manure1_Plant_0 0
-aux_manure2_Plant_0 0
-aux_clover_Plant_0 0
-aux_manure1_Plant_1 0
-aux_manure2_Plant_1 0
-aux_clover_Plant_1 0
-aux_manure1_Plant_2 0
-aux_manure2_Plant_2 0
-aux_clover_Plant_2 0
-aux_manure1_Plant_3 0
-aux_manure2_Plant_3 0
-aux_clover_Plant_3 0
-aux_manure1_Plant_4 0
-aux_manure2_Plant_4 0
-aux_clover_Plant_4 0
-aux_manure1_Plant_5 0
-aux_manure2_Plant_5 0
-aux_clover_Plant_5 0
-aux_manure1_Plant_6 0
-aux_manure2_Plant_6 0
-aux_clover_Plant_6 0
-aux_manure1_Plant_7 0
-aux_manure2_Plant_7 0
-aux_clover_Plant_7 0
-aux_manure1_Plant_8 0
-aux_manure2_Plant_8 0
-aux_clover_Plant_8 0
-aux_manure1_Plant_9 0
-aux_manure2_Plant_9 0
-aux_clover_Plant_9 0
-Capex_Plant_0 5.1737825340725337e+01
-Capex_Plant_1 5.1737825340725337e+01
-Capex_Plant_2 4.2695928998366377e+01
-Capex_Plant_3 5.1737825340725337e+01
-Capex_Plant_4 4.2695928998367513e+01
-Capex_Plant_5 5.1737825340725337e+01
-Capex_Plant_6 5.1737825340726253e+01
-Capex_Plant_7 3.2578186320698741e+01
-Capex_Plant_8 5.1737825340725337e+01
-Capex_Plant_9 4.1847311018606369e+01
-FeedCost_Plant_0 1.1835782629219214e+01
-FeedCost_Plant_1 1.0179646801910863e+01
-FeedCost_Plant_2 9.0325153918141989e+00
-FeedCost_Plant_3 1.1534280586576434e+01
-FeedCost_Plant_4 9.33363834439683
-FeedCost_Plant_5 1.1735812636836679e+01
-FeedCost_Plant_6 9.10219245605487
-FeedCost_Plant_7 6.0639397112153555e+00
-FeedCost_Plant_8 1.1699628715797415e+01
-FeedCost_Plant_9 1.1021895950899934e+01
+FlexBioSel[Plant_0] 0
+FlexBioSel[Plant_1] 0
+FlexBioSel[Plant_2] 0
+FlexBioSel[Plant_3] 0
+FlexBioSel[Plant_4] 0
+FlexBioSel[Plant_5] 0
+FlexBioSel[Plant_6] 0
+FlexBioSel[Plant_7] 0
+FlexBioSel[Plant_8] 0
+FlexBioSel[Plant_9] 0
+FlexBMSel[Plant_0] 0
+FlexBMSel[Plant_1] 0
+FlexBMSel[Plant_2] 0
+FlexBMSel[Plant_3] 0
+FlexBMSel[Plant_4] 0
+FlexBMSel[Plant_5] 0
+FlexBMSel[Plant_6] 0
+FlexBMSel[Plant_7] 0
+FlexBMSel[Plant_8] 0
+FlexBMSel[Plant_9] 0
+Capex_Plant_0 0
+Capex_Plant_1 0
+Capex_Plant_2 0
+Capex_Plant_3 0
+Capex_Plant_4 0
+Capex_Plant_5 0
+Capex_Plant_6 0
+Capex_Plant_7 0
+Capex_Plant_8 0
+Capex_Plant_9 0
+FeedCost_Plant_0 0
+FeedCost_Plant_1 0
+FeedCost_Plant_2 0
+FeedCost_Plant_3 0
+FeedCost_Plant_4 0
+FeedCost_Plant_5 0
+FeedCost_Plant_6 0
+FeedCost_Plant_7 0
+FeedCost_Plant_8 0
+FeedCost_Plant_9 0

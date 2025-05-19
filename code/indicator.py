@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000, 40_000_000,60_000_000, 80_000_000)
+capacity_levels = (20_000_000, 40_000_000, 60_000_000, 80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -161,6 +161,7 @@ M_j = {j: sum(avail_mass[i, f] for i, f in avail_mass) / 1e6 for j in plant_locs
 
 
 # 4) CONSTRAINT FUNCTIONS
+'''
 def add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, capacity_levels):
     for j in plant_locs:
         delta1 = gp.quicksum(Y[j, a, c] for a, alt in enumerate(alternative_configs) if alt["category"].startswith("EEG_CHP") and alt.get("feed_constraint", 0) == 1 for c in capacity_levels)
@@ -179,7 +180,7 @@ def add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, 
         m.addConstr(aux_clover <= M_j[j] * delta2, name=f"aux_clover_bound_{j}")
         m.addConstr(aux_clover >= 0.10 * total_feed[j] - M_j[j] * (1 - delta2), name=f"aux_clover_lower_{j}")
         m.addConstr(clover_feed[j] >= aux_clover, name=f"EEG_clover_{j}")
-
+'''
 def add_supply_constraints(m, avail_mass, x, plant_locs):
     for (i, f), amt in avail_mass.items():
         m.addConstr(gp.quicksum(x[i, f, j] for j in plant_locs) <= amt / 1e6, name=f"Supply_{i}_{f}")  # Scale
@@ -215,7 +216,7 @@ def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
 
 config = {
     "name": "Baseline",
-    "eeg_enabled": True,
+    "eeg_enabled": False,
     "supply_enabled": True,
     "digestate_enabled": False,
     "digestate_return_frac": 0.99,
@@ -315,16 +316,16 @@ def build_model(config):
     total_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass) for j in plant_locs}
     manure_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass if is_manure(f)) for j in plant_locs}
     clover_feed = {j: gp.quicksum(x[i, f, j] for i, f in avail_mass if is_clover(f)) for j in plant_locs}
-
+    '''
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
             if alt["category"] in ["FlexEEG_biogas", "FlexEEG_biomethane"]:
                 for c in caps:
                     if c / 1e6 > threshold_m3:
                         m.addConstr(Omega[j] >= (FLH_min_limit / 8760.0) * (c / 1e6) * Y[j, a, c], name=f"FLH_min_limit_{j}_{a}_{c}")
-
+    '''
     
-    add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
+    #add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs)
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
@@ -357,6 +358,7 @@ def build_model(config):
             gp.quicksum(m_up[j, f] for f in feedstock_types) == 0,
             name=f"UpgBal_off_{j}"
         )
+
 
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
@@ -399,7 +401,10 @@ def build_model(config):
                         E_actual = N_CH4[j]*(chp_elec_eff*alphaHV/1000.0)
                         U_elec = (c / 1e6) * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
                         cap_production_elec = cap_fraction * U_elec
-                        m.addConstr(E_actual >= cap_production_elec,name=f"MinProd_{j}_{a}_{c}")
+                        m.addGenConstrIndicator(
+                                Y[j, a, c], True,
+                                E_actual >= cap_production_elec,
+                                name=f"MinProd_{j}_{a}_{c}")
                         EEG_rev  = cap_production_elec * effective_EEG
                         spot_rev = (E_actual - cap_production_elec) * electricity_spot_price
                         heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
@@ -520,11 +525,12 @@ if __name__ == '__main__':
     m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus = build_model(config)
     m.update()
     # –– Warm‐start if a solution exists
+    '''
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     if os.path.isfile(warmstart_path):
         print(f"Loading warm‐start from {warmstart_path}")
         m.read(warmstart_path)
-
+    '''
     print(f"  Quadratic constraints: {m.NumQConstrs}")
     print(f"  Quadratic objective terms (non-zeros): {m.NumQNZs}")
 
@@ -537,14 +543,13 @@ if __name__ == '__main__':
         for j in plant_locs:
             if Omega[j].X > 1e-6:
                 print(f"Plant {j}: N_CH4 = {N_CH4[j].X * 1e6:,.0f}, Omega = {Omega[j].X * 1e6:,.0f}, CH4 Fraction = {N_CH4[j].X/Omega[j].X:.3f}")
-    elif m.status == GRB.INFEASIBLE:
-        print("Model is infeasible. Computing IIS...")
+    if m.status in (GRB.INFEASIBLE, GRB.INF_OR_UNBD):
         m.computeIIS()
-        m.write("model_infeasible.ilp")
-        print("IIS written to 'model_infeasible.ilp'")
+        m.write("model.iis")
+        print("IIS written to model.iis")
     else:
         print(f"Model status: {m.status}")
-
+    '''
     for j in plant_locs:
         print(f"--- Plant {j} Feedstock Cost Breakdown ---")
         print(f"  Base feedstock: €{BaseFeedstockCost[j].getValue():,.2f}")
@@ -580,7 +585,7 @@ if __name__ == '__main__':
                         print(f"  Model Revenue = €{Rev_loc[j].X:.6f}")
     
 
-    '''
+    
     print(f"--- Debug: Rev_alt_selected terms for {j} ---")
     for a in range(len(alternative_configs)):
         for c in capacity_levels:
@@ -617,7 +622,7 @@ if __name__ == '__main__':
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
     in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow.csv"), index=False)
-
+    '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
         if Omega[j].X > 1e-6:
@@ -628,7 +633,7 @@ if __name__ == '__main__':
                     if y_val > 1e-6:
                         alt_name = alternative_configs[a]["name"]
                         print(f"  Alternative {alt_name}, Capacity {c:,}: Y = {y_val:.6f}")
-
+    '''
     for j in plant_locs:
         no_build_selected = False
         for a in range(len(alternative_configs)):

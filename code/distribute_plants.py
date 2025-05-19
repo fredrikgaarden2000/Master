@@ -274,12 +274,12 @@ def main():
     params = {
         "lau_geojson_path": "C:/Master_Python/bavaria_lau_clean.geojson",
         "gas_shapefile": r"C:/Users/fredr/OneDrive - NTNU/NTNU_semester/MasterArbeid/durchleitungsabschnitte/durchleitungsabschnitte.shp",
-        "num_clusters": 100,
+        "num_clusters": 75,
         "sample_size": 10000,
-        "locations_csv": "C:/Clone/Master/equally_spaced_locations.csv",
-        "feedstock_csv": "C:/Master_Python/processed_biomass_data.csv",
-        "plant_csv": "C:/Clone/Master/equally_spaced_locations.csv",
-        "output_distance_csv": "C:/Clone/Master/Distance_Matrix.csv",
+        "locations_csv": "C:/Clone/Master/equally_spaced_locations_75.csv",
+        "feedstock_csv": "C:/Master_Python/aggregated_bavaria_supply_nodes.csv",
+        "plant_csv": "C:/Clone/Master/equally_spaced_locations_75.csv",
+        "output_distance_csv": "C:/Clone/Master/Distance_Matrix_75.csv",
         "density_threshold": 500
     }
 
