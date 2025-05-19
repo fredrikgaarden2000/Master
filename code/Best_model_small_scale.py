@@ -512,11 +512,11 @@ def build_model(config):
     
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus# 6) RUN MODEL
+    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost # 6) RUN MODEL
 
 if __name__ == '__main__':
     print("Running full model...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus = build_model(config)
+    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost= build_model(config)
     m.update()
     # –– Warm‐start if a solution exists
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
@@ -689,7 +689,7 @@ if __name__ == '__main__':
                             "EEG_Revenue": EEG_rev,
                             "Spot_Revenue": spot_rev,
                             "Heat_Revenue": heat_rev,
-                            "Bonus": bonus                # << new column
+                            "Bonus": 0               # << new column
                         })
                     else:
                         row_data.update({
