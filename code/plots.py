@@ -7,18 +7,19 @@ from shapely.geometry import LineString, Point
 from collections import defaultdict
 import pickle
 import os
+from shapely.ops import unary_union
 
-BASE_DIR = "C:/Clone/Master"
+BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "Solutions/Debug/Output_in_flow.csv"),
-    "out_flow": os.path.join(BASE_DIR, "Solutions/Debug/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "Solutions/Debug/Output_financials.csv"),
+    "in_flow": os.path.join(BASE_DIR, "Output_in_flow_35_large.csv"),
+    #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
+    "financials": os.path.join(BASE_DIR, "Output_financials_35_large.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
-    "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_lau_clean.geojson"),
+    "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
     "supply_coords": os.path.join(BASE_DIR, "supply_coords.csv")
 }
 
@@ -124,160 +125,120 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
     plt.savefig(os.path.join(BASE_DIR, "feedstock_stacked_chart.png"))
     plt.show()
 
+def plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords, geojson_path, output_png):
+    # Load cluster polygons
+    clusters_gdf = gpd.read_file(geojson_path).to_crs(epsg=4326)
+    
+    BASE_DIR = "C:/Clone/Master/"
+    gdf = gpd.read_file(os.path.join(BASE_DIR, "bavaria_lau_clean.geojson")).to_crs(epsg=4326)
 
-def plot_geojson_map(in_flow_df, yields_df, fin_df, plant_coords, supply_coords):
-    BASE_DIR = "C:/Master_Python/"
-    GEOJSON_PATH = os.path.join(BASE_DIR, "bavaria_lau_clean.geojson")
-    
-    if not os.path.exists(GEOJSON_PATH):
-        print("GeoJSON file not found. Skipping GeoJSON map plot.")
-        return
-    
-    bavaria_gdf = gpd.read_file(GEOJSON_PATH)
-    bavaria_gdf = bavaria_gdf.to_crs(epsg=4326)
-    
-    merged_df = in_flow_df.merge(
-        yields_df,
-        left_on="Feedstock",
-        right_on="substrat_ENG",
-        how="left"
+    # Compute delivered methane per cluster
+    merged = in_flow_df.merge(
+        yields_df, left_on="Feedstock", right_on="substrat_ENG", how="left"
     )
-    merged_df["DeliveredMethane_m3"] = (
-        merged_df["FlowTons"] *
-        merged_df["Biogas_Yield_m3_ton"] *
-        merged_df["Methane_Content_%"]
+    merged["DeliveredMethane"] = (
+        merged["FlowTons"] *
+        merged["Biogas_Yield_m3_ton"] *
+        merged["Methane_Content_%"]
     )
-    lau_methane_df = merged_df.groupby("SupplyNode", as_index=False)["DeliveredMethane_m3"].sum()
-    lau_methane_df.rename(columns={"DeliveredMethane_m3": "CalculatedMethane", "SupplyNode": "GISCO_ID"}, inplace=True)
+    methane_sum = merged.groupby("SupplyNode", as_index=False)["DeliveredMethane"].sum()
     
-    bavaria_gdf = bavaria_gdf.merge(lau_methane_df, on="GISCO_ID", how="left")
-    bavaria_gdf["CalculatedMethane"] = bavaria_gdf["CalculatedMethane"].fillna(0)
-    bavaria_gdf["Methane_for_plot"] = bavaria_gdf["CalculatedMethane"].replace(0, np.nan)
+    clusters_gdf = clusters_gdf.merge(
+        methane_sum, left_on="GISCO_ID", right_on="SupplyNode", how="left"
+    )
+    clusters_gdf["DeliveredMethane"].fillna(0, inplace=True)
+    clusters_gdf["Methane_for_plot"] = clusters_gdf["DeliveredMethane"].replace(0, np.nan)
     
+    # Plot
     fig, ax = plt.subplots(figsize=(12, 10))
-    cmap = "OrRd"
-    bavaria_gdf.plot(
+    # Cluster regions with black border
+    clusters_gdf.plot(
         ax=ax,
         column="Methane_for_plot",
-        cmap=cmap,
-        edgecolor="black",
-        alpha=0.6,
+        cmap="OrRd",
+        edgecolor="grey",
+        linewidth=0.4,
+        alpha=0.5,
         legend=False,
-        missing_kwds={
-            "color": "white",
-            "edgecolor": "black",
-            "label": "No Delivered Methane"
-        }
+        missing_kwds={"color": "lightgrey", "edgecolor":"black", "label":"No Flow"},
+        zorder=1
     )
-    ax.set_title("Delivered Methane by LAU (Feedstock in_flow)")
-    
-    data_col = bavaria_gdf["Methane_for_plot"].dropna()
-    if not data_col.empty:
-        vmin, vmax = data_col.min(), data_col.max()
-    else:
-        vmin, vmax = 0, 1
+    ax.set_title("Delivered Methane by Cluster Region", fontsize=16)
+        # 2) Dissolve into one geometry (the outer shell)
+    bavaria_shell = unary_union(gdf.geometry)
+
+    # wrap in a GeoSeries so GeoPandas can plot it
+    gpd.GeoSeries([bavaria_shell], crs="EPSG:4326").plot(
+        ax=ax,
+        facecolor="none",     # transparent fill
+        edgecolor="black",    # black outer border
+        linewidth=0.75
+    )
+    # Colorbar
+    vmin = clusters_gdf["Methane_for_plot"].min()
+    vmax = clusters_gdf["Methane_for_plot"].max()
     norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
-    sm = mpl.cm.ScalarMappable(norm=norm, cmap=cmap)
+    sm = mpl.cm.ScalarMappable(norm=norm, cmap="OrRd")
     sm.set_array([])
-    cbar = fig.colorbar(sm, ax=ax)
-    cbar.set_label("Delivered Methane (m³)")
+    cbar = fig.colorbar(sm, ax=ax, shrink=0.6)
+    cbar.set_label("Delivered Methane (m³)", size=12)
     
-    lines_agg = in_flow_df.groupby(["SupplyNode", "PlantLocation"], as_index=False)["FlowTons"].sum()
-    for _, row in lines_agg.iterrows():
-        s_node = row["SupplyNode"]
-        p_loc = row["PlantLocation"]
-        if s_node not in supply_coords or p_loc not in plant_coords:
-            continue
-        (lon1, lat1) = supply_coords[s_node]
-        (lon2, lat2) = plant_coords[p_loc]
-        line = LineString([(lon1, lat1), (lon2, lat2)])
-        ax.plot(*line.xy, color="black", linewidth=0.5, alpha=0.8)
+    # Flow lines
+    lines = in_flow_df.groupby(["SupplyNode","PlantLocation"], as_index=False)["FlowTons"].sum()
+    for _, row in lines.iterrows():
+        s, p = row["SupplyNode"], row["PlantLocation"]
+        if s in supply_coords and p in plant_coords:
+            x1, y1 = supply_coords[s]
+            x2, y2 = plant_coords[p]
+            ax.plot([x1, x2], [y1, y2], color="grey", linewidth=0.3, alpha=0.5, zorder=2)
     
-    alt_to_color = {
-        "boiler": "red",
-        "nonEEG_CHP": "blue",
-        "EEG_CHP_small1": "lightgreen",
-        "EEG_CHP_small2": "lightgreen",
-        "EEG_CHP_large1": "green",
-        "EEG_CHP_large2": "green",
-        "FlexEEG_biogas": "magenta",
-        "FlexEEG_biomethane_tech1": "pink",
-        "FlexEEG_biomethane_tech2": "pink",
-        "FlexEEG_biomethane_tech3": "pink",
-        "FlexEEG_biomethane_tech4": "pink",
-        "FlexEEG_biomethane_tech5": "pink",
-        "Upgrading_tech1": "purple",
-        "Upgrading_tech2": "purple",
-        "Upgrading_tech3": "purple",
-        "Upgrading_tech4": "purple",
-        "Upgrading_tech5": "purple",
-        "no_build": None
+    # Plant markers scaled by capacity
+    caps = fin_df["Capacity"]
+    min_c, max_c = caps.min(), caps.max()
+    def size_scale(c): return 50 + 150*(c-min_c)/(max_c-min_c)
+    
+    alt_colors = {
+        "FlexEEG_biogas":"blue",
+        "Upgrading_tech1":"purple",
+        # add other categories as needed
     }
-    
-    capacity_levels = fin_df["Capacity"].unique()
-    min_capacity = min(capacity_levels)
-    max_capacity = max(capacity_levels)
-    min_size = 50
-    max_size = 200
-    def scale_size(capacity):
-        if max_capacity == min_capacity:
-            return min_size
-        return min_size + (max_size - min_size) * (capacity - min_capacity) / (max_capacity - min_capacity)
-    
-    plant_points = []
-    for _, row in fin_df.iterrows():
-        j = row["PlantLocation"]
-        alt = row["Alternative"]
-        c = row["Capacity"]
-        if alt != "no_build" and j in plant_coords:
-            lon, lat = plant_coords[j]
-            plant_points.append({
-                "PlantLocation": j,
-                "geometry": Point(lon, lat),
-                "Alternative": alt,
-                "Capacity": c
-            })
-    
-    if plant_points:
-        plant_gdf = gpd.GeoDataFrame(plant_points, crs="EPSG:4326")
-        for _, row in plant_gdf.iterrows():
+    # Plot markers
+    for _, r in fin_df.iterrows():
+        if r.Alternative != "no_build":
+            lon, lat = plant_coords[r.PlantLocation]
             ax.scatter(
-                row.geometry.x,
-                row.geometry.y,
-                marker="^",
-                color=alt_to_color[row["Alternative"]],
-                s=scale_size(row["Capacity"]),
-                label=row["Alternative"],
-                alpha=0.8,
-                zorder=10
+                lon, lat, marker="^",
+                color=alt_colors.get(r.Alternative, "black"),
+                s=size_scale(r.Capacity),
+                edgecolor="white", linewidth=0.5,
+                zorder=3
             )
             ax.annotate(
-                text=row["PlantLocation"],
-                xy=(row.geometry.x, row.geometry.y),
-                xytext=(3, 3),
+                str(r.PlantLocation),
+                xy=(lon, lat), xytext=(3,3),
                 textcoords="offset points",
-                fontsize=8,
-                color="black",
-                zorder=11
+                fontsize=8, zorder=4
             )
     
-        handles = []
-        labels = []
-        plotted_alts = set()
-        for _, row in plant_gdf.iterrows():
-            alt = row["Alternative"]
-            if alt not in plotted_alts and alt_to_color[alt] is not None:
-                handles.append(plt.scatter([], [], color=alt_to_color[alt], marker="^", s=min_size, label=alt))
-                labels.append(alt)
-                plotted_alts.add(alt)
-        for cap in [min_capacity, sum(capacity_levels)/len(capacity_levels), max_capacity]:
-            size = scale_size(cap)
-            handles.append(plt.scatter([], [], color="gray", marker="^", s=size, label=f"{int(cap)} m³/year"))
-            labels.append(f"Capacity: {int(cap)} m³/year")
-        ax.legend(handles, labels, title="Alternatives & Capacities", loc="upper left", bbox_to_anchor=(1.05, 1))
+    # Build legend handles
+    handles, labels = [], []
+    # Alternative legend
+    for alt, col in alt_colors.items():
+        handles.append(plt.Line2D([], [], marker="^", color=col, linestyle="",
+                                  markersize=8, label=alt))
+        labels.append(alt)
+    # Capacity size legend
+    for cap in [min_c, (min_c+max_c)/2, max_c]:
+        handles.append(plt.Line2D([], [], marker="^", color="gray", linestyle="",
+                                  markersize=np.sqrt(size_scale(cap)), label=f"{int(cap)} m³"))
+        labels.append(f"{int(cap)} m³")
     
+    ax.legend(handles, labels, title="Alternatives & Capacities",
+              loc="upper left", bbox_to_anchor=(0.7, 1))
+    
+    ax.set_axis_off()
     plt.tight_layout()
-    plt.savefig(os.path.join(BASE_DIR, "methane_map_plot.png"))
+    fig.savefig(output_png, dpi=300)
     plt.show()
 
 def plot_bavaria_lau_highlight_with_labels(gisco_ids):
@@ -343,6 +304,6 @@ color_map = {
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
-plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-plot_geojson_map(in_flow_df, yields_df, fin_df, plant_coords, supply_coords)
+#plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
+plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)

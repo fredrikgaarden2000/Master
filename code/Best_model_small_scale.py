@@ -5,6 +5,7 @@ import numpy as np
 import pickle
 import time
 import os
+from math import pow
 
 script_start_time = time.time()
 
@@ -19,7 +20,7 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "manure_results")
+output_dir = os.path.join(BASE_DIR, "results/small_scale")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -511,11 +512,11 @@ def build_model(config):
     
     m.setObjective(NPV_expr, GRB.MAXIMIZE)
 
-    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost# 6) RUN MODEL
+    return m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus# 6) RUN MODEL
 
 if __name__ == '__main__':
     print("Running full model...")
-    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost = build_model(config)
+    m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus = build_model(config)
     m.update()
     # –– Warm‐start if a solution exists
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
@@ -614,7 +615,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(f"{BASE_DIR}/Solutions/aggregated/Output_in_flow.csv", index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -638,6 +639,21 @@ if __name__ == '__main__':
         if no_build_selected and Omega[j].X > 1e-6:
             print(f"Warning: Plant {j} has Omega = {Omega[j].X * 1e6:,.0f} but selected No_build")
 
+    
+    plant_npvs = {}
+    for j in plant_locs:
+        # discounted sum of revenues minus variable costs + GHG revenues
+        discounted_operating = 0.0
+        for t in range(1, years+1):
+            df = 1.0 / pow(1.0 + r, t)
+            rev_j  = Rev_loc[j].X
+            costj  = Cost_loc[j].X + FeedstockCostPerPlant[j].getValue()
+            ghg_j  = sum(premium[f] * m_up[j, f].X for f in feedstock_types)
+            discounted_operating += df * (rev_j - costj + ghg_j)
+
+        capex_j = Capex[j].X
+        plant_npvs[j] = -capex_j + discounted_operating
+
     merged_rows = []
     for j in plant_locs:
         for a in range(len(alternative_configs)):
@@ -651,6 +667,7 @@ if __name__ == '__main__':
                         "PlantLocation": j,
                         "Alternative": alt_name,
                         "Capacity": c,
+                        "Plant_NPV": plant_npvs[j],
                         "Omega": Omega[j].X * 1e6,
                         "N_CH4": N_CH4[j].X * 1e6,
                         "CO2_Production": (Omega[j].X - N_CH4[j].X) * 1e6,
@@ -685,7 +702,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(f"{BASE_DIR}/Solutions/aggregated/Output_financials.csv", index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

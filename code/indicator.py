@@ -19,7 +19,7 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results")
+output_dir = os.path.join(BASE_DIR, "results/large_scale")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -62,7 +62,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000, 40_000_000,80_000_000)
+capacity_levels = (20_000_000, 40_000_000,60_000_000, 80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -614,7 +614,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(f"{BASE_DIR}/Solutions/aggregated/Output_in_flow.csv", index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow.csv"), index=False)
 
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -638,6 +638,21 @@ if __name__ == '__main__':
         if no_build_selected and Omega[j].X > 1e-6:
             print(f"Warning: Plant {j} has Omega = {Omega[j].X * 1e6:,.0f} but selected No_build")
 
+    plant_npvs = {}
+    for j in plant_locs:
+        # discounted sum of revenues minus variable costs + GHG revenues
+        discounted_operating = 0.0
+        for t in range(1, years+1):
+            df = 1.0 / pow(1.0 + r, t)
+            rev_j  = Rev_loc[j].X
+            costj  = Cost_loc[j].X + FeedstockCostPerPlant[j].getValue()
+            ghg_j  = sum(premium[f] * m_up[j, f].X for f in feedstock_types)
+            discounted_operating += df * (rev_j - costj + ghg_j)
+
+        capex_j = Capex[j].X
+        plant_npvs[j] = -capex_j + discounted_operating
+
+
     merged_rows = []
     for j in plant_locs:
         for a in range(len(alternative_configs)):
@@ -651,6 +666,7 @@ if __name__ == '__main__':
                         "PlantLocation": j,
                         "Alternative": alt_name,
                         "Capacity": c,
+                        "Plant_NPV": plant_npvs[j],
                         "Omega": Omega[j].X * 1e6,
                         "N_CH4": N_CH4[j].X * 1e6,
                         "CO2_Production": (Omega[j].X - N_CH4[j].X) * 1e6,
@@ -685,7 +701,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(f"{BASE_DIR}/Solutions/aggregated/Output_financials.csv", index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)
