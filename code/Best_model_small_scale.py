@@ -6,6 +6,7 @@ import pickle
 import time
 import os
 from math import pow
+import numpy_financial as nf
 
 script_start_time = time.time()
 
@@ -24,8 +25,8 @@ output_dir = os.path.join(BASE_DIR, "results/small_scale")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_100.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_100.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -277,7 +278,7 @@ def build_model(config):
             for j in plant_locs}
 
     for j in plant_locs:
-        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) == 1, name=f"OneAlt_{j}")
+        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) <= 1, name=f"OneAlt_{j}")
         # Link is_active to Omega
         m.addConstr(Omega[j] <= max(capacity_levels) * is_active[j],
               name=f"ActiveOmegaUpper_{j}")
@@ -654,6 +655,24 @@ if __name__ == '__main__':
         capex_j = Capex[j].X
         plant_npvs[j] = -capex_j + discounted_operating
 
+    plant_annual_cf = {}
+    for j in plant_locs:
+        # Annual operating inflow = Rev_loc[j] – (Cost_loc[j] + FeedstockCostPerPlant[j]) + GHG revenue
+        rev_j   = Rev_loc[j].X
+        varcost = Cost_loc[j].X
+        feedcost= FeedstockCostPerPlant[j].getValue()
+        ghg_j   = sum(premium[f] * m_up[j, f].X for f in feedstock_types)
+        annual_net = rev_j - (varcost + feedcost) + ghg_j
+        plant_annual_cf[j] = annual_net
+
+    plant_irr = {}
+    for j in plant_locs:
+        capex_j = Capex[j].X
+        # cash‐flow series: year 0 = –capex, years 1..T = annual_net
+        cf_series = [-capex_j] + [plant_annual_cf[j]] * years
+        irr_j = nf.irr(cf_series)
+        plant_irr[j] = irr_j    
+
     merged_rows = []
     for j in plant_locs:
         for a in range(len(alternative_configs)):
@@ -663,16 +682,20 @@ if __name__ == '__main__':
                     alt_name = alt["name"]
                     cap_fraction = Cap_biogas if alt["category"] == "FlexEEG_biogas" else Cap_biomethane if alt["category"] == "FlexEEG_biomethane" else None
                     
+                    feed_cost_j = FeedstockCostPerPlant[j].getValue()
+
                     row_data = {
                         "PlantLocation": j,
                         "Alternative": alt_name,
                         "Capacity": c,
                         "Plant_NPV": plant_npvs[j],
+                        "Plant_IRR" : plant_irr[j],
                         "Omega": Omega[j].X * 1e6,
                         "N_CH4": N_CH4[j].X * 1e6,
                         "CO2_Production": (Omega[j].X - N_CH4[j].X) * 1e6,
                         "Revenue": Rev_loc[j].X,
                         "Cost": Cost_loc[j].X,
+                        "Feed_Trans_Cost": feed_cost_j,
                         "Capex": Capex[j].X,
                         "GHG": sum(premium[f] * m_up[j, f].X for f in feedstock_types),
                         "FLH": (Omega[j].X / (c / 1e6)) * 8760 if c > 0 else 0,
@@ -704,7 +727,7 @@ if __name__ == '__main__':
     print(f"Saving financials with {len(merged_rows)} rows")
     fin_df.to_csv(os.path.join(output_dir, "Output_financials.csv"), index=False)
 
-    warmstart_path = os.path.join(output_dir, "warmstart.sol")
+    warmstart_path = os.path.join(output_dir, "/warmstart.sol")
     m.write(warmstart_path)
     print(f"Warm-start solution written to: {warmstart_path}")
 
