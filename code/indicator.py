@@ -257,6 +257,7 @@ def build_model(config):
     # Changed Y to binary for indicator constraints compatibility
     Y = {(j, a, c): m.addVar(vtype=GRB.BINARY, name=f"Y_{j}_{a}_{c}")
          for j in plant_locs for a in range(len(alternative_configs)) for c in caps}
+    '''
     upgrading_idx = next(a for a, alt in enumerate(alternative_configs) if alt["name"] == "Upgrading_tech1")
     target_capacity = 80_000_000
     for j in plant_locs:
@@ -266,7 +267,7 @@ def build_model(config):
                     Y[j, a, c].Start = 1.0
                 else:
                     Y[j, a, c].Start = 0.0
-
+    '''
 # Add auxiliary binary variable to indicate active plant
     is_active = m.addVars(plant_locs, vtype=GRB.BINARY, name="is_active")
     # ------------------------------------------------------------------
