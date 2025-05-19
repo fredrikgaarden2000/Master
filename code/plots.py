@@ -8,6 +8,7 @@ from collections import defaultdict
 import pickle
 import os
 from shapely.ops import unary_union
+from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
@@ -16,7 +17,7 @@ FILES = {
     "financials": os.path.join(BASE_DIR, "Output_financials_35_large.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_35.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
@@ -125,10 +126,87 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
     plt.savefig(os.path.join(BASE_DIR, "feedstock_stacked_chart.png"))
     plt.show()
 
-def plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords, geojson_path, output_png):
-    # Load cluster polygons
+def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
+                         plant_coords, supply_coords,
+                         geojson_path, output_png):
+        # -----------------------------------------------------------
+    # build legend handles
+    # -----------------------------------------------------------
+    # ----------------  styling dictionaries  ------------------
+    alt_colors = {
+        "FlexEEG_biogas"       : "blue",
+        "Upgrading_tech1"      : "purple",
+        "nonEEG_CHP"           : "orange",
+        "FlexEEG_biomethane"   : "green",
+    }
+
+    # NEW: map internal names → pretty legend labels
+    alt_labels = {
+        "FlexEEG_biogas"      : "Flex-EEG (biogas)",
+        "Upgrading_tech1"     : "Upgrading",
+        "nonEEG_CHP"          : "CHP (no EEG)",
+        "FlexEEG_biomethane"  : "Flex-EEG (biomethane)",
+    }
+
+    # -----------------------------------------------------------
+    # 0)  set up the figure *first*
+    # -----------------------------------------------------------
+    fig, ax = plt.subplots(figsize=(12, 10))
+
+    # -----------------------------------------------------------
+    # 1)  build & colour the flow-lines  (needs ax)
+    # -----------------------------------------------------------
+    lines = (in_flow_df.groupby(["SupplyNode", "PlantLocation"], as_index=False)
+                         .agg({"FlowTons": "sum"}))
+
+    # Great-circle length [km]
+    def haversine(lon1, lat1, lon2, lat2):
+        R = 6371.0
+        φ1, φ2 = np.radians(lat1), np.radians(lat2)
+        dφ, dλ = φ2 - φ1, np.radians(lon2 - lon1)
+        a = (np.sin(dφ/2)**2 +
+             np.cos(φ1)*np.cos(φ2)*np.sin(dλ/2)**2)
+        return 2*R*np.arcsin(np.sqrt(a))
+
+    lengths = []
+    for _, row in lines.iterrows():
+        s, p = row["SupplyNode"], row["PlantLocation"]
+        if s in supply_coords and p in plant_coords:
+            lon1, lat1 = supply_coords[s]
+            lon2, lat2 = plant_coords[p]
+            lengths.append(haversine(lon1, lat1, lon2, lat2))
+        else:
+            lengths.append(np.nan)
+    lines["SegLen_km"] = lengths
+    lines.dropna(subset=["SegLen_km"], inplace=True)
+
+    # normalise & colour
+    vmin, vmax = lines["SegLen_km"].min(), lines["SegLen_km"].max()
+    norm  = colors.Normalize(vmin=vmin, vmax=vmax)
+    cmap  = mpl.colormaps["Greys_r"]          # light-grey → black
+
+    seen_sources = set()
+    for _, row in lines.iterrows():
+        s, p = row["SupplyNode"], row["PlantLocation"]
+        lon1, lat1 = supply_coords[s]
+        lon2, lat2 = plant_coords[p]
+
+        col = cmap(norm(row["SegLen_km"]))
+        lw  = 1.2*(1 - norm(row["SegLen_km"]))   # thicker if shorter
+
+        ax.plot([lon1, lon2], [lat1, lat2],
+                color=col, linewidth=lw, alpha=0.9, zorder=2)
+
+        if s not in seen_sources:               # centroid marker once
+            ax.scatter(lon1, lat1, s=6, color=col,
+                       edgecolor="white", linewidth=0.3, zorder=3)
+            seen_sources.add(s)
+
+    # -----------------------------------------------------------
+    # 2)  draw cluster polygons & rest of the map  (uses same ax)
+    # -----------------------------------------------------------
     clusters_gdf = gpd.read_file(geojson_path).to_crs(epsg=4326)
-    
+
     BASE_DIR = "C:/Clone/Master/"
     gdf = gpd.read_file(os.path.join(BASE_DIR, "bavaria_lau_clean.geojson")).to_crs(epsg=4326)
 
@@ -149,8 +227,6 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coo
     clusters_gdf["DeliveredMethane"].fillna(0, inplace=True)
     clusters_gdf["Methane_for_plot"] = clusters_gdf["DeliveredMethane"].replace(0, np.nan)
     
-    # Plot
-    fig, ax = plt.subplots(figsize=(12, 10))
     # Cluster regions with black border
     clusters_gdf.plot(
         ax=ax,
@@ -183,25 +259,37 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coo
     cbar = fig.colorbar(sm, ax=ax, shrink=0.6)
     cbar.set_label("Delivered Methane (m³)", size=12)
     
-    # Flow lines
-    lines = in_flow_df.groupby(["SupplyNode","PlantLocation"], as_index=False)["FlowTons"].sum()
+    lines = (in_flow_df.groupby(["SupplyNode", "PlantLocation"],
+                                as_index=False)["FlowTons"]
+                            .sum())
+
+    seen_sources = set()          # avoid double plotting
     for _, row in lines.iterrows():
         s, p = row["SupplyNode"], row["PlantLocation"]
+
         if s in supply_coords and p in plant_coords:
             x1, y1 = supply_coords[s]
             x2, y2 = plant_coords[p]
-            ax.plot([x1, x2], [y1, y2], color="grey", linewidth=0.3, alpha=0.5, zorder=2)
-    
+
+            # the line itself
+            ax.plot([x1, x2], [y1, y2],
+                    color="grey", linewidth=0.4, alpha=0.5, zorder=2)
+
+            # ----------  NEW: mark the supply centroid  --------------
+            if s not in seen_sources:               # plot each only once
+                ax.scatter(x1, y1,
+                           s=12,                    # small filled circle
+                           color="grey",
+                           edgecolor="white",
+                           linewidth=0.3,
+                           zorder=3)
+                seen_sources.add(s)
+
     # Plant markers scaled by capacity
     caps = fin_df["Capacity"]
     min_c, max_c = caps.min(), caps.max()
-    def size_scale(c): return 50 + 150*(c-min_c)/(max_c-min_c)
+    def size_scale(c): return 150 + 150*(c-min_c)/(max_c-min_c)
     
-    alt_colors = {
-        "FlexEEG_biogas":"blue",
-        "Upgrading_tech1":"purple",
-        # add other categories as needed
-    }
     # Plot markers
     for _, r in fin_df.iterrows():
         if r.Alternative != "no_build":
@@ -213,28 +301,48 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coo
                 edgecolor="white", linewidth=0.5,
                 zorder=3
             )
-            ax.annotate(
-                str(r.PlantLocation),
-                xy=(lon, lat), xytext=(3,3),
-                textcoords="offset points",
-                fontsize=8, zorder=4
+        ax.annotate(
+            str(r.PlantLocation),
+            xy=(lon, lat), xytext=(4,4),
+            textcoords="offset points",
+            fontsize=8, zorder=4,
+            bbox=dict(
+                boxstyle="round,pad=0.2",      # rounded corners
+                facecolor="white",         # fill
+                edgecolor="none",              # no border line
+                alpha=0.8                      # slight transparency
             )
+        )
+
+
     
-    # Build legend handles
+    # -----------------------------------------------------------
+    # build legend handles
+    # -----------------------------------------------------------
     handles, labels = [], []
-    # Alternative legend
-    for alt, col in alt_colors.items():
-        handles.append(plt.Line2D([], [], marker="^", color=col, linestyle="",
-                                  markersize=8, label=alt))
-        labels.append(alt)
-    # Capacity size legend
-    for cap in [min_c, (min_c+max_c)/2, max_c]:
-        handles.append(plt.Line2D([], [], marker="^", color="gray", linestyle="",
-                                  markersize=np.sqrt(size_scale(cap)), label=f"{int(cap)} m³"))
-        labels.append(f"{int(cap)} m³")
-    
-    ax.legend(handles, labels, title="Alternatives & Capacities",
-              loc="upper left", bbox_to_anchor=(0.7, 1))
+
+    # 1) alternative-type legend  (colour only, fixed size)
+    for alt_key, col in alt_colors.items():
+        label = alt_labels.get(alt_key, alt_key)          # fallback: show key
+        h = plt.Line2D([], [], marker="^", linestyle="",
+                    color=col, markersize=8)
+        handles.append(h)
+        labels.append(label)
+
+    # 2) capacity-size legend  (same scatter proxies you draw on the map)
+    cap_ticks = [min_c, (min_c+max_c)/2, max_c]
+    for cap in cap_ticks:
+        h = plt.scatter([], [], marker="^", color="grey",
+                        s=size_scale(cap),
+                        edgecolor="white", linewidth=0.5)
+        handles.append(h)
+        labels.append(f"{int(cap):,} m³")
+
+    ax.legend(handles, labels,
+            title="Alternatives & Capacities",
+            loc="upper left", bbox_to_anchor=(0.7, 1))
+
+
     
     ax.set_axis_off()
     plt.tight_layout()
