@@ -20,7 +20,7 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale")
+output_dir = os.path.join(BASE_DIR, "results/large_scale/35")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
