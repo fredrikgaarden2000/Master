@@ -24,8 +24,8 @@ output_dir = os.path.join(BASE_DIR, "results/large_scale")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_75.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_75.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_35.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_35.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -229,6 +229,7 @@ config = {
 # 5) MODEL FUNCTION
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
+    m.setParam("NodefileStart", 50)  # Start offloading node data to disk after 40 GB
 
     Omega = m.addVars(plant_locs,lb=0,ub=max(capacity_levels) / 1e6,   # ← NEW
        name="Omega")
