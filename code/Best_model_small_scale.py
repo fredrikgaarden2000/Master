@@ -229,8 +229,9 @@ config = {
 # 5) MODEL FUNCTION
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
+    m.setParam("NodefileStart", 40)  # Start offloading node data to disk after 40 GB
 
-    Omega = m.addVars(plant_locs,lb=0,ub=max(capacity_levels) / 1e6,   # ← NEW
+    Omega = m.addVars(plant_locs,lb=0,ub=max(capacity_levels) / 1e6, 
        name="Omega")
 
     caps = capacity_levels

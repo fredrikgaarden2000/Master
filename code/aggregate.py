@@ -26,6 +26,19 @@ df = feedstock_df[feedstock_df['GISCO_ID'].str.startswith('DE_09')].copy()
 df = df.merge(yields_df[["substrat_ENG", "Biogas_Yield_m3_ton", "Methane_Content_%"]],
               on="substrat_ENG", how="left")
 
+INCLUDED_FEEDSTOCKS = [
+    "cattle_man",
+    "cattle_slu",
+    "pig_man",
+    "pig_slu",
+    "horse_man",
+    "clover_alfalfa_grass",
+    "legume_str",
+    "maize_str"
+]
+
+df = df[df["substrat_ENG"].isin(INCLUDED_FEEDSTOCKS)].copy()
+
 # Clean data
 df = df.dropna(subset=["Centroid_Lat", "Centroid_Lon", "nutz_pot_tFM", "Biogas_Yield_m3_ton", "Methane_Content_%"])
 df = df[(df["Centroid_Lat"].between(-90, 90)) & (df["Centroid_Lon"].between(-180, 180))]
