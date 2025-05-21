@@ -139,7 +139,11 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
         "nonEEG_CHP"           : "orange",
         "FlexEEG_biomethane"   : "green",
         "EEG_CHP_large1"    : "red",
-        "EEG_CHP_large2" : "pink", 
+        "EEG_CHP_large2" : "pink",
+        "EEG_CHP_small1"   : "magenta",
+        "EEG_CHP_small2"    : "lightblue",
+        "boiler" : "black",
+
 
     }
 
@@ -150,7 +154,10 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
         "nonEEG_CHP"          : "CHP (no EEG)",
         "FlexEEG_biomethane"  : "Flex-EEG (biomethane)",
         "EEG_CHP_large1"    : "150kw EEG Manure",
-        "EEG_CHP_large2" : "150kw EEG Manure + Clover", 
+        "EEG_CHP_large2" : "150kw EEG Manure + Clover",        
+        "EEG_CHP_small1"   : "75kw EEG Manure",
+        "EEG_CHP_small2"    : "75kw EEG Manure + Clover",
+        "boiler" : "Boiler", 
     }
 
     # -----------------------------------------------------------
@@ -304,27 +311,33 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
 
     # 1) All 75 candidate locations
     all_plants = set(plant_df['Location'])
+    #print(f"DEBUG: total candidates = {len(all_plants)}")
 
     # 2) Those that actually got built
     built_plants = set(fin_df['PlantLocation'])
+    #print(f"DEBUG: built plants = {built_plants}")
 
     # 3) The remainder are “no build”
-    no_builds = all_plants - built_plants
+    no_builds = sorted(all_plants - built_plants)
+    #print(f"DEBUG: no-build count = {len(no_builds)}, list = {no_builds}")
 
     # 4) Plot them as transparent grey X’s
-    for loc in sorted(no_builds):
+    for loc in no_builds:
+        if loc not in plant_coords:
+            #print(f"WARNING: {loc} missing from plant_coords!")
+            continue
         lon, lat = plant_coords[loc]
+        #print(f"  plotting no-build at {loc}: ({lon:.3f}, {lat:.3f})")
         ax.scatter(
             lon, lat,
             marker='x',
-            s=80,
-            facecolor='none',
+            s=200,
+            facecolor='black',
             edgecolor='grey',
-            linewidth=1.0,
+            linewidth=2,
             alpha=0.7,
             zorder=3
         )
-
 
     # Now plot built plants and annotate
     for _, r in fin_df.iterrows():
@@ -356,6 +369,12 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
     # build legend handles
     # -----------------------------------------------------------
     handles, labels = [], []
+
+    # no-build legend entry
+    handles.append( plt.Line2D([], [], marker='x', color='black',
+                               linestyle='', markersize=8,
+                               markeredgewidth=1.2) )
+    labels.append("No‐build location")
 
     # 1) alternative-type legend  (colour only, fixed size)
     for alt_key, col in alt_colors.items():
@@ -448,6 +467,6 @@ color_map = {
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
-#plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
+plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
 plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)

@@ -24,8 +24,8 @@ output_dir = os.path.join(BASE_DIR, "results/small_scale_added")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_75.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_75.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_100.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_100.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 def is_cereal(ft):
@@ -79,7 +79,7 @@ r = 0.042
 years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
 EEG_price_small = 210.0
-EEG_price_med = 190.0 + 25
+EEG_price_med = 190.0
 EEG_skip_chp_price = 194.3
 EEG_skip_upg_price = 210.4
 gas_price_mwh = 30
