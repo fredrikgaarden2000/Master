@@ -289,30 +289,53 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
     caps = fin_df["Capacity"]
     min_c, max_c = caps.min(), caps.max()
     def size_scale(c): return 150 + 150*(c-min_c)/(max_c-min_c)
-    
-    # Plot markers
+
+    # 1) Determine which locations were built
+    built_plants = set(fin_df['PlantLocation'])
+    # 2) All candidate locations from equally_spaced_locations
+    all_plants = set(plant_coords.keys())
+    # 3) The no-build locations are those not in the financials
+    no_builds = all_plants - built_plants
+    # 4) Plot no-build locations as transparent grey ‘x’
+    for loc in no_builds:
+        lon, lat = plant_coords[loc]
+        ax.scatter(
+            lon, lat,
+            marker='x',
+            s=80,
+            facecolor='none',
+            edgecolor='grey',
+            linewidth=1.0,
+            alpha=0.7,
+            zorder=3
+        )
+
+    # Now plot built plants and annotate
     for _, r in fin_df.iterrows():
+        lon, lat = plant_coords[r.PlantLocation]
         if r.Alternative != "no_build":
-            lon, lat = plant_coords[r.PlantLocation]
             ax.scatter(
-                lon, lat, marker="^",
+                lon, lat,
+                marker="^",
                 color=alt_colors.get(r.Alternative, "black"),
                 s=size_scale(r.Capacity),
-                edgecolor="white", linewidth=0.5,
-                zorder=3
+                edgecolor="white",
+                linewidth=0.5,
+                zorder=4
             )
         ax.annotate(
             str(r.PlantLocation),
             xy=(lon, lat), xytext=(4,4),
             textcoords="offset points",
-            fontsize=8, zorder=4,
+            fontsize=8, zorder=5,
             bbox=dict(
-                boxstyle="round,pad=0.2",      # rounded corners
-                facecolor="white",         # fill
-                edgecolor="none",              # no border line
-                alpha=0.8                      # slight transparency
+                boxstyle="round,pad=0.2",
+                facecolor="white",
+                edgecolor="none",
+                alpha=0.8
             )
         )
+
 
 
     

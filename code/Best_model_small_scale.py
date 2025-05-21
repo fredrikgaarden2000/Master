@@ -280,6 +280,7 @@ def build_model(config):
                 else:
                     Y[j, a, c].Start = 0.0
     '''
+
 # Add auxiliary binary variable to indicate active plant
     is_active = m.addVars(plant_locs, vtype=GRB.BINARY, name="is_active")
     # ------------------------------------------------------------------

@@ -302,6 +302,7 @@ def build_model(config):
     )
 
 
+
     # Changed Y to binary for indicator constraints compatibility
     Y = {(j, a, c): m.addVar(vtype=GRB.BINARY, name=f"Y_{j}_{a}_{c}")
          for j in plant_locs for a in range(len(alternative_configs)) for c in caps}
@@ -316,6 +317,7 @@ def build_model(config):
                 else:
                     Y[j, a, c].Start = 0.0
     '''
+
 # Add auxiliary binary variable to indicate active plant
     is_active = m.addVars(plant_locs, vtype=GRB.BINARY, name="is_active")
     # ------------------------------------------------------------------
