@@ -12,12 +12,12 @@ from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "Output_in_flow_35_large.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/small_scale/Output_in_flow.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "Output_financials_35_large.csv"),
+    "financials": os.path.join(BASE_DIR, "results/small_scale/Output_financials.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_35.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_75.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
@@ -138,6 +138,9 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
         "Upgrading_tech1"      : "purple",
         "nonEEG_CHP"           : "orange",
         "FlexEEG_biomethane"   : "green",
+        "EEG_CHP_large1"    : "red",
+        "EEG_CHP_large2" : "pink", 
+
     }
 
     # NEW: map internal names → pretty legend labels
@@ -146,6 +149,8 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
         "Upgrading_tech1"     : "Upgrading",
         "nonEEG_CHP"          : "CHP (no EEG)",
         "FlexEEG_biomethane"  : "Flex-EEG (biomethane)",
+        "EEG_CHP_large1"    : "150kw EEG Manure",
+        "EEG_CHP_large2" : "150kw EEG Manure + Clover", 
     }
 
     # -----------------------------------------------------------
@@ -288,16 +293,26 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
     # Plant markers scaled by capacity
     caps = fin_df["Capacity"]
     min_c, max_c = caps.min(), caps.max()
-    def size_scale(c): return 150 + 150*(c-min_c)/(max_c-min_c)
+    if max_c == min_c:
+        # all capacities equal → use constant marker size
+        def size_scale(c):
+            return 200
+    else:
+        def size_scale(c):
+            return 150 + 150 * (c - min_c) / (max_c - min_c)
 
-    # 1) Determine which locations were built
+
+    # 1) All 75 candidate locations
+    all_plants = set(plant_df['Location'])
+
+    # 2) Those that actually got built
     built_plants = set(fin_df['PlantLocation'])
-    # 2) All candidate locations from equally_spaced_locations
-    all_plants = set(plant_coords.keys())
-    # 3) The no-build locations are those not in the financials
+
+    # 3) The remainder are “no build”
     no_builds = all_plants - built_plants
-    # 4) Plot no-build locations as transparent grey ‘x’
-    for loc in no_builds:
+
+    # 4) Plot them as transparent grey X’s
+    for loc in sorted(no_builds):
         lon, lat = plant_coords[loc]
         ax.scatter(
             lon, lat,
@@ -309,6 +324,7 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
             alpha=0.7,
             zorder=3
         )
+
 
     # Now plot built plants and annotate
     for _, r in fin_df.iterrows():

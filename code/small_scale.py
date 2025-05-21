@@ -65,7 +65,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (250_000,)
+capacity_levels = (500_000,)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -78,8 +78,8 @@ chp_heat_eff = 0.4
 r = 0.042
 years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
-EEG_price_small = 210.0 + 45
-EEG_price_med = 190.0 +45
+EEG_price_small = 210.0
+EEG_price_med = 190.0 + 25
 EEG_skip_chp_price = 194.3
 EEG_skip_upg_price = 210.4
 gas_price_mwh = 30
@@ -131,13 +131,13 @@ auction_chp_limit = 225000 * FLH_max / alphaHV / system_methane_average / 1e6  #
 auction_bm_limit = 125000 * FLH_max / alphaHV / system_methane_average / 1e6  # Scale
 
 alternative_configs = [
-    {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
+    {"name": "EEG_CHP_large1", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "EEG_CHP_small2", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_small_m3,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_small},
+    {"name": "EEG_CHP_large2", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": EEG_med_m3,
+     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": EEG_price_med},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
