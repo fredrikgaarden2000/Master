@@ -186,11 +186,19 @@ def add_supply_constraints(m, avail_mass, x, plant_locs):
         m.addConstr(gp.quicksum(x[i, f, j] for j in plant_locs) <= amt / 1e6, name=f"Supply_{i}_{f}")  # Scale
 
 def add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, cn_min=20.0, cn_max=30.0):
-    for j in plant_locs:
-        total_feed = gp.quicksum(x[i, f, j] for i, f in avail_mass)
-        total_CN = gp.quicksum(x[i, f, j] * feed_yield[f]['CN'] for i, f in avail_mass)
-        m.addConstr(total_CN >= cn_min * total_feed, name=f"CN_min_{j}")
-        m.addConstr(total_CN <= cn_max * total_feed, name=f"CN_max_{j}")
+    m.addConstrs(
+    ( gp.quicksum(x[i,f,j]*feed_yield[f]['CN'] for (i,f) in avail_mass)
+        >= CN_min * gp.quicksum(x[i,f,j] for (i,f) in avail_mass)
+        for j in plant_locs ),
+    name="CN_min"
+    )
+
+    m.addConstrs(
+    ( gp.quicksum(x[i,f,j]*feed_yield[f]['CN'] for (i,f) in avail_mass)
+        <= CN_max * gp.quicksum(x[i,f,j] for (i,f) in avail_mass)
+        for j in plant_locs ),
+    name="CN_max"
+    )
 '''
 def add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_ghg_lim):
     for j in plant_locs:
@@ -229,7 +237,7 @@ config = {
 # 5) MODEL FUNCTION
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
-    m.setParam("NodefileStart", 2)  # Start offloading node data to disk after 40 GB
+    m.setParam("NodefileStart", 16)  # Start offloading node data to disk after 40 GB
 
     Omega = m.addVars(plant_locs,lb=0,ub=max(capacity_levels) / 1e6, 
        name="Omega")

@@ -24,8 +24,8 @@ output_dir = os.path.join(BASE_DIR, "results/large_scale/35")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_35.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_35.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_50.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_50.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -182,15 +182,29 @@ def add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, 
         m.addConstr(clover_feed[j] >= aux_clover, name=f"EEG_clover_{j}")
 '''
 def add_supply_constraints(m, avail_mass, x, plant_locs):
-    for (i, f), amt in avail_mass.items():
-        m.addConstr(gp.quicksum(x[i, f, j] for j in plant_locs) <= amt / 1e6, name=f"Supply_{i}_{f}")  # Scale
+    m.addConstrs(
+        ( gp.quicksum(x[i,f,j] for j in plant_locs)
+        <= amt/1e6
+        for (i,f), amt in avail_mass.items() ),
+        name="Supply"
+    )
+
 
 def add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, cn_min=20.0, cn_max=30.0):
-    for j in plant_locs:
-        total_feed = gp.quicksum(x[i, f, j] for i, f in avail_mass)
-        total_CN = gp.quicksum(x[i, f, j] * feed_yield[f]['CN'] for i, f in avail_mass)
-        m.addConstr(total_CN >= cn_min * total_feed, name=f"CN_min_{j}")
-        m.addConstr(total_CN <= cn_max * total_feed, name=f"CN_max_{j}")
+    m.addConstrs(
+    ( gp.quicksum(x[i,f,j]*feed_yield[f]['CN'] for (i,f) in avail_mass)
+        >= CN_min * gp.quicksum(x[i,f,j] for (i,f) in avail_mass)
+        for j in plant_locs ),
+    name="CN_min"
+    )
+
+    m.addConstrs(
+    ( gp.quicksum(x[i,f,j]*feed_yield[f]['CN'] for (i,f) in avail_mass)
+        <= CN_max * gp.quicksum(x[i,f,j] for (i,f) in avail_mass)
+        for j in plant_locs ),
+    name="CN_max"
+    )
+
 
 def add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_ghg_lim):
     for j in plant_locs:
@@ -207,10 +221,31 @@ def add_auction_constraints(m, Y, plant_locs, alternative_configs, capacity_leve
     m.addConstr(total_biomethane_capacity <= 125000 * FLH_max / alphaHV / system_methane_average / 1e6, name="EEG_Biomethane_Auction_Limit")
 
 def add_flh_constraints(m, Omega, Y, plant_locs, capacity_levels, N_CH4):
-    for j in plant_locs:
-        cap_expr = gp.quicksum((c / 1e6) * Y[j, a, c] for a in range(len(alternative_configs)) for c in capacity_levels)
-        m.addConstr(Omega[j] <= (FLH_max / 8760.0) * cap_expr, name=f"FLH_limit_{j}")
-        m.addConstr(N_CH4[j] <= (FLH_max / 8760.0) * Omega[j], name=f"FLH_limit_NCH4{j}")
+    # 1) Pre-compute the (a,c) → coefficient map once:
+    cap_coeff = {
+        (a, c): c / 1e6
+        for a in range(len(alternative_configs))
+        for c in capacity_levels
+    }
+
+    # 2) Bulk FLH limit on Omega
+    m.addConstrs(
+        ( Omega[j]
+        <= (FLH_max / 8760.0)
+            * gp.quicksum(cap_coeff[a,c] * Y[j, a, c] 
+                        for (a,c) in cap_coeff)
+        for j in plant_locs ),
+        name="FLH_limit"
+    )
+
+    # 3) Bulk FLH limit on N_CH4
+    m.addConstrs(
+        ( N_CH4[j]
+        <= (FLH_max / 8760.0) * Omega[j]
+        for j in plant_locs ),
+        name="FLH_limit_NCH4"
+    )
+
 
 
 
@@ -251,11 +286,21 @@ def build_model(config):
         vtype=GRB.CONTINUOUS,
         name="x"
     )
-    for i in supply_nodes:
-        for f in feedstock_types:
-            if (i, f) not in avail_mass:
-                for j in plant_locs:
-                    m.addConstr(x[i, f, j] == 0, name=f"ZeroFlow_{i}_{f}_{j}")
+    # Precompute all (i,f,j) that must be zero
+    zero_triplets = [
+        (i,f,j)
+        for i in supply_nodes
+        for f in feedstock_types
+        if (i,f) not in avail_mass
+        for j in plant_locs
+    ]
+
+    m.addConstrs(
+        ( x[i,f,j] == 0
+        for (i,f,j) in zero_triplets ),
+        name="ZeroFlow"
+    )
+
 
     # Changed Y to binary for indicator constraints compatibility
     Y = {(j, a, c): m.addVar(vtype=GRB.BINARY, name=f"Y_{j}_{a}_{c}")
@@ -298,9 +343,19 @@ def build_model(config):
         plant_locs, range(len(alternative_configs)), caps,
         lb=0, vtype=GRB.CONTINUOUS, name="Cost_alt_selected"
     )
+    
+    coef = {
+    (a, c): c / 1e6
+    for a in range(len(alternative_configs))
+    for c in capacity_levels
+    }
 
-    for j in plant_locs:
-        m.addConstr(Omega[j] <= gp.quicksum((c / 1e6) * Y[j, a, c] for a in range(len(alternative_configs)) for c in caps), name=f"Omega_Link_{j}")
+    m.addConstrs(
+        ( Omega[j] <= gp.quicksum(coef[a,c] * Y[j,a,c] for a,c in coef) 
+        for j in plant_locs ),
+        name="OmegaLink"
+    )
+
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
             if alt.get("max_cap_m3_year") is not None:
