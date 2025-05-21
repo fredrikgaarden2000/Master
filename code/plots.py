@@ -12,12 +12,12 @@ from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/small_scale/Output_in_flow.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/small_scale_normal/Output_in_flow.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/small_scale/Output_financials.csv"),
+    "financials": os.path.join(BASE_DIR, "results/small_scale_normal/Output_financials.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_75.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_100.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
@@ -391,7 +391,7 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
                         s=size_scale(cap),
                         edgecolor="white", linewidth=0.5)
         handles.append(h)
-        labels.append(f"{int(cap):,} m³")
+        #labels.append(f"{int(cap):,} m³")
 
     ax.legend(handles, labels,
             title="Alternatives & Capacities",
@@ -466,7 +466,111 @@ color_map = {
 }
 
 
+import seaborn as sns
+from scipy.stats import skew, kurtosis
+
+def plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png"):
+    """
+    Scatter‐plot of plant IRRs with two horizontal lines:
+      • the financing rate r
+      • the average IRR across all built plants
+    """
+    # 1) pull out only the plants with a valid IRR
+    df = fin_df.dropna(subset=["Plant_IRR"])
+    plants = df["PlantLocation"].astype(str)
+    irr    = df["Plant_IRR"].astype(float)
+
+    # 2) compute average IRR
+    avg_irr = irr.mean()
+
+    # 3) plot
+    fig, ax = plt.subplots(figsize=(12,6))
+    ax.scatter(plants, irr, s=100, color="teal", label="Plant IRR")
+    ax.axhline(y=interest_rate, color="red", linestyle="--", linewidth=2,
+               label=f"Financing Rate (r={interest_rate:.3f})")
+    ax.axhline(y=avg_irr, color="blue", linestyle="--", linewidth=2,
+               label=f"Average IRR ({avg_irr:.3f})")
+
+    ax.set_xlabel("Plant Location", fontsize=12)
+    ax.set_ylabel("Internal Rate of Return (IRR)", fontsize=12)
+    ax.set_title("Plant IRRs vs. Financing Rate", fontsize=14)
+    plt.xticks(rotation=45, ha="right")
+
+    # annotate the average IRR
+    ax.text(0.02, 0.90,
+            f"Avg. IRR = {avg_irr:.3f}",
+            transform=ax.transAxes,
+            fontsize=11,
+            bbox=dict(boxstyle="round", facecolor="white", alpha=0.8))
+
+    ax.legend(loc="upper right")
+    plt.tight_layout()
+    fig.savefig(output_png, dpi=300)
+    plt.show()
+    print(f"Saved IRR summary plot to {output_png}")
+
+import seaborn as sns
+
+def plot_distance_summary(in_flow_df, supply_coords, plant_coords, output_png="distance_summary.png"):
+    """
+    Plot a histogram of transport distances and annotate only:
+      • min
+      • mean
+      • 75th percentile
+      • max
+    """
+    # 1) compute distances
+    distances = []
+    R = 6371.0
+    for _, row in in_flow_df.iterrows():
+        s, p = row["SupplyNode"], row["PlantLocation"]
+        if s in supply_coords and p in plant_coords:
+            lon1, lat1 = supply_coords[s]
+            lon2, lat2 = plant_coords[p]
+            φ1, φ2 = np.radians(lat1), np.radians(lat2)
+            dφ, dλ = np.radians(lat2 - lat1), np.radians(lon2 - lon1)
+            a = np.sin(dφ/2)**2 + np.cos(φ1)*np.cos(φ2)*np.sin(dλ/2)**2
+            distances.append(2*R*np.arcsin(np.sqrt(a)))
+    distances = np.array(distances)
+
+    # 2) compute summary stats
+    mn   = distances.min()
+    mx   = distances.max()
+    mean = distances.mean()
+    q75  = np.percentile(distances, 75)
+
+    print(f"Distance summary (km): min={mn:.2f}, mean={mean:.2f}, 75th%={q75:.2f}, max={mx:.2f}")
+
+    # 3) plot
+    fig, ax = plt.subplots(figsize=(10,6))
+    sns.histplot(distances, bins=40, kde=False, color="steelblue", alpha=0.7, ax=ax)
+    ax.set_title("Transport Distance Distribution", fontsize=14)
+    ax.set_xlabel("Distance (km)", fontsize=12)
+    ax.set_ylabel("Count", fontsize=12)
+
+    # annotate
+    txt = (
+        f"Min: {mn:.2f} km\n"
+        f"Mean: {mean:.2f} km\n"
+        f"75th %ile: {q75:.2f} km\n"
+        f"Max: {mx:.2f} km"
+    )
+    ax.text(0.70, 0.75, txt, transform=ax.transAxes,
+            bbox=dict(boxstyle="round", facecolor="white", alpha=0.8),
+            fontsize=11)
+
+    plt.tight_layout()
+    fig.savefig(output_png, dpi=300)
+    plt.show()
+    print(f"Saved distance summary plot to {output_png}")
+
+
+
+
 #plot_methane_fraction(fin_df, system_methane_average)
 plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
 plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
+plot_distance_summary(in_flow_df, supply_coords, plant_coords,
+                               output_png="distance_distribution.png")
+plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
