@@ -110,8 +110,8 @@ feed_yield = {
 }
 
 capacity_dig = 27
-loading_cost_dig = 37*0
-cost_ton_km_dig = 0.104*0
+loading_cost_dig = 37
+cost_ton_km_dig = 0.104
 
 def is_manure(ftype):
     return 'man' in ftype.lower() or 'slu' in ftype.lower()
