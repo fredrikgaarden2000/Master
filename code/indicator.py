@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000, 40_000_000, 60_000_000, 80_000_000)
+capacity_levels = (40_000_000, 60_000_000, 80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -138,11 +138,6 @@ alternative_configs = [
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"gas": gas_price_m3, "co2": co2_price},
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
-     "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
-     "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
 ]
 
@@ -252,7 +247,7 @@ config = {
     "digestate_return_frac": 0.99,
     "cn_enabled": True,
     "maize_enabled": False,
-    "ghg_enabled": True,
+    "ghg_enabled": False,
     "auction_enabled": True,
     "flh_enabled": True}
 
@@ -382,7 +377,7 @@ def build_model(config):
     #add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs)
     add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
-    add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
+    #add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
     add_auction_constraints(m, Y, plant_locs, alternative_configs, caps)
     add_flh_constraints(m, Omega, Y, plant_locs, caps, N_CH4)
 
