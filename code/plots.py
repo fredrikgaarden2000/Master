@@ -12,9 +12,9 @@ from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/small_scale_normal/Output_in_flow.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/small_scale/small_scale_30/Output_in_flow.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/small_scale_normal/Output_financials.csv"),
+    "financials": os.path.join(BASE_DIR, "results/small_scale/small_scale_30/Output_financials.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations_100.csv"),
@@ -70,7 +70,7 @@ def plot_methane_fraction(fin_df, system_methane_average):
                label=f"System Average ({system_methane_average:.3f})")
     for j, frac in zip(valid_plants, methane_fractions):
         deviation = ((frac - system_methane_average) / system_methane_average) * 100
-        ax.text(j, frac, f"{deviation:+.1f}%", fontsize=8, ha="center", 
+        ax.text(j, frac, f"{deviation:+.1f}%", fontsize=12, ha="center", 
                 va="bottom" if frac < system_methane_average else "top")
     ax.set_xlabel("Plant Location")
     ax.set_ylabel("Methane Fraction (N_CH4 / Omega)")
@@ -497,10 +497,10 @@ def plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png"):
     plt.xticks(rotation=45, ha="right")
 
     # annotate the average IRR
-    ax.text(0.02, 0.90,
+    ax.text(0.02, 0.85,
             f"Avg. IRR = {avg_irr:.3f}",
             transform=ax.transAxes,
-            fontsize=11,
+            fontsize=14,
             bbox=dict(boxstyle="round", facecolor="white", alpha=0.8))
 
     ax.legend(loc="upper right")
@@ -557,7 +557,7 @@ def plot_distance_summary(in_flow_df, supply_coords, plant_coords, output_png="d
     )
     ax.text(0.70, 0.75, txt, transform=ax.transAxes,
             bbox=dict(boxstyle="round", facecolor="white", alpha=0.8),
-            fontsize=11)
+            fontsize=16)
 
     plt.tight_layout()
     fig.savefig(output_png, dpi=300)
@@ -569,7 +569,7 @@ def plot_distance_summary(in_flow_df, supply_coords, plant_coords, output_png="d
 
 #plot_methane_fraction(fin_df, system_methane_average)
 plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
+#plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
 plot_distance_summary(in_flow_df, supply_coords, plant_coords,
                                output_png="distance_distribution.png")

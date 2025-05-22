@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (40_000_000, 60_000_000, 80_000_000)
+capacity_levels = (60_000_000, 80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -308,8 +308,6 @@ def build_model(config):
                     Y[j, a, c].Start = 0.0
     '''
 
-# Add auxiliary binary variable to indicate active plant
-    is_active = m.addVars(plant_locs, vtype=GRB.BINARY, name="is_active")
     # ------------------------------------------------------------------
     #  UpgSel[j] = 1 ⇔ plant j has chosen (any) upgrading alternative
     # ------------------------------------------------------------------
@@ -317,13 +315,22 @@ def build_model(config):
             for j in plant_locs}
 
     for j in plant_locs:
-        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) <= 1, name=f"OneAlt_{j}")
-        # Link is_active to Omega
-        m.addConstr(Omega[j] <= max(capacity_levels) * is_active[j],
-              name=f"ActiveOmegaUpper_{j}")
-        m.addConstr(Omega[j] >= 1e-6 * is_active[j], name=f"ActiveOmegaLower_{j}")
-        # Enforce sum(Y) == is_active
-        m.addConstr(gp.quicksum(Y[j, a, c] for a in range(len(alternative_configs)) for c in caps) == is_active[j], name=f"ActivePlant_{j}")
+        # (1) at most one alternative–capacity pair chosen
+        m.addConstr(
+            gp.quicksum(Y[j, a, c]                          # ← binary
+                        for a in range(len(alternative_configs))
+                        for c in caps) <= 1,
+            name=f"OneAlt_{j}"
+        )
+
+        # (2) Ω[j] can be positive only if some Y[j,·,·] is 1
+        m.addConstr(
+            Omega[j] <= (max(capacity_levels) / 1e6) *       # scale to Mm³
+                    gp.quicksum(Y[j, a, c]                # same sum
+                                for a in range(len(alternative_configs))
+                                for c in caps),
+            name=f"OmegaActive_{j}"
+        )
 
     Rev_loc = m.addVars(plant_locs, lb=0, vtype=GRB.CONTINUOUS, name="Rev_loc")
     Cost_loc = m.addVars(plant_locs, lb=0, vtype=GRB.CONTINUOUS, name="Cost_loc")
@@ -376,7 +383,7 @@ def build_model(config):
     
     #add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs)
-    add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
+    #add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     #add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
     add_auction_constraints(m, Y, plant_locs, alternative_configs, caps)
     add_flh_constraints(m, Omega, Y, plant_locs, caps, N_CH4)
@@ -450,10 +457,14 @@ def build_model(config):
                         E_actual = N_CH4[j]*(chp_elec_eff*alphaHV/1000.0)
                         U_elec = (c / 1e6) * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
                         cap_production_elec = cap_fraction * U_elec
+                        m.addConstr(E_actual >= cap_production_elec * Y[j,a,c], name=f"MinProd_{j}_{a}_{c}")
+
+                        '''
                         m.addGenConstrIndicator(
                                 Y[j, a, c], True,
                                 E_actual >= cap_production_elec,
                                 name=f"MinProd_{j}_{a}_{c}")
+                        '''
                         EEG_rev  = cap_production_elec * effective_EEG
                         spot_rev = (E_actual - cap_production_elec) * electricity_spot_price
                         heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
