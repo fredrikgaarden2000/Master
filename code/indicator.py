@@ -139,11 +139,6 @@ alternative_configs = [
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-    {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, "max_cap_m3_year": None,
-     "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"spot": electricity_spot_price, "heat": heat_price},
-     "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None,
-     "capex_coeff":150.12, "capex_exp": -0.311, "capex_type": "standard",
-     "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
     {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", "prod_cap_factor": Cap_biomethane, "max_cap_m3_year": None,
      "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, "rev_price": {"EEG": EEG_skip_upg_price},
      "EEG_flag": True, "GHG_eligible": False, "feed_constraint": None,
@@ -357,7 +352,7 @@ def build_model(config):
         for j in plant_locs ),
         name="OmegaLink"
     )
-
+    '''
     for j in plant_locs:
         for a, alt in enumerate(alternative_configs):
             if alt.get("max_cap_m3_year") is not None:
@@ -367,6 +362,7 @@ def build_model(config):
                         Omega[j] <= alt["max_cap_m3_year"]/1e6,
                         name=f"MaxCap_{j}_{a}_{c}"
                     )
+    '''
     for j in plant_locs:
         m.addConstr(Omega[j] == gp.quicksum(x[i, f, j] * feed_yield[f]['biogas_m3_per_ton'] for i, f in avail_mass), name=f"Omega_Feed_{j}")
         m.addConstr(N_CH4[j] == gp.quicksum(x[i, f, j] * feed_yield[f]['biogas_m3_per_ton'] * feed_yield[f]['ch4_content'] for i, f in avail_mass), name=f"N_CH4_Feed_{j}")

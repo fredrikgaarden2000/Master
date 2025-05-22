@@ -79,7 +79,7 @@ r = 0.042
 years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
 EEG_price_small = 210.0
-EEG_price_med = 190.0 + 15
+EEG_price_med = 190.0 + 30
 EEG_skip_chp_price = 194.3
 EEG_skip_upg_price = 210.4
 gas_price_mwh = 30
@@ -220,7 +220,7 @@ config = {
 # 5) MODEL FUNCTION
 def build_model(config):
     m = gp.Model("ShadowPlant_Biogas_Model")
-    m.setParam("NodefileStart", 16)  # Start offloading node data to disk after 40 GB
+    m.setParam("NodefileStart", 10)  # Start offloading node data to disk after 40 GB
     
     Omega = m.addVars(plant_locs,lb=0,ub=max(capacity_levels) / 1e6,   # ← NEW
        name="Omega")
