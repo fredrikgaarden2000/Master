@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (60_000_000, 80_000_000)
+capacity_levels = (40_000_000,60_000_000, 80_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -585,12 +585,12 @@ if __name__ == '__main__':
     m, Omega, N_CH4, x, Y, m_up, Rev_loc, Cost_loc, Capex, TotalRev, TotalCost, FeedstockCost, GHGRevenue, TotalCapex, Rev_alt_selected, Cost_alt_selected, FeedstockCostPerPlant, BaseFeedstockCost, LoadingCost, TransportCost, DigestateCost, bonus = build_model(config)
     m.update()
     # –– Warm‐start if a solution exists
-    '''
+    
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     if os.path.isfile(warmstart_path):
         print(f"Loading warm‐start from {warmstart_path}")
         m.read(warmstart_path)
-    '''
+    
     print(f"  Quadratic constraints: {m.NumQConstrs}")
     print(f"  Quadratic objective terms (non-zeros): {m.NumQNZs}")
 
