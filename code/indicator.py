@@ -457,14 +457,14 @@ def build_model(config):
                         E_actual = N_CH4[j]*(chp_elec_eff*alphaHV/1000.0)
                         U_elec = (c / 1e6) * (FLH_max / 8760) * system_methane_average * chp_elec_eff * alphaHV / 1000.0
                         cap_production_elec = cap_fraction * U_elec
-                        m.addConstr(E_actual >= cap_production_elec * Y[j,a,c], name=f"MinProd_{j}_{a}_{c}")
+                        #m.addConstr(E_actual >= cap_production_elec * Y[j,a,c], name=f"MinProd_{j}_{a}_{c}")
 
-                        '''
+                        
                         m.addGenConstrIndicator(
                                 Y[j, a, c], True,
                                 E_actual >= cap_production_elec,
                                 name=f"MinProd_{j}_{a}_{c}")
-                        '''
+                        
                         EEG_rev  = cap_production_elec * effective_EEG
                         spot_rev = (E_actual - cap_production_elec) * electricity_spot_price
                         heat_rev = heat_price * (N_CH4[j] * chp_heat_eff * alphaHV / 1000.0)
