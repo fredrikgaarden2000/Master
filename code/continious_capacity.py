@@ -19,12 +19,12 @@ except FileNotFoundError:
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/50")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/35")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_50.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_50.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_35.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_35.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -219,7 +219,7 @@ def build_model(config):
     Q_MIN = 20
 
     # AFTER  (0 first, then 10 equal steps up to Q_MAX)
-    BREAKS = np.linspace(0, Q_MAX, 10)
+    BREAKS = np.linspace(0, Q_MAX, 5)
 
     # Decision variables
     Omega = m.addVars(plant_locs, lb=0, ub=Q_MAX, vtype=GRB.CONTINUOUS, name="Omega")

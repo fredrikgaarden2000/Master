@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import geopandas as gpd
 from shapely.ops import unary_union
 from matplotlib import colors, cm
+import matplotlib as mpl
 
 # --- CONFIGURATION ---
 BASE_DIR = "C:/Clone/Master/"
@@ -16,8 +17,8 @@ FEEDSTOCK   = os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv")
 
 SCENARIOS = [
     {"label": "Base case",  "fin_file": "results/small_scale/small_scale_normal/Output_financials.csv", "color": "red"},
-    {"label": "+15 ct/kWh", "fin_file": "results/small_scale/small_scale_15/Output_financials.csv",    "color": "blue"},
-    {"label": "+30 ct/kWh", "fin_file": "results/small_scale/small_scale_30/Output_financials.csv",    "color": "green"},
+    {"label": "+1.5 ct/kWh", "fin_file": "results/small_scale/small_scale_15/Output_financials.csv",    "color": "blue"},
+    {"label": "+3 ct/kWh", "fin_file": "results/small_scale/small_scale_30/Output_financials.csv",    "color": "green"},
 ]
 
 # --- LOAD COMMON DATA ---
@@ -88,6 +89,14 @@ for scen in SCENARIOS[::-1]:
         zorder=5 if scen["label"]=="Base case" else 4,
         label=f"{scen['label']} ({len(built)})"
     )
+    # Colorbar
+vmin = clusters_gdf["Methane_for_plot"].min()
+vmax = clusters_gdf["Methane_for_plot"].max()
+norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
+sm = mpl.cm.ScalarMappable(norm=norm, cmap="OrRd")
+sm.set_array([])
+cbar = fig.colorbar(sm, ax=ax, shrink=0.6)
+cbar.set_label("Delivered Methane (m³)", size=12)
 
 # --- FLOW LINES for +30 only (greyscale fade + end-dot) ---
 lines = in30.groupby(["SupplyNode","PlantLocation"], as_index=False)["FlowTons"].sum()
