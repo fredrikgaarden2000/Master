@@ -24,8 +24,8 @@ output_dir = os.path.join(BASE_DIR, "results/large_scale/35")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_35.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_35.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_10.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_10.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
