@@ -12,9 +12,9 @@ from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/small_scale/small_scale_30/Output_in_flow.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Flows.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/small_scale/small_scale_30/Output_financials.csv"),
+    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations_100.csv"),
@@ -568,9 +568,8 @@ def plot_distance_summary(in_flow_df, supply_coords, plant_coords, output_png="d
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
-plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-#plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
+#plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
+plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
-plot_distance_summary(in_flow_df, supply_coords, plant_coords,
-                               output_png="distance_distribution.png")
-plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
+#plot_distance_summary(in_flow_df, supply_coords, plant_coords,output_png="distance_distribution.png")
+#plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
