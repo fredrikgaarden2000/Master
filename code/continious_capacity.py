@@ -19,7 +19,7 @@ except FileNotFoundError:
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/optimal")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/optimal_no_EEG_GHG")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -78,8 +78,8 @@ years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
 EEG_price_small = 210.0
 EEG_price_med = 190.0
-EEG_skip_chp_price = 194.3
-EEG_skip_upg_price = 210.4
+EEG_skip_chp_price = 194.3*0
+EEG_skip_upg_price = 210.4*0
 gas_price_mwh = 30
 gas_price_m3 = gas_price_mwh * (alphaHV / 1000)
 co2_price_ton = 20
@@ -89,7 +89,7 @@ Cap_biomethane = 0.10
 variable_upg_cost = 0.05
 alpha_GHG_comp = 94.0
 alpha_GHG_lim = 0.35 * alpha_GHG_comp
-GHG_certificate_price = 50
+GHG_certificate_price = 50*0
 avail_mass = {(row['GISCO_ID'], row['substrat_ENG']): row['nutz_pot_tFM'] for _, row in feedstock_df.iterrows()}
 dist_ik = {(row['Feedstock_LAU'], row['Location']): row['Distance_km'] for _, row in distance_df.iterrows()}
 dist_pl_iprime = {(ploc, iP): dist_ik.get((iP, ploc), 0.0) for ploc in plant_locs for iP in iPrime_nodes}
