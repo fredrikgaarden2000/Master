@@ -11,6 +11,44 @@ import numpy as np
 import numpy_financial as npf
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
+
+
+# 1) LOAD DATA
+try:
+    BASE_DIR = "/home/fredrgaa/Master/"
+    if not os.path.exists(BASE_DIR):
+        raise FileNotFoundError("Linux path does not exist")
+except FileNotFoundError:
+    BASE_DIR = "C:/Clone/Master/"
+    if not os.path.exists(BASE_DIR):
+        raise FileNotFoundError("Neither Linux nor Windows path exists")
+    
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/optimal_no_EEG_GHG")
+os.makedirs(output_dir, exist_ok=True)
+df = pd.read_csv(f"{BASE_DIR}results/large_scale_cont/10_greedy_with_alternatives/Financials.csv")
+feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
+
+
+# 2) convert to matching units
+df["Capacity_Mm3"]   = df["Capacity"] / 1e6    # Mm³/yr
+df["FeedTrans_M€"]   = df["Feed_Trans_Cost"]           # it’s already in M€
+
+# 3) simple linear fit
+#    FeedTrans_M€ = a * Capacity_Mm3 + b
+a, b = np.polyfit(df["Capacity_Mm3"], df["FeedTrans_M€"], 1)
+
+# 4) get uncertainty bounds by looking at cost per unit
+df["unit_cost"] = df["FeedTrans_M€"] / df["Capacity_Mm3"]  # M€/Mm³
+coef_min, coef_max = np.percentile(df["unit_cost"], [10, 90])  # e.g. 10th/90th pct
+
+# 5) print your new parameters
+print(f"feed_cost_coef (€/Nm³)    = {a:.3f}  ")
+print(f"feed_cost_const (€/yr)     = {b*1e6:,.0f}  ")
+print(f"feed_cost_coef_range       = [{coef_min:.3f}, {coef_max:.3f}]  ")
 
 # ─────────────────────────────────────────────────────────────
 # 1. PARAMETERS – consistent with original models, updated costs
@@ -30,8 +68,8 @@ P = {
     "alpha_GHG_ref": 94.0,        # baseline gCO₂e/MJ for certificates
 
     # simplified logistics (updated from graph)
-    "feed_cost_coef" : 0.1,       # €/Nm³ biogas (from 1E-07 M€/Nm³ = 0.1 €/Nm³)
-    "feed_cost_const": 251200,    # €/yr (from 0.2512 M€/yr)
+    "feed_cost_coef" : a,       # €/Nm³ biogas (from 1E-07 M€/Nm³ = 0.1 €/Nm³)
+    "feed_cost_const": b * 1e6,    # €/yr (from 0.2512 M€/yr)
 
     # digestate handling
     "digestate_frac"     : 0.9,   # kg digestate per kg feed
@@ -42,14 +80,13 @@ P = {
     "Q_MAX" : 80,                # Mm³ biogas/yr
 
     # uncertainty ranges
-    "feed_cost_coef_range" : [0.05, 0.15],  # ±50% of 0.1
-    "digestate_unit_cost_range" : [2.81*0.7, 2.81*1.3],  # ±30%
+    "feed_cost_coef_range"  : [coef_min, coef_max],
 }
 
 # constants
-AVG_GHG_INTENSITY = 30           # gCO₂e/MJ typical feedstock
+AVG_GHG_INTENSITY = -78           # gCO₂e/MJ typical feedstock
 AVG_CH4_CONTENT   = 0.60         # CH₄ share in raw biogas
-AVG_BIOGAS_YIELD  = 100          # Nm³ biogas / t feedstock
+AVG_BIOGAS_YIELD  = 67          # Nm³ biogas / t feedstock
 
 # ─────────────────────────────────────────────────────────────
 # 2. CASH-FLOW COMPONENTS
@@ -150,22 +187,19 @@ if __name__ == "__main__":
     gas_prices = [break_even_gas_price(c, P) for c in caps]
     co2_prices = [break_even_co2_price(c, P) for c in caps]
 
-    # Uncertainty bounds
-    lower_params = {
-        "feed_cost_coef": P["feed_cost_coef_range"][0],
-        "digestate_unit_cost": P["digestate_unit_cost_range"][0]
-    }
-    upper_params = {
-        "feed_cost_coef": P["feed_cost_coef_range"][1],
-        "digestate_unit_cost": P["digestate_unit_cost_range"][1]
-    }
-
-    ghg_prices_lower = [break_even_ghg_price(c, P, **lower_params) for c in caps]
-    ghg_prices_upper = [break_even_ghg_price(c, P, **upper_params) for c in caps]
-    gas_prices_lower = [break_even_gas_price(c, P, **lower_params) for c in caps]
-    gas_prices_upper = [break_even_gas_price(c, P, **upper_params) for c in caps]
-    co2_prices_lower = [break_even_co2_price(c, P, **lower_params) for c in caps]
-    co2_prices_upper = [break_even_co2_price(c, P, **upper_params) for c in caps]
+    # Uncertainty bounds *only* on feed_cost_coef
+    ghg_prices_lower = [break_even_ghg_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][0])
+                            for c in caps]
+    ghg_prices_upper = [break_even_ghg_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][1])
+                            for c in caps]
+    gas_prices_lower = [break_even_gas_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][0])
+                            for c in caps]
+    gas_prices_upper = [break_even_gas_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][1])
+                            for c in caps]
+    co2_prices_lower = [break_even_co2_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][0])
+                            for c in caps]
+    co2_prices_upper = [break_even_co2_price(c, P, feed_cost_coef=P["feed_cost_coef_range"][1])
+                            for c in caps]
 
     # --- Plot setup ---
     fig = plt.figure(figsize=(12, 4))

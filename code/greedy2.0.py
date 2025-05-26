@@ -26,8 +26,8 @@ def load_data():
 
     try:
         feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_100.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_100.csv")
+        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
+        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
         yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
     except FileNotFoundError as e:
         print(f"Critical error: {str(e)}")
@@ -642,11 +642,11 @@ def generate_outputs(results, dist_ik, output_dir):
     financials = []
     for res in results:
         financials.append({
-            'PlantID': res['plant'],
+            'PlantLocation': res['plant'],
             'Longitude': res['coordinates'][0],
             'Latitude': res['coordinates'][1],
-            'Configuration': res['config'],
-            'TotalCapacity_m3': res['capacity'] * 1e6,
+            'Alternative': res['config'],
+            'Capacity': res['capacity'] * 1e6,
             'NPV_EUR': res['npv'],
             'IRR' : res['irr'],
             'CAPEX_EUR': res['capex'],
@@ -661,10 +661,10 @@ def generate_outputs(results, dist_ik, output_dir):
     for res in results:
         for (i, f), qty in res['used_feedstock'].items():
             flows.append({
-                'PlantID': res['plant'],
-                'SupplyCluster': i,
+                'PlantLocation': res['plant'],
+                'SupplyNode': i,
                 'Feedstock': f,
-                'Quantity_t': qty,
+                'FlowTons': qty,
                 'Distance_km': dist_ik.get((i, res['plant']), 0)
             })
     
