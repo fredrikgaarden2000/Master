@@ -153,7 +153,7 @@ alternative_configs = [
 premium = {f: max(0, (alpha_GHG_comp - feed_yield[f]['GHG_intensity'])) * (alphaHV * 3.6) * GHG_certificate_price / 1e6 for f in feedstock_types}
 threshold_m3 = (100 * FLH_max) / (chp_elec_eff * system_methane_average * alphaHV) / 1e6
 FLH_min_limit = 1000
-Q_MAX = 80_000_000 / 1e6  # Maximum capacity in Mm³/yr
+Q_MAX = 60_000_000 / 1e6  # Maximum capacity in Mm³/yr
 Q_MIN = 5_000_000 / 1e6  # Minimum capacity in Mm³/yr
 M_large = Q_MAX * 1.01
 avg_discount = sum(0.99**t for t in range(1, years+1)) / years
@@ -226,7 +226,7 @@ def build_model(config):
     m.setParam("NodefileStart", 50)  # Start offloading node data to disk after 40 GB
 
     # Global parameters for continuous capacity
-    Q_MAX = 80  # [Mm³ biogas per year]
+    Q_MAX = 60  # [Mm³ biogas per year]
     Q_MIN = 5
 
     # AFTER  (0 first, then 10 equal steps up to Q_MAX)

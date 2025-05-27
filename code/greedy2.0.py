@@ -26,8 +26,8 @@ def load_data():
 
     try:
         feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_300.csv")
+        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_300.csv")
         yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
     except FileNotFoundError as e:
         print(f"Critical error: {str(e)}")
@@ -52,8 +52,8 @@ def initialize_parameters():
     return {
         "FLH_max": 8000,
         "alphaHV": 9.97,
-        "CN_min": 15.0,  # Changed from original
-        "CN_max": 35.0,  # Changed from original
+        "CN_min": 20.0,  # Changed from original
+        "CN_max": 30.0,  # Changed from original
         "heat_price": 20,
         "chp_elec_eff": 0.4,
         "chp_heat_eff": 0.4,

@@ -53,12 +53,16 @@ P = {
     "digestate_frac": 0.9,
     "digestate_unit_cost": (27/37 + 0.104*20),
     "Q_MIN": 5,
-    "Q_MAX": 80,
+    "Q_MAX": 60,
     "chp_elec_eff": 0.4,
     "chp_heat_eff": 0.4,
-    "eeg_price": 210,
+    "eeg_bg_price": 194.3,
+    "eeg_bm_price": 210.4,
+    "cap_biogas": 0.45,
+    "cap_biomethane": 0.1,
     "elec_spot_price": 60,
     "heat_price": 20,
+    "bonus_rate": 0.0293118,  # €/Mm³
 }
 
 AVG_CH4_CONTENT = 0.588
@@ -75,7 +79,6 @@ def npv_parts(cap, p, tech="Upgrading", feed_cost_coef=None):
     capex_bio = Q_bio * 150.12 * (Q_bio ** -0.311) / 1e6  # M€
     opex_bio = 2.1209 * (Q_bio ** 0.8359) / 1e6  # M€/yr
     trans = (fc * Q_bio + p["feed_cost_const"]) / 1e6  # M€/yr
-    #digest = (Q_bio / AVG_BIOGAS_YIELD) * p["digestate_frac"] * p["digestate_unit_cost"] / 1e6  # M€/yr
 
     # Technology-Specific
     if tech == "Upgrading":
@@ -91,41 +94,42 @@ def npv_parts(cap, p, tech="Upgrading", feed_cost_coef=None):
         K_gas = Q_ch4 * (p["alphaHV"] / 1000) / 1e6
         K_co2 = (Q_bio - Q_ch4) / 556.2 / 1e6
     elif tech == "FlexEEG_biogas":
-        capex_chp = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** -0.311) / 1e6
+
         opex_chp = 2.1209 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** 0.8359) / 1e6
-        eeg_rev = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * p["eeg_price"] / 1e6
-        spot_rev = 0  # Assume EEG covers all electricity
-        heat_rev = Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 * p["heat_price"] / 1e6
-        init = -(capex_bio + capex_chp)
+        eeg_rev = p["eeg_bg_price"] *p["cap_biogas"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        spot_rev = p["elec_spot_price"] * Q_ch4 *(1-p["cap_biogas"]) *p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev =  p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        bonus_rev = Q_bio * p["bonus_rate"] / 1e6  # M€/yr
+        init = -(capex_bio)
         opex = opex_bio + opex_chp + trans
-        ann = eeg_rev + spot_rev + heat_rev - opex
-        K_ghg = 0  # No GHG revenue
-        K_gas = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6  # For EEG
-        K_co2 = 0  # No CO2 revenue
+        ann = eeg_rev + spot_rev + heat_rev + bonus_rev - opex
+        K_ghg = 0
+        K_gas = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        K_co2 = 0
     elif tech == "FlexEEG_biomethane":
         capex_upg = (Q_bio / p["FLH_max"]) * 47777 * ((Q_bio / p["FLH_max"]) ** -0.421) / 1e6 + 1
-        capex_chp = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** -0.311) / 1e6
+
         opex_upg = p["var_upg_cost"] * Q_ch4 / 1e6
         opex_chp = 2.1209 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** 0.8359) / 1e6
-        eeg_rev = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * p["eeg_price"] / 1e6
-        spot_rev = 0
-        heat_rev = Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 * p["heat_price"] / 1e6
-        init = -(capex_bio + capex_upg + capex_chp)
+        eeg_rev = p["eeg_bm_price"] *p["cap_biomethane"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        spot_rev = p["elec_spot_price"] * Q_ch4 *(1-p["cap_biomethane"]) *p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev =  p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        bonus_rev = Q_bio * p["bonus_rate"] / 1e6
+        init = -(capex_bio + capex_upg)
         opex = opex_bio + opex_upg + opex_chp + trans
-        ann = eeg_rev + spot_rev + heat_rev - opex
+        ann = eeg_rev + spot_rev + heat_rev + bonus_rev - opex
         K_ghg = 0
         K_gas = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
         K_co2 = 0
     elif tech == "NonEEG_CHP":
-        capex_chp = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** -0.311) / 1e6
         opex_chp = 2.1209 * ((Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000) ** 0.8359) / 1e6
-        spot_rev = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 * p["elec_spot_price"] / 1e6
-        heat_rev = Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 * p["heat_price"] / 1e6
-        init = -(capex_bio + capex_chp)
+        spot_rev = p["elec_spot_price"] * Q_ch4 *p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev =  p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        init = -(capex_bio)
         opex = opex_bio + opex_chp + trans
         ann = spot_rev + heat_rev - opex
         K_ghg = 0
-        K_gas = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6  # For spot
+        K_gas = Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
         K_co2 = 0
     else:
         raise ValueError(f"Unknown technology: {tech}")
@@ -139,7 +143,8 @@ def break_even_price(cap, p, key, tech="Upgrading", feed_cost_coef=None):
         "GHG_certificate_price": (Kghg, p["GHG_certificate_price"]),
         "gas_price_mwh": (Kg, p["gas_price_mwh"]),
         "co2_price_ton": (Kco2, p["co2_price_ton"]),
-        "eeg_price": (Kg, p["eeg_price"]),
+        "eeg_bg_price": (Kg, p["eeg_bg_price"]),
+        "eeg_bm_price": (Kg, p["eeg_bm_price"]),
         "elec_spot_price": (Kg, p["elec_spot_price"]),
         "heat_price": (Kg, p["heat_price"]),
     }
@@ -160,12 +165,12 @@ alternative_configs = [
     },
     {
         "name": "FlexEEG_biogas",
-        "metrics": ["eeg_price", "elec_spot_price", "heat_price"],
+        "metrics": ["eeg_bg_price", "elec_spot_price", "heat_price"],
         "labels": ["EEG tariff [€/MWh]", "Spot elec [€/MWh]", "Heat [€/MWh]"],
     },
     {
         "name": "FlexEEG_biomethane",
-        "metrics": ["eeg_price", "elec_spot_price", "heat_price"],
+        "metrics": ["eeg_bm_price", "elec_spot_price", "heat_price"],
         "labels": ["EEG tariff [€/MWh]", "Spot elec [€/MWh]", "Heat [€/MWh]"],
     },
     {
@@ -220,40 +225,37 @@ for cap in debug_caps:
             gas_rev = Q_ch4 * (P["gas_price_mwh"] * P["alphaHV"] / 1000) / 1e6
             co2_rev = (Q_bio - Q_ch4) * (P["co2_price_ton"] / 556.2) / 1e6
             ghg_rev = (P["alpha_GHG_ref"] - AVG_GHG) * P["alphaHV"] * 3.6 * Q_ch4 * P["GHG_certificate_price"] / 1e12
-            eeg_rev = spot_rev = heat_rev = 0
+            eeg_rev = spot_rev = heat_rev = bonus_rev = 0
         elif tech == "FlexEEG_biogas":
             capex_upg = 0
-            capex_chp = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** -0.311) / 1e6
             opex_upg = 0
             opex_chp = 2.1209 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** 0.8359) / 1e6
-            eeg_rev = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * P["eeg_price"] / 1e6
-            spot_rev = 0
-            heat_rev = Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 * P["heat_price"] / 1e6
+            eeg_rev = P["eeg_bg_price"] *P["cap_biogas"] * Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            spot_rev = P["elec_spot_price"] * Q_ch4 *(1-P["cap_biogas"]) *P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev =  P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            bonus_rev = Q_bio * P["bonus_rate"] / 1e6
             gas_rev = co2_rev = ghg_rev = 0
         elif tech == "FlexEEG_biomethane":
             capex_upg = (Q_bio / P["FLH_max"]) * 47777 * ((Q_bio / P["FLH_max"]) ** -0.421) / 1e6 + 1
-            capex_chp = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** -0.311) / 1e6
             opex_upg = P["var_upg_cost"] * Q_ch4 / 1e6
             opex_chp = 2.1209 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** 0.8359) / 1e6
-            eeg_rev = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * P["eeg_price"] / 1e6
-            spot_rev = 0
-            heat_rev = Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 * P["heat_price"] / 1e6
+            eeg_rev = P["eeg_bm_price"] *P["cap_biomethane"] * Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            spot_rev = P["elec_spot_price"] * Q_ch4 *(1-P["cap_biomethane"]) *P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev =  P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            bonus_rev = Q_bio * P["bonus_rate"] / 1e6
             gas_rev = co2_rev = ghg_rev = 0
         elif tech == "NonEEG_CHP":
             capex_upg = 0
-            capex_chp = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * 150.12 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** -0.311) / 1e6
             opex_upg = 0
             opex_chp = 2.1209 * ((Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000) ** 0.8359) / 1e6
-            spot_rev = Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 * P["elec_spot_price"] / 1e6
-            heat_rev = Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 * P["heat_price"] / 1e6
-            eeg_rev = gas_rev = co2_rev = ghg_rev = 0
+            spot_rev = P["elec_spot_price"] * Q_ch4 *P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev =  P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            eeg_rev = gas_rev = co2_rev = ghg_rev = bonus_rev = 0
 
         print(f"    CAPEX (M€):")
         print(f"      Biogas:      {capex_bio:10.2f}")
         if capex_upg > 0:
             print(f"      Upgrading:   {capex_upg:10.2f}")
-        if capex_chp > 0:
-            print(f"      CHP:         {capex_chp:10.2f}")
         print(f"      Total:       {-init:10.2f}")
         print(f"    OPEX (M€/yr):")
         print(f"      Biogas:      {opex_bio:10.2f}")
@@ -276,7 +278,9 @@ for cap in debug_caps:
             print(f"      Spot Elec:   {spot_rev:10.2f}")
         if heat_rev > 0:
             print(f"      Heat:        {heat_rev:10.2f}")
-        print(f"      Total:       {gas_rev + co2_rev + ghg_rev + eeg_rev + spot_rev + heat_rev:10.2f}")
+        if bonus_rev > 0:
+            print(f"      Bonus:       {bonus_rev:10.2f}")
+        print(f"      Total:       {gas_rev + co2_rev + ghg_rev + eeg_rev + spot_rev + heat_rev + bonus_rev:10.2f}")
         print(f"    Net Annual (M€/yr): {ann:10.2f}")
     print("-" * 50)
 print("----- END DETAILED BREAKDOWN -----\n")
