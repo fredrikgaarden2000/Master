@@ -69,7 +69,7 @@ def initialize_parameters():
         "variable_upg_cost": 0.05,
         "alpha_GHG_comp": 94.0,
         "GHG_certificate_price": 50,
-        "Q_MAX": 80,
+        "Q_MAX": 60,
         "Q_MIN": 0.01,
         "cap_biogas": 0.45,
         "cap_biomethane": 0.10,  # Added from alternatives
