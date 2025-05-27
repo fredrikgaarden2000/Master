@@ -19,7 +19,7 @@ except FileNotFoundError:
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/optimal_no_EEG_GHG")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/optimal_no_EEG")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -78,8 +78,8 @@ years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
 EEG_price_small = 210.0
 EEG_price_med = 190.0
-EEG_skip_chp_price = 194.3
-EEG_skip_upg_price = 210.4
+EEG_skip_chp_price = 194.3*0
+EEG_skip_upg_price = 210.4*0
 gas_price_mwh = 30
 gas_price_m3 = gas_price_mwh * (alphaHV / 1000)
 co2_price_ton = 20
