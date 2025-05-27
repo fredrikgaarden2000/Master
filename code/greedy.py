@@ -1,440 +1,315 @@
-import gurobipy as gp
-from gurobipy import GRB
-import pandas as pd
-import numpy as np
+#!/usr/bin/env python3
+# scenario_analysis_all_alternatives_corrected.py
+# ------------------------------------------------------------
+# Multi-technology break-even analysis for biogas pathways with corrected K sensitivities.
+# ------------------------------------------------------------
+
 import os
-import time
+import numpy as np
+import numpy_financial as npf
+import matplotlib.pyplot as plt
+import pandas as pd
+import math
 
-# 1) DATA LOADING WITH ERROR HANDLING
-def load_data():
-    try:
-        BASE_DIR = "/home/fredrgaa/Master/"
-        if not os.path.exists(BASE_DIR):
-            raise FileNotFoundError("Linux path not found")
-    except FileNotFoundError:
-        BASE_DIR = "C:/Clone/Master/"
-        if not os.path.exists(BASE_DIR):
-            raise FileNotFoundError("No valid base directory found")
+# Load & Fit Transport+Feedstock Cost
+BASE_DIR = "/home/fredrgaa/Master/"
+if not os.path.exists(BASE_DIR):
+    BASE_DIR = "C:/Clone/Master/"
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont")
+os.makedirs(output_dir, exist_ok=True)
 
-    def safe_load_csv(path):
-        if not os.path.exists(path):
-            raise FileNotFoundError(f"Missing file: {path}")
-        return pd.read_csv(path)
+fin = pd.read_csv(os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials.csv"))
+fin["Capacity_Mm3"] = fin["Capacity"] / 1e6
+fin["FeedTrans_M€"] = fin["Feed_Trans_Cost"]
 
-    try:
-        feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_100_copy.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_100.csv")
-        yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
-    except FileNotFoundError as e:
-        print(f"Critical error: {str(e)}")
-        exit(1)
+a, b = np.polyfit(fin["Capacity_Mm3"], fin["FeedTrans_M€"], 1)
+fin["unit_cost"] = fin["FeedTrans_M€"] / fin["Capacity_Mm3"]
+coef_min, coef_max = np.percentile(fin["unit_cost"], [10, 90])
 
-    feedstock_df = feedstock_df[
-        (feedstock_df["GISCO_ID"].notna()) &
-        (feedstock_df["Centroid_Lon"].notna()) &
-        (feedstock_df["Centroid_Lat"].notna()) &
-        (feedstock_df["nutz_pot_tFM"] >= 10)
-    ].copy()
+print(f"feed_cost_coef    = {a:.4f}  M€/Mm³ → €/Nm³ = {a*1e6/1e6:.4f}")
+print(f"feed_cost_const   = {b*1e6:,.0f} €/yr")
+print(f"feed_cost_range   = [{coef_min:.4f}, {coef_max:.4f}] M€/Mm³")
 
-    required_columns = ['Feedstock_LAU', 'Location', 'Distance_km']
-    if not all(col in distance_df.columns for col in required_columns):
-        missing = [col for col in required_columns if col not in distance_df.columns]
-        raise ValueError(f"Distance matrix missing columns: {missing}")
+# Techno-Economic Parameters
+P = {
+    "FLH_max": 8000,
+    "alphaHV": 9.97,
+    "r": 0.042,
+    "years": 25,
+    "gas_price_mwh": 30,
+    "co2_price_ton": 20,
+    "GHG_certificate_price": 50,
+    "var_upg_cost": 0.05,
+    "alpha_GHG_ref": 94.0,
+    "feed_cost_coef": a,
+    "feed_cost_const": b * 1e6,
+    "feed_cost_coef_range": [coef_min, coef_max],
+    "digestate_frac": 0.9,
+    "digestate_unit_cost": (27 / 37 + 0.104 * 20),
+    "Q_MIN": 5,
+    "Q_MAX": 60,
+    "chp_elec_eff": 0.4,
+    "chp_heat_eff": 0.4,
+    "boiler_eff": 0.9,
+    "eeg_bg_price": 194.3,
+    "eeg_bm_price": 210.4,
+    "cap_biogas": 0.45,
+    "cap_biomethane": 0.1,
+    "elec_spot_price": 60,
+    "heat_price": 20,
+    "bonus_rate": 100,  
+}
 
-    return feedstock_df, plant_df, distance_df, yields_df
+AVG_CH4_CONTENT = 0.588
+AVG_BIOGAS_YIELD = 67
+AVG_GHG = -78
 
-# 2) PARAMETER INITIALIZATION
-def initialize_parameters():
-    return {
-        "FLH_max": 8000,
-        "alphaHV": 9.97,
-        "CN_min": 20.0,
-        "CN_max": 30.0,
-        "heat_price": 20,
-        "chp_elec_eff": 0.4,
-        "chp_heat_eff": 0.4,
-        "electricity_spot_price": 60,
-        "EEG_skip_chp_price": 194.3,
-        "r": 0.042,
-        "years": 25,
-        "gas_price_mwh": 30,
-        "co2_price_ton": 20,
-        "variable_upg_cost": 0.05,
-        "alpha_GHG_comp": 94.0,
-        "GHG_certificate_price": 50,
-        "Q_MAX": 60,
-        "Q_MIN": 5,
-        "cap_biogas" : 0.45,
-        "bonus_rate" : 100,
-        "loading_cost_dig": 27,      # €/ton digestate loading cost
-        "capacity_dig": 37,          # ton/truck digestate capacity
-        "cost_ton_km_dig": 0.104,      # €/ton/km digestate transport
-        "auction_chp_limit": 225000,  # kW
-        "auction_bm_limit": 125000,    # kW
-        "manure_percent_limit": 1    # 50% max manure usage
-    }
+def npv_parts(cap, p, tech="Upgrading", feed_cost_coef=None):
+    """Return (init, annual_cashflow, K_dict) with technology-specific sensitivities."""
+    fc = feed_cost_coef if feed_cost_coef is not None else p["feed_cost_coef"]
+    Q_bio = cap * 1e6  # m³/yr
+    Q_ch4 = Q_bio * AVG_CH4_CONTENT  # m³/yr
 
-# 4) PLANT MODEL BUILDER
-def build_single_plant_model(j, avail_mass, supply_nodes, feedstock_types, feed_yield, 
-                            params, Capex_params, Upg_params, Opex_params, premium, distances,
-                            cumulative_eeg=0, manure_used=0, total_feed_used=0):
-    m = gp.Model(f"Plant_{j}")
-    m.setParam('OutputFlag', 0)
-        # Variables
-    x = m.addVars(supply_nodes, feedstock_types, lb=0, name="x")
-    y = m.addVar(vtype=GRB.BINARY, name="y")
-    Omega = m.addVar(lb=params["Q_MIN"], ub=params["Q_MAX"], name="Omega")
-    N_CH4 = m.addVar(lb=0, ub=params["Q_MAX"], name="N_CH4")
-    total_methane = sum(avail_mass[i, f] * feed_yield[f]['ch4_content'] for i, f in avail_mass)
-    total_mass = sum(avail_mass[i, f] for i, f in avail_mass)
-    system_methane_average = total_methane / total_mass
-
-    eeg_volume_limit = (params["auction_chp_limit"] 
-                        * params["FLH_max"] /
-                       (params["alphaHV"] * system_methane_average)) / 1e6  # Convert MW to Mm³
+    # Common Costs
+    capex_bio = Q_bio * 150.12 * (Q_bio ** -0.311) / 1e6 if tech != "Boiler" else 0  # M€
+    opex_bio = 2.1209 * (Q_bio ** 0.8359) / 1e6 if tech != "Boiler" else 0  # M€/yr
+    trans = (fc * Q_bio + p["feed_cost_const"]) / 1e6  # M€/yr
+    avg_discount = sum(0.99 ** t for t in range(1, p['years'] + 1)) / p['years']
     
-    # Only apply to biogas plants (y=0)
-    m.addGenConstrIndicator(y, False, Omega <= eeg_volume_limit - cumulative_eeg,
-                           name=f"EEG_limit_{j}")
-    
-     # CAPEX CALCULATIONS --------------------------------------------------------
-    BREAKS = np.linspace(params["Q_MIN"], params["Q_MAX"], 11)
-    
-    # MANURE USAGE CONSTRAINT (PER PLANT) --------------------------------------
-    manure_types = [f for f in feedstock_types if 'man' in f.lower() or 'slu' in f.lower()]
-    
-    # Total manure used at this plant
-    plant_manure = gp.quicksum(x[i,f] for i in supply_nodes for f in manure_types)
-    
-    # Total feedstock at this plant
-    plant_total_feed = gp.quicksum(x[i,f] for i in supply_nodes for f in feedstock_types)
-    
-    # Add constraint: manure <= X% of total feedstock
-    m.addConstr(plant_manure <= params["manure_percent_limit"] * plant_total_feed, 
-               "manure_limit_per_plant")
+    K_dict = {}
 
-    # Base biogas plant CAPEX (CHP)
-    base_capex_vals = [
-        ((b * 1e6) * Capex_params["capex_coeff"] * (b * 1e6) ** Capex_params["capex_exp"]) / 1e6
-        for b in BREAKS
-    ]
-    base_hat = m.addVar(name="base_hat")
-    m.addGenConstrPWL(Omega, base_hat, BREAKS.tolist(), base_capex_vals)
-    
-    # Upgrading CAPEX (biomethane)
-    upg_capex_vals = [
-        ((b * 1e6 / params["FLH_max"]) * Upg_params["capex_coeff"] * 
-        (b * 1e6 / params["FLH_max"]) ** Upg_params["capex_exp"]) / 1e6 
-        for b in BREAKS
-    ]
-    upg_hat = m.addVar(name="upg_hat")
-    upg_eff = m.addVar(lb=0, name="upg_eff")
-    m.addGenConstrPWL(Omega, upg_hat, BREAKS.tolist(), upg_capex_vals)
-    
-    # CAPEX linking constraints
-    m.addGenConstrIndicator(y, True, upg_eff == upg_hat, name="upg_cap_on")
-    m.addGenConstrIndicator(y, False, upg_eff == 0, name="upg_cap_off")
-    total_capex = base_hat + upg_eff
-    
-    # OPEX CALCULATIONS ---------------------------------------------------------
-    base_opex_vals = [
-        Opex_params["opex_coeff"] * (b * 1e6) ** Opex_params["opex_exp"] / 1e6
-        for b in BREAKS
-    ]
-    opex_biogas = m.addVar(name="opex_biogas")
-    m.addGenConstrPWL(Omega, opex_biogas, BREAKS.tolist(), base_opex_vals)
-    
-    # Replace the existing upg_opex line with:
-    upg_opex = m.addVar(name="upg_opex")
-    m.addGenConstrIndicator(y, True, upg_opex == Upg_params["variable_upg_cost"] * N_CH4, name="upg_opex_on")
-    m.addGenConstrIndicator(y, False, upg_opex == 0, name="upg_opex_off")
+    if tech == "Upgrading":
+        capex_upg = (Q_bio / p["FLH_max"]) * 47777 * ((Q_bio / p["FLH_max"]) ** -0.421) / 1e6 + 1
+        opex_upg = p["var_upg_cost"] * Q_ch4 / 1e6
+        gas_rev = Q_ch4 * (p["gas_price_mwh"] * p["alphaHV"] / 1000) / 1e6
+        co2_rev = (Q_bio - Q_ch4) * (p["co2_price_ton"] / 556.2) / 1e6
+        ghg_rev = (p["alpha_GHG_ref"] - AVG_GHG) * p["alphaHV"] * 3.6 * Q_ch4 * p["GHG_certificate_price"] / 1e12
+        init = -(capex_bio + capex_upg)
+        opex = opex_bio + opex_upg + trans
+        ann = gas_rev + co2_rev + ghg_rev - opex
+        K_dict = {
+            "co2_price_ton": (Q_bio - Q_ch4) / 556.2 / 1e6,
+            "GHG_certificate_price": (p["alpha_GHG_ref"] - AVG_GHG) * p["alphaHV"] * 3.6 * Q_ch4 / 1e12,
+            "gas_price_mwh": Q_ch4 * (p["alphaHV"] / 1000) / 1e6
+        }
+    elif tech == "FlexEEG_biogas":
+        eeg_rev = avg_discount * p["eeg_bg_price"] * p["cap_biogas"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        spot_rev = p["elec_spot_price"] * Q_ch4 * (1 - p["cap_biogas"]) * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev = p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        bonus_rev = Q_ch4 * p["bonus_rate"] * p["chp_heat_eff"] * p["alphaHV"]/ p["FLH_max"] / 1e6
+        init = -capex_bio
+        opex = opex_bio + trans
+        ann = eeg_rev + spot_rev + heat_rev + bonus_rev - opex
+        K_dict = {
+            "eeg_bg_price": avg_discount * p["cap_biogas"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "elec_spot_price": Q_ch4 * (1 - p["cap_biogas"]) * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "heat_price": Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "bonus_rate":      Q_ch4  * p["chp_heat_eff"] * p["alphaHV"]/ p["FLH_max"] / 1e6       
+        }
 
-    total_opex = opex_biogas + upg_opex  # Keep this line
-    
-    # CONSTRAINTS ---------------------------------------------------------------
-    m.addConstr(Omega == gp.quicksum(
-        x[i,f] * feed_yield[f]['biogas_m3_per_ton'] 
-        for i in supply_nodes for f in feedstock_types
-    ), "Omega_def")
-    
-    m.addConstr(N_CH4 == gp.quicksum(
-        x[i,f] * feed_yield[f]['biogas_m3_per_ton'] * feed_yield[f]['ch4_content']
-        for i in supply_nodes for f in feedstock_types
-    ), "N_CH4_def")
+    elif tech == "FlexEEG_biomethane":
+        capex_upg = (Q_bio / p["FLH_max"]) * 47777 * ((Q_bio / p["FLH_max"]) ** -0.421) / 1e6 + 1
+        opex_upg = p["var_upg_cost"] * Q_ch4 / 1e6
+        eeg_rev = avg_discount * p["eeg_bm_price"] * p["cap_biomethane"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        spot_rev = p["elec_spot_price"] * Q_ch4 * (1 - p["cap_biomethane"]) * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev = p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        bonus_rev = Q_ch4 * p["bonus_rate"] * p["chp_heat_eff"] * p["alphaHV"]/ p["FLH_max"] / 1e6        
+        init = -(capex_bio + capex_upg)
+        opex = opex_bio + opex_upg + trans
+        ann = eeg_rev + spot_rev + heat_rev + bonus_rev - opex
+        K_dict = {
+            "eeg_bm_price": avg_discount * p["cap_biomethane"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "elec_spot_price": Q_ch4 * (1 - p["cap_biomethane"]) * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "heat_price": Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6,
+                        "bonus_rate":      Q_ch4  * p["chp_heat_eff"] * p["alphaHV"]/ p["FLH_max"] / 1e6      
+        }
+    elif tech == "NonEEG_CHP":
+        spot_rev = p["elec_spot_price"] * Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6
+        heat_rev = p["heat_price"] * Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        init = -capex_bio
+        opex = opex_bio + trans
+        ann = spot_rev + heat_rev - opex
+        K_dict = {
+            "elec_spot_price": Q_ch4 * p["chp_elec_eff"] * p["alphaHV"] / 1000 / 1e6,
+            "heat_price": Q_ch4 * p["chp_heat_eff"] * p["alphaHV"] / 1000 / 1e6
+        }
+    elif tech == "Boiler":
+        MW = Q_ch4 * p["boiler_eff"] * p["alphaHV"] / (p["FLH_max"] * 1000)
+        capex_upg = 110000 * MW / 1e6
+        heat_rev = p["heat_price"] * Q_ch4 * p["boiler_eff"] * p["alphaHV"] / 1000 / 1e6
+        fixed_opex = 3000 * MW
+        variable_opex = 0.5 * Q_ch4 * p["alphaHV"] * p["boiler_eff"] / 1000
+        opex = (fixed_opex + variable_opex) / 1e6 + trans
+        init = -capex_upg
+        ann = heat_rev - opex
+        K_dict = {
+            "heat_price": Q_ch4 * p["boiler_eff"] * p["alphaHV"] / 1000 / 1e6
+        }
+    else:
+        raise ValueError(f"Unknown technology: {tech}")
 
+    return init, ann, K_dict
 
-    total_feed = gp.quicksum(x[i,f] for i in supply_nodes for f in feedstock_types)
-    total_cn = gp.quicksum(x[i,f] * feed_yield[f]['CN'] for i in supply_nodes for f in feedstock_types)
-    m.addConstr(total_cn >= params["CN_min"] * total_feed, "CN_min")
-    m.addConstr(total_cn <= params["CN_max"] * total_feed, "CN_max")
+def break_even_price(cap, p, key, tech="Upgrading", feed_cost_coef=None):
+    """Calculate break-even price using the correct sensitivity from K_dict."""
+    init, ann, K_dict = npv_parts(cap, p, tech, feed_cost_coef)
+    pv = (1 - (1 + p["r"]) ** (-p["years"])) / p["r"]
+    K = K_dict.get(key, 0)
+    cur = p.get(key, 0)
+    npv0 = init + pv * (ann - K * cur)
+    if npv0 >= 0 or K <= 0:
+        return 0.0
+    return -npv0 / (pv * K)
 
-    for i in supply_nodes:
-        for f in feedstock_types:
-            # Get availability (0 if not listed)
-            available = avail_mass.get((i, f), 0) 
-            # Always add constraint, even if availability is 0
-            m.addConstr(x[i,f] <= available / 1e6, f"supply_{i}_{f}")
+# Define Technologies
+alternative_configs = [
+    {"name": "Upgrading", "metrics": ["co2_price_ton", "GHG_certificate_price", "gas_price_mwh"],
+     "labels": ["CO₂ price [€/t]", "GHG quota [€/t]", "Gas [€/MWh]"]},
+    {"name": "FlexEEG_biogas", "metrics": ["eeg_bg_price", "elec_spot_price", "heat_price", "bonus_rate"],
+     "labels": ["EEG tariff [€/MWh]", "Spot elec [€/MWh]", "Heat [€/MWh]", "Flexibility Bonus [€/kW]"]},
+    {"name": "FlexEEG_biomethane", "metrics": ["eeg_bm_price", "elec_spot_price", "heat_price", "bonus_rate"],
+     "labels": ["EEG tariff [€/MWh]", "Spot elec [€/MWh]", "Heat [€/MWh]", "Flexibility Bonus [€/kW]"]},
+    {"name": "NonEEG_CHP", "metrics": ["elec_spot_price", "heat_price"],
+     "labels": ["Elec price [€/MWh]", "Heat price [€/MWh]"]},
+    {"name": "Boiler", "metrics": ["heat_price"], "labels": ["Heat price [€/MWh]"]},
+]
 
-        # Economics
-    gas_price_m3 = params["gas_price_mwh"] * (params["alphaHV"] / 1000)
-    co2_price = params["co2_price_ton"] / 556.2
-    
-    # EEG BONUS CALCULATION
-    threshold_m3 = (100 * params["FLH_max"]) / (params["chp_elec_eff"] * system_methane_average * params["alphaHV"]) / 1e6
-    excess = m.addVar(lb=0, name="excess")
-    diff = m.addVar(name="diff")
-    m.addConstr(diff == Omega - threshold_m3, "bonus_diff")
-    m.addGenConstrMax(excess, [diff, 0], name="bonus_excess")
-    bonus = params["bonus_rate"] * excess / 1e6
+# Debug Prints
+debug_caps = [P["Q_MIN"], 0.5 * (P["Q_MIN"] + P["Q_MAX"]), P["Q_MAX"]]
 
-    # CAPACITY-BASED EEG REVENUE
-    U_elec = N_CH4 * params["chp_elec_eff"] * params["alphaHV"] / 1000
-    EEG_cap = U_elec * params["cap_biogas"]
-    
-    EEG_rev = EEG_cap * params["EEG_skip_chp_price"]
-    spot_rev = (U_elec - EEG_cap) * params["electricity_spot_price"]
-    heat_rev = N_CH4 * params["chp_heat_eff"] * params["alphaHV"] / 1000 * params["heat_price"]
-    
-    revenue_biogas = EEG_rev + spot_rev + heat_rev + bonus
-                   
-    revenue_upg = (
-    N_CH4 * gas_price_m3 
-    + (Omega - N_CH4) * co2_price 
-    + gp.quicksum(x[i,f] * premium[f] for i in supply_nodes for f in feedstock_types))
-    
-    # FEEDSTOCK COST CALCULATIONS ==============================================
-    feed_cost = gp.quicksum(
-        x[i,f] * feed_yield[f]['price']  # Base feedstock cost
-        for i in supply_nodes 
-        for f in feedstock_types
-    )
+print("\n----- DEBUG BREAK-EVEN PRICES -----")
+for cap in debug_caps:
+    print(f"\nCapacity = {cap:.1f} Mm³/yr")
+    for alt in alternative_configs:
+        print(f"  Technology: {alt['name']}")
+        for key, label in zip(alt["metrics"], alt["labels"]):
+            base = break_even_price(cap, P, key, alt["name"])
+            low = break_even_price(cap, P, key, alt["name"], feed_cost_coef=P["feed_cost_coef_range"][0])
+            high = break_even_price(cap, P, key, alt["name"], feed_cost_coef=P["feed_cost_coef_range"][1])
+            print(f"    {label:20s} → base = {base:7.2f},  low = {low:7.2f},  high = {high:7.2f}")
+    print("-" * 50)
+print("----- END DEBUG -----\n")
 
-    # LOADING + TRANSPORT COST -------------------------------------------------
-    transport_cost = gp.quicksum(
-        x[i,f] * 1e6 * (  # x is in million tons, convert to tons
-            (feed_yield[f]['loading'] / feed_yield[f]['capacity_load']) + 
-            distances.get((i, j), 0) * feed_yield[f]['cost_ton_km']
-        ) / 1e6  # Convert back to million €
-        for i in supply_nodes
-        for f in feedstock_types
-    )
-
-    # DIGESTATE COST -----------------------------------------------------------
-    digestate_cost = gp.quicksum(
-        x[i,f]* 1e6 *(feed_yield[f]['digestate_frac'])  * (
-            (params["loading_cost_dig"] / params["capacity_dig"]) + 
-            distances.get((i,j), 0) * params["cost_ton_km_dig"]
-        ) /1e6
-        for i in supply_nodes
-        for f in feedstock_types
-    )
-
-    # TOTAL FEEDSTOCK-RELATED COSTS =============================================
-    total_feedstock_cost = feed_cost + transport_cost + digestate_cost
-
-    total_revenue = (1 - y) * revenue_biogas + y * revenue_upg
-    
-    npv = -total_capex + gp.quicksum(
-        (total_revenue - total_opex - total_feedstock_cost) / (1 + params["r"])**t 
-        for t in range(1, params["years"]+1))
-    
-    m.setObjective(npv, GRB.MAXIMIZE)
-    
-    return m, x, y, Omega, N_CH4, total_capex, total_opex, total_revenue, revenue_biogas, revenue_upg, total_feedstock_cost,feed_cost, transport_cost, digestate_cost, upg_eff
-
-# 5) GREEDY HEURISTIC IMPLEMENTATION
-def greedy_heuristic():
-    feedstock_df, plant_df, distance_df, yields_df = load_data()
-    params = initialize_parameters()
-
-    cumulative_eeg = 0
-    cumulative_manure = 0
-    cumulative_feed = 0
-
-    feed_yield = {
-    row['substrat_ENG']: {
-        'biogas_m3_per_ton': row['Biogas_Yield_m3_ton'],
-        'ch4_content': row['Methane_Content_%'],
-        'digestate_frac': row['Digestate_Yield_%'] / 100.0,
-        'CN': row['C/N_average'],
-        'price': row['Price'],
-        'GHG_intensity': row['GHG_intensity_gCO2eMJ'],
-        'loading': row['Loading_cost'],
-        'capacity_load': row['Capacity_load'],
-        'cost_ton_km': row['€_ton_km']
-    } for _, row in yields_df.iterrows()
-    }
-
-    distances = {(row['Feedstock_LAU'], row['Location']): row['Distance_km'] 
-                for _, row in distance_df.iterrows()}
-    
-    avail_mass = {(row['GISCO_ID'], row['substrat_ENG']): row['nutz_pot_tFM'] 
-                 for _, row in feedstock_df.iterrows()}
-    
-    Capex_params = {'capex_coeff': 150.12, 'capex_exp': -0.311}
-    Opex_params = {'opex_coeff': 2.1209, 'opex_exp': 0.8359}
-    Upg_params = {'capex_coeff': 47777, 'capex_exp': -0.421, "variable_upg_cost" : 0.05}
-    
-    premium = {
-        f: max(0, (params["alpha_GHG_comp"] - feed_yield[f]['GHG_intensity'])) 
-        * feed_yield[f]['biogas_m3_per_ton']  # Include biogas yield
-        * feed_yield[f]['ch4_content']        # Include methane content
-        * params["alphaHV"] * 3.6             # Energy conversion
-        * params["GHG_certificate_price"] 
-        / 1e6                                 # Convert grams to tons
-        for f in feed_yield.keys()
-    }
-
-    plant_locs = plant_df['Location'].tolist()
-    selected_plants = []
-    results = []
-    dist_ik = {(row['Feedstock_LAU'], row['Location']): row['Distance_km'] for _, row in distance_df.iterrows()}
-    
-    while len(selected_plants) < len(plant_locs):
-        best_npv = -np.inf
-        best_plant = None
-        best_result = None
+# Detailed Breakdown
+print("\n----- DETAILED COST & REVENUE BREAKDOWN -----")
+for cap in debug_caps:
+    print(f"\nCapacity = {cap:.1f} Mm³/yr")
+    Q_bio = cap * 1e6
+    Q_ch4 = Q_bio * AVG_CH4_CONTENT
+    for alt in alternative_configs:
+        tech = alt["name"]
+        print(f"  Technology: {tech}")
+        init, ann, K_dict = npv_parts(cap, P, tech)
         
-        for j in plant_locs:
-            if j in selected_plants:
-                continue
-            supply_nodes      = feedstock_df['GISCO_ID'].unique().tolist()
-            feedstock_types   = list(feed_yield.keys())
-            try:
-                m, x, y, Omega, N_CH4, total_capex, total_opex, total_revenue, \
-                rev_biogas, rev_upg, total_feedstock_cost, feed_cost, \
-                transport_cost, digestate_cost, upg_eff = build_single_plant_model(
-                        j                       ,
-                        avail_mass              ,
-                        supply_nodes=supply_nodes,
-                        feedstock_types=feedstock_types,
-                        feed_yield=feed_yield   ,
-                        params=params           ,
-                        Capex_params=Capex_params,
-                        Upg_params=Upg_params   ,
-                        Opex_params=Opex_params ,
-                        premium=premium         ,
-                        distances=distances     ,
-                        cumulative_eeg=cumulative_eeg,
-                        manure_used=cumulative_manure,
-                        total_feed_used=cumulative_feed)
-
-                m.Params.NumericFocus = 3
-                m.Params.ScaleFlag = 2
-                m.Params.Presolve = 2
-                m.optimize()
-                
-                if m.status == GRB.OPTIMAL and m.objVal > best_npv:
-                    best_npv = m.objVal
-                    best_plant = j
-                    best_result = {
-                        'model': m,
-                        'x': x,
-                        'y': y,
-                        'Omega': Omega,
-                        'N_CH4': N_CH4,
-                        'total_capex': total_capex,
-                        'total_opex': total_opex,
-                        'feed+trans' : total_feedstock_cost,
-                        'used_feedstock': {(i,f): x[i,f].X*1e6 for i,f in x.keys() if x[i,f].X > 1e-6}
-                    }
-                    print(f"\n--- DEBUG: Plant {j} ---")
-                    print(f"Configuration: {'Upgrading' if y.X > 0.5 else 'Biogas'}")
-                    print(f"Omega (Total Biogas): {Omega.X:.2f} Mm³/yr")
-                    print(f"N_CH4 (Methane): {N_CH4.X:.2f} Mm³/yr")
-                    print(f"CAPEX: {total_capex.getValue():.2f} M€")
-                    print(f"CAPEX: {upg_eff.X:.2f} M€")
-                    print(f"OPEX: {total_opex.getValue():.2f} M€/yr")
-                    print(f"Revenue: {total_revenue.getValue():.2f} M€/yr")
-                    print(f"Feed + Trans Cost: {total_feedstock_cost.getValue():.2f} M€/yr")
-                    print(f"Feed: {feed_cost.getValue():.2f} M€/yr")
-                    print(f"Trans Cost: {transport_cost.getValue():.2f} M€/yr")
-                    print(f"Digestate Cost: {digestate_cost.getValue():.2f} M€/yr")
-                    print(f"NPV: {m.objVal:.2f} M€")
-                        
-            except Exception as e:
-                print(f"Error solving for {j}: {str(e)}")
-                continue
-                
-        if not best_result or best_npv <= 0:
-            print("No profitable plants remaining")
-            break
-            
-        if best_result['y'].X < 0.5:  # Biogas plant
-            cumulative_eeg += Omega.X
-
-                # Update tracking FIRST
-        selected_plants.append(best_plant)  # Critical fix: Mark plant as selected
-            
-        # Update feedstock
-        for (i, f), used in best_result['used_feedstock'].items():
-            if (i, f) in avail_mass:
-                avail_mass[(i, f)] = max(avail_mass[(i, f)] - used, 0)
+        capex_bio = Q_bio * 150.12 * (Q_bio ** -0.311) / 1e6 if tech != "Boiler" else 0
+        opex_bio = 2.1209 * (Q_bio ** 0.8359) / 1e6 if tech != "Boiler" else 0
+        trans = (P["feed_cost_coef"] * Q_bio + P["feed_cost_const"]) / 1e6
+        avg_discount = sum(0.99 ** t for t in range(1, P['years'] + 1)) / P['years']
         
-        # Store results
-        results.append({
-            'plant': best_plant,
-            'npv': best_npv,
-            'capacity': best_result['Omega'].X,
-            'config': "Upgrading" if best_result['y'].X > 0.5 else "Biogas",
-            'capex': best_result['total_capex'].getValue(),
-            'opex': best_result['total_opex'].getValue(),
-            'feed+trans' : best_result['feed+trans'].getValue(),
-            'used_feedstock': best_result['used_feedstock'],
-            'coordinates': (
-                plant_df[plant_df['Location'] == best_plant]['Longitude'].values[0],
-                plant_df[plant_df['Location'] == best_plant]['Latitude'].values[0]
-            )
-        })
-        
-        print(f"Selected {best_plant}: NPV €{best_npv:,.0f}, " +
-              f"Capacity {best_result['Omega'].X*1e6:,.0f}m³")
-    
-    return results, dist_ik
+        if tech == "Upgrading":
+            capex_upg = (Q_bio / P["FLH_max"]) * 47777 * ((Q_bio / P["FLH_max"]) ** -0.421) / 1e6 + 1
+            opex_upg = P["var_upg_cost"] * Q_ch4 / 1e6
+            gas_rev = Q_ch4 * (P["gas_price_mwh"] * P["alphaHV"] / 1000) / 1e6
+            co2_rev = (Q_bio - Q_ch4) * (P["co2_price_ton"] / 556.2) / 1e6
+            ghg_rev = (P["alpha_GHG_ref"] - AVG_GHG) * P["alphaHV"] * 3.6 * Q_ch4 * P["GHG_certificate_price"] / 1e12
+            eeg_rev = spot_rev = heat_rev = bonus_rev = 0
+        elif tech == "FlexEEG_biogas":
+            capex_upg = opex_upg = 0
+            eeg_rev = avg_discount * P["eeg_bg_price"] * P["cap_biogas"] * Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            spot_rev = P["elec_spot_price"] * Q_ch4 * (1 - P["cap_biogas"]) * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev = P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            bonus_rev = Q_ch4 *P["bonus_rate"] * P["chp_heat_eff"] * P["alphaHV"]/ P["FLH_max"] / 1e6  
+            gas_rev = co2_rev = ghg_rev = 0
+        elif tech == "FlexEEG_biomethane":
+            capex_upg = (Q_bio / P["FLH_max"]) * 47777 * ((Q_bio / P["FLH_max"]) ** -0.421) / 1e6 + 1
+            opex_upg = P["var_upg_cost"] * Q_ch4 / 1e6
+            eeg_rev = avg_discount * P["eeg_bm_price"] * P["cap_biomethane"] * Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            spot_rev = P["elec_spot_price"] * Q_ch4 * (1 - P["cap_biomethane"]) * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev = P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            bonus_rev = Q_ch4 *P["bonus_rate"] * P["chp_heat_eff"] * P["alphaHV"]/ P["FLH_max"] / 1e6
+            gas_rev = co2_rev = ghg_rev = 0
+        elif tech == "NonEEG_CHP":
+            capex_upg = opex_upg = 0
+            spot_rev = P["elec_spot_price"] * Q_ch4 * P["chp_elec_eff"] * P["alphaHV"] / 1000 / 1e6
+            heat_rev = P["heat_price"] * Q_ch4 * P["chp_heat_eff"] * P["alphaHV"] / 1000 / 1e6
+            eeg_rev = gas_rev = co2_rev = ghg_rev = bonus_rev = 0
+        elif tech == "Boiler":
+            MW = Q_ch4 * P["boiler_eff"] * P["alphaHV"] / (P["FLH_max"] * 1000)
+            capex_upg = 110000 * MW / 1e6
+            fixed_opex = 3000 * MW
+            variable_opex = 0.5 * Q_ch4 * P["alphaHV"] * P["boiler_eff"] / 1000
+            opex_upg = (fixed_opex + variable_opex) / 1e6
+            heat_rev = P["heat_price"] * Q_ch4 * P["boiler_eff"] * P["alphaHV"] / 1000 / 1e6
+            eeg_rev = spot_rev = gas_rev = co2_rev = ghg_rev = bonus_rev = 0
 
-# 6) OUTPUT GENERATION
-def generate_outputs(results, dist_ik, output_dir):
-    # Financials
-    financials = []
-    for res in results:
-        financials.append({
-            'PlantID': res['plant'],
-            'Longitude': res['coordinates'][0],
-            'Latitude': res['coordinates'][1],
-            'Configuration': res['config'],
-            'TotalCapacity_m3': res['capacity'] * 1e6,
-            'NPV_EUR': res['npv'],
-            'CAPEX_EUR': res['capex'],
-            'OPEX_EUR': res['opex'],
-            'Feed_Trans': res['feed+trans']
-        })
-    
-    pd.DataFrame(financials).to_csv(os.path.join(output_dir, "Financials.csv"), index=False)
-    
-    # Flows
-    flows = []
-    for res in results:
-        for (i, f), qty in res['used_feedstock'].items():
-            flows.append({
-                'PlantID': res['plant'],
-                'SupplyCluster': i,
-                'Feedstock': f,
-                'Quantity_t': qty,
-                'Distance_km': dist_ik.get((i, res['plant']), 0)
-            })
-    
-    pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows.csv"), index=False)
+        print(f"    CAPEX (M€):")
+        if capex_bio > 0:
+            print(f"      Biogas:      {capex_bio:10.2f}")
+        if capex_upg > 0:
+            print(f"      Upgrading:   {capex_upg:10.2f}")
+        print(f"      Total:       {-init:10.2f}")
+        print(f"    OPEX (M€/yr):")
+        if opex_bio > 0:
+            print(f"      Biogas:      {opex_bio:10.2f}")
+        if opex_upg > 0:
+            print(f"      Upgrading:   {opex_upg:10.2f}")
+        print(f"      Transport:   {trans:10.2f}")
+        print(f"      Total:       {opex_bio + opex_upg + trans:10.2f}")
+        print(f"    Revenue (M€/yr):")
+        if gas_rev > 0:
+            print(f"      Gas:         {gas_rev:10.2f}")
+        if co2_rev > 0:
+            print(f"      CO2:         {co2_rev:10.2f}")
+        if ghg_rev > 0:
+            print(f"      GHG:         {ghg_rev:10.2f}")
+        if eeg_rev > 0:
+            print(f"      EEG:         {eeg_rev:10.2f}")
+        if spot_rev > 0:
+            print(f"      Spot Elec:   {spot_rev:10.2f}")
+        if heat_rev > 0:
+            print(f"      Heat:        {heat_rev:10.2f}")
+        if bonus_rev > 0:
+            print(f"      Bonus:       {bonus_rev:10.2f}")
+        print(f"      Total:       {gas_rev + co2_rev + ghg_rev + eeg_rev + spot_rev + heat_rev + bonus_rev:10.2f}")
+        print(f"    Net Annual (M€/yr): {ann:10.2f}")
+    print("-" * 50)
+print("----- END DETAILED BREAKDOWN -----\n")
 
-if __name__ == '__main__':
-    output_dir = os.path.join("C:/Clone/Master/results/large_scale_cont/10_greedy")
-    os.makedirs(output_dir, exist_ok=True)
-    
-    start_time = time.time()
-    results, dist_ik = greedy_heuristic()
-    
-    if results:
-        print(f"\nTotal NPV: €{sum(r['npv'] for r in results):,.0f}")
-        generate_outputs(results, dist_ik, output_dir)
-    
-    print(f"Execution time: {time.time()-start_time:.1f}s")
+# Run & Plot
+if __name__ == "__main__":
+    caps = np.linspace(P["Q_MIN"], P["Q_MAX"], 200)
+
+    # ── build a grid that is only as large as required ───────────────────
+    n_alt   = len(alternative_configs)            # = 5
+    n_cols  = 2                                   # 2 columns look nice
+    n_rows  = math.ceil(n_alt / n_cols)           # → 3 rows
+    fig, axes = plt.subplots(
+        nrows=n_rows, ncols=n_cols,
+        figsize=(12, 10), constrained_layout=True
+    )
+    axes = axes.flatten()
+
+    # ── plot each alternative ────────────────────────────────────────────
+    for ax, alt in zip(axes, alternative_configs):
+        for key, label in zip(alt["metrics"], alt["labels"]):
+            base_curve = [break_even_price(c, P, key, alt["name"]) for c in caps]
+            low_curve  = [break_even_price(c, P, key, alt["name"],
+                                           feed_cost_coef=P["feed_cost_coef_range"][0]) for c in caps]
+            high_curve = [break_even_price(c, P, key, alt["name"],
+                                           feed_cost_coef=P["feed_cost_coef_range"][1]) for c in caps]
+
+            ax.plot(caps, base_curve, label=label, lw=2)
+            ax.fill_between(caps, low_curve, high_curve, alpha=0.2)
+
+        ax.set_title(alt["name"])
+        ax.set_xlabel("Capacity [Mm³ / yr]")
+        ax.set_ylabel("Break-even price")
+        ax.legend()
+        ax.grid(alpha=0.3)
+
+    # ── remove any unused axes (there will be exactly one) ───────────────
+    for ax in axes[n_alt:]:
+        fig.delaxes(ax)
+
+    plt.savefig(os.path.join(output_dir, "break_even_all_alts.png"))
+    plt.show()

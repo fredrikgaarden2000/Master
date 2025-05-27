@@ -12,9 +12,9 @@ from matplotlib import cm, colors
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Flows.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Flows_100.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials.csv"),
+    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials_100.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations_100.csv"),
