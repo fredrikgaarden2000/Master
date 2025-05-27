@@ -26,8 +26,8 @@ def load_data():
 
     try:
         feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_300.csv")
+        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_300.csv")
         yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
     except FileNotFoundError as e:
         print(f"Critical error: {str(e)}")
@@ -654,7 +654,7 @@ def generate_outputs(results, dist_ik, output_dir):
             'Feed_Trans_Cost': res['feed+trans']
         })
     
-    pd.DataFrame(financials).to_csv(os.path.join(output_dir, "Financials_20.csv"), index=False)
+    pd.DataFrame(financials).to_csv(os.path.join(output_dir, "Financials_300.csv"), index=False)
     
     # Flows
     flows = []
@@ -668,7 +668,7 @@ def generate_outputs(results, dist_ik, output_dir):
                 'Distance_km': dist_ik.get((i, res['plant']), 0)
             })
     
-    pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows_20.csv"), index=False)
+    pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows_300.csv"), index=False)
 
 if __name__ == '__main__':
     output_dir = os.path.join("C:/Clone/Master/results/large_scale_cont/10_greedy_with_alternatives")
