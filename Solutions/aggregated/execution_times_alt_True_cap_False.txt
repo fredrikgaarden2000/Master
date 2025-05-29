@@ -1,0 +1,2 @@
+Total script execution time: 35.50 seconds (0.59 minutes)
+Optimization time: 1.29 seconds (0.02 minutes)

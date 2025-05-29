@@ -20,7 +20,7 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind/204060/")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000,40_000_000,60_000_000)
+capacity_levels = (10_000_000,20_000_000,40_000_000,60_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -307,6 +307,41 @@ def build_model(config):
                 else:
                     Y[j, a, c].Start = 0.0
     '''
+# ---------------------------------------------------------------------------
+# LOCK GREEDY DECISIONS  –– paste this right after Y{} & Omega{} are defined
+# ---------------------------------------------------------------------------
+# a) read the file that contains the “winning” (plant, alt, cap) triplets
+    fin_path      = f"{BASE_DIR}results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Financials_20_greedy.csv"
+    greedy_fin_df = pd.read_csv(fin_path)
+
+    # b) helper maps
+    alt_index = {cfg["name"]: i for i, cfg in enumerate(alternative_configs)}
+    cap_set   = set(capacity_levels)
+
+    for _, row in greedy_fin_df.iterrows():
+        p       = row["PlantLocation"]         # plant id
+        altname = row["Alternative"]           # string
+        cap     = int(row["Capacity"])         # integer m³/year from csv
+
+        # skip entries that are not in the current model (safety)
+        if p not in plant_locs or altname not in alt_index or cap not in cap_set:
+            continue
+
+        a = alt_index[altname]                 # alternative index
+
+        # 1. force the chosen binary to 1
+        m.addConstr(Y[p, a, cap] == 1,
+                    name=f"FixAltCap_{p}_{altname}_{cap}")
+
+        # 2. forbid every other (a,c) at this plant
+        for a2 in range(len(alternative_configs)):
+            for c2 in capacity_levels:
+                if (a2, c2) != (a, cap):
+                    m.addConstr(Y[p, a2, c2] == 0,
+                                name=f"Off_{p}_{a2}_{c2}")
+        
+        m.addConstr(Omega[p] <= cap / 1e6,
+            name=f"CapUpper_{p}")
 
     # ------------------------------------------------------------------
     #  UpgSel[j] = 1 ⇔ plant j has chosen (any) upgrading alternative
@@ -603,10 +638,6 @@ if __name__ == '__main__':
         for j in plant_locs:
             if Omega[j].X > 1e-6:
                 print(f"Plant {j}: N_CH4 = {N_CH4[j].X * 1e6:,.0f}, Omega = {Omega[j].X * 1e6:,.0f}, CH4 Fraction = {N_CH4[j].X/Omega[j].X:.3f}")
-    if m.status in (GRB.INFEASIBLE, GRB.INF_OR_UNBD):
-        m.computeIIS()
-        m.write("model.iis")
-        print("IIS written to model.iis")
     else:
         print(f"Model status: {m.status}")
     '''
@@ -681,7 +712,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti_204060.csv"), index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -790,7 +821,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti_204060.csv"), index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

@@ -52,6 +52,153 @@ total_methane = sum(avail_mass[i, f] * yields_df[yields_df["substrat_ENG"] == f]
 total_mass = sum(avail_mass[i, f] for i, f in avail_mass)
 system_methane_average = total_methane / total_mass
 
+def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", 
+                        capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104):
+
+    try:
+        # Ensure columns are stripped of whitespace and quotes
+        yields_df.columns = yields_df.columns.str.strip().str.replace('"', '')
+        
+        # Distance range (0 to 150 km) for plotting
+        distances = np.linspace(0, 150, 100)
+        
+        # Specific distances for printing and annotations
+        print_distances = [0, 100]
+        annotation_distances = [20, 100]
+        
+        # Initialize plot
+        plt.figure(figsize=(12, 8))
+        
+        # Store costs for sorting (for annotations)
+        costs_at_distances = {20: [], 100: []}  # List of (feedstock, cost) tuples
+        
+        # Print header
+        print("\nFeedstock Costs (€/m³ CH4) at Distances 0 km and 100 km:")
+        print("-" * 50)
+        
+        # Process each feedstock
+        for index, row in yields_df.iterrows():
+            try:
+                # Extract data, checking for valid numeric values
+                feedstock = row['substrat_ENG']
+                methane_yield = float(row['Methane_Yield_m3_ton'])
+                digestate_yield = float(row['Digestate_Yield_%']) / 100  # Convert percentage to fraction
+                price = float(row['Price'])
+                capacity_load = float(row['Capacity_load'])
+                loading_cost = float(row['Loading_cost'])
+                cost_ton_km = float(row['€_ton_km'])
+                
+                # Skip if methane yield is zero or invalid to avoid division by zero
+                if methane_yield <= 0 or np.isnan(methane_yield):
+                    print(f"Skipping feedstock {feedstock} due to invalid methane yield")
+                    continue
+                
+                # Calculate costs per ton
+                # Feedstock transport: loading cost per ton + distance-dependent cost
+                feedstock_loading_cost = loading_cost / capacity_load
+                feedstock_transport_cost = feedstock_loading_cost + cost_ton_km * distances
+                
+                # Digestate transport: same logic, using digestate yield and fixed constants
+                digestate_mass = digestate_yield  # Mass of digestate per ton of feedstock
+                digestate_loading_cost = loading_cost_dig / capacity_dig
+                digestate_transport_cost = digestate_mass * (digestate_loading_cost + cost_ton_km_dig * distances)
+                
+                # Total cost per ton: feedstock price + feedstock transport + digestate transport
+                total_cost_per_ton = price + feedstock_transport_cost + digestate_transport_cost
+                
+                # Cost per m³ CH4
+                cost_per_m3_ch4 = total_cost_per_ton / methane_yield
+                
+                # Plot
+                plt.plot(distances, cost_per_m3_ch4, label=feedstock)
+                
+                # Calculate and print costs at specific distances (0 km and 100 km)
+                for dist in print_distances:
+                    feedstock_cost = feedstock_loading_cost + cost_ton_km * dist
+                    digestate_cost = digestate_mass * (digestate_loading_cost + cost_ton_km_dig * dist)
+                    total_cost = price + feedstock_cost + digestate_cost
+                    cost_ch4 = total_cost / methane_yield
+                    print(f"Feedstock: {feedstock}, Distance: {dist} km, Cost: {cost_ch4:.2f} €/m³ CH4")
+                
+                # Store costs for annotations at 20 km and 100 km
+                for dist in annotation_distances:
+                    feedstock_cost = feedstock_loading_cost + cost_ton_km * dist
+                    digestate_cost = digestate_mass * (digestate_loading_cost + cost_ton_km_dig * dist)
+                    total_cost = price + feedstock_cost + digestate_cost
+                    cost_ch4 = total_cost / methane_yield
+                    costs_at_distances[dist].append((feedstock, cost_ch4))
+                
+            except (ValueError, TypeError, KeyError) as e:
+                # Skip rows with invalid data
+                print(f"Skipping feedstock {row.get('substrat_ENG', 'unknown')} due to error: {str(e)}")
+                continue
+        
+        # Add annotation boxes for top 3 cheapest and most expensive at 20 km and 100 km
+        for dist in annotation_distances:
+            # Sort by cost
+            sorted_costs = sorted(costs_at_distances[dist], key=lambda x: x[1])
+            cheapest = sorted_costs[:3]  # Top 3 cheapest
+            most_expensive = sorted_costs[-3:][::-1]  # Top 3 most expensive (reversed)
+            
+
+            # 1) Make the “Distance: XX km” header bold via TeX
+            header = r"$\bf{Distance:\ %d\ km}$" % dist
+
+            # 2) Insert a blank line between sections
+            text_lines = [
+                header,
+                "",               # ← blank line after the header
+                "Cheapest:",
+            ]
+            for feedstock, cost in cheapest:
+                text_lines.append(f"  {feedstock}: {cost:.2f} €/m³")
+            text_lines.append("")  # ← blank line before the “Most Expensive”
+            text_lines.append("Most Expensive:")
+            for feedstock, cost in most_expensive:
+                text_lines.append(f"  {feedstock}: {cost:.2f} €/m³")
+
+            annotation_text = "\n".join(text_lines)
+
+            plt.text(
+                dist, 0.95, annotation_text,
+                transform=plt.gca().get_xaxis_transform(),
+                fontsize=10, verticalalignment='top', horizontalalignment='center',
+                bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="black", alpha=0.9),
+                usetex=False  # matplotlib understands basic TeX by default
+            )
+        
+        # Customize plot
+        plt.xlabel('Distance (km)', fontsize=13)
+        plt.ylabel('Cost (€/m³ CH4)', fontsize=13)
+        plt.title('Cost of Energy Transported per Feedstock', fontsize=14)
+            # replace your old plt.legend(...) with:
+        leg = plt.legend(
+            title="Feedstock Type",        # your legend title
+            title_fontsize=14,             # make the title bigger
+            fontsize=12,                   # labels can be a bit smaller
+            handlelength=2,                # lengthen the little lines
+            handletextpad=1.0,             # spacing between line and text
+            labelspacing=0.5,              # vertical space between entries
+            bbox_to_anchor=(1.05, 1), 
+            loc='upper left'
+        )
+
+        # now thicken the line samples in the legend:
+        for legline in leg.get_lines():
+            legline.set_linewidth(3)       # increase as you like
+
+        plt.grid(True)
+        plt.tight_layout()
+        
+        # Save plot
+        output_path = os.path.join(BASE_DIR, output_filename)
+        plt.savefig(output_path, dpi=300, bbox_inches='tight')
+        plt.close()
+        print(f"\nSaved feedstock cost plot to {output_path}")
+        
+    except Exception as e:
+        print(f"Error processing yields_df: {str(e)}")
+
 def plot_methane_fraction(fin_df, system_methane_average):
     methane_fractions = []
     valid_plants = []
@@ -683,7 +830,9 @@ def energy_transported():
 
 #plot_methane_fraction(fin_df, system_methane_average)
 #plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
+#plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
 #plot_distance_summary(in_flow_df, supply_coords, plant_coords,output_png="distance_distribution.png")
 #plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
+plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", 
+                        capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104)
