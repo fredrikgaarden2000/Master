@@ -671,7 +671,7 @@ def generate_outputs(results, dist_ik, output_dir):
     pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows_20.csv"), index=False)
 
 if __name__ == '__main__':
-    output_dir = os.path.join("C:/Clone/Master/results/large_scale_cont/10_greedy_with_alternatives/greedy")
+    output_dir = os.path.join("C:/Clone/Master/results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind/")
     os.makedirs(output_dir, exist_ok=True)
     
     start_time = time.time()
