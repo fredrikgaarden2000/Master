@@ -18,7 +18,7 @@ if not os.path.exists(BASE_DIR):
 output_dir = os.path.join(BASE_DIR, "results/large_scale_cont")
 os.makedirs(output_dir, exist_ok=True)
 
-fin = pd.read_csv(os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials.csv"))
+fin = pd.read_csv(os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials_20_greedy.csv"))
 fin["Capacity_Mm3"] = fin["Capacity"] / 1e6
 fin["FeedTrans_M€"] = fin["Feed_Trans_Cost"]
 
@@ -38,8 +38,8 @@ P = {
     "years": 25,
     "gas_price_mwh": 30,
     "co2_price_ton": 20,
-    "GHG_certificate_price": 50,
-    "var_upg_cost": 0.05,
+    "GHG_certificate_price": 70,
+    "var_upg_cost": 0.2,
     "alpha_GHG_ref": 94.0,
     "feed_cost_coef": a,
     "feed_cost_const": b * 1e6,
@@ -275,6 +275,49 @@ for cap in debug_caps:
     print("-" * 50)
 print("----- END DETAILED BREAKDOWN -----\n")
 
+def compute_npv(cap, p, ghg_price, gas_price, tech="Upgrading", feed_cost_coef=None):
+    """
+    Compute NPV(init, ann) at a fixed cap, but with
+    p["GHG_certificate_price"]=ghg_price and p["gas_price_mwh"]=gas_price.
+    """
+    p_local = p.copy()
+    p_local["GHG_certificate_price"] = ghg_price
+    p_local["gas_price_mwh"]          = gas_price
+
+    init, ann, _Kdict = npv_parts(cap, p_local, tech, feed_cost_coef)
+    pv = (1 - (1 + p_local["r"]) ** (-p_local["years"])) / p_local["r"]
+    return init + pv * ann
+
+def find_zero_npv_frontier(p,
+                           tech="Upgrading",
+                           cap=None,
+                           ghg_range=(0,100),
+                           gas_range=(0,100),
+                           npts=101):
+    """
+    Sweep ghg_price ∈ ghg_range and gas_price ∈ gas_range, compute NPV,
+    and return the zero‐NPV contour lines.
+    """
+    if cap is None:
+        cap = p["Q_MAX"]
+    ghg_vals = np.linspace(*ghg_range, npts)
+    gas_vals = np.linspace(*gas_range, npts)
+    GH, GA = np.meshgrid(ghg_vals, gas_vals, indexing="ij")
+    NPV = np.empty_like(GH)
+    for i, gh in enumerate(ghg_vals):
+        for j, ga in enumerate(gas_vals):
+            NPV[i,j] = compute_npv(cap, p, gh, ga, tech=tech)
+    # use matplotlib’s contour finder to extract zero‐level curve:
+    import matplotlib.pyplot as plt
+    CS = plt.contour(GH, GA, NPV, levels=[0])
+    # each contour path in CS.collections[0].get_paths()
+    frontier = []
+    for path in CS.collections[0].get_paths():
+        frontier.append(path.vertices)
+    plt.clf()  # clear figure
+    return frontier, GH, GA, NPV
+
+
 # Run & Plot
 if __name__ == "__main__":
     caps = np.linspace(P["Q_MIN"], P["Q_MAX"], 200)
@@ -313,3 +356,7 @@ if __name__ == "__main__":
 
     plt.savefig(os.path.join(output_dir, "break_even_all_alts.png"))
     plt.show()
+
+
+
+

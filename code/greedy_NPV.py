@@ -70,7 +70,7 @@ def initialize_parameters():
         "alpha_GHG_comp": 94.0,
         "GHG_certificate_price": 70,
         "Q_MAX": 60,
-        "Q_MIN": 5,  #Set to 0.01 if you want smaller alts
+        "Q_MIN": 5,
         "cap_biogas": 0.45,
         "cap_biomethane": 0.10,  # Added from alternatives
         "bonus_rate": 100,
@@ -452,9 +452,9 @@ def build_single_plant_model(j, avail_mass, supply_nodes, feedstock_types, feed_
     m.setObjective(npv, GRB.MAXIMIZE)
     
     return m, x, y, Omega, N_CH4, total_capex, total_opex, total_revenue, total_feedstock_cost, feed_cost, transport_cost, digestate_cost, upg_hat
-
 def greedy_heuristic():
-    MIN_IRR = 0.06   # 10% minimum
+    MIN_NPV = 0  # Minimum NPV threshold to ensure positive value
+    MIN_IRR = 0.06  # Retained for informational purposes
     feedstock_df, plant_df, distance_df, yields_df = load_data()
     params = initialize_parameters()
     alternative_configs = get_alternative_configs(params)
@@ -508,7 +508,7 @@ def greedy_heuristic():
     dist_ik = distances
 
     while len(selected_plants) < len(plant_locs):
-        best_irr    = -np.inf
+        best_npv    = -np.inf
         best_plant  = None
         best_result = None
 
@@ -547,6 +547,10 @@ def greedy_heuristic():
                 m.optimize()
 
                 if m.status == GRB.OPTIMAL:
+                    npv = m.objVal
+                    if npv <= MIN_NPV:
+                        continue  # Skip plants with non-positive NPV
+
                     annual_net = (
                         total_revenue.getValue()
                         - total_opex.getValue()
@@ -559,14 +563,11 @@ def greedy_heuristic():
                     else:
                         irr = -np.inf
 
-                    if irr < MIN_IRR:
-                        continue   # skip anything below 10%
-
-                    if irr > best_irr:
-                        best_irr    = irr
+                    if npv > best_npv:
+                        best_npv    = npv
                         best_plant  = j
 
-                        # record which alt was chosen
+                        # Record which alternative was chosen
                         chosen = None
                         for idx, alt in enumerate(alternative_configs):
                             if y[idx].X > 0.5:
@@ -587,15 +588,15 @@ def greedy_heuristic():
                             'selected_alt': chosen,
                             'annual_net': annual_net,
                             'irr': irr,
-                            'npv' : m.objVal
+                            'npv': npv
                         }
 
             except Exception as e:
                 print(f"Error solving for {j}: {e}")
                 continue
-        # after scanning all j …
-        if best_irr < MIN_IRR or best_result is None:
-            print(f"No further plants achieve at least {MIN_IRR:.0%} IRR – stopping.")
+
+        if best_plant is None:
+            print("No further plants with positive NPV – stopping.")
             break
 
         alt_name = best_result['selected_alt']
@@ -610,7 +611,7 @@ def greedy_heuristic():
 
         results.append({
             'plant': best_plant,
-            'npv' : best_result['npv'],
+            'npv': best_result['npv'],
             'irr': best_result['irr'],
             'annual_net': best_result['annual_net'],
             'capacity': best_result['Omega'].X,
@@ -627,6 +628,7 @@ def greedy_heuristic():
 
         print(
             f"Selected {best_plant} ({alt_name}): "
+            f"NPV {best_result['npv']:.2f} M€, "
             f"IRR {best_result['irr']:.1%}, "
             f"annual net {best_result['annual_net']:.2f} M€, "
             f"capex {best_result['total_capex'].getValue():.2f} M€, "
@@ -634,7 +636,6 @@ def greedy_heuristic():
         )
 
     return results, dist_ik
-
 
 # 6) OUTPUT GENERATION - UPDATED
 def generate_outputs(results, dist_ik, output_dir):
@@ -648,7 +649,6 @@ def generate_outputs(results, dist_ik, output_dir):
             'Alternative': res['config'],
             'Capacity': res['capacity'] * 1e6,
             'NPV_EUR': res['npv'],
-            'IRR' : res['irr'],
             'CAPEX_EUR': res['capex'],
             'OPEX_EUR': res['opex'],
             'Feed_Trans_Cost': res['feed+trans']
@@ -682,7 +682,7 @@ if __name__ == '__main__':
         generate_outputs(results, dist_ik, output_dir)
     
     print(f"Execution time: {time.time()-start_time:.1f}s")
-
+'''
     # build DataFrame from results
     df = pd.DataFrame(results)
 
@@ -740,3 +740,4 @@ if __name__ == '__main__':
     )
     plt.tight_layout()
     plt.show()
+    '''

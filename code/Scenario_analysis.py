@@ -19,7 +19,7 @@ if not os.path.exists(BASE_DIR):
 output_dir = os.path.join(BASE_DIR, "results/large_scale_cont")
 os.makedirs(output_dir, exist_ok=True)
 
-fin = pd.read_csv(os.path.join(BASE_DIR,"results/large_scale_cont/10_greedy_with_alternatives/Financials.csv"))
+fin = pd.read_csv(os.path.join(BASE_DIR,"results/large_scale_cont/10_greedy_with_alternatives/Financials_20_greedy.csv"))
 fin["Capacity_Mm3"] = fin["Capacity"] / 1e6
 fin["FeedTrans_M€"] = fin["Feed_Trans_Cost"]
 
@@ -300,6 +300,7 @@ for cap in debug_caps:
         print(f"    Net Annual (M€/yr): {ann:10.2f}")
     print("-" * 50)
 print("----- END DETAILED BREAKDOWN -----\n")
+
 
 # ─────────────────────────────────────────────────────────────
 # 4) RUN & PLOT

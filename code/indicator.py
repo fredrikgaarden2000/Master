@@ -20,12 +20,12 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale/35/unknown/")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_35.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_35.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_10.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_10.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (20_000_000,40_000_000,60_000_000, 80_000_000)
+capacity_levels = (5_000_000,10_000_000, 20_000_000,40_000_000,60_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -76,7 +76,7 @@ chp_heat_eff = 0.4
 r = 0.042
 years = 25
 kappa = sum(1/(1+r)**t for t in range(1, years+1))
-EEG_price_small = 210.0
+EEG_price_small = 220.0
 EEG_price_med = 190.0
 EEG_skip_chp_price = 194.3
 EEG_skip_upg_price = 210.4
@@ -86,10 +86,10 @@ co2_price_ton = 50
 co2_price = co2_price_ton / 556.2
 Cap_biogas = 0.45
 Cap_biomethane = 0.10
-variable_upg_cost = 0.05
+variable_upg_cost = 0.2
 alpha_GHG_comp = 94.0
 alpha_GHG_lim = 0.35 * alpha_GHG_comp
-GHG_certificate_price = 60.0
+GHG_certificate_price = 70
 avail_mass = {(row['GISCO_ID'], row['substrat_ENG']): row['nutz_pot_tFM'] for _, row in feedstock_df.iterrows()}
 dist_ik = {(row['Feedstock_LAU'], row['Location']): row['Distance_km'] for _, row in distance_df.iterrows()}
 dist_pl_iprime = {(ploc, iP): dist_ik.get((iP, ploc), 0.0) for ploc in plant_locs for iP in iPrime_nodes}
@@ -383,7 +383,7 @@ def build_model(config):
     
     #add_eeg_constraints(m, total_feed, manure_feed, clover_feed, Y, plant_locs, alternative_configs, caps)
     add_supply_constraints(m, avail_mass, x, plant_locs)
-    #add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
+    add_cn_constraints(m, x, avail_mass, plant_locs, feed_yield, CN_min, CN_max)
     #add_ghg_constraints(m, x, avail_mass, plant_locs, feed_yield, alpha_GHG_lim)
     add_auction_constraints(m, Y, plant_locs, alternative_configs, caps)
     add_flh_constraints(m, Omega, Y, plant_locs, caps, N_CH4)
@@ -681,7 +681,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow.csv"), index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -790,7 +790,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(os.path.join(output_dir, "Output_financials.csv"), index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

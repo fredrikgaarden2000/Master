@@ -9,15 +9,17 @@ import pickle
 import os
 from shapely.ops import unary_union
 from matplotlib import cm, colors
+import seaborn as sns
+
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Flows_100.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_reopt/Flows_Reopt.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/Financials_100.csv"),
+    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_reopt/Financials_Reopt.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_100.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_20.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
@@ -116,10 +118,10 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
         ax.bar(plants, values, bottom=bottoms, label=feedstock, color=color)
         bottoms += values
 
-    ax.set_xlabel("Plant Location")
-    ax.set_ylabel("Percentage of Feedstock (%)")
-    ax.set_title("Feedstock Composition per Plant (100% Stacked)")
-    ax.legend(title="Feedstock Type", bbox_to_anchor=(1.05, 1), loc="upper left")
+    ax.set_xlabel("Plant Location", fontsize =12)
+    ax.set_ylabel("Percentage of Feedstock (%)", fontsize =12)
+    ax.set_title("Feedstock Composition per Plant (100% Stacked)", fontsize =13)
+    ax.legend(title="Feedstock Type", bbox_to_anchor=(1.05, 1), loc="upper left", fontsize =13)
     ax.set_ylim(0, 100)
     plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
@@ -564,7 +566,119 @@ def plot_distance_summary(in_flow_df, supply_coords, plant_coords, output_png="d
     plt.show()
     print(f"Saved distance summary plot to {output_png}")
 
+from matplotlib.ticker import FuncFormatter
+in_flow_df.columns = in_flow_df.columns.str.strip().str.replace('"', '')
+yields_df.columns = yields_df.columns.str.strip().str.replace('"', '')
+# Defining color map for feedstocks
+color_map = {
+    'cattle_man': '#1f77b4',
+    'cattle_slu': '#ff7f0e',
+    'horse_man': '#2ca02c',
+    'pig_man': '#d62728',
+    'pig_slu': '#9467bd',
+    'maize_str': '#8c564b',
+    'beet_leaf': '#e377c2',
+    'rape_str': '#7f7f7f',
+    'legume_str': '#bcbd22',
+    'clover_alfalfa_grass': '#17becf'
+}
 
+# Defining numerical abbreviation function
+def abbreviate_number(value, pos):
+    if np.isnan(value):
+        return '0'
+    if abs(value) < 1000:
+        return f'{int(value)}'
+    units = ['K', 'M', 'B', 'T']
+    unit_index = -1
+    scaled = abs(value)
+    while scaled >= 1000 and unit_index < len(units) - 1:
+        scaled /= 1000
+        unit_index += 1
+    return f'{int(value/abs(value)) if value < 0 else ""}{scaled:.1f}{units[unit_index]}'
+
+# Cleaning column names
+in_flow_df.columns = in_flow_df.columns.str.strip().str.replace('"', '')
+yields_df.columns = yields_df.columns.str.strip().str.replace('"', '')
+
+def energy_transported():
+    # Converting numeric columns, handling NaN/invalid values
+    in_flow_df['FlowTons'] = pd.to_numeric(in_flow_df['FlowTons'], errors='coerce').fillna(0)
+    in_flow_df['Distance_km'] = pd.to_numeric(in_flow_df['Distance_km'], errors='coerce').fillna(0)
+    yields_df['Biogas_Yield_m3_ton'] = pd.to_numeric(yields_df['Biogas_Yield_m3_ton'], errors='coerce').fillna(0)
+    yields_df['Methane_Content_%'] = pd.to_numeric(yields_df['Methane_Content_%'], errors='coerce').fillna(0)
+
+    # Merging data
+    yields_map = yields_df.set_index('substrat_ENG')[['Biogas_Yield_m3_ton', 'Methane_Content_%']].to_dict('index')
+    in_flow_df['Biogas_Yield_m3_ton'] = in_flow_df['Feedstock'].map(lambda x: yields_map.get(x, {}).get('Biogas_Yield_m3_ton', 0))
+    in_flow_df['Methane_Content_percentage'] = in_flow_df['Feedstock'].map(lambda x: yields_map.get(x, {}).get('Methane_Content_%', 0))
+    alphaHV = 9.97  # kWh per Nm³ CH₄
+    in_flow_df['Energy_MWh'] = (in_flow_df['FlowTons'] * in_flow_df['Biogas_Yield_m3_ton'] * 
+                                in_flow_df['Methane_Content_percentage'] * alphaHV) / 1000.0
+
+    # Filtering valid data
+    in_flow_df = in_flow_df[(in_flow_df['FlowTons'] > 0) & (in_flow_df['Distance_km'] >= 0)]
+
+    # Calculating feedstock utilization grade
+    total_tons = in_flow_df['FlowTons'].sum()
+    feedstock_tons = in_flow_df.groupby('Feedstock')['FlowTons'].sum()
+    utilization_grades = (feedstock_tons / total_tons * 100).round(2).reset_index()
+    utilization_grades.columns = ['Feedstock', 'Utilization_%']
+    utilization_grades['Total_Tons'] = feedstock_tons.values
+
+    # Finding feedstock with highest energy contribution
+    feedstock_energy = in_flow_df.groupby('Feedstock')['Energy_MWh'].sum()
+    top_feedstock = feedstock_energy.idxmax()
+    print(f"Interesting Fact: The feedstock '{top_feedstock}' contributes the most to total energy transported.")
+
+    # Setting up distance bins
+    dist_min = in_flow_df['Distance_km'].min()
+    dist_max = in_flow_df['Distance_km'].max()
+    num_bins = 20
+    bins = np.linspace(dist_min, dist_max, num_bins + 1)
+    bin_width = (dist_max - dist_min) / num_bins
+    bin_labels = [f'{bins[i]:.1f}-{bins[i+1]:.1f}' for i in range(num_bins)]
+
+    # Grouping data by bins
+    in_flow_df['Bin'] = pd.cut(in_flow_df['Distance_km'], bins=bins, include_lowest=True, labels=bin_labels)
+    bin_data = in_flow_df.groupby(['Bin', 'Feedstock'], observed=True)['FlowTons'].sum().unstack(fill_value=0)
+    bin_energy = in_flow_df.groupby('Bin', observed=True)['Energy_MWh'].sum().reindex(bin_labels, fill_value=0)
+
+    # Creating the plot
+    fig, ax1 = plt.subplots(figsize=(12, 8))
+
+    # Plotting stacked bars for feedstock tons
+    feedstock_order = list(color_map.keys())
+    bottom = np.zeros(num_bins)
+    for feedstock in feedstock_order:
+        if feedstock in bin_data.columns:
+            ax1.bar(bin_labels, bin_data[feedstock], bottom=bottom, label=feedstock, color=color_map[feedstock])
+            bottom += bin_data[feedstock]
+
+    # Setting up left y-axis (Tons)
+    ax1.set_xlabel('Distance (km)', fontsize = 13)
+    ax1.set_ylabel('Transported Tons', fontsize  =13)
+    ax1.yaxis.set_major_formatter(FuncFormatter(abbreviate_number))
+    ax1.tick_params(axis='x', rotation=45)
+
+
+    # Creating second y-axis for energy
+    ax2 = ax1.twinx()
+    ax2.plot(bin_labels, bin_energy, color='#888888', marker='o', linestyle='-', linewidth=2, markersize=6, label='Total Energy (MWh)')
+    ax2.set_ylabel('Transported Energy (MWh)', fontsize = 13)
+    ax2.yaxis.set_major_formatter(FuncFormatter(abbreviate_number))
+
+    # Adding legends
+    lines1, labels1 = ax1.get_legend_handles_labels()
+    lines2, labels2 = ax2.get_legend_handles_labels()
+    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper center', bbox_to_anchor=(0.65, 0.9), ncol=3, fontsize = 13)
+
+    # Adjusting layout to prevent overlap
+    plt.tight_layout()
+
+    # Saving the plot
+    plt.savefig('combined_feedstock_energy_plot.png', bbox_inches='tight', dpi=300)
+    plt.close()
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
