@@ -20,12 +20,12 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind/")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_10.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_10.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (5_000_000,10_000_000, 20_000_000,40_000_000,60_000_000)
+capacity_levels = (40_000_000,60_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
