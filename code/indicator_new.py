@@ -11,16 +11,16 @@ script_start_time = time.time()
 
 # 1) LOAD DATA
 try:
-    BASE_DIR = "/home/fredrgaa/Master/"
+    BASE_DIR = "/home/fredrgaa/Optimal/"
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Linux path does not exist")
 except FileNotFoundError:
-    BASE_DIR = "C:/Clone/Master/"
+    BASE_DIR = "C:/Optimal/"
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind/204060/")
+output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_opt_ind/")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
@@ -269,13 +269,26 @@ def build_model(config):
                     lb=0, ub=ub_ch4,
                     vtype=GRB.CONTINUOUS, name="m_up")
     
+    # right after you build dist_ik = {(i,j):km,...} and avail_mass…
+    MAX_DIST = 150
+
+        # when you add x-vars, only allow positive ub if dist ≤ MAX_DIST
     x = m.addVars(
         supply_nodes, feedstock_types, plant_locs,
         lb=0,
-        ub={(i, f, j): avail_mass.get((i, f), 0) / 1e6 for i in supply_nodes for f in feedstock_types for j in plant_locs},
+        ub={
+            (i,f,j):
+            (avail_mass.get((i,f), 0)/1e6)
+            if dist_ik.get((i,j), 9999) <= MAX_DIST
+            else 0.0
+            for i in supply_nodes
+            for f in feedstock_types
+            for j in plant_locs
+        },
         vtype=GRB.CONTINUOUS,
         name="x"
     )
+
     # Precompute all (i,f,j) that must be zero
     zero_triplets = [
         (i,f,j)
@@ -681,7 +694,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti_204060.csv"), index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -790,7 +803,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti_204060.csv"), index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

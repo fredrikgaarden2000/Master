@@ -14,9 +14,9 @@ import seaborn as sns
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_reopt/Flows_Reopt.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Output_in_flow_20_opti.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_reopt/Financials_Reopt.csv"),
+    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Output_financials_20_opti.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
     "plant": os.path.join(BASE_DIR, "equally_spaced_locations_20.csv"),
@@ -287,10 +287,6 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
         "Upgrading_tech1"      : "purple",
         "nonEEG_CHP"           : "orange",
         "FlexEEG_biomethane"   : "green",
-        "EEG_CHP_large1"    : "red",
-        "EEG_CHP_large2" : "pink",
-        "EEG_CHP_small1"   : "magenta",
-        "EEG_CHP_small2"    : "lightblue",
         "boiler" : "black",
 
 
@@ -546,8 +542,6 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
             title="Alternatives & Capacities",
             loc="upper left", bbox_to_anchor=(0.7, 1))
 
-
-    
     ax.set_axis_off()
     plt.tight_layout()
     fig.savefig(output_png, dpi=300)
@@ -604,7 +598,7 @@ color_map = {
 "cattle_slu": "chocolate",
 "horse_man": "rosybrown",
 "pig_slu": "lightpink",
-"pig_man": "pink",
+"pig_man": "red",
 "cereal_str": "gold",
 "clover_alfalfa_grass": "seagreen",
 "perm_grass": "lawngreen",
@@ -829,10 +823,10 @@ def energy_transported():
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
-#plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-#plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
+plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
+plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
 #plot_distance_summary(in_flow_df, supply_coords, plant_coords,output_png="distance_distribution.png")
 #plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
-plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", 
-                        capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104)
+#plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104)
+energy_transported()

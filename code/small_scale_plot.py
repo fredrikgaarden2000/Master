@@ -9,7 +9,7 @@ import matplotlib as mpl
 
 # --- CONFIGURATION ---
 BASE_DIR = "C:/Clone/Master/"
-PLANT_FILE = os.path.join(BASE_DIR, "equally_spaced_locations_100.csv")
+PLANT_FILE = os.path.join(BASE_DIR, "Solutions/100/equally_spaced_locations_100.csv")
 IN_FLOW_FILE_30 = os.path.join(BASE_DIR, "results/small_scale/small_scale_30/Output_in_flow.csv")
 GEOJSON_PATH = os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson")
 LAU_SHELL   = os.path.join(BASE_DIR, "bavaria_lau_clean.geojson")
@@ -17,8 +17,8 @@ FEEDSTOCK   = os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv")
 
 SCENARIOS = [
     {"label": "Base case",  "fin_file": "results/small_scale/small_scale_normal/Output_financials.csv", "color": "red"},
-    {"label": "+1.5 ct/kWh", "fin_file": "results/small_scale/small_scale_15/Output_financials.csv",    "color": "blue"},
-    {"label": "+3 ct/kWh", "fin_file": "results/small_scale/small_scale_30/Output_financials.csv",    "color": "green"},
+    {"label": "+15 €/MWh", "fin_file": "results/small_scale/small_scale_15/Output_financials.csv",    "color": "blue"},
+    {"label": "+30 €/MWh", "fin_file": "results/small_scale/small_scale_30/Output_financials.csv",    "color": "green"},
 ]
 
 # --- LOAD COMMON DATA ---
@@ -89,9 +89,10 @@ for scen in SCENARIOS[::-1]:
         zorder=5 if scen["label"]=="Base case" else 4,
         label=f"{scen['label']} ({len(built)})"
     )
-    # Colorbar
-vmin = clusters_gdf["Methane_for_plot"].min()
-vmax = clusters_gdf["Methane_for_plot"].max()
+
+vmin = clusters_gdf["PlotMethane"].min()
+vmax = clusters_gdf["PlotMethane"].max()
+
 norm = mpl.colors.Normalize(vmin=vmin, vmax=vmax)
 sm = mpl.cm.ScalarMappable(norm=norm, cmap="OrRd")
 sm.set_array([])

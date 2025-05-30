@@ -26,8 +26,8 @@ def load_data():
 
     try:
         feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+        plant_df = safe_load_csv(f"{BASE_DIR}Solutions/100/equally_spaced_locations_100.csv")
+        distance_df = safe_load_csv(f"{BASE_DIR}Solutions/100/Distance_Matrix.csv")
         yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
     except FileNotFoundError as e:
         print(f"Critical error: {str(e)}")
@@ -86,43 +86,12 @@ def initialize_parameters():
     }
 
 # Define CAPACITY LEVELS
-capacity_levels = [10_000_000, 20_000_000, 40_000_000, 60_000_000]
+capacity_levels = [500000,]
 
 # Define ALTERNATIVE CONFIGURATIONS
 # Define alternative configurations
 def get_alternative_configs(params):
     return [
-        {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": params["cap_biogas"], 
-         "max_cap_m3_year": None, "upg_cost_coeff": 0, "upg_cost_exp": 0, 
-         "rev_price": {"EEG": params["EEG_skip_chp_price"]}, "EEG_flag": True, 
-         "GHG_eligible": False, "feed_constraint": None, "capex_coeff": 150.12, 
-         "capex_exp": -0.311, "capex_type": "standard", "opex_coeff": 2.1209, 
-         "opex_exp": 0.8359, "opex_type": "standard"},
-        
-        {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, 
-         "max_cap_m3_year": None, "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, 
-         "rev_price": {"gas": params["gas_price_mwh"] * (params["alphaHV"] / 1000), 
-                      "co2": params["co2_price_ton"] / 556.2}, 
-         "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None, 
-         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard", 
-         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-        
-        {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, 
-         "max_cap_m3_year": None, "upg_cost_coeff": 0, "upg_cost_exp": 0, 
-         "rev_price": {"spot": params["electricity_spot_price"], 
-                      "heat": params["heat_price"]}, 
-         "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None, 
-         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard", 
-         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-        
-        {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", 
-         "prod_cap_factor": params["cap_biomethane"], "max_cap_m3_year": None, 
-         "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, 
-         "rev_price": {"EEG": params["EEG_skip_upg_price"]}, "EEG_flag": True, 
-         "GHG_eligible": False, "feed_constraint": None, "capex_coeff": 150.12, 
-         "capex_exp": -0.311, "capex_type": "standard", "opex_coeff": 2.1209, 
-         "opex_exp": 0.8359, "opex_type": "standard"},
-
         {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": params['EEG_small_m3'],
         "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": params['EEG_price_small']},
         "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
@@ -146,7 +115,6 @@ def get_alternative_configs(params):
         "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
-
     ]
 
 # HELPER FUNCTIONS FOR FEEDSTOCK CLASSIFICATION
