@@ -11,11 +11,11 @@ script_start_time = time.time()
 
 # 1) LOAD DATA
 try:
-    BASE_DIR = "/home/fredrgaa/Optimal/"
+    BASE_DIR = "/home/fredrgaa/Master/"
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Linux path does not exist")
 except FileNotFoundError:
-    BASE_DIR = "C:/Optimal/"
+    BASE_DIR = "C:/Clone/Master/"
     if not os.path.exists(BASE_DIR):
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
