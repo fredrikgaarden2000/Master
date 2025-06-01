@@ -20,12 +20,12 @@ except FileNotFoundError:
         raise FileNotFoundError("Neither Linux nor Windows path exists")
 
 # Use BASE_DIR in your script
-output_dir = os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/")
+output_dir = os.path.join(BASE_DIR, "results/large_scale/75_runs/")
 os.makedirs(output_dir, exist_ok=True)
 
 feedstock_df = pd.read_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_20.csv")
-distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_20.csv")
+plant_df = pd.read_csv(f"{BASE_DIR}equally_spaced_locations_75.csv")
+distance_df = pd.read_csv(f"{BASE_DIR}Distance_Matrix_75.csv")
 yields_df = pd.read_csv(f"{BASE_DIR}Feedstock_yields.csv")
 
 feedstock_df = feedstock_df[
@@ -63,7 +63,7 @@ supply_nodes = feedstock_df['GISCO_ID'].unique().tolist()
 iPrime_nodes = supply_nodes[:]
 feedstock_types = yields_df['substrat_ENG'].unique().tolist()
 plant_locs = plant_df['Location'].unique().tolist()
-capacity_levels = (10_000_000,20_000_000,40_000_000,60_000_000)
+capacity_levels = (20_000_000, 40_000_000, 60_000_000)
 FLH_max = 8000
 alphaHV = 9.97
 CN_min = 20.0
@@ -139,6 +139,29 @@ alternative_configs = [
      "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None,
      "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
      "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+    {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": 255870,
+        "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 220},
+        "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
+        "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
+        "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+
+    {"name": "EEG_CHP_small2", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": 255870,
+        "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 220},
+        "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
+        "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
+        "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+
+    {"name": "EEG_CHP_large1", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": 511740,
+        "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 190},
+        "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
+        "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
+        "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+
+    {"name": "EEG_CHP_large2", "category": "EEG_CHP_large", "prod_cap_factor": 1.0, "max_cap_m3_year": 511740,
+        "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": 190},
+        "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
+        "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
+        "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
 ]
 
 premium = {f: max(0, (alpha_GHG_comp - feed_yield[f]['GHG_intensity'])) * (alphaHV * 3.6) * GHG_certificate_price / 1e6 for f in feedstock_types}
@@ -269,10 +292,22 @@ def build_model(config):
                     lb=0, ub=ub_ch4,
                     vtype=GRB.CONTINUOUS, name="m_up")
     
+        # right after you build dist_ik = {(i,j):km,...} and avail_mass…
+    MAX_DIST = 150
+
+        # when you add x-vars, only allow positive ub if dist ≤ MAX_DIST
     x = m.addVars(
         supply_nodes, feedstock_types, plant_locs,
         lb=0,
-        ub={(i, f, j): avail_mass.get((i, f), 0) / 1e6 for i in supply_nodes for f in feedstock_types for j in plant_locs},
+        ub={
+            (i,f,j):
+            (avail_mass.get((i,f), 0)/1e6)
+            if dist_ik.get((i,j), 9999) <= MAX_DIST
+            else 0.0
+            for i in supply_nodes
+            for f in feedstock_types
+            for j in plant_locs
+        },
         vtype=GRB.CONTINUOUS,
         name="x"
     )
@@ -311,7 +346,7 @@ def build_model(config):
 # LOCK GREEDY DECISIONS  –– paste this right after Y{} & Omega{} are defined
 # ---------------------------------------------------------------------------
 # a) read the file that contains the “winning” (plant, alt, cap) triplets
-    fin_path      = f"{BASE_DIR}results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Financials_20_greedy.csv"
+    fin_path      = f"{BASE_DIR}results/large_scale/75_runs/Financials_75_greedy.csv"
     greedy_fin_df = pd.read_csv(fin_path)
 
     # b) helper maps
@@ -712,7 +747,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti.csv"), index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_75_opti.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -821,7 +856,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti.csv"), index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials_75_opti.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

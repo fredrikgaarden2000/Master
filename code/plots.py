@@ -14,16 +14,31 @@ import seaborn as sns
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Output_in_flow_20_opti.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale/75_runs/Output_in_flow_75_reopt.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR, "results/large_scale_cont/10_greedy_with_alternatives/greedy_100/Output_financials_20_opti.csv"),
+    "financials": os.path.join(BASE_DIR,"results/large_scale/75_runs/Output_financials_75_reopt.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_20.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_75.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
     "supply_coords": os.path.join(BASE_DIR, "supply_coords.csv")
+}
+
+color_map = {
+    "cattle_man":            "tan",
+    "cattle_slu":            "chocolate",
+    "horse_man":             "saddlebrown",
+    "pig_slu":               "pink",
+    "pig_man":               "palevioletred",
+    "cereal_str":            "gold",
+    "clover_alfalfa_grass":  "seagreen",
+    "perm_grass":            "lawngreen",
+    "maize_str":             "olive",
+    "beet_leaf":             "mediumorchid",
+    "rape_str":              "orange",     # adjust as needed
+    "legume_str":            "slategrey",  # string literal
 }
 
 # Load data
@@ -76,7 +91,7 @@ def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png",
         print("\nFeedstock Costs (€/m³ CH4) at Distances 0 km and 100 km:")
         print("-" * 50)
         
-        # Process each feedstock
+        # Process each feedstock - SINGLE LOOP ONLY
         for index, row in yields_df.iterrows():
             try:
                 # Extract data, checking for valid numeric values
@@ -109,9 +124,15 @@ def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png",
                 # Cost per m³ CH4
                 cost_per_m3_ch4 = total_cost_per_ton / methane_yield
                 
-                # Plot
-                plt.plot(distances, cost_per_m3_ch4, label=feedstock)
-                
+                # Plot the line - MOVED INSIDE THE MAIN LOOP
+                plt.plot(
+                    distances,
+                    cost_per_m3_ch4,
+                    label=feedstock,
+                    color=color_map[feedstock],
+                    linewidth=2
+                )
+                    
                 # Calculate and print costs at specific distances (0 km and 100 km)
                 for dist in print_distances:
                     feedstock_cost = feedstock_loading_cost + cost_ton_km * dist
@@ -140,8 +161,7 @@ def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png",
             cheapest = sorted_costs[:3]  # Top 3 cheapest
             most_expensive = sorted_costs[-3:][::-1]  # Top 3 most expensive (reversed)
             
-
-            # 1) Make the “Distance: XX km” header bold via TeX
+            # 1) Make the "Distance: XX km" header bold via TeX
             header = r"$\bf{Distance:\ %d\ km}$" % dist
 
             # 2) Insert a blank line between sections
@@ -152,7 +172,7 @@ def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png",
             ]
             for feedstock, cost in cheapest:
                 text_lines.append(f"  {feedstock}: {cost:.2f} €/m³")
-            text_lines.append("")  # ← blank line before the “Most Expensive”
+            text_lines.append("")  # ← blank line before the "Most Expensive"
             text_lines.append("Most Expensive:")
             for feedstock, cost in most_expensive:
                 text_lines.append(f"  {feedstock}: {cost:.2f} €/m³")
@@ -171,21 +191,22 @@ def plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png",
         plt.xlabel('Distance (km)', fontsize=13)
         plt.ylabel('Cost (€/m³ CH4)', fontsize=13)
         plt.title('Cost of Energy Transported per Feedstock', fontsize=14)
-            # replace your old plt.legend(...) with:
+        
+        # Create legend
         leg = plt.legend(
-            title="Feedstock Type",        # your legend title
-            title_fontsize=14,             # make the title bigger
-            fontsize=12,                   # labels can be a bit smaller
-            handlelength=2,                # lengthen the little lines
-            handletextpad=1.0,             # spacing between line and text
-            labelspacing=0.5,              # vertical space between entries
+            title="Feedstock Type",
+            title_fontsize=14,
+            fontsize=12,
+            handlelength=2,
+            handletextpad=1.0,
+            labelspacing=0.5,
             bbox_to_anchor=(1.05, 1), 
             loc='upper left'
         )
 
-        # now thicken the line samples in the legend:
+        # Thicken the line samples in the legend
         for legline in leg.get_lines():
-            legline.set_linewidth(3)       # increase as you like
+            legline.set_linewidth(3)
 
         plt.grid(True)
         plt.tight_layout()
@@ -260,10 +281,15 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
     bottoms = np.zeros(len(plants))
 
     for feedstock in feedstock_types:
-        values = pivot_df[feedstock].values
-        color = color_map.get(feedstock, None)  # Fallback to default if not specified
-        ax.bar(plants, values, bottom=bottoms, label=feedstock, color=color)
-        bottoms += values
+        # force the bar color to come from your global map
+        if feedstock not in color_map:
+            raise KeyError(f"No color defined for feedstock '{feedstock}' in color_map")
+        c = color_map[feedstock]
+        ax.bar(plants, pivot_df[feedstock].values,
+               bottom=bottoms,
+               label=feedstock,
+               color=c)    # <-- HERE
+        bottoms += pivot_df[feedstock].values
 
     ax.set_xlabel("Plant Location", fontsize =12)
     ax.set_ylabel("Percentage of Feedstock (%)", fontsize =12)
@@ -593,20 +619,8 @@ def plot_bavaria_lau_highlight_with_labels(gisco_ids):
 
 gisco_ids = ["DE_0967113"]
 # Generate plots
-color_map = {
-"cattle_man": "sienna",
-"cattle_slu": "chocolate",
-"horse_man": "rosybrown",
-"pig_slu": "lightpink",
-"pig_man": "red",
-"cereal_str": "gold",
-"clover_alfalfa_grass": "seagreen",
-"perm_grass": "lawngreen",
-"maize_str": "olive",
-"beet_leaf": "purple",
-"rape_str": "teal",  # reuse or adjust if you run out of distinct colors
-"legume_str": "blue"  # reuse or adjust
-}
+
+
 
 
 import seaborn as sns
@@ -711,18 +725,7 @@ from matplotlib.ticker import FuncFormatter
 in_flow_df.columns = in_flow_df.columns.str.strip().str.replace('"', '')
 yields_df.columns = yields_df.columns.str.strip().str.replace('"', '')
 # Defining color map for feedstocks
-color_map = {
-    'cattle_man': '#1f77b4',
-    'cattle_slu': '#ff7f0e',
-    'horse_man': '#2ca02c',
-    'pig_man': '#d62728',
-    'pig_slu': '#9467bd',
-    'maize_str': '#8c564b',
-    'beet_leaf': '#e377c2',
-    'rape_str': '#7f7f7f',
-    'legume_str': '#bcbd22',
-    'clover_alfalfa_grass': '#17becf'
-}
+
 
 # Defining numerical abbreviation function
 def abbreviate_number(value, pos):
@@ -741,8 +744,7 @@ def abbreviate_number(value, pos):
 # Cleaning column names
 in_flow_df.columns = in_flow_df.columns.str.strip().str.replace('"', '')
 yields_df.columns = yields_df.columns.str.strip().str.replace('"', '')
-
-def energy_transported():
+def energy_transported(in_flow_df, yields_df, color_map):
     # Converting numeric columns, handling NaN/invalid values
     in_flow_df['FlowTons'] = pd.to_numeric(in_flow_df['FlowTons'], errors='coerce').fillna(0)
     in_flow_df['Distance_km'] = pd.to_numeric(in_flow_df['Distance_km'], errors='coerce').fillna(0)
@@ -780,10 +782,24 @@ def energy_transported():
     bin_width = (dist_max - dist_min) / num_bins
     bin_labels = [f'{bins[i]:.1f}-{bins[i+1]:.1f}' for i in range(num_bins)]
 
-    # Grouping data by bins
+    # Grouping data by bins - KEY FIX: Remove observed=True to include empty bins
     in_flow_df['Bin'] = pd.cut(in_flow_df['Distance_km'], bins=bins, include_lowest=True, labels=bin_labels)
-    bin_data = in_flow_df.groupby(['Bin', 'Feedstock'], observed=True)['FlowTons'].sum().unstack(fill_value=0)
-    bin_energy = in_flow_df.groupby('Bin', observed=True)['Energy_MWh'].sum().reindex(bin_labels, fill_value=0)
+    bin_data = in_flow_df.groupby(['Bin', 'Feedstock'], observed=False)['FlowTons'].sum().unstack(fill_value=0)  # observed=False
+    bin_energy = in_flow_df.groupby('Bin', observed=False)['Energy_MWh'].sum().reindex(bin_labels, fill_value=0)  # observed=False
+    
+    # ADDITIONAL FIX: Ensure bin_data has all bin_labels as index
+    bin_data = bin_data.reindex(bin_labels, fill_value=0)
+    
+    # Debug information
+    print(f"DEBUG: bin_labels length = {len(bin_labels)}")
+    print(f"DEBUG: bin_data shape = {bin_data.shape}")
+    print(f"DEBUG: bin_energy length = {len(bin_energy)}")
+    
+    # Verify shapes match
+    for feedstock in color_map.keys():
+        if feedstock in bin_data.columns:
+            print(f"DEBUG: {feedstock} length = {len(bin_data[feedstock])}")
+            assert len(bin_data[feedstock]) == len(bin_labels), f"Shape mismatch for {feedstock}"
 
     # Creating the plot
     fig, ax1 = plt.subplots(figsize=(12, 8))
@@ -793,33 +809,43 @@ def energy_transported():
     bottom = np.zeros(num_bins)
     for feedstock in feedstock_order:
         if feedstock in bin_data.columns:
+            # Now bin_data[feedstock] should have exactly num_bins elements
             ax1.bar(bin_labels, bin_data[feedstock], bottom=bottom, label=feedstock, color=color_map[feedstock])
             bottom += bin_data[feedstock]
 
     # Setting up left y-axis (Tons)
-    ax1.set_xlabel('Distance (km)', fontsize = 13)
-    ax1.set_ylabel('Transported Tons', fontsize  =13)
+    ax1.set_xlabel('Distance (km)', fontsize=13)
+    ax1.set_ylabel('Transported Tons', fontsize=13)
     ax1.yaxis.set_major_formatter(FuncFormatter(abbreviate_number))
     ax1.tick_params(axis='x', rotation=45)
 
-
     # Creating second y-axis for energy
     ax2 = ax1.twinx()
-    ax2.plot(bin_labels, bin_energy, color='#888888', marker='o', linestyle='-', linewidth=2, markersize=6, label='Total Energy (MWh)')
-    ax2.set_ylabel('Transported Energy (MWh)', fontsize = 13)
+    ax2.plot(bin_labels, bin_energy, color='#000000', marker='o', linestyle='-', linewidth=1.5, markersize=6, label='Total Energy (MWh)')
+    ax2.set_ylabel('Transported Energy (MWh)', fontsize=13)
     ax2.yaxis.set_major_formatter(FuncFormatter(abbreviate_number))
+
+    # Synchronize zero points
+    y1_min, y1_max = ax1.get_ylim()
+    y2_min, y2_max = ax2.get_ylim()
+
+    # Calculate the ratio of the ranges
+    ratio = (y2_max - y2_min) / (y1_max - y1_min)
+
+    # Set ax2's limits to maintain the same zero point
+    ax2.set_ylim(y1_min * ratio, y1_max * ratio)
 
     # Adding legends
     lines1, labels1 = ax1.get_legend_handles_labels()
     lines2, labels2 = ax2.get_legend_handles_labels()
-    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper center', bbox_to_anchor=(0.65, 0.9), ncol=3, fontsize = 13)
+    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper center', bbox_to_anchor=(0.65, 0.9), ncol=3, fontsize=13)
 
     # Adjusting layout to prevent overlap
     plt.tight_layout()
 
     # Saving the plot
     plt.savefig('combined_feedstock_energy_plot.png', bbox_inches='tight', dpi=300)
-    plt.close()
+    plt.plot()
 
 
 #plot_methane_fraction(fin_df, system_methane_average)
@@ -829,4 +855,4 @@ plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,
 #plot_distance_summary(in_flow_df, supply_coords, plant_coords,output_png="distance_distribution.png")
 #plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
 #plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104)
-energy_transported()
+energy_transported(in_flow_df, yields_df, color_map)

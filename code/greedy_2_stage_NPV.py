@@ -624,18 +624,17 @@ def greedy_heuristic():
         cumulative_eeg_bm += best_j1_result[3]
 
                 # Record j1 results
-# When appending to results:
         results.append({
             'plant': best_j1,
             'npv': best_j1_result[0],
-            'irr': best_j1_result[6],
-            'annual_net': best_j1_result[5],
-            'capacity': best_j1_result[4],
-            'config': best_j1_result[8],
+            'irr': nf.irr([-best_j1_result[1]] + [best_j1_result[0]/params['years']]*params['years']),
+            'annual_net': (best_j1_result[0] / params['years']),
+            'capacity': best_j1_result[5],
+            'config': best_j1_result[6],
             'capex': best_j1_result[1],
             'opex': best_j1_result[2],
             'feed+trans': best_j1_result[3],
-            'used_feedstock': best_j1_result[7],
+            'used_feedstock': best_j1_result[4],
         })
 
         # Commit to j2 if found

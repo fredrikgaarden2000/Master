@@ -26,8 +26,8 @@ def load_data():
 
     try:
         feedstock_df = safe_load_csv(f"{BASE_DIR}aggregated_bavaria_supply_nodes.csv")
-        plant_df = safe_load_csv(f"{BASE_DIR}Solutions/100/equally_spaced_locations_100.csv")
-        distance_df = safe_load_csv(f"{BASE_DIR}Solutions/100/Distance_Matrix.csv")
+        plant_df = safe_load_csv(f"{BASE_DIR}equally_spaced_locations_75.csv")
+        distance_df = safe_load_csv(f"{BASE_DIR}Distance_Matrix_75.csv")
         yields_df = safe_load_csv(f"{BASE_DIR}Feedstock_yields.csv")
     except FileNotFoundError as e:
         print(f"Critical error: {str(e)}")
@@ -86,12 +86,43 @@ def initialize_parameters():
     }
 
 # Define CAPACITY LEVELS
-capacity_levels = [500000,]
+capacity_levels = [20_000_000, 40_000_000, 60_000_000]
 
 # Define ALTERNATIVE CONFIGURATIONS
 # Define alternative configurations
 def get_alternative_configs(params):
     return [
+        {"name": "FlexEEG_biogas", "category": "FlexEEG_biogas", "prod_cap_factor": params["cap_biogas"], 
+         "max_cap_m3_year": None, "upg_cost_coeff": 0, "upg_cost_exp": 0, 
+         "rev_price": {"EEG": params["EEG_skip_chp_price"]}, "EEG_flag": True, 
+         "GHG_eligible": False, "feed_constraint": None, "capex_coeff": 150.12, 
+         "capex_exp": -0.311, "capex_type": "standard", "opex_coeff": 2.1209, 
+         "opex_exp": 0.8359, "opex_type": "standard"},
+        
+        {"name": "Upgrading_tech1", "category": "Upgrading", "prod_cap_factor": 1.0, 
+         "max_cap_m3_year": None, "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, 
+         "rev_price": {"gas": params["gas_price_mwh"] * (params["alphaHV"] / 1000), 
+                      "co2": params["co2_price_ton"] / 556.2}, 
+         "EEG_flag": False, "GHG_eligible": True, "feed_constraint": None, 
+         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard", 
+         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+        
+        {"name": "nonEEG_CHP", "category": "CHP_nonEEG", "prod_cap_factor": 1.0, 
+         "max_cap_m3_year": None, "upg_cost_coeff": 0, "upg_cost_exp": 0, 
+         "rev_price": {"spot": params["electricity_spot_price"], 
+                      "heat": params["heat_price"]}, 
+         "EEG_flag": False, "GHG_eligible": False, "feed_constraint": None, 
+         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard", 
+         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+        
+        {"name": "FlexEEG_biomethane_tech1", "category": "FlexEEG_biomethane", 
+         "prod_cap_factor": params["cap_biomethane"], "max_cap_m3_year": None, 
+         "upg_cost_coeff": 47777, "upg_cost_exp": -0.421, 
+         "rev_price": {"EEG": params["EEG_skip_upg_price"]}, "EEG_flag": True, 
+         "GHG_eligible": False, "feed_constraint": None, "capex_coeff": 150.12, 
+         "capex_exp": -0.311, "capex_type": "standard", "opex_coeff": 2.1209, 
+         "opex_exp": 0.8359, "opex_type": "standard"},
+
         {"name": "EEG_CHP_small1", "category": "EEG_CHP_small", "prod_cap_factor": 1.0, "max_cap_m3_year": params['EEG_small_m3'],
         "upg_cost_coeff": 0, "upg_cost_exp": 0, "rev_price": {"EEG": params['EEG_price_small']},
         "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 1,
@@ -115,6 +146,7 @@ def get_alternative_configs(params):
         "EEG_flag": True, "GHG_eligible": False, "feed_constraint": 2,
         "capex_coeff": 150.12, "capex_exp": -0.311, "capex_type": "standard",
         "opex_coeff": 2.1209, "opex_exp": 0.8359, "opex_type": "standard"},
+
     ]
 
 # HELPER FUNCTIONS FOR FEEDSTOCK CLASSIFICATION
@@ -578,7 +610,7 @@ def generate_outputs(results, dist_ik, output_dir):
             'Feed_Trans_Cost': res['feed+trans']
         })
     
-    pd.DataFrame(financials).to_csv(os.path.join(output_dir, "Financials_20_greedy.csv"), index=False)
+    pd.DataFrame(financials).to_csv(os.path.join(output_dir, "Financials_75_greedy.csv"), index=False)
     
     flows = []
     for res in results:
@@ -591,10 +623,10 @@ def generate_outputs(results, dist_ik, output_dir):
                 'Distance_km': dist_ik.get((i, res['plant']), 0)
             })
     
-    pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows_20_greedy.csv"), index=False)
+    pd.DataFrame(flows).to_csv(os.path.join(output_dir, "Flows_75_greedy.csv"), index=False)
 
 if __name__ == '__main__':
-    output_dir = os.path.join("C:/Clone/Master/results/large_scale_cont/10_greedy_with_alternatives/greedy_100/")
+    output_dir = os.path.join("C:/Clone/Master/results/large_scale/75_runs")
     os.makedirs(output_dir, exist_ok=True)
     
     start_time = time.time()
