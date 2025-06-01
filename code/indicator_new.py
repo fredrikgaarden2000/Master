@@ -694,7 +694,7 @@ if __name__ == '__main__':
                     "Distance_km": distance
                 })
     in_flow_df = pd.DataFrame(inflow_rows)
-    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_20_opti.csv"), index=False)
+    in_flow_df.to_csv(os.path.join(output_dir, "Output_in_flow_75_opti.csv"), index=False)
     '''
     print("\nDebugging Y[j, a, c].X values:")
     for j in plant_locs:
@@ -803,7 +803,7 @@ if __name__ == '__main__':
 
     fin_df = pd.DataFrame(merged_rows)
     print(f"Saving financials with {len(merged_rows)} rows")
-    fin_df.to_csv(os.path.join(output_dir, "Output_financials_20_opti.csv"), index=False)
+    fin_df.to_csv(os.path.join(output_dir, "Output_financials_75_opti.csv"), index=False)
 
     warmstart_path = os.path.join(output_dir, "warmstart.sol")
     m.write(warmstart_path)

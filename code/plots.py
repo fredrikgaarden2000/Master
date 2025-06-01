@@ -14,12 +14,12 @@ import seaborn as sns
 
 BASE_DIR = "C:/Clone/Master/"
 FILES = {
-    "in_flow": os.path.join(BASE_DIR, "results/large_scale/75_runs/Output_in_flow_75_reopt.csv"),
+    "in_flow": os.path.join(BASE_DIR, "results/large_scale/30_runs/Flows_30_optimal.csv"),
     #"out_flow": os.path.join(BASE_DIR, "/Output_out_flow.csv"),
-    "financials": os.path.join(BASE_DIR,"results/large_scale/75_runs/Output_financials_75_reopt.csv"),
+    "financials": os.path.join(BASE_DIR,"results/large_scale/30_runs/Financials_30_optimal.csv"),
     #"feedstock": os.path.join(BASE_DIR, "processed_biomass_data.csv"),
     "feedstock": os.path.join(BASE_DIR, "aggregated_bavaria_supply_nodes.csv"),
-    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_75.csv"),
+    "plant": os.path.join(BASE_DIR, "equally_spaced_locations_30.csv"),
     #"plant": os.path.join(BASE_DIR, "equally_space_locations_10.csv"),
     "yields": os.path.join(BASE_DIR, "Feedstock_yields.csv"),
     "bavaria_geojson": os.path.join(BASE_DIR, "bavaria_cluster_regions.geojson"),
@@ -242,9 +242,9 @@ def plot_methane_fraction(fin_df, system_methane_average):
         deviation = ((frac - system_methane_average) / system_methane_average) * 100
         ax.text(j, frac, f"{deviation:+.1f}%", fontsize=12, ha="center", 
                 va="bottom" if frac < system_methane_average else "top")
-    ax.set_xlabel("Plant Location")
-    ax.set_ylabel("Methane Fraction (N_CH4 / Omega)")
-    ax.set_title("Methane Fraction by Plant Location vs. System Average")
+    ax.set_xlabel("Plant Location", fontsize = 14)
+    ax.set_ylabel("Methane Fraction (N_CH4 / Omega)", fontsize = 14)
+    ax.set_title("Methane Fraction by Plant Location vs. System Average", fontsize = 14)
     ax.legend()
     plt.xticks(rotation=45, ha="right")
     min_frac = min(methane_fractions + [system_methane_average]) * 0.95
@@ -291,12 +291,19 @@ def plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map):
                color=c)    # <-- HERE
         bottoms += pivot_df[feedstock].values
 
-    ax.set_xlabel("Plant Location", fontsize =12)
-    ax.set_ylabel("Percentage of Feedstock (%)", fontsize =12)
-    ax.set_title("Feedstock Composition per Plant (100% Stacked)", fontsize =13)
-    ax.legend(title="Feedstock Type", bbox_to_anchor=(1.05, 1), loc="upper left", fontsize =13)
+    ax.set_xlabel("Plant Location", fontsize =20)
+    ax.set_ylabel("Percentage of Feedstock (%)", fontsize =20)
+    ax.set_title("Feedstock Composition per Plant (100% Stacked)", fontsize =24)
+    ax.legend(
+        title="Feedstock Type",
+        title_fontsize=22,           # Ensures title is same as items
+        bbox_to_anchor=(1.02, 1),
+        loc="upper left",
+        fontsize=20                  # Font size of legend entries
+    )
     ax.set_ylim(0, 100)
-    plt.xticks(rotation=45, ha="right")
+    plt.xticks(rotation=45, ha="right", fontsize=18)
+    plt.yticks(fontsize=18)          # <-- Set y-axis tick label font size
     plt.tight_layout()
     plt.savefig(os.path.join(BASE_DIR, "feedstock_stacked_chart.png"))
     plt.show()
@@ -524,7 +531,7 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
                 zorder=4
             )
         ax.annotate(
-            str(r.PlantLocation),
+            f"{r.PlantLocation}, {int(r.Capacity // 1_000_000)}",
             xy=(lon, lat), xytext=(4,4),
             textcoords="offset points",
             fontsize=8, zorder=5,
@@ -535,6 +542,8 @@ def plot_cluster_heatmap(in_flow_df, yields_df, fin_df,
                 alpha=0.8
             )
         )
+
+
 
     # -----------------------------------------------------------
     # build legend handles
@@ -850,9 +859,9 @@ def energy_transported(in_flow_df, yields_df, color_map):
 
 #plot_methane_fraction(fin_df, system_methane_average)
 plot_feedstock_stacked_chart(in_flow_df, feedstock_types, color_map)
-plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
+#plot_cluster_heatmap(in_flow_df, yields_df, fin_df, plant_coords, supply_coords,FILES["bavaria_geojson"], os.path.join(BASE_DIR, "cluster_heatmap.png"))
 #plot_bavaria_lau_highlight_with_labels(gisco_ids)
 #plot_distance_summary(in_flow_df, supply_coords, plant_coords,output_png="distance_distribution.png")
 #plot_irr_vs_rate(fin_df, interest_rate=0.042, output_png="irr_summary.png")
 #plot_feedstock_costs(yields_df, output_filename="feedstock_cost_plot.png", capacity_dig=27, loading_cost_dig=37, cost_ton_km_dig=0.104)
-energy_transported(in_flow_df, yields_df, color_map)
+#energy_transported(in_flow_df, yields_df, color_map)
